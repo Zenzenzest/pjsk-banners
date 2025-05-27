@@ -16,9 +16,9 @@ export default function NavBar() {
         {nav_list.map((n, i) => {
           if (i == 2) {
             return (
-              <div className="text-center w-1/3 pl-7 pr-7" key={n}>
+              <Link className="text-center w-1/3 pl-7 pr-7" key={n}>
                 {n}
-              </div>
+              </Link>
             );
           } else {
             return (
