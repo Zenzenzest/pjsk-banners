@@ -1,16 +1,10 @@
 import { useState, useEffect, useRef } from "react";
-import gachas from "../../gachas.json";
-import * as fs from "fs";
+import { useServer } from "../../context/Server";
 import Select from "react-select";
 
 type Server = "jp" | "global";
 
-interface GachaArr {
-  id: number;
-  name: string;
-  start: number;
-  end: number;
-}
+
 
 type Entry = {
   id: number;
@@ -166,7 +160,7 @@ export default function CreateData() {
       untrained_url: "",
       trained_url: "",
     }));
--
+
     // Reset insert mode
     setEnableCustomId(false);
     setCustomId("");

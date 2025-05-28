@@ -1,8 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
 import { useTheme } from "../../context/Theme_toggle";
-
+import { useServer } from "../../context/Server";
 export default function NavBar() {
-  const nav_list: string[] = ["JP", "Global", "Saved Cards"];
+  const { setServer } = useServer();
   const { theme } = useTheme();
   return (
     <>
@@ -13,7 +13,24 @@ export default function NavBar() {
             : "bg-bg-dark-mode text-text-dark-mode"
         }`}
       >
-        {nav_list.map((n, i) => {
+        <Link
+          to="/"
+          className="text-center w-1/3"
+          onClick={() => setServer("jp")}
+        >
+          JP
+        </Link>
+        <Link
+          to="/"
+          className="text-center w-1/3"
+          onClick={() => setServer("global")}
+        >
+          Global
+        </Link>
+        <Link to="/saved_cards" className="text-center w-1/3 pl-7 pr-7">
+          Saved Cards
+        </Link>
+        {/* {nav_list.map((n, i) => {
           if (i == 2) {
             return (
               <Link
@@ -31,7 +48,7 @@ export default function NavBar() {
               </Link>
             );
           }
-        })}
+        })} */}
       </div>
       <Outlet />
     </>

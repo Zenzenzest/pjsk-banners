@@ -1,5 +1,5 @@
-import CreateData from "../components/Home/Create_data";
+import HomeContainer from "../components/Home/Home_container";
 
 export default function Home() {
-  return <CreateData />;
+  return <HomeContainer />;
 }
