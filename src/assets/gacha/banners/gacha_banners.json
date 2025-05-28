@@ -1,0 +1,618 @@
+[
+  {
+    "id": 1,
+    "name": "Release Celebration Gacha",
+    "cards":  [1, 2, 3, 4],
+    "start": 1636099200000,
+    "end": 1639695599000
+  },
+  {
+    "id": 2,
+    "name": "VIRTUAL SINGER Limited Gacha",
+    "cards": [5, 6, 7],
+    "start": 1638918000000,
+    "end": 1639695599000
+  },
+  {
+    "id": 3,
+    "name": "3★ or Higher Guaranteed Ticket Gacha",
+    "cards": [8, 9, 10, 11, 12],
+    "start": 1633647600000,
+    "end": 1642067999000
+  },
+  {
+    "id": 4,
+    "name": "Starry Night Memories Gacha",
+    "cards": [13, 14, 15],
+    "start": 1639004400000,
+    "end": 1639695599000
+  },
+  {
+    "id": 5,
+    "name": "Ball of the Marionettes Gacha",
+    "cards": [16, 17, 18],
+    "start": 1639695600000,
+    "end": 1640386799000
+  },
+  {
+    "id": 6,
+    "name": "Gentle★Potato Star Gacha",
+    "cards": [19, 20, 21],
+    "start": 1640386800000,
+    "end": 1641077999000
+  },
+  {
+    "id": 7,
+    "name": "Rookie Partner Gacha",
+    "cards": [22, 23, 24],
+    "start": 1641078000000,
+    "end": 1641769199000
+  },
+  {
+    "id": 8,
+    "name": "Ever Energetic♪ Cheer Squad Gacha",
+    "cards": [25, 26, 27],
+    "start": 1641769200000,
+    "end": 1642460399000
+  },
+  {
+    "id": 9,
+    "name": "4★ Guaranteed Gacha",
+    "cards": [1, 2, 3, 13, 16, 19],
+    "start": 1642114800000,
+    "end": 1642633199000
+  },
+  {
+    "id": 10,
+    "name": "MORE MORE SMILE! Gacha",
+    "cards": [28, 29, 30],
+    "start": 1642460400000,
+    "end": 1643151599000
+  },
+  {
+    "id": 11,
+    "name": "High School Carnival Gacha",
+    "cards": [31, 32, 33],
+    "start": 1643151600000,
+    "end": 1643842799000
+  },
+  {
+    "id": 12,
+    "name": "Wonder Carol Gacha",
+    "cards": [34, 35, 36],
+    "start": 1643842800000,
+    "end": 1644533999000
+  },
+  {
+    "id": 13,
+    "name": "SEKAI Thrilling New Year Gacha",
+    "cards": [37, 38, 39, 40],
+    "start": 1644534000000,
+    "end": 1645225199000
+  },
+  {
+    "id": 14,
+    "name": "(Goodbye 2021) Colorful Festival Gacha",
+    "cards": [13, 19, 22, 31],
+    "start": 1644534000000,
+    "end": 1645225199000
+  },
+  {
+    "id": 15,
+    "name": "[Hello 2022] Colorful Festival Gacha",
+    "cards": [37, 38, 39, 40],
+    "start": 1644534000000,
+    "end": 1645225199000
+  },
+  {
+    "id": 16,
+    "name": "A Little Courage Goes a Long Way Gacha",
+    "cards": [41, 42, 43],
+    "start": 1645225200000,
+    "end": 1645916399000
+  },
+  {
+    "id": 17,
+    "name": "A Rainbow Follows the Rain Gacha",
+    "cards": [44, 45, 46],
+    "start": 1645916400000,
+    "end": 1646607599000
+i  },
+  {
+    "id": 18,
+    "name": "Classical Memories Gacha",
+    "cards": [47, 48, 49],
+    "start": 1646607600000,
+    "end": 1647295199000
+  },
+  {
+    "id": 19,
+    "name": "Rockin' Parade Gacha",
+    "cards": [50, 51, 52],
+    "start": 1647295200000,
+    "end": 1647986399000
+  },
+  {
+    "id": 20,
+    "name": "1 Million Players! Once Daily Free 10x Gacha",
+    "cards": [1, 4, 29, 23, 20, 17]
+    "start": 1647846000000,
+    "end": 1648105199000
+  },
+  {
+    "id": 21,
+    "name": "Illuminated Canvas Gacha",
+    "cards": [53, 54, 55],
+    "start": 1647986400000,
+    "end": 1648677599000
+  },
+  {
+    "id": 22,
+    "name": "Your Pick Gacha",
+    "cards": [13, 41, 28, 22, 25, 34, 19, 16, 31, 37, 2, 3],
+    "start": 1648245600000,
+    "end": 1648850399000
+  },
+  {
+    "id": 23,
+    "name": "Fluffy☆ Dreamland Gacha",
+    "cards": [56, 57, 58],
+    "start": 1648677600000,
+    "end": 1649368799000
+  },
+  {
+    "id": 24,
+    "name": "Heavenly Happy Doll Festival☆ Gacha",
+    "cards": [59, 60, 61],
+    "start": 1649368800000,
+    "end": 1650059999000
+  },
+  {
+    "id": 25,
+    "name": "An Angel Spreads Its Wings Gacha",
+    "cards": [62, 63, 64],
+    "start": 1650060000000,
+    "end": 1650751199000
+  },
+  {
+    "id": 26,
+    "name": "4★ Guaranteed Gacha",
+    "cards": [43, 44, 51, 33, 37, 47],
+    "start": 1650405600000,
+    "end": 1650924000000
+  },
+  {
+    "id": 27,
+    "name": "Cherry Blossom Lane Gacha",
+    "cards": [65, 66, 67],
+    "start": 1650751200000,
+    "end": 1651442399000
+  },
+  {
+    "id": 28,
+    "name": "Secret Dressing Room Gacha",
+    "cards": [68, 69, 70],
+    "start": 1651442400000,
+    "end": 1652133599000
+  },
+  {
+    "id": 29,
+    "name": "(1 Time Only) 4=1 Gacha",
+    "cards": [71, 72, 73],
+    "start": 1652133600000,
+    "end": 1652824799000
+  },
+  {
+    "id": 30,
+    "name": "One With My Crew Gacha",
+    "cards": [74, 75, 76],
+    "start": 1652824800000,
+    "end": 1653515999000
+  },
+  {
+    "id": 31,
+    "name": "Your Pick Gacha",
+    "cards": [13, 50, 44, 48, 34, 19, 31, 37, 51, 3, 45],
+    "start": 1653170400000,
+    "end": 1653688799000
+  },
+  {
+    "id": 32,
+    "name": "Forest Fairy Gacha",
+    "cards": [77, 78, 79],
+    "start": 1653516000000,
+    "end": 1654207199000
+  },
+  {
+    "id": 33,
+    "name": "Half Anniversary Special! Once Daily Free 10x Gacha",
+    "cards": [1, 63, 59, 22, 58, 53],
+    "start": 1654016400000,
+    "end": 1654685999000
+  },
+  {
+    "id": 34,
+    "name": "Welcome to the Penguin Cafe♪ Gacha",
+    "cards": [80, 81, 82]
+    "start": 1654207200000,
+    "end": 1654898399000
+  },
+  {
+    "id": 35,
+    "name": "Half Anniversary Colorful Festival Gacha",
+    "cards": [83, 84],
+    "start": 1654639200000,
+    "end": 1655157599000
+  },
+  {
+    "id": 36,
+    "name": "Romantic Bride Gacha",
+    "cards": [85, 86, 87],
+    "start": 1654898400000,
+    "end": 1655589599000
+  },
+  {
+    "id": 37,
+    "name": "Welcome♪ Wonderland Gacha",
+    "cards": [88, 89, 90],
+    "start": 1655589600000,
+    "end": 1656280799000
+  },
+  {
+    "id": 38,
+    "name": "4★ Guaranteed Gacha",
+    "cards": [51, 65, 62, 47, 58, 54],
+    "start": 1655848800000,
+    "end": 1656453599000
+  },
+  {
+    "id": 39,
+    "name": "Memories Melody Gacha",
+    "cards": [91, 92, 93],
+    "start": 1656280800000,
+    "end": 1656971999000
+  },
+  {
+    "id": 40,
+    "name": "Colorful Festival Gacha",
+    "cards": [94, 95],
+    "start": 1656972000000,
+    "end": 1657403999000
+  },
+  {
+    "id": 41,
+    "name": "Rainbow Harmony Gacha",
+    "cards": [96, 97, 98],
+    "start": 1656972000000,
+    "end": 1657663199000
+  },
+  {
+    "id": 42,
+    "name": "The Beast Inside Gacha",
+    "cards": [99, 100, 101],
+    "start": 1657663200000,
+    "end": 1658440799000
+  },
+  {
+    "id": 43,
+    "name": "Summer Night Memories Gacha",
+    "cards": [102, 103, 104],
+    "start": 1658440800000,
+    "end": 1659391199000
+  },
+  {
+    "id": 44,
+    "name": "Your Pick Gacha",
+    "cards": [96, 71, 62, 80, 78, 67, 88, 58, 91, 53, 76],
+    "start": 1659132000000,
+    "end": 1659909599000
+  },
+  {
+    "id": 45,
+    "name": "Let's Enjoy Summer! Gacha",
+    "cards": [105, 106, 187],
+    "start": 1659391200000,
+    "end": 1660168799000
+  },
+  {
+    "id": 46,
+    "name": "Lovely Messenger Gacha",
+    "cards": [108, 109, 110],
+    "start": 1660168800000,
+    "end": 1661032799000
+  },
+  {
+    "id": 47,
+    "name": "Hear My Song! Dreaming Mermaid Gacha",
+    "cards": [111, 112, 113],
+    "start": 1661032800000,
+    "end": 1661896799000
+  },
+  {
+    "id": 48,
+    "name": "4★ Guaranteed Gacha",
+    "cards": [101, 71, 80, 102, 88, 91],
+    "start": 1661551200000,
+    "end": 1662155999000
+  },
+  {
+    "id": 49,
+    "name": "Moonlit Night's Sister Rabbits Gacha",
+    "cards": [114, 115, 116],
+    "start": 1661896800000,
+    "end": 1662760799000
+  },
+  {
+    "id": 50,
+    "name": "Hatsune Miku Anniversary Celebration Free 10x Gacha",
+    "cards": [66, 71, 88],
+    "start": 1661929200000,
+    "end": 1662015599000
+  },
+  {
+    "id": 51,
+    "name": "No More Doubts Full Metal Gacha",
+    "cards": [117, 118, 119],
+    "start": 1662760800000,
+    "end": 1663711199000
+  },
+  {
+    "id": 52,
+    "name": "Your Pick Gacha",
+    "cards": [98, 62, 81, 67, 102, 88, 90, 91, 53, 68, 97, 104],
+    "start": 1663279200000,
+    "end": 1664143199000
+  },
+  {
+    "id": 53,
+    "name": "Forgotten Snow White Gacha",
+    "cards": [120, 121, 122],
+    "start": 1663711200000,
+    "end": 1664661599000
+  },
+  {
+    "id": 54,
+    "name": "1st Anniversary Memorial Select Gacha",
+    "cards": [4, 82, 23, 20, 55, 18],
+    "start": 1664521200000,
+    "end": 1667253599000
+  },
+  {
+    "id": 55,
+    "name": "VIRTUAL SINGER Premium Gift Gacha.",
+    "cards": [37, 30, 87, 14, 101, 21],
+    "start": 1664661600000,
+    "end": 1664920799000
+  },
+  {
+    "id": 56,
+    "name": "Scramble Flower Gacha",
+    "cards": [123, 124, 125],
+    "start": 1665007200000,
+    "end": 1665784799000
+  },
+  {
+    "id": 57,
+    "name": "1st Anniversary 10 Free Gacha ",
+    "cards": [1, 65, 62, 99, 88, 91],
+    "start": 1664622000000,
+    "end": 1666421999000
+  },
+  {
+    "id": 58,
+    "name": "Leo/need Premium Gift Gacha",
+    "cards": [65, 68, 41, 71],
+    "start": 1664748000000,
+    "end": 1665007199000
+  },
+  {
+    "id": 59,
+    "name": "1st Anniversary Colorful Festival Gacha",
+    "cards": [126, 127, 123, 124, 125],
+    "start": 1664661600000,
+    "end": 1665007199000
+  },
+  {
+    "id": 60,
+    "name": "MORE MORE JUMP! Premium Gift Gacha",
+    "cards": [62, 80, 28, 44],
+    "start": 1664834400000,
+    "end": 1665093599000
+  },
+  {
+    "id": 61,
+    "name": "Vivid BAD SQUAD Premium Gift Gacha",
+    "cards": [99, 22, 102, 47],
+    "start": 1664920800000,
+    "end": 1665179999000
+  },
+  {
+    "id": 62,
+    "name": "Wonderlands×Showtime Premium Gift Gacha.",
+    "cards": [88, 89, 34, 19],
+    "start": 1665007200000,
+    "end": 1665266399000
+  },
+  {
+    "id": 63,
+    "name": "Haruka Kiritani Happy Birthday Gacha",
+    "cards": [126],
+    "start": 1664953200000,
+    "end": 1665557999000
+  },
+  {
+    "id": 64,
+    "name": "Nightcord at 25:00 Premium Gift Gacha.",
+    "cards": [91, 16, 53, 68],
+    "start": 1665093600000,
+    "end": 1665352799000
+  },
+  {
+    "id": 65,
+    "name": "Break The Fence! Gacha",
+    "cards": [127, 128, 129],
+    "start": 1665784800000,
+    "end": 1666994399000
+  },
+  {
+    "id": 66,
+    "name": "Fall 2022 Special! Once Daily Free 10x Gacha",
+    "cards": [117, 109, 107, 103, 100],
+    "start": 1666681200000,
+    "end": 1666940399000
+  },
+  {
+    "id": 67,
+    "name": "4★ Guaranteed Gacha",
+    "cards": [113, 93, 108, 99, 68, 112],
+    "start": 1666821600000,
+    "end": 1667426399000
+  },
+  {
+    "id": 68,
+    "name": "Honami Mochizuki Happy Birthday Gacha",
+    "cards": [130],
+    "start": 1666854000000,
+    "end": 1667458799000
+  },
+  {
+    "id": 69,
+    "name": "Wanderer's Journey Gacha",
+    "cards": [131, 132, 133],
+    "start": 1666994400000,
+    "end": 1667948399000
+  },
+  {
+    "id": 70,
+    "name": "Beginner's Memorial Select Gacha",
+    "cards": [4, 13, 72, 98, 82, 26, 78, 81, 23, 100, 24, 61, 20, 25, 90, 58, 55, 93, 40 ,31, 18, 51, 3, 45, 42, 32],
+    "start": 1667253600000,
+    "end": 1701979199000
+  },
+  {
+    "id": 71,
+    "name": "MEIKO Happy Anniversary Gacha",
+    "cards": [134],
+    "start": 1667631600000,
+    "end": 1668239999000
+  },
+  {
+    "id": 72,
+    "name": "4★Guaranteed Fall Gacha",
+    "cards": [1, 2, 3, 13, 16, 19],
+    "start": 1667862000000,
+    "end": 1669071599000
+  },
+  {
+    "id": 73,
+    "name": "Kind-hearted Words Gacha",
+    "cards": [135, 136, 137],
+    "start": 1667948400000,
+    "end": 1668812399000
+  },
+  {
+    "id": 74,
+    "name": "Akito Shinonome Happy Birthday Gacha",
+    "cards": [138],
+    "start": 1668240000000,
+    "end": 1668844799000
+  },
+  {
+    "id": 75,
+    "name": "Your Pick Gacha",
+    "cards": [73, 71, 108, 81, 99, 102, 107, 58, 91, 77, 87, 101, ],
+    "start": 1668553200000,
+    "end": 1669071599000
+  },
+  {
+    "id": 76,
+    "name": "Secret Illumination Gacha",
+    "cards": [139, 140, 141],
+    "start": 1668812400000,
+    "end": 1669762799000
+  },
+  {
+    "id": 77,
+    "name": "4★ Guaranteed Gacha",
+    "cards": [67, 110, 118, 89, 77, 98],
+    "start": 1669244400000,
+    "end": 1670281199000
+  },
+  {
+    "id": 78,
+    "name": "Growing Feelings, Words in the Snow Gacha",
+    "cards": [142, 143, 144],
+    "start": 1669762800000,
+    "end": 1670713199000
+  },
+  {
+    "id": 79,
+    "name": "Shizuku Hinomori Happy Birthday Gacha",
+    "cards": [145],
+    "start": 1670313600000,
+    "end": 1670918399000
+  },
+  {
+    "id": 80,
+    "name": "1st Anniversary 10x Free Gacha",
+    "cards": [1, 65, 62, 99, 88, 91, ],
+    "start": 1670414400000,
+    "end": 1672041599000
+  },
+  {
+    "id": 81,
+    "name": "Christmas Eve Checkmate Gacha",
+    "cards": [146, 147, 148],
+    "start": 1670713200000,
+    "end": 1671577199000
+  },
+  {
+    "id": 82,
+    "name": "Memoirs of Wrongdoings Gacha",
+    "cards": [149, 150, 151, 152, 153],
+    "start": 1671058800000,
+    "end": 1672181999000
+  },
+  {
+    "id": 83,
+    "name": "4★ Guaranteed Gacha",
+    "cards": [129, 73, 128, 121, 60, 82],
+    "start": 1671404400000,
+    "end": 1672268399000
+  },
+  {
+    "id": 84,
+    "name": "Embarking on a Winter Railway Gacha",
+    "cards": [154, 155, 156],
+    "start": 1671577200000,
+    "end": 1672527599000
+  },
+  {
+    "id": 85,
+    "name": "Kagamine Rin Happy Anniversary Gacha",
+    "cards": [157],
+    "start": 1672128000000,
+    "end": 1672732799000
+  },
+  {
+    "id": 86,
+    "name": "Kagamine Len Happy Anniversary Gacha",
+    "cards": [158],
+    "start": 1672128000000,
+    "end": 1672732799000
+  },
+  {
+    "id": 87,
+    "name": "2023 New Year Colorful Festival Gacha",
+    "cards": [159, 160, 161, 162, 163],
+    "start": 1672527600000,
+    "end": 1672873199000
+  },
+  {
+    "id": 88,
+    "name": "2023 New Year Premium Gift Gacha",
+    "cards": [37, 117, 82, 100, 112, 68],
+    "start": 1672527600000,
+    "end": 1673564399000
+  }
+]

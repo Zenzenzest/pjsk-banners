@@ -16,15 +16,19 @@ export default function NavBar() {
         {nav_list.map((n, i) => {
           if (i == 2) {
             return (
-              <Link className="text-center w-1/3 pl-7 pr-7" key={n}>
+              <Link
+                to="/saved_cards"
+                className="text-center w-1/3 pl-7 pr-7"
+                key={n}
+              >
                 {n}
               </Link>
             );
           } else {
             return (
-              <div className="text-center w-1/3" key={n}>
+              <Link to="/" className="text-center w-1/3" key={n}>
                 {n}
-              </div>
+              </Link>
             );
           }
         })}

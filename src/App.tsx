@@ -3,12 +3,14 @@ import Home from "./pages/Home";
 import NavBar from "./components/Nav/NavBar";
 import "./App.css";
 import { ThemeProvider } from "./context/Theme_toggle";
+import SavedCards from "./pages/SavedCards";
 function App() {
   return (
     <ThemeProvider>
       <Routes>
         <Route path="/" element={<NavBar />}>
           <Route index element={<Home />} />
+          <Route path="/saved_cards" element={<SavedCards />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
