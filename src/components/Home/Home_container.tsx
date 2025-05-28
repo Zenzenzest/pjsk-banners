@@ -1,6 +1,6 @@
 import { useServer } from "../../context/Server";
 import { useState } from "react";
-import GachaTable from "./gacha_table";
+import GachaTable from "./Gacha_table";
 import CreateData from "./Create_data";
 
 export default function HomeContainer() {
