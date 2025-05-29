@@ -4,8 +4,6 @@ import Select from "react-select";
 
 type Server = "jp" | "global";
 
-
-
 type Entry = {
   id: number;
 
@@ -91,6 +89,8 @@ export default function CreateData() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [enableCustomId, setEnableCustomId] = useState(false);
   const [customId, setCustomId] = useState<number | "">("");
+  const [urlWarning, setUrlWarning] = useState("");
+
   const [form, setForm] = useState<Omit<Entry, "id">>({
     name: "",
     character: characterOptions[0].value,
@@ -125,6 +125,18 @@ export default function CreateData() {
   };
 
   const handleSubmit = () => {
+    
+    const shouldWarn =
+      form.rarity <= 4 && form.untrained_url.trim() === form.trained_url.trim();
+
+    if (shouldWarn) {
+      setUrlWarning(
+        "Untrained and Trained image URLs must be different for rarity 4 or lower."
+      );
+      return; 
+    } else {
+      setUrlWarning(""); 
+    }
     let updatedEntries = [...entries];
 
     let newId: number;
@@ -349,7 +361,7 @@ export default function CreateData() {
           Delete Last Entry
         </button>
       </div>
-
+      {urlWarning && <p className="text-red-500 text-sm mt-2">{urlWarning}</p>}
       <pre className="bg-gray-100 text-black p-2 rounded overflow-auto max-h-64">
         {JSON.stringify(entries, null, 2)}
       </pre>

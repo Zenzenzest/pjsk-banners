@@ -165,6 +165,8 @@
   },
   {
     "id": 29,
+  {
+    "id": 29,
     "end": 1645225199000
   },
   {
@@ -3649,8 +3651,6 @@
   },
   {
     "id": 1111,
-    "name": "2024 December Premium Gift Gacha",
-    "start": 1734984000000,
     "name": "3★ or Higher Guaranteed Ticket Gacha",
     "start": 1736452800000,
     "end": 1741546799000

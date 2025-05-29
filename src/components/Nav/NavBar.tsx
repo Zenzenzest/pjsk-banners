@@ -7,10 +7,10 @@ export default function NavBar() {
   return (
     <>
       <div
-        className={`w-full h-15 flex flex-row items-center justify-evenly ${
+        className={`w-full h-15 flex flex-row items-center justify-evenly border-b ${
           theme == "light"
-            ? "bg-bg-light-mode text-text-light-mode"
-            : "bg-bg-dark-mode text-text-dark-mode"
+            ? "bg-bg-light-mode text-text-light-mode border-bg-dark-mode"
+            : "bg-bg-dark-mode text-text-dark-mode border-mizuki"
         }`}
       >
         <Link
