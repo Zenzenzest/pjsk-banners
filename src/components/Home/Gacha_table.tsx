@@ -50,7 +50,7 @@ export default function GachaTable() {
                   return (
                     <img
                       src={cardIconImage}
-                      style={{ width: "40px", height: "40px", margin: "5px" }}
+                      style={{ width: "3rem", height: "3rem", margin: "5px" }}
                     />
                   );
                 })}
