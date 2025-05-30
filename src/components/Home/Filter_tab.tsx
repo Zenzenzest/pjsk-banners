@@ -95,6 +95,7 @@ export default function FilterTab() {
   const panelRef = useRef<HTMLDivElement>(null);
   const toggleFilter = () => setIsOpen((prev) => !prev);
   useEffect(() => {
+    console.log(selectedFilters);
     const handleClickOutside = (event: MouseEvent) => {
       if (
         panelRef.current &&
