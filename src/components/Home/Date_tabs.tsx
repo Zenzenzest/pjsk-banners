@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import GachaBanners from "../../assets/json/gacha_banners.json";
 import { useTheme } from "../../context/Theme_toggle";
+
 import { useServer } from "../../context/Server";
 import GachaTable from "./Gacha_table";
+import type { BannerTypes, GachaBannersProps } from "./types";
 const months = [
   "Jan",
   "Feb",
@@ -33,6 +35,7 @@ const timeData = [
     2025: [1, 2, 3, 4, 5],
   },
 ];
+
 const currentYear: string = Object.keys(timeData[timeData.length - 1])[0];
 const currentMonth: number =
   timeData[timeData.length - 1][currentYear][
@@ -46,16 +49,13 @@ export default function DateTabs() {
   const [selectedMonth, setSelectedMonth] = useState<number>(currentMonth);
   const { theme } = useTheme();
 
-  const filteredBanners = GachaBanners.filter((banner) => {
+  const filteredBanners: BannerTypes[] = GachaBanners.filter((banner) => {
     const date = new Date(Number(banner.start));
     const year = date.getFullYear();
     const month = date.getMonth() + 1;
     return year === selectedYear && month === selectedMonth;
   });
 
-  useEffect(() => {
-    console.log(filteredBanners);
-  }, [selectedMonth, selectedYear]);
   const handleYearChange = (y: number) => {
     setSelectedYear(y);
 
@@ -68,46 +68,53 @@ export default function DateTabs() {
 
   return (
     <div
-      className={`w-full flex flex-col justify-center items-centers gap-3 ${
+      className={`w-full flex flex-col justify-center items-centers gap-3  ${
         theme == "light"
-          ? "bg-bg-light-mode2 border-b border-color-border-light-mode text-text-light-mode"
+          ? "bg-bg-light-mode2  text-text-light-mode"
           : "bg-bg-dark-mode2"
       }`}
     >
-      <div className=" h-12 flex flex-row items-center justify-evenly text-lg pt-5">
-        {years.map((year) => {
-          return (
-            <div
-              onClick={() => handleYearChange(year)}
-              key={year}
-              className={`${year == selectedYear ? "border-b-2" : ""} ${
-                theme == "light"
-                  ? "border-text-deco-light-mode"
-                  : "border-mizuki"
-              }`}
-            >
-              {year}
-            </div>
-          );
-        })}
+      {/* DATE CONTAINER */}
+      <div className="border-b">
+        {/* YEARS */}
+        <div className=" h-12 flex flex-row items-center justify-evenly text-lg pt-3">
+          {years.map((year) => {
+            return (
+              <div
+                onClick={() => handleYearChange(year)}
+                key={year}
+                className={`${year == selectedYear ? "border-b-2" : ""} ${
+                  theme == "light"
+                    ? "border-text-deco-light-mode"
+                    : "border-mizuki"
+                }`}
+              >
+                {year}
+              </div>
+            );
+          })}
+        </div>
+        {/* MONTHS */}
+        <div className="w-full` flex flex-row flex-wrap gap-4 justify-center items-center text-base p-2 ">
+          {timeData[years.indexOf(selectedYear)][selectedYear].map((month) => {
+            return (
+              <div
+                key={month}
+                onClick={() => handleMonthChange(month)}
+                className={`${month == selectedMonth ? "border-b-2" : ""} ${
+                  theme == "light"
+                    ? "border-text-deco-light-mode"
+                    : "border-mizuki"
+                } `}
+              >
+                {months[month - 1]}
+              </div>
+            );
+          })}
+        </div>
       </div>
-      <div className="flex flex-row flex-wrap gap-7 justify-center items-center text-base p-5">
-        {timeData[years.indexOf(selectedYear)][selectedYear].map((month) => {
-          return (
-            <div
-              key={month}
-              onClick={() => handleMonthChange(month)}
-              className={`${month == selectedMonth ? "border-b-2" : ""} ${
-                theme == "light"
-                  ? "border-text-deco-light-mode"
-                  : "border-mizuki"
-              } `}
-            >
-              {months[month - 1]}
-            </div>
-          );
-        })}
-      </div>
+      {/* GACHA BANNERS */}
+      <GachaTable filteredBanners={filteredBanners} />
     </div>
   );
 }

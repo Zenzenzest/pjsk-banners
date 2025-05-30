@@ -9,6 +9,7 @@
   --color-mizuki: #ecc5e0;
   --color-text-deco-light-mode: #008ec4;
   --color-border-light-mode: #e8eaee;
+  --color-highlight-dark-mode: #52649e;
 }
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
