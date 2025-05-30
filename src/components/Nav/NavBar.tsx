@@ -7,9 +7,9 @@ export default function NavBar() {
   return (
     <>
       <div
-        className={`w-full h-15 flex flex-row items-center justify-evenly border-b ${
+        className={`w-full h-15 flex flex-row items-center justify-evenly border-b-2 font-bold ${
           theme == "light"
-            ? "bg-bg-light-mode text-text-light-mode border-bg-dark-mode"
+            ? "bg-bg-light-mode text-text-light-mode border-border-light-mode"
             : "bg-bg-dark-mode text-text-dark-mode border-mizuki"
         }`}
       >
