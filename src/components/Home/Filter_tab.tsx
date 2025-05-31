@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import type { SelectedFilterTypes } from "./types";
-
+import { useTheme } from "../../context/Theme_toggle";
+import GachaTable from "./Gacha_table";
+import GachaBanners from "../../assets/json/gacha_banners.json";
+import FilteredCards from "./Filtered_cards";
 const grouped = {
   "Virtual Singers": [
     "Hatsune Miku",
@@ -85,17 +88,20 @@ const filterCategories = {
 
 export default function FilterTab() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  
   const [selectedFilters, setSelectedFilters] = useState<SelectedFilterTypes>({
     Character: [],
     Unit: null,
     Attribute: null,
     Rarity: null,
   });
-
+  const { theme } = useTheme();
   const panelRef = useRef<HTMLDivElement>(null);
   const toggleFilter = () => setIsOpen((prev) => !prev);
+
+  
   useEffect(() => {
-    console.log(selectedFilters);
+
     const handleClickOutside = (event: MouseEvent) => {
       if (
         panelRef.current &&
@@ -178,16 +184,19 @@ export default function FilterTab() {
 
   return (
     <div
-      className="p-3 w-full h-auto flex flex-col justify-start items-center "
+      className={`p-3 w-full h-auto flex flex-col justify-start items-center ${
+        theme == "light" ? "bg-bg-light-mode2" : "bg-bg-dark-mode2"
+      }`}
       ref={panelRef}
     >
+      {/* BUTTON */}
       <button onClick={toggleFilter} className="">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
-          stroke="currentColor"
+          stroke={`${theme == "light" ? "#0a0a0a" : "#fafafa"}`}
           className="size-7 "
         >
           <path
@@ -197,9 +206,10 @@ export default function FilterTab() {
           />
         </svg>
       </button>
+      {/* FILTERS */}
       <div
-        className={`transition-all duration-500 ease-in-out overflow-hidden ${
-          isOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
+        className={`transition-all duration-500 ease-in-out overflow-hidden max-w-[500px] ${
+          isOpen ? "max-h-[800px]  opacity-100" : "max-h-0 opacity-0"
         } bg-gray-600 rounded-lg p-1.5`}
       >
         {Object.entries(filterCategories).map(([category, options]) => (
@@ -263,6 +273,11 @@ export default function FilterTab() {
             Apply
           </button>
         </div>
+      </div>
+
+      {/* GACHA CONTENT*/}
+      <div>
+        <FilteredCards />
       </div>
     </div>
   );

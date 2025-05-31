@@ -9,7 +9,7 @@ export default function NavBar() {
       <div
         className={`w-full h-15 flex flex-row items-center justify-evenly border-b-2 font-bold ${
           theme == "light"
-            ? "bg-bg-light-mode text-text-light-mode border-border-light-mode"
+            ? "bg-bg-light-mode text-text-light-mode border-gray-300"
             : "bg-bg-dark-mode text-text-dark-mode border-mizuki"
         }`}
       >
@@ -30,25 +30,6 @@ export default function NavBar() {
         <Link to="/saved_cards" className="text-center w-1/3 pl-7 pr-7">
           Saved Cards
         </Link>
-        {/* {nav_list.map((n, i) => {
-          if (i == 2) {
-            return (
-              <Link
-                to="/saved_cards"
-                className="text-center w-1/3 pl-7 pr-7"
-                key={n}
-              >
-                {n}
-              </Link>
-            );
-          } else {
-            return (
-              <Link to="/" className="text-center w-1/3" key={n}>
-                {n}
-              </Link>
-            );
-          }
-        })} */}
       </div>
       <Outlet />
     </>
