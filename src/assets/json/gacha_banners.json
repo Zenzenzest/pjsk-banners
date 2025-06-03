@@ -1425,5 +1425,1493 @@
     "cards": [131, 139, 149, 179, 206, 171],
     "start": 1704052800000,
     "end": 1704916799000
+  },
+  {
+    "id": 204,
+    "name": "2024 New Year 10x Free Gacha",
+    "cards": [192, 184, 148, 267, 231, 195],
+    "start": 1704139200000,
+    "end": 1706731199000
+  },
+  {
+    "id": 205,
+    "name": "New Year's Divine Beasts Gacha",
+    "cards": [308, 309, 310],
+    "start": 1704398400000,
+    "end": 1704916799000
+  },
+  {
+    "id": 206,
+    "name": "Shiho Hinomori Happy Birthday 2024 Gacha",
+    "cards": [311],
+    "start": 1704700800000,
+    "end": 1705305599000
+  },
+  {
+    "id": 207,
+    "name": "Twinkling Night Sky Milky Way Gacha",
+    "cards": [312, 313, 314],
+    "start": 1704916800000,
+    "end": 1705867199000
+  },
+  {
+    "id": 208,
+    "name": "[It's Back] A Maiden's Hope For The New Year Gacha",
+    "cards": [163, 164, 165],
+    "start": 1705176000000,
+    "end": 1705953599000
+  },
+  {
+    "id": 209,
+    "name": "Your Rhythm's Symphony Gacha",
+    "cards": [315, 316, 317],
+    "start": 1705867200000,
+    "end": 1706731199000
+  },
+  {
+    "id": 210,
+    "name": "Happiness Package Gacha",
+    "cards": [244, 267, 228, 265, 250, 241],
+    "start": 1706212800000,
+    "end": 1707076799000
+  },
+  {
+    "id": 211,
+    "name": "Mafuyu Asahina Happy Birthday 2024 Gacha",
+    "cards": [318],
+    "start": 1706342400000,
+    "end": 1706947199000
+  },
+  {
+    "id": 212,
+    "name": "Megurine Luka Happy Anniversary 2024 Gacha",
+    "cards": [319],
+    "start": 1706601600000,
+    "end": 1707206399000
+  },
+  {
+    "id": 213,
+    "name": "Sweet, Cute Valentine! Gacha",
+    "cards": [320, 321, 322],
+    "start": 1706731200000,
+    "end": 1707595199000
+  },
+  {
+    "id": 214,
+    "name": "[It's Back] Memoirs of Wrongdoings Gacha",
+    "cards": [151, 152, 153, 154, 155],
+    "start": 1707076800000,
+    "end": 1708286399000
+  },
+  {
+    "id": 215,
+    "name": "Kanade Yoisaki Happy Birthday 2024 Gacha",
+    "cards": [323],
+    "start": 1707552000000,
+    "end": 1708156799000
+  },
+  {
+    "id": 216,
+    "name": "Herald of Dewy Rainy Spring Gacha",
+    "cards": [324, 325, 326],
+    "start": 1707595200000,
+    "end": 1708372799000
+  },
+  {
+    "id": 217,
+    "name": "9 Million Downloads! 4★ Guaranteed Gacha",
+    "cards": [146, 156, 172, 167, 149, 119],
+    "start": 1707854400000,
+    "end": 1708891199000
+  },
+  {
+    "id": 218,
+    "name": "[It's Back] Secret Tea Time Gacha",
+    "cards": [175, 176, 177],
+    "start": 1707854400000,
+    "end": 1708631999000
+  },
+  {
+    "id": 219,
+    "name": "KAITO Happy Anniversary 2024 Gacha",
+    "cards": [327],
+    "start": 1708156800000,
+    "end": 1708761599000
+  },
+  {
+    "id": 220,
+    "name": "Let Out The Lambs Gacha",
+    "cards": [328, 329, 330],
+    "start": 1708372800000,
+    "end": 1709236799000
+  },
+  {
+    "id": 221,
+    "name": "Your Pick Gacha",
+    "cards": [287, 210, 276, 149, 281, 221, 266, 195, 291, 192, 229],
+    "start": 1708718400000,
+    "end": 1709582399000
+  },
+  {
+    "id": 222,
+    "name": "Imperial Soldiers Gacha",
+    "cards": [331, 332, 333],
+    "start": 1709236800000,
+    "end": 1710183599000
+  },
+  {
+    "id": 223,
+    "name": "Kohane Azusawa Happy Birthday 2024 Gacha",
+    "cards": [334],
+    "start": 1709366400000,
+    "end": 1709971199000
+  },
+  {
+    "id": 224,
+    "name": "Happiness Package Gacha",
+    "cards": [289, 277, 279, 267, 293, 287],
+    "start": 1709755200000,
+    "end": 1710442799000
+  },
+  {
+    "id": 225,
+    "name": "Miku Day 2024 Campaign Gacha",
+    "cards": [131, 150, 157, 167, 172, 183],
+    "start": 1709971200000,
+    "end": 1710399599000
+  },
+  {
+    "id": 226,
+    "name": "Hidden Circus Gacha",
+    "cards": [335, 336, 337],
+    "start": 1710183600000,
+    "end": 1711047599000
+  },
+  {
+    "id": 227,
+    "name": "[It's Back] Knights of White Gacha",
+    "cards": [186, 187, 188],
+    "start": 1710702000000,
+    "end": 1711479599000
+  },
+  {
+    "id": 228,
+    "name": "Airi Momoi Happy Birthday 2024 Gacha",
+    "cards": [338],
+    "start": 1710831600000,
+    "end": 1711436399000
+  },
+  {
+    "id": 229,
+    "name": "Fangs in the Shadows Gacha",
+    "cards": [339, 340, 341],
+    "start": 1711047600000,
+    "end": 1711825199000
+  },
+  {
+    "id": 230,
+    "name": "JP 2.5 Year Anniversary Greatest Hits Gacha",
+    "cards": [117, 62, 178, 204, 292, 1],
+    "start": 1711825200000,
+    "end": 1712861999000
+  },
+  {
+    "id": 231,
+    "name": "JP 2.5 Year Anniversary 4★ Guaranteed Premium Gift Gacha",
+    "cards": [303, 287, 301, 298, 279, 292],
+    "start": 1711825200000,
+    "end": 1712861999000
+  },
+  {
+    "id": 232,
+    "name": "JP 2.5 Year Anniversary Colorful Festival Gacha",
+    "cards": [342, 343, 344, 345, 346, 347],
+    "start": 1711825200000,
+    "end": 1712257199000
+  },
+  {
+    "id": 233,
+    "name": "3900's 10x Free Gacha",
+    "cards": [131, 65, 276, 67, 88, 195],
+    "start": 1711825200000,
+    "end": 1714503599000
+  },
+  {
+    "id": 234,
+    "name": "[Friend Invitation] 4★ Character Guaranteed Gacha",
+    "cards": [118, 139, 108, 156, 167, 172],
+    "start": 1711825200000,
+    "end": 1717138799000
+  },
+  {
+    "id": 235,
+    "name": "Fluttering Maidens Gacha",
+    "cards": [344, 345, 346, 347],
+    "start": 1712257200000,
+    "end": 1712861999000
+  },
+  {
+    "id": 236,
+    "name": "Space Colony Gacha",
+    "cards": [348, 349, 350],
+    "start": 1712862000000,
+    "end": 1713725999000
+  },
+  {
+    "id": 237,
+    "name": "3900's World Championship 2024 Spring Premium Gift Gacha",
+    "cards": [289, 351, 229, 352, 353, 303],
+    "start": 1713034800000,
+    "end": 1713725999000
+  },
+  {
+    "id": 238,
+    "name": "Minori Hanasato Happy Birthday 2024 Gacha",
+    "cards": [354],
+    "start": 1713078000000,
+    "end": 1713682799000
+  },
+  {
+    "id": 239,
+    "name": "[It's Back] Yearning for Spring, A Moment in the Night Gacha",
+    "cards": [200, 201, 202, 203],
+    "start": 1713380400000,
+    "end": 1714503599000
+  },
+  {
+    "id": 240,
+    "name": "Where Turning Wheels Take Us Gacha",
+    "cards": [355, 356, 357],
+    "start": 1713726000000,
+    "end": 1714503599000
+  },
+  {
+    "id": 241,
+    "name": "Happiness Package Gacha",
+    "cards": [210, 190, 266, 313, 267, 185],
+    "start": 1714158000000,
+    "end": 1714935599000
+  },
+  {
+    "id": 242,
+    "name": "Ena Shinonome Happy Birthday 2024 Gacha",
+    "cards": [358],
+    "start": 1714460400000,
+    "end": 1715065199000
+  },
+  {
+    "id": 243,
+    "name": "Escape the Rain Gacha",
+    "cards": [359, 360, 361],
+    "start": 1714503600000,
+    "end": 1715453999000
+  },
+  {
+    "id": 244,
+    "name": "[It's Back] The Naive Voice That Cries Out to You Gacha",
+    "cards": [212, 213, 214],
+    "start": 1714762800000,
+    "end": 1715626799000
+  },
+  {
+    "id": 245,
+    "name": "Saki Tenma Happy Birthday 2024 Gacha",
+    "cards": [362],
+    "start": 1715238000000,
+    "end": 1715842799000
+  },
+  {
+    "id": 246,
+    "name": "Bon Voyage! Friendship Ahoy! Gacha",
+    "cards": [363, 364, 365],
+    "start": 1715454000000,
+    "end": 1716231599000
+  },
+  {
+    "id": 247,
+    "name": "Your Pick Gacha",
+    "cards": [13, 183, 82, 108, 67, 330, 88, 120, 241, 113],
+    "start": 1715799600000,
+    "end": 1716577199000
+  },
+  {
+    "id": 248,
+    "name": "Tsukasa Tenma Happy Birthday 2024 Gacha",
+    "cards": [366],
+    "start": 1715929200000,
+    "end": 1716533999000
+  },
+  {
+    "id": 249,
+    "name": "Memories Swept Off on Ripples Gacha",
+    "cards": [367, 368, 369],
+    "start": 1716231600000,
+    "end": 1717181999000
+  },
+  {
+    "id": 250,
+    "name": "Toya Aoyagi Happy Birthday 2024 Gacha",
+    "cards": [370],
+    "start": 1716620400000,
+    "end": 1717225199000
+  },
+  {
+    "id": 251,
+    "name": "Under Eternal Bells Gacha",
+    "cards": [371, 372, 373],
+    "start": 1717182000000,
+    "end": 1718045999000
+  },
+  {
+    "id": 252,
+    "name": "[Friend Invitation] 4★ Character Guaranteed Gacha",
+    "cards": [118, 139, 108, 156, 167, 172],
+    "start": 1717786800000,
+    "end": 1722236399000
+  },
+  {
+    "id": 253,
+    "name": "[It's Back] JP 2.5 Year Anniversary Colorful Festival Gacha",
+    "cards": [342, 343, 344, 345, 346, 347],
+    "start": 1717786800000,
+    "end": 1718132399000
+  },
+  {
+    "id": 254,
+    "name": "[It's Back] JP 2.5 Year Anniversary Greatest Hits Gacha",
+    "cards": [117, 62, 178, 204, 292, 1],
+    "start": 1717786800000,
+    "end": 1718823599000
+  },
+  {
+    "id": 255,
+    "name": "[It's Back] JP 2.5 Year Anniversary 4★ Guaranteed Premium Gift Gacha",
+    "cards": [303, 287, 301, 298, 279, 292],
+    "start": 1717786800000,
+    "end": 1718823599000
+  },
+  {
+    "id": 256,
+    "name": "2.5 Year Anniversary 10x Free Gacha",
+    "cards": [252, 288, 277, 299, 280, 293],
+    "start": 1717786800000,
+    "end": 1720465199000
+  },
+  {
+    "id": 257,
+    "name": "Someone's Dear Ones Gacha",
+    "cards": [374, 375, 351],
+    "start": 1718046000000,
+    "end": 1718909999000
+  },
+  {
+    "id": 258,
+    "name": "[It's Back] Graceful Marriage Gacha",
+    "cards": [224, 225, 226],
+    "start": 1718391600000,
+    "end": 1719255599000
+  },
+  {
+    "id": 259,
+    "name": "2024 June Premium Gift Gacha",
+    "cards": [266, 256, 252, 281, 264, 278],
+    "start": 1718650800000,
+    "end": 1719946799000
+  },
+  {
+    "id": 260,
+    "name": "Chest of Glittering Emotions Gacha",
+    "cards": [376, 377, 378],
+    "start": 1718910000000,
+    "end": 1719773999000
+  },
+  {
+    "id": 261,
+    "name": "Rui Kamishiro Happy Birthday 2024 Gacha",
+    "cards": [379],
+    "start": 1719212400000,
+    "end": 1719817199000
+  },
+  {
+    "id": 262,
+    "name": "Colorful Festival Gacha",
+    "cards": [380, 381, 382, 383, 384],
+    "start": 1719774000000,
+    "end": 1720119599000
+  },
+  {
+    "id": 263,
+    "name": "Anime Expo 2024 4★Guaranteed Gacha",
+    "cards": [300, 317, 325, 328, 335, 340],
+    "start": 1720119600000,
+    "end": 1720983599000
+  },
+  {
+    "id": 264,
+    "name": "City of Spirits Gacha",
+    "cards": [382, 383, 384],
+    "start": 1720119600000,
+    "end": 1720724399000
+  },
+  {
+    "id": 265,
+    "name": "Anime Expo 2024 Once Daily Free 10x Gacha",
+    "cards": [281, 292, 314, 316, 326, 330],
+    "start": 1720076400000,
+    "end": 1720421999000
+  },
+  {
+    "id": 266,
+    "name": "Where Is the ♡? Gacha",
+    "cards": [385, 386, 387],
+    "start": 1720724400000,
+    "end": 1721588399000
+  },
+  {
+    "id": 267,
+    "name": "2024 July Premium Gift Gacha",
+    "cards": [350, 337, 348, 325, 339, 328],
+    "start": 1720897200000,
+    "end": 1722193199000
+  },
+  {
+    "id": 268,
+    "name": "Nene Kusanagi Happy Birthday 2024 Gacha",
+    "cards": [388],
+    "start": 1721458800000,
+    "end": 1722063599000
+  },
+  {
+    "id": 269,
+    "name": "Upon That Shooting Star Gacha",
+    "cards": [389, 390, 391],
+    "start": 1721588400000,
+    "end": 1722452399000
+  },
+  {
+    "id": 270,
+    "name": "[It's Back] Sporty Girl♡ Gacha",
+    "cards": [236, 237, 238],
+    "start": 1721761200000,
+    "end": 1722625199000
+  },
+  {
+    "id": 271,
+    "name": "An Shiraishi Happy Birthday 2024 Gacha",
+    "cards": [392],
+    "start": 1721977200000,
+    "end": 1722581999000
+  },
+  {
+    "id": 272,
+    "name": "Happiness Package Gacha",
+    "cards": [317, 356, 22, 111, 217, 252],
+    "start": 1722193200000,
+    "end": 1722970799000
+  },
+  {
+    "id": 273,
+    "name": "Welcome to the Diner! Gacha",
+    "cards": [393, 394, 395],
+    "start": 1722452400000,
+    "end": 1723316399000
+  },
+  {
+    "id": 274,
+    "name": "2024 Summer Campaign Gacha",
+    "cards": [192, 244, 251, 231, 239, 256],
+    "start": 1722884400000,
+    "end": 1723964399000
+  },
+  {
+    "id": 275,
+    "name": "Repaint My Colors! Gacha",
+    "cards": [396, 397, 398],
+    "start": 1723316400000,
+    "end": 1724266799000
+  },
+  {
+    "id": 276,
+    "name": "Ichika Hoshino Happy Birthday 2024 Gacha",
+    "cards": [399],
+    "start": 1723359600000,
+    "end": 1723964399000
+  },
+  {
+    "id": 277,
+    "name": "[It's Back] CYBER SNIPER Gacha",
+    "cards": [247, 248, 249],
+    "start": 1723662000000,
+    "end": 1724439599000
+  },
+  {
+    "id": 278,
+    "name": "Never-Ending Showtime Gacha",
+    "cards": [400, 401, 402],
+    "start": 1724266800000,
+    "end": 1725130799000
+  },
+  {
+    "id": 279,
+    "name": "Your Pick Gacha",
+    "cards": [117, 315, 191, 324, 240, 279, 135, 340, 300, 369],
+    "start": 1724526000000,
+    "end": 1725476399000
+  },
+  {
+    "id": 280,
+    "name": "Mizuki Akiyama Happy Birthday 2024 Gacha",
+    "cards": [403],
+    "start": 1724742000000,
+    "end": 1725346799000
+  },
+  {
+    "id": 281,
+    "name": "Magical Mirai 2024 Premium Gift Gacha",
+    "cards": [289, 365, 131, 27, 146],
+    "start": 1725044400000,
+    "end": 1725562799000
+  },
+  {
+    "id": 282,
+    "name": "Hatsune Miku Happy Anniversary 2024 Gacha",
+    "cards": [404],
+    "start": 1725087600000,
+    "end": 1725692399000
+  },
+  {
+    "id": 283,
+    "name": "Emotional Musical March Gacha",
+    "cards": [405, 406, 407, 408],
+    "start": 1725130800000,
+    "end": 1725994799000
+  },
+  {
+    "id": 284,
+    "name": "[It's Back] Before the storm Gacha",
+    "cards": [259, 260, 261],
+    "start": 1725649200000,
+    "end": 1726426799000
+  },
+  {
+    "id": 285,
+    "name": "Emu Otori Happy Birthday 2024 Gacha",
+    "cards": [409],
+    "start": 1725865200000,
+    "end": 1726469999000
+  },
+  {
+    "id": 286,
+    "name": "Page 1 of Youth Gacha",
+    "cards": [410, 411, 412],
+    "start": 1725994800000,
+    "end": 1726858799000
+  },
+  {
+    "id": 287,
+    "name": "Happiness Package Gacha",
+    "cards": [349, 357, 375, 336, 339, 351],
+    "start": 1726513200000,
+    "end": 1727636399000
+  },
+  {
+    "id": 288,
+    "name": "Phantom Chaser Gacha",
+    "cards": [413, 414, 415],
+    "start": 1726858800000,
+    "end": 1727722799000
+  },
+  {
+    "id": 289,
+    "name": "[Friend Invitation] 4★ Character Guaranteed Gacha",
+    "cards": [209, 250, 266, 205, 77, 218],
+    "start": 1727074800000,
+    "end": 1733039999000
+  },
+  {
+    "id": 290,
+    "name": "2024 September Premium Gift Gacha",
+    "cards": [378, 364, 377, 374, 368, 340],
+    "start": 1727204400000,
+    "end": 1727981999000
+  },
+  {
+    "id": 291,
+    "name": "Beginner's 1 Guaranteed 4★ Character 10x Ticket Gacha",
+    "cards": [2, 183, 190, 239, 112, 103],
+    "start": 1727679600000,
+    "end": "Present"
+  },
+  {
+    "id": 292,
+    "name": "JP 3rd Anniversary 10x Free Gacha",
+    "cards": [365, 287, 62, 178, 204, 170],
+    "start": 1727679600000,
+    "end": 1730401199000
+  },
+  {
+    "id": 293,
+    "name": "JP 3rd Anniversary VIRTUAL SINGER Premium Gift Gacha",
+    "cards": [365, 351, 314, 300, 252, 268],
+    "start": 1727679600000,
+    "end": 1728759599000
+  },
+  {
+    "id": 294,
+    "name": "JP 3rd Anniversary Leo/need Premium Gift Gacha",
+    "cards": [364, 348, 288, 317],
+    "start": 1727679600000,
+    "end": 1728759599000
+  },
+  {
+    "id": 295,
+    "name": "JP 3rd Anniversary MORE MORE JUMP! Premium Gift Gacha",
+    "cards": [325, 277, 355, 301],
+    "start": 1727679600000,
+    "end": 1728759599000
+  },
+  {
+    "id": 296,
+    "name": "JP 3rd Anniversary Vivid BAD SQUAD Premium Gift Gacha",
+    "cards": [267, 329, 298, 375],
+    "start": 1727679600000,
+    "end": 1728759599000
+  },
+  {
+    "id": 297,
+    "name": "JP 3rd Anniversary Wonderlands×Showtime Premium Gift Gacha",
+    "cards": [280, 336, 367, 313],
+    "start": 1727679600000,
+    "end": 1728759599000
+  },
+  {
+    "id": 298,
+    "name": "JP 3rd Anniversary Nightcord at 25:00 Premium Gift Gacha",
+    "cards": [339, 302, 291, 254],
+    "start": 1727679600000,
+    "end": 1728759599000
+  },
+  {
+    "id": 299,
+    "name": "JP 3rd Anniversary Memorial Select Gacha",
+    "cards": [117, 276, 328, 335, 91, 289],
+    "start": 1727679600000,
+    "end": 1728759599000
+  },
+  {
+    "id": 300,
+    "name": "JP 3rd Anniversary Your Pick Gacha (Limited Edition)",
+    "cards": [56, 105, 133, 187, 200, 212],
+    "start": 1727679600000,
+    "end": 1728759599000
+  },
+  {
+    "id": 301,
+    "name": "JP 3rd Anniversary Colorful Festival Gacha Dream Pick",
+    "cards": [416, 417, 418, 419, 420, 421],
+    "start": 1727722800000,
+    "end": 1728068399000
+  },
+  {
+    "id": 302,
+    "name": "Grow Up With Me! Gacha",
+    "cards": [418, 419, 420, 421],
+    "start": 1728068400000,
+    "end": 1728759599000
+  },
+  {
+    "id": 303,
+    "name": "Haruka Kiritani Happy Birthday 2024 Gacha",
+    "cards": [422],
+    "start": 1728111600000,
+    "end": 1728716399000
+  },
+  {
+    "id": 304,
+    "name": "2024 October Premium Gift Gacha",
+    "cards": [300, 298, 317, 385, 335],
+    "start": 1728586800000,
+    "end": 1730487599000
+  },
+  {
+    "id": 305,
+    "name": "Find the Exit Gacha",
+    "cards": [423, 424, 352],
+    "start": 1728759600000,
+    "end": 1729623599000
+  },
+  {
+    "id": 306,
+    "name": "Beginner's Memorial Select Gacha",
+    "cards": [
+      117, 13, 41, 71, 276, 80, 355, 301, 328, 129, 102, 47, 335, 25, 367, 425,
+      91, 16, 194, 68, 289, 30, 314, 92, 350, 268
+    ],
+    "start": 1728759600000,
+    "end": "Present"
+  },
+  {
+    "id": 307,
+    "name": "[It's Back] Darkness Festa Gacha",
+    "cards": [271, 272, 273, 274],
+    "start": 1729018800000,
+    "end": 1729796399000
+  },
+  {
+    "id": 308,
+    "name": "Azure Resonance Gacha",
+    "cards": [426, 427, 428],
+    "start": 1729623600000,
+    "end": 1730401199000
+  },
+  {
+    "id": 309,
+    "name": "Happiness Package Gacha",
+    "cards": [348, 326, 299, 167, 93, 314],
+    "start": 1729796400000,
+    "end": 1730573999000
+  },
+  {
+    "id": 310,
+    "name": "Honami Mochizuki Happy Birthday 2024 Gacha",
+    "cards": [429],
+    "start": 1730012400000,
+    "end": 1730617199000
+  },
+  {
+    "id": 311,
+    "name": "As Autumn Dusk Wanes Gacha",
+    "cards": [430, 431, 432],
+    "start": 1730401200000,
+    "end": 1731095999000
+  },
+  {
+    "id": 312,
+    "name": "Nightcord at 25:00 World Link Event Support Gacha",
+    "cards": [339, 385, 291, 254, 146],
+    "start": 1730487600000,
+    "end": 1732305599000
+  },
+  {
+    "id": 313,
+    "name": "MEIKO Happy Anniversary 2024 Gacha",
+    "cards": [433],
+    "start": 1730793600000,
+    "end": 1731398399000
+  },
+  {
+    "id": 314,
+    "name": "Heart in Water Gacha",
+    "cards": [434, 435, 436, 437],
+    "start": 1731096000000,
+    "end": 1732305599000
+  },
+  {
+    "id": 315,
+    "name": "2024 Fall Campaign Gacha",
+    "cards": [341, 351, 313, 326, 390, 396],
+    "start": 1731182400000,
+    "end": 1732564799000
+  },
+  {
+    "id": 316,
+    "name": "[It's Back] Spooky Forest Gacha",
+    "cards": [283, 284, 285],
+    "start": 1731355200000,
+    "end": 1732132799000
+  },
+  {
+    "id": 317,
+    "name": "Akito Shinonome Happy Birthday 2024 Gacha",
+    "cards": [438],
+    "start": 1731398400000,
+    "end": 1732003199000
+  },
+  {
+    "id": 318,
+    "name": "[It's Back] One With My Crew Gacha",
+    "cards": [74, 75, 76],
+    "start": 1731787200000,
+    "end": 1732564799000
+  },
+  {
+    "id": 319,
+    "name": "Play the Shadow Gacha",
+    "cards": [439, 440, 353],
+    "start": 1732305600000,
+    "end": 1732996799000
+  },
+  {
+    "id": 320,
+    "name": "[It's Back] Yearning for Spring, A Moment in the Night Gacha",
+    "cards": [200, 201, 202, 203],
+    "start": 1732564800000,
+    "end": 1733342399000
+  },
+  {
+    "id": 321,
+    "name": "Your Pick Gacha",
+    "cards": [390, 376, 363, 267, 22, 401, 291, 228, 97, 118],
+    "start": 1732737600000,
+    "end": 1733515199000
+  },
+  {
+    "id": 322,
+    "name": "Black Friday Special Once Daily Free 10x Gacha",
+    "cards": [402, 387, 349, 400, 398, 356],
+    "start": 1732867200000,
+    "end": 1733212799000
+  },
+  {
+    "id": 323,
+    "name": "Your Ticket to the City of Splendor Gacha",
+    "cards": [441, 442, 443],
+    "start": 1732996800000,
+    "end": 1733860799000
+  },
+  {
+    "id": 324,
+    "name": "Shizuku Hinomori Happy Birthday 2024 Gacha",
+    "cards": [444],
+    "start": 1733472000000,
+    "end": 1734076799000
+  },
+  {
+    "id": 325,
+    "name": "3rd Anniversary 10x Free Gacha",
+    "cards": [365, 287, 62, 178, 204, 170],
+    "start": 1733558400000,
+    "end": 1736279999000
+  },
+  {
+    "id": 326,
+    "name": "[It's Back] JP 3rd Anniversary VIRTUAL SINGER Premium Gift Gacha",
+    "cards": [365, 351, 314, 300, 252, 268],
+    "start": 1733558400000,
+    "end": 1734638399000
+  },
+  {
+    "id": 327,
+    "name": "[It's Back] JP 3rd Anniversary Leo/need Premium Gift Gacha",
+    "cards": [364, 348, 288, 317],
+    "start": 1733558400000,
+    "end": 1734638399000
+  },
+  {
+    "id": 328,
+    "name": "[It's Back] JP 3rd Anniversary MORE MORE JUMP! Premium Gift Gacha",
+    "cards": [325, 277, 355, 301],
+    "start": 1733558400000,
+    "end": 1734638399000
+  },
+  {
+    "id": 329,
+    "name": "[It's Back] JP 3rd Anniversary Vivid BAD SQUAD Premium Gift Gacha",
+    "cards": [267, 329, 298, 375],
+    "start": 1733558400000,
+    "end": 1734638399000
+  },
+  {
+    "id": 330,
+    "name": "[It's Back] JP 3rd Anniversary Wonderlands×Showtime Premium Gift Gacha",
+    "cards": [280, 336, 367, 313],
+    "start": 1733558400000,
+    "end": 1734638399000
+  },
+  {
+    "id": 331,
+    "name": "[It's Back] JP 3rd Anniversary Nightcord at 25:00 Premium Gift Gacha",
+    "cards": [339, 302, 291, 254],
+    "start": 1733558400000,
+    "end": 1734638399000
+  },
+  {
+    "id": 332,
+    "name": "[It's Back] JP 3rd Anniversary Your Pick Gacha (Limited Edition)",
+    "cards": [56, 105, 133, 187, 200, 212],
+    "start": 1733558400000,
+    "end": 1734638399000
+  },
+  {
+    "id": 333,
+    "name": "[It's Back] JP 3rd Anniversary Memorial Select Gacha",
+    "cards": [117, 276, 328, 335, 91, 289],
+    "start": 1733558400000,
+    "end": 1734638399000
+  },
+
+  {
+    "id": 334,
+    "name": "[Friend Invitation] 4★ Character Guaranteed Gacha",
+    "cards": [209, 250, 266, 205, 77, 218],
+    "start": 1733558400000,
+    "end": 1738353599000
+  },
+  {
+    "id": 335,
+    "name": "[It's Back] JP 3rd Anniversary Colorful Festival Gacha Dream Pick",
+    "cards": [416, 417, 418, 419, 420, 421],
+    "start": 1733601600000,
+    "end": 1733947199000
+  },
+  {
+    "id": 336,
+    "name": "24 Hours With the Animal Police! Gacha",
+    "cards": [445, 446, 447],
+    "start": 1733860800000,
+    "end": 1734724799000
+  },
+  {
+    "id": 337,
+    "name": "[It's Back] Fly to The Future! Gacha",
+    "cards": [294, 295, 296],
+    "start": 1734120000000,
+    "end": 1734897599000
+  },
+  {
+    "id": 338,
+    "name": "3rd ANNIV. Premium Gift Gacha",
+    "cards": [365, 387, 336, 349, 355, 375],
+    "start": 1734379200000,
+    "end": 1735675199000
+  },
+  {
+    "id": 339,
+    "name": "[It's Back] Scramble Flower Gacha",
+    "cards": [123, 124, 125],
+    "start": 1734638400000,
+    "end": 1735415999000
+  },
+  {
+    "id": 340,
+    "name": "Memory of Melody Gacha",
+    "cards": [448, 449, 450],
+    "start": 1734724800000,
+    "end": 1735675199000
+  },
+  {
+    "id": 341,
+    "name": "13 Million Downloads! 4★ Guaranteed Gacha",
+    "cards": [410, 256, 280, 276, 413, 314],
+    "start": 1734811200000,
+    "end": 1736107199000
+  },
+  {
+    "id": 342,
+    "name": "2024 December Premium Gift Gacha",
+    "cards": [386, 351, 244, 330, 357, 367],
+    "start": 1734984000000,
+    "end": 1735675199000
+  },
+  {
+    "id": 343,
+    "name": "[It's Back] Romantic Bride Gacha",
+    "cards": [85, 86, 87],
+    "start": 1735156800000,
+    "end": 1735934399000
+  },
+  {
+    "id": 344,
+    "name": "Kagamine Rin Happy Anniversary 2024 Gacha",
+    "cards": [451],
+    "start": 1735286400000,
+    "end": 1735891199000
+  },
+  {
+    "id": 345,
+    "name": "Kagamine Len Happy Anniversary 2024 Gacha",
+    "cards": [452],
+    "start": 1735286400000,
+    "end": 1735891199000
+  },
+  {
+    "id": 346,
+    "name": "2025 New Year 10x Free Gacha",
+    "cards": [37, 389, 376, 141, 280, 135],
+    "start": 1735675200000,
+    "end": 1738353599000
+  },
+  {
+    "id": 347,
+    "name": "2025 New Year Premium Gift Gacha",
+    "cards": [131, 411, 356, 396, 335, 385],
+    "start": 1735675200000,
+    "end": 1736452799000
+  },
+  {
+    "id": 348,
+    "name": "2025 New Year Colorful Festival Gacha",
+    "cards": [453, 454, 455, 456, 457],
+    "start": 1735675200000,
+    "end": 1736020799000
+  },
+  {
+    "id": 349,
+    "name": "Vivid BAD SQUAD World Link Event Support Gacha",
+    "cards": [396, 374, 423, 266, 131],
+    "start": 1735848000000,
+    "end": 1737662399000
+  },
+  {
+    "id": 350,
+    "name": "New Year's Enchanting Flowers Bloom Bright Gacha",
+    "cards": [455, 456, 457],
+    "start": 1736020800000,
+    "end": 1736452799000
+  },
+  {
+    "id": 351,
+    "name": "Hello♡SEKAI Magical Meetings Gacha",
+    "cards": [458, 459, 460, 461, 462, 463],
+    "start": 1736280000000,
+    "end": 1737532799000
+  },
+  {
+    "id": 352,
+    "name": "Shiho Hinomori Happy Birthday 2025 Gacha",
+    "cards": [464],
+    "start": 1736323200000,
+    "end": 1736927999000
+  },
+  {
+    "id": 353,
+    "name": "Here Comes the Challenger Gacha",
+    "cards": [465, 466, 467, 468],
+    "start": 1736452800000,
+    "end": 1737662399000
+  },
+  {
+    "id": 354,
+    "name": "[It's Back] New Year's Divine Beasts Gacha",
+    "cards": [308, 309, 310],
+    "start": 1736539200000,
+    "end": 1737316799000
+  },
+  {
+    "id": 355,
+    "name": "2025 January Premium Gift Gacha",
+    "cards": [410, 413, 391, 400, 256, 326],
+    "start": 1736798400000,
+    "end": 1738267199000
+  },
+  {
+    "id": 356,
+    "name": "[It's Back] Fluffy☆ Dreamland Gacha",
+    "cards": [56, 57, 58],
+    "start": 1737057600000,
+    "end": 1737835199000
+  },
+  {
+    "id": 357,
+    "name": "2025 Winter Campaign Gacha",
+    "cards": [423, 339, 412, 352, 401, 427],
+    "start": 1737316800000,
+    "end": 1738439999000
+  },
+  {
+    "id": 358,
+    "name": "[It's Back] A Maiden's Hope For The New Year Gacha",
+    "cards": [163, 164, 165],
+    "start": 1737403200000,
+    "end": 1738180799000
+  },
+  {
+    "id": 359,
+    "name": "Punk Night Tokyo Gacha",
+    "cards": [469, 470, 471],
+    "start": 1737662400000,
+    "end": 1738353599000
+  },
+  {
+    "id": 360,
+    "name": "Your Pick Gacha",
+    "cards": [208, 410, 377, 357, 330, 400, 386, 171, 180, 350],
+    "start": 1737921600000,
+    "end": 1738699199000
+  },
+  {
+    "id": 361,
+    "name": "Mafuyu Asahina Happy Birthday 2025 Gacha",
+    "cards": [472],
+    "start": 1737964800000,
+    "end": 1738569599000
+  },
+  {
+    "id": 362,
+    "name": "Megurine Luka Happy Anniversary 2025 Gacha",
+    "cards": [473],
+    "start": 1738224000000,
+    "end": 1738828799000
+  },
+  {
+    "id": 363,
+    "name": "Photogenic ♡ Valentine Gacha",
+    "cards": [474, 475, 476],
+    "start": 1738353600000,
+    "end": 1739217599000
+  },
+  {
+    "id": 364,
+    "name": "[It's Back] Knights of White Gacha",
+    "cards": [186, 187, 188],
+    "start": 1738785600000,
+    "end": 1739390399000
+  },
+  {
+    "id": 365,
+    "name": "Kanade Yoisaki Happy Birthday 2025 Gacha",
+    "cards": [477],
+    "start": 1739174400000,
+    "end": 1739779199000
+  },
+  {
+    "id": 366,
+    "name": "Gazing Ever Higher Gacha",
+    "cards": [478, 479, 480],
+    "start": 1739217600000,
+    "end": 1740081599000
+  },
+  {
+    "id": 367,
+    "name": "[It's Back] Sweet, Cute Valentine! Gacha",
+    "cards": [320, 321, 322],
+    "start": 1739390400000,
+    "end": 1740167999000
+  },
+  {
+    "id": 368,
+    "name": "2025 February Premium Gift Gacha",
+    "cards": [415, 353, 424, 439, 426, 325],
+    "start": 1739563200000,
+    "end": 1740772799000
+  },
+  {
+    "id": 369,
+    "name": "KAITO Happy Anniversary 2025 Gacha",
+    "cards": [481],
+    "start": 1739779200000,
+    "end": 1740383999000
+  },
+  {
+    "id": 370,
+    "name": "Rainbow Magic Drawn in the Sky Gacha",
+    "cards": [482, 483, 484],
+    "start": 1740081600000,
+    "end": 1740772799000
+  },
+  {
+    "id": 371,
+    "name": "[It's Back] Graceful Marriage Gacha",
+    "cards": [224, 225, 226],
+    "start": 1740340800000,
+    "end": 1741118399000
+  },
+  {
+    "id": 372,
+    "name": "14 Million Downloads! 10x Gacha",
+    "cards": [427, 355, 375, 401, 339, 428],
+    "start": 1740427200000,
+    "end": 1741633199000
+  },
+  {
+    "id": 373,
+    "name": "Happiness Package Gacha",
+    "cards": [426, 412, 412, 440, 254, 352],
+    "start": 1740513600000,
+    "end": 1741204799000
+  },
+  {
+    "id": 374,
+    "name": "What Awaits After the Battle Gacha",
+    "cards": [485, 486, 487],
+    "start": 1740772800000,
+    "end": 1741463999000
+  },
+  {
+    "id": 375,
+    "name": "Wonderlands×Showtime World Link Event Support Gacha",
+    "cards": [335, 312, 367, 279, 27],
+    "start": 1740859200000,
+    "end": 1742669999000
+  },
+  {
+    "id": 376,
+    "name": "Kohane Azusawa Happy Birthday 2025 Gacha",
+    "cards": [],
+    "start": 1740902400000,
+    "end": 1741507199000
+  },
+  {
+    "id": 377,
+    "name": "Crown of Suit Gacha",
+    "cards": [489, 490, 491, 492],
+    "start": 1741464000000,
+    "end": 1742669999000
+  },
+  {
+    "id": 378,
+    "name": "[It's Back] Imperial Soldiers Gacha",
+    "cards": [331, 332, 333],
+    "start": 1741719600000,
+    "end": 1742497199000
+  },
+  {
+    "id": 379,
+    "name": "[It's Back] Secret Tea Time Gacha",
+    "cards": [175, 176, 177],
+    "start": 1742065200000,
+    "end": 1742842799000
+  },
+  {
+    "id": 380,
+    "name": "Airi Momoi Happy Birthday 2025 Gacha",
+    "cards": [493],
+    "start": 1742367600000,
+    "end": 1742972399000
+  },
+  {
+    "id": 381,
+    "name": "Roots in the Snow Gacha",
+    "cards": [494, 495, 496],
+    "start": 1742670000000,
+    "end": 1743361199000
+  },
+  {
+    "id": 382,
+    "name": "[It's Back] Wanderer's Journey Gacha",
+    "cards": [133, 134, 135],
+    "start": 1743015600000,
+    "end": 1743793199000
+  },
+  {
+    "id": 383,
+    "name": "JP 3.5 Year Anniversary Run-Up Happiness Package Gacha",
+    "cards": [364, 324, 424, 401, 263, 428],
+    "start": 1743188400000,
+    "end": 1744095599000
+  },
+  {
+    "id": 384,
+    "name": "JP 3.5 Year Anniversary Colorful Festival Gacha",
+    "cards": [497, 498, 499, 500, 501, 502],
+    "start": 1743361200000,
+    "end": 1743793199000
+  },
+  {
+    "id": 385,
+    "name": "JP 3.5 Year Anniversary Premium Gift Gacha",
+    "cards": [289, 241, 314, 300, 69, 391],
+    "start": 1743361200000,
+    "end": 1746082799000
+  },
+  {
+    "id": 386,
+    "name": "JP 3.5 Year Anniversary 4★ Guaranteed Gacha ",
+    "cards": [378, 411, 277, 158, 425, 217],
+    "start": 1743361200000,
+    "end": 1748761199000
+  },
+  {
+    "id": 387,
+    "name": "JP 3.5 Year Anniversary 10x Free Gacha",
+    "cards": [131, 65, 276, 67, 88, 195],
+    "start": 1743361200000,
+    "end": 1748761199000
+  },
+  {
+    "id": 388,
+    "name": "Play With Dogs Gacha",
+    "cards": [500, 501, 502],
+    "start": 1743793200000,
+    "end": 1744311599000
+  },
+  {
+    "id": 389,
+    "name": "2025 April Premium Gift Gacha",
+    "cards": [471, 470, 449, 398, 389, 412],
+    "start": 1744052400000,
+    "end": 1746039599000
+  },
+  {
+    "id": 390,
+    "name": "Drawing Blooming Gacha",
+    "cards": [503, 504, 505],
+    "start": 1744311600000,
+    "end": 1745175599000
+  },
+  {
+    "id": 391,
+    "name": "[It's Back] Fluttering Maidens Gacha",
+    "cards": [344, 345, 346, 347],
+    "start": 1744484400000,
+    "end": 1745261999000
+  },
+  {
+    "id": 392,
+    "name": "Minori Hanasato Happy Birthday 2025 Gacha",
+    "cards": [506],
+    "start": 1744614000000,
+    "end": 1745218799000
+  },
+  {
+    "id": 393,
+    "name": "Easter 10x Gacha",
+    "cards": [424, 415, 412, 450, 439, 446],
+    "start": 1744830000000,
+    "end": 1746039599000
+  },
+  {
+    "id": 394,
+    "name": "Not Overlap Sounds Gacha",
+    "cards": [507, 508, 509],
+    "start": 1745175600000,
+    "end": 1746039599000
+  },
+  {
+    "id": 395,
+    "name": "[It's Back] The Naive Voice That Cries Out to You Gacha",
+    "cards": [212, 213, 214],
+    "start": 1745607600000,
+    "end": 1746385199000
+  },
+  {
+    "id": 396,
+    "name": "Ena Shinonome Happy Birthday 2025 Gacha",
+    "cards": [510],
+    "start": 1745996400000,
+    "end": 1746601199000
+  },
+  {
+    "id": 397,
+    "name": "Eternal Bout Gacha",
+    "cards": [511, 512, 513],
+    "start": 1746039600000,
+    "end": 1746817199000
+  },
+  {
+    "id": 398,
+    "name": "MORE MORE JUMP! World Link Event Support Gacha",
+    "cards": [376, 277, 355, 190, 484],
+    "start": 1746212400000,
+    "end": 1748026799000
+  },
+  {
+    "id": 399,
+    "name": "2025 May Premium Gift Gacha",
+    "cards": [484, 478, 469, 482, 448, 374],
+    "start": 1746558000000,
+    "end": 1748717999000
+  },
+  {
+    "id": 400,
+    "name": "COLORFUL STAGE! The Movie Release L/N Recollection Gacha",
+    "cards": [320, 176, 427, 446, 289],
+    "start": 1746558000000,
+    "end": 1746989999000
+  },
+  {
+    "id": 401,
+    "name": "Saki Tenma Happy Birthday 2025 Gacha",
+    "cards": [514],
+    "start": 1746774000000,
+    "end": 1747378799000
+  },
+  {
+    "id": 402,
+    "name": "Giving You Our All! Gacha",
+    "cards": [515, 516, 517, 518],
+    "start": 1746817200000,
+    "end": 1748026799000
+  },
+  {
+    "id": 403,
+    "name": "COLORFUL STAGE! The Movie Release MMJ Recollection Gacha",
+    "cards": [285, 412, 377, 272, 192],
+    "start": 1746990000000,
+    "end": 1747421999000
+  },
+  {
+    "id": 404,
+    "name": "[It's Back] Escape the Rain Gacha",
+    "cards": [359, 360, 361],
+    "start": 1747162800000,
+    "end": 1747940399000
+  },
+  {
+    "id": 405,
+    "name": "COLORFUL STAGE! The Movie Release VBS Recollection Gacha",
+    "cards": [424, 309, 273, 299, 131],
+    "start": 1747422000000,
+    "end": 1747853999000
+  },
+  {
+    "id": 406,
+    "name": "Tsukasa Tenma Happy Birthday 2025 Gacha",
+    "cards": [519],
+    "start": 1747465200000,
+    "end": 1748069999000
+  },
+  {
+    "id": 407,
+    "name": "[It's Back] Moonlit Night's Sister Rabbits Gacha",
+    "cards": [114, 115, 116],
+    "start": 1747767600000,
+    "end": 1748545199000
+  },
+  {
+    "id": 408,
+    "name": "COLORFUL STAGE! The Movie Release WXS Recollection Gacha",
+    "cards": [335, 400, 321, 274, 27],
+    "start": 1747854000000,
+    "end": 1748285999000
+  },
+  {
+    "id": 409,
+    "name": "Encountering the Unknown?! Cosmic Opera Gacha",
+    "cards": [520, 521, 522],
+    "start": 1748026800000,
+    "end": 1748717999000
+  },
+  {
+    "id": 410,
+    "name": "Toya Aoyagi Happy Birthday 2025 Gacha",
+    "cards": [523],
+    "start": 1748156400000,
+    "end": 1748761199000
+  },
+  {
+    "id": 411,
+    "name": "Your Pick Gacha",
+    "cards": [427, 446, 377, 424, 398, 439, 414, 387, 484, 352],
+    "start": 1748286000000,
+    "end": 1749063599000
+  },
+  {
+    "id": 412,
+    "name": "COLORFUL STAGE! The Movie Release N25 Recollection Gacha",
+    "cards": [448, 271, 238, 415, 146],
+    "start": 1748286000000,
+    "end": 1748717999000
+  },
+  {
+    "id": 413,
+    "name": "[It's Back] Sporty Girl♡ Gacha",
+    "cards": [236, 237, 238],
+    "start": 1748458800000,
+    "end": 1749236399000
+  },
+  {
+    "id": 414,
+    "name": "In My Fairytale Gacha",
+    "cards": [524, 525, 526],
+    "start": 1748718000000,
+    "end": 1749581999000
+  },
+  {
+    "id": 415,
+    "name": "3.5 Year Anniversary Countdown Happiness Package Gacha",
+    "cards": [364, 324, 424, 401, 263, 428],
+    "start": 1748804400000,
+    "end": 1749711599000
   }
 ]

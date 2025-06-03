@@ -88,7 +88,7 @@ const filterCategories = {
 
 export default function FilterTab() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  
+
   const [selectedFilters, setSelectedFilters] = useState<SelectedFilterTypes>({
     Character: [],
     Unit: null,
@@ -99,9 +99,7 @@ export default function FilterTab() {
   const panelRef = useRef<HTMLDivElement>(null);
   const toggleFilter = () => setIsOpen((prev) => !prev);
 
-  
   useEffect(() => {
-
     const handleClickOutside = (event: MouseEvent) => {
       if (
         panelRef.current &&

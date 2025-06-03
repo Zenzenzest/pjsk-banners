@@ -14,6 +14,8 @@ type Entry = {
   attribute: string;
   untrained_url: string;
   trained_url: string;
+  untrained_icon: string;
+  trained_icon: string;
 };
 const groupedCharacters: Record<string, string[]> = {
   "Virtual Singers": [
@@ -99,6 +101,8 @@ export default function CreateData() {
     attribute: "Cute",
     untrained_url: "",
     trained_url: "",
+    untrained_icon: "",
+    trained_icon: "",
   });
 
   useEffect(() => {
@@ -123,30 +127,49 @@ export default function CreateData() {
     const autoGroup = getGroupForCharacter(char);
     setForm((prev) => ({ ...prev, character: char, group: autoGroup }));
   };
-
-  const handleSubmit = () => {
-    
+  function trimImageUrl(url: string): string {
+    const match = url.match(/^(.*?\.(png|webp))/);
+    return match ? match[1] : url;
+  }
+  async function downloadImage(url: string, filename: string) {
+    try {
+      const response = await fetch(url);
+      const blob = await response.blob();
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    } catch (err) {
+      console.error(`Failed to download ${filename}:`, err);
+    }
+  }
+  const handleSubmit = async () => {
+    const trimmedUntrainedIcon = trimImageUrl(form.untrained_icon.trim());
+    const trimmedTrainedIcon = trimImageUrl(form.trained_icon.trim());
+    const trimmedUntrainedUrl = trimImageUrl(form.untrained_url.trim());
+    const trimmedTrainedUrl = trimImageUrl(form.trained_url.trim());
     const shouldWarn =
-      form.rarity <= 4 && form.untrained_url.trim() === form.trained_url.trim();
+      form.rarity <= 4 &&
+      (form.untrained_url.trim() === form.trained_url.trim() ||
+        trimmedUntrainedIcon === trimmedTrainedIcon);
 
     if (shouldWarn) {
       setUrlWarning(
-        "Untrained and Trained image URLs must be different for rarity 4 or lower."
+        "For rarity 4 or lower, untrained and trained image URLs and icon URLs must be different."
       );
-      return; 
+      return;
     } else {
-      setUrlWarning(""); 
+      setUrlWarning("");
     }
-    let updatedEntries = [...entries];
 
+    let updatedEntries = [...entries];
     let newId: number;
 
     if (enableCustomId && customId && customId >= 1) {
-      // Increment all IDs from customId and above
       updatedEntries = updatedEntries.map((entry) =>
         entry.id >= customId ? { ...entry, id: entry.id + 1 } : entry
       );
-
       newId = customId;
     } else {
       const lastId =
@@ -157,27 +180,29 @@ export default function CreateData() {
     const newEntry: Entry = {
       id: newId,
       ...form,
+      untrained_url: trimmedUntrainedUrl,
+      trained_url: trimmedTrainedUrl,
+      untrained_icon: trimmedUntrainedIcon,
+      trained_icon: trimmedTrainedIcon,
     };
 
-    // Insert the new entry at correct position based on ID sorting
     updatedEntries.push(newEntry);
     updatedEntries.sort((a, b) => a.id - b.id);
 
     setEntries(updatedEntries);
     localStorage.setItem("entries", JSON.stringify(updatedEntries));
 
-    // Reset URL fields
     setForm((prev) => ({
       ...prev,
       untrained_url: "",
       trained_url: "",
+      untrained_icon: "",
+      trained_icon: "",
     }));
 
-    // Reset insert mode
     setEnableCustomId(false);
     setCustomId("");
   };
-
   const deleteLastEntry = () => {
     if (entries.length === 0) return;
 
@@ -235,136 +260,156 @@ export default function CreateData() {
   };
 
   return (
-    <div className="p-4 space-y-4 max-w-xl mx-auto">
-      <input
-        type="text"
-        placeholder="Name"
-        value={form.name}
-        onChange={(e) => setForm({ ...form, name: e.target.value })}
-        className="border p-2 w-full rounded"
-      />
-      <div className="flex items-center gap-2 my-2">
+    <div className="p-2 w-full h-full flex flex-row gap-5 justify-center items-center">
+      <div className="w-1/2 gap-5 flex flex-col">
         <input
-          type="checkbox"
-          checked={enableCustomId}
-          onChange={(e) => {
-            setEnableCustomId(e.target.checked);
-            if (!e.target.checked) setCustomId("");
-          }}
+          type="text"
+          placeholder="Name"
+          value={form.name}
+          onChange={(e) => setForm({ ...form, name: e.target.value })}
+          className="border p-2 w-full rounded"
         />
-        <label>Insert at custom ID</label>
+        <div className="flex items-center gap-2 my-2">
+          <input
+            type="checkbox"
+            checked={enableCustomId}
+            onChange={(e) => {
+              setEnableCustomId(e.target.checked);
+              if (!e.target.checked) setCustomId("");
+            }}
+          />
+          <label>Insert at custom ID</label>
+          <input
+            type="number"
+            className="border px-2 py-1 rounded disabled:bg-gray-200"
+            disabled={!enableCustomId}
+            value={customId}
+            onChange={(e) => setCustomId(Number(e.target.value))}
+            min={1}
+          />
+        </div>
+        <Select
+          styles={dropDownStyle}
+          options={characterOptions}
+          value={{ label: form.character, value: form.character }}
+          onChange={handleCharacterChange}
+          placeholder="Select Character"
+        />
+        <div className="flex flex-row justify-center items-center gap-5">
+          <Select
+            styles={dropDownStyle}
+            options={rarityOptions}
+            value={{ label: `${form.rarity}`, value: form.rarity }}
+            onChange={(r) => setForm({ ...form, rarity: r.value })}
+            placeholder="Select Rarity"
+          />
+          <Select
+            styles={dropDownStyle}
+            options={groupOptions}
+            value={{ label: form.group, value: form.group }}
+            onChange={(g) => setForm({ ...form, group: g.value })}
+            placeholder="Select Group"
+          />
+        </div>
+        <Select
+          styles={dropDownStyle}
+          options={attributeOptions}
+          value={{ label: form.attribute, value: form.attribute }}
+          onChange={(a) => setForm({ ...form, attribute: a.value })}
+          placeholder="Select Attribute"
+        />
         <input
-          type="number"
-          className="border px-2 py-1 rounded disabled:bg-gray-200"
-          disabled={!enableCustomId}
-          value={customId}
-          onChange={(e) => setCustomId(Number(e.target.value))}
-          min={1}
+          type="text"
+          placeholder="Untrained URL"
+          value={form.untrained_url}
+          onChange={(e) => setForm({ ...form, untrained_url: e.target.value })}
+          className="border p-2 w-full rounded"
         />
+        <input
+          type="text"
+          placeholder="Trained URL"
+          value={form.trained_url}
+          onChange={(e) => setForm({ ...form, trained_url: e.target.value })}
+          className="border p-2 w-full rounded"
+        />{" "}
+        <div className="flex flex-row gap-5">
+          <input
+            type="text"
+            placeholder="Untrained Icon"
+            value={form.untrained_icon}
+            onChange={(e) =>
+              setForm({ ...form, untrained_icon: e.target.value })
+            }
+            className="border p-2 w-full rounded"
+          />
+          <input
+            type="text"
+            placeholder="Trained Icon"
+            value={form.trained_icon}
+            onChange={(e) => setForm({ ...form, trained_icon: e.target.value })}
+            className="border p-2 w-full rounded"
+          />
+        </div>
+        <div className="flex gap-2 flex-wrap">
+          <button
+            onClick={handleSubmit}
+            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          >
+            Add Entry
+          </button>
+
+          <button
+            onClick={downloadJson}
+            className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+          >
+            Download JSON
+          </button>
+
+          <button
+            onClick={() => console.log(entries)}
+            className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+          >
+            Log Entries
+          </button>
+
+          <button
+            onClick={deleteFromLocalStorage}
+            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+          >
+            Delete LocalStorage
+          </button>
+
+          <button
+            onClick={() => fileInputRef.current?.click()}
+            className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600"
+          >
+            Upload JSON
+          </button>
+
+          <input
+            type="file"
+            accept="application/json"
+            ref={fileInputRef}
+            onChange={handleFileUpload}
+            className="hidden"
+          />
+          <button
+            onClick={deleteLastEntry}
+            className="bg-red-400 text-white px-4 py-2 rounded hover:bg-red-500"
+          >
+            Delete Last Entry
+          </button>
+        </div>
+        {urlWarning && (
+          <p className="text-red-500 text-sm mt-2">{urlWarning}</p>
+        )}
+      </div>{" "}
+      <div className="w-1/2 ">
+        {" "}
+        <pre className="bg-gray-100  text-black p-2 rounded overflow-auto max-h-190">
+          {JSON.stringify(entries, null, 2)}
+        </pre>
       </div>
-
-      <Select
-        styles={dropDownStyle}
-        options={characterOptions}
-        value={{ label: form.character, value: form.character }}
-        onChange={handleCharacterChange}
-        placeholder="Select Character"
-      />
-
-      <Select
-        styles={dropDownStyle}
-        options={rarityOptions}
-        value={{ label: `${form.rarity}`, value: form.rarity }}
-        onChange={(r) => setForm({ ...form, rarity: r.value })}
-        placeholder="Select Rarity"
-      />
-
-      <Select
-        styles={dropDownStyle}
-        options={groupOptions}
-        value={{ label: form.group, value: form.group }}
-        onChange={(g) => setForm({ ...form, group: g.value })}
-        placeholder="Select Group"
-      />
-
-      <Select
-        styles={dropDownStyle}
-        options={attributeOptions}
-        value={{ label: form.attribute, value: form.attribute }}
-        onChange={(a) => setForm({ ...form, attribute: a.value })}
-        placeholder="Select Attribute"
-      />
-
-      <input
-        type="text"
-        placeholder="Untrained URL"
-        value={form.untrained_url}
-        onChange={(e) => setForm({ ...form, untrained_url: e.target.value })}
-        className="border p-2 w-full rounded"
-      />
-
-      <input
-        type="text"
-        placeholder="Trained URL"
-        value={form.trained_url}
-        onChange={(e) => setForm({ ...form, trained_url: e.target.value })}
-        className="border p-2 w-full rounded"
-      />
-
-      <div className="flex gap-2 flex-wrap">
-        <button
-          onClick={handleSubmit}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-        >
-          Add Entry
-        </button>
-
-        <button
-          onClick={downloadJson}
-          className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
-        >
-          Download JSON
-        </button>
-
-        <button
-          onClick={() => console.log(entries)}
-          className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
-        >
-          Log Entries
-        </button>
-
-        <button
-          onClick={deleteFromLocalStorage}
-          className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
-        >
-          Delete LocalStorage
-        </button>
-
-        <button
-          onClick={() => fileInputRef.current?.click()}
-          className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600"
-        >
-          Upload JSON
-        </button>
-
-        <input
-          type="file"
-          accept="application/json"
-          ref={fileInputRef}
-          onChange={handleFileUpload}
-          className="hidden"
-        />
-        <button
-          onClick={deleteLastEntry}
-          className="bg-red-400 text-white px-4 py-2 rounded hover:bg-red-500"
-        >
-          Delete Last Entry
-        </button>
-      </div>
-      {urlWarning && <p className="text-red-500 text-sm mt-2">{urlWarning}</p>}
-      <pre className="bg-gray-100 text-black p-2 rounded overflow-auto max-h-64">
-        {JSON.stringify(entries, null, 2)}
-      </pre>
     </div>
   );
 }

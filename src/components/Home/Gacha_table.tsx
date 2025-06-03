@@ -1,3 +1,4 @@
+import { useState } from "react";
 import gachas from "../../assets/json/gacha_banners.json";
 import cards from "../../assets/json/cards.json";
 import { useTheme } from "../../context/Theme_toggle";
@@ -8,6 +9,7 @@ export default function GachaTable({
 }: {
   filteredBanners: BannerTypes[];
 }) {
+  const [phrase, setPhrase] = useState("");
   const { theme } = useTheme();
   const formatId = (id: number) => String(id).padStart(4, "0");
   const today = Date.now();
@@ -35,6 +37,7 @@ export default function GachaTable({
         });
         const diffInMs = today - endDate;
         const diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
+
         const gachaBannerImage = `/images/banners/${formattedGachaId}.webp`;
         return (
           <div
@@ -75,7 +78,8 @@ export default function GachaTable({
                   );
                 })}
               </div>
-              <div>{diffInDays} days ago</div>
+              {diffInDays >= 0 && <div>{diffInDays} days ago</div>}
+              {diffInDays < 0 && <div>Ends in {diffInDays * -1} days</div>}
             </div>
           </div>
         );

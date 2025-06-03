@@ -5,8 +5,9 @@ import { useTheme } from "../../context/Theme_toggle";
 import type { CardsTypes } from "./types";
 export default function FilteredCards() {
   const [imgLoaded, setImgLoaded] = useState(false);
+  const [cardId, setCardId] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-  const [rarity, setRarity] = useState(0);
+  const [rarity, setRarity] = useState(4);
   const [trainedUrl, setTrainedUrl] = useState("");
   const [untrainedUrl, setUntrainedUrl] = useState("");
   const [characterName, setCharacterName] = useState("");
@@ -16,11 +17,11 @@ export default function FilteredCards() {
   const formatCardName = (id: number) => String(id).padStart(4, "0");
 
   const handleCardClick = (card: CardsTypes) => {
-    setUntrainedUrl(`${card.untrained_url}/revision/latest?cb=1`);
-    setTrainedUrl(`${card.trained_url}/revision/latest?cb=1`);
+    setCardId(card.id);
+    setUntrainedUrl(`/images/cards/${card.id}_ut.webp`);
+    setTrainedUrl(`/images/cards/${card.id}_t.webp`);
     setCardName(card.name);
     setCharacterName(card.character);
-
     setRarity(card.rarity);
     setIsOpen(true);
   };
@@ -29,14 +30,14 @@ export default function FilteredCards() {
     setIsOpen(false);
   };
   return (
-    <div className="flex flex-wrap gap-10">
-      {GachaCards.map((card) => {
+    <div className="flex flex-row items-center justify-center flex-wrap gap-10">
+      {GachaCards.map((card, i) => {
         const formattedCardId = formatCardName(card.id);
         const cardUntrainedImg = `/images/card_icons/${formattedCardId}_ut.webp`;
         const cardTrainedImg = `/images/card_icons/${formattedCardId}_t.webp`;
 
         return (
-          <div>
+          <div key={i}>
             <button
               onClick={() => handleCardClick(card)}
               className=" text-white  rounded "
@@ -72,40 +73,40 @@ export default function FilteredCards() {
             >
               {cardName}
             </h3>
+            {/* CARDS */}
             <div className="relative w-full">
-              {!imgLoaded && (
-                <div className="absolute inset-0 flex justify-center items-center z-10">
-                  <LoadingComponent />
+              {rarity == 5 && (
+                <div className="flex flex-col justify-center items-center gap-5 mb-3">
+                  <img
+                    src={`/images/cards/${cardId}_bd.webp`}
+                    style={{
+                      maxWidth: "600px",
+                      height: "auto",
+                    }}
+                    className={`w-full transition-opacity duration-300`}
+                  />
                 </div>
               )}
-              <div className="flex flex-col justify-center items-center gap-5 mb-3">
-                <img
-                  src={untrainedUrl}
-                  onLoad={() => setImgLoaded(true)}
-                  referrerPolicy="no-referrer"
-                  style={{
-                    imageRendering: "auto",
-                    width: "1000px",
-                    height: "auto",
-                  }}
-                  className={`w-full transition-opacity duration-300 ${
-                    imgLoaded ? "opacity-100" : "opacity-0"
-                  }`}
-                />
-                <img
-                  src={trainedUrl}
-                  onLoad={() => setImgLoaded(true)}
-                  referrerPolicy="no-referrer"
-                  style={{
-                    imageRendering: "auto",
-                    width: "1000px",
-                    height: "auto",
-                  }}
-                  className={`w-full transition-opacity duration-300 ${
-                    imgLoaded ? "opacity-100" : "opacity-0"
-                  }`}
-                />
-              </div>
+              {(rarity == 3 || rarity == 4) && (
+                <div className="flex flex-col justify-center items-center gap-5 mb-3">
+                  <img
+                    src={untrainedUrl}
+                    style={{
+                      width: "600px",
+                      height: "auto",
+                    }}
+                    className={`w-full transition-opacity duration-300 `}
+                  />
+                  <img
+                    src={trainedUrl}
+                    style={{
+                      maxWidth: "600px",
+                      height: "auto",
+                    }}
+                    className={`w-full transition-opacity duration-300 `}
+                  />
+                </div>
+              )}
             </div>
             <div className="flex justify-end">
               <button

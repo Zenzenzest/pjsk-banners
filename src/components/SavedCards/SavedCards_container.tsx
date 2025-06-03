@@ -1,3 +1,3 @@
 export default function SavedCardsContainer() {
-    return <h1>Saved Cards</h1>
+  return <h1>Saved Cards</h1>;
 }
