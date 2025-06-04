@@ -3,7 +3,8 @@ import GachaCards from "../../assets/json/cards.json";
 import LoadingComponent from "../Global/Loading";
 import { useTheme } from "../../context/Theme_toggle";
 import type { CardsTypes } from "./types";
-export default function FilteredCards() {
+
+export default function FilteredCards({ selectedFilters }) {
   const [imgLoaded, setImgLoaded] = useState(false);
   const [cardId, setCardId] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -30,13 +31,46 @@ export default function FilteredCards() {
     setCardAttribute(card.attribute);
     setIsOpen(true);
   };
+  const filteredCards = GachaCards.filter((card) => {
+    // CHARACTER FILTER
+    if (
+      selectedFilters.Character.length > 0 &&
+      !selectedFilters.Character.includes(card.character)
+    ) {
+      return false;
+    }
+
+    //  UNIT FILTER
+    if (selectedFilters.Unit && selectedFilters.Unit !== card.unit) {
+      return false;
+    }
+
+    // ATTRIBUTE FILTER
+    if (
+      selectedFilters.Attribute.length > 0 &&
+      !selectedFilters.Attribute.includes(card.attribute)
+    ) {
+      return false;
+    }
+
+    // RARITY FILTER
+    if (
+      selectedFilters.Rarity.length > 0 &&
+      !selectedFilters.Rarity.includes(card.rarity)
+    ) {
+      return false;
+    }
+
+    return true;
+  });
+
   const handleCloseModal = () => {
     setImgLoaded(false);
     setIsOpen(false);
   };
   return (
     <div className="flex flex-row items-center justify-center flex-wrap gap-10">
-      {GachaCards.map((card, i) => {
+      {filteredCards.map((card, i) => {
         const formattedCardId = formatCardName(card.id);
         const cardUntrainedImg = `/images/card_icons/${formattedCardId}_ut.webp`;
         const cardTrainedImg = `/images/card_icons/${formattedCardId}_t.webp`;
@@ -80,7 +114,7 @@ export default function FilteredCards() {
                 {lastName} {firstName}
               </div>
             </div>
--
+
             {/* CARDS */}
             <div className="relative ">
               {rarity == 5 && (
@@ -94,7 +128,7 @@ export default function FilteredCards() {
                     className={`w-full transition-opacity duration-300`}
                   />
                   {/* CARD NAME */}
-                  <div className="w-full text-lg italic rounded-md bg-gray-600/30 backdrop-blur-sm text-gray-100 absolute top-0 right-0 text-center">
+                  <div className="w-full text-sm italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center  text-mizuki [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
                     {cardName}
                   </div>
 
@@ -134,7 +168,9 @@ export default function FilteredCards() {
                             />
                           );
                         })}
-                    </div>
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="relative">
                     <img
                       src={trainedUrl}
                       style={{
@@ -143,6 +179,9 @@ export default function FilteredCards() {
                       }}
                       className={`w-full transition-opacity duration-300 `}
                     />{" "}
+                    <div className="w-full text-lg italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center  text-mizuki [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
+                      {cardName}
+                    </div>
                     <div className="absolute bottom-1 right-1">
                       {Array(rarity)
                         .fill(0)
@@ -151,7 +190,10 @@ export default function FilteredCards() {
                             <img
                               key={i}
                               src="/images/rarity_icons/trained_star.png"
-                              style={{ width: "30px", display: "inline-block" }}
+                              style={{
+                                width: "30px",
+                                display: "inline-block",
+                              }}
                             />
                           );
                         })}

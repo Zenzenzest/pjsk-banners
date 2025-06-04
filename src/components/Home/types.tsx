@@ -14,7 +14,7 @@ export type SelectedFilterTypes = {
   Unit: string | null;
   Attribute: string[];
   Rarity: string[];
-
+};
 export interface CardsTypes {
   id: number;
   name: string;

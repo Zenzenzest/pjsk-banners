@@ -89,6 +89,14 @@ const filterCategories = {
 
 export default function FilterTab() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [tempFilters, setTempFilters] = useState<SelectedFilterTypes>({
+    Character: [],
+    Unit: null,
+    Attribute: [],
+    Rarity: [],
+  });
+
+  // APPLIED filters used for actual filtering
   const [selectedFilters, setSelectedFilters] = useState<SelectedFilterTypes>({
     Character: [],
     Unit: null,
@@ -101,7 +109,10 @@ export default function FilterTab() {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (panelRef.current && !panelRef.current.contains(event.target as Node)) {
+      if (
+        panelRef.current &&
+        !panelRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     };
@@ -118,7 +129,7 @@ export default function FilterTab() {
   }, [isOpen]);
 
   const handleSelect = (category: string, option: string | number) => {
-    setSelectedFilters((prev) => {
+    setTempFilters((prev) => {
       if (category === "Unit") {
         if (prev.Unit === option) {
           return {
@@ -134,11 +145,15 @@ export default function FilterTab() {
           Character: characters,
         };
       }
-
       if (category === "Characters") {
-        if (prev.Unit && !grouped[prev.Unit]?.includes(option as string)) {
-          return prev;
+        // Use the currently selected unit in tempFilters, not prev.Unit
+        const unit = tempFilters.Unit;
+
+        // Don't allow selecting characters from a different unit (if one is selected)
+        if (unit && !grouped[unit]?.includes(option as string)) {
+          return prev; // Skip this character if it's outside the selected unit
         }
+
         const isSelected = prev.Character.includes(option as string);
         const newCharacterList = isSelected
           ? prev.Character.filter((name) => name !== option)
@@ -151,7 +166,7 @@ export default function FilterTab() {
       }
 
       if (category === "Attribute" || category === "Rarity") {
-        const current = prev[category] as (string[] | number[]);
+        const current = prev[category] as string[] | number[];
         const isSelected = current.includes(option);
         const updated = isSelected
           ? current.filter((o) => o !== option)
@@ -170,7 +185,7 @@ export default function FilterTab() {
   };
 
   const handleReset = () => {
-    setSelectedFilters({
+    setTempFilters({
       Character: [],
       Unit: null,
       Attribute: [],
@@ -179,6 +194,7 @@ export default function FilterTab() {
   };
 
   const handleApply = () => {
+    setSelectedFilters(tempFilters);
     setIsOpen(false);
   };
 
@@ -222,15 +238,15 @@ export default function FilterTab() {
 
                 const isSelected =
                   category === "Characters"
-                    ? selectedFilters.Character.includes(option)
-                    : Array.isArray(selectedFilters[category])
-                    ? selectedFilters[category].includes(option)
-                    : selectedFilters[category] === option;
+                    ? tempFilters.Character.includes(option)
+                    : Array.isArray(tempFilters[category])
+                    ? tempFilters[category].includes(option)
+                    : tempFilters[category] === option;
 
                 const isDisabled =
                   category === "Characters" &&
-                  selectedFilters.Unit &&
-                  !grouped[selectedFilters.Unit]?.includes(option);
+                  tempFilters.Unit &&
+                  !grouped[tempFilters.Unit]?.includes(option);
 
                 return (
                   <button
@@ -276,7 +292,7 @@ export default function FilterTab() {
       </div>
 
       <div>
-        <FilteredCards />
+        <FilteredCards selectedFilters={selectedFilters} />
       </div>
     </div>
   );
