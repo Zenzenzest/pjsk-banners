@@ -12,6 +12,7 @@ export default function FilteredCards() {
   const [untrainedUrl, setUntrainedUrl] = useState("");
   const [characterName, setCharacterName] = useState("");
   const [cardName, setCardName] = useState("");
+  const [cardAttribute, setCardAttribute] = useState("");
   const { theme } = useTheme();
 
   const formatCardName = (id: number) => String(id).padStart(4, "0");
@@ -52,7 +53,7 @@ export default function FilteredCards() {
           <div
             className={`${
               theme == "light" ? "bg-bg-light-mode2" : "bg-bg-dark-mode"
-            } p-6 rounded-lg shadow-lg  w-4/5 border border-gray-300`}
+            } p-6 rounded-lg shadow-lg border border-gray-300`}
           >
             {" "}
             <div
@@ -74,9 +75,9 @@ export default function FilteredCards() {
               {cardName}
             </h3>
             {/* CARDS */}
-            <div className="relative w-full">
+            <div className="relative ">
               {rarity == 5 && (
-                <div className="flex flex-col justify-center items-center gap-5 mb-3">
+                <div className="flex flex-col justify-center items-center gap-5 mb-3 relative">
                   <img
                     src={`/images/cards/${cardId}_bd.webp`}
                     style={{
@@ -85,26 +86,64 @@ export default function FilteredCards() {
                     }}
                     className={`w-full transition-opacity duration-300`}
                   />
+                  <img
+                    src="/images/rarity_icons/bday.png"
+                    style={{
+                      position: "absolute",
+                      bottom: 5,
+                      left: 5,
+                      width: "2rem",
+                    }}
+                  />
                 </div>
               )}
               {(rarity == 3 || rarity == 4) && (
                 <div className="flex flex-col justify-center items-center gap-5 mb-3">
-                  <img
-                    src={untrainedUrl}
-                    style={{
-                      width: "600px",
-                      height: "auto",
-                    }}
-                    className={`w-full transition-opacity duration-300 `}
-                  />
-                  <img
-                    src={trainedUrl}
-                    style={{
-                      maxWidth: "600px",
-                      height: "auto",
-                    }}
-                    className={`w-full transition-opacity duration-300 `}
-                  />
+                  <div className="relative">
+                    <img
+                      src={untrainedUrl}
+                      style={{
+                        width: "600px",
+                        height: "auto",
+                        marginBottom: "10px",
+                      }}
+                      className={`w-full transition-opacity duration-300 `}
+                    />
+                    <div className="absolute top-1 left-1">
+                      {Array(rarity)
+                        .fill(0)
+                        .map((_, i) => {
+                          return (
+                            <img
+                              key={i}
+                              src="/images/rarity_icons/untrained_star.png"
+                              style={{ width: "30px", display: "inline-block" }}
+                            />
+                          );
+                        })}
+                    </div>
+                    <img
+                      src={trainedUrl}
+                      style={{
+                        maxWidth: "600px",
+                        height: "auto",
+                      }}
+                      className={`w-full transition-opacity duration-300 `}
+                    />{" "}
+                    <div className="absolute bottom-1 right-1">
+                      {Array(rarity)
+                        .fill(0)
+                        .map((_, i) => {
+                          return (
+                            <img
+                              key={i}
+                              src="/images/rarity_icons/trained_star.png"
+                              style={{ width: "30px", display: "inline-block" }}
+                            />
+                          );
+                        })}
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
