@@ -4,6 +4,7 @@ import { useTheme } from "../../context/Theme_toggle";
 import GachaTable from "./Gacha_table";
 import GachaBanners from "../../assets/json/gacha_banners.json";
 import FilteredCards from "./Filtered_cards";
+
 const grouped = {
   "Virtual Singers": [
     "Hatsune Miku",
@@ -88,12 +89,11 @@ const filterCategories = {
 
 export default function FilterTab() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-
   const [selectedFilters, setSelectedFilters] = useState<SelectedFilterTypes>({
     Character: [],
     Unit: null,
-    Attribute: null,
-    Rarity: null,
+    Attribute: [],
+    Rarity: [],
   });
   const { theme } = useTheme();
   const panelRef = useRef<HTMLDivElement>(null);
@@ -101,10 +101,7 @@ export default function FilterTab() {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (
-        panelRef.current &&
-        !panelRef.current.contains(event.target as Node)
-      ) {
+      if (panelRef.current && !panelRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     };
@@ -154,9 +151,14 @@ export default function FilterTab() {
       }
 
       if (category === "Attribute" || category === "Rarity") {
+        const current = prev[category] as (string[] | number[]);
+        const isSelected = current.includes(option);
+        const updated = isSelected
+          ? current.filter((o) => o !== option)
+          : [...current, option];
         return {
           ...prev,
-          [category]: prev[category] === option ? null : option,
+          [category]: updated,
         };
       }
 
@@ -171,8 +173,8 @@ export default function FilterTab() {
     setSelectedFilters({
       Character: [],
       Unit: null,
-      Attribute: null,
-      Rarity: null,
+      Attribute: [],
+      Rarity: [],
     });
   };
 
@@ -187,7 +189,6 @@ export default function FilterTab() {
       }`}
       ref={panelRef}
     >
-      {/* BUTTON */}
       <button onClick={toggleFilter} className="">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -204,7 +205,6 @@ export default function FilterTab() {
           />
         </svg>
       </button>
-      {/* FILTERS */}
       <div
         className={`transition-all duration-500 ease-in-out overflow-hidden max-w-[500px] ${
           isOpen ? "max-h-[800px]  opacity-100" : "max-h-0 opacity-0"
@@ -223,6 +223,8 @@ export default function FilterTab() {
                 const isSelected =
                   category === "Characters"
                     ? selectedFilters.Character.includes(option)
+                    : Array.isArray(selectedFilters[category])
+                    ? selectedFilters[category].includes(option)
                     : selectedFilters[category] === option;
 
                 const isDisabled =
@@ -273,7 +275,6 @@ export default function FilterTab() {
         </div>
       </div>
 
-      {/* GACHA CONTENT*/}
       <div>
         <FilteredCards />
       </div>

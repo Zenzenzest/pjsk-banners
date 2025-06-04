@@ -10,7 +10,8 @@ export default function FilteredCards() {
   const [rarity, setRarity] = useState(4);
   const [trainedUrl, setTrainedUrl] = useState("");
   const [untrainedUrl, setUntrainedUrl] = useState("");
-  const [characterName, setCharacterName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [firstName, setFirstName] = useState("");
   const [cardName, setCardName] = useState("");
   const [cardAttribute, setCardAttribute] = useState("");
   const { theme } = useTheme();
@@ -22,8 +23,11 @@ export default function FilteredCards() {
     setUntrainedUrl(`/images/cards/${card.id}_ut.webp`);
     setTrainedUrl(`/images/cards/${card.id}_t.webp`);
     setCardName(card.name);
-    setCharacterName(card.character);
+    const [lName, fName] = card.character.split(" ");
+    setLastName(lName);
+    setFirstName(fName);
     setRarity(card.rarity);
+    setCardAttribute(card.attribute);
     setIsOpen(true);
   };
   const handleCloseModal = () => {
@@ -55,25 +59,28 @@ export default function FilteredCards() {
               theme == "light" ? "bg-bg-light-mode2" : "bg-bg-dark-mode"
             } p-6 rounded-lg shadow-lg border border-gray-300`}
           >
-            {" "}
             <div
-              className={`${
+              className={`flex flex-row justify-center items-center gap-3 ${
                 theme == "light"
                   ? "text-text-light-mode"
                   : "text-text-dark-mode"
               } text-md font-semibold mb-4 tracking-[3px]`}
             >
-              {characterName}
+              {/* CARD ATTRIBUTE */}
+              <div>
+                <img
+                  src={`/images/attribute_icons/${cardAttribute}.webp`}
+                  style={{
+                    width: "2rem",
+                  }}
+                />
+              </div>{" "}
+              {/* CHARACTER NAME */}
+              <div className="text-3xl font-bold  font-serif tracking-wide">
+                {lastName} {firstName}
+              </div>
             </div>
-            <h3
-              className={`${
-                theme == "light"
-                  ? "text-text-light-mode"
-                  : "text-text-dark-mode"
-              } text-xl font-semibold mb-4`}
-            >
-              {cardName}
-            </h3>
+-
             {/* CARDS */}
             <div className="relative ">
               {rarity == 5 && (
@@ -81,11 +88,17 @@ export default function FilteredCards() {
                   <img
                     src={`/images/cards/${cardId}_bd.webp`}
                     style={{
-                      maxWidth: "600px",
+                      maxWidth: "500px",
                       height: "auto",
                     }}
                     className={`w-full transition-opacity duration-300`}
                   />
+                  {/* CARD NAME */}
+                  <div className="w-full text-lg italic rounded-md bg-gray-600/30 backdrop-blur-sm text-gray-100 absolute top-0 right-0 text-center">
+                    {cardName}
+                  </div>
+
+                  {/* RARITY ICON */}
                   <img
                     src="/images/rarity_icons/bday.png"
                     style={{
@@ -103,7 +116,7 @@ export default function FilteredCards() {
                     <img
                       src={untrainedUrl}
                       style={{
-                        width: "600px",
+                        width: "500px",
                         height: "auto",
                         marginBottom: "10px",
                       }}
@@ -125,7 +138,7 @@ export default function FilteredCards() {
                     <img
                       src={trainedUrl}
                       style={{
-                        maxWidth: "600px",
+                        maxWidth: "500px",
                         height: "auto",
                       }}
                       className={`w-full transition-opacity duration-300 `}
