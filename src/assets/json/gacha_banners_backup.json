@@ -2040,7 +2040,7 @@
     "name": "Beginner's 1 Guaranteed 4★ Character 10x Ticket Gacha",
     "cards": [2, 183, 190, 239, 112, 103],
     "start": 1727679600000,
-    "end": 1749106186471
+    "end": "Present"
   },
   {
     "id": 292,
@@ -2148,7 +2148,7 @@
       91, 16, 194, 68, 289, 30, 314, 92, 350, 268
     ],
     "start": 1728759600000,
-    "end": 1749106186471
+    "end": "Present"
   },
   {
     "id": 307,
@@ -2339,6 +2339,7 @@
     "start": 1733558400000,
     "end": 1734638399000
   },
+
   {
     "id": 334,
     "name": "[Friend Invitation] 4★ Character Guaranteed Gacha",
@@ -2954,19 +2955,5 @@
     "cards": [533, 534, 535],
     "start": 1751655600000,
     "end": 1752087599000
-  },
-  {
-    "id": 422,
-    "name": "[It's Back] 3.5 Year Anniversary 10x Free Gacha",
-    "cards": [131, 65, 276, 67, 88, 195],
-    "start": 1749322800000,
-    "end": 1751353140000
-  },
-  {
-    "id": 423,
-    "name": "[It's Back] 3.5 Year Anniversary Colorful Festival Gacha",
-    "cards": [497, 498, 499, 500, 501, 502],
-    "start": 1749322800000,
-    "end": 1749884340000
   }
 ]

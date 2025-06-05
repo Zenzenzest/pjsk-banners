@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import GachaBanners from "../../assets/json/gacha_banners.json";
-import { useTheme } from "../../context/Theme_toggle";
-import { useServer } from "../../context/Server";
+import GachaBanners from "../../../assets/json/gacha_banners.json";
+import { useTheme } from "../../../context/Theme_toggle";
+
 import GachaTable from "./Gacha_table";
-import type { BannerTypes, GachaBannersProps } from "./types";
+import type { BannerTypes, GachaBannersProps } from "../types";
 
 const months = [
   "Jan",

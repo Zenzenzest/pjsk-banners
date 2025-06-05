@@ -29,3 +29,18 @@ export interface CardsTypes {
 export interface CountdownProps {
   startDate: Date;
 }
+export interface CardState {
+  cardId: number;
+  rarity: number;
+  trainedUrl: string;
+  untrainedUrl: string;
+  lastName: string;
+  firstName: string;
+  cardName: string;
+  cardAttribute: string;
+}
+
+export interface CardModalProps extends CardState {
+  isOpen: boolean;
+  onClose: () => void;
+}

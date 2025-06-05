@@ -244,6 +244,7 @@ export default function GachaCard() {
       endYear: "",
       endTime: "",
     });
+    localStorage.setItem("jsonEditorData", JSON.stringify(data));
   };
 
   const handleDownload = () => {

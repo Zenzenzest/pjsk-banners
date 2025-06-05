@@ -1,9 +1,9 @@
 import { useState } from "react";
-import gachas from "../../assets/json/gacha_banners.json";
-import cards from "../../assets/json/cards.json";
-import { useTheme } from "../../context/Theme_toggle";
-import type { BannerTypes, GachaBannersProps } from "./types";
-import CountdownTimer from "./Countdown_timer";
+import gachas from "../../../assets/json/gacha_banners.json";
+import cards from "../../../assets/json/cards.json";
+import { useTheme } from "../../../context/Theme_toggle";
+import type { BannerTypes } from "../types";
+import CountdownTimer from "../Countdown_timer";
 
 export default function GachaTable({
   filteredBanners,
@@ -18,7 +18,7 @@ export default function GachaTable({
   function convertToDays(ms: number) {
     return Math.floor(ms / (1000 * 60 * 60 * 24));
   }
-  const handleImageClick = () => {};
+  const handleCardClick = () => {};
   const handleImageError = (
     e: React.SyntheticEvent<HTMLImageElement, Event>
   ) => {

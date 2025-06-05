@@ -2,9 +2,9 @@ import { useServer } from "../../context/Server";
 import { useState } from "react";
 
 import Jp from "./jp";
-import DateTabs from "./Date_tabs";
+import DateTabs from "./Calendar_view/Date_tabs";
 import { useTheme } from "../../context/Theme_toggle";
-import FilterTab from "./Filter_tab";
+import FilterTab from "./Card_view/Filter_tab";
 
 type ViewModeType = "dateview" | "filterview";
 
