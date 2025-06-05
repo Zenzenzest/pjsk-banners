@@ -1,24 +1,55 @@
 import { useState } from "react";
-import gachas from "../../../assets/json/gacha_banners.json";
-import cards from "../../../assets/json/cards.json";
+
+import Cards from "../../../assets/json/cards.json";
 import { useTheme } from "../../../context/Theme_toggle";
-import type { BannerTypes } from "../types";
+import type { BannerTypes, CardState, CardsTypes } from "../types";
 import CountdownTimer from "../Countdown_timer";
+import CardModal from "../Card_modal";
 
 export default function GachaTable({
   filteredBanners,
 }: {
   filteredBanners: BannerTypes[];
 }) {
-  const [phrase, setPhrase] = useState("");
-
   const { theme } = useTheme();
+  const [isOpen, setIsOpen] = useState(false);
+  const [cardState, setCardState] = useState<CardState>({
+    cardId: 0,
+    rarity: 4,
+    trainedUrl: "",
+    untrainedUrl: "",
+    lastName: "",
+    firstName: "",
+    cardName: "",
+    cardAttribute: "",
+  });
+
   const formatId = (id: number) => String(id).padStart(4, "0");
   const today = Date.now();
+
   function convertToDays(ms: number) {
     return Math.floor(ms / (1000 * 60 * 60 * 24));
   }
-  const handleCardClick = () => {};
+
+  const handleCardClick = (card: CardsTypes) => {
+    const [lName, fName] = card.character.split(" ");
+    setCardState({
+      cardId: card.id,
+      rarity: card.rarity,
+      trainedUrl: `/images/cards/${card.id}_t.webp`,
+      untrainedUrl: `/images/cards/${card.id}_ut.webp`,
+      lastName: lName,
+      firstName: fName,
+      cardName: card.name,
+      cardAttribute: card.attribute,
+    });
+    setIsOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsOpen(false);
+  };
+
   const handleImageError = (
     e: React.SyntheticEvent<HTMLImageElement, Event>
   ) => {
@@ -93,6 +124,7 @@ export default function GachaTable({
                     <div key={i}>
                       <img
                         src={cardIconImage}
+                        onClick={() => handleCardClick(Cards[card - 1])}
                         style={{
                           width: "60px",
                           height: "auto",
@@ -110,6 +142,7 @@ export default function GachaTable({
           </div>
         );
       })}
+      <CardModal isOpen={isOpen} onClose={handleCloseModal} {...cardState} />
     </div>
   );
 }
