@@ -11,7 +11,7 @@ export interface GachaBannersProps {
 
 export type SelectedFilterTypes = {
   Character: string[];
-  Unit: string | null;
+  Unit: null;
   Attribute: string[];
   Rarity: string[];
 };
@@ -24,4 +24,8 @@ export interface CardsTypes {
   attribute: string;
   untrained_url: string;
   trained_url: string;
+}
+
+export interface CountdownProps {
+  startDate: Date;
 }

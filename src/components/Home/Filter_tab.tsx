@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import type { SelectedFilterTypes } from "./types";
 import { useTheme } from "../../context/Theme_toggle";
-import GachaTable from "./Gacha_table";
-import GachaBanners from "../../assets/json/gacha_banners.json";
+
 import FilteredCards from "./Filtered_cards";
 
 const grouped = {

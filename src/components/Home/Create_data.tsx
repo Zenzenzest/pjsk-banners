@@ -223,7 +223,7 @@ export default function CreateData() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "entries.json";
+    a.download = "cards.json";
     a.click();
     URL.revokeObjectURL(url);
   };

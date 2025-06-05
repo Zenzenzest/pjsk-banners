@@ -2913,5 +2913,40 @@
     "cards": [364, 324, 424, 401, 263, 428],
     "start": 1748804400000,
     "end": 1749711599000
+  },
+  {
+    "id": 416,
+    "name": "[It's Back] Nightcord at 25:00 World Link Event Support Gacha",
+    "cards": [339, 385, 291, 254, 146],
+    "start": 1730487600000,
+    "end": 1732305599000
+  },
+  {
+    "id": 417,
+    "name": "[It's Back] Darkness Festa Gacha",
+    "cards": [271, 272, 273, 274],
+    "start": 1749063600000,
+    "end": 1749841199000
+  },
+  {
+    "id": 418,
+    "name": "going upstairs Gacha",
+    "cards": [527, 528, 529],
+    "start": 1749582000000,
+    "end": 1750273199000
+  },
+  {
+    "id": 419,
+    "name": "Reknit Relation Gacha",
+    "cards": [530, 531, 532],
+    "start": 1750446000000,
+    "end": 1751309999000
+  },
+  {
+    "id": 420,
+    "name": "The Party of Blast!! Gacha",
+    "cards": [533, 534, 535],
+    "start": 1751655600000,
+    "end": 1752087599000
   }
 ]

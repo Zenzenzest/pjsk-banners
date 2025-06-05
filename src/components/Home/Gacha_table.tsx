@@ -3,6 +3,7 @@ import gachas from "../../assets/json/gacha_banners.json";
 import cards from "../../assets/json/cards.json";
 import { useTheme } from "../../context/Theme_toggle";
 import type { BannerTypes, GachaBannersProps } from "./types";
+import CountdownTimer from "./Countdown_timer";
 
 export default function GachaTable({
   filteredBanners,
@@ -13,7 +14,9 @@ export default function GachaTable({
   const { theme } = useTheme();
   const formatId = (id: number) => String(id).padStart(4, "0");
   const today = Date.now();
-
+  function convertToDays(ms: number) {
+    return Math.floor(ms / (1000 * 60 * 60 * 24));
+  }
   const handleImageClick = () => {};
   return (
     <div
@@ -36,7 +39,9 @@ export default function GachaTable({
           day: "numeric",
         });
         const diffInMs = today - endDate;
-        const diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
+        const diffInDays = convertToDays(diffInMs);
+        const upcomingDiffInMs = startDate - today;
+        console.log(convertToDays(upcomingDiffInMs));
 
         const gachaBannerImage = `/images/banners/${formattedGachaId}.webp`;
         return (
@@ -59,6 +64,12 @@ export default function GachaTable({
             </div>
             {/* CARDS */}
             <div className="w-1/2  flex flex-col items-center justify-center">
+              {/* START DATE IF UPCOMING BANNER */}
+              {upcomingDiffInMs > 0 && (
+                <div className="flex flex-col justify-center items-center">
+                  <div>Starts in</div> <CountdownTimer startDate={startDate} />
+                </div>
+              )}
               <div className="flex flex-row items-center justify-evenly flex-wrap ">
                 {banner["cards"].map((card, i) => {
                   const formattedCardId = formatId(card);
@@ -78,6 +89,7 @@ export default function GachaTable({
                   );
                 })}
               </div>
+              {/*  */}
               {diffInDays >= 0 && <div>{diffInDays} days ago</div>}
               {diffInDays < 0 && <div>Ends in {diffInDays * -1} days</div>}
             </div>
