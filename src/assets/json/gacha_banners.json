@@ -2944,6 +2944,13 @@
   },
   {
     "id": 420,
+    "name": "Bloom Festival Gacha",
+    "cards": [536, 537, 533, 534, 535],
+    "start": 1751310000000,
+    "end": 1751655599000
+  },
+  {
+    "id": 421,
     "name": "The Party of Blast!! Gacha",
     "cards": [533, 534, 535],
     "start": 1751655600000,

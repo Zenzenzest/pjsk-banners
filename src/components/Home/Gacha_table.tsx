@@ -11,6 +11,7 @@ export default function GachaTable({
   filteredBanners: BannerTypes[];
 }) {
   const [phrase, setPhrase] = useState("");
+
   const { theme } = useTheme();
   const formatId = (id: number) => String(id).padStart(4, "0");
   const today = Date.now();
@@ -18,6 +19,14 @@ export default function GachaTable({
     return Math.floor(ms / (1000 * 60 * 60 * 24));
   }
   const handleImageClick = () => {};
+  const handleImageError = (
+    e: React.SyntheticEvent<HTMLImageElement, Event>
+  ) => {
+    const target = e.target as HTMLImageElement;
+    target.src = "/images/banners/placeholder.png";
+    target.onerror = null;
+  };
+
   return (
     <div
       className={`flex flex-col ${
@@ -41,9 +50,9 @@ export default function GachaTable({
         const diffInMs = today - endDate;
         const diffInDays = convertToDays(diffInMs);
         const upcomingDiffInMs = startDate - today;
-        console.log(convertToDays(upcomingDiffInMs));
 
         const gachaBannerImage = `/images/banners/${formattedGachaId}.webp`;
+
         return (
           <div
             className="flex flex-row p-5 border-b border-gray-400"
@@ -51,7 +60,12 @@ export default function GachaTable({
           >
             {/* GACHA */}
             <div className="w-1/2 flex flex-col items-center justify-center ">
-              <img src={gachaBannerImage} style={{ width: "150px" }} />
+              <img
+                src={gachaBannerImage}
+                style={{ width: "150px" }}
+                onError={handleImageError}
+                alt={banner.name}
+              />
               <span className="text-md text-center">{banner.name}</span>
               <div
                 className={`flex flex-cols text-sm text-center gap-3 ${
