@@ -1,7 +1,7 @@
 import { useServer } from "../../context/Server";
 import { useState } from "react";
-import GachaTable from "./Gacha_table";
-import CreateData from "./Create_data";
+
+import Jp from "./jp";
 import DateTabs from "./Date_tabs";
 import { useTheme } from "../../context/Theme_toggle";
 import FilterTab from "./Filter_tab";
@@ -11,7 +11,7 @@ type ViewModeType = "dateview" | "filterview";
 export default function HomeContainer() {
   const [viewMode, setViewMode] = useState<ViewModeType>("dateview");
   const { theme } = useTheme();
-  const { server, setServer } = useServer();
+  const { server } = useServer();
   const handleDateViewMode = () => {
     setViewMode("dateview");
   };
@@ -22,7 +22,7 @@ export default function HomeContainer() {
   return (
     <div>
       {server == "jp" ? (
-        <CreateData />
+        <Jp />
       ) : (
         <div>
           {/* VIEWMODE TABS */}

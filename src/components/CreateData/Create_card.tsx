@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useServer } from "../../context/Server";
 import Select from "react-select";
 
-type Server = "jp" | "global";
+
 
 type Entry = {
   id: number;
@@ -85,7 +85,7 @@ function getUnitForCharacter(character: string): string {
   return "Virtual Singers"; // default
 }
 
-export default function CreateData() {
+export default function CreateCard() {
   const [entries, setEntries] = useState<Entry[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [enableCustomId, setEnableCustomId] = useState(false);
