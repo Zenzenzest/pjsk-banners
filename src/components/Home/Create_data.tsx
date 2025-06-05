@@ -10,7 +10,7 @@ type Entry = {
   name: string;
   character: string;
   rarity: 1 | 2 | 3 | 4 | 5;
-  group: string;
+  unit: string;
   attribute: string;
   untrained_url: string;
   trained_url: string;
@@ -64,9 +64,9 @@ const characterOptions = Object.values(groupedCharacters)
 
 const rarityOptions = [1, 2, 3, 4, 5].map((r) => ({ label: `${r}`, value: r }));
 
-const groupOptions = Object.keys(groupedCharacters).map((group) => ({
-  label: group,
-  value: group,
+const groupOptions = Object.keys(groupedCharacters).map((unit) => ({
+  label: unit,
+  value: unit,
 }));
 
 const attributeOptions = ["Cute", "Happy", "Mysterious", "Cool", "Pure"].map(
@@ -76,11 +76,10 @@ const attributeOptions = ["Cute", "Happy", "Mysterious", "Cool", "Pure"].map(
   })
 );
 
-// Helper to get group name from character
-function getGroupForCharacter(character: string): string {
-  for (const [groupName, members] of Object.entries(groupedCharacters)) {
+function getUnitForCharacter(character: string): string {
+  for (const [unitName, members] of Object.entries(groupedCharacters)) {
     if (members.includes(character)) {
-      return groupName;
+      return unitName;
     }
   }
   return "Virtual Singers"; // default
@@ -97,7 +96,7 @@ export default function CreateData() {
     name: "",
     character: characterOptions[0].value,
     rarity: 4,
-    group: getGroupForCharacter(characterOptions[0].value),
+    unit: getUnitForCharacter(characterOptions[0].value),
     attribute: "Cute",
     untrained_url: "",
     trained_url: "",
@@ -124,8 +123,8 @@ export default function CreateData() {
 
   const handleCharacterChange = (selected: any) => {
     const char = selected.value;
-    const autoGroup = getGroupForCharacter(char);
-    setForm((prev) => ({ ...prev, character: char, group: autoGroup }));
+    const autoUnit = getUnitForCharacter(char);
+    setForm((prev) => ({ ...prev, character: char, unit: autoUnit }));
   };
   function trimImageUrl(url: string): string {
     const match = url.match(/^(.*?\.(png|webp))/);
@@ -306,8 +305,8 @@ export default function CreateData() {
           <Select
             styles={dropDownStyle}
             options={groupOptions}
-            value={{ label: form.group, value: form.group }}
-            onChange={(g) => setForm({ ...form, group: g.value })}
+            value={{ label: form.unit, value: form.unit }}
+            onChange={(g) => setForm({ ...form, unit: g.value })}
             placeholder="Select Group"
           />
         </div>
