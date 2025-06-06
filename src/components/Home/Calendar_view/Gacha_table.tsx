@@ -121,7 +121,10 @@ export default function GachaTable({
                   const cardIconImage = `/images/card_icons/${formattedCardId}_t.webp`;
 
                   return (
-                    <div key={i}>
+                    <div
+                      key={i}
+                      className="flex flex-col justify-center items-center text-xs"
+                    >
                       <img
                         src={cardIconImage}
                         onClick={() => handleCardClick(Cards[card - 1])}
@@ -131,6 +134,7 @@ export default function GachaTable({
                           margin: "0.3rem",
                         }}
                       />
+                      {card}
                     </div>
                   );
                 })}

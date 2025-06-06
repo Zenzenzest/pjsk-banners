@@ -25,28 +25,69 @@
     "name": "Starry Night Memories Gacha",
     "cards": [13, 14, 15],
     "start": 1639004400000,
-    "end": 1639695599000
+    "end": 1639695599000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "saki",
+      "saki1"
+    ],
+    "type": "focus"
   },
   {
     "id": 5,
     "name": "Ball of the Marionettes Gacha",
     "cards": [16, 17, 18],
     "start": 1639695600000,
-    "end": 1640386799000
+    "end": 1640386799000,
+    "keywords": [
+      "mafuyu",
+      "mafuyu1",
+      "mafu1",
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 6,
     "name": "Gentle★Potato Star Gacha",
     "cards": [19, 20, 21],
     "start": 1640386800000,
-    "end": 1641077999000
+    "end": 1641077999000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "rui",
+      "rui1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 7,
     "name": "Rookie Partner Gacha",
     "cards": [22, 23, 24],
     "start": 1641078000000,
-    "end": 1641769199000
+    "end": 1641769199000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "an",
+      "an1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 8,
@@ -67,7 +108,9 @@
     "name": "MORE MORE SMILE! Gacha",
     "cards": [28, 29, 30],
     "start": 1642460400000,
-    "end": 1643151599000
+    "end": 1643151599000,
+    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi1", "focus"],
+    "type": "focus"
   },
   {
     "id": 11,
@@ -81,7 +124,18 @@
     "name": "Wonder Carol Gacha",
     "cards": [34, 35, 36],
     "start": 1643842800000,
-    "end": 1644533999000
+    "end": 1644533999000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "nene",
+      "nene1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 13,
@@ -109,21 +163,52 @@
     "name": "A Little Courage Goes a Long Way Gacha",
     "cards": [41, 42, 43],
     "start": 1645225200000,
-    "end": 1645916399000
+    "end": 1645916399000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "honami",
+      "hona1",
+      "honami1"
+    ],
+    "type": "focus"
   },
   {
     "id": 17,
     "name": "A Rainbow Follows the Rain Gacha",
     "cards": [44, 45, 46],
     "start": 1645916400000,
-    "end": 1646607599000
+    "end": 1646607599000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "shizuku",
+      "shizuku1",
+      "shizu1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 18,
     "name": "Classical Memories Gacha",
     "cards": [47, 48, 49],
     "start": 1646607600000,
-    "end": 1647295199000
+    "end": 1647295199000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "toya",
+      "toya1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 19,
@@ -144,7 +229,9 @@
     "name": "Illuminated Canvas Gacha",
     "cards": [53, 54, 55],
     "start": 1647986400000,
-    "end": 1648677599000
+    "end": 1648677599000,
+    "keywords": ["ena1", "ena", "n25", "nightcord", "niigo", "focus"],
+    "type": "focus"
   },
   {
     "id": 22,
@@ -158,7 +245,20 @@
     "name": "Fluffy☆ Dreamland Gacha",
     "cards": [56, 57, 58],
     "start": 1648677600000,
-    "end": 1649368799000
+    "end": 1649368799000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "wonderhoy",
+      "wondahoy",
+      "emu",
+      "emu1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 24,
@@ -172,7 +272,17 @@
     "name": "An Angel Spreads Its Wings Gacha",
     "cards": [62, 63, 64],
     "start": 1650060000000,
-    "end": 1650751199000
+    "end": 1650751199000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "minori",
+      "minori1",
+      "mino1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 26,
@@ -193,21 +303,52 @@
     "name": "Secret Dressing Room Gacha",
     "cards": [68, 69, 70],
     "start": 1651442400000,
-    "end": 1652133599000
+    "end": 1652133599000,
+    "keywords": [
+      "mizu1",
+      "mizuki1",
+      "mizuki",
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 29,
-    "name": "(1 Time Only) 4=1 Gacha",
+    "name": "4=1 Gacha",
     "cards": [71, 72, 73],
     "start": 1652133600000,
-    "end": 1652824799000
+    "end": 1652824799000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "shiho",
+      "shiho1"
+    ],
+    "type": "focus"
   },
   {
     "id": 30,
     "name": "One With My Crew Gacha",
     "cards": [74, 75, 76],
     "start": 1652824800000,
-    "end": 1653515999000
+    "end": 1653515999000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "akito",
+      "aki1",
+      "akito1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 31,
@@ -235,7 +376,17 @@
     "name": "Welcome to the Penguin Cafe♪ Gacha",
     "cards": [80, 81, 82],
     "start": 1654207200000,
-    "end": 1654898399000
+    "end": 1654898399000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "haruka",
+      "haru1",
+      "haruka1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 35,
@@ -256,7 +407,21 @@
     "name": "Welcome♪ Wonderland Gacha",
     "cards": [88, 89, 90],
     "start": 1655589600000,
-    "end": 1656280799000
+    "end": 1656280799000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "tsukasa",
+      "loud",
+      "obnoxious",
+      "kasa1",
+      "tsukasa1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 38,
@@ -270,7 +435,17 @@
     "name": "Memories Melody Gacha",
     "cards": [91, 92, 93],
     "start": 1656280800000,
-    "end": 1656971999000
+    "end": 1656971999000,
+    "keywords": [
+      "kanade",
+      "kanade1",
+      "kana1",
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 40,
@@ -284,14 +459,35 @@
     "name": "Rainbow Harmony Gacha",
     "cards": [96, 97, 98],
     "start": 1656972000000,
-    "end": 1657663199000
+    "end": 1657663199000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "saki",
+      "saki2"
+    ],
+    "type": "focus"
   },
   {
     "id": 42,
     "name": "The Beast Inside Gacha",
     "cards": [99, 100, 101],
     "start": 1657663200000,
-    "end": 1658440799000
+    "end": 1658440799000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "kohane",
+      "kohane1",
+      "koha1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 43,
@@ -319,14 +515,26 @@
     "name": "Lovely Messenger Gacha",
     "cards": [108, 109, 110],
     "start": 1660168800000,
-    "end": 1661032799000
+    "end": 1661032799000,
+    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi2", "focus"],
+    "type": "focus"
   },
   {
     "id": 47,
     "name": "Hear My Song! Dreaming Mermaid Gacha",
     "cards": [111, 112, 113],
     "start": 1661032800000,
-    "end": 1661896799000
+    "end": 1661896799000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "nene",
+      "nene2",
+      "focus"
+    ]
   },
   {
     "id": 48,
@@ -354,7 +562,18 @@
     "name": "No More Doubts Full Metal Gacha",
     "cards": [117, 118, 119],
     "start": 1662760800000,
-    "end": 1663711199000
+    "end": 1663711199000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "ichika",
+      "ichika1",
+      "ichi1"
+    ],
+    "type": "focus"
   },
   {
     "id": 52,
@@ -368,7 +587,17 @@
     "name": "Forgotten Snow White Gacha",
     "cards": [120, 121, 122],
     "start": 1663711200000,
-    "end": 1664661599000
+    "end": 1664661599000,
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "mafuyu",
+      "mafuyu2",
+      "mafu2"
+    ],
+    "type": "focus"
   },
   {
     "id": 54,
@@ -452,7 +681,16 @@
     "name": "Break The Fence! Gacha",
     "cards": [129, 130, 131],
     "start": 1665784800000,
-    "end": 1666994399000
+    "end": 1666994399000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "an",
+      "an2",
+      "focus"
+    ]
   },
   {
     "id": 66,
@@ -480,7 +718,17 @@
     "name": "Wanderer's Journey Gacha",
     "cards": [133, 134, 135],
     "start": 1666994400000,
-    "end": 1667948399000
+    "end": 1667948399000,
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "mizu2",
+      "mizuki2",
+      "mizuki"
+    ],
+    "type": "focus"
   },
   {
     "id": 70,
@@ -511,7 +759,18 @@
     "name": "Kind-hearted Words Gacha",
     "cards": [137, 138, 139],
     "start": 1667948400000,
-    "end": 1668812399000
+    "end": 1668812399000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "honami",
+      "hona2",
+      "honami2"
+    ],
+    "type": "focus"
   },
   {
     "id": 74,
@@ -567,7 +826,17 @@
     "name": "Christmas Eve Checkmate Gacha",
     "cards": [148, 149, 150],
     "start": 1670713200000,
-    "end": 1671577199000
+    "end": 1671577199000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "minori",
+      "minori2",
+      "mino2",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 82,
@@ -588,7 +857,17 @@
     "name": "Embarking on a Winter Railway Gacha",
     "cards": [156, 157, 158],
     "start": 1671577200000,
-    "end": 1672527599000
+    "end": 1672527599000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "toya",
+      "toya2",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 85,
@@ -644,7 +923,20 @@
     "name": "Popping Mix of Dreams and Reality Gacha",
     "cards": [167, 168, 169],
     "start": 1673564400000,
-    "end": 1674341999000
+    "end": 1674341999000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "wonderhoy",
+      "wondahoy",
+      "emu",
+      "emu2",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 93,
@@ -658,7 +950,17 @@
     "name": "An Overture That Echoes in The Silence Gacha",
     "cards": [170, 171, 172],
     "start": 1674342000000,
-    "end": 1675205999000
+    "end": 1675205999000,
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "kanade",
+      "kana2",
+      "kanade2"
+    ],
+    "type": "focus"
   },
   {
     "id": 95,
@@ -693,7 +995,18 @@
     "name": "Sky Runners! Gacha",
     "cards": [178, 179, 180],
     "start": 1675983600000,
-    "end": 1676761199000
+    "end": 1676761199000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "kohane",
+      "kohane2",
+      "koha2",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 100,
@@ -714,7 +1027,17 @@
     "name": "Journey with U Gacha",
     "cards": [183, 184, 185],
     "start": 1676761200000,
-    "end": 1677625199000
+    "end": 1677625199000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "shiho",
+      "shiho2"
+    ],
+    "type": "focus"
   },
   {
     "id": 103,
@@ -749,7 +1072,17 @@
     "name": "Casting Magic! Witch Craft Gacha",
     "cards": [190, 191, 192],
     "start": 1678575600000,
-    "end": 1679349599000
+    "end": 1679349599000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "shizuku",
+      "shizuku2",
+      "shizu2",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 108,
@@ -770,7 +1103,9 @@
     "name": "Drowning in Blotchy Colors Gacha",
     "cards": [194, 195, 196],
     "start": 1679349600000,
-    "end": 1680213599000
+    "end": 1680213599000,
+    "keywords": ["n25", "nightcord", "niigo", "focus", "ena", "ena2"],
+    "type": "focus"
   },
   {
     "id": 111,
@@ -798,7 +1133,21 @@
     "name": "Pop Up! Picture Book Actors Gacha",
     "cards": [204, 205, 206],
     "start": 1681239600000,
-    "end": 1682103599000
+    "end": 1682103599000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "tsukasa",
+      "loud",
+      "obnoxious",
+      "tsukasa2",
+      "kasa2",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 115,
@@ -819,7 +1168,18 @@
     "name": "Glittering Galactic Stardust Gacha",
     "cards": [208, 209, 210],
     "start": 1682103600000,
-    "end": 1682881199000
+    "end": 1682881199000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "ichika",
+      "ichika2",
+      "ichi2"
+    ],
+    "type": "focus"
   },
   {
     "id": 118,
@@ -833,14 +1193,37 @@
     "name": "The Naive Voice That Cries Out to You Gacha",
     "cards": [212, 213, 214],
     "start": 1682881200000,
-    "end": 1683745199000
+    "end": 1683745199000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "haruka",
+      "haru2",
+      "haruka2",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 120,
     "name": "[It's Back] Fluffy☆ Dreamland Gacha",
     "cards": [56, 57, 58],
     "start": 1683226800000,
-    "end": 1684004399000
+    "end": 1684004399000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "wonderhoy",
+      "wondahoy",
+      "emu",
+      "emu1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 121,
@@ -875,7 +1258,18 @@
     "name": "Aim for Legend Gacha",
     "cards": [220, 221, 222],
     "start": 1684609200000,
-    "end": 1685559599000
+    "end": 1685559599000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "akito",
+      "aki2",
+      "akito2",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 126,
@@ -917,14 +1311,35 @@
     "name": "Nursing my ES Gacha",
     "cards": [227, 228, 229],
     "start": 1686423600000,
-    "end": 1687287599000
+    "end": 1687287599000,
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "mafu3",
+      "mafuyu",
+      "mafuyu3"
+    ],
+    "type": "focus"
   },
   {
     "id": 132,
     "name": "[It's Back] One With My Crew Gacha",
     "cards": [74, 75, 76],
     "start": 1686769200000,
-    "end": 1687633199000
+    "end": 1687633199000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "akito",
+      "aki1",
+      "akito1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 133,
@@ -938,7 +1353,18 @@
     "name": "Enchanting Tropical Resort Gacha",
     "cards": [230, 231, 232],
     "start": 1687287600000,
-    "end": 1688151599000
+    "end": 1688151599000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "nene",
+      "nene3",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 135,
@@ -973,7 +1399,17 @@
     "name": "Chasing That Day's Light Gacha",
     "cards": [239, 240, 241],
     "start": 1689102000000,
-    "end": 1689965999000
+    "end": 1689965999000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "an",
+      "an3",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 140,
@@ -994,7 +1430,17 @@
     "name": "Bleak adolescence Gacha",
     "cards": [243, 244, 245],
     "start": 1689966000000,
-    "end": 1690829999000
+    "end": 1690829999000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "saki",
+      "saki3"
+    ],
+    "type": "focus"
   },
   {
     "id": 143,
@@ -1022,7 +1468,9 @@
     "name": "Lovely Flowers Blooming by the Water Gacha",
     "cards": [250, 251, 252],
     "start": 1691694000000,
-    "end": 1692557999000
+    "end": 1692557999000,
+    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi3", "focus"],
+    "type": "focus"
   },
   {
     "id": 147,
@@ -1053,7 +1501,17 @@
     "name": "Drifting Slumber at Dawn Gacha",
     "cards": [254, 255, 256],
     "start": 1692558000000,
-    "end": 1693508399000
+    "end": 1693508399000,
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "mizuki",
+      "mizu3",
+      "mizuki3"
+    ],
+    "type": "focus"
   },
   {
     "id": 151,
@@ -1081,7 +1539,17 @@
     "name": "Before the storm Gacha",
     "cards": [259, 260, 261],
     "start": 1693508400000,
-    "end": 1694372399000
+    "end": 1694372399000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "shiho",
+      "shiho3"
+    ],
+    "type": "focus"
   },
   {
     "id": 155,
@@ -1109,7 +1577,17 @@
     "name": "From on a perch Gacha",
     "cards": [266, 267, 268],
     "start": 1695236400000,
-    "end": 1696100399000
+    "end": 1696100399000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "toya",
+      "toya3",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 159,
@@ -1200,7 +1678,17 @@
     "name": "Dreams come true Gacha",
     "cards": [276, 277, 278],
     "start": 1697050800000,
-    "end": 1697914799000
+    "end": 1697914799000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "minori",
+      "minori3",
+      "mino3",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 172,
@@ -1214,7 +1702,18 @@
     "name": "Temple of Chronos Gacha",
     "cards": [279, 280, 281],
     "start": 1697914800000,
-    "end": 1698778799000
+    "end": 1698778799000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "rui",
+      "rui3",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 174,
@@ -1249,7 +1748,18 @@
     "name": "NEON Universe Gacha",
     "cards": [287, 288, 289],
     "start": 1699646400000,
-    "end": 1700510399000
+    "end": 1700510399000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "ichika",
+      "ichika3",
+      "ichi3"
+    ],
+    "type": "focus"
   },
   {
     "id": 179,
@@ -1263,14 +1773,26 @@
     "name": "[It's Back] Wanderer's Journey Gacha",
     "cards": [133, 134, 135],
     "start": 1699992000000,
-    "end": 1700769599000
+    "end": 1700769599000,
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "mizu2",
+      "mizuki2",
+      "mizuki"
+    ],
+    "type": "focus"
   },
   {
     "id": 181,
     "name": "Portray Yourself Gacha",
     "cards": [291, 292, 293],
     "start": 1700510400000,
-    "end": 1701374399000
+    "end": 1701374399000,
+    "keywords": ["n25", "nightcord", "niigo", "focus", "ena", "ena3"],
+    "type": "focus"
   },
   {
     "id": 182,
@@ -1298,7 +1820,17 @@
     "name": "Fly to The Future! Gacha",
     "cards": [294, 295, 296],
     "start": 1701374400000,
-    "end": 1702324799000
+    "end": 1702324799000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "haruka",
+      "haruka3",
+      "haru3",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 186,
@@ -1375,7 +1907,18 @@
     "name": "Break The Chain Gacha",
     "cards": [298, 299, 300],
     "start": 1702324800000,
-    "end": 1703188799000
+    "end": 1703188799000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "akito",
+      "aki3",
+      "akito3",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 197,
@@ -1452,7 +1995,20 @@
     "name": "Twinkling Night Sky Milky Way Gacha",
     "cards": [312, 313, 314],
     "start": 1704916800000,
-    "end": 1705867199000
+    "end": 1705867199000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "wonderhoy",
+      "wondahoy",
+      "emu",
+      "emu3",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 208,
@@ -1466,7 +2022,18 @@
     "name": "Your Rhythm's Symphony Gacha",
     "cards": [315, 316, 317],
     "start": 1705867200000,
-    "end": 1706731199000
+    "end": 1706731199000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "honami",
+      "hona3",
+      "honami3"
+    ],
+    "type": "focus"
   },
   {
     "id": 210,
@@ -1515,7 +2082,17 @@
     "name": "Herald of Dewy Rainy Spring Gacha",
     "cards": [324, 325, 326],
     "start": 1707595200000,
-    "end": 1708372799000
+    "end": 1708372799000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "shizuku",
+      "shizuku3",
+      "shizu3",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 217,
@@ -1543,7 +2120,18 @@
     "name": "Let Out The Lambs Gacha",
     "cards": [328, 329, 330],
     "start": 1708372800000,
-    "end": 1709236799000
+    "end": 1709236799000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "kohane",
+      "koha3",
+      "kohane3",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 221,
@@ -1585,7 +2173,21 @@
     "name": "Hidden Circus Gacha",
     "cards": [335, 336, 337],
     "start": 1710183600000,
-    "end": 1711047599000
+    "end": 1711047599000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "tsukasa",
+      "loud",
+      "obnoxious",
+      "tsukasa3",
+      "kasa3",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 227,
@@ -1606,7 +2208,17 @@
     "name": "Fangs in the Shadows Gacha",
     "cards": [339, 340, 341],
     "start": 1711047600000,
-    "end": 1711825199000
+    "end": 1711825199000,
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "kanade",
+      "kanade3",
+      "kana3"
+    ],
+    "type": "focus"
   },
   {
     "id": 230,
@@ -1655,7 +2267,17 @@
     "name": "Space Colony Gacha",
     "cards": [348, 349, 350],
     "start": 1712862000000,
-    "end": 1713725999000
+    "end": 1713725999000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "saki",
+      "saki4"
+    ],
+    "type": "focus"
   },
   {
     "id": 237,
@@ -1683,7 +2305,8 @@
     "name": "Where Turning Wheels Take Us Gacha",
     "cards": [355, 356, 357],
     "start": 1713726000000,
-    "end": 1714503599000
+    "end": 1714503599000,
+    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi4"]
   },
   {
     "id": 241,
@@ -1704,14 +2327,34 @@
     "name": "Escape the Rain Gacha",
     "cards": [359, 360, 361],
     "start": 1714503600000,
-    "end": 1715453999000
+    "end": 1715453999000,
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "mizuki",
+      "mizuki4",
+      "mizu4"
+    ],
+    "type": "focus"
   },
   {
     "id": 244,
     "name": "[It's Back] The Naive Voice That Cries Out to You Gacha",
     "cards": [212, 213, 214],
     "start": 1714762800000,
-    "end": 1715626799000
+    "end": 1715626799000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "haruka",
+      "haruka2",
+      "haru2",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 245,
@@ -1746,7 +2389,18 @@
     "name": "Memories Swept Off on Ripples Gacha",
     "cards": [367, 368, 369],
     "start": 1716231600000,
-    "end": 1717181999000
+    "end": 1717181999000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "nene",
+      "nene4",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 250,
@@ -1802,7 +2456,8 @@
     "name": "Someone's Dear Ones Gacha",
     "cards": [374, 375, 351],
     "start": 1718046000000,
-    "end": 1718909999000
+    "end": 1718909999000,
+    "keywords": ["vbs", "vivibasu", "vivid bad squad", "squad", "an", "an4"]
   },
   {
     "id": 258,
@@ -1823,7 +2478,17 @@
     "name": "Chest of Glittering Emotions Gacha",
     "cards": [376, 377, 378],
     "start": 1718910000000,
-    "end": 1719773999000
+    "end": 1719773999000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "minori",
+      "mino4",
+      "minori4",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 261,
@@ -1865,7 +2530,17 @@
     "name": "Where Is the ♡? Gacha",
     "cards": [385, 386, 387],
     "start": 1720724400000,
-    "end": 1721588399000
+    "end": 1721588399000,
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "mafuyu",
+      "mafu4",
+      "mafuyu4"
+    ],
+    "type": "focus"
   },
   {
     "id": 267,
@@ -1886,7 +2561,18 @@
     "name": "Upon That Shooting Star Gacha",
     "cards": [389, 390, 391],
     "start": 1721588400000,
-    "end": 1722452399000
+    "end": 1722452399000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "ichika",
+      "ichi4",
+      "ichika4"
+    ],
+    "type": "focus"
   },
   {
     "id": 270,
@@ -1928,7 +2614,18 @@
     "name": "Repaint My Colors! Gacha",
     "cards": [396, 397, 398],
     "start": 1723316400000,
-    "end": 1724266799000
+    "end": 1724266799000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "kohane",
+      "koha4",
+      "kohane4",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 276,
@@ -1949,7 +2646,20 @@
     "name": "Never-Ending Showtime Gacha",
     "cards": [400, 401, 402],
     "start": 1724266800000,
-    "end": 1725130799000
+    "end": 1725130799000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "wonderhoy",
+      "wondahoy",
+      "emu",
+      "emu4",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 279,
@@ -1991,7 +2701,17 @@
     "name": "[It's Back] Before the storm Gacha",
     "cards": [259, 260, 261],
     "start": 1725649200000,
-    "end": 1726426799000
+    "end": 1726426799000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "shiho",
+      "shiho3"
+    ],
+    "type": "focus"
   },
   {
     "id": 285,
@@ -2138,7 +2858,18 @@
     "name": "Find the Exit Gacha",
     "cards": [423, 424, 352],
     "start": 1728759600000,
-    "end": 1729623599000
+    "end": 1729623599000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "akito",
+      "aki4",
+      "akito4",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 306,
@@ -2162,7 +2893,17 @@
     "name": "Azure Resonance Gacha",
     "cards": [426, 427, 428],
     "start": 1729623600000,
-    "end": 1730401199000
+    "end": 1730401199000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "shiho",
+      "shiho4"
+    ],
+    "type": "focus"
   },
   {
     "id": 309,
@@ -2183,14 +2924,25 @@
     "name": "As Autumn Dusk Wanes Gacha",
     "cards": [430, 431, 432],
     "start": 1730401200000,
-    "end": 1731095999000
+    "end": 1731095999000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "shizuku",
+      "shizuku4",
+      "shizu4",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 312,
     "name": "Nightcord at 25:00 World Link Event Support Gacha",
     "cards": [339, 385, 291, 254, 146],
     "start": 1730487600000,
-    "end": 1732305599000
+    "end": 1732305599000,
+    "keywords": ["niigo", "nightcord", "n25", "worldlink", "world link"]
   },
   {
     "id": 313,
@@ -2232,14 +2984,39 @@
     "name": "[It's Back] One With My Crew Gacha",
     "cards": [74, 75, 76],
     "start": 1731787200000,
-    "end": 1732564799000
+    "end": 1732564799000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "akito",
+      "aki1",
+      "akito1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 319,
     "name": "Play the Shadow Gacha",
     "cards": [439, 440, 353],
     "start": 1732305600000,
-    "end": 1732996799000
+    "end": 1732996799000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "tsukasa",
+      "loud",
+      "obnoxious",
+      "tsukasa4",
+      "kasa4",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 320,
@@ -2365,7 +3142,17 @@
     "name": "[It's Back] Fly to The Future! Gacha",
     "cards": [294, 295, 296],
     "start": 1734120000000,
-    "end": 1734897599000
+    "end": 1734897599000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "haruka",
+      "haru3",
+      "haruka3",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 338,
@@ -2386,7 +3173,17 @@
     "name": "Memory of Melody Gacha",
     "cards": [448, 449, 450],
     "start": 1734724800000,
-    "end": 1735675199000
+    "end": 1735675199000,
+    "keywords": [
+      "niigo",
+      "nightcord",
+      "n25",
+      "focus",
+      "kanade",
+      "kana4",
+      "kanade4"
+    ],
+    "type": "focus"
   },
   {
     "id": 341,
@@ -2498,7 +3295,20 @@
     "name": "[It's Back] Fluffy☆ Dreamland Gacha",
     "cards": [56, 57, 58],
     "start": 1737057600000,
-    "end": 1737835199000
+    "end": 1737835199000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "wonderhoy",
+      "wondahoy",
+      "emu",
+      "emu1",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 357,
@@ -2519,7 +3329,18 @@
     "name": "Punk Night Tokyo Gacha",
     "cards": [469, 470, 471],
     "start": 1737662400000,
-    "end": 1738353599000
+    "end": 1738353599000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "rui",
+      "rui4",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 360,
@@ -2568,7 +3389,18 @@
     "name": "Gazing Ever Higher Gacha",
     "cards": [478, 479, 480],
     "start": 1739217600000,
-    "end": 1740081599000
+    "end": 1740081599000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "honami",
+      "hona4",
+      "honami4"
+    ],
+    "type": "focus"
   },
   {
     "id": 367,
@@ -2596,7 +3428,17 @@
     "name": "Rainbow Magic Drawn in the Sky Gacha",
     "cards": [482, 483, 484],
     "start": 1740081600000,
-    "end": 1740772799000
+    "end": 1740772799000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "minori",
+      "mino5",
+      "minori5",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 371,
@@ -2636,7 +3478,7 @@
   {
     "id": 376,
     "name": "Kohane Azusawa Happy Birthday 2025 Gacha",
-    "cards": [],
+    "cards": [488],
     "start": 1740902400000,
     "end": 1741507199000
   },
@@ -2673,14 +3515,25 @@
     "name": "Roots in the Snow Gacha",
     "cards": [494, 495, 496],
     "start": 1742670000000,
-    "end": 1743361199000
+    "end": 1743361199000,
+    "keywords": ["vbs", "vivibasu", "vivid bad squad", "squad", "toya", "toya4"]
   },
   {
     "id": 382,
     "name": "[It's Back] Wanderer's Journey Gacha",
     "cards": [133, 134, 135],
     "start": 1743015600000,
-    "end": 1743793199000
+    "end": 1743793199000,
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "mizu2",
+      "mizuki2",
+      "mizuki"
+    ],
+    "type": "focus"
   },
   {
     "id": 383,
@@ -2736,7 +3589,9 @@
     "name": "Drawing Blooming Gacha",
     "cards": [503, 504, 505],
     "start": 1744311600000,
-    "end": 1745175599000
+    "end": 1745175599000,
+    "keywords": ["niigo", "nightcord", "n25", "focus", "ena4", "ena"],
+    "type": "focus"
   },
   {
     "id": 391,
@@ -2764,14 +3619,34 @@
     "name": "Not Overlap Sounds Gacha",
     "cards": [507, 508, 509],
     "start": 1745175600000,
-    "end": 1746039599000
+    "end": 1746039599000,
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "saki",
+      "saki5"
+    ],
+    "type": "focus"
   },
   {
     "id": 395,
     "name": "[It's Back] The Naive Voice That Cries Out to You Gacha",
     "cards": [212, 213, 214],
     "start": 1745607600000,
-    "end": 1746385199000
+    "end": 1746385199000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "haruka",
+      "haruka2",
+      "haru2",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 396,
@@ -2785,7 +3660,17 @@
     "name": "Eternal Bout Gacha",
     "cards": [511, 512, 513],
     "start": 1746039600000,
-    "end": 1746817199000
+    "end": 1746817199000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "an",
+      "an5",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 398,
@@ -2869,7 +3754,20 @@
     "name": "Encountering the Unknown?! Cosmic Opera Gacha",
     "cards": [520, 521, 522],
     "start": 1748026800000,
-    "end": 1748717999000
+    "end": 1748717999000,
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "wonderhoy",
+      "wondahoy",
+      "emu",
+      "emu5",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 410,
@@ -2932,14 +3830,34 @@
     "name": "going upstairs Gacha",
     "cards": [527, 528, 529],
     "start": 1749582000000,
-    "end": 1750273199000
+    "end": 1750273199000,
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "haruka",
+      "haruka4",
+      "haru4",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 419,
     "name": "Reknit Relation Gacha",
     "cards": [530, 531, 532],
     "start": 1750446000000,
-    "end": 1751309999000
+    "end": 1751309999000,
+    "keywords": [
+      "niigo",
+      "nightcord",
+      "n25",
+      "focus",
+      "mafuyu",
+      "mafu5",
+      "mafuyu5"
+    ],
+    "type": "focus"
   },
   {
     "id": 420,
@@ -2953,7 +3871,18 @@
     "name": "The Party of Blast!! Gacha",
     "cards": [533, 534, 535],
     "start": 1751655600000,
-    "end": 1752087599000
+    "end": 1752087599000,
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "kohane",
+      "kohane5",
+      "koha5",
+      "focus"
+    ],
+    "type": "focus"
   },
   {
     "id": 422,

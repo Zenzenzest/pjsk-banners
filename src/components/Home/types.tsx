@@ -20,7 +20,7 @@ export interface CardsTypes {
   name: string;
   character: string;
   rarity: number;
-  group: string;
+  unit: string;
   attribute: string;
   untrained_url: string;
   trained_url: string;
