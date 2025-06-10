@@ -1,9 +1,11 @@
-import { useState, useEffect } from "react";
-import GachaBanners from "../../../assets/json/gacha_banners.json";
+import { useState } from "react";
+import GlobalBanners from "../../../assets/json/gacha_banners.json";
+import JpBbanners from "../../../assets/json/jp_banners.json";
 import { useTheme } from "../../../context/Theme_toggle";
 
 import GachaTable from "./Gacha_table";
 import type { BannerTypes, GachaBannersProps } from "../types";
+import { useServer } from "../../../context/Server";
 
 const months = [
   "Jan",
@@ -19,18 +21,31 @@ const months = [
   "Nov",
   "Dec",
 ];
-const years = [2021, 2022, 2023, 2024, 2025];
-const timeData = [
-  { 2021: [11, 12] },
-  { 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-  { 2023: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-  { 2024: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-  { 2025: [1, 2, 3, 4, 5, 6, 7] },
-];
 
 export default function DateTabs() {
   const { theme } = useTheme();
+  const { server } = useServer();
+  const years_global = [2021, 2022, 2023, 2024, 2025];
+  const timeData_global = [
+    { 2021: [11, 12] },
+    { 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+    { 2023: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+    { 2024: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+    { 2025: [1, 2, 3, 4, 5, 6, 7] },
+  ];
 
+  const years_jp = [2020, 2021, 2022, 2023, 2024, 2025];
+  const timeData_jp = [
+    { 2020: [9, 10, 11, 12] },
+    { 2021: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+    { 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+    { 2023: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+    { 2024: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+    { 2025: [1, 2, 3, 4, 5, 6, 7] },
+  ];
+  const years = server === "global" ? years_global : years_jp;
+  const timeData = server === "global" ? timeData_global : timeData_jp;
+  const dataBanners = server === "global" ? GlobalBanners : JpBbanners;
   // Get current date
   const currentDate = new Date();
   const currentYearValue = currentDate.getFullYear();
@@ -77,13 +92,14 @@ export default function DateTabs() {
   const [selectedYear, setSelectedYear] = useState<number>(initialYear);
   const [selectedMonth, setSelectedMonth] = useState<number>(initialMonth);
 
-  // Rest of your component remains the same...
-  const filteredBanners: BannerTypes[] = GachaBanners.filter((banner) => {
-    const date = new Date(Number(banner.start));
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1;
-    return year === selectedYear && month === selectedMonth;
-  });
+  const filteredBanners: BannerTypes[] = dataBanners
+    .filter((banner) => {
+      const date = new Date(Number(banner.start));
+      const year = date.getFullYear();
+      const month = date.getMonth() + 1;
+      return year === selectedYear && month === selectedMonth;
+    })
+    .sort((a, b) => Number(a.start) - Number(b.start));
 
   const handleYearChange = (y: number) => {
     setSelectedYear(y);
