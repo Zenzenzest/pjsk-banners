@@ -34,9 +34,13 @@ export default function CountdownTimer({ startDate }: CountdownProps) {
     const pad = (num: number): string => num.toString().padStart(2, "0");
 
     if (days > 0) {
-      return `${pad(days)}D:${pad(hours)}H:${pad(minutes)}M:${pad(seconds)}s`;
+      return `${pad(days)} Days | ${pad(hours)} Hours | ${pad(
+        minutes
+      )}  Minutes | ${pad(seconds)} seconds `;
     }
-    return `${pad(hours)}H:${pad(minutes)}M:${pad(seconds)}s`;
+    return `${pad(hours)} Hours | ${pad(minutes)} Minutes | ${pad(
+      seconds
+    )} seconds `;
   };
 
   return <div className="countdown-timer">{formatTime(remainingTime)}</div>;

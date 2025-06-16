@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import GlobalBanners from "../../../assets/json/gacha_banners.json";
 import JpBbanners from "../../../assets/json/jp_banners.json";
 import { useTheme } from "../../../context/Theme_toggle";
 
 import GachaTable from "./Gacha_table";
-import type { BannerTypes, GachaBannersProps } from "../types";
+import type { BannerTypes } from "../types";
 import { useServer } from "../../../context/Server";
 
 const months = [
@@ -25,6 +25,7 @@ const months = [
 export default function DateTabs() {
   const { theme } = useTheme();
   const { server } = useServer();
+
   const years_global = [2021, 2022, 2023, 2024, 2025];
   const timeData_global = [
     { 2021: [11, 12] },
@@ -43,32 +44,35 @@ export default function DateTabs() {
     { 2024: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
     { 2025: [1, 2, 3, 4, 5, 6, 7] },
   ];
+
   const years = server === "global" ? years_global : years_jp;
   const timeData = server === "global" ? timeData_global : timeData_jp;
   const dataBanners = server === "global" ? GlobalBanners : JpBbanners;
+
   // Get current date
   const currentDate = new Date();
   const currentYearValue = currentDate.getFullYear();
-  const currentMonthValue = currentDate.getMonth() + 1; // Months are 0-indexed in JS
+  const currentMonthValue = currentDate.getMonth() + 1; // Months are 0-indexed 
 
-  // Find the closest available year and month
-  const getInitialYear = () => {
+  // Find the closest available year and month based on selected server
+  const getInitialYear = (serverYears: number[]) => {
     // Check if current year is available
-    if (years.includes(currentYearValue)) {
+    if (serverYears.includes(currentYearValue)) {
       return currentYearValue;
     }
+
     // If not, find the latest year before current year
-    for (let i = years.length - 1; i >= 0; i--) {
-      if (years[i] <= currentYearValue) {
-        return years[i];
+    for (let i = serverYears.length - 1; i >= 0; i--) {
+      if (serverYears[i] <= currentYearValue) {
+        return serverYears[i];
       }
     }
-    return years[0]; // Fallback to first year
+    return serverYears[0]; // Fallback to first year
   };
 
-  const getInitialMonth = (year: number) => {
-    const yearIndex = years.indexOf(year);
-    const availableMonths = timeData[yearIndex][year];
+  const getInitialMonth = (year: number, serverYears: number[], serverTimeData: any[]) => {
+    const yearIndex = serverYears.indexOf(year);
+    const availableMonths = serverTimeData[yearIndex][year];
 
     // If selected year is current year, try to select current month
     if (year === currentYearValue) {
@@ -86,11 +90,29 @@ export default function DateTabs() {
     return availableMonths[0];
   };
 
-  const initialYear = getInitialYear();
-  const initialMonth = getInitialMonth(initialYear);
+  // Get initial values based on selected server
+  const getDefaultValues = () => {
+    const defaultYear = getInitialYear(years);
+    const defaultMonth = getInitialMonth(defaultYear, years, timeData);
+    return { defaultYear, defaultMonth };
+  };
 
-  const [selectedYear, setSelectedYear] = useState<number>(initialYear);
-  const [selectedMonth, setSelectedMonth] = useState<number>(initialMonth);
+  const { defaultYear, defaultMonth } = getDefaultValues();
+  
+  const [selectedYear, setSelectedYear] = useState<number>(defaultYear);
+  const [selectedMonth, setSelectedMonth] = useState<number>(defaultMonth);
+  
+  // To remember selected month for each year
+  const [yearMonthMemory, setYearMonthMemory] = useState<Record<number, number>>({});
+
+  // Initial year and month when server changes
+  useEffect(() => {
+    const { defaultYear: newDefaultYear, defaultMonth: newDefaultMonth } = getDefaultValues();
+    setSelectedYear(newDefaultYear);
+    setSelectedMonth(newDefaultMonth);
+    // Clear when server changes since year/month availability might be different
+    setYearMonthMemory({});
+  }, [server]); // Only depend on server changes
 
   const filteredBanners: BannerTypes[] = dataBanners
     .filter((banner) => {
@@ -103,11 +125,29 @@ export default function DateTabs() {
 
   const handleYearChange = (y: number) => {
     setSelectedYear(y);
-    setSelectedMonth(timeData[years.indexOf(y)][y][0]);
+    
+    const yearIndex = years.indexOf(y);
+    const availableMonths = timeData[yearIndex][y];
+    
+    // Check if we have a remembered month for this year
+    const rememberedMonth = yearMonthMemory[y];
+    
+    if (rememberedMonth && availableMonths.includes(rememberedMonth)) {
+      // Use remembered month if it's available
+      setSelectedMonth(rememberedMonth);
+    } else {
+      // Use first available month for new years or if remembered month is no longer available
+      setSelectedMonth(availableMonths[0]);
+    }
   };
 
   const handleMonthChange = (m: number) => {
     setSelectedMonth(m);
+    // Remember this month for the current year
+    setYearMonthMemory(prev => ({
+      ...prev,
+      [selectedYear]: m
+    }));
   };
 
   return (
@@ -138,7 +178,7 @@ export default function DateTabs() {
         </div>
         {/* MONTHS */}
         <div className="w-full flex flex-row flex-wrap gap-4 justify-center items-center text-base p-2">
-          {timeData[years.indexOf(selectedYear)][selectedYear].map((month) => (
+          {years.includes(selectedYear) && timeData[years.indexOf(selectedYear)][selectedYear]?.map((month) => (
             <div
               key={month}
               onClick={() => handleMonthChange(month)}

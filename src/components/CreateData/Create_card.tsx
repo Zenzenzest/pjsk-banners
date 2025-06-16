@@ -2,8 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { useServer } from "../../context/Server";
 import Select from "react-select";
 
-
-
 type Entry = {
   id: number;
 
@@ -148,14 +146,16 @@ export default function CreateCard() {
     const trimmedTrainedIcon = trimImageUrl(form.trained_icon.trim());
     const trimmedUntrainedUrl = trimImageUrl(form.untrained_url.trim());
     const trimmedTrainedUrl = trimImageUrl(form.trained_url.trim());
+
+    // Updated validation: only rarity 3 and 4 require different URLs
     const shouldWarn =
-      form.rarity <= 4 &&
+      (form.rarity === 3 || form.rarity === 4) &&
       (form.untrained_url.trim() === form.trained_url.trim() ||
         trimmedUntrainedIcon === trimmedTrainedIcon);
 
     if (shouldWarn) {
       setUrlWarning(
-        "For rarity 4 or lower, untrained and trained image URLs and icon URLs must be different."
+        "For rarity 3 and 4, untrained and trained image URLs and icon URLs must be different."
       );
       return;
     } else {

@@ -5,6 +5,7 @@ import { useTheme } from "../../../context/Theme_toggle";
 import type { BannerTypes, CardState, CardsTypes } from "../types";
 import CountdownTimer from "../Countdown_timer";
 import CardModal from "../Card_modal";
+import { useServer } from "../../../context/Server";
 
 export default function GachaTable({
   filteredBanners,
@@ -12,6 +13,7 @@ export default function GachaTable({
   filteredBanners: BannerTypes[];
 }) {
   const { theme } = useTheme();
+  const { server } = useServer();
   const [isOpen, setIsOpen] = useState(false);
   const [cardState, setCardState] = useState<CardState>({
     cardId: 0,
@@ -82,7 +84,10 @@ export default function GachaTable({
         const diffInDays = convertToDays(diffInMs);
         const upcomingDiffInMs = startDate - today;
 
-        const gachaBannerImage = `/images/banners/${formattedGachaId}.webp`;
+        const gachaBannerImage =
+          server === "global"
+            ? `/images/banners/${formattedGachaId}.webp`
+            : `/images/jp_banners/${formattedGachaId}.webp`;
 
         return (
           <div

@@ -1669,7 +1669,7 @@
   {
     "id": 170,
     "name": "Haruka Kiritani Happy Birthday 2023 Gacha",
-    "cards": [275],
+    "cards": [275, 128],
     "start": 1696489200000,
     "end": 1697093999000
   },
@@ -1718,7 +1718,7 @@
   {
     "id": 174,
     "name": "Honami Mochizuki Happy Birthday 2023 Gacha",
-    "cards": [282],
+    "cards": [282, 132],
     "start": 1698390000000,
     "end": 1698994799000
   },
@@ -1739,7 +1739,7 @@
   {
     "id": 177,
     "name": "MEIKO Happy Anniversary 2023 Gacha",
-    "cards": [286],
+    "cards": [286, 136],
     "start": 1699167600000,
     "end": 1699775999000
   },
@@ -1764,7 +1764,7 @@
   {
     "id": 179,
     "name": "Akito Shinonome Happy Birthday 2023 Gacha",
-    "cards": [290],
+    "cards": [290, 140],
     "start": 1699776000000,
     "end": 1700380799000
   },
@@ -1835,7 +1835,7 @@
   {
     "id": 186,
     "name": "Shizuku Hinomori Happy Birthday 2023 Gacha",
-    "cards": [297],
+    "cards": [297, 147],
     "start": 1701849600000,
     "end": 1702454399000
   },
@@ -1944,14 +1944,14 @@
   {
     "id": 200,
     "name": "Kagamine Rin Happy Anniversary 2023 Gacha",
-    "cards": [304],
+    "cards": [304, 159],
     "start": 1703664000000,
     "end": 1704268799000
   },
   {
     "id": 201,
     "name": "Kagamine Len Happy Anniversary 2023 Gacha",
-    "cards": [305],
+    "cards": [305, 160],
     "start": 1703664000000,
     "end": 1704268799000
   },
@@ -1986,7 +1986,7 @@
   {
     "id": 206,
     "name": "Shiho Hinomori Happy Birthday 2024 Gacha",
-    "cards": [311],
+    "cards": [311, 166],
     "start": 1704700800000,
     "end": 1705305599000
   },
@@ -2045,14 +2045,14 @@
   {
     "id": 211,
     "name": "Mafuyu Asahina Happy Birthday 2024 Gacha",
-    "cards": [318],
+    "cards": [318, 173],
     "start": 1706342400000,
     "end": 1706947199000
   },
   {
     "id": 212,
     "name": "Megurine Luka Happy Anniversary 2024 Gacha",
-    "cards": [319],
+    "cards": [319, 174],
     "start": 1706601600000,
     "end": 1707206399000
   },
@@ -2073,7 +2073,7 @@
   {
     "id": 215,
     "name": "Kanade Yoisaki Happy Birthday 2024 Gacha",
-    "cards": [323],
+    "cards": [323, 181],
     "start": 1707552000000,
     "end": 1708156799000
   },
@@ -2111,7 +2111,7 @@
   {
     "id": 219,
     "name": "KAITO Happy Anniversary 2024 Gacha",
-    "cards": [327],
+    "cards": [327, 182],
     "start": 1708156800000,
     "end": 1708761599000
   },
@@ -2150,7 +2150,7 @@
   {
     "id": 223,
     "name": "Kohane Azusawa Happy Birthday 2024 Gacha",
-    "cards": [334],
+    "cards": [334, 189],
     "start": 1709366400000,
     "end": 1709971199000
   },
@@ -2199,7 +2199,7 @@
   {
     "id": 228,
     "name": "Airi Momoi Happy Birthday 2024 Gacha",
-    "cards": [338],
+    "cards": [338, 193],
     "start": 1710831600000,
     "end": 1711436399000
   },
@@ -2289,7 +2289,7 @@
   {
     "id": 238,
     "name": "Minori Hanasato Happy Birthday 2024 Gacha",
-    "cards": [354],
+    "cards": [354, 207],
     "start": 1713078000000,
     "end": 1713682799000
   },
@@ -2318,7 +2318,7 @@
   {
     "id": 242,
     "name": "Ena Shinonome Happy Birthday 2024 Gacha",
-    "cards": [358],
+    "cards": [358, 211],
     "start": 1714460400000,
     "end": 1715065199000
   },
@@ -2359,7 +2359,7 @@
   {
     "id": 245,
     "name": "Saki Tenma Happy Birthday 2024 Gacha",
-    "cards": [362],
+    "cards": [362, 215],
     "start": 1715238000000,
     "end": 1715842799000
   },
@@ -2380,7 +2380,7 @@
   {
     "id": 248,
     "name": "Tsukasa Tenma Happy Birthday 2024 Gacha",
-    "cards": [366],
+    "cards": [366, 219],
     "start": 1715929200000,
     "end": 1716533999000
   },
@@ -2405,7 +2405,7 @@
   {
     "id": 250,
     "name": "Toya Aoyagi Happy Birthday 2024 Gacha",
-    "cards": [370],
+    "cards": [370, 223],
     "start": 1716620400000,
     "end": 1717225199000
   },
@@ -2493,7 +2493,7 @@
   {
     "id": 261,
     "name": "Rui Kamishiro Happy Birthday 2024 Gacha",
-    "cards": [379],
+    "cards": [379, 233],
     "start": 1719212400000,
     "end": 1719817199000
   },
@@ -2552,7 +2552,7 @@
   {
     "id": 268,
     "name": "Nene Kusanagi Happy Birthday 2024 Gacha",
-    "cards": [388],
+    "cards": [388, 242],
     "start": 1721458800000,
     "end": 1722063599000
   },
@@ -2584,7 +2584,7 @@
   {
     "id": 271,
     "name": "An Shiraishi Happy Birthday 2024 Gacha",
-    "cards": [392],
+    "cards": [392, 246],
     "start": 1721977200000,
     "end": 1722581999000
   },
@@ -2630,7 +2630,7 @@
   {
     "id": 276,
     "name": "Ichika Hoshino Happy Birthday 2024 Gacha",
-    "cards": [399],
+    "cards": [399, 253],
     "start": 1723359600000,
     "end": 1723964399000
   },
@@ -2671,7 +2671,7 @@
   {
     "id": 280,
     "name": "Mizuki Akiyama Happy Birthday 2024 Gacha",
-    "cards": [403],
+    "cards": [403, 257],
     "start": 1724742000000,
     "end": 1725346799000
   },
@@ -2685,7 +2685,7 @@
   {
     "id": 282,
     "name": "Hatsune Miku Happy Anniversary 2024 Gacha",
-    "cards": [404],
+    "cards": [404, 258],
     "start": 1725087600000,
     "end": 1725692399000
   },
@@ -2716,7 +2716,7 @@
   {
     "id": 285,
     "name": "Emu Otori Happy Birthday 2024 Gacha",
-    "cards": [409],
+    "cards": [409, 262],
     "start": 1725865200000,
     "end": 1726469999000
   },
@@ -2842,7 +2842,7 @@
   {
     "id": 303,
     "name": "Haruka Kiritani Happy Birthday 2024 Gacha",
-    "cards": [422],
+    "cards": [422, 275, 128],
     "start": 1728111600000,
     "end": 1728716399000
   },
@@ -2915,7 +2915,7 @@
   {
     "id": 310,
     "name": "Honami Mochizuki Happy Birthday 2024 Gacha",
-    "cards": [429],
+    "cards": [429, 282, 132],
     "start": 1730012400000,
     "end": 1730617199000
   },
@@ -2947,7 +2947,7 @@
   {
     "id": 313,
     "name": "MEIKO Happy Anniversary 2024 Gacha",
-    "cards": [433],
+    "cards": [433, 286, 136],
     "start": 1730793600000,
     "end": 1731398399000
   },
@@ -2975,7 +2975,7 @@
   {
     "id": 317,
     "name": "Akito Shinonome Happy Birthday 2024 Gacha",
-    "cards": [438],
+    "cards": [438, 290, 140],
     "start": 1731398400000,
     "end": 1732003199000
   },
@@ -3049,7 +3049,7 @@
   {
     "id": 324,
     "name": "Shizuku Hinomori Happy Birthday 2024 Gacha",
-    "cards": [444],
+    "cards": [444, 297, 147],
     "start": 1733472000000,
     "end": 1734076799000
   },
@@ -3209,14 +3209,14 @@
   {
     "id": 344,
     "name": "Kagamine Rin Happy Anniversary 2024 Gacha",
-    "cards": [451],
+    "cards": [451, 304, 159],
     "start": 1735286400000,
     "end": 1735891199000
   },
   {
     "id": 345,
     "name": "Kagamine Len Happy Anniversary 2024 Gacha",
-    "cards": [452],
+    "cards": [452, 305, 160],
     "start": 1735286400000,
     "end": 1735891199000
   },
@@ -3265,7 +3265,7 @@
   {
     "id": 352,
     "name": "Shiho Hinomori Happy Birthday 2025 Gacha",
-    "cards": [464],
+    "cards": [464, 311, 166],
     "start": 1736323200000,
     "end": 1736927999000
   },
@@ -3352,14 +3352,14 @@
   {
     "id": 361,
     "name": "Mafuyu Asahina Happy Birthday 2025 Gacha",
-    "cards": [472],
+    "cards": [472, 318, 173],
     "start": 1737964800000,
     "end": 1738569599000
   },
   {
     "id": 362,
     "name": "Megurine Luka Happy Anniversary 2025 Gacha",
-    "cards": [473],
+    "cards": [473, 319, 174],
     "start": 1738224000000,
     "end": 1738828799000
   },
@@ -3380,7 +3380,7 @@
   {
     "id": 365,
     "name": "Kanade Yoisaki Happy Birthday 2025 Gacha",
-    "cards": [477],
+    "cards": [477, 323, 181],
     "start": 1739174400000,
     "end": 1739779199000
   },
@@ -3419,7 +3419,7 @@
   {
     "id": 369,
     "name": "KAITO Happy Anniversary 2025 Gacha",
-    "cards": [481],
+    "cards": [481, 327, 182],
     "start": 1739779200000,
     "end": 1740383999000
   },
@@ -3478,7 +3478,7 @@
   {
     "id": 376,
     "name": "Kohane Azusawa Happy Birthday 2025 Gacha",
-    "cards": [488],
+    "cards": [488, 334, 189],
     "start": 1740902400000,
     "end": 1741507199000
   },
@@ -3506,7 +3506,7 @@
   {
     "id": 380,
     "name": "Airi Momoi Happy Birthday 2025 Gacha",
-    "cards": [493],
+    "cards": [493, 338, 193],
     "start": 1742367600000,
     "end": 1742972399000
   },
@@ -3603,7 +3603,7 @@
   {
     "id": 392,
     "name": "Minori Hanasato Happy Birthday 2025 Gacha",
-    "cards": [506],
+    "cards": [506, 354, 207],
     "start": 1744614000000,
     "end": 1745218799000
   },
@@ -3651,7 +3651,7 @@
   {
     "id": 396,
     "name": "Ena Shinonome Happy Birthday 2025 Gacha",
-    "cards": [510],
+    "cards": [510, 358, 211],
     "start": 1745996400000,
     "end": 1746601199000
   },
@@ -3696,7 +3696,7 @@
   {
     "id": 401,
     "name": "Saki Tenma Happy Birthday 2025 Gacha",
-    "cards": [514],
+    "cards": [514, 362, 215],
     "start": 1746774000000,
     "end": 1747378799000
   },
@@ -3731,7 +3731,7 @@
   {
     "id": 406,
     "name": "Tsukasa Tenma Happy Birthday 2025 Gacha",
-    "cards": [519],
+    "cards": [519, 366, 219],
     "start": 1747465200000,
     "end": 1748069999000
   },
@@ -3772,7 +3772,7 @@
   {
     "id": 410,
     "name": "Toya Aoyagi Happy Birthday 2025 Gacha",
-    "cards": [523],
+    "cards": [523, 370, 223],
     "start": 1748156400000,
     "end": 1748761199000
   },
@@ -3897,5 +3897,12 @@
     "cards": [497, 498, 499, 500, 501, 502],
     "start": 1749322800000,
     "end": 1749884340000
+  },
+  {
+    "id": 424,
+    "name": "Rui Kamishiro Happy Birthday 2025 Gacha",
+    "cards": [540, 379, 233],
+    "start": 1750748400000,
+    "end": 1751353199000
   }
 ]
