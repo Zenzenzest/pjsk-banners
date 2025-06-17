@@ -54,6 +54,7 @@ export default function CardModal({
 
         {/* CARDS */}
         <div className="relative">
+          {/* BDAY CARD */}
           {rarity === 5 && (
             <div className="flex flex-col justify-center items-center gap-5 mb-3 relative">
               <img
@@ -81,6 +82,7 @@ export default function CardModal({
               />
             </div>
           )}
+          {/* 3 & 4 CARD */}
           {(rarity === 3 || rarity === 4) && (
             <div className="flex flex-col justify-center items-center gap-5 mb-3">
               <div className="relative">
@@ -124,6 +126,37 @@ export default function CardModal({
                       <img
                         key={i}
                         src="/images/rarity_icons/trained_star.png"
+                        style={{
+                          width: "30px",
+                          display: "inline-block",
+                        }}
+                      />
+                    ))}
+                </div>
+              </div>
+            </div>
+          )}
+          {rarity <= 2 && (
+            <div className="flex flex-col justify-center items-center gap-5 mb-3 relative">
+              <div className="relative">
+                <img
+                  src={`/images/cards/${cardId}.webp`}
+                  style={{
+                    maxWidth: "500px",
+                    height: "auto",
+                  }}
+                  className="w-full transition-opacity duration-300"
+                />
+                <div className="w-full text-lg italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-mizuki [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
+                  {cardName}
+                </div>
+                <div className="absolute bottom-1 right-1">
+                  {Array(rarity)
+                    .fill(0)
+                    .map((_, i) => (
+                      <img
+                        key={i}
+                        src="/images/rarity_icons/untrained_star.png"
                         style={{
                           width: "30px",
                           display: "inline-block",

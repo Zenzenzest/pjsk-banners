@@ -226,7 +226,18 @@ export default function CreateCard() {
     a.click();
     URL.revokeObjectURL(url);
   };
+  const customCharacterFilter = (option, inputValue) => {
+    if (!inputValue) return true;
 
+    const searchValue = inputValue.toLowerCase();
+    const characterName = option.label.toLowerCase();
+
+    // Split the character name into parts (first name and last name)
+    const nameParts = characterName.split(" ");
+
+    // Check if any part of the name starts with the search value
+    return nameParts.some((part) => part.startsWith(searchValue));
+  };
   const deleteFromLocalStorage = () => {
     localStorage.removeItem("entries");
     alert("Deleted from localStorage.");
@@ -293,6 +304,8 @@ export default function CreateCard() {
           value={{ label: form.character, value: form.character }}
           onChange={handleCharacterChange}
           placeholder="Select Character"
+          filterOption={customCharacterFilter}
+          isSearchable={true}
         />
         <div className="flex flex-row justify-center items-center gap-5">
           <Select

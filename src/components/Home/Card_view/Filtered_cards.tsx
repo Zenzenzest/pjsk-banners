@@ -70,7 +70,10 @@ export default function FilteredCards({ selectedFilters }) {
     <div className="flex flex-row items-center justify-center flex-wrap gap-10">
       {filteredCards.map((card, i) => {
         const formattedCardId = formatCardName(card.id);
-        const cardTrainedImg = `/images/card_icons/${formattedCardId}_t.webp`;
+        const cardTrainedImg =
+          card.rarity == 2
+            ? `/images/card_icons/${formattedCardId}.webp`
+            : `/images/card_icons/${formattedCardId}_t.webp`;
 
         return (
           <div key={i}>
