@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import JpBanners from "../../../assets/json/jp_banners.json";
 import Cards from "../../../assets/json/cards.json";
 import { useTheme } from "../../../context/Theme_toggle";
 import type { BannerTypes, CardState, CardsTypes } from "../types";
@@ -57,8 +57,16 @@ export default function GachaTable({
     e: React.SyntheticEvent<HTMLImageElement, Event>
   ) => {
     const target = e.target as HTMLImageElement;
-    target.src = "/images/banners/placeholder.png";
+
     target.onerror = null;
+
+    const en_id = Number(e.target.alt);
+    const jp_variant = JpBanners.find((item) => item.en_id == en_id);
+    if (jp_variant) {
+      const jp_id = formatId(jp_variant["id"]);
+
+      target.src = `/images/jp_banners/${jp_id}.webp`;
+    }
   };
 
   return (
@@ -84,7 +92,7 @@ export default function GachaTable({
         const diffInMs = today - endDate;
         const diffInDays = convertToDays(diffInMs);
         const upcomingDiffInMs = startDate - today;
-        console.log(upcomingDiffInMs);
+
         const gachaBannerImage =
           server === "global"
             ? `/images/banners/${formattedGachaId}.webp`
@@ -101,7 +109,7 @@ export default function GachaTable({
                 src={gachaBannerImage}
                 style={{ width: "150px" }}
                 onError={handleImageError}
-                alt={banner.name}
+                alt={`${banner.id}`}
               />
               <span className="text-md text-center">{banner.name}</span>
               <div
