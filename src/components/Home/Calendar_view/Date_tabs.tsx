@@ -52,7 +52,7 @@ export default function DateTabs() {
   // Get current date
   const currentDate = new Date();
   const currentYearValue = currentDate.getFullYear();
-  const currentMonthValue = currentDate.getMonth() + 1; // Months are 0-indexed 
+  const currentMonthValue = currentDate.getMonth() + 1; // Months are 0-indexed
 
   // Find the closest available year and month based on selected server
   const getInitialYear = (serverYears: number[]) => {
@@ -70,7 +70,11 @@ export default function DateTabs() {
     return serverYears[0]; // Fallback to first year
   };
 
-  const getInitialMonth = (year: number, serverYears: number[], serverTimeData: any[]) => {
+  const getInitialMonth = (
+    year: number,
+    serverYears: number[],
+    serverTimeData: any[]
+  ) => {
     const yearIndex = serverYears.indexOf(year);
     const availableMonths = serverTimeData[yearIndex][year];
 
@@ -100,47 +104,52 @@ export default function DateTabs() {
   const { defaultYear, defaultMonth } = getDefaultValues();
   const [selectedYear, setSelectedYear] = useState<number>(defaultYear);
   const [selectedMonth, setSelectedMonth] = useState<number>(defaultMonth);
-  
+
   // To remember selected month for each year
-  const [yearMonthMemory, setYearMonthMemory] = useState<Record<number, number>>({});
+  const [yearMonthMemory, setYearMonthMemory] = useState<
+    Record<number, number>
+  >({});
 
   // Initial year and month when server changes
   useEffect(() => {
-    const { defaultYear: newDefaultYear, defaultMonth: newDefaultMonth } = getDefaultValues();
+    const { defaultYear: newDefaultYear, defaultMonth: newDefaultMonth } =
+      getDefaultValues();
     setSelectedYear(newDefaultYear);
     setSelectedMonth(newDefaultMonth);
     // Clear when server changes since year/month availability might be different
     setYearMonthMemory({});
   }, [server]); // Only depend on server changes
 
-const getBannerStatus = (banner: BannerTypes): 'live' | 'upcoming' | 'past' => {
-  const now = Date.now();
-  if (Number(banner.start) <= now && now <= Number(banner.end)) return 'live';
-  if (Number(banner.start) > now) return 'upcoming';
-  return 'past';
-};
-const filteredBanners: BannerTypes[] = dataBanners
-  .filter((banner) => {
-    const date = new Date(Number(banner.start));
-    return (
-      date.getFullYear() === selectedYear &&
-      date.getMonth() + 1 === selectedMonth
-    );
-  })
-  .sort((a, b) => Number(a.start) - Number(b.start)) // Primary sort by date
-  .sort((a, b) => {
-    const statusOrder = { live: 1, upcoming: 2, past: 3 };
-    return statusOrder[getBannerStatus(a)] - statusOrder[getBannerStatus(b)];
-  });
+  const getBannerStatus = (
+    banner: BannerTypes
+  ): "live" | "upcoming" | "past" => {
+    const now = Date.now();
+    if (Number(banner.start) <= now && now <= Number(banner.end)) return "live";
+    if (Number(banner.start) > now) return "upcoming";
+    return "past";
+  };
+  const filteredBanners: BannerTypes[] = dataBanners
+    .filter((banner) => {
+      const date = new Date(Number(banner.start));
+      return (
+        date.getFullYear() === selectedYear &&
+        date.getMonth() + 1 === selectedMonth
+      );
+    })
+    .sort((a, b) => Number(a.start) - Number(b.start)) // Primary sort by date
+    .sort((a, b) => {
+      const statusOrder = { live: 1, upcoming: 2, past: 3 };
+      return statusOrder[getBannerStatus(a)] - statusOrder[getBannerStatus(b)];
+    });
   const handleYearChange = (y: number) => {
     setSelectedYear(y);
-    
+
     const yearIndex = years.indexOf(y);
     const availableMonths = timeData[yearIndex][y];
-    
+
     // Check if we have a remembered month for this year
     const rememberedMonth = yearMonthMemory[y];
-    
+
     if (rememberedMonth && availableMonths.includes(rememberedMonth)) {
       // Use remembered month if it's available
       setSelectedMonth(rememberedMonth);
@@ -153,55 +162,70 @@ const filteredBanners: BannerTypes[] = dataBanners
   const handleMonthChange = (m: number) => {
     setSelectedMonth(m);
     // Remember this month for the current year
-    setYearMonthMemory(prev => ({
+    setYearMonthMemory((prev) => ({
       ...prev,
-      [selectedYear]: m
+      [selectedYear]: m,
     }));
   };
 
   return (
     <div
-      className={`w-full flex flex-col justify-center items-centers gap-3 ${
+      className={`w-full flex flex-col gap-3 ${
         theme == "light"
           ? "bg-bg-light-mode2 text-text-light-mode"
-          : "bg-bg-dark-mode2"
+          : "bg-bg-dark-mode2 text-gray-200"
       }`}
     >
       {/* DATE CONTAINER */}
-      <div className="border-b">
-        {/* YEARS */}
-        <div className="h-12 flex flex-row items-center justify-evenly text-lg pt-3">
-          {years.map((year) => (
-            <div
-              onClick={() => handleYearChange(year)}
-              key={year}
-              className={`${year == selectedYear ? "border-b-2" : ""} ${
-                theme == "light"
-                  ? "border-text-deco-light-mode"
-                  : "border-mizuki"
-              }`}
-            >
-              {year}
-            </div>
-          ))}
+      <div className="border-b border-gray-500/20 pb-2">
+        {/* YEARS - Horizontal Scrollable on mobile */}
+        <div className="flex overflow-x-auto py-2 px-1 hide-scrollbar">
+          <div className="flex space-x-1 mx-auto">
+            {years.map((year) => (
+              <button
+                key={year}
+                onClick={() => handleYearChange(year)}
+                className={`px-2.5 py-1 rounded-full text-sm sm:text-base transition-colors ${
+                  year === selectedYear
+                    ? theme == "light"
+                      ? "bg-highlight-dark-mode text-white"
+                      : "bg-highlight-dark-mode text-white"
+                    : theme == "light"
+                    ? "hover:bg-gray-200"
+                    : "hover:bg-gray-700"
+                }`}
+              >
+                {year}
+              </button>
+            ))}
+          </div>
         </div>
-        {/* MONTHS */}
-        <div className="w-full flex flex-row flex-wrap gap-4 justify-center items-center text-base p-2">
-          {years.includes(selectedYear) && timeData[years.indexOf(selectedYear)][selectedYear]?.map((month) => (
-            <div
-              key={month}
-              onClick={() => handleMonthChange(month)}
-              className={`${month == selectedMonth ? "border-b-2" : ""} ${
-                theme == "light"
-                  ? "border-text-deco-light-mode"
-                  : "border-mizuki"
-              }`}
-            >
-              {months[month - 1]}
-            </div>
-          ))}
+
+        {/* MONTHS - Grid layout */}
+        <div className="grid grid-cols-6 sm:grid-cols-12 gap-1 px-1 py-2">
+          {years.includes(selectedYear) &&
+            timeData[years.indexOf(selectedYear)][selectedYear]?.map(
+              (month) => (
+                <button
+                  key={month}
+                  onClick={() => handleMonthChange(month)}
+                  className={`px-2 py-1 rounded-md text-xs sm:text-sm text-center transition-colors ${
+                    month === selectedMonth
+                      ? theme == "light"
+                        ? "bg-highlight-dark-mode text-white"
+                        : "bg-highlight-dark-mode text-white"
+                      : theme == "light"
+                      ? "hover:bg-gray-200"
+                      : "hover:bg-gray-700"
+                  }`}
+                >
+                  {months[month - 1]}
+                </button>
+              )
+            )}
         </div>
       </div>
+
       {/* GACHA BANNERS */}
       <GachaTable filteredBanners={filteredBanners} />
     </div>

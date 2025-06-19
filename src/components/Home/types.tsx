@@ -26,9 +26,6 @@ export interface CardsTypes {
   trained_url: string;
 }
 
-export interface CountdownProps {
-  startDate: Date;
-}
 export interface CardState {
   cardId: number;
   rarity: number;
@@ -44,6 +41,17 @@ export interface CardModalProps extends CardState {
   isLoading: boolean;
   isLoading2: boolean;
   onClose: () => void;
-  setIsLoading: React.Dispatch<React.SetStateAction<boolean>>
-  setIsLoading2: React.Dispatch<React.SetStateAction<boolean>>
+  setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsLoading2: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
+export type CountdownProps = {
+  targetDate: Date;
+  mode?: "start" | "end";
+  compact?: boolean;
+  onComplete?: () => void;
+};
+export type EventEndedProps = {
+  endDate: Date;
+  compact?: boolean;
+};

@@ -6,7 +6,7 @@ import type { BannerTypes, CardState, CardsTypes } from "../types";
 import CountdownTimer from "../Countdown_timer";
 import CardModal from "../Card_modal";
 import { useServer } from "../../../context/Server";
-
+import EventEndedTimer from "../EventEnded_timer";
 export default function GachaTable({
   filteredBanners,
 }: {
@@ -30,9 +30,7 @@ export default function GachaTable({
   const formatId = (id: number) => String(id).padStart(4, "0");
   const today = Date.now();
 
-  function convertToDays(ms: number) {
-    return Math.floor(ms / (1000 * 60 * 60 * 24));
-  }
+
 
   const handleCardClick = (card: CardsTypes) => {
     const [lName, fName] = card.character.split(" ");
@@ -53,6 +51,7 @@ export default function GachaTable({
     setIsOpen(false);
   };
 
+  // Will use JP banner image if no EN banner image
   const handleImageError = (
     e: React.SyntheticEvent<HTMLImageElement, Event>
   ) => {
@@ -66,6 +65,8 @@ export default function GachaTable({
       const jp_id = formatId(jp_variant["id"]);
 
       target.src = `/images/jp_banners/${jp_id}.webp`;
+    } else {
+      target.src = `/images/banners/placeholder.jpg`;
     }
   };
 
@@ -89,9 +90,8 @@ export default function GachaTable({
           month: "short",
           day: "numeric",
         });
-        const diffInMs = today - endDate;
-        const diffInDays = convertToDays(diffInMs);
-        const upcomingDiffInMs = startDate - today;
+
+
 
         const gachaBannerImage =
           server === "global"
@@ -104,39 +104,61 @@ export default function GachaTable({
             key={banner.id}
           >
             {/* GACHA */}
-            <div className="w-1/2 flex flex-col items-center justify-center ">
-              <img
-                src={gachaBannerImage}
-                style={{ width: "150px" }}
-                onError={handleImageError}
-                alt={`${banner.id}`}
-              />
-              <span className="text-md text-center">{banner.name}</span>
-              <div
-                className={`flex flex-cols text-sm text-center gap-3 ${
-                  theme == "light" ? "text-text-deco-light-mode" : "text-mizuki"
+            <div className="w-1/2 flex flex-col items-center justify-center gap-2">
+              {/* Banner Image */}
+              <div className="relative group">
+                <img
+                  src={gachaBannerImage}
+                  className="w-36 h-auto rounded-lg shadow-md transition-transform group-hover:scale-105"
+                  onError={handleImageError}
+                  alt={`${banner.id}`}
+                />
+                {today >= Number(banner.start) &&
+                  today <= Number(banner.end) && (
+                    <span className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">
+                      LIVE
+                    </span>
+                  )}
+              </div>
+
+              {/* Banner Name */}
+              <h3
+                className={`text-lg font-bold text-center ${
+                  theme == "light" ? "text-gray-800" : "text-gray-100"
                 }`}
               >
-                <span>{formattedStart}</span>
-                <span>{formattedEnd}</span>
+                {banner.name}
+              </h3>
+
+              {/* Date Range */}
+              <div
+                className={`flex flex-col sm:flex-row items-center gap-1 sm:gap-3 text-sm ${
+                  theme == "light" ? "text-gray-600" : "text-gray-300"
+                }`}
+              >
+                <div className="flex items-center">
+                  <span className="hidden sm:inline mr-1">Start:</span>
+                  <span className="bg-white/10 px-2 py-1 rounded-md">
+                    {formattedStart}
+                  </span>
+                </div>
+                <div className="flex items-center">
+                  <span className="hidden sm:inline mr-1">End:</span>
+                  <span className="bg-white/10 px-2 py-1 rounded-md">
+                    {formattedEnd}
+                  </span>
+                </div>
               </div>
             </div>
             {/* CARDS */}
             <div className="w-1/2  flex flex-col items-center justify-center">
               {/* START DATE IF UPCOMING BANNER */}
-              {upcomingDiffInMs > 0 && (
+              {today < Number(banner.start) && (
                 <div className="flex flex-col justify-center items-center">
-                  <div>Starts in</div> <CountdownTimer startDate={startDate} />
+                  <CountdownTimer targetDate={startDate} mode="start" />
                 </div>
               )}
-              {upcomingDiffInMs < 0 && diffInMs < 0 ? (
-                <h2
-                  className="font-mono font-bold text-green-400 text-sm px-2 py-1 border border-green-400 
-              hover:animate-glitch hover:text-white hover:bg-green-400"
-                >
-                  LIVE
-                </h2>
-              ) : null}
+
               <div className="flex flex-row items-center justify-evenly flex-wrap ">
                 {banner["cards"].map((card, i) => {
                   const formattedCardId = formatId(card);
@@ -162,9 +184,18 @@ export default function GachaTable({
                 })}
               </div>
               {/*  */}
-              {diffInDays > 1 && <div>{diffInDays} days ago</div>}
-              {diffInDays == 0 && <div>{diffInDays} day ago</div>}
-              {diffInDays < 0 && <div>Ends in {diffInDays * -1} days</div>}
+              {today > Number(banner.end) && (
+                <EventEndedTimer endDate={endDate} />
+              )}
+
+              {/* {diffInDays < 0 && upcomingDiffInMs > 0 ? (
+                <div>Ends in {diffInDays * -1} days</div>
+              ) : null} */}
+              {today > Number(banner.start) && today < Number(banner.end) ? (
+                <div className="flex flex-col justify-center items-center">
+                  <CountdownTimer targetDate={endDate} mode="end" />
+                </div>
+              ) : null}
             </div>
           </div>
         );
