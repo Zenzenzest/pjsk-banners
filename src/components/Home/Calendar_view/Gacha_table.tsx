@@ -15,11 +15,12 @@ export default function GachaTable({
   const { theme } = useTheme();
   const { server } = useServer();
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading2, setIsLoading2] = useState(true);
   const [cardState, setCardState] = useState<CardState>({
     cardId: 0,
     rarity: 4,
-    trainedUrl: "",
-    untrainedUrl: "",
+
     lastName: "",
     firstName: "",
     cardName: "",
@@ -38,8 +39,6 @@ export default function GachaTable({
     setCardState({
       cardId: card.id,
       rarity: card.rarity,
-      trainedUrl: `/images/cards/${card.id}_t.webp`,
-      untrainedUrl: `/images/cards/${card.id}_ut.webp`,
       lastName: lName,
       firstName: fName,
       cardName: card.name,
@@ -49,6 +48,8 @@ export default function GachaTable({
   };
 
   const handleCloseModal = () => {
+    setIsLoading(true);
+    setIsLoading(true);
     setIsOpen(false);
   };
 
@@ -83,7 +84,7 @@ export default function GachaTable({
         const diffInMs = today - endDate;
         const diffInDays = convertToDays(diffInMs);
         const upcomingDiffInMs = startDate - today;
-
+        console.log(upcomingDiffInMs);
         const gachaBannerImage =
           server === "global"
             ? `/images/banners/${formattedGachaId}.webp`
@@ -120,6 +121,14 @@ export default function GachaTable({
                   <div>Starts in</div> <CountdownTimer startDate={startDate} />
                 </div>
               )}
+              {upcomingDiffInMs < 0 && diffInMs < 0 ? (
+                <h2
+                  className="font-mono font-bold text-green-400 text-sm px-2 py-1 border border-green-400 
+              hover:animate-glitch hover:text-white hover:bg-green-400"
+                >
+                  LIVE
+                </h2>
+              ) : null}
               <div className="flex flex-row items-center justify-evenly flex-wrap ">
                 {banner["cards"].map((card, i) => {
                   const formattedCardId = formatId(card);
@@ -145,13 +154,22 @@ export default function GachaTable({
                 })}
               </div>
               {/*  */}
-              {diffInDays >= 0 && <div>{diffInDays} days ago</div>}
+              {diffInDays > 1 && <div>{diffInDays} days ago</div>}
+              {diffInDays == 0 && <div>{diffInDays} day ago</div>}
               {diffInDays < 0 && <div>Ends in {diffInDays * -1} days</div>}
             </div>
           </div>
         );
       })}
-      <CardModal isOpen={isOpen} onClose={handleCloseModal} {...cardState} />
+      <CardModal
+        isOpen={isOpen}
+        onClose={handleCloseModal}
+        {...cardState}
+        isLoading={isLoading}
+        isLoading2={isLoading2}
+        setIsLoading={setIsLoading}
+        setIsLoading2={setIsLoading2}
+      />
     </div>
   );
 }

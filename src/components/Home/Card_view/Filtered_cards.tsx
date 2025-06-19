@@ -5,11 +5,12 @@ import CardModal from "../Card_modal";
 
 export default function FilteredCards({ selectedFilters }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading2, setIsLoading2] = useState(true)
   const [cardState, setCardState] = useState<CardState>({
     cardId: 0,
     rarity: 4,
-    trainedUrl: "",
-    untrainedUrl: "",
+
     lastName: "",
     firstName: "",
     cardName: "",
@@ -20,11 +21,11 @@ export default function FilteredCards({ selectedFilters }) {
 
   const handleCardClick = (card: CardsTypes) => {
     const [lName, fName] = card.character.split(" ");
+
     setCardState({
       cardId: card.id,
       rarity: card.rarity,
-      trainedUrl: `/images/cards/${card.id}_t.webp`,
-      untrainedUrl: `/images/cards/${card.id}_ut.webp`,
+
       lastName: lName,
       firstName: fName,
       cardName: card.name,
@@ -34,8 +35,20 @@ export default function FilteredCards({ selectedFilters }) {
   };
 
   const handleCloseModal = () => {
+    setIsLoading(true)
+    setIsLoading2(true)
     setIsOpen(false);
   };
+
+
+
+
+
+
+
+
+
+
 
   const filteredCards = GachaCards.filter((card) => {
     if (
@@ -82,11 +95,12 @@ export default function FilteredCards({ selectedFilters }) {
               className="text-white rounded"
             >
               <img src={cardTrainedImg} style={{ width: "50px" }} />
+              {card.id}
             </button>
           </div>
         );
       })}
-      <CardModal isOpen={isOpen} onClose={handleCloseModal} {...cardState} />
+      <CardModal isOpen={isOpen} onClose={handleCloseModal} {...cardState} isLoading={isLoading} isLoading2={isLoading2} setIsLoading={setIsLoading} setIsLoading2={setIsLoading2}/>
     </div>
   );
 }

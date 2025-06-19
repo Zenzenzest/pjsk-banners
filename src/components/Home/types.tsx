@@ -32,8 +32,7 @@ export interface CountdownProps {
 export interface CardState {
   cardId: number;
   rarity: number;
-  trainedUrl: string;
-  untrainedUrl: string;
+
   lastName: string;
   firstName: string;
   cardName: string;
@@ -42,5 +41,9 @@ export interface CardState {
 
 export interface CardModalProps extends CardState {
   isOpen: boolean;
+  isLoading: boolean;
+  isLoading2: boolean;
   onClose: () => void;
+  setIsLoading: React.Dispatch<React.SetStateAction<boolean>>
+  setIsLoading2: React.Dispatch<React.SetStateAction<boolean>>
 }

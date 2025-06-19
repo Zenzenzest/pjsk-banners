@@ -98,7 +98,6 @@ export default function DateTabs() {
   };
 
   const { defaultYear, defaultMonth } = getDefaultValues();
-  
   const [selectedYear, setSelectedYear] = useState<number>(defaultYear);
   const [selectedMonth, setSelectedMonth] = useState<number>(defaultMonth);
   
@@ -114,15 +113,25 @@ export default function DateTabs() {
     setYearMonthMemory({});
   }, [server]); // Only depend on server changes
 
-  const filteredBanners: BannerTypes[] = dataBanners
-    .filter((banner) => {
-      const date = new Date(Number(banner.start));
-      const year = date.getFullYear();
-      const month = date.getMonth() + 1;
-      return year === selectedYear && month === selectedMonth;
-    })
-    .sort((a, b) => Number(a.start) - Number(b.start));
-
+const getBannerStatus = (banner: BannerTypes): 'live' | 'upcoming' | 'past' => {
+  const now = Date.now();
+  if (Number(banner.start) <= now && now <= Number(banner.end)) return 'live';
+  if (Number(banner.start) > now) return 'upcoming';
+  return 'past';
+};
+const filteredBanners: BannerTypes[] = dataBanners
+  .filter((banner) => {
+    const date = new Date(Number(banner.start));
+    return (
+      date.getFullYear() === selectedYear &&
+      date.getMonth() + 1 === selectedMonth
+    );
+  })
+  .sort((a, b) => Number(a.start) - Number(b.start)) // Primary sort by date
+  .sort((a, b) => {
+    const statusOrder = { live: 1, upcoming: 2, past: 3 };
+    return statusOrder[getBannerStatus(a)] - statusOrder[getBannerStatus(b)];
+  });
   const handleYearChange = (y: number) => {
     setSelectedYear(y);
     

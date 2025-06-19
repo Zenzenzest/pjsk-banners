@@ -1,13 +1,15 @@
 import { useTheme } from "../../context/Theme_toggle";
 import type { CardModalProps } from "./types";
-
+import LoadingComponent from "../Global/Loading";
 export default function CardModal({
   isOpen,
   onClose,
   cardId,
   rarity,
-  trainedUrl,
-  untrainedUrl,
+  isLoading,
+  setIsLoading,
+  isLoading2,
+  setIsLoading2,
   lastName,
   firstName,
   cardName,
@@ -15,6 +17,7 @@ export default function CardModal({
 }: CardModalProps) {
   const { theme } = useTheme();
 
+  const imageHost = "https://r2-image-proxy.zenzenzest.workers.dev/";
   if (!isOpen) return null;
 
   return (
@@ -57,19 +60,25 @@ export default function CardModal({
           {/* BDAY CARD */}
           {rarity === 5 && (
             <div className="flex flex-col justify-center items-center gap-5 mb-3 relative">
+              {" "}
+              {isLoading && (
+                <div className="absolute inset-0 flex items-center justify-center  z-10 h-15">
+                  <LoadingComponent />
+                </div>
+              )}
               <img
-                src={`/images/cards/${cardId}_bd.webp`}
+                src={`${imageHost}${cardId}_bd.webp`}
                 style={{
                   maxWidth: "500px",
                   height: "auto",
                 }}
+                onLoad={() => setIsLoading(false)}
                 className="w-full transition-opacity duration-300"
               />
               {/* CARD NAME */}
-              <div className="w-full text-sm italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-mizuki [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
+              <div className="w-full text-sm italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-gray-350 [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
                 {cardName}
               </div>
-
               {/* RARITY ICON */}
               <img
                 src="/images/rarity_icons/bday.png"
@@ -85,14 +94,22 @@ export default function CardModal({
           {/* 3 & 4 CARD */}
           {(rarity === 3 || rarity === 4) && (
             <div className="flex flex-col justify-center items-center gap-5 mb-3">
+              {" "}
+              {isLoading && (
+                <div className=" absolute inset-0 flex items-center justify-center  z-10 h-40">
+                  <LoadingComponent />
+                </div>
+              )}
               <div className="relative">
+                {" "}
                 <img
-                  src={untrainedUrl}
+                  src={`${imageHost}${cardId}_ut.webp`}
                   style={{
                     width: "500px",
                     height: "auto",
                     marginBottom: "10px",
                   }}
+                  onLoad={() => setIsLoading(false)}
                   className="w-full transition-opacity duration-300"
                 />
                 <div className="absolute top-1 left-1">
@@ -106,14 +123,20 @@ export default function CardModal({
                       />
                     ))}
                 </div>
-              </div>
+              </div>{" "}
+              {isLoading2 && (
+                <div className="absolute inset-0 flex items-center justify-center  z-10 h-40">
+                  <LoadingComponent />
+                </div>
+              )}
               <div className="relative">
                 <img
-                  src={trainedUrl}
+                  src={`${imageHost}${cardId}_t.webp`}
                   style={{
                     maxWidth: "500px",
                     height: "auto",
                   }}
+                  onLoad={() => setIsLoading2(false)}
                   className="w-full transition-opacity duration-300"
                 />
                 <div className="w-full text-lg italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-mizuki [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
@@ -139,12 +162,19 @@ export default function CardModal({
           {rarity <= 2 && (
             <div className="flex flex-col justify-center items-center gap-5 mb-3 relative">
               <div className="relative">
+                {" "}
+                {isLoading && (
+                  <div className="absolute inset-0 flex items-center justify-center  z-10 h-40">
+                    <LoadingComponent />
+                  </div>
+                )}
                 <img
-                  src={`/images/cards/${cardId}.webp`}
+                  src={`${imageHost}${cardId}.webp`}
                   style={{
                     maxWidth: "500px",
                     height: "auto",
                   }}
+                  onLoad={() => setIsLoading(false)}
                   className="w-full transition-opacity duration-300"
                 />
                 <div className="w-full text-lg italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-mizuki [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
