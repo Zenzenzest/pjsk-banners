@@ -90,7 +90,7 @@ export default function FilterTab() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [tempFilters, setTempFilters] = useState<SelectedFilterTypes>({
     Character: [],
-    Unit: null,
+    Unit: [],
     Attribute: [],
     Rarity: [],
   });
@@ -98,7 +98,7 @@ export default function FilterTab() {
   // APPLIED filters used for actual filtering
   const [selectedFilters, setSelectedFilters] = useState<SelectedFilterTypes>({
     Character: [],
-    Unit: null,
+    Unit: [],
     Attribute: [],
     Rarity: [],
   });
@@ -130,37 +130,44 @@ export default function FilterTab() {
   const handleSelect = (category: string, option: string | number) => {
     setTempFilters((prev) => {
       if (category === "Unit") {
-        if (prev.Unit === option) {
-          return {
-            ...prev,
-            Unit: null,
-            Character: [],
-          };
+        const unit = option as string;
+        const isSelected = prev.Unit.includes(unit);
+
+        let updatedUnits = isSelected
+          ? prev.Unit.filter((u) => u !== unit)
+          : [...prev.Unit, unit];
+
+        // If deselecting: remove characters from deselected unit
+        let updatedCharacters = [...prev.Character];
+
+        if (isSelected) {
+          const charactersToRemove = grouped[unit] || [];
+          updatedCharacters = updatedCharacters.filter(
+            (char) => !charactersToRemove.includes(char)
+          );
+        } else {
+          // If selecting new unit, add its characters (but avoid duplicates)
+          const newCharacters = grouped[unit] || [];
+          updatedCharacters = Array.from(
+            new Set([...updatedCharacters, ...newCharacters])
+          );
         }
-        const characters = grouped[option as keyof typeof grouped] || [];
+
         return {
           ...prev,
-          Unit: option as string,
-          Character: characters,
+          Unit: updatedUnits,
+          Character: updatedCharacters,
         };
       }
       if (category === "Characters") {
-        // Use the currently selected unit in tempFilters, not prev.Unit
-        const unit = tempFilters.Unit;
-
-        // Don't allow selecting characters from a different unit (if one is selected)
-        if (unit && !grouped[unit]?.includes(option as string)) {
-          return prev; // Skip this character if it's outside the selected unit
-        }
-
         const isSelected = prev.Character.includes(option as string);
-        const newCharacterList = isSelected
+        const updated = isSelected
           ? prev.Character.filter((name) => name !== option)
           : [...prev.Character, option as string];
 
         return {
           ...prev,
-          Character: newCharacterList,
+          Character: updated,
         };
       }
 
@@ -186,7 +193,7 @@ export default function FilterTab() {
   const handleReset = () => {
     setTempFilters({
       Character: [],
-      Unit: null,
+      Unit: [],
       Attribute: [],
       Rarity: [],
     });
@@ -198,99 +205,101 @@ export default function FilterTab() {
   };
 
   return (
-    <div
-      className={`p-3 w-full h-auto flex flex-col justify-start items-center ${
-        theme == "light" ? "bg-bg-light-mode2" : "bg-bg-dark-mode2"
-      }`}
-      ref={panelRef}
-    >
-      <button onClick={toggleFilter} className="">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke={`${theme == "light" ? "#0a0a0a" : "#fafafa"}`}
-          className="size-7 "
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
-          />
-        </svg>
-      </button>
+    <div className="flex flex-col justify-center items-center w-full h-full">
       <div
-        className={`transition-all duration-500 ease-in-out overflow-hidden max-w-[500px] ${
-          isOpen ? "max-h-[800px]  opacity-100" : "max-h-0 opacity-0"
-        } bg-gray-600 rounded-lg p-1.5`}
+        className={`p-3 w-full shrink-0  flex flex-col justify-start items-center ${
+          theme == "light" ? "bg-bg-light-mode2" : "bg-bg-dark-mode"
+        }`}
+        ref={panelRef}
       >
-        {Object.entries(filterCategories).map(([category, options]) => (
-          <div key={category} className="mb-2">
-            <h3 className="text-lg font-semibold mb-1">{category}</h3>
-            <div className="flex justify-center items-center flex-wrap gap-3">
-              {options.map((option, i) => {
-                const unitIcon = `images/unit_icons/${i + 1}.png`;
-                const characterIcon = `/images/character_icons/${i + 1}.webp`;
-                const attributeIcon = `/images/attribute_icons/${option}.webp`;
-                const rarityIcon = `images/rarity_icons/${i + 1}.webp`;
+        <button onClick={toggleFilter} className="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke={`${theme == "light" ? "#0a0a0a" : "#fafafa"}`}
+            className="size-7 "
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
+            />
+          </svg>
+        </button>
+        <div
+          className={`transition-all duration-500 ease-in-out overflow-hidden max-w-[500px] ${
+            isOpen ? "max-h-[800px]  opacity-100" : "max-h-0 opacity-0"
+          } bg-gray-600 rounded-lg p-1.5`}
+        >
+          {Object.entries(filterCategories).map(([category, options]) => (
+            <div key={category} className="mb-2">
+              <h3 className="text-lg font-semibold mb-1">{category}</h3>
+              <div className="flex justify-center items-center flex-wrap gap-3">
+                {options.map((option, i) => {
+                  const unitIcon = `images/unit_icons/${i + 1}.png`;
+                  const characterIcon = `/images/character_icons/${i + 1}.webp`;
+                  const attributeIcon = `/images/attribute_icons/${option}.webp`;
+                  const rarityIcon = `images/rarity_icons/${i + 1}.webp`;
 
-                const isSelected =
-                  category === "Characters"
-                    ? tempFilters.Character.includes(option)
-                    : Array.isArray(tempFilters[category])
-                    ? tempFilters[category].includes(option)
-                    : tempFilters[category] === option;
+                  const isSelected =
+                    category === "Characters"
+                      ? tempFilters.Character.includes(option)
+                      : Array.isArray(tempFilters[category])
+                      ? tempFilters[category].includes(option)
+                      : tempFilters[category] === option;
 
-                const isDisabled =
-                  category === "Characters" &&
-                  tempFilters.Unit &&
-                  !grouped[tempFilters.Unit]?.includes(option);
-
-                return (
-                  <button
-                    key={option as string}
-                    disabled={isDisabled}
-                    className={`border border-2 aspect-square rounded-full ${
-                      isSelected ? "border-white" : "border-gray-600"
-                    } ${isDisabled ? "opacity-30 pointer-events-none" : ""}`}
-                    onClick={() => handleSelect(category, option)}
-                  >
-                    {category === "Characters" && (
-                      <img src={characterIcon} style={{ width: "2.25rem" }} />
-                    )}
-                    {category === "Unit" && (
-                      <img src={unitIcon} style={{ width: "2rem" }} />
-                    )}
-                    {category === "Attribute" && (
-                      <img src={attributeIcon} style={{ width: "1.75rem" }} />
-                    )}
-                    {category === "Rarity" && (
-                      <img src={rarityIcon} style={{ width: "2rem" }} />
-                    )}
-                  </button>
-                );
-              })}
+                  const isOutsideUnit =
+                    category === "Characters" &&
+                    tempFilters.Unit.length > 0 &&
+                    !tempFilters.Unit.some((unit) =>
+                      grouped[unit]?.includes(option as string)
+                    ) &&
+                    !tempFilters.Character.includes(option as string);
+                  return (
+                    <button
+                      key={option as string}
+                      className={`border border-2 aspect-square rounded-full ${
+                        isSelected ? "border-white" : "border-gray-600"
+                      } ${isOutsideUnit ? "opacity-30" : ""}`}
+                      onClick={() => handleSelect(category, option)}
+                    >
+                      {category === "Characters" && (
+                        <img src={characterIcon} style={{ width: "2.25rem" }} />
+                      )}
+                      {category === "Unit" && (
+                        <img src={unitIcon} style={{ width: "2rem" }} />
+                      )}
+                      {category === "Attribute" && (
+                        <img src={attributeIcon} style={{ width: "1.75rem" }} />
+                      )}
+                      {category === "Rarity" && (
+                        <img src={rarityIcon} style={{ width: "2rem" }} />
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
+          ))}
+          <div className="flex justify-between">
+            <button
+              onClick={handleReset}
+              className="bg-red-500 text-white px-4 py-2 rounded"
+            >
+              Reset Filters
+            </button>
+            <button
+              onClick={handleApply}
+              className="bg-green-500 text-white px-4 py-2 rounded"
+            >
+              Apply
+            </button>
           </div>
-        ))}
-        <div className="flex justify-between">
-          <button
-            onClick={handleReset}
-            className="bg-red-500 text-white px-4 py-2 rounded"
-          >
-            Reset Filters
-          </button>
-          <button
-            onClick={handleApply}
-            className="bg-green-500 text-white px-4 py-2 rounded"
-          >
-            Apply
-          </button>
         </div>
-      </div>
-
-      <div>
+      </div>{" "}
+      <div className="w-full">
         <FilteredCards selectedFilters={selectedFilters} />
       </div>
     </div>

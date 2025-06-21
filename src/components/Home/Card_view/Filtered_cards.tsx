@@ -1,16 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import GachaCards from "../../../assets/json/cards.json";
 import type { CardsTypes, CardState } from "../types";
 import CardModal from "../Card_modal";
-
-export default function FilteredCards({ selectedFilters }) {
+import { useTheme } from "../../../context/Theme_toggle";
+import type { SelectedFilterTypesProps } from "../types";
+export default function FilteredCards({
+  selectedFilters,
+}: SelectedFilterTypesProps) {
+  const { theme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [isLoading2, setIsLoading2] = useState(true)
+  const [isLoading2, setIsLoading2] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [cardsPerPage] = useState(20);
+
   const [cardState, setCardState] = useState<CardState>({
     cardId: 0,
     rarity: 4,
-
     lastName: "",
     firstName: "",
     cardName: "",
@@ -21,11 +27,9 @@ export default function FilteredCards({ selectedFilters }) {
 
   const handleCardClick = (card: CardsTypes) => {
     const [lName, fName] = card.character.split(" ");
-
     setCardState({
       cardId: card.id,
       rarity: card.rarity,
-
       lastName: lName,
       firstName: fName,
       cardName: card.name,
@@ -35,72 +39,323 @@ export default function FilteredCards({ selectedFilters }) {
   };
 
   const handleCloseModal = () => {
-    setIsLoading(true)
-    setIsLoading2(true)
+    setIsLoading(true);
+    setIsLoading2(true);
     setIsOpen(false);
   };
 
-
-
-
-
-
-
-
-
-
-
   const filteredCards = GachaCards.filter((card) => {
-    if (
-      selectedFilters.Character.length > 0 &&
-      !selectedFilters.Character.includes(card.character)
-    ) {
-      return false;
+    const hasCharacterFilter = selectedFilters.Character.length > 0;
+    const hasUnitFilter = selectedFilters.Unit.length > 0;
+    const matchesCharacter = selectedFilters.Character.includes(card.character);
+    const matchesUnit = selectedFilters.Unit.includes(card.unit);
+    const matchesAttribute =
+      selectedFilters.Attribute.length === 0 ||
+      selectedFilters.Attribute.includes(card.attribute);
+    const matchesRarity =
+      selectedFilters.Rarity.length === 0 ||
+      selectedFilters.Rarity.includes(card.rarity);
+
+    let matchesCharacterOrUnit = false;
+    if (!hasCharacterFilter && !hasUnitFilter) {
+      matchesCharacterOrUnit = true;
+    } else if (hasCharacterFilter && hasUnitFilter) {
+      matchesCharacterOrUnit = matchesCharacter || matchesUnit;
+    } else if (hasCharacterFilter) {
+      matchesCharacterOrUnit = matchesCharacter;
+    } else if (hasUnitFilter) {
+      matchesCharacterOrUnit = matchesUnit;
     }
 
-    if (selectedFilters.Unit && selectedFilters.Unit !== card.unit) {
-      return false;
-    }
-
-    if (
-      selectedFilters.Attribute.length > 0 &&
-      !selectedFilters.Attribute.includes(card.attribute)
-    ) {
-      return false;
-    }
-
-    if (
-      selectedFilters.Rarity.length > 0 &&
-      !selectedFilters.Rarity.includes(card.rarity)
-    ) {
-      return false;
-    }
-
-    return true;
+    return matchesCharacterOrUnit && matchesAttribute && matchesRarity;
   });
 
-  return (
-    <div className="flex flex-row items-center justify-center flex-wrap gap-10">
-      {filteredCards.map((card, i) => {
-        const formattedCardId = formatCardName(card.id);
-        const cardTrainedImg =
-          card.rarity == 2
-            ? `/images/card_icons/${formattedCardId}.webp`
-            : `/images/card_icons/${formattedCardId}_t.webp`;
+  // Reset to first page when filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedFilters]);
 
-        return (
-          <div key={i}>
+  // Calculate pagination
+  const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
+  const startIndex = (currentPage - 1) * cardsPerPage;
+  const endIndex = startIndex + cardsPerPage;
+  const currentCards = filteredCards.slice(startIndex, endIndex);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    // Scroll to top when page changes
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const generatePageNumbers = () => {
+    const pages = [];
+    const maxVisiblePages = 5;
+
+    if (totalPages <= maxVisiblePages) {
+      for (let i = 1; i <= totalPages; i++) {
+        pages.push(i);
+      }
+    } else {
+      const startPage = Math.max(
+        1,
+        currentPage - Math.floor(maxVisiblePages / 2)
+      );
+      const endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+
+      if (startPage > 1) {
+        pages.push(1);
+        if (startPage > 2) pages.push("...");
+      }
+
+      for (let i = startPage; i <= endPage; i++) {
+        pages.push(i);
+      }
+
+      if (endPage < totalPages) {
+        if (endPage < totalPages - 1) pages.push("...");
+        pages.push(totalPages);
+      }
+    }
+
+    return pages;
+  };
+
+  if (filteredCards.length === 0) {
+    return (
+      <div
+        className={`p-8 text-center ${
+          theme === "light" ? "text-gray-600" : "text-gray-400"
+        }`}
+      >
+        No cards match the selected filters.
+      </div>
+    );
+  }
+
+  return (
+    <div
+      className={`${
+        theme == "dark" ? "bg-bg-dark-mode" : "bg-bg-light-mode"
+      } flex flex-col items-center justify-center gap-10 w-full`}
+    >
+      <div
+        className={`text-center text-sm md:text-base px-2  ${
+          theme === "light" ? "text-gray-600" : "text-gray-400"
+        }`}
+      >
+        Showing {startIndex + 1}-{Math.min(endIndex, filteredCards.length)} of{" "}
+        {filteredCards.length} cards
+      </div>
+
+      {/* CARDS GRID*/}
+      <div className="w-max[500px] h-max-[300px] px-2 sm:px-10  ">
+        <div className="grid xs grid-cols-2 gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  sm:gap-4 md:gap-6">
+          {currentCards.map((card) => {
+            return (
+              // CARD CONTAINER
+              <div
+                key={card.id}
+                className={`flex flex-col items-center justify-center p-3 rounded-lg transition-all duration-200 hover:scale-105 ${
+                  theme === "dark"
+                    ? "bg-gray-800 hover:bg-gray-700"
+                    : "bg-white hover:bg-gray-50 shadow-sm hover:shadow-md"
+                }`}
+              >
+                {/* CARD ART */}
+                <button
+                  onClick={() => handleCardClick(card)}
+                  className="text-white rounded  hover:opacity-80 transition-opacity mb-2 e"
+                >
+                  {(card.rarity == 4 || card.rarity == 3) && (
+                    <div className="relative ">
+                      <img
+                        src={`/images/card_thumbnails/${card.id}_t.webp`}
+                        className={`h-auto w-full border-2 max-w-[300px] ml-auto mr-auto rounded 
+                      
+                          `}
+                        alt={card.name}
+                      />
+                      <div className="absolute top-0 right-1">
+                        {Array(card.rarity)
+                          .fill(0)
+                          .map((_, i) => (
+                            <img
+                              key={i}
+                              src="/images/rarity_icons/trained_star.png"
+                              style={{ width: "20px", display: "inline-block" }}
+                            />
+                          ))}
+                      </div>
+                    </div>
+                  )}
+                  {card.rarity == 5 && (
+                    <div className="relative">
+                      <img
+                        src={`/images/card_thumbnails/${card.id}_bd.webp`}
+                        className="h-auto w-full max-w-[300px]  rounded"
+                        alt={card.name}
+                      />
+                      <img
+                        src="/images/rarity_icons/bday.png"
+                        style={{
+                          position: "absolute",
+                          bottom: 5,
+                          left: 5,
+                          width: "1.5rem",
+                        }}
+                      />
+                    </div>
+                  )}
+                  {card.rarity <= 2 && (
+                    <div className="relative">
+                      <img
+                        src={`/images/card_thumbnails/${card.id}.webp`}
+                        className="h-auto w-full max-w-[300px]  rounded"
+                        alt={card.name}
+                      />{" "}
+                      <div className="absolute top-0 left-1">
+                        {Array(card.rarity)
+                          .fill(0)
+                          .map((_, i) => {
+                            return (
+                              <img
+                                key={i}
+                                src="/images/rarity_icons/untrained_star.png"
+                                style={{
+                                  width: "20px",
+                                  display: "inline-block",
+                                }}
+                              />
+                            );
+                          })}
+                      </div>
+                    </div>
+                  )}
+                </button>
+                {/* CARD NAME */}
+                <div
+                  className={`text-center text-xs flex flex-col justify-center items-center sm:text-sm md:text-base font-medium line-clamp-2 h-20 gap-2 ${
+                    theme === "light" ? "text-gray-800" : "text-gray-200"
+                  }`}
+                >
+                  <div className="flex flex-row gap-2 justify-center items-center">
+                    <img
+                      src={`/images/attribute_icons/${card.attribute}.webp`}
+                      style={{
+                        width: "1.5rem",
+                      }}
+                    />
+                    {card.name}
+                  </div>
+                  {card.character}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* PAGINATION CONTROLS */}
+      {totalPages > 1 && (
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mt-8 mb-4 px-4">
+          <div
+            className={`text-sm mb-2 sm:hidden ${
+              theme === "light" ? "text-gray-600" : "text-gray-400"
+            }`}
+          >
+            Page {currentPage} of {totalPages}
+          </div>
+
+          <div className="flex items-center gap-1 sm:gap-2">
+            {/* PREVIOUS BUTTON */}
             <button
-              onClick={() => handleCardClick(card)}
-              className="text-white rounded"
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className={`px-2 py-2 sm:px-3 text-sm rounded ${
+                currentPage === 1
+                  ? "opacity-50 cursor-not-allowed"
+                  : "hover:bg-opacity-80 active:scale-95"
+              } ${
+                theme === "dark"
+                  ? "bg-gray-700 text-white"
+                  : "bg-gray-200 text-gray-800"
+              }`}
             >
-              <img src={cardTrainedImg} style={{ width: "50px" }} />
-              {card.id}
+              <span className="hidden sm:inline">Previous</span>
+              <span className="sm:hidden">‹</span>
+            </button>
+
+            {/* PAGE NUMBERS - HIDDEN IN MOBILE*/}
+            <div className="flex items-center gap-1">
+              {generatePageNumbers().map((page, index) => {
+                // ON MOBILE - ONLY SHOW CURRENT PAGE
+                const isMobile = window.innerWidth < 640;
+                const shouldShowOnMobile =
+                  !isMobile ||
+                  page === currentPage ||
+                  page === currentPage - 1 ||
+                  page === currentPage + 1 ||
+                  page === 1 ||
+                  page === totalPages ||
+                  page === "...";
+
+                if (isMobile && !shouldShowOnMobile) return null;
+
+                return (
+                  <button
+                    key={index}
+                    onClick={() =>
+                      typeof page === "number" && handlePageChange(page)
+                    }
+                    disabled={page === "..."}
+                    className={`px-2 py-2 sm:px-3 text-sm rounded min-w-[32px] sm:min-w-[36px] ${
+                      page === currentPage
+                        ? theme === "dark"
+                          ? "bg-blue-600 text-white"
+                          : "bg-blue-500 text-white"
+                        : page === "..."
+                        ? "cursor-default"
+                        : theme === "dark"
+                        ? "bg-gray-700 text-white hover:bg-gray-600 active:scale-95"
+                        : "bg-gray-200 text-gray-800 hover:bg-gray-300 active:scale-95"
+                    }`}
+                  >
+                    {page}
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* NEXT BUTTOn*/}
+            <button
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className={`px-2 py-2 sm:px-3 text-sm rounded ${
+                currentPage === totalPages
+                  ? "opacity-50 cursor-not-allowed"
+                  : "hover:bg-opacity-80 active:scale-95"
+              } ${
+                theme === "dark"
+                  ? "bg-gray-700 text-white"
+                  : "bg-gray-200 text-gray-800"
+              }`}
+            >
+              <span className="hidden sm:inline">Next</span>
+              <span className="sm:hidden">›</span>
             </button>
           </div>
-        );
-      })}
-      <CardModal isOpen={isOpen} onClose={handleCloseModal} {...cardState} isLoading={isLoading} isLoading2={isLoading2} setIsLoading={setIsLoading} setIsLoading2={setIsLoading2}/>
+        </div>
+      )}
+
+      <CardModal
+        isOpen={isOpen}
+        onClose={handleCloseModal}
+        {...cardState}
+        isLoading={isLoading}
+        isLoading2={isLoading2}
+        setIsLoading={setIsLoading}
+        setIsLoading2={setIsLoading2}
+      />
     </div>
   );
 }

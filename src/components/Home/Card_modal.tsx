@@ -76,7 +76,7 @@ export default function CardModal({
                 className="w-full transition-opacity duration-300"
               />
               {/* CARD NAME */}
-              <div className="w-full text-sm italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-gray-350 [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
+              <div className="w-full text-xs italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-gray-350 [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
                 {cardName}
               </div>
               {/* RARITY ICON */}
@@ -139,7 +139,7 @@ export default function CardModal({
                   onLoad={() => setIsLoading2(false)}
                   className="w-full transition-opacity duration-300"
                 />
-                <div className="w-full text-lg italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-mizuki [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
+                <div className="w-full text-sm italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-mizuki [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
                   {cardName}
                 </div>
                 <div className="absolute bottom-1 right-1">
@@ -161,39 +161,36 @@ export default function CardModal({
           )}
           {rarity <= 2 && (
             <div className="flex flex-col justify-center items-center gap-5 mb-3 relative">
-              <div className="relative">
-                {" "}
-                {isLoading && (
-                  <div className="absolute inset-0 flex items-center justify-center  z-10 h-40">
-                    <LoadingComponent />
-                  </div>
-                )}
-                <img
-                  src={`${imageHost}${cardId}.webp`}
-                  style={{
-                    maxWidth: "500px",
-                    height: "auto",
-                  }}
-                  onLoad={() => setIsLoading(false)}
-                  className="w-full transition-opacity duration-300"
-                />
-                <div className="w-full text-lg italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-mizuki [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
-                  {cardName}
+              {isLoading && (
+                <div className="absolute inset-0 flex items-center justify-center  z-10 h-15">
+                  <LoadingComponent />
                 </div>
-                <div className="absolute bottom-1 right-1">
-                  {Array(rarity)
-                    .fill(0)
-                    .map((_, i) => (
-                      <img
-                        key={i}
-                        src="/images/rarity_icons/untrained_star.png"
-                        style={{
-                          width: "30px",
-                          display: "inline-block",
-                        }}
-                      />
-                    ))}
-                </div>
+              )}
+              <img
+                src={`${imageHost}${cardId}.webp`}
+                style={{
+                  maxWidth: "500px",
+                  height: "auto",
+                }}
+                onLoad={() => setIsLoading(false)}
+                className="w-full transition-opacity duration-300"
+              />
+              <div className="w-full text-sm italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-mizuki [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
+                {cardName}
+              </div>
+              <div className="absolute bottom-1 right-1">
+                {Array(rarity)
+                  .fill(0)
+                  .map((_, i) => (
+                    <img
+                      key={i}
+                      src="/images/rarity_icons/untrained_star.png"
+                      style={{
+                        width: "30px",
+                        display: "inline-block",
+                      }}
+                    />
+                  ))}
               </div>
             </div>
           )}

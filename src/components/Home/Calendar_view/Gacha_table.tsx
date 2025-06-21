@@ -73,7 +73,7 @@ export default function GachaTable({
   return (
     <div
       className={`flex flex-col ${
-        theme == "light" ? "bg-bg-light-mode" : "bg-bg-dark-mode2"
+        theme == "light" ? "bg-bg-light-mode" : "bg-bg-dark-mode"
       }`}
     >
       {filteredBanners.map((banner) => {

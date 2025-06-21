@@ -837,7 +837,7 @@
   },
   {
     "id": 120,
-    "name": "[It's Back] Fluffy☆ Dreamland Gacha",
+    "name": "[Rerun] Fluffy☆ Dreamland Gacha",
     "cards": [56, 57, 58],
     "start": 1683226800000,
     "end": 1684004399000
@@ -900,14 +900,14 @@
   },
   {
     "id": 129,
-    "name": "[It's Back] JP 1.5 Year Anniversary Colorful Festival Gacha",
+    "name": "[Rerun] JP 1.5 Year Anniversary Colorful Festival Gacha",
     "cards": [198, 199, 200, 201, 202, 203],
     "start": 1686164400000,
     "end": 1686509999000
   },
   {
     "id": 130,
-    "name": "[It's Back] JP 1.5 Year Anniversary 4★ Guaranteed Premium Gift Gacha",
+    "name": "[Rerun] JP 1.5 Year Anniversary 4★ Guaranteed Premium Gift Gacha",
     "cards": [138, 148, 156, 197, 135, 142],
     "start": 1686164400000,
     "end": 1687114799000
@@ -921,7 +921,7 @@
   },
   {
     "id": 132,
-    "name": "[It's Back] One With My Crew Gacha",
+    "name": "[Rerun] One With My Crew Gacha",
     "cards": [74, 75, 76],
     "start": 1686769200000,
     "end": 1687633199000
@@ -977,7 +977,7 @@
   },
   {
     "id": 140,
-    "name": "[It's Back] Romantic Bride Gacha",
+    "name": "[Rerun] Romantic Bride Gacha",
     "cards": [85, 86, 87],
     "start": 1689274800000,
     "end": 1690225199000
@@ -1043,7 +1043,7 @@
   },
   {
     "id": 149,
-    "name": "[It's Back] Let's Enjoy Summer! Gacha",
+    "name": "[Rerun] Let's Enjoy Summer! Gacha",
     "cards": [105, 106, 107],
     "start": 1691953200000,
     "end": 1692730799000
@@ -1099,7 +1099,7 @@
   },
   {
     "id": 157,
-    "name": "[It's Back] Moonlit Night's Sister Rabbits Gacha",
+    "name": "[Rerun] Moonlit Night's Sister Rabbits Gacha",
     "cards": [114, 115, 116],
     "start": 1694631600000,
     "end": 1695409199000
@@ -1204,7 +1204,7 @@
   },
   {
     "id": 172,
-    "name": "[It's Back] Scramble Flower Gacha",
+    "name": "[Rerun] Scramble Flower Gacha",
     "cards": [123, 124, 125],
     "start": 1697396400000,
     "end": 1698173999000
@@ -1260,7 +1260,7 @@
   },
   {
     "id": 180,
-    "name": "[It's Back] Wanderer's Journey Gacha",
+    "name": "[Rerun] Wanderer's Journey Gacha",
     "cards": [133, 134, 135],
     "start": 1699992000000,
     "end": 1700769599000
@@ -1309,7 +1309,7 @@
   },
   {
     "id": 187,
-    "name": "[It's Back][JP 2nd Anniversary] Colorful Festival Gacha Dream Pick",
+    "name": "[Rerun][JP 2nd Anniversary] Colorful Festival Gacha Dream Pick",
     "cards": [269, 270, 271, 272, 273, 274],
     "start": 1701936000000,
     "end": 1702583999000
@@ -1323,49 +1323,49 @@
   },
   {
     "id": 189,
-    "name": "[It's Back][JP 2nd Anniversary] Memorial Select Gacha",
+    "name": "[Rerun][JP 2nd Anniversary] Memorial Select Gacha",
     "cards": [192, 208, 191, 178, 204, 170],
     "start": 1701936000000,
     "end": 1703188799000
   },
   {
     "id": 190,
-    "name": "[It's Back][JP 2nd Anniversary] Memorial Select Gacha",
+    "name": "[Rerun][JP 2nd Anniversary] Memorial Select Gacha",
     "cards": [192, 196, 229, 218, 169, 22],
     "start": 1701936000000,
     "end": 1703188799000
   },
   {
     "id": 191,
-    "name": "[It's Back][JP 2nd Anniversary] Leo/need Premium Gift Gacha",
+    "name": "[Rerun][JP 2nd Anniversary] Leo/need Premium Gift Gacha",
     "cards": [208, 96, 137, 183],
     "start": 1701936000000,
     "end": 1703188799000
   },
   {
     "id": 192,
-    "name": "[It's Back][JP 2nd Anniversary] MORE MORE JUMP! Premium Gift Gacha",
+    "name": "[Rerun][JP 2nd Anniversary] MORE MORE JUMP! Premium Gift Gacha",
     "cards": [191, 143, 149, 190],
     "start": 1701936000000,
     "end": 1703188799000
   },
   {
     "id": 193,
-    "name": "[It's Back][JP 2nd Anniversary] Vivid BAD SQUAD Premium Gift Gacha",
+    "name": "[Rerun][JP 2nd Anniversary] Vivid BAD SQUAD Premium Gift Gacha",
     "cards": [178, 158, 220, 156],
     "start": 1701936000000,
     "end": 1703188799000
   },
   {
     "id": 194,
-    "name": "[It's Back][JP 2nd Anniversary] Wonderlands×Showtime Premium Gift Gacha",
+    "name": "[Rerun][JP 2nd Anniversary] Wonderlands×Showtime Premium Gift Gacha",
     "cards": [204, 167, 230, 216],
     "start": 1701936000000,
     "end": 1703188799000
   },
   {
     "id": 195,
-    "name": "[It's Back][JP 2nd Anniversary] Nightcord at 25:00 Premium Gift Gacha",
+    "name": "[Rerun][JP 2nd Anniversary] Nightcord at 25:00 Premium Gift Gacha",
     "cards": [170, 227, 103, 217],
     "start": 1701936000000,
     "end": 1703188799000
@@ -1379,7 +1379,7 @@
   },
   {
     "id": 197,
-    "name": "[It's Back] Growing Feelings, Words in the Snow Gacha",
+    "name": "[Rerun] Growing Feelings, Words in the Snow Gacha",
     "cards": [144, 145, 146],
     "start": 1702584000000,
     "end": 1703361599000
@@ -1456,7 +1456,7 @@
   },
   {
     "id": 208,
-    "name": "[It's Back] A Maiden's Hope For The New Year Gacha",
+    "name": "[Rerun] A Maiden's Hope For The New Year Gacha",
     "cards": [163, 164, 165],
     "start": 1705176000000,
     "end": 1705953599000
@@ -1498,7 +1498,7 @@
   },
   {
     "id": 214,
-    "name": "[It's Back] Memoirs of Wrongdoings Gacha",
+    "name": "[Rerun] Memoirs of Wrongdoings Gacha",
     "cards": [151, 152, 153, 154, 155],
     "start": 1707076800000,
     "end": 1708286399000
@@ -1526,7 +1526,7 @@
   },
   {
     "id": 218,
-    "name": "[It's Back] Secret Tea Time Gacha",
+    "name": "[Rerun] Secret Tea Time Gacha",
     "cards": [175, 176, 177],
     "start": 1707854400000,
     "end": 1708631999000
@@ -1589,7 +1589,7 @@
   },
   {
     "id": 227,
-    "name": "[It's Back] Knights of White Gacha",
+    "name": "[Rerun] Knights of White Gacha",
     "cards": [186, 187, 188],
     "start": 1710702000000,
     "end": 1711479599000
@@ -1673,7 +1673,7 @@
   },
   {
     "id": 239,
-    "name": "[It's Back] Yearning for Spring, A Moment in the Night Gacha",
+    "name": "[Rerun] Yearning for Spring, A Moment in the Night Gacha",
     "cards": [200, 201, 202, 203],
     "start": 1713380400000,
     "end": 1714503599000
@@ -1708,7 +1708,7 @@
   },
   {
     "id": 244,
-    "name": "[It's Back] The Naive Voice That Cries Out to You Gacha",
+    "name": "[Rerun] The Naive Voice That Cries Out to You Gacha",
     "cards": [212, 213, 214],
     "start": 1714762800000,
     "end": 1715626799000
@@ -1771,21 +1771,21 @@
   },
   {
     "id": 253,
-    "name": "[It's Back] JP 2.5 Year Anniversary Colorful Festival Gacha",
+    "name": "[Rerun] JP 2.5 Year Anniversary Colorful Festival Gacha",
     "cards": [342, 343, 344, 345, 346, 347],
     "start": 1717786800000,
     "end": 1718132399000
   },
   {
     "id": 254,
-    "name": "[It's Back] JP 2.5 Year Anniversary Greatest Hits Gacha",
+    "name": "[Rerun] JP 2.5 Year Anniversary Greatest Hits Gacha",
     "cards": [117, 62, 178, 204, 292, 1],
     "start": 1717786800000,
     "end": 1718823599000
   },
   {
     "id": 255,
-    "name": "[It's Back] JP 2.5 Year Anniversary 4★ Guaranteed Premium Gift Gacha",
+    "name": "[Rerun] JP 2.5 Year Anniversary 4★ Guaranteed Premium Gift Gacha",
     "cards": [303, 287, 301, 298, 279, 292],
     "start": 1717786800000,
     "end": 1718823599000
@@ -1806,7 +1806,7 @@
   },
   {
     "id": 258,
-    "name": "[It's Back] Graceful Marriage Gacha",
+    "name": "[Rerun] Graceful Marriage Gacha",
     "cards": [224, 225, 226],
     "start": 1718391600000,
     "end": 1719255599000
@@ -1890,7 +1890,7 @@
   },
   {
     "id": 270,
-    "name": "[It's Back] Sporty Girl♡ Gacha",
+    "name": "[Rerun] Sporty Girl♡ Gacha",
     "cards": [236, 237, 238],
     "start": 1721761200000,
     "end": 1722625199000
@@ -1939,7 +1939,7 @@
   },
   {
     "id": 277,
-    "name": "[It's Back] CYBER SNIPER Gacha",
+    "name": "[Rerun] CYBER SNIPER Gacha",
     "cards": [247, 248, 249],
     "start": 1723662000000,
     "end": 1724439599000
@@ -1988,7 +1988,7 @@
   },
   {
     "id": 284,
-    "name": "[It's Back] Before the storm Gacha",
+    "name": "[Rerun] Before the storm Gacha",
     "cards": [259, 260, 261],
     "start": 1725649200000,
     "end": 1726426799000
@@ -2152,7 +2152,7 @@
   },
   {
     "id": 307,
-    "name": "[It's Back] Darkness Festa Gacha",
+    "name": "[Rerun] Darkness Festa Gacha",
     "cards": [271, 272, 273, 274],
     "start": 1729018800000,
     "end": 1729796399000
@@ -2215,7 +2215,7 @@
   },
   {
     "id": 316,
-    "name": "[It's Back] Spooky Forest Gacha",
+    "name": "[Rerun] Spooky Forest Gacha",
     "cards": [283, 284, 285],
     "start": 1731355200000,
     "end": 1732132799000
@@ -2229,7 +2229,7 @@
   },
   {
     "id": 318,
-    "name": "[It's Back] One With My Crew Gacha",
+    "name": "[Rerun] One With My Crew Gacha",
     "cards": [74, 75, 76],
     "start": 1731787200000,
     "end": 1732564799000
@@ -2243,7 +2243,7 @@
   },
   {
     "id": 320,
-    "name": "[It's Back] Yearning for Spring, A Moment in the Night Gacha",
+    "name": "[Rerun] Yearning for Spring, A Moment in the Night Gacha",
     "cards": [200, 201, 202, 203],
     "start": 1732564800000,
     "end": 1733342399000
@@ -2285,56 +2285,56 @@
   },
   {
     "id": 326,
-    "name": "[It's Back] JP 3rd Anniversary VIRTUAL SINGER Premium Gift Gacha",
+    "name": "[Rerun] JP 3rd Anniversary VIRTUAL SINGER Premium Gift Gacha",
     "cards": [365, 351, 314, 300, 252, 268],
     "start": 1733558400000,
     "end": 1734638399000
   },
   {
     "id": 327,
-    "name": "[It's Back] JP 3rd Anniversary Leo/need Premium Gift Gacha",
+    "name": "[Rerun] JP 3rd Anniversary Leo/need Premium Gift Gacha",
     "cards": [364, 348, 288, 317],
     "start": 1733558400000,
     "end": 1734638399000
   },
   {
     "id": 328,
-    "name": "[It's Back] JP 3rd Anniversary MORE MORE JUMP! Premium Gift Gacha",
+    "name": "[Rerun] JP 3rd Anniversary MORE MORE JUMP! Premium Gift Gacha",
     "cards": [325, 277, 355, 301],
     "start": 1733558400000,
     "end": 1734638399000
   },
   {
     "id": 329,
-    "name": "[It's Back] JP 3rd Anniversary Vivid BAD SQUAD Premium Gift Gacha",
+    "name": "[Rerun] JP 3rd Anniversary Vivid BAD SQUAD Premium Gift Gacha",
     "cards": [267, 329, 298, 375],
     "start": 1733558400000,
     "end": 1734638399000
   },
   {
     "id": 330,
-    "name": "[It's Back] JP 3rd Anniversary Wonderlands×Showtime Premium Gift Gacha",
+    "name": "[Rerun] JP 3rd Anniversary Wonderlands×Showtime Premium Gift Gacha",
     "cards": [280, 336, 367, 313],
     "start": 1733558400000,
     "end": 1734638399000
   },
   {
     "id": 331,
-    "name": "[It's Back] JP 3rd Anniversary Nightcord at 25:00 Premium Gift Gacha",
+    "name": "[Rerun] JP 3rd Anniversary Nightcord at 25:00 Premium Gift Gacha",
     "cards": [339, 302, 291, 254],
     "start": 1733558400000,
     "end": 1734638399000
   },
   {
     "id": 332,
-    "name": "[It's Back] JP 3rd Anniversary Your Pick Gacha (Limited Edition)",
+    "name": "[Rerun] JP 3rd Anniversary Your Pick Gacha (Limited Edition)",
     "cards": [56, 105, 133, 187, 200, 212],
     "start": 1733558400000,
     "end": 1734638399000
   },
   {
     "id": 333,
-    "name": "[It's Back] JP 3rd Anniversary Memorial Select Gacha",
+    "name": "[Rerun] JP 3rd Anniversary Memorial Select Gacha",
     "cards": [117, 276, 328, 335, 91, 289],
     "start": 1733558400000,
     "end": 1734638399000
@@ -2348,7 +2348,7 @@
   },
   {
     "id": 335,
-    "name": "[It's Back] JP 3rd Anniversary Colorful Festival Gacha Dream Pick",
+    "name": "[Rerun] JP 3rd Anniversary Colorful Festival Gacha Dream Pick",
     "cards": [416, 417, 418, 419, 420, 421],
     "start": 1733601600000,
     "end": 1733947199000
@@ -2362,7 +2362,7 @@
   },
   {
     "id": 337,
-    "name": "[It's Back] Fly to The Future! Gacha",
+    "name": "[Rerun] Fly to The Future! Gacha",
     "cards": [294, 295, 296],
     "start": 1734120000000,
     "end": 1734897599000
@@ -2376,7 +2376,7 @@
   },
   {
     "id": 339,
-    "name": "[It's Back] Scramble Flower Gacha",
+    "name": "[Rerun] Scramble Flower Gacha",
     "cards": [123, 124, 125],
     "start": 1734638400000,
     "end": 1735415999000
@@ -2404,7 +2404,7 @@
   },
   {
     "id": 343,
-    "name": "[It's Back] Romantic Bride Gacha",
+    "name": "[Rerun] Romantic Bride Gacha",
     "cards": [85, 86, 87],
     "start": 1735156800000,
     "end": 1735934399000
@@ -2481,7 +2481,7 @@
   },
   {
     "id": 354,
-    "name": "[It's Back] New Year's Divine Beasts Gacha",
+    "name": "[Rerun] New Year's Divine Beasts Gacha",
     "cards": [308, 309, 310],
     "start": 1736539200000,
     "end": 1737316799000
@@ -2495,7 +2495,7 @@
   },
   {
     "id": 356,
-    "name": "[It's Back] Fluffy☆ Dreamland Gacha",
+    "name": "[Rerun] Fluffy☆ Dreamland Gacha",
     "cards": [56, 57, 58],
     "start": 1737057600000,
     "end": 1737835199000
@@ -2509,7 +2509,7 @@
   },
   {
     "id": 358,
-    "name": "[It's Back] A Maiden's Hope For The New Year Gacha",
+    "name": "[Rerun] A Maiden's Hope For The New Year Gacha",
     "cards": [163, 164, 165],
     "start": 1737403200000,
     "end": 1738180799000
@@ -2551,7 +2551,7 @@
   },
   {
     "id": 364,
-    "name": "[It's Back] Knights of White Gacha",
+    "name": "[Rerun] Knights of White Gacha",
     "cards": [186, 187, 188],
     "start": 1738785600000,
     "end": 1739390399000
@@ -2572,7 +2572,7 @@
   },
   {
     "id": 367,
-    "name": "[It's Back] Sweet, Cute Valentine! Gacha",
+    "name": "[Rerun] Sweet, Cute Valentine! Gacha",
     "cards": [320, 321, 322],
     "start": 1739390400000,
     "end": 1740167999000
@@ -2600,7 +2600,7 @@
   },
   {
     "id": 371,
-    "name": "[It's Back] Graceful Marriage Gacha",
+    "name": "[Rerun] Graceful Marriage Gacha",
     "cards": [224, 225, 226],
     "start": 1740340800000,
     "end": 1741118399000
@@ -2649,14 +2649,14 @@
   },
   {
     "id": 378,
-    "name": "[It's Back] Imperial Soldiers Gacha",
+    "name": "[Rerun] Imperial Soldiers Gacha",
     "cards": [331, 332, 333],
     "start": 1741719600000,
     "end": 1742497199000
   },
   {
     "id": 379,
-    "name": "[It's Back] Secret Tea Time Gacha",
+    "name": "[Rerun] Secret Tea Time Gacha",
     "cards": [175, 176, 177],
     "start": 1742065200000,
     "end": 1742842799000
@@ -2677,7 +2677,7 @@
   },
   {
     "id": 382,
-    "name": "[It's Back] Wanderer's Journey Gacha",
+    "name": "[Rerun] Wanderer's Journey Gacha",
     "cards": [133, 134, 135],
     "start": 1743015600000,
     "end": 1743793199000
@@ -2740,7 +2740,7 @@
   },
   {
     "id": 391,
-    "name": "[It's Back] Fluttering Maidens Gacha",
+    "name": "[Rerun] Fluttering Maidens Gacha",
     "cards": [344, 345, 346, 347],
     "start": 1744484400000,
     "end": 1745261999000
@@ -2768,7 +2768,7 @@
   },
   {
     "id": 395,
-    "name": "[It's Back] The Naive Voice That Cries Out to You Gacha",
+    "name": "[Rerun] The Naive Voice That Cries Out to You Gacha",
     "cards": [212, 213, 214],
     "start": 1745607600000,
     "end": 1746385199000
@@ -2831,7 +2831,7 @@
   },
   {
     "id": 404,
-    "name": "[It's Back] Escape the Rain Gacha",
+    "name": "[Rerun] Escape the Rain Gacha",
     "cards": [359, 360, 361],
     "start": 1747162800000,
     "end": 1747940399000
@@ -2852,7 +2852,7 @@
   },
   {
     "id": 407,
-    "name": "[It's Back] Moonlit Night's Sister Rabbits Gacha",
+    "name": "[Rerun] Moonlit Night's Sister Rabbits Gacha",
     "cards": [114, 115, 116],
     "start": 1747767600000,
     "end": 1748545199000
@@ -2894,7 +2894,7 @@
   },
   {
     "id": 413,
-    "name": "[It's Back] Sporty Girl♡ Gacha",
+    "name": "[Rerun] Sporty Girl♡ Gacha",
     "cards": [236, 237, 238],
     "start": 1748458800000,
     "end": 1749236399000
@@ -2915,14 +2915,14 @@
   },
   {
     "id": 416,
-    "name": "[It's Back] Nightcord at 25:00 World Link Event Support Gacha",
+    "name": "[Rerun] Nightcord at 25:00 World Link Event Support Gacha",
     "cards": [339, 385, 291, 254, 146],
     "start": 1730487600000,
     "end": 1732305599000
   },
   {
     "id": 417,
-    "name": "[It's Back] Darkness Festa Gacha",
+    "name": "[Rerun] Darkness Festa Gacha",
     "cards": [271, 272, 273, 274],
     "start": 1749063600000,
     "end": 1749841199000
@@ -2932,7 +2932,7 @@
     "name": "going upstairs Gacha",
     "cards": [527, 528, 529],
     "start": 1749582000000,
-    "end": 1750445999000
+    "end": 1750445940000
   },
   {
     "id": 419,
@@ -2957,14 +2957,14 @@
   },
   {
     "id": 422,
-    "name": "[It's Back] 3.5 Year Anniversary 10x Free Gacha",
+    "name": "[Rerun] 3.5 Year Anniversary 10x Free Gacha",
     "cards": [131, 65, 276, 67, 88, 195],
     "start": 1749322800000,
     "end": 1751353140000
   },
   {
     "id": 423,
-    "name": "[It's Back] 3.5 Year Anniversary Colorful Festival Gacha",
+    "name": "[Rerun] 3.5 Year Anniversary Colorful Festival Gacha",
     "cards": [497, 498, 499, 500, 501, 502],
     "start": 1749322800000,
     "end": 1749884340000
@@ -2978,7 +2978,7 @@
   },
   {
     "id": 425,
-    "name": "[It's Back] Under Eternal Bells Gacha",
+    "name": "[Rerun] Under Eternal Bells Gacha",
     "cards": [371, 372, 373],
     "start": 1750186800000,
     "end": 1750964340000
@@ -2993,7 +2993,7 @@
   {
     "id": 427,
     "name": "3.5 Year Anniversary Leo/need Premium Gift Gacha",
-    "cards": [479, 410, 315, 390, 289],
+    "cards": [479, 673, 315, 390, 289],
     "start": 1749927600000,
     "end": 1750445940000
   },

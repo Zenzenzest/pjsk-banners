@@ -11,9 +11,12 @@ export interface GachaBannersProps {
 
 export type SelectedFilterTypes = {
   Character: string[];
-  Unit: null;
+  Unit: string[];
   Attribute: string[];
-  Rarity: string[];
+  Rarity: (string | number)[];
+};
+export type SelectedFilterTypesProps = {
+  selectedFilters: SelectedFilterTypes;
 };
 export interface CardsTypes {
   id: number;

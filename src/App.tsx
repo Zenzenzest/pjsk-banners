@@ -8,7 +8,8 @@ import CreateData from "./pages/CreateData";
 import Test from "./pages/Test";
 function App() {
   return (
-    <ThemeProvider>
+    <div>
+          <ThemeProvider>
       <ServerProvider>
         <Routes>
           <Route path="/" element={<NavBar />}>
@@ -21,6 +22,7 @@ function App() {
         </Routes>
       </ServerProvider>
     </ThemeProvider>
+    </div>
   );
 }
 

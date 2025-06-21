@@ -1,10 +1,4 @@
-import React, {
-  createContext,
-  useContext,
-  useState,
-  useEffect,
-  ReactNode,
-} from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 type ThemeMode = "light" | "dark";
 interface ThemeContextType {
@@ -21,7 +15,7 @@ interface ThemeProviderProps {
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [theme, setTheme] = useState<ThemeMode>(() => {
     const savedTheme = localStorage.getItem("theme") as ThemeMode | null;
-    return savedTheme || "light";
+    return savedTheme || "dark";
   });
 
   const toggleTheme = () => {

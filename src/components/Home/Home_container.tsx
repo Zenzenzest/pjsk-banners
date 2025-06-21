@@ -1,7 +1,5 @@
-import { useServer } from "../../context/Server";
 import { useState } from "react";
 
-import Jp from "./jp";
 import DateTabs from "./Calendar_view/Date_tabs";
 import { useTheme } from "../../context/Theme_toggle";
 import FilterTab from "./Card_view/Filter_tab";
@@ -11,7 +9,6 @@ type ViewModeType = "dateview" | "filterview";
 export default function HomeContainer() {
   const [viewMode, setViewMode] = useState<ViewModeType>("dateview");
   const { theme } = useTheme();
-  const { server } = useServer();
   const handleDateViewMode = () => {
     setViewMode("dateview");
   };
@@ -21,7 +18,7 @@ export default function HomeContainer() {
 
   return (
     <div>
-      <div>
+      <div className="flex flex-col h-full">
         {/* VIEWMODE TABS */}
         <div
           className={`w-full flex flex-row items-center justify-center text-center h-8 ${
@@ -36,7 +33,7 @@ export default function HomeContainer() {
             } ${
               viewMode == "filterview" && theme == "light"
                 ? "text-text-light-mode"
-                : ""
+                : "bg-bg-dark-mode"
             } w-1/2 h-full pt-1`}
           >
             Calendar View
@@ -49,7 +46,7 @@ export default function HomeContainer() {
             } ${
               viewMode == "dateview" && theme == "light"
                 ? "text-text-light-mode"
-                : ""
+                : "bg-bg-dark-mode"
             } `}
           >
             Filter View

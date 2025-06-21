@@ -173,7 +173,7 @@ export default function DateTabs() {
       className={`w-full flex flex-col gap-3 ${
         theme == "light"
           ? "bg-bg-light-mode2 text-text-light-mode"
-          : "bg-bg-dark-mode2 text-gray-200"
+          : "bg-bg-dark-mode text-gray-200"
       }`}
     >
       {/* DATE CONTAINER */}
