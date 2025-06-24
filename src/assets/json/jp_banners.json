@@ -4085,7 +4085,7 @@
     "name": "果てなき護るための戦いガチャ",
     "start": 1740711600000,
     "end": 1741575599000,
-    "cards": [641],
+    "cards": [641, 642, 643],
     "en_id": -6,
     "type": "event_limited"
   },
@@ -4419,5 +4419,32 @@
     "cards": [430, 431, 432],
     "en_id": -1,
     "type": "returning_limited"
+  },
+  {
+    "id": 486,
+    "name": "[Leo/need]ワールドリンクイベントサポートガチャ",
+    "cards": [479, 507, 427, 411, 289],
+    "start": 1750042800000,
+    "end": 1751857199000,
+    "en_id": -1,
+    "type": "world_link_support"
+  },
+  {
+    "id": 487,
+    "name": "Another sparkle Starsガチャ",
+    "start": 1750647600000,
+    "end": 1751857199000,
+    "cards": [1078, 1079, 1080, 1081],
+    "en_id": 0,
+    "type": "world_link"
+  },
+  {
+    "id": 488,
+    "name": "[神代類]HAPPY BIRTHDAY2025ガチャ",
+    "start": 1750690800000,
+    "end": 1751295599000,
+    "cards": [1082, 233, 379, 540],
+    "en_id": -2,
+    "type": "bday"
   }
 ]

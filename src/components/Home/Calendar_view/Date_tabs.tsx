@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import GlobalBanners from "../../../assets/json/gacha_banners.json";
+import GlobalBanners from "../../../assets/json/en_banners.json";
 import JpBbanners from "../../../assets/json/jp_banners.json";
 import { useTheme } from "../../../context/Theme_toggle";
 

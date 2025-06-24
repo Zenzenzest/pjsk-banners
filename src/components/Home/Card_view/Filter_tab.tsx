@@ -298,7 +298,7 @@ export default function FilterTab() {
             </button>
           </div>
         </div>
-      </div>{" "}
+      </div>
       <div className="w-full">
         <FilteredCards selectedFilters={selectedFilters} />
       </div>

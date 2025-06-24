@@ -12,6 +12,7 @@ export default function FilteredCards({
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
   const [cardsPerPage] = useState(20);
 
   const [cardState, setCardState] = useState<CardState>({
@@ -70,6 +71,9 @@ export default function FilteredCards({
     return matchesCharacterOrUnit && matchesAttribute && matchesRarity;
   });
 
+  const sortedCards = [...filteredCards].sort((a, b) => {
+    return sortOrder === "desc" ? b.real_id - a.real_id : a.real_id - b.real_id;
+  });
   // Reset to first page when filters change
   useEffect(() => {
     setCurrentPage(1);
@@ -79,7 +83,11 @@ export default function FilteredCards({
   const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
   const startIndex = (currentPage - 1) * cardsPerPage;
   const endIndex = startIndex + cardsPerPage;
-  const currentCards = filteredCards.slice(startIndex, endIndex);
+  const currentCards = sortedCards.slice(startIndex, endIndex);
+
+  const toggleSortOrder = () => {
+    setSortOrder((prev) => (prev === "asc" ? "desc" : "asc"));
+  };
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
@@ -138,13 +146,52 @@ export default function FilteredCards({
         theme == "dark" ? "bg-bg-dark-mode" : "bg-bg-light-mode"
       } flex flex-col items-center justify-center gap-10 w-full`}
     >
-      <div
-        className={`text-center text-sm md:text-base px-2  ${
-          theme === "light" ? "text-gray-600" : "text-gray-400"
-        }`}
-      >
-        Showing {startIndex + 1}-{Math.min(endIndex, filteredCards.length)} of{" "}
-        {filteredCards.length} cards
+      <div className="flex flex-row justify-center items-center">
+        {" "}
+        <div
+          className={`text-center text-sm md:text-base px-2  ${
+            theme === "light" ? "text-gray-600" : "text-gray-400"
+          }`}
+        >
+          Showing {startIndex + 1}-{Math.min(endIndex, filteredCards.length)} of{" "}
+          {filteredCards.length} cards
+        </div>
+        <div>
+          <button onClick={toggleSortOrder}>
+            {" "}
+            {sortOrder === "desc" ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18"
+                />
+              </svg>
+            )}
+          </button>
+        </div>
       </div>
 
       {/* CARDS GRID*/}
