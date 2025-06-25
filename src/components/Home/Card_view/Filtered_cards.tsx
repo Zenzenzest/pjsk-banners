@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import GachaCards from "../../../assets/json/cards.json";
-import type { CardsTypes, CardState } from "../types";
+import EnCards from "../../../assets/json/en_cards.json";
+import JpCards from "../../../assets/json/jp_cards.json";
+import type { CardsTypes, CardState, SelectedFilterTypesProps } from "../types";
 import CardModal from "../Card_modal";
 import { useTheme } from "../../../context/Theme_toggle";
-import type { SelectedFilterTypesProps } from "../types";
+
+import { useServer } from "../../../context/Server";
 export default function FilteredCards({
   selectedFilters,
 }: SelectedFilterTypesProps) {
@@ -24,6 +26,7 @@ export default function FilteredCards({
     cardAttribute: "",
   });
 
+  const { server } = useServer();
   const formatCardName = (id: number) => String(id).padStart(4, "0");
 
   const handleCardClick = (card: CardsTypes) => {
@@ -45,7 +48,9 @@ export default function FilteredCards({
     setIsOpen(false);
   };
 
-  const filteredCards = GachaCards.filter((card) => {
+  const cardsData: CardsTypes[] = server === "global" ? EnCards : JpCards;
+
+  const filteredCards = cardsData.filter((card) => {
     const hasCharacterFilter = selectedFilters.Character.length > 0;
     const hasUnitFilter = selectedFilters.Unit.length > 0;
     const matchesCharacter = selectedFilters.Character.includes(card.character);
@@ -72,8 +77,11 @@ export default function FilteredCards({
   });
 
   const sortedCards = [...filteredCards].sort((a, b) => {
-    return sortOrder === "desc" ? b.real_id - a.real_id : a.real_id - b.real_id;
+    return sortOrder === "desc"
+      ? b.released - a.released
+      : a.released - b.released;
   });
+
   // Reset to first page when filters change
   useEffect(() => {
     setCurrentPage(1);
@@ -188,7 +196,7 @@ export default function FilteredCards({
                   strokeLinejoin="round"
                   d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18"
                 />
-              </svg>  
+              </svg>
             )}
           </button>
         </div>
