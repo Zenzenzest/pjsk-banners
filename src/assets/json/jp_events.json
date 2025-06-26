@@ -2939,6 +2939,16 @@
     "aggregateAt": 1751713199000,
     "closedAt": 1751867999000,
     "unit": "l/n",
-    "cards":[]
+    "cards": [1078, 1079, 1080, 1081],
+    "keywords": [
+      "l/n",
+      "leoneed",
+      "leo/need",
+      "leoni",
+      "wl2",
+      "world link",
+      "world link 2"
+    ],
+    "type": "world_link"
   }
 ]

@@ -3003,5 +3003,75 @@
     "cards": [424, 413, 397, 299, 131],
     "start": 1749927600000,
     "end": 1750489140000
+  },
+  {
+    "id": 429,
+    "name": "[Rerun] Before the storm Gacha",
+    "cards": [259, 260, 261],
+    "start": 1751050800000,
+    "end": 1751828340000
+  },
+  {
+    "id": 430,
+    "name": "Strike Down Evil in the Name of Justice Gacha",
+    "cards": [541, 542, 543],
+    "start": 1752087600000,
+    "end": 1752778740000
+  },
+  {
+    "id": 431,
+    "name": "Youths Assemble! Gacha",
+    "cards": [544, 545, 546, 547],
+    "start": 1752778800000,
+    "end": 1753988340000
+  },
+  {
+    "id": 432,
+    "name": "Nene Kusanagi Happy Birthday 2025 Gacha",
+    "cards": [548, 388, 242],
+    "start": 1752994800000,
+    "end": 1753599540000
+  },
+  {
+    "id": 433,
+    "name": "An Shiraishi Happy Birthday 2025 Gacha",
+    "cards": [549, 392, 246],
+    "start": 1753513200000,
+    "end": 1754117940000
+  },
+  {
+    "id": 434,
+    "name": "[Rerun] CYBER SNIPER Gacha",
+    "cards": [247, 248, 249],
+    "start": 1751914800000,
+    "end": 1752692340000
+  },
+  {
+    "id": 435,
+    "name": "[Rerun] City of Spirits Gacha",
+    "cards": [382, 383, 384],
+    "start": 1752433200000,
+    "end": 1753210740000
+  },
+  {
+    "id": 436,
+    "name": "[Rerun] Growing Feelings, Words in the Snow Gacha",
+    "cards": [144, 145, 146],
+    "start": 1753210800000,
+    "end": 1753988340000
+  },
+  {
+    "id": 437,
+    "name": "Happiness Package Gacha",
+    "cards": [349, 324, 375, 336, 385, 450],
+    "start": 1753556400000,
+    "end": 1754333940000
+  },
+  {
+    "id": 438,
+    "name": "Anime Expo Free 10x Gacha",
+    "cards": [449, 479, 484, 482, 397],
+    "start": 1751526000000,
+    "end": 1751871540000
   }
 ]
