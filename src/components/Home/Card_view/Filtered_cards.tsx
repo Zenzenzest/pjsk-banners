@@ -79,7 +79,7 @@ export default function FilteredCards({
   const sortedCards = [...filteredCards].sort((a, b) => {
     return sortOrder === "desc"
       ? b.released - a.released
-      : a.released - b.released;
+      : a.real_id - b.real_id;
   });
 
   // Reset to first page when filters change
@@ -237,7 +237,7 @@ export default function FilteredCards({
                             <img
                               key={i}
                               src="/images/rarity_icons/trained_star.png"
-                              style={{ width: "20px", display: "inline-block" }}
+                              style={{ width: "15px", display: "inline-block" }}
                             />
                           ))}
                       </div>
@@ -277,7 +277,7 @@ export default function FilteredCards({
                                 key={i}
                                 src="/images/rarity_icons/untrained_star.png"
                                 style={{
-                                  width: "20px",
+                                  width: "15px",
                                   display: "inline-block",
                                 }}
                               />

@@ -35,23 +35,32 @@ export default function CardModal({
         } p-6 rounded-lg shadow-lg border border-gray-300 relative z-10`}
         onClick={(e) => e.stopPropagation()} // Prevent clicks inside the modal from closing it
       >
-        <div
-          className={`flex flex-row justify-center items-center gap-3 ${
-            theme === "light" ? "text-text-light-mode" : "text-text-dark-mode"
-          } text-md font-semibold mb-4 tracking-[3px]`}
-        >
-          {/* CARD ATTRIBUTE */}
-          <div>
-            <img
-              src={`/images/attribute_icons/${cardAttribute}.webp`}
-              style={{
-                width: "2rem",
-              }}
-            />
-          </div>
-          {/* CHARACTER NAME */}
-          <div className="text-3xl font-bold font-serif tracking-wide">
-            {lastName} {firstName}
+        <div className="flex flex-col justify-center items-center">
+          <div
+            className={`flex flex-row justify-center items-center gap-3 ${
+              theme === "light" ? "text-text-light-mode" : "text-text-dark-mode"
+            } text-md font-semibold mb-2 tracking-[3px]`}
+          >
+            {/* CARD ATTRIBUTE */}
+            <div>
+              <img
+                src={`/images/attribute_icons/${cardAttribute}.webp`}
+                style={{
+                  width: "2rem",
+                }}
+              />
+            </div>
+            {/* CHARACTER NAME */}
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold font-serif tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                {lastName}{" "}
+                <span className="whitespace-nowrap">{firstName}</span>
+              </h2>
+            </div>
+          </div>{" "}
+          {/* CARD NAME */}
+          <div className="w-full text-md italic text-center mb-2 ">
+            {cardName}
           </div>
         </div>
 
@@ -75,10 +84,6 @@ export default function CardModal({
                 onLoad={() => setIsLoading(false)}
                 className="w-full transition-opacity duration-300"
               />
-              {/* CARD NAME */}
-              <div className="w-full text-xs italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-gray-350 [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
-                {cardName}
-              </div>
               {/* RARITY ICON */}
               <img
                 src="/images/rarity_icons/bday.png"
@@ -139,9 +144,7 @@ export default function CardModal({
                   onLoad={() => setIsLoading2(false)}
                   className="w-full transition-opacity duration-300"
                 />
-                <div className="w-full text-sm italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-mizuki [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
-                  {cardName}
-                </div>
+
                 <div className="absolute bottom-1 right-1">
                   {Array(rarity)
                     .fill(0)
@@ -175,9 +178,7 @@ export default function CardModal({
                 onLoad={() => setIsLoading(false)}
                 className="w-full transition-opacity duration-300"
               />
-              <div className="w-full text-sm italic rounded-md backdrop-blur-sm absolute top-0 right-0 text-center text-mizuki [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]">
-                {cardName}
-              </div>
+
               <div className="absolute bottom-1 right-1">
                 {Array(rarity)
                   .fill(0)

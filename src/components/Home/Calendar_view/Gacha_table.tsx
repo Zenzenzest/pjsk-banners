@@ -30,8 +30,6 @@ export default function GachaTable({
   const formatId = (id: number) => String(id).padStart(4, "0");
   const today = Date.now();
 
-
-
   const handleCardClick = (card: CardsTypes) => {
     const [lName, fName] = card.character.split(" ");
     setCardState({
@@ -91,8 +89,6 @@ export default function GachaTable({
           day: "numeric",
         });
 
-
-
         const gachaBannerImage =
           server === "global"
             ? `/images/banners/${formattedGachaId}.webp`
@@ -100,7 +96,7 @@ export default function GachaTable({
 
         return (
           <div
-            className="flex flex-row p-5 border-b border-gray-400"
+            className="flex flex-row p-5 border-t border-gray-400"
             key={banner.id}
           >
             {/* GACHA */}
@@ -178,7 +174,7 @@ export default function GachaTable({
                           margin: "0.3rem",
                         }}
                       />
-                      {card}
+                      {/* {card} */}
                     </div>
                   );
                 })}
