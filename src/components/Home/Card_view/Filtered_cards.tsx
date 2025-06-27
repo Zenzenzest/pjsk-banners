@@ -4,8 +4,10 @@ import JpCards from "../../../assets/json/jp_cards.json";
 import type { CardsTypes, CardState, SelectedFilterTypesProps } from "../types";
 import CardModal from "../Card_modal";
 import { useTheme } from "../../../context/Theme_toggle";
-
+import "./Filtered_cards.css";
 import { useServer } from "../../../context/Server";
+import cn from "classnames";
+
 export default function FilteredCards({
   selectedFilters,
 }: SelectedFilterTypesProps) {
@@ -27,7 +29,40 @@ export default function FilteredCards({
   });
 
   const { server } = useServer();
-  const formatCardName = (id: number) => String(id).padStart(4, "0");
+  // const formatCardName = (id: number) => String(id).padStart(4, "0");
+
+  const cardTypesColors = [
+    { color1: "#ecc5e0", color2: "#fe30b4" },
+    {
+      color1: "#168f89",
+      color2: "#00f7ff",
+    },
+    {
+      color1: "#3cd9e4",
+      color2: "#1d38b1",
+    },
+    {
+      color1: "#fdc8f7",
+      color2: "#8e5be0",
+    },
+    {
+      color1: "#28ec32",
+      color2: "#acbd50",
+    },
+    { color1: "#b6bafc", color2: "#5444a6" },
+    { color1: "#f6bdc0", color2: "#dc1c13" },
+    {},
+  ];
+  const CardTypesNames = [
+    "Limited",
+    "Movie Exclusive",
+    "Unit Limited",
+    "Birthday",
+    "Permanent",
+    "BloomFes",
+    "Collab",
+    "ColorFes",
+  ];
 
   const handleCardClick = (card: CardsTypes) => {
     const [lName, fName] = card.character.split(" ");
@@ -152,8 +187,51 @@ export default function FilteredCards({
     <div
       className={`${
         theme == "dark" ? "bg-bg-dark-mode" : "bg-bg-light-mode"
-      } flex flex-col items-center justify-center gap-10 w-full`}
+      } flex flex-col items-center justify-center gap-5 w-full pb-10`}
     >
+      <div className="flex  text-center flex-row w-full justify-center items-center pl-1 pr-1">
+        {/* COLORS */}
+        <div className="w-full flex flex-row flex-wrap justify-center items-center">
+          {cardTypesColors.map((color, index) => {
+            return (
+              <div key={index} className="min-h-[16px] w-1/3 ml-auto mr-auto ">
+                {index != 7 ? (
+                  <div className="flex flex-row justify-baseline items-center gap-5 w-full p-1">
+                    {" "}
+                    <div
+                      className="w-[20px] h-[5px]"
+                      style={{
+                        background:
+                          color.color1 && color.color2
+                            ? `linear-gradient(to right, ${color.color1}, ${color.color2})`
+                            : "none",
+                        border:
+                          !color.color1 || !color.color2
+                            ? "1px solid red"
+                            : "none",
+                      }}
+                    />{" "}
+                    <div className="text-xs">{CardTypesNames[index]}</div>
+                  </div>
+                ) : (
+                  <div className="flex flex-row justify-baseline items-center gap-5">
+                    {" "}
+                    <div
+                      className="w-[20px] h-[5px]"
+                      style={{
+                        background:
+                          "linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)",
+                      }}
+                    ></div>
+                    <div className="text-xs">{CardTypesNames[index]}</div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+        {/* CARD TYPES */}
+      </div>
       <div className="flex flex-row justify-center items-center">
         {" "}
         <div
@@ -203,29 +281,55 @@ export default function FilteredCards({
       </div>
 
       {/* CARDS GRID*/}
-      <div className="w-max[500px] h-max-[300px] px-2 sm:px-10  ">
+      <div className="w-max[500px] h-max-[300px] px-2 sm:px-5  ">
         <div className="grid xs grid-cols-2 gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  sm:gap-4 md:gap-6">
           {currentCards.map((card) => {
             return (
               // CARD CONTAINER
               <div
                 key={card.id}
-                className={`flex flex-col items-center justify-center p-3 rounded-lg transition-all duration-200 hover:scale-105 ${
+                className={`flex flex-col items-center justify-center p-3 rounded-lg duration-200  ${
                   theme === "dark"
                     ? "bg-gray-800 hover:bg-gray-700"
                     : "bg-white hover:bg-gray-50 shadow-sm hover:shadow-md"
                 }`}
               >
-                {/* CARD ART */}
+                {/* CARD THUMBNAIL */}
                 <button
                   onClick={() => handleCardClick(card)}
                   className="text-white rounded  hover:opacity-80 transition-opacity mb-2 e"
                 >
                   {(card.rarity == 4 || card.rarity == 3) && (
-                    <div className="relative ">
+                    <div
+                      className={cn(
+                        "animated-border",
+                        {
+                          "limited-border": card.card_type === "limited",
+                        },
+                        {
+                          "limited-border": card.card_type === "limited_collab",
+                        },
+                        {
+                          "unit-border": card.card_type === "unit_limited",
+                        },
+                        {
+                          "colorfes-border": card.card_type === "color_fes",
+                        },
+                        {
+                          "bloomfes-border": card.card_type === "bloom_fes",
+                        },
+                        {
+                          "movie-border": card.card_type === "movie_exclusive",
+                        },
+                        {
+                          "permanent-border":
+                            card.card_type === "" || card.card_type === "event",
+                        }
+                      )}
+                    >
                       <img
                         src={`/images/card_thumbnails/${card.id}_t.webp`}
-                        className={`h-auto w-full border-2 max-w-[300px] ml-auto mr-auto rounded 
+                        className={`h-auto w-full -2 max-w-[300px] ml-auto mr-auto rounded 
                       
                           `}
                         alt={card.name}
@@ -244,7 +348,7 @@ export default function FilteredCards({
                     </div>
                   )}
                   {card.rarity == 5 && (
-                    <div className="relative">
+                    <div className={`animated-border bday-border`}>
                       <img
                         src={`/images/card_thumbnails/${card.id}_bd.webp`}
                         className="h-auto w-full max-w-[300px]  rounded"
@@ -262,7 +366,14 @@ export default function FilteredCards({
                     </div>
                   )}
                   {card.rarity <= 2 && (
-                    <div className="relative">
+                    <div
+                      className={`animated-border ${
+                        card.card_type === "movie_exclusive" && "movie-border"
+                      } ${
+                        (card.card_type == "" || card.card_type === "event") &&
+                        "permanent-border"
+                      }`}
+                    >
                       <img
                         src={`/images/card_thumbnails/${card.id}.webp`}
                         className="h-auto w-full max-w-[300px]  rounded"
@@ -312,7 +423,7 @@ export default function FilteredCards({
 
       {/* PAGINATION CONTROLS */}
       {totalPages > 1 && (
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mt-8 mb-4 px-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mt-5 mb-4 px-4">
           <div
             className={`text-sm mb-2 sm:hidden ${
               theme === "light" ? "text-gray-600" : "text-gray-400"

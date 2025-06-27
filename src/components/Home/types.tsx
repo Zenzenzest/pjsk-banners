@@ -27,12 +27,10 @@ export interface CardsTypes {
   unit: string;
   released: number;
   attribute: string;
-  untrained_url: string;
-  trained_url: string;
   sub_unit?: string;
   real_id: number;
   sekai_id: number;
-  card_type?: string;
+  card_type: string;
 }
 
 export interface CardState {
