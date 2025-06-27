@@ -22,7 +22,7 @@ export default function CardModal({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-xs"
+      className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-xs m-2"
       onClick={onClose} // Close modal when clicking outside
     >
       {/* Overlay */}
