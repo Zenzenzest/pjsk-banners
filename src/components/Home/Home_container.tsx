@@ -49,7 +49,7 @@ export default function HomeContainer() {
                 : "bg-bg-dark-mode"
             } `}
           >
-            Filter View
+            Filter & Search
           </div>
         </div>
         {/* VIEWMODE OPTIONS */}

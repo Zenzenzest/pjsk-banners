@@ -8,6 +8,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 69,
+    "card_type": "",
     "sekai_id": 88,
     "released": 1638918000000
   },
@@ -20,6 +21,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 73,
+    "card_type": "",
     "sekai_id": 92,
     "released": 1638918000000
   },
@@ -32,6 +34,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 77,
+    "card_type": "",
     "sekai_id": 96,
     "released": 1638918000000
   },
@@ -43,6 +46,7 @@
     "attribute": "Cute",
     "unit": "Leo/Need",
     "real_id": 4,
+    "card_type": "",
     "sekai_id": 4,
     "released": 1638918000000
   },
@@ -55,6 +59,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 80,
+    "card_type": "",
     "sekai_id": 99,
     "released": 1638918000000
   },
@@ -67,6 +72,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 83,
+    "card_type": "",
     "sekai_id": 103,
     "released": 1638918000000
   },
@@ -79,6 +85,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 86,
+    "card_type": "",
     "sekai_id": 107,
     "released": 1638918000000
   },
@@ -90,6 +97,7 @@
     "attribute": "Mysterious",
     "unit": "Leo/Need",
     "real_id": 3,
+    "card_type": "",
     "sekai_id": 3,
     "released": 1638918000000
   },
@@ -101,6 +109,7 @@
     "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 16,
+    "card_type": "",
     "sekai_id": 19,
     "released": 1638918000000
   },
@@ -112,6 +121,7 @@
     "attribute": "Cool",
     "unit": "Vivid BAD SQUAD",
     "real_id": 28,
+    "card_type": "",
     "sekai_id": 35,
     "released": 1638918000000
   },
@@ -123,6 +133,7 @@
     "attribute": "Mysterious",
     "unit": "Wonderlands x Showtime",
     "real_id": 40,
+    "card_type": "",
     "sekai_id": 51,
     "released": 1638918000000
   },
@@ -134,6 +145,7 @@
     "attribute": "Happy",
     "unit": "Nightcord at 25:00",
     "real_id": 52,
+    "card_type": "",
     "sekai_id": 67,
     "released": 1638918000000
   },
@@ -145,6 +157,7 @@
     "attribute": "Mysterious",
     "unit": "Leo/Need",
     "real_id": 87,
+    "card_type": "",
     "sekai_id": 109,
     "released": 1639004400000
   },
@@ -157,6 +170,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 88,
+    "card_type": "",
     "sekai_id": 110,
     "released": 1639004400000
   },
@@ -168,6 +182,7 @@
     "attribute": "Mysterious",
     "unit": "Leo/Need",
     "real_id": 89,
+    "card_type": "",
     "sekai_id": 111,
     "released": 1639004400000
   },
@@ -179,6 +194,7 @@
     "attribute": "Cool",
     "unit": "Nightcord at 25:00",
     "real_id": 92,
+    "card_type": "",
     "sekai_id": 114,
     "released": 1639695600000
   },
@@ -190,6 +206,7 @@
     "attribute": "Cool",
     "unit": "Nightcord at 25:00",
     "real_id": 93,
+    "card_type": "",
     "sekai_id": 115,
     "released": 1639695600000
   },
@@ -202,6 +219,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Nightcord at 25:00",
     "real_id": 94,
+    "card_type": "",
     "sekai_id": 116,
     "released": 1639695600000
   },
@@ -213,6 +231,7 @@
     "attribute": "Happy",
     "unit": "Wonderlands x Showtime",
     "real_id": 97,
+    "card_type": "",
     "sekai_id": 119,
     "released": 1640386800000
   },
@@ -224,6 +243,7 @@
     "attribute": "Happy",
     "unit": "Wonderlands x Showtime",
     "real_id": 98,
+    "card_type": "",
     "sekai_id": 120,
     "released": 1640386800000
   },
@@ -236,6 +256,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 99,
+    "card_type": "",
     "sekai_id": 121,
     "released": 1640386800000
   },
@@ -247,6 +268,7 @@
     "attribute": "Cool",
     "unit": "Vivid BAD SQUAD",
     "real_id": 112,
+    "card_type": "",
     "sekai_id": 134,
     "released": 1641078000000
   },
@@ -258,6 +280,7 @@
     "attribute": "Cool",
     "unit": "Vivid BAD SQUAD",
     "real_id": 113,
+    "card_type": "",
     "sekai_id": 135,
     "released": 1641078000000
   },
@@ -269,6 +292,7 @@
     "attribute": "Cool",
     "unit": "Vivid BAD SQUAD",
     "real_id": 114,
+    "card_type": "",
     "sekai_id": 136,
     "released": 1641078000000
   },
@@ -280,6 +304,7 @@
     "attribute": "Pure",
     "unit": "Wonderlands x Showtime",
     "real_id": 102,
+    "card_type": "",
     "sekai_id": 124,
     "released": 1641769200000
   },
@@ -291,6 +316,7 @@
     "attribute": "Pure",
     "unit": "MORE MORE JUMP!",
     "real_id": 103,
+    "card_type": "",
     "sekai_id": 125,
     "released": 1641769200000
   },
@@ -303,6 +329,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 104,
+    "card_type": "",
     "sekai_id": 126,
     "released": 1641769200000
   },
@@ -314,6 +341,7 @@
     "attribute": "Happy",
     "unit": "MORE MORE JUMP!",
     "real_id": 107,
+    "card_type": "",
     "sekai_id": 129,
     "released": 1642460400000
   },
@@ -325,6 +353,7 @@
     "attribute": "Happy",
     "unit": "MORE MORE JUMP!",
     "real_id": 108,
+    "card_type": "",
     "sekai_id": 130,
     "released": 1642460400000
   },
@@ -337,6 +366,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 109,
+    "card_type": "",
     "sekai_id": 131,
     "released": 1642460400000
   },
@@ -348,6 +378,7 @@
     "attribute": "Mysterious",
     "unit": "Nightcord at 25:00",
     "real_id": 117,
+    "card_type": "",
     "sekai_id": 139,
     "released": 1643151600000
   },
@@ -360,6 +391,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 118,
+    "card_type": "",
     "sekai_id": 140,
     "released": 1643151600000
   },
@@ -371,6 +403,7 @@
     "attribute": "Mysterious",
     "unit": "Wonderlands x Showtime",
     "real_id": 119,
+    "card_type": "",
     "sekai_id": 141,
     "released": 1643151600000
   },
@@ -382,6 +415,7 @@
     "attribute": "Cute",
     "unit": "Wonderlands x Showtime",
     "real_id": 122,
+    "card_type": "",
     "sekai_id": 144,
     "released": 1643842800000
   },
@@ -393,6 +427,8 @@
     "attribute": "Cute",
     "unit": "Virtual Singers",
     "real_id": 123,
+    "sub_unit": "Wonderlands x Showtime",
+    "card_type": "",
     "sekai_id": 145,
     "released": 1643842800000
   },
@@ -405,6 +441,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 124,
+    "card_type": "",
     "sekai_id": 146,
     "released": 1643842800000
   },
@@ -417,6 +454,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 127,
+    "card_type": "",
     "sekai_id": 149,
     "released": 1644534000000
   },
@@ -429,6 +467,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 128,
+    "card_type": "",
     "sekai_id": 150,
     "released": 1644534000000
   },
@@ -441,6 +480,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 129,
+    "card_type": "",
     "sekai_id": 151,
     "released": 1644534000000
   },
@@ -452,6 +492,7 @@
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 130,
+    "card_type": "",
     "sekai_id": 152,
     "released": 1644534000000
   },
@@ -463,6 +504,7 @@
     "attribute": "Happy",
     "unit": "Leo/Need",
     "real_id": 133,
+    "card_type": "",
     "sekai_id": 155,
     "released": 1645225200000
   },
@@ -475,6 +517,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 134,
+    "card_type": "",
     "sekai_id": 156,
     "released": 1645225200000
   },
@@ -486,6 +529,7 @@
     "attribute": "Happy",
     "unit": "Leo/Need",
     "real_id": 135,
+    "card_type": "",
     "sekai_id": 157,
     "released": 1645225200000
   },
@@ -497,6 +541,7 @@
     "attribute": "Cool",
     "unit": "MORE MORE JUMP!",
     "real_id": 138,
+    "card_type": "",
     "sekai_id": 160,
     "released": 1645916400000
   },
@@ -509,6 +554,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 139,
+    "card_type": "",
     "sekai_id": 161,
     "released": 1645916400000
   },
@@ -520,6 +566,7 @@
     "attribute": "Cool",
     "unit": "MORE MORE JUMP!",
     "real_id": 140,
+    "card_type": "",
     "sekai_id": 162,
     "released": 1645916400000
   },
@@ -531,6 +578,7 @@
     "attribute": "Mysterious",
     "unit": "Vivid BAD SQUAD",
     "real_id": 143,
+    "card_type": "",
     "sekai_id": 165,
     "released": 1646607600000
   },
@@ -542,6 +590,7 @@
     "attribute": "Mysterious",
     "unit": "Vivid BAD SQUAD",
     "real_id": 144,
+    "card_type": "",
     "sekai_id": 166,
     "released": 1646607600000
   },
@@ -553,6 +602,7 @@
     "attribute": "Mysterious",
     "unit": "Vivid BAD SQUAD",
     "real_id": 145,
+    "card_type": "",
     "sekai_id": 167,
     "released": 1646607600000
   },
@@ -564,6 +614,7 @@
     "attribute": "Cute",
     "unit": "Leo/Need",
     "real_id": 148,
+    "card_type": "",
     "sekai_id": 170,
     "released": 1647295200000
   },
@@ -576,6 +627,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 149,
+    "card_type": "",
     "sekai_id": 171,
     "released": 1647295200000
   },
@@ -587,6 +639,7 @@
     "attribute": "Cute",
     "unit": "Leo/Need",
     "real_id": 150,
+    "card_type": "",
     "sekai_id": 172,
     "released": 1647295200000
   },
@@ -598,6 +651,7 @@
     "attribute": "Happy",
     "unit": "Nightcord at 25:00",
     "real_id": 153,
+    "card_type": "",
     "sekai_id": 175,
     "released": 1647986400000
   },
@@ -609,6 +663,7 @@
     "attribute": "Happy",
     "unit": "Nightcord at 25:00",
     "real_id": 154,
+    "card_type": "",
     "sekai_id": 176,
     "released": 1647986400000
   },
@@ -620,6 +675,7 @@
     "attribute": "Happy",
     "unit": "Nightcord at 25:00",
     "real_id": 155,
+    "card_type": "",
     "sekai_id": 177,
     "released": 1647986400000
   },
@@ -655,6 +711,7 @@
     "attribute": "Mysterious",
     "unit": "Wonderlands x Showtime",
     "real_id": 160,
+    "card_type": "",
     "sekai_id": 182,
     "released": 1648677600000
   },
@@ -666,6 +723,7 @@
     "attribute": "Pure",
     "unit": "Leo/Need",
     "real_id": 163,
+    "card_type": "",
     "sekai_id": 185,
     "released": 1649368800000
   },
@@ -677,6 +735,7 @@
     "attribute": "Pure",
     "unit": "Wonderlands x Showtime",
     "real_id": 164,
+    "card_type": "",
     "sekai_id": 186,
     "released": 1649368800000
   },
@@ -688,6 +747,7 @@
     "attribute": "Pure",
     "unit": "Vivid BAD SQUAD",
     "real_id": 165,
+    "card_type": "",
     "sekai_id": 187,
     "released": 1649368800000
   },
@@ -699,6 +759,7 @@
     "attribute": "Happy",
     "unit": "MORE MORE JUMP!",
     "real_id": 168,
+    "card_type": "",
     "sekai_id": 190,
     "released": 1650060000000
   },
@@ -710,6 +771,7 @@
     "attribute": "Happy",
     "unit": "MORE MORE JUMP!",
     "real_id": 169,
+    "card_type": "",
     "sekai_id": 191,
     "released": 1650060000000
   },
@@ -721,6 +783,7 @@
     "attribute": "Happy",
     "unit": "MORE MORE JUMP!",
     "real_id": 170,
+    "card_type": "",
     "sekai_id": 192,
     "released": 1650060000000
   },
@@ -732,6 +795,7 @@
     "attribute": "Pure",
     "unit": "Leo/Need",
     "real_id": 175,
+    "card_type": "",
     "sekai_id": 197,
     "released": 1650751200000
   },
@@ -744,6 +808,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 176,
+    "card_type": "",
     "sekai_id": 198,
     "released": 1650751200000
   },
@@ -755,6 +820,7 @@
     "attribute": "Pure",
     "unit": "Vivid BAD SQUAD",
     "real_id": 177,
+    "card_type": "",
     "sekai_id": 199,
     "released": 1650751200000
   },
@@ -766,6 +832,7 @@
     "attribute": "Cute",
     "unit": "Nightcord at 25:00",
     "real_id": 180,
+    "card_type": "",
     "sekai_id": 202,
     "released": 1651442400000
   },
@@ -778,6 +845,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Nightcord at 25:00",
     "real_id": 181,
+    "card_type": "",
     "sekai_id": 203,
     "released": 1651442400000
   },
@@ -789,6 +857,7 @@
     "attribute": "Cute",
     "unit": "Nightcord at 25:00",
     "real_id": 182,
+    "card_type": "",
     "sekai_id": 204,
     "released": 1651442400000
   },
@@ -800,6 +869,7 @@
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 185,
+    "card_type": "",
     "sekai_id": 207,
     "released": 1652133600000
   },
@@ -811,6 +881,7 @@
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 186,
+    "card_type": "",
     "sekai_id": 208,
     "released": 1652133600000
   },
@@ -822,6 +893,7 @@
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 187,
+    "card_type": "",
     "sekai_id": 209,
     "released": 1652133600000
   },
@@ -858,6 +930,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 192,
+    "card_type": "",
     "sekai_id": 214,
     "released": 1652824800000
   },
@@ -869,6 +942,7 @@
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 195,
+    "card_type": "",
     "sekai_id": 217,
     "released": 1653516000000
   },
@@ -880,6 +954,7 @@
     "attribute": "Pure",
     "unit": "MORE MORE JUMP!",
     "real_id": 196,
+    "card_type": "",
     "sekai_id": 218,
     "released": 1653516000000
   },
@@ -891,6 +966,7 @@
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 197,
+    "card_type": "",
     "sekai_id": 219,
     "released": 1653516000000
   },
@@ -902,6 +978,7 @@
     "attribute": "Mysterious",
     "unit": "MORE MORE JUMP!",
     "real_id": 200,
+    "card_type": "",
     "sekai_id": 222,
     "released": 1654207200000
   },
@@ -913,6 +990,7 @@
     "attribute": "Mysterious",
     "unit": "MORE MORE JUMP!",
     "real_id": 201,
+    "card_type": "",
     "sekai_id": 223,
     "released": 1654207200000
   },
@@ -924,6 +1002,7 @@
     "attribute": "Mysterious",
     "unit": "MORE MORE JUMP!",
     "real_id": 202,
+    "card_type": "",
     "sekai_id": 224,
     "released": 1654207200000
   },
@@ -984,6 +1063,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 207,
+    "card_type": "",
     "sekai_id": 229,
     "released": 1654898400000
   },
@@ -995,6 +1075,7 @@
     "attribute": "Cool",
     "unit": "Wonderlands x Showtime",
     "real_id": 210,
+    "card_type": "",
     "sekai_id": 232,
     "released": 1655589600000
   },
@@ -1006,6 +1087,7 @@
     "attribute": "Cool",
     "unit": "Wonderlands x Showtime",
     "real_id": 211,
+    "card_type": "",
     "sekai_id": 233,
     "released": 1655589600000
   },
@@ -1017,6 +1099,7 @@
     "attribute": "Cool",
     "unit": "Wonderlands x Showtime",
     "real_id": 212,
+    "card_type": "",
     "sekai_id": 234,
     "released": 1655589600000
   },
@@ -1028,6 +1111,7 @@
     "attribute": "Mysterious",
     "unit": "Nightcord at 25:00",
     "real_id": 215,
+    "card_type": "",
     "sekai_id": 237,
     "released": 1656280800000
   },
@@ -1040,6 +1124,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Nightcord at 25:00",
     "real_id": 216,
+    "card_type": "",
     "sekai_id": 238,
     "released": 1656280800000
   },
@@ -1051,6 +1136,7 @@
     "attribute": "Mysterious",
     "unit": "Nightcord at 25:00",
     "real_id": 217,
+    "card_type": "",
     "sekai_id": 239,
     "released": 1656280800000
   },
@@ -1086,6 +1172,7 @@
     "attribute": "Happy",
     "unit": "Leo/Need",
     "real_id": 222,
+    "card_type": "",
     "sekai_id": 244,
     "released": 1656972000000
   },
@@ -1098,6 +1185,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 223,
+    "card_type": "",
     "sekai_id": 245,
     "released": 1656972000000
   },
@@ -1109,6 +1197,7 @@
     "attribute": "Happy",
     "unit": "Leo/Need",
     "real_id": 224,
+    "card_type": "",
     "sekai_id": 246,
     "released": 1656972000000
   },
@@ -1120,6 +1209,7 @@
     "attribute": "Cute",
     "unit": "Vivid BAD SQUAD",
     "real_id": 227,
+    "card_type": "",
     "sekai_id": 249,
     "released": 1657663200000
   },
@@ -1131,6 +1221,7 @@
     "attribute": "Cute",
     "unit": "Vivid BAD SQUAD",
     "real_id": 228,
+    "card_type": "",
     "sekai_id": 250,
     "released": 1657663200000
   },
@@ -1143,6 +1234,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 229,
+    "card_type": "",
     "sekai_id": 251,
     "released": 1657663200000
   },
@@ -1154,6 +1246,7 @@
     "attribute": "Cool",
     "unit": "Vivid BAD SQUAD",
     "real_id": 232,
+    "card_type": "",
     "sekai_id": 254,
     "released": 1658440800000
   },
@@ -1165,6 +1258,7 @@
     "attribute": "Cool",
     "unit": "Nightcord at 25:00",
     "real_id": 233,
+    "card_type": "",
     "sekai_id": 255,
     "released": 1658440800000
   },
@@ -1177,6 +1271,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 234,
+    "card_type": "",
     "sekai_id": 256,
     "released": 1658440800000
   },
@@ -1212,6 +1307,7 @@
     "attribute": "Pure",
     "unit": "Wonderlands x Showtime",
     "real_id": 239,
+    "card_type": "",
     "sekai_id": 261,
     "released": 1659391200000
   },
@@ -1223,6 +1319,7 @@
     "attribute": "Mysterious",
     "unit": "MORE MORE JUMP!",
     "real_id": 242,
+    "card_type": "",
     "sekai_id": 264,
     "released": 1660168800000
   },
@@ -1235,6 +1332,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 243,
+    "card_type": "",
     "sekai_id": 265,
     "released": 1660168800000
   },
@@ -1246,6 +1344,7 @@
     "attribute": "Mysterious",
     "unit": "MORE MORE JUMP!",
     "real_id": 244,
+    "card_type": "",
     "sekai_id": 266,
     "released": 1660168800000
   },
@@ -1257,6 +1356,7 @@
     "attribute": "Pure",
     "unit": "Wonderlands x Showtime",
     "real_id": 247,
+    "card_type": "",
     "sekai_id": 269,
     "released": 1661032800000
   },
@@ -1268,6 +1368,7 @@
     "attribute": "Pure",
     "unit": "Wonderlands x Showtime",
     "real_id": 248,
+    "card_type": "",
     "sekai_id": 270,
     "released": 1661032800000
   },
@@ -1280,6 +1381,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 249,
+    "card_type": "",
     "sekai_id": 271,
     "released": 1661032800000
   },
@@ -1316,6 +1418,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 254,
+    "card_type": "",
     "sekai_id": 276,
     "released": 1661896800000
   },
@@ -1327,6 +1430,7 @@
     "attribute": "Mysterious",
     "unit": "Leo/Need",
     "real_id": 257,
+    "card_type": "",
     "sekai_id": 279,
     "released": 1662760800000
   },
@@ -1339,6 +1443,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 258,
+    "card_type": "",
     "sekai_id": 280,
     "released": 1662760800000
   },
@@ -1350,6 +1455,7 @@
     "attribute": "Mysterious",
     "unit": "Leo/Need",
     "real_id": 259,
+    "card_type": "",
     "sekai_id": 281,
     "released": 1662760800000
   },
@@ -1361,6 +1467,7 @@
     "attribute": "Happy",
     "unit": "Nightcord at 25:00",
     "real_id": 262,
+    "card_type": "",
     "sekai_id": 284,
     "released": 1663711200000
   },
@@ -1372,6 +1479,7 @@
     "attribute": "Happy",
     "unit": "Nightcord at 25:00",
     "real_id": 263,
+    "card_type": "",
     "sekai_id": 285,
     "released": 1663711200000
   },
@@ -1384,6 +1492,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Nightcord at 25:00",
     "real_id": 264,
+    "card_type": "",
     "sekai_id": 286,
     "released": 1663711200000
   },
@@ -1449,9 +1558,10 @@
   },
   {
     "id": 128,
-    "name": "Happy Birthday!! ",
+    "name": "Happy Birthday!!",
     "character": "Kiritani Haruka",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 273,
@@ -1466,6 +1576,7 @@
     "attribute": "Cool",
     "unit": "Vivid BAD SQUAD",
     "real_id": 274,
+    "card_type": "",
     "sekai_id": 296,
     "released": 1665784800000
   },
@@ -1477,6 +1588,7 @@
     "attribute": "Cool",
     "unit": "Vivid BAD SQUAD",
     "real_id": 275,
+    "card_type": "",
     "sekai_id": 297,
     "released": 1665784800000
   },
@@ -1489,6 +1601,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 276,
+    "card_type": "",
     "sekai_id": 298,
     "released": 1665784800000
   },
@@ -1497,6 +1610,7 @@
     "name": "Happy Birthday!!",
     "character": "Mochizuki Honami",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "Leo/Need",
     "real_id": 284,
@@ -1535,6 +1649,7 @@
     "attribute": "Cute",
     "unit": "Nightcord at 25:00",
     "real_id": 287,
+    "card_type": "",
     "sekai_id": 309,
     "released": 1666994400000
   },
@@ -1543,11 +1658,12 @@
     "name": "Happy Anniversary!!",
     "character": "MEIKO",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "Virtual Singers",
     "real_id": 290,
-    "released": 1667631600000,
-    "sekai_id": 312
+    "sekai_id": 312,
+    "released": 1667631600000
   },
   {
     "id": 137,
@@ -1557,6 +1673,7 @@
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 291,
+    "card_type": "",
     "sekai_id": 313,
     "released": 1667948400000
   },
@@ -1568,6 +1685,7 @@
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 292,
+    "card_type": "",
     "sekai_id": 314,
     "released": 1667948400000
   },
@@ -1579,6 +1697,7 @@
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 293,
+    "card_type": "",
     "sekai_id": 315,
     "released": 1667948400000
   },
@@ -1587,6 +1706,7 @@
     "name": "Happy Birthday!!",
     "character": "Shinonome Akito",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "Vivid BAD SQUAD",
     "real_id": 296,
@@ -1601,6 +1721,7 @@
     "attribute": "Happy",
     "unit": "Vivid BAD SQUAD",
     "real_id": 297,
+    "card_type": "",
     "sekai_id": 319,
     "released": 1668812400000
   },
@@ -1613,6 +1734,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 298,
+    "card_type": "",
     "sekai_id": 320,
     "released": 1668812400000
   },
@@ -1624,6 +1746,7 @@
     "attribute": "Happy",
     "unit": "MORE MORE JUMP!",
     "real_id": 299,
+    "card_type": "",
     "sekai_id": 321,
     "released": 1668812400000
   },
@@ -1660,6 +1783,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Nightcord at 25:00",
     "real_id": 304,
+    "card_type": "",
     "sekai_id": 326,
     "released": 1669762800000
   },
@@ -1668,6 +1792,7 @@
     "name": "Happy Birthday!!",
     "character": "Hinomori Shizuku",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "MORE MORE JUMP!",
     "real_id": 307,
@@ -1682,6 +1807,7 @@
     "attribute": "Mysterious",
     "unit": "MORE MORE JUMP!",
     "real_id": 308,
+    "card_type": "",
     "sekai_id": 330,
     "released": 1670713200000
   },
@@ -1693,6 +1819,7 @@
     "attribute": "Mysterious",
     "unit": "MORE MORE JUMP!",
     "real_id": 309,
+    "card_type": "",
     "sekai_id": 331,
     "released": 1670713200000
   },
@@ -1704,6 +1831,7 @@
     "attribute": "Mysterious",
     "unit": "MORE MORE JUMP!",
     "real_id": 310,
+    "card_type": "",
     "sekai_id": 332,
     "released": 1670713200000
   },
@@ -1714,7 +1842,7 @@
     "rarity": 4,
     "attribute": "Mysterious",
     "unit": "Virtual Singers",
-    "card_type": "limited",
+    "card_type": "limited_collab",
     "real_id": 313,
     "sekai_id": 335,
     "released": 1671058800000
@@ -1726,7 +1854,7 @@
     "rarity": 4,
     "attribute": "Happy",
     "unit": "Virtual Singers",
-    "card_type": "limited",
+    "card_type": "limited_collab",
     "real_id": 314,
     "sekai_id": 336,
     "released": 1671058800000
@@ -1738,7 +1866,7 @@
     "rarity": 4,
     "attribute": "Cute",
     "unit": "Virtual Singers",
-    "card_type": "limited",
+    "card_type": "limited_collab",
     "real_id": 315,
     "sekai_id": 337,
     "released": 1671058800000
@@ -1750,7 +1878,7 @@
     "rarity": 4,
     "attribute": "Mysterious",
     "unit": "Virtual Singers",
-    "card_type": "limited",
+    "card_type": "limited_collab",
     "real_id": 316,
     "sekai_id": 338,
     "released": 1671058800000
@@ -1762,7 +1890,7 @@
     "rarity": 4,
     "attribute": "Cool",
     "unit": "Virtual Singers",
-    "card_type": "limited",
+    "card_type": "limited_collab",
     "real_id": 317,
     "sekai_id": 339,
     "released": 1671058800000
@@ -1775,6 +1903,7 @@
     "attribute": "Pure",
     "unit": "Vivid BAD SQUAD",
     "real_id": 319,
+    "card_type": "",
     "sekai_id": 341,
     "released": 1671577200000
   },
@@ -1786,6 +1915,7 @@
     "attribute": "Pure",
     "unit": "Vivid BAD SQUAD",
     "real_id": 320,
+    "card_type": "",
     "sekai_id": 342,
     "released": 1671577200000
   },
@@ -1797,14 +1927,16 @@
     "attribute": "Pure",
     "unit": "Vivid BAD SQUAD",
     "real_id": 321,
+    "card_type": "",
     "sekai_id": 343,
     "released": 1671577200000
   },
   {
     "id": 159,
-    "name": "Happy Anniversary!! ",
+    "name": "Happy Anniversary!!",
     "character": "Kagamine Rin",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "Virtual Singers",
     "real_id": 324,
@@ -1813,9 +1945,10 @@
   },
   {
     "id": 160,
-    "name": "Happy Anniversary!! ",
+    "name": "Happy Anniversary!!",
     "character": "Kagamine Len",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "Virtual Singers",
     "real_id": 325,
@@ -1884,9 +2017,10 @@
   },
   {
     "id": 166,
-    "name": "Happy Birthday!! ",
+    "name": "Happy Birthday!!",
     "character": "Hinomori Shiho",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Happy",
     "unit": "Leo/Need",
     "real_id": 333,
@@ -1901,6 +2035,7 @@
     "attribute": "Cool",
     "unit": "Wonderlands x Showtime",
     "real_id": 334,
+    "card_type": "",
     "sekai_id": 356,
     "released": 1673564400000
   },
@@ -1912,6 +2047,7 @@
     "attribute": "Cool",
     "unit": "Wonderlands x Showtime",
     "real_id": 335,
+    "card_type": "",
     "sekai_id": 357,
     "released": 1673564400000
   },
@@ -1924,6 +2060,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 336,
+    "card_type": "",
     "sekai_id": 358,
     "released": 1673564400000
   },
@@ -1935,6 +2072,7 @@
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 339,
+    "card_type": "",
     "sekai_id": 361,
     "released": 1674342000000
   },
@@ -1946,6 +2084,7 @@
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 340,
+    "card_type": "",
     "sekai_id": 362,
     "released": 1674342000000
   },
@@ -1957,14 +2096,16 @@
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 341,
+    "card_type": "",
     "sekai_id": 363,
     "released": 1674342000000
   },
   {
     "id": 173,
-    "name": "Happy Birthday!! ",
+    "name": "Happy Birthday!!",
     "character": "Asahina Mafuyu",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "Nightcord at 25:00",
     "real_id": 344,
@@ -1976,6 +2117,7 @@
     "name": "Happy Anniversary!!",
     "character": "Megurine Luka",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Happy",
     "unit": "Virtual Singers",
     "real_id": 345,
@@ -2026,6 +2168,7 @@
     "attribute": "Mysterious",
     "unit": "Vivid BAD SQUAD",
     "real_id": 351,
+    "card_type": "",
     "sekai_id": 373,
     "released": 1675983600000
   },
@@ -2037,6 +2180,7 @@
     "attribute": "Mysterious",
     "unit": "Vivid BAD SQUAD",
     "real_id": 352,
+    "card_type": "",
     "sekai_id": 374,
     "released": 1675983600000
   },
@@ -2049,6 +2193,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 353,
+    "card_type": "",
     "sekai_id": 375,
     "released": 1675983600000
   },
@@ -2057,6 +2202,7 @@
     "name": "Happy Birthday!!",
     "character": "Yoisaki Kanade",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "Nightcord at 25:00",
     "real_id": 356,
@@ -2065,9 +2211,10 @@
   },
   {
     "id": 182,
-    "name": "Happy Anniversary!! ",
+    "name": "Happy Anniversary!!",
     "character": "KAITO",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "Virtual Singers",
     "real_id": 357,
@@ -2082,6 +2229,7 @@
     "attribute": "Pure",
     "unit": "Leo/Need",
     "real_id": 358,
+    "card_type": "",
     "sekai_id": 380,
     "released": 1676761200000
   },
@@ -2093,6 +2241,7 @@
     "attribute": "Pure",
     "unit": "Leo/Need",
     "real_id": 359,
+    "card_type": "",
     "sekai_id": 381,
     "released": 1676761200000
   },
@@ -2105,6 +2254,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 360,
+    "card_type": "",
     "sekai_id": 382,
     "released": 1676761200000
   },
@@ -2149,6 +2299,7 @@
     "name": "Happy Birthday!!",
     "character": "Azusawa Kohane",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Happy",
     "unit": "Vivid BAD SQUAD",
     "real_id": 368,
@@ -2163,6 +2314,7 @@
     "attribute": "Pure",
     "unit": "MORE MORE JUMP!",
     "real_id": 369,
+    "card_type": "",
     "sekai_id": 391,
     "released": 1678575600000
   },
@@ -2174,6 +2326,7 @@
     "attribute": "Pure",
     "unit": "MORE MORE JUMP!",
     "real_id": 370,
+    "card_type": "",
     "sekai_id": 392,
     "released": 1678575600000
   },
@@ -2186,14 +2339,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 371,
+    "card_type": "",
     "sekai_id": 393,
     "released": 1678575600000
   },
   {
     "id": 193,
-    "name": "Happy Birthday!! ",
+    "name": "Happy Birthday!!",
     "character": "Momoi Airi",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "MORE MORE JUMP!",
     "real_id": 374,
@@ -2208,6 +2363,7 @@
     "attribute": "Cool",
     "unit": "Nightcord at 25:00",
     "real_id": 375,
+    "card_type": "",
     "sekai_id": 397,
     "released": 1679349600000
   },
@@ -2219,6 +2375,7 @@
     "attribute": "Cool",
     "unit": "Nightcord at 25:00",
     "real_id": 376,
+    "card_type": "",
     "sekai_id": 398,
     "released": 1679349600000
   },
@@ -2231,6 +2388,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Nightcord at 25:00",
     "real_id": 377,
+    "card_type": "",
     "sekai_id": 399,
     "released": 1679349600000
   },
@@ -2318,6 +2476,7 @@
     "attribute": "Cute",
     "unit": "Wonderlands x Showtime",
     "real_id": 388,
+    "card_type": "",
     "sekai_id": 410,
     "released": 1681250400000
   },
@@ -2329,6 +2488,7 @@
     "attribute": "Cute",
     "unit": "Wonderlands x Showtime",
     "real_id": 389,
+    "card_type": "",
     "sekai_id": 411,
     "released": 1681250400000
   },
@@ -2340,6 +2500,7 @@
     "attribute": "Cute",
     "unit": "Wonderlands x Showtime",
     "real_id": 390,
+    "card_type": "",
     "sekai_id": 412,
     "released": 1681250400000
   },
@@ -2348,6 +2509,7 @@
     "name": "Happy Birthday!!",
     "character": "Hanasato Minori",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "MORE MORE JUMP!",
     "real_id": 393,
@@ -2362,6 +2524,7 @@
     "attribute": "Mysterious",
     "unit": "Leo/Need",
     "real_id": 394,
+    "card_type": "",
     "sekai_id": 416,
     "released": 1682114400000
   },
@@ -2373,6 +2536,7 @@
     "attribute": "Mysterious",
     "unit": "Leo/Need",
     "real_id": 395,
+    "card_type": "",
     "sekai_id": 417,
     "released": 1682114400000
   },
@@ -2384,6 +2548,7 @@
     "attribute": "Mysterious",
     "unit": "Leo/Need",
     "real_id": 396,
+    "card_type": "",
     "sekai_id": 418,
     "released": 1682114400000
   },
@@ -2392,6 +2557,7 @@
     "name": "Happy Birthday!!",
     "character": "Shinonome Ena",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "Nightcord at 25:00",
     "real_id": 399,
@@ -2440,6 +2606,7 @@
     "name": "Happy Birthday!!",
     "character": "Tenma Saki",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "Leo/Need",
     "real_id": 405,
@@ -2454,6 +2621,7 @@
     "attribute": "Cool",
     "unit": "Wonderlands x Showtime",
     "real_id": 406,
+    "card_type": "",
     "sekai_id": 428,
     "released": 1683756000000
   },
@@ -2465,6 +2633,7 @@
     "attribute": "Cool",
     "unit": "Nightcord at 25:00",
     "real_id": 407,
+    "card_type": "",
     "sekai_id": 429,
     "released": 1683756000000
   },
@@ -2477,14 +2646,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 408,
+    "card_type": "",
     "sekai_id": 430,
     "released": 1683756000000
   },
   {
     "id": 219,
-    "name": "Happy Birthday!! ",
+    "name": "Happy Birthday!!",
     "character": "Tenma Tsukasa",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Happy",
     "unit": "Wonderlands x Showtime",
     "real_id": 411,
@@ -2499,6 +2670,7 @@
     "attribute": "Cute",
     "unit": "Vivid BAD SQUAD",
     "real_id": 412,
+    "card_type": "",
     "sekai_id": 434,
     "released": 1684609200000
   },
@@ -2510,6 +2682,7 @@
     "attribute": "Cute",
     "unit": "Vivid BAD SQUAD",
     "real_id": 413,
+    "card_type": "",
     "sekai_id": 435,
     "released": 1684609200000
   },
@@ -2522,6 +2695,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 414,
+    "card_type": "",
     "sekai_id": 436,
     "released": 1684609200000
   },
@@ -2530,6 +2704,7 @@
     "name": "Happy Birthday!!",
     "character": "Aoyagi Toya",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "Vivid BAD SQUAD",
     "real_id": 417,
@@ -2581,6 +2756,7 @@
     "attribute": "Cool",
     "unit": "Nightcord at 25:00",
     "real_id": 423,
+    "card_type": "",
     "sekai_id": 445,
     "released": 1686423600000
   },
@@ -2592,6 +2768,7 @@
     "attribute": "Cool",
     "unit": "Nightcord at 25:00",
     "real_id": 424,
+    "card_type": "",
     "sekai_id": 446,
     "released": 1686423600000
   },
@@ -2604,6 +2781,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Nightcord at 25:00",
     "real_id": 425,
+    "card_type": "",
     "sekai_id": 447,
     "released": 1686423600000
   },
@@ -2615,6 +2793,7 @@
     "attribute": "Happy",
     "unit": "Wonderlands x Showtime",
     "real_id": 428,
+    "card_type": "",
     "sekai_id": 450,
     "released": 1687287600000
   },
@@ -2626,6 +2805,7 @@
     "attribute": "Happy",
     "unit": "Wonderlands x Showtime",
     "real_id": 429,
+    "card_type": "",
     "sekai_id": 451,
     "released": 1687287600000
   },
@@ -2637,6 +2817,7 @@
     "attribute": "Happy",
     "unit": "Wonderlands x Showtime",
     "real_id": 430,
+    "card_type": "",
     "sekai_id": 452,
     "released": 1687287600000
   },
@@ -2645,6 +2826,7 @@
     "name": "Happy Birthday!!",
     "character": "Kamishiro Rui",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "Wonderlands x Showtime",
     "real_id": 433,
@@ -2719,6 +2901,7 @@
     "attribute": "Mysterious",
     "unit": "Vivid BAD SQUAD",
     "real_id": 441,
+    "card_type": "",
     "sekai_id": 463,
     "released": 1689102000000
   },
@@ -2730,6 +2913,7 @@
     "attribute": "Mysterious",
     "unit": "Vivid BAD SQUAD",
     "real_id": 442,
+    "card_type": "",
     "sekai_id": 464,
     "released": 1689102000000
   },
@@ -2742,6 +2926,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 443,
+    "card_type": "",
     "sekai_id": 465,
     "released": 1689102000000
   },
@@ -2750,6 +2935,7 @@
     "name": "Happy Birthday!!",
     "character": "Kusanagi Nene",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "Wonderlands x Showtime",
     "real_id": 446,
@@ -2764,6 +2950,7 @@
     "attribute": "Cute",
     "unit": "Leo/Need",
     "real_id": 447,
+    "card_type": "",
     "sekai_id": 469,
     "released": 1689966000000
   },
@@ -2775,6 +2962,7 @@
     "attribute": "Cute",
     "unit": "Leo/Need",
     "real_id": 448,
+    "card_type": "",
     "sekai_id": 470,
     "released": 1689966000000
   },
@@ -2787,6 +2975,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 449,
+    "card_type": "",
     "sekai_id": 471,
     "released": 1689966000000
   },
@@ -2795,6 +2984,7 @@
     "name": "Happy Birthday!!",
     "character": "Shiraishi An",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "Vivid BAD SQUAD",
     "real_id": 452,
@@ -2845,6 +3035,7 @@
     "attribute": "Cool",
     "unit": "MORE MORE JUMP!",
     "real_id": 459,
+    "card_type": "",
     "sekai_id": 481,
     "released": 1691694000000
   },
@@ -2856,6 +3047,7 @@
     "attribute": "Cool",
     "unit": "MORE MORE JUMP!",
     "real_id": 460,
+    "card_type": "",
     "sekai_id": 482,
     "released": 1691694000000
   },
@@ -2868,6 +3060,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 461,
+    "card_type": "",
     "sekai_id": 483,
     "released": 1691694000000
   },
@@ -2876,6 +3069,7 @@
     "name": "Happy Birthday!!",
     "character": "Hoshino Ichika",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 458,
@@ -2890,6 +3084,7 @@
     "attribute": "Cute",
     "unit": "Nightcord at 25:00",
     "real_id": 464,
+    "card_type": "",
     "sekai_id": 486,
     "released": 1692558000000
   },
@@ -2901,6 +3096,7 @@
     "attribute": "Cute",
     "unit": "Nightcord at 25:00",
     "real_id": 465,
+    "card_type": "",
     "sekai_id": 487,
     "released": 1692558000000
   },
@@ -2912,6 +3108,7 @@
     "attribute": "Cute",
     "unit": "Nightcord at 25:00",
     "real_id": 466,
+    "card_type": "",
     "sekai_id": 488,
     "released": 1692558000000
   },
@@ -2920,6 +3117,7 @@
     "name": "Happy Birthday!!",
     "character": "Akiyama Mizuki",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Happy",
     "unit": "Nightcord at 25:00",
     "real_id": 469,
@@ -2931,6 +3129,7 @@
     "name": "Happy Anniversary!!",
     "character": "Hatsune Miku",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Happy",
     "unit": "Virtual Singers",
     "real_id": 470,
@@ -2978,6 +3177,7 @@
     "name": "Happy Birthday!!",
     "character": "Otori Emu",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "Wonderlands x Showtime",
     "real_id": 476,
@@ -2992,6 +3192,7 @@
     "attribute": "Mysterious",
     "unit": "Nightcord at 25:00",
     "real_id": 477,
+    "card_type": "",
     "sekai_id": 499,
     "released": 1694372400000
   },
@@ -3003,6 +3204,7 @@
     "attribute": "Mysterious",
     "unit": "Leo/Need",
     "real_id": 478,
+    "card_type": "",
     "sekai_id": 500,
     "released": 1694372400000
   },
@@ -3014,6 +3216,7 @@
     "attribute": "Mysterious",
     "unit": "Wonderlands x Showtime",
     "real_id": 479,
+    "card_type": "",
     "sekai_id": 501,
     "released": 1694372400000
   },
@@ -3025,6 +3228,7 @@
     "attribute": "Cool",
     "unit": "Vivid BAD SQUAD",
     "real_id": 482,
+    "card_type": "",
     "sekai_id": 504,
     "released": 1695236400000
   },
@@ -3036,6 +3240,7 @@
     "attribute": "Cool",
     "unit": "Vivid BAD SQUAD",
     "real_id": 483,
+    "card_type": "",
     "sekai_id": 505,
     "released": 1695236400000
   },
@@ -3048,6 +3253,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 484,
+    "card_type": "",
     "sekai_id": 506,
     "released": 1695236400000
   },
@@ -3128,6 +3334,7 @@
     "name": "Happy Birthday!! 2022",
     "character": "Kiritani Haruka",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "MORE MORE JUMP!",
     "real_id": 494,
@@ -3142,6 +3349,7 @@
     "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 495,
+    "card_type": "",
     "sekai_id": 517,
     "released": 1697050800000
   },
@@ -3153,6 +3361,7 @@
     "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 496,
+    "card_type": "",
     "sekai_id": 518,
     "released": 1697050800000
   },
@@ -3164,6 +3373,7 @@
     "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 497,
+    "card_type": "",
     "sekai_id": 519,
     "released": 1697050800000
   },
@@ -3175,6 +3385,7 @@
     "attribute": "Cool",
     "unit": "Wonderlands x Showtime",
     "real_id": 500,
+    "card_type": "",
     "sekai_id": 522,
     "released": 1697914800000
   },
@@ -3186,6 +3397,7 @@
     "attribute": "Cool",
     "unit": "Wonderlands x Showtime",
     "real_id": 501,
+    "card_type": "",
     "sekai_id": 523,
     "released": 1697914800000
   },
@@ -3197,6 +3409,7 @@
     "attribute": "Cool",
     "unit": "Wonderlands x Showtime",
     "real_id": 502,
+    "card_type": "",
     "sekai_id": 524,
     "released": 1697914800000
   },
@@ -3205,6 +3418,7 @@
     "name": "Happy Birthday!! 2022",
     "character": "Mochizuki Honami",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "Leo/Need",
     "real_id": 505,
@@ -3252,6 +3466,7 @@
     "name": "Happy Anniversary!! 2022",
     "character": "MEIKO",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "Virtual Singers",
     "real_id": 511,
@@ -3266,6 +3481,7 @@
     "attribute": "Happy",
     "unit": "Leo/Need",
     "real_id": 512,
+    "card_type": "",
     "sekai_id": 535,
     "released": 1699646400000
   },
@@ -3277,6 +3493,7 @@
     "attribute": "Happy",
     "unit": "Leo/Need",
     "real_id": 513,
+    "card_type": "",
     "sekai_id": 536,
     "released": 1699646400000
   },
@@ -3289,6 +3506,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 514,
+    "card_type": "",
     "sekai_id": 537,
     "released": 1699646400000
   },
@@ -3297,6 +3515,7 @@
     "name": "Happy Birthday!! 2022 ",
     "character": "Shinonome Akito",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "Vivid BAD SQUAD",
     "real_id": 517,
@@ -3311,6 +3530,7 @@
     "attribute": "Mysterious",
     "unit": "Nightcord at 25:00",
     "real_id": 518,
+    "card_type": "",
     "sekai_id": 540,
     "released": 1700510400000
   },
@@ -3322,6 +3542,7 @@
     "attribute": "Mysterious",
     "unit": "Nightcord at 25:00",
     "real_id": 519,
+    "card_type": "",
     "sekai_id": 541,
     "released": 1700510400000
   },
@@ -3333,6 +3554,7 @@
     "attribute": "Mysterious",
     "unit": "Nightcord at 25:00",
     "real_id": 520,
+    "card_type": "",
     "sekai_id": 542,
     "released": 1700510400000
   },
@@ -3378,6 +3600,7 @@
     "name": "Happy Birthday!! 2022",
     "character": "Hinomori Shizuku",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 528,
@@ -3392,6 +3615,7 @@
     "attribute": "Happy",
     "unit": "Vivid BAD SQUAD",
     "real_id": 529,
+    "card_type": "",
     "sekai_id": 551,
     "released": 1702324800000
   },
@@ -3403,6 +3627,7 @@
     "attribute": "Happy",
     "unit": "Vivid BAD SQUAD",
     "real_id": 530,
+    "card_type": "",
     "sekai_id": 552,
     "released": 1702324800000
   },
@@ -3415,6 +3640,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 531,
+    "card_type": "",
     "sekai_id": 553,
     "released": 1702324800000
   },
@@ -3426,6 +3652,7 @@
     "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 534,
+    "card_type": "",
     "sekai_id": 556,
     "released": 1703188800000
   },
@@ -3437,6 +3664,7 @@
     "attribute": "Cute",
     "unit": "Nightcord at 25:00",
     "real_id": 535,
+    "card_type": "",
     "sekai_id": 557,
     "released": 1703188800000
   },
@@ -3449,6 +3677,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 536,
+    "card_type": "",
     "sekai_id": 558,
     "released": 1703188800000
   },
@@ -3457,6 +3686,7 @@
     "name": "Happy Anniversary!! 2022 ",
     "character": "Kagamine Rin",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "Virtual Singers",
     "real_id": 539,
@@ -3468,6 +3698,7 @@
     "name": "Happy Anniversary!! 2022",
     "character": "Kagamine Len",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Happy",
     "unit": "Virtual Singers",
     "real_id": 540,
@@ -3537,9 +3768,10 @@
   },
   {
     "id": 311,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023",
     "character": "Hinomori Shiho",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 548,
@@ -3554,6 +3786,7 @@
     "attribute": "Mysterious",
     "unit": "Wonderlands x Showtime",
     "real_id": 549,
+    "card_type": "",
     "sekai_id": 571,
     "released": 1704916800000
   },
@@ -3565,6 +3798,7 @@
     "attribute": "Mysterious",
     "unit": "Wonderlands x Showtime",
     "real_id": 550,
+    "card_type": "",
     "sekai_id": 572,
     "released": 1704916800000
   },
@@ -3577,6 +3811,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 551,
+    "card_type": "",
     "sekai_id": 573,
     "released": 1704916800000
   },
@@ -3588,6 +3823,7 @@
     "attribute": "Cute",
     "unit": "Leo/Need",
     "real_id": 554,
+    "card_type": "",
     "sekai_id": 576,
     "released": 1705867200000
   },
@@ -3599,6 +3835,7 @@
     "attribute": "Cute",
     "unit": "Leo/Need",
     "real_id": 555,
+    "card_type": "",
     "sekai_id": 577,
     "released": 1705867200000
   },
@@ -3610,14 +3847,16 @@
     "attribute": "Cute",
     "unit": "Leo/Need",
     "real_id": 556,
+    "card_type": "",
     "sekai_id": 578,
     "released": 1705867200000
   },
   {
     "id": 318,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Asahina Mafuyu",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Happy",
     "unit": "Nightcord at 25:00",
     "real_id": 559,
@@ -3626,9 +3865,10 @@
   },
   {
     "id": 319,
-    "name": "Happy Anniversary!! 2024",
+    "name": "Happy Anniversary!! 2023",
     "character": "Megurine Luka",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "Virtual Singers",
     "real_id": 560,
@@ -3673,9 +3913,10 @@
   },
   {
     "id": 323,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Yoisaki Kanade",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 566,
@@ -3690,6 +3931,7 @@
     "attribute": "Happy",
     "unit": "MORE MORE JUMP!",
     "real_id": 567,
+    "card_type": "",
     "sekai_id": 589,
     "released": 1707595200000
   },
@@ -3701,6 +3943,7 @@
     "attribute": "Happy",
     "unit": "MORE MORE JUMP!",
     "real_id": 568,
+    "card_type": "",
     "sekai_id": 590,
     "released": 1707595200000
   },
@@ -3712,14 +3955,16 @@
     "attribute": "Happy",
     "unit": "MORE MORE JUMP!",
     "real_id": 569,
+    "card_type": "",
     "sekai_id": 591,
     "released": 1707595200000
   },
   {
     "id": 327,
-    "name": "Happy Anniversary!! 2024",
+    "name": "Happy Anniversary!! 2023",
     "character": "KAITO",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "Virtual Singers",
     "real_id": 572,
@@ -3734,6 +3979,7 @@
     "attribute": "Happy",
     "unit": "Vivid BAD SQUAD",
     "real_id": 573,
+    "card_type": "",
     "sekai_id": 595,
     "released": 1708372800000
   },
@@ -3745,6 +3991,7 @@
     "attribute": "Happy",
     "unit": "Vivid BAD SQUAD",
     "real_id": 574,
+    "card_type": "",
     "sekai_id": 596,
     "released": 1708372800000
   },
@@ -3756,6 +4003,7 @@
     "attribute": "Happy",
     "unit": "Vivid BAD SQUAD",
     "real_id": 575,
+    "card_type": "",
     "sekai_id": 597,
     "released": 1708372800000
   },
@@ -3798,9 +4046,10 @@
   },
   {
     "id": 334,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023",
     "character": "Azusawa Kohane",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "Vivid BAD SQUAD",
     "real_id": 583,
@@ -3815,6 +4064,7 @@
     "attribute": "Cute",
     "unit": "Wonderlands x Showtime",
     "real_id": 584,
+    "card_type": "",
     "sekai_id": 606,
     "released": 1710183600000
   },
@@ -3826,6 +4076,7 @@
     "attribute": "Cute",
     "unit": "Wonderlands x Showtime",
     "real_id": 585,
+    "card_type": "",
     "sekai_id": 607,
     "released": 1710183600000
   },
@@ -3837,14 +4088,16 @@
     "attribute": "Cute",
     "unit": "Wonderlands x Showtime",
     "real_id": 586,
+    "card_type": "",
     "sekai_id": 608,
     "released": 1710183600000
   },
   {
     "id": 338,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Momoi Airi",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Happy",
     "unit": "MORE MORE JUMP!",
     "real_id": 589,
@@ -3859,6 +4112,7 @@
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 590,
+    "card_type": "",
     "sekai_id": 612,
     "released": 1711047600000
   },
@@ -3870,6 +4124,7 @@
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 591,
+    "card_type": "",
     "sekai_id": 613,
     "released": 1711047600000
   },
@@ -3881,6 +4136,7 @@
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 592,
+    "card_type": "",
     "sekai_id": 614,
     "released": 1711047600000
   },
@@ -3965,6 +4221,7 @@
     "attribute": "Pure",
     "unit": "Leo/Need",
     "real_id": 602,
+    "card_type": "",
     "sekai_id": 624,
     "released": 1712862000000
   },
@@ -3976,6 +4233,7 @@
     "attribute": "Pure",
     "unit": "Leo/Need",
     "real_id": 603,
+    "card_type": "",
     "sekai_id": 625,
     "released": 1712862000000
   },
@@ -3988,6 +4246,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 604,
+    "card_type": "",
     "sekai_id": 626,
     "released": 1712862000000
   },
@@ -4000,6 +4259,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 639,
+    "card_type": "",
     "sekai_id": 661,
     "released": 1718046000000
   },
@@ -4012,6 +4272,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 748,
+    "card_type": "",
     "sekai_id": 770,
     "released": 1728759600000
   },
@@ -4024,14 +4285,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 771,
+    "card_type": "",
     "sekai_id": 793,
     "released": 1732305600000
   },
   {
     "id": 354,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Hanasato Minori",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "MORE MORE JUMP!",
     "real_id": 607,
@@ -4046,6 +4309,7 @@
     "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 608,
+    "card_type": "",
     "sekai_id": 630,
     "released": 1713726000000
   },
@@ -4057,6 +4321,7 @@
     "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 609,
+    "card_type": "",
     "sekai_id": 631,
     "released": 1713726000000
   },
@@ -4068,14 +4333,16 @@
     "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 610,
+    "card_type": "",
     "sekai_id": 632,
     "released": 1713726000000
   },
   {
     "id": 358,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Shinonome Ena",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "Nightcord at 25:00",
     "real_id": 613,
@@ -4121,9 +4388,10 @@
   },
   {
     "id": 362,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Tenma Saki",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Happy",
     "unit": "Leo/Need",
     "real_id": 619,
@@ -4138,6 +4406,7 @@
     "attribute": "Mysterious",
     "unit": "MORE MORE JUMP!",
     "real_id": 620,
+    "card_type": "",
     "sekai_id": 642,
     "released": 1715454000000
   },
@@ -4149,6 +4418,7 @@
     "attribute": "Mysterious",
     "unit": "Leo/Need",
     "real_id": 621,
+    "card_type": "",
     "sekai_id": 643,
     "released": 1715454000000
   },
@@ -4161,14 +4431,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 622,
+    "card_type": "",
     "sekai_id": 644,
     "released": 1715454000000
   },
   {
     "id": 366,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023",
     "character": "Tenma Tsukasa",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "Wonderlands x Showtime",
     "real_id": 625,
@@ -4183,6 +4455,7 @@
     "attribute": "Pure",
     "unit": "Wonderlands x Showtime",
     "real_id": 626,
+    "card_type": "",
     "sekai_id": 648,
     "released": 1716231600000
   },
@@ -4194,6 +4467,7 @@
     "attribute": "Pure",
     "unit": "Wonderlands x Showtime",
     "real_id": 627,
+    "card_type": "",
     "sekai_id": 649,
     "released": 1716231600000
   },
@@ -4206,14 +4480,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 628,
+    "card_type": "",
     "sekai_id": 650,
     "released": 1716231600000
   },
   {
     "id": 370,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Aoyagi Toya",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Happy",
     "unit": "Vivid BAD SQUAD",
     "real_id": 631,
@@ -4264,6 +4540,7 @@
     "attribute": "Cute",
     "unit": "Vivid BAD SQUAD",
     "real_id": 637,
+    "card_type": "",
     "sekai_id": 659,
     "released": 1718046000000
   },
@@ -4275,6 +4552,7 @@
     "attribute": "Cute",
     "unit": "Vivid BAD SQUAD",
     "real_id": 638,
+    "card_type": "",
     "sekai_id": 660,
     "released": 1718046000000
   },
@@ -4286,6 +4564,7 @@
     "attribute": "Cool",
     "unit": "MORE MORE JUMP!",
     "real_id": 642,
+    "card_type": "",
     "sekai_id": 664,
     "released": 1718910000000
   },
@@ -4297,6 +4576,7 @@
     "attribute": "Cool",
     "unit": "MORE MORE JUMP!",
     "real_id": 643,
+    "card_type": "",
     "sekai_id": 665,
     "released": 1718910000000
   },
@@ -4309,14 +4589,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 644,
+    "card_type": "",
     "sekai_id": 666,
     "released": 1718910000000
   },
   {
     "id": 379,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Kamishiro Rui",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "Wonderlands x Showtime",
     "real_id": 647,
@@ -4391,6 +4673,7 @@
     "attribute": "Mysterious",
     "unit": "Nightcord at 25:00",
     "real_id": 655,
+    "card_type": "",
     "sekai_id": 677,
     "released": 1720724400000
   },
@@ -4402,6 +4685,7 @@
     "attribute": "Mysterious",
     "unit": "Nightcord at 25:00",
     "real_id": 656,
+    "card_type": "",
     "sekai_id": 678,
     "released": 1720724400000
   },
@@ -4413,14 +4697,16 @@
     "attribute": "Mysterious",
     "unit": "Nightcord at 25:00",
     "real_id": 657,
+    "card_type": "",
     "sekai_id": 679,
     "released": 1720724400000
   },
   {
     "id": 388,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Kusanagi Nene",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "Wonderlands x Showtime",
     "real_id": 660,
@@ -4435,6 +4721,7 @@
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 661,
+    "card_type": "",
     "sekai_id": 683,
     "released": 1721588400000
   },
@@ -4446,6 +4733,7 @@
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 662,
+    "card_type": "",
     "sekai_id": 684,
     "released": 1721588400000
   },
@@ -4458,14 +4746,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 663,
+    "card_type": "",
     "sekai_id": 685,
     "released": 1721588400000
   },
   {
     "id": 392,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Shiraishi An",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "Vivid BAD SQUAD",
     "real_id": 666,
@@ -4516,6 +4806,7 @@
     "attribute": "Pure",
     "unit": "Vivid BAD SQUAD",
     "real_id": 672,
+    "card_type": "",
     "sekai_id": 694,
     "released": 1723316400000
   },
@@ -4527,6 +4818,7 @@
     "attribute": "Pure",
     "unit": "Vivid BAD SQUAD",
     "real_id": 673,
+    "card_type": "",
     "sekai_id": 695,
     "released": 1723316400000
   },
@@ -4538,14 +4830,16 @@
     "attribute": "Pure",
     "unit": "Vivid BAD SQUAD",
     "real_id": 674,
+    "card_type": "",
     "sekai_id": 696,
     "released": 1723316400000
   },
   {
     "id": 399,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023",
     "character": "Hoshino Ichika",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "Leo/Need",
     "real_id": 677,
@@ -4560,6 +4854,7 @@
     "attribute": "Happy",
     "unit": "Wonderlands x Showtime",
     "real_id": 678,
+    "card_type": "",
     "sekai_id": 700,
     "released": 1724266800000
   },
@@ -4571,6 +4866,7 @@
     "attribute": "Happy",
     "unit": "Wonderlands x Showtime",
     "real_id": 679,
+    "card_type": "",
     "sekai_id": 701,
     "released": 1724266800000
   },
@@ -4583,14 +4879,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 680,
+    "card_type": "",
     "sekai_id": 702,
     "released": 1724266800000
   },
   {
     "id": 403,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Akiyama Mizuki",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "Nightcord at 25:00",
     "real_id": 683,
@@ -4599,9 +4897,10 @@
   },
   {
     "id": 404,
-    "name": "Happy Anniversary!! 2024",
+    "name": "Happy Anniversary!! 2023",
     "character": "Hatsune Miku",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "Virtual Singers",
     "real_id": 684,
@@ -4662,9 +4961,10 @@
   },
   {
     "id": 409,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Otori Emu",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "Wonderlands x Showtime",
     "real_id": 691,
@@ -4679,6 +4979,7 @@
     "attribute": "Happy",
     "unit": "Leo/Need",
     "real_id": 692,
+    "card_type": "",
     "sekai_id": 714,
     "released": 1725994800000
   },
@@ -4690,6 +4991,7 @@
     "attribute": "Happy",
     "unit": "Leo/Need",
     "real_id": 693,
+    "card_type": "",
     "sekai_id": 715,
     "released": 1725994800000
   },
@@ -4701,6 +5003,7 @@
     "attribute": "Happy",
     "unit": "MORE MORE JUMP!",
     "real_id": 694,
+    "card_type": "",
     "sekai_id": 716,
     "released": 1725994800000
   },
@@ -4712,6 +5015,7 @@
     "attribute": "Cool",
     "unit": "Vivid BAD SQUAD",
     "real_id": 697,
+    "card_type": "",
     "sekai_id": 719,
     "released": 1726858800000
   },
@@ -4723,6 +5027,7 @@
     "attribute": "Cool",
     "unit": "Wonderlands x Showtime",
     "real_id": 698,
+    "card_type": "",
     "sekai_id": 720,
     "released": 1726858800000
   },
@@ -4734,6 +5039,7 @@
     "attribute": "Cool",
     "unit": "Nightcord at 25:00",
     "real_id": 699,
+    "card_type": "",
     "sekai_id": 721,
     "released": 1726858800000
   },
@@ -4811,13 +5117,14 @@
   },
   {
     "id": 422,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Kiritani Haruka",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Happy",
     "unit": "MORE MORE JUMP!",
     "real_id": 745,
-
+    "prefix": "Happy Birthday! 2024",
     "sekai_id": 767,
     "released": 1728111600000
   },
@@ -4829,6 +5136,7 @@
     "attribute": "Cute",
     "unit": "Vivid BAD SQUAD",
     "real_id": 746,
+    "card_type": "",
     "sekai_id": 768,
     "released": 1728759600000
   },
@@ -4840,6 +5148,7 @@
     "attribute": "Cute",
     "unit": "Vivid BAD SQUAD",
     "real_id": 747,
+    "card_type": "",
     "sekai_id": 769,
     "released": 1728759600000
   },
@@ -4851,6 +5160,7 @@
     "attribute": "Pure",
     "unit": "Leo/Need",
     "real_id": 751,
+    "card_type": "",
     "sekai_id": 773,
     "released": 1729623600000
   },
@@ -4862,6 +5172,7 @@
     "attribute": "Pure",
     "unit": "Leo/Need",
     "real_id": 752,
+    "card_type": "",
     "sekai_id": 774,
     "released": 1729623600000
   },
@@ -4874,14 +5185,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 753,
+    "card_type": "",
     "sekai_id": 775,
     "released": 1729623600000
   },
   {
     "id": 429,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Mochizuki Honami",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 756,
@@ -4926,9 +5239,10 @@
   },
   {
     "id": 433,
-    "name": "Happy Anniversary!! 2024",
+    "name": "Happy Anniversary!! 2023",
     "character": "MEIKO",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "Virtual Singers",
     "real_id": 762,
@@ -4985,9 +5299,10 @@
   },
   {
     "id": 438,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Shinonome Akito",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "Vivid BAD SQUAD",
     "real_id": 768,
@@ -5002,6 +5317,7 @@
     "attribute": "Mysterious",
     "unit": "Wonderlands x Showtime",
     "real_id": 769,
+    "card_type": "",
     "sekai_id": 791,
     "released": 1732305600000
   },
@@ -5013,6 +5329,7 @@
     "attribute": "Mysterious",
     "unit": "Wonderlands x Showtime",
     "real_id": 770,
+    "card_type": "",
     "sekai_id": 792,
     "released": 1732305600000
   },
@@ -5055,9 +5372,10 @@
   },
   {
     "id": 444,
-    "name": "Happy Birthday!! 2024",
+    "name": "Happy Birthday!! 2023 ",
     "character": "Hinomori Shizuku",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "MORE MORE JUMP!",
     "real_id": 805,
@@ -5072,6 +5390,7 @@
     "attribute": "Cool",
     "unit": "MORE MORE JUMP!",
     "real_id": 806,
+    "card_type": "",
     "sekai_id": 828,
     "released": 1733860800000
   },
@@ -5083,6 +5402,7 @@
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 807,
+    "card_type": "",
     "sekai_id": 829,
     "released": 1733860800000
   },
@@ -5095,6 +5415,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 808,
+    "card_type": "",
     "sekai_id": 830,
     "released": 1733860800000
   },
@@ -5106,6 +5427,7 @@
     "attribute": "Happy",
     "unit": "Nightcord at 25:00",
     "real_id": 811,
+    "card_type": "",
     "sekai_id": 833,
     "released": 1734724800000
   },
@@ -5117,6 +5439,7 @@
     "attribute": "Happy",
     "unit": "Nightcord at 25:00",
     "real_id": 812,
+    "card_type": "",
     "sekai_id": 834,
     "released": 1734724800000
   },
@@ -5129,14 +5452,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "Nightcord at 25:00",
     "real_id": 813,
+    "card_type": "",
     "sekai_id": 835,
     "released": 1734724800000
   },
   {
     "id": 451,
-    "name": "Happy Anniversary!! 2024",
+    "name": "Happy Anniversary!! 2023",
     "character": "Kagamine Rin",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "Virtual Singers",
     "real_id": 816,
@@ -5145,9 +5470,10 @@
   },
   {
     "id": 452,
-    "name": "Happy Anniversary!! 2024",
+    "name": "Happy Anniversary!! 2023",
     "character": "Kagamine Len",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "Virtual Singers",
     "real_id": 817,
@@ -5289,9 +5615,10 @@
   },
   {
     "id": 464,
-    "name": "Happy Birthday!! 2025",
+    "name": "Happy Birthday!! 2024",
     "character": "Hinomori Shiho",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "Leo/Need",
     "real_id": 825,
@@ -5354,6 +5681,7 @@
     "attribute": "Happy",
     "unit": "Wonderlands x Showtime",
     "real_id": 832,
+    "card_type": "",
     "sekai_id": 854,
     "released": 1737662400000
   },
@@ -5365,6 +5693,7 @@
     "attribute": "Happy",
     "unit": "Wonderlands x Showtime",
     "real_id": 833,
+    "card_type": "",
     "sekai_id": 855,
     "released": 1737662400000
   },
@@ -5377,14 +5706,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 834,
+    "card_type": "",
     "sekai_id": 856,
     "released": 1737662400000
   },
   {
     "id": 472,
-    "name": "Happy Birthday!! 2025",
+    "name": "Happy Birthday!! 2024",
     "character": "Asahina Mafuyu",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "Nightcord at 25:00",
     "real_id": 837,
@@ -5393,9 +5724,10 @@
   },
   {
     "id": 473,
-    "name": "Happy Anniversary!! 2025",
+    "name": "Happy Anniversary!! 2024 ",
     "character": "Megurine Luka",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "Virtual Singers",
     "real_id": 838,
@@ -5440,9 +5772,10 @@
   },
   {
     "id": 477,
-    "name": "Happy Birthday!! 2025",
+    "name": "Happy Birthday!! 2024 ",
     "character": "Yoisaki Kanade",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Happy",
     "unit": "Nightcord at 25:00",
     "real_id": 844,
@@ -5457,6 +5790,7 @@
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 845,
+    "card_type": "",
     "sekai_id": 867,
     "released": 1739217600000
   },
@@ -5468,6 +5802,7 @@
     "attribute": "Cool",
     "unit": "Leo/Need",
     "real_id": 846,
+    "card_type": "",
     "sekai_id": 868,
     "released": 1739217600000
   },
@@ -5480,14 +5815,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 847,
+    "card_type": "",
     "sekai_id": 869,
     "released": 1739217600000
   },
   {
     "id": 481,
-    "name": "Happy Anniversary!! 2025",
+    "name": "Happy Anniversary!! 2024",
     "character": "KAITO",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "Virtual Singers",
     "real_id": 850,
@@ -5502,6 +5839,7 @@
     "attribute": "Pure",
     "unit": "MORE MORE JUMP!",
     "real_id": 851,
+    "card_type": "",
     "sekai_id": 873,
     "released": 1740081600000
   },
@@ -5513,6 +5851,7 @@
     "attribute": "Pure",
     "unit": "MORE MORE JUMP!",
     "real_id": 852,
+    "card_type": "",
     "sekai_id": 874,
     "released": 1740081600000
   },
@@ -5525,6 +5864,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 853,
+    "card_type": "",
     "sekai_id": 875,
     "released": 1740081600000
   },
@@ -5566,9 +5906,10 @@
   },
   {
     "id": 488,
-    "name": "Happy Birthday!! 2025",
+    "name": "Happy Birthday!! 2024",
     "character": "Azusawa Kohane",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "Vivid BAD SQUAD",
     "real_id": 861,
@@ -5625,9 +5966,10 @@
   },
   {
     "id": 493,
-    "name": "Happy Birthday!! 2025",
+    "name": "Happy Birthday!! 2024",
     "character": "Momoi Airi",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "MORE MORE JUMP!",
     "real_id": 867,
@@ -5642,6 +5984,7 @@
     "attribute": "Happy",
     "unit": "Vivid BAD SQUAD",
     "real_id": 868,
+    "card_type": "",
     "sekai_id": 890,
     "released": 1742670000000
   },
@@ -5653,6 +5996,7 @@
     "attribute": "Happy",
     "unit": "Vivid BAD SQUAD",
     "real_id": 869,
+    "card_type": "",
     "sekai_id": 891,
     "released": 1742670000000
   },
@@ -5665,6 +6009,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 870,
+    "card_type": "",
     "sekai_id": 892,
     "released": 1742670000000
   },
@@ -5749,6 +6094,7 @@
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 881,
+    "card_type": "",
     "sekai_id": 903,
     "released": 1744311600000
   },
@@ -5760,6 +6106,7 @@
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 882,
+    "card_type": "",
     "sekai_id": 904,
     "released": 1744311600000
   },
@@ -5772,14 +6119,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "Nightcord at 25:00",
     "real_id": 883,
+    "card_type": "",
     "sekai_id": 905,
     "released": 1744311600000
   },
   {
     "id": 506,
-    "name": "Happy Birthday!! 2025",
+    "name": "Happy Birthday!! 2024",
     "character": "Hanasato Minori",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "MORE MORE JUMP!",
     "real_id": 886,
@@ -5794,6 +6143,7 @@
     "attribute": "Happy",
     "unit": "Leo/Need",
     "real_id": 887,
+    "card_type": "",
     "sekai_id": 909,
     "released": 1745175600000
   },
@@ -5805,6 +6155,7 @@
     "attribute": "Happy",
     "unit": "Leo/Need",
     "real_id": 888,
+    "card_type": "",
     "sekai_id": 910,
     "released": 1745175600000
   },
@@ -5817,14 +6168,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "real_id": 889,
+    "card_type": "",
     "sekai_id": 911,
     "released": 1745175600000
   },
   {
     "id": 510,
-    "name": "Happy Birthday!! 2025",
+    "name": "Happy Birthday!! 2024",
     "character": "Shinonome Ena",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 892,
@@ -5869,9 +6222,10 @@
   },
   {
     "id": 514,
-    "name": "Happy Birthday!! 2025",
+    "name": "Happy Birthday!! 2024",
     "character": "Tenma Saki",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Mysterious",
     "unit": "Leo/Need",
     "real_id": 898,
@@ -5928,9 +6282,10 @@
   },
   {
     "id": 519,
-    "name": "Happy Birthday!! 2025",
+    "name": "Happy Birthday!! 2024",
     "character": "Tenma Tsukasa",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cool",
     "unit": "Wonderlands x Showtime",
     "real_id": 904,
@@ -5945,6 +6300,7 @@
     "attribute": "Cute",
     "unit": "Wonderlands x Showtime",
     "real_id": 905,
+    "card_type": "",
     "sekai_id": 927,
     "released": 1748026800000
   },
@@ -5956,6 +6312,7 @@
     "attribute": "Cute",
     "unit": "Wonderlands x Showtime",
     "real_id": 906,
+    "card_type": "",
     "sekai_id": 928,
     "released": 1748026800000
   },
@@ -5968,14 +6325,16 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 907,
+    "card_type": "",
     "sekai_id": 929,
     "released": 1748026800000
   },
   {
     "id": 523,
-    "name": "Happy Birthday!! 2025",
+    "name": "Happy Birthday!! 2024 ",
     "character": "Aoyagi Toya",
     "rarity": 5,
+    "card_type": "bday",
     "attribute": "Cute",
     "unit": "Vivid BAD SQUAD",
     "real_id": 910,
@@ -6027,6 +6386,7 @@
     "attribute": "Cool",
     "unit": "MORE MORE JUMP!",
     "real_id": 916,
+    "card_type": "",
     "sekai_id": 938,
     "released": 1749582000000
   },
@@ -6038,6 +6398,7 @@
     "attribute": "Cool",
     "unit": "MORE MORE JUMP!",
     "real_id": 917,
+    "card_type": "",
     "sekai_id": 939,
     "released": 1749582000000
   },
@@ -6050,6 +6411,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 918,
+    "card_type": "",
     "sekai_id": 940,
     "released": 1749582000000
   },
@@ -6061,6 +6423,7 @@
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 921,
+    "card_type": "",
     "sekai_id": 943,
     "released": 1750446000000
   },
@@ -6072,6 +6435,7 @@
     "attribute": "Pure",
     "unit": "Nightcord at 25:00",
     "real_id": 922,
+    "card_type": "",
     "sekai_id": 944,
     "released": 1750446000000
   },
@@ -6084,6 +6448,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Nightcord at 25:00",
     "real_id": 923,
+    "card_type": "",
     "sekai_id": 945,
     "released": 1750446000000
   },
@@ -6095,19 +6460,21 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
     "real_id": 37,
+    "card_type": "",
     "sekai_id": 47,
     "released": 1638918000000
   },
   {
     "id": 540,
-    "name": "Happy Birthday!! 2025",
+    "name": "Happy Birthday!! 2024",
     "character": "Kamishiro Rui",
     "rarity": 5,
+    "card_type": "bday",
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
     "real_id": 926,
-    "released": 1750748400000,
-    "sekai_id": 948
+    "sekai_id": 948,
+    "released": 1750748400000
   },
   {
     "id": 687,
@@ -6531,6 +6898,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Cool",
     "real_id": 178,
+    "card_type": "event",
     "sekai_id": 200,
     "released": 1650751200000
   },
@@ -6542,6 +6910,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
     "real_id": 179,
+    "card_type": "event",
     "sekai_id": 201,
     "released": 1650751200000
   },
@@ -6553,6 +6922,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Pure",
     "real_id": 183,
+    "card_type": "event",
     "sekai_id": 205,
     "released": 1651442400000
   },
@@ -6564,6 +6934,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Pure",
     "real_id": 184,
+    "card_type": "event",
     "sekai_id": 206,
     "released": 1651442400000
   },
@@ -6846,6 +7217,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Cute",
     "real_id": 245,
+    "card_type": "event",
     "sekai_id": 267,
     "released": 1660168800000
   },
@@ -6919,6 +7291,7 @@
     "unit": "Leo/Need",
     "attribute": "Pure",
     "real_id": 260,
+    "card_type": "event",
     "sekai_id": 282,
     "released": 1662760800000
   },
@@ -6930,6 +7303,7 @@
     "unit": "Leo/Need",
     "attribute": "Mysterious",
     "real_id": 261,
+    "card_type": "event",
     "sekai_id": 283,
     "released": 1662760800000
   },
@@ -7926,6 +8300,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Happy",
     "real_id": 521,
+    "card_type": "event",
     "sekai_id": 543,
     "released": 1700521200000
   },
@@ -8071,6 +8446,7 @@
     "attribute": "Cool",
     "sub_unit": "Leo/Need",
     "real_id": 557,
+    "card_type": "event",
     "sekai_id": 579,
     "released": 1705878000000
   },
@@ -8256,6 +8632,7 @@
     "unit": "Leo/Need",
     "attribute": "Cool",
     "real_id": 605,
+    "card_type": "event",
     "sekai_id": 627,
     "released": 1712872800000
   },
@@ -8329,6 +8706,7 @@
     "unit": "Leo/Need",
     "attribute": "Cute",
     "real_id": 623,
+    "card_type": "event",
     "sekai_id": 645,
     "released": 1715464800000
   },
@@ -8340,6 +8718,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
     "real_id": 624,
+    "card_type": "event",
     "sekai_id": 646,
     "released": 1715464800000
   },
@@ -8376,6 +8755,7 @@
     "attribute": "Mysterious",
     "sub_unit": "Leo/Need",
     "real_id": 635,
+    "card_type": "event",
     "sekai_id": 657,
     "released": 1717192800000
   },
@@ -8399,6 +8779,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Mysterious",
     "real_id": 640,
+    "card_type": "event",
     "sekai_id": 662,
     "released": 1718056800000
   },
@@ -8495,6 +8876,7 @@
     "unit": "Leo/Need",
     "attribute": "Happy",
     "real_id": 664,
+    "card_type": "event",
     "sekai_id": 686,
     "released": 1721599200000
   },
@@ -8506,6 +8888,7 @@
     "unit": "Leo/Need",
     "attribute": "Cute",
     "real_id": 665,
+    "card_type": "event",
     "sekai_id": 687,
     "released": 1721599200000
   },
@@ -8676,6 +9059,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cool",
     "real_id": 749,
+    "card_type": "event",
     "sekai_id": 771,
     "released": 1728770400000
   },
@@ -8687,6 +9071,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Pure",
     "real_id": 750,
+    "card_type": "event",
     "sekai_id": 772,
     "released": 1728770400000
   },
@@ -8882,6 +9267,7 @@
     "attribute": "Mysterious",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 831,
+    "card_type": "event",
     "sekai_id": 853,
     "released": 1736481600000
   },
@@ -8894,6 +9280,7 @@
     "attribute": "Pure",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 830,
+    "card_type": "event",
     "sekai_id": 852,
     "released": 1736481600000
   },
@@ -8929,6 +9316,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
     "real_id": 842,
+    "card_type": "event",
     "sekai_id": 864,
     "released": 1738364400000
   },
@@ -9271,6 +9659,7 @@
     "attribute": "Pure",
     "sub_unit": "Nightcord at 25:00",
     "real_id": 68,
+    "card_type": "",
     "sekai_id": 87,
     "released": 1638918000000
   },
@@ -9282,6 +9671,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "real_id": 62,
+    "card_type": "",
     "sekai_id": 81,
     "released": 1638918000000
   },
@@ -9294,6 +9684,7 @@
     "attribute": "Cute",
     "sub_unit": "Leo/Need",
     "real_id": 63,
+    "card_type": "",
     "sekai_id": 82,
     "released": 1638918000000
   },
@@ -9306,6 +9697,7 @@
     "attribute": "Cool",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 64,
+    "card_type": "",
     "sekai_id": 83,
     "released": 1638918000000
   },
@@ -9318,6 +9710,7 @@
     "attribute": "Pure",
     "sub_unit": "Vivid BAD SQUAD",
     "real_id": 65,
+    "card_type": "",
     "sekai_id": 84,
     "released": 1638918000000
   },
@@ -9330,6 +9723,7 @@
     "attribute": "Happy",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 66,
+    "card_type": "",
     "sekai_id": 85,
     "released": 1638918000000
   },
@@ -9581,6 +9975,7 @@
     "unit": "Leo/Need",
     "attribute": "Cool",
     "real_id": 1,
+    "card_type": "",
     "sekai_id": 1,
     "released": 1638918000000
   },
@@ -9592,6 +9987,7 @@
     "unit": "Leo/Need",
     "attribute": "Happy",
     "real_id": 2,
+    "card_type": "",
     "sekai_id": 2,
     "released": 1638918000000
   },
@@ -9603,6 +9999,7 @@
     "unit": "Leo/Need",
     "attribute": "Cute",
     "real_id": 5,
+    "card_type": "",
     "sekai_id": 5,
     "released": 1638918000000
   },
@@ -9614,6 +10011,7 @@
     "unit": "Leo/Need",
     "attribute": "Pure",
     "real_id": 6,
+    "card_type": "",
     "sekai_id": 6,
     "released": 1638918000000
   },
@@ -9625,6 +10023,7 @@
     "unit": "Leo/Need",
     "attribute": "Cool",
     "real_id": 7,
+    "card_type": "",
     "sekai_id": 7,
     "released": 1638918000000
   },
@@ -9636,6 +10035,7 @@
     "unit": "Leo/Need",
     "attribute": "Mysterious",
     "real_id": 8,
+    "card_type": "",
     "sekai_id": 9,
     "released": 1638918000000
   },
@@ -9647,6 +10047,7 @@
     "unit": "Leo/Need",
     "attribute": "Cool",
     "real_id": 9,
+    "card_type": "",
     "sekai_id": 10,
     "released": 1638918000000
   },
@@ -9658,6 +10059,7 @@
     "unit": "Leo/Need",
     "attribute": "Happy",
     "real_id": 10,
+    "card_type": "",
     "sekai_id": 11,
     "released": 1638918000000
   },
@@ -9669,6 +10071,7 @@
     "unit": "Leo/Need",
     "attribute": "Happy",
     "real_id": 11,
+    "card_type": "",
     "sekai_id": 13,
     "released": 1638918000000
   },
@@ -9680,6 +10083,7 @@
     "unit": "Leo/Need",
     "attribute": "Mysterious",
     "real_id": 12,
+    "card_type": "",
     "sekai_id": 14,
     "released": 1638918000000
   },
@@ -9691,6 +10095,7 @@
     "unit": "Leo/Need",
     "attribute": "Cute",
     "real_id": 13,
+    "card_type": "",
     "sekai_id": 15,
     "released": 1638918000000
   },
@@ -9702,6 +10107,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
     "real_id": 14,
+    "card_type": "",
     "sekai_id": 17,
     "released": 1638918000000
   },
@@ -9713,6 +10119,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Cool",
     "real_id": 15,
+    "card_type": "",
     "sekai_id": 18,
     "released": 1638918000000
   },
@@ -9724,6 +10131,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
     "real_id": 17,
+    "card_type": "",
     "sekai_id": 21,
     "released": 1638918000000
   },
@@ -9735,6 +10143,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
     "real_id": 18,
+    "card_type": "",
     "sekai_id": 22,
     "released": 1638918000000
   },
@@ -9746,6 +10155,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Cool",
     "real_id": 19,
+    "card_type": "",
     "sekai_id": 23,
     "released": 1638918000000
   },
@@ -9757,17 +10167,19 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
     "real_id": 20,
+    "card_type": "",
     "sekai_id": 25,
     "released": 1638918000000
   },
   {
     "id": 1051,
-    "name": "MORE MORE JUMP! ",
+    "name": "MORE MORE JUMP!",
     "character": "Momoi Airi",
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cute",
     "real_id": 21,
+    "card_type": "",
     "sekai_id": 26,
     "released": 1638918000000
   },
@@ -9779,6 +10191,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
     "real_id": 22,
+    "card_type": "",
     "sekai_id": 27,
     "released": 1638918000000
   },
@@ -9790,17 +10203,19 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Cute",
     "real_id": 23,
+    "card_type": "",
     "sekai_id": 29,
     "released": 1638918000000
   },
   {
     "id": 1054,
-    "name": "MORE MORE JUMP! ",
+    "name": "MORE MORE JUMP!",
     "character": "Hinomori Shizuku",
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
     "real_id": 24,
+    "card_type": "",
     "sekai_id": 30,
     "released": 1638918000000
   },
@@ -9812,6 +10227,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
     "real_id": 25,
+    "card_type": "",
     "sekai_id": 31,
     "released": 1638918000000
   },
@@ -9823,6 +10239,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Pure",
     "real_id": 26,
+    "card_type": "",
     "sekai_id": 33,
     "released": 1638918000000
   },
@@ -9834,6 +10251,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Mysterious",
     "real_id": 27,
+    "card_type": "",
     "sekai_id": 34,
     "released": 1638918000000
   },
@@ -9845,6 +10263,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
     "real_id": 29,
+    "card_type": "",
     "sekai_id": 37,
     "released": 1638918000000
   },
@@ -9856,6 +10275,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cool",
     "real_id": 30,
+    "card_type": "",
     "sekai_id": 38,
     "released": 1638918000000
   },
@@ -9867,6 +10287,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Pure",
     "real_id": 31,
+    "card_type": "",
     "sekai_id": 39,
     "released": 1638918000000
   },
@@ -9878,6 +10299,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
     "real_id": 32,
+    "card_type": "",
     "sekai_id": 41,
     "released": 1638918000000
   },
@@ -9889,6 +10311,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
     "real_id": 33,
+    "card_type": "",
     "sekai_id": 42,
     "released": 1638918000000
   },
@@ -9900,6 +10323,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
     "real_id": 34,
+    "card_type": "",
     "sekai_id": 43,
     "released": 1638918000000
   },
@@ -9911,6 +10335,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cool",
     "real_id": 35,
+    "card_type": "",
     "sekai_id": 45,
     "released": 1638918000000
   },
@@ -9922,6 +10347,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
     "real_id": 36,
+    "card_type": "",
     "sekai_id": 46,
     "released": 1638918000000
   },
@@ -9933,6 +10359,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
     "real_id": 38,
+    "card_type": "",
     "sekai_id": 49,
     "released": 1638918000000
   },
@@ -9944,6 +10371,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
     "real_id": 39,
+    "card_type": "",
     "sekai_id": 50,
     "released": 1638918000000
   },
@@ -9955,6 +10383,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
     "real_id": 41,
+    "card_type": "",
     "sekai_id": 53,
     "released": 1638918000000
   },
@@ -9966,6 +10395,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
     "real_id": 42,
+    "card_type": "",
     "sekai_id": 54,
     "released": 1638918000000
   },
@@ -9977,6 +10407,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
     "real_id": 43,
+    "card_type": "",
     "sekai_id": 55,
     "released": 1638918000000
   },
@@ -9988,6 +10419,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Cool",
     "real_id": 44,
+    "card_type": "",
     "sekai_id": 57,
     "released": 1638918000000
   },
@@ -9999,6 +10431,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Cool",
     "real_id": 45,
+    "card_type": "",
     "sekai_id": 58,
     "released": 1638918000000
   },
@@ -10010,6 +10443,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
     "real_id": 46,
+    "card_type": "",
     "sekai_id": 59,
     "released": 1638918000000
   },
@@ -10021,6 +10455,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
     "real_id": 47,
+    "card_type": "",
     "sekai_id": 61,
     "released": 1638918000000
   },
@@ -10032,6 +10467,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
     "real_id": 48,
+    "card_type": "",
     "sekai_id": 62,
     "released": 1638918000000
   },
@@ -10043,6 +10479,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
     "real_id": 49,
+    "card_type": "",
     "sekai_id": 63,
     "released": 1638918000000
   },
@@ -10054,6 +10491,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
     "real_id": 50,
+    "card_type": "",
     "sekai_id": 65,
     "released": 1638918000000
   },
@@ -10065,6 +10503,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
     "real_id": 51,
+    "card_type": "",
     "sekai_id": 66,
     "released": 1638918000000
   },
@@ -10076,6 +10515,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
     "real_id": 53,
+    "card_type": "",
     "sekai_id": 69,
     "released": 1638918000000
   },
@@ -10087,6 +10527,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Happy",
     "real_id": 54,
+    "card_type": "",
     "sekai_id": 70,
     "released": 1638918000000
   },
@@ -10098,6 +10539,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
     "real_id": 55,
+    "card_type": "",
     "sekai_id": 71,
     "released": 1638918000000
   },
@@ -10109,6 +10551,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Pure",
     "real_id": 56,
+    "card_type": "",
     "sekai_id": 73,
     "released": 1638918000000
   },
@@ -10120,6 +10563,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
     "real_id": 57,
+    "card_type": "",
     "sekai_id": 74,
     "released": 1638918000000
   },
@@ -10131,6 +10575,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
     "real_id": 58,
+    "card_type": "",
     "sekai_id": 75,
     "released": 1638918000000
   },
@@ -10142,6 +10587,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
     "real_id": 59,
+    "card_type": "",
     "sekai_id": 77,
     "released": 1638918000000
   },
@@ -10153,6 +10599,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
     "real_id": 60,
+    "card_type": "",
     "sekai_id": 78,
     "released": 1638918000000
   },
@@ -10164,6 +10611,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
     "real_id": 61,
+    "card_type": "",
     "sekai_id": 79,
     "released": 1638918000000
   },
@@ -10175,8 +10623,10 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "real_id": 67,
+    "sub_unit": "Nightcord at 25:00",
+    "card_type": "",
     "sekai_id": 86,
-    "released": 1638918000000,"sub_unit":"Nightcord at 25:00"
+    "released": 1638918000000
   },
   {
     "id": 1094,
@@ -10186,6 +10636,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "real_id": 70,
+    "card_type": "",
     "sekai_id": 89,
     "released": 1638918000000
   },
@@ -10197,8 +10648,10 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "real_id": 71,
-    "released": 1638918000000,
-    "sekai_id": 90,"sub_unit":"MORE MORE JUMP!"
+    "sub_unit": "MORE MORE JUMP!",
+    "card_type": "",
+    "sekai_id": 90,
+    "released": 1638918000000
   },
   {
     "id": 1096,
@@ -10208,8 +10661,10 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "real_id": 72,
+    "sub_unit": "MORE MORE JUMP!",
+    "card_type": "",
     "sekai_id": 91,
-    "released": 1638918000000,"sub_unit":"MORE MORE JUMP!"
+    "released": 1638918000000
   },
   {
     "id": 1097,
@@ -10219,6 +10674,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "real_id": 74,
+    "card_type": "",
     "sekai_id": 93,
     "released": 1638918000000
   },
@@ -10230,8 +10686,10 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "real_id": 75,
+    "sub_unit": "Vivid BAD SQUAD",
+    "card_type": "",
     "sekai_id": 94,
-    "released": 1638918000000,"sub_unit":"Vivid BAD SQUAD"
+    "released": 1638918000000
   },
   {
     "id": 1099,
@@ -10241,8 +10699,10 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "real_id": 76,
+    "sub_unit": "Vivid BAD SQUAD",
+    "card_type": "",
     "sekai_id": 95,
-    "released": 1638918000000,"sub_unit":"Vivid BAD SQUAD"
+    "released": 1638918000000
   },
   {
     "id": 1100,
@@ -10252,6 +10712,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "real_id": 78,
+    "card_type": "",
     "sekai_id": 97,
     "released": 1638918000000
   },
@@ -10263,8 +10724,10 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "real_id": 79,
-    "released": 1638918000000,
-    "sekai_id": 98,"sub_unit":"Leo/Need"
+    "sub_unit": "Leo/Need",
+    "card_type": "",
+    "sekai_id": 98,
+    "released": 1638918000000
   },
   {
     "id": 1102,
@@ -10274,6 +10737,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "real_id": 81,
+    "card_type": "",
     "sekai_id": 101,
     "released": 1638918000000
   },
@@ -10285,8 +10749,10 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "real_id": 82,
+    "sub_unit": "Vivid BAD SQUAD",
+    "card_type": "",
     "sekai_id": 102,
-    "released": 1638918000000,"sub_unit":"Vivid BAD SQUAD"
+    "released": 1638918000000
   },
   {
     "id": 1104,
@@ -10296,6 +10762,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "real_id": 84,
+    "card_type": "",
     "sekai_id": 105,
     "released": 1638918000000
   },
@@ -10307,8 +10774,10 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "real_id": 85,
+    "sub_unit": "Wonderlands x Showtime",
+    "card_type": "",
     "sekai_id": 106,
-    "released": 1638918000000,"sub_unit":"Wonderlands x Showtime"
+    "released": 1638918000000
   },
   {
     "id": 1106,
@@ -10330,6 +10799,7 @@
     "unit": "Leo/Need",
     "attribute": "Cool",
     "real_id": 702,
+    "card_type": "",
     "sekai_id": 724,
     "released": 1727679600000
   },
@@ -10341,6 +10811,7 @@
     "unit": "Leo/Need",
     "attribute": "Cute",
     "real_id": 703,
+    "card_type": "",
     "sekai_id": 725,
     "released": 1727679600000
   },
@@ -10352,6 +10823,7 @@
     "unit": "Leo/Need",
     "attribute": "Mysterious",
     "real_id": 704,
+    "card_type": "",
     "sekai_id": 726,
     "released": 1727679600000
   },
@@ -10363,6 +10835,7 @@
     "unit": "Leo/Need",
     "attribute": "Happy",
     "real_id": 705,
+    "card_type": "",
     "sekai_id": 727,
     "released": 1727679600000
   },
@@ -10374,6 +10847,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
     "real_id": 706,
+    "card_type": "",
     "sekai_id": 728,
     "released": 1727679600000
   },
@@ -10385,6 +10859,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Cute",
     "real_id": 707,
+    "card_type": "",
     "sekai_id": 729,
     "released": 1727679600000
   },
@@ -10396,6 +10871,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
     "real_id": 708,
+    "card_type": "",
     "sekai_id": 730,
     "released": 1727679600000
   },
@@ -10407,6 +10883,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
     "real_id": 709,
+    "card_type": "",
     "sekai_id": 731,
     "released": 1727679600000
   },
@@ -10418,6 +10895,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
     "real_id": 710,
+    "card_type": "",
     "sekai_id": 732,
     "released": 1727679600000
   },
@@ -10429,6 +10907,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
     "real_id": 711,
+    "card_type": "",
     "sekai_id": 733,
     "released": 1727679600000
   },
@@ -10440,6 +10919,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cool",
     "real_id": 712,
+    "card_type": "",
     "sekai_id": 734,
     "released": 1727679600000
   },
@@ -10451,6 +10931,7 @@
     "unit": "Vivid BAD SQUAD",
     "attribute": "Mysterious",
     "real_id": 713,
+    "card_type": "",
     "sekai_id": 735,
     "released": 1727679600000
   },
@@ -10462,6 +10943,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
     "real_id": 714,
+    "card_type": "",
     "sekai_id": 736,
     "released": 1727679600000
   },
@@ -10473,6 +10955,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Cool",
     "real_id": 715,
+    "card_type": "",
     "sekai_id": 737,
     "released": 1727679600000
   },
@@ -10484,6 +10967,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
     "real_id": 716,
+    "card_type": "",
     "sekai_id": 738,
     "released": 1727679600000
   },
@@ -10495,6 +10979,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
     "real_id": 717,
+    "card_type": "",
     "sekai_id": 739,
     "released": 1727679600000
   },
@@ -10506,6 +10991,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Pure",
     "real_id": 718,
+    "card_type": "",
     "sekai_id": 740,
     "released": 172767960000
   },
@@ -10517,6 +11003,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
     "real_id": 719,
+    "card_type": "",
     "sekai_id": 741,
     "released": 1727679600000
   },
@@ -10528,6 +11015,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Happy",
     "real_id": 720,
+    "card_type": "",
     "sekai_id": 742,
     "released": 1727679600000
   },
@@ -10539,6 +11027,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
     "real_id": 721,
+    "card_type": "",
     "sekai_id": 743,
     "released": 1727679600000
   },
@@ -10550,6 +11039,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "real_id": 722,
+    "card_type": "",
     "sekai_id": 744,
     "released": 1727679600000
   },
@@ -10561,6 +11051,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "real_id": 723,
+    "card_type": "",
     "sekai_id": 745,
     "released": 1727679600000
   },
@@ -10572,6 +11063,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "real_id": 724,
+    "card_type": "",
     "sekai_id": 746,
     "released": 1727679600000
   },
@@ -10583,6 +11075,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "real_id": 725,
+    "card_type": "",
     "sekai_id": 747,
     "released": 1727679600000
   },
@@ -10594,6 +11087,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "real_id": 726,
+    "card_type": "",
     "sekai_id": 748,
     "released": 1727679600000
   },
@@ -10605,6 +11099,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "real_id": 727,
+    "card_type": "",
     "sekai_id": 749,
     "released": 1727679600000
   },
@@ -10616,8 +11111,10 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "real_id": 728,
+    "sub_unit": "Leo/Need",
+    "card_type": "",
     "sekai_id": 750,
-    "released": 1727679600000,"sub_unit":"Leo/Need"
+    "released": 1727679600000
   },
   {
     "id": 1134,
@@ -10627,8 +11124,10 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "real_id": 729,
+    "sub_unit": "MORE MORE JUMP!",
+    "card_type": "",
     "sekai_id": 751,
-    "released": 1727679600000,"sub_unit":"MORE MORE JUMP!"
+    "released": 1727679600000
   },
   {
     "id": 1135,
@@ -10638,8 +11137,10 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "real_id": 730,
+    "sub_unit": "Vivid BAD SQUAD",
+    "card_type": "",
     "sekai_id": 752,
-    "released": 1727679600000,"sub_unit":"Vivid BAD SQUAD"
+    "released": 1727679600000
   },
   {
     "id": 1136,
@@ -10649,8 +11150,10 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "real_id": 731,
+    "sub_unit": "Wonderlands x Showtime",
+    "card_type": "",
     "sekai_id": 753,
-    "released": 1727679600000,"sub_unit":"Wonderlands x Showtime"
+    "released": 1727679600000
   },
   {
     "id": 1137,
@@ -10660,8 +11163,10 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "real_id": 732,
+    "sub_unit": "Nightcord at 25:00",
+    "card_type": "",
     "sekai_id": 754,
-    "released": 1727679600000,"sub_unit":"Nightcord at 25:00"
+    "released": 1727679600000
   },
   {
     "id": 1138,
@@ -10671,8 +11176,10 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "real_id": 733,
+    "sub_unit": "Leo/Need",
+    "card_type": "",
     "sekai_id": 755,
-    "released": 1727679600000,"sub_unit":"Leo/Need"
+    "released": 1727679600000
   },
   {
     "id": 1139,
@@ -10682,8 +11189,10 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "real_id": 734,
+    "sub_unit": "MORE MORE JUMP!",
+    "card_type": "",
     "sekai_id": 756,
-    "released": 1727679600000,"sub_unit":"MORE MORE JUMP!"
+    "released": 1727679600000
   },
   {
     "id": 1140,
@@ -10693,8 +11202,10 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "real_id": 735,
+    "sub_unit": "Vivid BAD SQUAD",
+    "card_type": "",
     "sekai_id": 757,
-    "released": 1727679600000,"sub_unit":"Vivid BAD SQUAD"
+    "released": 1727679600000
   },
   {
     "id": 1141,
@@ -10704,8 +11215,10 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "real_id": 736,
+    "sub_unit": "Vivid BAD SQUAD",
+    "card_type": "",
     "sekai_id": 758,
-    "released": 1727679600000,"sub_unit":"Vivid BAD SQUAD"
+    "released": 1727679600000
   },
   {
     "id": 1142,
@@ -10715,9 +11228,10 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "real_id": 737,
+    "sub_unit": "Wonderlands x Showtime",
+    "card_type": "",
     "sekai_id": 759,
-    "released": 1727679600000,
-    "sub_unit":"Wonderlands x Showtime"
+    "released": 1727679600000
   },
   {
     "id": 1143,
