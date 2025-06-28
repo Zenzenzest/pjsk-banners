@@ -101,7 +101,7 @@ export default function GachaTable({
           >
             {/* GACHA */}
             <div className="w-1/2 flex flex-col items-center justify-center gap-2">
-              {/* Banner Image */}
+              {/* BANNER IMAGE*/}
               <div className="relative group">
                 <img
                   src={gachaBannerImage}
@@ -109,24 +109,21 @@ export default function GachaTable({
                   onError={handleImageError}
                   alt={`${banner.id}`}
                 />
-                {today >= Number(banner.start) &&
-                  today <= Number(banner.end) && (
-                    <span className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">
-                      LIVE
-                    </span>
-                  )}
               </div>
 
-              {/* Banner Name */}
-              <h3
-                className={`text-lg font-bold text-center ${
+              {/* BANNER NAME */}
+              <span
+                className={` sm:text-sm md:text-base font-bold text-center ${
                   theme == "light" ? "text-gray-800" : "text-gray-100"
                 }`}
               >
                 {banner.name}
-              </h3>
-
-              {/* Date Range */}
+              </span>
+              {/* BANNER TYPE */}
+              <div className="text-[15px]">
+                &#x28;{banner.banner_type}&#x29;
+              </div>
+              {/* DATE RANGE*/}
               <div
                 className={`flex flex-col sm:flex-row items-center gap-1 sm:gap-3 text-sm ${
                   theme == "light" ? "text-gray-600" : "text-gray-300"
