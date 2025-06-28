@@ -4,6 +4,7 @@ export interface BannerTypes {
   cards: number[];
   start: number;
   end: number;
+  banner_type?: string;
 }
 export interface GachaBannersProps {
   filteredBanners: BannerTypes[] | undefined;
