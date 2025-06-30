@@ -199,7 +199,7 @@ export default function CardModal({
         <div className="flex justify-end">
           <button
             onClick={onClose}
-            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+            className="bg-highlight-dark-mode text-white px-4 py-2 rounded hover:bg-[#6e80b8]"
           >
             Close
           </button>
