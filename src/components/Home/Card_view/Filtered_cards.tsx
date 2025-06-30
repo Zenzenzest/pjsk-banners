@@ -29,7 +29,8 @@ export default function FilteredCards({
 
   const { server } = useServer();
   // const formatCardName = (id: number) => String(id).padStart(4, "0");
-
+  const today = Date.now();
+  console.log(today);
   const handleCardClick = (card: CardsTypes) => {
     const [lName, fName] = card.character.split(" ");
     setCardState({
@@ -52,6 +53,9 @@ export default function FilteredCards({
   const cardsData: CardsTypes[] = server === "global" ? EnCards : JpCards;
 
   const filteredCards = cardsData.filter((card) => {
+    if (today < card.released) {
+      return;
+    }
     const hasCharacterFilter = selectedFilters.Character.length > 0;
     const hasUnitFilter = selectedFilters.Unit.length > 0;
     const matchesCharacter = selectedFilters.Character.includes(card.character);
