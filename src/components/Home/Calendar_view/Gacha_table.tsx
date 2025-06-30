@@ -100,7 +100,7 @@ export default function GachaTable({
             key={banner.id}
           >
             {/* GACHA */}
-            <div className="w-1/2 flex flex-col items-center justify-center gap-2">
+            <div className="w-1/2 flex flex-col items-center justify-center gap-1">
               {/* BANNER IMAGE*/}
               <div className="relative group">
                 <img
@@ -110,7 +110,6 @@ export default function GachaTable({
                   alt={`${banner.id}`}
                 />
               </div>
-
               {/* BANNER NAME */}
               <span
                 className={` sm:text-sm md:text-base font-bold text-center ${
@@ -122,25 +121,39 @@ export default function GachaTable({
               {/* BANNER TYPE */}
               <div className="text-[15px]">
                 &#x28;{banner.banner_type}&#x29;
-              </div>
+              </div>{" "}
+              {banner.type === "estimation" && (
+                <h1 className="text-xl font-extrabold bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-transparent bg-clip-text animate-pulse">
+                  ESTIMATION
+                </h1>
+              )}
+              {banner.type === "confirmed" && (
+                <h1 className="text-xl font-extrabold bg-gradient-to-r from-emerald-500 via-lime-400 to-green-600 text-transparent bg-clip-text animate-pulse">
+                  {banner.confirmation}
+                </h1>
+              )}
               {/* DATE RANGE*/}
               <div
-                className={`flex flex-col sm:flex-row items-center gap-1 sm:gap-3 text-sm ${
+                className={`flex flex-col md:flex-row items-center gap-1 sm:gap-3 text-sm ${
                   theme == "light" ? "text-gray-600" : "text-gray-300"
                 }`}
               >
-                <div className="flex items-center">
-                  <span className="hidden sm:inline mr-1">Start:</span>
-                  <span className="bg-white/10 px-2 py-1 rounded-md">
-                    {formattedStart}
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <span className="hidden sm:inline mr-1">End:</span>
-                  <span className="bg-white/10 px-2 py-1 rounded-md">
-                    {formattedEnd}
-                  </span>
-                </div>
+                {banner.start && banner.type != "confirmed" && (
+                  <div className="flex items-center">
+                    <span className="hidden sm:inline mr-1">Start:</span>
+                    <span className="bg-white/10 px-2 py-1 rounded-md">
+                      {formattedStart}
+                    </span>
+                  </div>
+                )}
+                {banner.end && banner.type != "confirmed" && (
+                  <div className="flex items-center">
+                    <span className="hidden sm:inline mr-1">End:</span>
+                    <span className="bg-white/10 px-2 py-1 rounded-md">
+                      {formattedEnd}
+                    </span>
+                  </div>
+                )}
               </div>
             </div>
             {/* CARDS */}
@@ -171,7 +184,7 @@ export default function GachaTable({
                           margin: "0.3rem",
                         }}
                       />
-                      {/* {card} */}
+                      {card}
                     </div>
                   );
                 })}
@@ -181,9 +194,6 @@ export default function GachaTable({
                 <EventEndedTimer endDate={endDate} />
               )}
 
-              {/* {diffInDays < 0 && upcomingDiffInMs > 0 ? (
-                <div>Ends in {diffInDays * -1} days</div>
-              ) : null} */}
               {today > Number(banner.start) && today < Number(banner.end) ? (
                 <div className="flex flex-col justify-center items-center">
                   <CountdownTimer targetDate={endDate} mode="end" />

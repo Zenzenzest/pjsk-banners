@@ -29,10 +29,10 @@ export default function DateTabs() {
   const years_global = [2021, 2022, 2023, 2024, 2025];
   const timeData_global = [
     { 2021: [11, 12] },
-    { 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },  
+    { 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
     { 2023: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
     { 2024: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-    { 2025: [1, 2, 3, 4, 5, 6, 7] },
+    { 2025: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
   ];
 
   const years_jp = [2020, 2021, 2022, 2023, 2024, 2025];
@@ -180,7 +180,7 @@ export default function DateTabs() {
       <div className="border-b border-gray-500/20 pb-2">
         {/* YEARS - Horizontal Scrollable on mobile */}
         <div className="flex overflow-x-auto py-2 px-1 hide-scrollbar">
-          <div className="flex space-x-1 mx-auto">  
+          <div className="flex space-x-1 mx-auto">
             {years.map((year) => (
               <button
                 key={year}

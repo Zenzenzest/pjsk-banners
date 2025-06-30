@@ -3647,5 +3647,114 @@
     "start": 1751526000000,
     "end": 1751871540000,
     "banner_type": "Free Pull"
+  },
+
+  {
+    "id": 439,
+    "name": "Live Streaming ♡ For You Gacha",
+    "cards": [550, 551, 552],
+    "start": 1753988400000,
+    "end": 1754765940000,
+    "type": "estimation",
+    "banner_type": "Limited Event",
+    "event_id": 0
+  },
+  {
+    "id": 440,
+    "name": "The Blue World Orchestra Gacha",
+    "cards": [553, 554, 555],
+    "start": 1754766000000,
+    "end": 1755457140000,
+    "type": "estimation",
+    "banner_type": "Event",
+    "event_id": 0
+  },
+  {
+    "id": 441,
+    "name": "Melody of Wishes Gacha",
+    "cards": [557, 558, 559, 560, 561, 562],
+    "start": 1755457200000,
+    "end": 1756666740000,
+    "type": "estimation",
+    "banner_type": "Unit Limited Event",
+    "event_id": 0
+  },
+  {
+    "id": 442,
+    "name": "Ichika Hoshino Happy Birthday 2025 Gacha",
+    "start": 1754895600000,
+    "end": 1755500340000,
+    "cards": [556, 399, 253],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 443,
+    "name": "Mizuki Akiyama Happy Birthday 2025 Gacha",
+    "start": 1756278000000,
+    "end": 1756882740000,
+    "cards": [563, 403, 257],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 444,
+    "name": "Hatsune Miku Happy Anniversary 2025 Gacha",
+    "start": 1756623600000,
+    "end": 1757228340000,
+    "cards": [564, 404, 258],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 445,
+    "name": "A Very Ghostly Vacation! Gacha ",
+    "start": 1756710000000,
+    "end": 1757573940000,
+    "cards": [565, 566, 567],
+    "type": "estimation",
+    "banner_type": "Limited Event"
+  },
+  {
+    "id": 446,
+    "name": "SUPREME SPORTY Gacha",
+    "start": 1757574000000,
+    "end": 1758437940000,
+    "cards": [569, 570, 571],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 447,
+    "name": "Me and my divaガチャ",
+    "start": 1758438000000,
+    "end": 1759301940000,
+    "cards": [572, 573, 574],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 448,
+    "name": "[鳳えむ]HAPPY BIRTHDAY2024ガチャ",
+    "start": 1757401200000,
+    "end": 1758005940000,
+    "cards": [568, 409, 262],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 449,
+    "name": "JP 4 Year Anniversary Bloom Festival Gacha",
+    "start": 1759258800000,
+    "end": 1759604340000,
+    "cards": [575, 576, 577, 578, 579, 580],
+    "banner_type": "Bloom Festival",
+    "type": "estimation"
+  },
+  {
+    "id": 450,
+    "name": "Crossing SEKAI With ENSEMBLE Gacha",
+    "start": 1756666800000,
+    "end": 1759172400000,
+    "cards": [633, 634, 635, 636],
+    "banner_type": "Collab",
+    "type": "confirmed",
+    "confirmation": "Confirmed for September"
   }
 ]

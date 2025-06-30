@@ -5,6 +5,8 @@ export interface BannerTypes {
   start: number;
   end: number;
   banner_type?: string;
+  type?: string;
+  confirmation?: string;
 }
 export interface GachaBannersProps {
   filteredBanners: BannerTypes[] | undefined;

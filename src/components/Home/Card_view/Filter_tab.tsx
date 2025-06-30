@@ -286,13 +286,13 @@ export default function FilterTab() {
           <div className="flex justify-between">
             <button
               onClick={handleReset}
-              className="bg-red-500 text-white px-4 py-2 rounded"
+              className="bg-gray-300 text-black px-4 py-2 rounded"
             >
               Reset Filters
             </button>
             <button
               onClick={handleApply}
-              className="bg-green-500 text-white px-4 py-2 rounded"
+              className="bg-highlight-dark-mode text-white px-4 py-2 rounded"
             >
               Apply
             </button>
