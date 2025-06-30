@@ -3740,7 +3740,7 @@
   },
   {
     "id": 449,
-    "name": "JP 4 Year Anniversary Bloom Festival Gacha",
+    "name": "JP 4th Year Anniversary Bloom Festival Gacha",
     "start": 1759258800000,
     "end": 1759604340000,
     "cards": [575, 576, 577, 578, 579, 580],
@@ -3756,5 +3756,23 @@
     "banner_type": "Collab",
     "type": "confirmed",
     "confirmation": "Confirmed for September"
+  },
+  {
+    "id": 451,
+    "name": "Talent Blooms Gacha",
+    "start": 1759604400000,
+    "end": 1760295540000,
+    "cards": [577, 578, 579, 580],
+    "banner_type": "Limited Event",
+    "type": "estimation"
+  },
+  {
+    "id": 452,
+    "name": "A Decaying Flower In The End Gacha",
+    "start": 1760295600000,
+    "end": 1761073140000,
+    "cards": [582, 583, 584],
+    "banner_type": "Event",
+    "type": "estimation"
   }
 ]

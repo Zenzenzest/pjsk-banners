@@ -195,8 +195,12 @@ export default function GachaTable({
               )}
 
               {today > Number(banner.start) && today < Number(banner.end) ? (
-                <div className="flex flex-col justify-center items-center">
-                  <CountdownTimer targetDate={endDate} mode="end" />
+                <div>
+                  {endDate.getTime() < 2000000000000 && (
+                    <div className="flex flex-col justify-center items-center">
+                      <CountdownTimer targetDate={endDate} mode="end" />
+                    </div>
+                  )}
                 </div>
               ) : null}
             </div>
