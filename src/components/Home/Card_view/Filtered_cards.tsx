@@ -90,7 +90,7 @@ export default function FilteredCards({
   // Reset to first page when filters change
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedFilters]);
+  }, [selectedFilters, server]);
 
   // Calculate pagination
   const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
