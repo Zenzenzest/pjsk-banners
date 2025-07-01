@@ -26,13 +26,14 @@ export default function DateTabs() {
   const { theme } = useTheme();
   const { server } = useServer();
 
-  const years_global = [2021, 2022, 2023, 2024, 2025];
+  const years_global = [2021, 2022, 2023, 2024, 2025, 2026];
   const timeData_global = [
     { 2021: [11, 12] },
     { 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
     { 2023: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
     { 2024: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
     { 2025: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+    { 2026: [1, 2, 3, 4, 5, 6, 7] },
   ];
 
   const years_jp = [2020, 2021, 2022, 2023, 2024, 2025];
@@ -227,7 +228,7 @@ export default function DateTabs() {
       </div>
 
       {/* GACHA BANNERS */}
-      <GachaTable filteredBanners={filteredBanners} />
+      <GachaTable filteredBanners={filteredBanners} selectedYear={selectedYear} selectedMonth={selectedMonth}/>
     </div>
   );
 }

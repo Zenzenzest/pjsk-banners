@@ -3732,7 +3732,7 @@
   },
   {
     "id": 448,
-    "name": "[鳳えむ]HAPPY BIRTHDAY2024ガチャ",
+    "name": "Emu Otori Happy Birthday 2025 Gacha",
     "start": 1757401200000,
     "end": 1758005940000,
     "cards": [568, 409, 262],
@@ -3751,7 +3751,7 @@
     "id": 450,
     "name": "Crossing SEKAI With ENSEMBLE Gacha",
     "start": 1756666800000,
-    "end": 1759172400000,
+    "end": 1759247999000,
     "cards": [633, 634, 635, 636],
     "banner_type": "Collab",
     "type": "confirmed",
@@ -3774,5 +3774,409 @@
     "cards": [582, 583, 584],
     "banner_type": "Event",
     "type": "estimation"
+  },
+  {
+    "id": 453,
+    "name": "Fuel my passionガチャ",
+    "start": 1761073200000,
+    "end": 1761937140000,
+    "cards": [585, 586, 587],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 454,
+    "name": "Haruka Kiritani Happy Birthday 2025 Gacha",
+    "start": 1759647600000,
+    "end": 1760252340000,
+    "cards": [581, 422, 275, 128],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 455,
+    "name": "Honami Mochizuki Happy Birthday 2025 Gacha",
+    "start": 1761548400000,
+    "end": 1762156740000,
+    "cards": [588, 429, 282, 132],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 456,
+    "name": "The Street Corner Where Music Plays Gacha",
+    "start": 1761937200000,
+    "end": 1762804740000,
+    "cards": [589, 590, 591],
+    "banner_type": "Limited Event",
+    "type": "estimation"
+  },
+  {
+    "id": 457,
+    "name": "The Tea Room Where Falling Leaves Dance Gacha",
+    "start": 1762804800000,
+    "end": 1763668740000,
+    "cards": [593, 594, 595],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 458,
+    "name": "Noble Conqueror Knights Gacha",
+    "start": 1763668800000,
+    "end": 1764532740000,
+    "cards": [597, 598, 599],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 459,
+    "name": "MEIKO Happy Anniversary 2025 Gacha",
+    "start": 1762329600000,
+    "end": 1762934340000,
+    "cards": [592, 433, 286, 136],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 460,
+    "name": "Akito Shinonome Happy Birthday 2025 Gacha",
+    "start": 1762934400000,
+    "end": 1763539140000,
+    "cards": [596, 438, 290, 140],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 461,
+    "name": "That flower, once more Gacha",
+    "start": 1764532800000,
+    "end": 1765483140000,
+    "cards": [600, 601, 602],
+    "banner_type": "Limited Event",
+    "type": "estimation"
+  },
+  {
+    "id": 462,
+    "name": "high-flapping hope Gacha",
+    "start": 1765483200000,
+    "end": 1766347140000,
+    "cards": [604, 605, 606],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 463,
+    "name": "Watching the Light Snowfall With You Gacha ",
+    "start": 1766347200000,
+    "end": 1767211140000,
+    "cards": [607, 608, 609],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 464,
+    "name": "Shizuku Hinomori Happy Birthday 2025 Gacha",
+    "start": 1765008000000,
+    "end": 1765612740000,
+    "cards": [603, 444, 297, 147],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 465,
+    "name": "Kagamine Rin Happy Anniversary 2025 Gacha",
+    "start": 1766822400000,
+    "end": 1767427140000,
+    "cards": [610, 451, 304, 159],
+    "banner_type": "Birthday"
+  },
+
+  {
+    "id": 466,
+    "name": "Kagamine Len Happy Anniversary 2025 Gacha",
+    "start": 1766822400000,
+    "end": 1767427140000,
+    "cards": [611, 452, 305, 160],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 467,
+    "name": "2026 New Year Bloom Festival Gacha",
+    "start": 1767211200000,
+    "end": 1767556740000,
+    "cards": [612, 613, 614, 615, 616],
+    "banner_type": "Bloom Festival",
+    "type": "estimation"
+  },
+  {
+    "id": 468,
+    "name": "Resplendent Recollection Gacha",
+    "start": 1767556800000,
+    "end": 1768161540000,
+    "cards": [614, 615, 616],
+    "banner_type": "Limited Event",
+    "type": "estimation"
+  },
+  {
+    "id": 469,
+    "name": "Unknown Tone Gacha",
+    "start": 1768161600000,
+    "end": 1769025540000,
+    "cards": [618, 619, 620],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 470,
+    "name": "Doll Dream Gacha",
+    "start": 1769025600000,
+    "end": 1769889540000,
+    "cards": [621, 622, 623],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 471,
+    "name": "Shiho Hinomori Happy Birthday 2026 Gacha",
+    "start": 1767859200000,
+    "end": 1768463940000,
+    "cards": [617, 464, 311, 166],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 472,
+    "name": "Mafuyu Asahina Happy Birthday 2026 Gacha",
+    "start": 1769500800000,
+    "end": 1770105540000,
+    "cards": [624, 472, 318, 173],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 473,
+    "name": "Megurine Luka Happy Anniversary 2026 Gacha",
+    "start": 1769760000000,
+    "end": 1770364740000,
+    "cards": [625, 473, 319, 174],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 474,
+    "name": "Night Sweet Meal Gacha",
+    "start": 1769889600000,
+    "end": 1770753540000,
+    "cards": [626, 627, 628],
+    "banner_type": "Limited Event",
+    "type": "estimation"
+  },
+  {
+    "id": 475,
+    "name": "Stay determinedガチャ",
+    "start": 1770753600000,
+    "end": 1771617540000,
+    "cards": [630, 631, 632],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 476,
+    "name": "A Fairy Tale Spun by Witches Gacha ",
+    "start": 1771617600000,
+    "end": 1772308740000,
+    "cards": [638, 639, 640],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 477,
+    "name": "Kanade Yoisaki Happy Birthday 2026 Gacha",
+    "start": 1770710400000,
+    "end": 1771315140000,
+    "cards": [629, 477, 323, 181],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 478,
+    "name": "KAITO Happy Anniversary 2026 Gacha",
+    "start": 1771315200000,
+    "end": 1771919940000,
+    "cards": [637, 481, 327, 182],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 479,
+    "name": "The Endless Battle for Peace Gacha ",
+    "start": 1772308800000,
+    "end": 1773169140000,
+    "cards": [641, 642, 643],
+    "banner_type": "Limited Event",
+    "type": "estimation"
+  },
+  {
+    "id": 480,
+    "name": "Let's Play With Cats Gacha",
+    "start": 1773169200000,
+    "end": 1774033140000,
+    "cards": [645, 646, 647],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 481,
+    "name": "Obscurity Parade Gacha",
+    "start": 1774033200000,
+    "end": 1774897140000,
+    "cards": [649, 650, 651],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 482,
+    "name": "JP 4.5 Year Anniversary Bloom Festival Gacha",
+    "start": 1774897200000,
+    "end": 1775329140000,
+    "cards": [652, 653, 654, 655, 656],
+    "banner_type": "Bloom Festival",
+    "type": "estimation"
+  },
+  {
+    "id": 483,
+    "name": "Kohane Azusawa Happy Birthday 2026 Gacha",
+    "start": 1772438400000,
+    "end": 1773043140000,
+    "cards": [644, 488, 334, 189],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 484,
+    "name": "Airi Momoi Happy Birthday 2026 Gacha",
+    "start": 1773903600000,
+    "end": 1774508340000,
+    "cards": [648, 493, 338, 193],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 485,
+    "name": "Living With Music Gacha",
+    "start": 1775329200000,
+    "end": 1775674740000,
+    "cards": [654, 655, 656],
+    "banner_type": "Limited Event",
+    "type": "estimation"
+  },
+  {
+    "id": 486,
+    "name": "Glance At The Same World Gacha",
+    "start": 1775674800000,
+    "end": 1776884340000,
+    "cards": [657, 658, 659, 660],
+    "banner_type": "Unit Limited Event",
+    "type": "estimation"
+  },
+  {
+    "id": 487,
+    "name": "Blooming Light Gacha",
+    "start": 1776884400000,
+    "end": 1777575540000,
+    "cards": [662, 663, 664],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 488,
+    "name": "Minori Hanasato Happy Birthday 2026 Gacha",
+    "start": 1776150000000,
+    "end": 1776754740000,
+    "cards": [661, 506, 354, 207],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 489,
+    "name": "Ena Shinonome Happy Birthday 2026 Gacha",
+    "start": 1777532400000,
+    "end": 1778137140000,
+    "cards": [665, 510, 358, 211],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 490,
+    "name": "Papilio Vinculatus Gacha",
+    "start": 1777575600000,
+    "end": 1778353140000,
+    "cards": [666, 667, 668],
+    "banner_type": "Limited Event",
+    "type": "estimation"
+  },
+  {
+    "id": 491,
+    "name": "Dream A Wonder Dream Gacha",
+    "start": 1778353200000,
+    "end": 1779562740000,
+    "cards": [671, 672, 673, 674],
+    "banner_type": "Unit Limited Event",
+    "type": "estimation"
+  },
+  {
+    "id": 492,
+    "name": "Starry-eyed Princess Gacha",
+    "start": 1779562800000,
+    "end": 1780253940000,
+    "cards": [676, 677, 678],
+    "banner_type": "Event",
+    "type": "estimation"
+  },
+  {
+    "id": 493,
+    "name": "Saki Tenma Happy Birthday 2026 Gacha",
+    "start": 1778310000000,
+    "end": 1778914740000,
+    "cards": [670, 514, 362, 215],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 494,
+    "name": "Tsukasa Tenma Happy Birthday 2026 Gacha",
+    "start": 1779001200000,
+    "end": 1779605940000,
+    "cards": [675, 519, 366, 219],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 495,
+    "name": "Toya Aoyagi Happy Birthday 2026 Gacha",
+    "start": 1779692400000,
+    "end": 1780297140000,
+    "cards": [679, 523, 370, 223],
+    "banner_type": "Birthday"
+  },
+  {
+    "id": 496,
+    "name": "Dawn's Radiance Gacha",
+    "start": 1780254000000,
+    "end": 1781031540000,
+    "cards": [680, 681, 682],
+    "banner_type": "Limited Event",
+    "type": "estimation"
+  },
+  {
+    "id": 497,
+    "name": "Night's Treasure Gacha",
+    "start": 1781031600000,
+    "end": 1782241140000,
+    "cards": [683, 684, 685, 686],
+    "banner_type": "Unit Limited Event",
+    "type": "estimation"
+  },
+  {
+    "id": 498,
+    "name": "Another Sparkle Stars Gacha",
+    "start": 1782241200000,
+    "end": 1783450740000,
+    "cards": [1078, 1079, 1080, 1081],
+    "banner_type": "Unit Limited Event",
+    "type": "estimation"
+  },
+  {
+    "id": 499,
+    "name": "Rui Kamishiro Happy Birthday 2026 Gacha",
+    "start": 1782284400000,
+    "end": 1782889140000,
+    "cards": [1082, 233, 379, 540],
+    "banner_type": "Birthday"
   }
 ]
