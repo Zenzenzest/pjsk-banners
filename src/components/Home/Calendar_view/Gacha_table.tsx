@@ -8,7 +8,6 @@ import CardModal from "../Card_modal";
 import { useServer } from "../../../context/Server";
 import EventEndedTimer from "../EventEnded_timer";
 
-
 export default function GachaTable({
   filteredBanners,
   selectedYear,
@@ -90,19 +89,15 @@ export default function GachaTable({
   const handleImageError = (
     e: React.SyntheticEvent<HTMLImageElement, Event>
   ) => {
-    const target = e.target as HTMLImageElement;
+    const target = e.currentTarget; // Use currentTarget instead of target
+    target.onerror = null; // Prevent infinite loop
 
-    target.onerror = null;
-
-    const en_id = Number(e.target.alt);
+    const en_id = Number(target.alt); // Now properly typed
     const jp_variant = JpBanners.find((item) => item.en_id == en_id);
-    if (jp_variant) {
-      const jp_id = formatId(jp_variant["id"]);
 
-      target.src = `/images/jp_banners/${jp_id}.webp`;
-    } else {
-      target.src = `/images/banners/placeholder.jpg`;
-    }
+    target.src = jp_variant
+      ? `/images/jp_banners/${formatId(jp_variant.id)}.webp`
+      : "/images/banners/placeholder.jpg";
   };
 
   return (
