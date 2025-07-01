@@ -1763,7 +1763,14 @@
     "close": 1732316399000,
     "cards": [434, 435, 436, 437, 905],
     "type": "world_link",
-    "keywords": ["n25", "nightcord", "niigo", "wl1", "world link" ,"world link 1"]
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "wl1",
+      "world link",
+      "world link 1"
+    ]
   },
   {
     "id": 113,
@@ -2125,6 +2132,26 @@
       "mafuyu",
       "mafu5",
       "mafuyu5"
+    ]
+  },
+  {
+    "id": 135,
+    "name": "OVER RAD SQUAD!!",
+    "unit": "n25",
+    "start": 1748728800000,
+    "end": 1749355199000,
+    "close": 1749506399000,
+    "cards": [533, 534, 535, 948, 949],
+    "type": "marathon",
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "kohane",
+      "kohane5",
+      "koha5",
+      "focus"
     ]
   }
 ]

@@ -11568,7 +11568,8 @@
     "real_id": 927,
     "released": 1751310000000,
     "sekai_id": 949
-  },  {
+  },
+  {
     "id": 537,
     "name": "Feeling What My Selves Feel",
     "character": "MEIKO",
@@ -11579,8 +11580,8 @@
     "real_id": 928,
     "released": 1751310000000,
     "sekai_id": 950
-
-  },  {
+  },
+  {
     "id": 533,
     "name": "A Heart-Pounding World",
     "character": "Azusawa Kohane",
@@ -11591,7 +11592,8 @@
     "real_id": 929,
     "released": 1751310000000,
     "sekai_id": 951
-  },  {
+  },
+  {
     "id": 534,
     "name": "Huddle of Resolve",
     "character": "Shinonome Akito",
@@ -11602,7 +11604,8 @@
     "real_id": 930,
     "released": 1751310000000,
     "sekai_id": 952
-  },  {
+  },
+  {
     "id": 535,
     "name": "Beyond That Door",
     "character": "Hatsune Miku",
@@ -11614,5 +11617,29 @@
     "real_id": 931,
     "released": 1751310000000,
     "sekai_id": 953
+  },
+  {
+    "id": 948,
+    "name": "What I Want to Tell You",
+    "character": "Shiraishi An",
+    "rarity": 3,
+    "unit": "Vivid BAD SQUAD",
+    "attribute": "Happy",
+    "card_type": "event",
+    "real_id": 932,
+    "released": 1751310000000,
+    "sekai_id": 954
+  },
+  {
+    "id": 949,
+    "name": "Just a Little Bit More of This Atmosphere",
+    "character": "Aoyagi Toya",
+    "rarity": 2,
+    "unit": "Vivid BAD SQUAD",
+    "attribute": "Happy",
+    "card_type": "event",
+    "real_id": 933,
+    "released": 1751310000000,
+    "sekai_id": 955
   }
 ]

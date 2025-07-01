@@ -30,7 +30,7 @@ export default function FilteredCards({
   const { server } = useServer();
   // const formatCardName = (id: number) => String(id).padStart(4, "0");
   const today = Date.now();
-  console.log(today);
+
   const handleCardClick = (card: CardsTypes) => {
     const [lName, fName] = card.character.split(" ");
     setCardState({

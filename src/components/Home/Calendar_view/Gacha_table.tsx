@@ -1,13 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import JpBanners from "../../../assets/json/jp_banners.json";
+import EnEvents from "../../../assets/json/en_events.json";
+import JpEvents from "../../../assets/json/jp_events.json";
+import EnCards from "../../../assets/json/en_cards.json";
 import Cards from "../../../assets/json/cards.json";
 import { useTheme } from "../../../context/Theme_toggle";
-import type {
-  CardState,
-
-  GachaBannersProps,
-  AllCardTypes,
-} from "../types";
+import type { CardState, GachaBannersProps, AllCardTypes } from "../types";
 import CountdownTimer from "../Countdown_timer";
 import CardModal from "../Card_modal";
 import { useServer } from "../../../context/Server";
@@ -141,6 +139,13 @@ export default function GachaTable({
               ? `/images/banners/${formattedGachaId}.webp`
               : `/images/jp_banners/${formattedGachaId}.webp`;
 
+          // Get shop cards for this specific banner
+          const bannerShopCards = banner.event_id
+            ? EnEvents.find((item) => item.id == banner.event_id)?.cards.filter(
+                (eventCard) => !banner.cards.includes(eventCard)
+              ) || []
+            : [];
+
           return (
             <div
               className="flex flex-row p-5 border-t border-gray-400"
@@ -206,31 +211,67 @@ export default function GachaTable({
                     <CountdownTimer targetDate={startDate} mode="start" />
                   </div>
                 )}
+                <div>
+                  <div className="flex flex-row items-center justify-evenly flex-wrap ">
+                    {banner["cards"].map((card, i) => {
+                      const formattedCardId = formatId(card);
+                      const cardIconImage = `/images/card_icons/${formattedCardId}_t.webp`;
 
-                <div className="flex flex-row items-center justify-evenly flex-wrap ">
-                  {banner["cards"].map((card, i) => {
-               
-                    const formattedCardId = formatId(card);
-                    const cardIconImage = `/images/card_icons/${formattedCardId}_t.webp`;
+                      return (
+                        <div
+                          key={i}
+                          className="flex flex-col justify-center items-center text-xs cursor-pointer hover:opacity-80 transition-opacity"
+                        >
+                          <img
+                            src={cardIconImage}
+                            onClick={() => handleCardClick(Cards[card - 1])}
+                            style={{
+                              width: "60px",
+                              height: "auto",
+                              margin: "0.3rem",
+                            }}
+                          />
+                          {card}
+                        </div>
+                      );
+                    })}
+                  </div>
+                  {/* Shop Cards for this banner */}
+                  {bannerShopCards.length > 0 && (
+                    <div className="flex flex-row items-center justify-evenly flex-wrap mt-2 bg-blue-50/80 dark:bg-blue-900/20 border-1 border-blue-400 rounded-lg shadow-sm mb-2">
+                      {bannerShopCards.map((shopCard, i) => {
+                        const EnEventCard = EnCards.find(
+                          (item) => shopCard == item.id
+                        );
 
-                    return (
-                      <div
-                        key={i}
-                        className="flex flex-col justify-center items-center text-xs cursor-pointer hover:opacity-80 transition-opacity"
-                      >
-                        <img
-                          src={cardIconImage}
-                          onClick={() => handleCardClick(Cards[card - 1])}
-                          style={{
-                            width: "60px",
-                            height: "auto",
-                            margin: "0.3rem",
-                          }}
-                        />
-                        {card}
-                      </div>
-                    );
-                  })}
+                        const formattedCardId = formatId(shopCard);
+                        const cardIconImage =
+                          EnEventCard && EnEventCard.rarity == 3
+                            ? `/images/card_icons/${formattedCardId}_t.webp`
+                            : `/images/card_icons/${formattedCardId}.webp`;
+
+                        return (
+                          <div
+                            key={`shop-${i}`}
+                            className="flex flex-col justify-center items-center text-xs cursor-pointer hover:opacity-80 transition-opacity"
+                          >
+                            <img
+                              src={cardIconImage}
+                              onClick={() =>
+                                handleCardClick(Cards[shopCard - 1])
+                              }
+                              style={{
+                                width: "60px",
+                                height: "auto",
+                                margin: "0.3rem",
+                              }}
+                            />
+                            {shopCard}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
                 {/*  */}
                 {today > Number(banner.end) && (
@@ -252,7 +293,7 @@ export default function GachaTable({
         })}
       </div>
 
-      {/* Scroll to Top Button */}
+      {/* SCROLL BUTTON TO TOP */}
       {showScrollButton && (
         <button
           onClick={scrollToTop}

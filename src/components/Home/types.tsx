@@ -7,6 +7,7 @@ export interface BannerTypes {
   banner_type?: string;
   type?: string;
   confirmation?: string;
+  event_id?: number;
 }
 export interface GachaBannersProps {
   filteredBanners: BannerTypes[];
@@ -24,6 +25,18 @@ export type SelectedFilterTypes = {
 export type SelectedFilterTypesProps = {
   selectedFilters: SelectedFilterTypes;
 };
+
+export interface EnEventTypes {
+  id: number;
+  name: string;
+  unit: string;
+  start: number;
+  end: number;
+  close?: number;
+  cards: number[];
+  type: string;
+  keywords: string[];
+}
 
 export interface AllCardTypes {
   id: number;
