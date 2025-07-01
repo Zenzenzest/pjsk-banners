@@ -2,7 +2,12 @@ import { useState, useEffect, useRef } from "react";
 import JpBanners from "../../../assets/json/jp_banners.json";
 import Cards from "../../../assets/json/cards.json";
 import { useTheme } from "../../../context/Theme_toggle";
-import type { CardState, CardsTypes, GachaBannersProps } from "../types";
+import type {
+  CardState,
+
+  GachaBannersProps,
+  AllCardTypes,
+} from "../types";
 import CountdownTimer from "../Countdown_timer";
 import CardModal from "../Card_modal";
 import { useServer } from "../../../context/Server";
@@ -66,7 +71,7 @@ export default function GachaTable({
     }
   };
 
-  const handleCardClick = (card: CardsTypes) => {
+  const handleCardClick = (card: AllCardTypes) => {
     const [lName, fName] = card.character.split(" ");
     setCardState({
       cardId: card.id,
@@ -204,6 +209,7 @@ export default function GachaTable({
 
                 <div className="flex flex-row items-center justify-evenly flex-wrap ">
                   {banner["cards"].map((card, i) => {
+               
                     const formattedCardId = formatId(card);
                     const cardIconImage = `/images/card_icons/${formattedCardId}_t.webp`;
 

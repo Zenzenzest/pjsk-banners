@@ -12,7 +12,7 @@ export interface GachaBannersProps {
   filteredBanners: BannerTypes[];
   selectedYear: number;
   selectedMonth: number;
-  parentRef: React.RefObject<HTMLDivElement>;
+  parentRef: React.RefObject<HTMLDivElement | null>;
 }
 
 export type SelectedFilterTypes = {
@@ -24,6 +24,23 @@ export type SelectedFilterTypes = {
 export type SelectedFilterTypesProps = {
   selectedFilters: SelectedFilterTypes;
 };
+
+export interface AllCardTypes {
+  id: number;
+  name: string;
+  character: string;
+  rarity: number;
+  card_type: string;
+  attribute: string;
+  unit: string;
+  sub_unit?: string;
+  real_id: number;
+  en_sekai_id?: number;
+  en_released?: number;
+  jp_sekai_id: number;
+  jp_released: number;
+  jp_name: string;
+}
 
 export interface CardsTypes {
   id: number;
@@ -67,3 +84,7 @@ export type EventEndedProps = {
   endDate: Date;
   compact?: boolean;
 };
+
+export interface ServerTimeData {
+  [year: number]: number[];
+}

@@ -4,7 +4,7 @@ import JpBbanners from "../../../assets/json/jp_banners.json";
 import { useTheme } from "../../../context/Theme_toggle";
 
 import GachaTable from "./Gacha_table";
-import type { BannerTypes } from "../types";
+import type { BannerTypes, ServerTimeData } from "../types";
 import { useServer } from "../../../context/Server";
 
 const months = [
@@ -28,7 +28,7 @@ export default function DateTabs() {
   const dateTabsRef = useRef<HTMLDivElement>(null);
 
   const years_global = [2021, 2022, 2023, 2024, 2025, 2026];
-  const timeData_global = [
+  const timeData_global:ServerTimeData[] = [
     { 2021: [11, 12] },
     { 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
     { 2023: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
@@ -38,7 +38,7 @@ export default function DateTabs() {
   ];
 
   const years_jp = [2020, 2021, 2022, 2023, 2024, 2025];
-  const timeData_jp = [
+  const timeData_jp:ServerTimeData[] = [
     { 2020: [9, 10, 11, 12] },
     { 2021: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
     { 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
@@ -73,9 +73,10 @@ export default function DateTabs() {
   };
 
   const getInitialMonth = (
+   
     year: number,
     serverYears: number[],
-    serverTimeData: any[]
+    serverTimeData: ServerTimeData[]
   ) => {
     const yearIndex = serverYears.indexOf(year);
     const availableMonths = serverTimeData[yearIndex][year];
