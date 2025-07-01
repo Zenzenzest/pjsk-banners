@@ -9,7 +9,10 @@ export interface BannerTypes {
   confirmation?: string;
 }
 export interface GachaBannersProps {
-  filteredBanners: BannerTypes[] | undefined;
+  filteredBanners: BannerTypes[];
+  selectedYear: number;
+  selectedMonth: number;
+  parentRef: React.RefObject<HTMLDivElement>;
 }
 
 export type SelectedFilterTypes = {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import GlobalBanners from "../../../assets/json/en_banners.json";
 import JpBbanners from "../../../assets/json/jp_banners.json";
 import { useTheme } from "../../../context/Theme_toggle";
@@ -25,6 +25,7 @@ const months = [
 export default function DateTabs() {
   const { theme } = useTheme();
   const { server } = useServer();
+  const dateTabsRef = useRef<HTMLDivElement>(null);
 
   const years_global = [2021, 2022, 2023, 2024, 2025, 2026];
   const timeData_global = [
@@ -171,6 +172,7 @@ export default function DateTabs() {
 
   return (
     <div
+      ref={dateTabsRef}
       className={`w-full flex flex-col gap-3 pb-15 ${
         theme == "light"
           ? "bg-bg-light-mode2 text-text-light-mode"
@@ -228,7 +230,12 @@ export default function DateTabs() {
       </div>
 
       {/* GACHA BANNERS */}
-      <GachaTable filteredBanners={filteredBanners} selectedYear={selectedYear} selectedMonth={selectedMonth}/>
+      <GachaTable 
+        filteredBanners={filteredBanners} 
+        selectedYear={selectedYear} 
+        selectedMonth={selectedMonth}
+        parentRef={dateTabsRef}
+      />
     </div>
   );
 }
