@@ -10,7 +10,7 @@ import CountdownTimer from "../Countdown_timer";
 import CardModal from "../Card_modal";
 import { useServer } from "../../../context/Server";
 import EventEndedTimer from "../EventEnded_timer";
-import "./Gacha_table.css";
+
 export default function GachaTable({
   filteredBanners,
   selectedYear,
@@ -145,7 +145,7 @@ export default function GachaTable({
                 (eventCard) => !banner.cards.includes(eventCard)
               ) || []
             : [];
-
+   
           return (
             <div
               className="flex flex-row p-5 border-t border-gray-400"
@@ -240,11 +240,11 @@ export default function GachaTable({
                   {bannerShopCards.length > 0 && (
                     <div className="shop-cards flex flex-row items-center justify-evenly flex-wrap mt-2 bg-blue-50/80 dark:bg-blue-900/20 border-1 border-blue-400 rounded-lg shadow-sm mb-2 relative">
                       <div
-                        className={`absolute -top-3 left-1/2 transform -translate-x-1/2  px-1 text-blue-500 font-bold text-center w-4/5 rounded-lg ${
+                        className={` dark:bg-blue-200 border-1 border-blue-400 absolute -top-3 left-1/2 transform -translate-x-1/2  px-1 text-blue-500 font-bold text-center w-4/5 rounded-lg ${
                           theme == "dark" ? "bg-[#0e1721]" : "bg-[#f2f2f2]"
                         }`}
                       >
-                        SHOP CARDS
+                        EVENT SHOP
                       </div>
                       {bannerShopCards.map((shopCard, i) => {
                         const EnEventCard = EnCards.find(
@@ -252,6 +252,7 @@ export default function GachaTable({
                         );
 
                         const formattedCardId = formatId(shopCard);
+
                         const cardIconImage =
                           EnEventCard && EnEventCard.rarity == 3
                             ? `/images/card_icons/${formattedCardId}_t.webp`
