@@ -5136,7 +5136,6 @@
     "attribute": "Happy",
     "unit": "MORE MORE JUMP!",
     "real_id": 745,
-    "prefix": "Happy Birthday! 2024",
     "sekai_id": 767,
     "released": 1696431600000
   },
@@ -11798,7 +11797,7 @@
     "sub_unit": "Leo/Need",
     "card_type": "event",
     "real_id": 1003,
-    "sekai_id": 25,
+    "sekai_id": 1025,
     "released": 1730354400000
   },
   {

@@ -3581,8 +3581,8 @@
     "cards": [541, 542, 543],
     "start": 1752087600000,
     "end": 1752778740000,
-    "banner_type": "Event"
-
+    "banner_type": "Event",
+    "event_id": 136
   },
   {
     "id": 431,
@@ -3590,8 +3590,8 @@
     "cards": [544, 545, 546, 547],
     "start": 1752778800000,
     "end": 1753988340000,
-    "banner_type": "Unit Limited Event"
-
+    "banner_type": "Unit Limited Event",
+    "event_id": 137
   },
   {
     "id": 432,
@@ -3657,8 +3657,8 @@
     "start": 1753988400000,
     "end": 1754765940000,
     "type": "estimation",
-    "banner_type": "Limited Event"
-
+    "banner_type": "Limited Event",
+    "event_id": 138
   },
   {
     "id": 440,
@@ -3667,8 +3667,8 @@
     "start": 1754766000000,
     "end": 1755457140000,
     "type": "estimation",
-    "banner_type": "Event"
- 
+    "banner_type": "Event",
+    "event_id": 139
   },
   {
     "id": 441,
@@ -3677,8 +3677,8 @@
     "start": 1755457200000,
     "end": 1756666740000,
     "type": "estimation",
-    "banner_type": "Unit Limited Event"
-
+    "banner_type": "Unit Limited Event",
+    "event_id": 140
   },
   {
     "id": 442,
@@ -3707,29 +3707,29 @@
   {
     "id": 445,
     "name": "A Very Ghostly Vacation! Gacha ",
-    "start": 1756710000000,
-    "end": 1757573940000,
+    "start": 1756666800000,
+    "end": 1757530799000,
     "cards": [565, 566, 567],
     "type": "estimation",
-    "banner_type": "Limited Event"
+    "banner_type": "Limited Event","event_id":141
   },
   {
     "id": 446,
     "name": "SUPREME SPORTY Gacha",
-    "start": 1757574000000,
-    "end": 1758437940000,
+    "start": 1757530800000,
+    "end": 1758394799000,
     "cards": [569, 570, 571],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":142
   },
   {
     "id": 447,
     "name": "Me and my divaガチャ",
-    "start": 1758438000000,
-    "end": 1759301940000,
+    "start": 1758394800000,
+    "end": 1759258799000,
     "cards": [572, 573, 574],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":143
   },
   {
     "id": 448,
@@ -3746,7 +3746,7 @@
     "end": 1759604340000,
     "cards": [575, 576, 577, 578, 579, 580],
     "banner_type": "Bloom Festival",
-    "type": "estimation"
+    "type": "estimation","event_id":144
   },
   {
     "id": 450,
@@ -3765,7 +3765,7 @@
     "end": 1760295540000,
     "cards": [577, 578, 579, 580],
     "banner_type": "Limited Event",
-    "type": "estimation"
+    "type": "estimation","event_id":144
   },
   {
     "id": 452,
@@ -3774,7 +3774,7 @@
     "end": 1761073140000,
     "cards": [582, 583, 584],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":145
   },
   {
     "id": 453,
@@ -3783,7 +3783,7 @@
     "end": 1761937140000,
     "cards": [585, 586, 587],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":146
   },
   {
     "id": 454,
@@ -3808,7 +3808,7 @@
     "end": 1762804740000,
     "cards": [589, 590, 591],
     "banner_type": "Limited Event",
-    "type": "estimation"
+    "type": "estimation","event_id":147
   },
   {
     "id": 457,

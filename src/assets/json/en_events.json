@@ -2137,7 +2137,7 @@
   {
     "id": 135,
     "name": "OVER RAD SQUAD!!",
-    "unit": "n25",
+    "unit": "vbs",
     "start": 1748728800000,
     "end": 1749355199000,
     "close": 1749506399000,
@@ -2153,5 +2153,194 @@
       "koha5",
       "focus"
     ]
+  },
+  {
+    "id": 136,
+    "name": "Halt! Tenma's On The Case!",
+    "unit": "wxs",
+    "cards": [541, 542, 543, 950, 951],
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "tsukasa",
+      "loud",
+      "obnoxious",
+      "kasa5",
+      "tsukasa5",
+      "focus"
+    ],
+    "type": "marathon",
+    "start": 1752098400000,
+    "end": 1752638399000,
+    "close": 1752789599000
+  },
+  {
+    "id": 137,
+    "name": "Our Starry Sky, Leading To The Future",
+    "unit": "l/n",
+    "cards": [544, 545, 546, 547, 952],
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "world link",
+      "wl1",
+      "world link 1"
+    ],
+    "type": "world_link",
+    "start": 1752789600000,
+    "end": 1753847999000,
+    "close": 1753999199000
+  },
+  {
+    "id": 138,
+    "name": "Chase my IDEAL IDOL！",
+    "unit": "mmj",
+    "cards": [550, 551, 552, 953, 954],
+    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi5", "focus"],
+    "type": "marathon",
+    "start": 1753999200000,
+    "end": 1753999200000,
+    "close": 1754776799000
+  },
+  {
+    "id": 139,
+    "name": "Let It Ring! Beautiful Sound!",
+    "unit": "mixed",
+
+    "cards": [553, 554, 555, 955, 956],
+    "keywords": ["toyakana", "kanatoya"],
+    "type": "marathon",
+    "start": 1754776800000,
+    "end": 1755316799000,
+    "close": 1755467999000
+  },
+  {
+    "id": 140,
+    "name": "With You, at the SEKAI's Beginning",
+    "unit": "vs",
+    "cards": [557, 558, 559, 560, 561, 562],
+    "keywords": ["wl1", "world link 1", "world link"],
+    "type": "world_link",
+    "start": 1755468000000,
+    "end": 1756439999000,
+    "close": 1756677599000
+  },
+  {
+    "id": 141,
+    "name": "Wonderhorror~!? Test of Courage!",
+    "unit": "mixed",
+    "cards": [565, 566, 567, 957, 958],
+    "keywords": ["miyama", "miyajou"],
+    "type": "marathon",
+    "start": 1756677600000,
+    "end": 1757390399000,
+    "close": 1757541599000
+  },
+  {
+    "id": 142,
+    "name": "Work Out and FLY! Muscle Training!",
+    "unit": "mixed",
+    "cards": [569, 570, 571, 959, 960],
+    "keywords": ["sports", "athletic event"],
+    "type": "marathon",
+    "start": 1757541600000,
+    "end": 1758254399000,
+    "close": 1758405599000
+  },
+  {
+    "id": 143,
+    "name": "This moment with you",
+    "unit": "l/n",
+    "cards": [572, 573, 574, 961, 962],
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "ichika",
+      "ichi5",
+      "ichika5"
+    ],
+    "type": "marathon",
+    "start": 1758405600000,
+    "end": 1759204799000,
+    "close": 1759269599000
+  },
+  {
+    "id": 144,
+    "name": "Carry These Feelings! Dream Stage",
+    "unit": "mixed",
+    "cards": [577, 578, 579, 580, 963],
+    "keywords": ["shibuya festival", "festival"],
+    "type": "marathon",
+    "start": 1759269600000,
+    "end": 1760155199000,
+    "close": 1760306399000
+  },
+  {
+    "id": 145,
+    "name": "Where Does The Path Of Thorns Go?",
+    "unit": "n25",
+    "cards": [582, 583, 584, 964, 965],
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "mizuki",
+      "mizuki5",
+      "mizu5",
+      "ominous bell"
+    ],
+    "type": "marathon",
+    "start": 1760306400000,
+    "end": 1760932799000,
+    "close": 1761083999000
+  },
+  {
+    "id": 146,
+    "name": "Rekindle The Flame",
+    "unit": "vbs",
+    "cards": [585, 586, 587, 966, 967],
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "akito",
+      "aki5",
+      "akito5",
+      "focus"
+    ],
+    "type": "marathon",
+    "start": 1761084000000,
+    "end": 1761796799000,
+    "close": 1761947999000
+  },
+  {
+    "id": 147,
+    "name": "Happy Enjoy Music！",
+    "unit": "l/n",
+
+    "cards": [589, 590, 591, 968, 969],
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "saki",
+      "saki6"
+    ],
+    "type": "marathon",
+    "start": 1761948000000,
+    "end": 1762660799000,
+    "close": 1761947999000
   }
 ]
