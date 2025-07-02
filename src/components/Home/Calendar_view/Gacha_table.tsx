@@ -10,7 +10,7 @@ import CountdownTimer from "../Countdown_timer";
 import CardModal from "../Card_modal";
 import { useServer } from "../../../context/Server";
 import EventEndedTimer from "../EventEnded_timer";
-
+import "./Gacha_table.css";
 export default function GachaTable({
   filteredBanners,
   selectedYear,
@@ -236,9 +236,16 @@ export default function GachaTable({
                       );
                     })}
                   </div>
-                  {/* Shop Cards for this banner */}
+                  {/* SHOP CARDS */}
                   {bannerShopCards.length > 0 && (
-                    <div className="flex flex-row items-center justify-evenly flex-wrap mt-2 bg-blue-50/80 dark:bg-blue-900/20 border-1 border-blue-400 rounded-lg shadow-sm mb-2">
+                    <div className="shop-cards flex flex-row items-center justify-evenly flex-wrap mt-2 bg-blue-50/80 dark:bg-blue-900/20 border-1 border-blue-400 rounded-lg shadow-sm mb-2 relative">
+                      <div
+                        className={`absolute -top-3 left-1/2 transform -translate-x-1/2  px-1 text-blue-500 font-bold text-center w-4/5 rounded-lg ${
+                          theme == "dark" ? "bg-[#0e1721]" : "bg-[#f2f2f2]"
+                        }`}
+                      >
+                        SHOP CARDS
+                      </div>
                       {bannerShopCards.map((shopCard, i) => {
                         const EnEventCard = EnCards.find(
                           (item) => shopCard == item.id
@@ -253,7 +260,7 @@ export default function GachaTable({
                         return (
                           <div
                             key={`shop-${i}`}
-                            className="flex flex-col justify-center items-center text-xs cursor-pointer hover:opacity-80 transition-opacity"
+                            className="flex flex-col pt-5 justify-center items-center text-xs cursor-pointer hover:opacity-80 transition-opacity"
                           >
                             <img
                               src={cardIconImage}
