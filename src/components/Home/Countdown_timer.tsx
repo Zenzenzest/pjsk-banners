@@ -4,8 +4,8 @@ import "./Countdown.css";
 
 export default function CountdownTimer({
   targetDate,
-  mode = "start",
-  compact = false,
+  mode,
+  compact,
   onComplete,
 }: CountdownProps) {
   const [remainingTime, setRemainingTime] = useState<number>(

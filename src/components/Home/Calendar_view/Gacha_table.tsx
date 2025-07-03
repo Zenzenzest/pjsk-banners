@@ -45,7 +45,7 @@ export default function GachaTable({
       const documentHeight = document.documentElement.scrollHeight;
 
       // Show button when scrolled near the bottom of the page
-      const isNearBottom = scrollTop + windowHeight >= documentHeight - 200;
+      const isNearBottom = scrollTop + windowHeight >= documentHeight - 1000;
       setShowScrollButton(isNearBottom);
     };
 
@@ -95,7 +95,7 @@ export default function GachaTable({
     const target = e.currentTarget;
     target.onerror = null; // Prevent infinite loop
 
-    const en_id = Number(target.alt); 
+    const en_id = Number(target.alt);
     const jp_variant = JpBanners.find((item) => item.en_id == en_id);
 
     target.src = jp_variant
@@ -114,9 +114,24 @@ export default function GachaTable({
         {/* DISCLAIMER */}
         {((selectedMonth >= 8 && selectedYear === 2025) ||
           selectedYear >= 2026) && (
-          <div className="text-sm italic text-gray-500 dark:text-gray-400 mb-3 px-4 py-2 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            Note: Dates from August 2025 onward are estimates based on the JP
-            server and will be updated upon official announcements.
+          <div
+            className={`text-sm italic mb-3 px-4 py-2 mx-3 rounded-lg ${
+              theme === "dark"
+                ? "text-gray-400 bg-gray-800"
+                : "text-gray-700 bg-gray-200"
+            }`}
+          >
+            Note: Global server typically follows JP server with:
+            <ul className="list-disc pl-5 mt-1 space-y-1">
+              <li>
+                <strong>Event banners:</strong> Exactly 1 year gap
+              </li>
+              <li>
+                <strong>Rerun banners:</strong> Approximately 350-380 day gap (1
+                year & ±15 days)
+              </li>
+            </ul>
+            Dates will be adjusted when officially announced.
           </div>
         )}
         {filteredBanners.map((banner) => {
@@ -145,7 +160,7 @@ export default function GachaTable({
                 (eventCard) => !banner.cards.includes(eventCard)
               ) || []
             : [];
-   
+
           return (
             <div
               className="flex flex-row p-5 border-t border-gray-400"
@@ -185,30 +200,42 @@ export default function GachaTable({
                     theme == "light" ? "text-gray-600" : "text-gray-300"
                   }`}
                 >
-                  {banner.start && banner.type != "confirmed" && (
-                    <div className="flex items-center">
-                      <span className="hidden sm:inline mr-1">Start:</span>
-                      <span className="bg-white/10 px-2 py-1 rounded-md">
-                        {formattedStart}
-                      </span>
-                    </div>
-                  )}
-                  {banner.end && banner.type != "confirmed" && (
-                    <div className="flex items-center">
-                      <span className="hidden sm:inline mr-1">End:</span>
-                      <span className="bg-white/10 px-2 py-1 rounded-md">
-                        {formattedEnd}
-                      </span>
-                    </div>
-                  )}
+                  {banner.type != "confirmed" &&
+                    banner.type != "rerun_estimation" && (
+                      <div className="flex items-center">
+                        <span className="hidden sm:inline mr-1">Start:</span>
+                        <span className="bg-white/10 px-2 py-1 rounded-md">
+                          {formattedStart}
+                        </span>
+                      </div>
+                    )}
+                  {banner.type != "confirmed" &&
+                    banner.type != "rerun_estimation" && (
+                      <div className="flex items-center">
+                        <span className="hidden sm:inline mr-1">End:</span>
+                        <span className="bg-white/10 px-2 py-1 rounded-md">
+                          {formattedEnd}
+                        </span>
+                      </div>
+                    )}
                 </div>
               </div>
               {/* CARDS */}
               <div className="w-1/2  flex flex-col items-center justify-center">
                 {/* START DATE IF UPCOMING BANNER */}
-                {today < Number(banner.start) && banner.type != "confirmed" && (
-                  <div className="flex flex-col justify-center items-center">
-                    <CountdownTimer targetDate={startDate} mode="start" />
+                {today < Number(banner.start) &&
+                  banner.type != "confirmed" &&
+                  banner.type != "rerun_estimation" && (
+                    <div className="flex flex-col justify-center items-center">
+                      <CountdownTimer targetDate={startDate} mode="start" />
+                    </div>
+                  )}
+                {banner.type == "rerun_estimation" && banner.rerun && (
+                  <div className="flex flex-row">
+                    <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg px-2 py-1 sm:px-3 sm:py-1.5 font-bold">
+                      {Math.floor((banner.rerun[0] - today) / 86400000)} -{" "}
+                      {Math.floor((banner.rerun[1] - today) / 86400000)} Days
+                    </div>
                   </div>
                 )}
                 <div>
@@ -231,7 +258,7 @@ export default function GachaTable({
                               margin: "0.3rem",
                             }}
                           />
-                          {card}
+                          {/* {card} */}
                         </div>
                       );
                     })}
@@ -274,7 +301,7 @@ export default function GachaTable({
                                 margin: "0.3rem",
                               }}
                             />
-                            {shopCard}
+                            {/* {shopCard} */}
                           </div>
                         );
                       })}

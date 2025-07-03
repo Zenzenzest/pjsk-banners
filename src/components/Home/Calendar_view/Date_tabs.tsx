@@ -134,32 +134,31 @@ export default function DateTabs() {
 
 
 
- const filteredBanners: BannerTypes[] = dataBanners
+const filteredBanners: BannerTypes[] = dataBanners
   .filter((banner) => {
     const startDate = new Date(Number(banner.start));
     const endDate = new Date(Number(banner.end));
     const now = Date.now();
     
- 
     const selectedDate = new Date(selectedYear, selectedMonth - 1, 1);
-    const nextMonth = new Date(selectedYear, selectedMonth, 1); // 
+    const nextMonth = new Date(selectedYear, selectedMonth, 1);
     
-    // Check if banner starts in selected month
     const bannerStartsInMonth = startDate >= selectedDate && startDate < nextMonth;
-    
-    // Check if banner is ongoing in the selected month 
     const bannerIsOngoingInMonth = startDate < selectedDate && endDate >= selectedDate;
-    
-    // Check if banner is currently live
     const bannerIsLive = Number(banner.start) <= now && now <= Number(banner.end);
     
-    // Show banner if:
-    // 1. Banner starts in the selected month OR
-    // 2. Banner is ongoing in the selected month AND is currently live
     return bannerStartsInMonth || (bannerIsOngoingInMonth && bannerIsLive);
   })
-  .sort((a, b) => Number(a.start) - Number(b.start)) // sort by date
   .sort((a, b) => {
+    // First sort by rerun status (non-reruns first)
+    const rerunComparison = Number('rerun' in a) - Number('rerun' in b);
+    if (rerunComparison !== 0) return rerunComparison;
+    
+    // Then sort by date
+    const dateComparison = Number(a.start) - Number(b.start);
+    if (dateComparison !== 0) return dateComparison;
+    
+    // Finally sort by status
     const statusOrder = { live: 1, upcoming: 2, past: 3 };
     return statusOrder[getBannerStatus(a)] - statusOrder[getBannerStatus(b)];
   });
