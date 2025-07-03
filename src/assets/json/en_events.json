@@ -2138,9 +2138,9 @@
     "id": 135,
     "name": "OVER RAD SQUAD!!",
     "unit": "vbs",
-    "start": 1748728800000,
-    "end": 1749355199000,
-    "close": 1749506399000,
+    "start": 1751320800000,
+    "end": 1751947199000,
+    "close": 1752098399000,
     "cards": [533, 534, 535, 948, 949],
     "type": "marathon",
     "keywords": [
@@ -2192,8 +2192,8 @@
       "world link 1"
     ],
     "type": "world_link",
-    "start": 1752789600000,
-    "end": 1753847999000,
+    "start": 1752807600000,
+    "end": 1753844399000,
     "close": 1753999199000
   },
   {
@@ -2204,7 +2204,7 @@
     "keywords": ["mmj", "more more jump", "momojan", "airi", "airi5", "focus"],
     "type": "marathon",
     "start": 1753999200000,
-    "end": 1753999200000,
+    "end": 1754621999000,
     "close": 1754776799000
   },
   {
@@ -2226,8 +2226,8 @@
     "cards": [557, 558, 559, 560, 561, 562],
     "keywords": ["wl1", "world link 1", "world link"],
     "type": "world_link",
-    "start": 1755468000000,
-    "end": 1756439999000,
+    "start": 1755486000000,
+    "end": 1756436399000,
     "close": 1756677599000
   },
   {
@@ -2325,9 +2325,8 @@
   },
   {
     "id": 147,
-    "name": "Happy Enjoy Music！",
+    "name": "Happy Enjoy Music!",
     "unit": "l/n",
-
     "cards": [589, 590, 591, 968, 969],
     "keywords": [
       "leo/need",
@@ -2341,6 +2340,364 @@
     "type": "marathon",
     "start": 1761948000000,
     "end": 1762660799000,
-    "close": 1761947999000
+    "close": 1762815599000
+  },
+  {
+    "id": 148,
+    "name": "Once Again, When the Leaves Change Color",
+    "unit": "mixed",
+    "cards": [593, 594, 595, 970, 971],
+    "keywords": ["autumn"],
+    "type": "marathon",
+    "start": 1762815600000,
+    "end": 1763528399000,
+    "close": 1763679599000
+  },
+  {
+    "id": 149,
+    "name": "The Power Of Regret",
+    "unit": "wxs",
+    "cards": [597, 598, 599, 972, 973],
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "nene",
+      "nene5",
+      "focus"
+    ],
+    "type": "marathon",
+    "start": 1763679600000,
+    "end": 1764478799000,
+    "close": 1764543599000
+  },
+  {
+    "id": 150,
+    "name": "With Our Hands, Covered in Wounds",
+    "unit": "n25",
+    "cards": [600, 601, 602, 974, 975],
+    "keywords": [
+      "niigo",
+      "nightcord",
+      "n25",
+      "focus",
+      "ena5",
+      "ena",
+      "wedding"
+    ],
+    "type": "marathon",
+    "start": 1764543600000,
+    "end": 1765342799000,
+    "close": 1765493999000
+  },
+  {
+    "id": 151,
+    "name": "Grow Glorious Glow",
+    "unit": "mmj",
+    "cards": [604, 605, 606, 976, 977],
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "shizuku",
+      "shizuku5",
+      "shizu5",
+      "focus"
+    ],
+    "type": "marathon",
+    "start": 1765494000000,
+    "end": 1766206799000,
+    "close": 1766357999000
+  },
+  {
+    "id": 152,
+    "name": "Special Present For You!",
+    "unit": "mixed",
+    "cards": [607, 608, 609, 978, 979],
+    "keywords": ["christmas", "xmas"],
+    "type": "marathon",
+    "start": 1766358000000,
+    "end": 1767070799000,
+    "close": 1767221999000
+  },
+  {
+    "id": 153,
+    "name": "Unfading Wishing",
+    "unit": "mixed",
+    "cards": [614, 615, 616, 980, 981],
+    "keywords": ["new year", "happy new year", "ny"],
+    "type": "marathon",
+    "start": 1767222000000,
+    "end": 1768021199000,
+    "close": 1768172399000
+  },
+  {
+    "id": 154,
+    "name": "Time To Take Off!",
+    "unit": "vbs",
+    "cards": [618, 619, 620, 982, 983],
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "toya",
+      "toya5",
+      "focus"
+    ],
+    "type": "marathon",
+    "start": 1768172400000,
+    "end": 1768885199000,
+    "close": 1769036399000
+  },
+  {
+    "id": 155,
+    "name": "Show Your Shine",
+    "unit": "mixed",
+    "cards": [621, 622, 623, 984, 985],
+    "keywords": ["model"],
+    "type": "marathon",
+    "start": 1769036400000,
+    "end": 1769749199000,
+    "close": 1769900399000
+  },
+  {
+    "id": 156,
+    "name": "Put Your Heart Into This One Stitch",
+    "unit": "mixed",
+    "cards": [626, 627, 628, 986, 987],
+    "keywords": ["valentine's"],
+    "type": "marathon",
+    "start": 1769900400000,
+    "end": 1770613199000,
+    "close": 1770764399000
+  },
+  {
+    "id": 157,
+    "name": "Rise And Strive",
+    "unit": "mmj",
+    "cards": [630, 631, 632, 988, 989],
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "haruka",
+      "haruka5",
+      "haru5",
+      "focus"
+    ],
+    "type": "marathon",
+    "start": 1770764400000,
+    "end": 1771477199000,
+    "close": 1771628399000
+  },  {
+    "id": 158,
+    "name": "Old Days Read-aloud ",
+    "unit": "mixed",
+    "cards": [638, 639, 640, 990, 991],
+    "keywords": [],
+    "type": "marathon",
+    "start": 1771628400000,
+    "end": 1772168399000,
+    "close": 1772315999000
+  },  {
+    "id": 159,
+    "name": "Connect Hearts Message",
+    "unit": "mixed",
+    "cards": [641, 642, 643, 992, 993],
+    "keywords": ["miyama", "miyajou"],
+    "type": "marathon",
+    "start": 1772316000000,
+    "end": 1773028799000,
+    "close": 1773179999000
+  },  {
+    "id": 160,
+    "name": "You Are My HERO!!",
+    "unit": "mixed",
+    "cards": [645, 646, 647, 994, 995],
+    "keywords": ["cat"],
+    "type": "marathon",
+    "start": 1773180000000,
+    "end": 1773892799000,
+    "close": 1774043999000
+  },  {
+    "id": 161,
+    "name": "Unreliable Notes",
+    "unit": "n25",
+    "cards": [649, 650, 651, 996, 997],
+    "keywords": [
+      "niigo",
+      "nightcord",
+      "n25",
+      "focus",
+      "kanade",
+      "kana5",
+      "kanade5"
+    ],
+    "type": "marathon",
+    "start": 1774044000000,
+    "end": 1774756799000,
+    "close": 1774907999000
+  },  {
+    "id": 162,
+    "name": "Find the dream view",
+    "unit": "l/n",
+    "banner_id": 463,
+    "cards": [654, 655, 656, 998, 999],
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "shiho",
+      "shiho5"
+    ],
+    "type": "marathon",
+    "start": 1774908000000,
+    "end": 1775534399000,
+    "close": 1775703599000
+  },  {
+    "id": 163,
+    "name": "Turning Pain Into Drive",
+    "unit": "vbs",
+    "cards": [657, 658, 659, 660],
+    "keywords": [
+      "vbs",
+      "vivid bad squad",
+      "vivibasu",
+      "wl2",
+      "world link",
+      "world link 2"
+    ],
+    "type": "world_link",
+    "start": 1775703600000,
+    "end": 1776740399000,
+    "close": 1776895200000
+  },  {
+    "id": 164,
+    "name": "Choices For The Future",
+    "unit": "wxs",
+    "cards": [662, 663, 664, 1000, 1001],
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "wonderhoy",
+      "wondahoy",
+      "emu",
+      "emu6",
+      "focus"
+    ],
+    "type": "marathon",
+    "start": 1776895200000,
+    "end": 1777435199000,
+    "close": 1777586399000
+  },  {
+    "id": 165,
+    "name": "And So, The Clock Hands Started Ticking ",
+    "unit": "n25",
+    "cards": [666, 667, 668, 1002, 1003],
+    "keywords": [
+      "niigo",
+      "nightcord",
+      "n25",
+      "focus",
+      "mafuyu",
+      "mafu6",
+      "mafuyu6"
+    ],
+    "type": "marathon",
+    "start": 1777586400000,
+    "end": 1777949999000,
+    "close": 1778104799000
+  },  {
+    "id": 167,
+    "name": "Dear My fellows",
+    "unit": "wxs",
+    "cards": [671, 672, 673, 674],
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderhoy",
+      "wonderland",
+      "showtime",
+      "wl2",
+      "world link",
+      "world link 2"
+    ],
+    "type": "world_link",
+    "start": 1778382000000,
+    "end": 1779418799000,
+    "close": 1779573599000
+  },  {
+    "id": 168,
+    "name": "Cheer With My Heart!",
+    "unit": "mmj",
+    "cards": [676, 677, 678, 1004, 1005],
+    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi6", "focus"],
+    "type": "marathon",
+    "start": 1779573600000,
+    "end": 1780113599000,
+    "close": 1780264799000
+  },  {
+    "id": 169,
+    "name": "Aim Higher And Higher!",
+    "unit": "vbs",
+    "cards": [680, 681, 682, 1006, 1007],
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "kohane",
+      "kohane6",
+      "koha6",
+      "focus"
+    ],
+    "type": "marathon",
+    "start": 1780264800000,
+    "end": 1780891199000,
+    "close": 1781060399000
+  },  {
+    "id": 170,
+    "name": "Embraced by Ephemeral Bubbles",
+    "unit": "n25",
+    "cards": [683, 684, 685, 686],
+    "keywords": [
+      "n25",
+      "niigo",
+      "nightcord",
+      "wl2",
+      "world link",
+      "world link 2"
+    ],
+    "type": "world_link",
+    "start": 1781060400000,
+    "end": 1782097199000,
+    "close": 1782269999000
+  },  {
+    "id": 171,
+    "name": "ordinary,yet special us",
+    "start": 1782270000000,
+    "end": 1783306799000,
+    "close": 1783461599000,
+    "unit": "l/n",
+    "cards": [1078, 1079, 1080, 1081],
+    "keywords": [
+      "l/n",
+      "leoneed",
+      "leo/need",
+      "leoni",
+      "wl2",
+      "world link",
+      "world link 2"
+    ],
+    "type": "world_link"
   }
 ]

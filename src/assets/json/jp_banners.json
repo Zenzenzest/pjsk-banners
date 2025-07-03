@@ -3111,7 +3111,7 @@
     "start": 1718161200000,
     "end": 1718938799000,
     "cards": [371, 372, 373],
-    "en_id": -1,
+    "en_id": 425,
     "banner_type": "returning_limited"
   },
   {
@@ -3120,8 +3120,8 @@
     "start": 1718420400000,
     "end": 1719197999000,
     "cards": [479, 410, 315, 390, 289],
-    "en_id": 0,
-    "banner_type": "premium"
+    "en_id": 427,
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 346,
@@ -3129,8 +3129,8 @@
     "start": 1718420400000,
     "end": 1719197999000,
     "cards": [424, 413, 397, 299, 131],
-    "en_id": 0,
-    "banner_type": "premium"
+    "en_id": 428,
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 347,
@@ -3138,7 +3138,7 @@
     "start": 1718593200000,
     "end": 1719370799000,
     "cards": [259, 260, 261],
-    "en_id": 429
+    "en_id": 429,"banner_type":"Limited Event Rerun"
   },
   {
     "id": 348,
@@ -3147,7 +3147,7 @@
     "end": 1719370799000,
     "cards": [271, 272, 273, 274],
     "en_id": 417,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 349,
@@ -3156,7 +3156,7 @@
     "end": 1719716399000,
     "cards": [530, 531, 532],
     "en_id": 419,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 350,

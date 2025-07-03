@@ -28,7 +28,7 @@ export default function DateTabs() {
   const dateTabsRef = useRef<HTMLDivElement>(null);
 
   const years_global = [2021, 2022, 2023, 2024, 2025, 2026];
-  const timeData_global:ServerTimeData[] = [
+  const timeData_global: ServerTimeData[] = [
     { 2021: [11, 12] },
     { 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
     { 2023: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
@@ -38,7 +38,7 @@ export default function DateTabs() {
   ];
 
   const years_jp = [2020, 2021, 2022, 2023, 2024, 2025];
-  const timeData_jp:ServerTimeData[] = [
+  const timeData_jp: ServerTimeData[] = [
     { 2020: [9, 10, 11, 12] },
     { 2021: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
     { 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
@@ -73,7 +73,6 @@ export default function DateTabs() {
   };
 
   const getInitialMonth = (
-   
     year: number,
     serverYears: number[],
     serverTimeData: ServerTimeData[]
@@ -121,7 +120,7 @@ export default function DateTabs() {
     setSelectedMonth(newDefaultMonth);
     // Clear when server changes since year/month availability might be different
     setYearMonthMemory({});
-  }, [server]); // Only depend on server changes
+  }, [server]); 
 
   const getBannerStatus = (
     banner: BannerTypes
@@ -131,26 +130,50 @@ export default function DateTabs() {
     if (Number(banner.start) > now) return "upcoming";
     return "past";
   };
-  const filteredBanners: BannerTypes[] = dataBanners
-    .filter((banner) => {
-      const date = new Date(Number(banner.start));
-      return (
-        date.getFullYear() === selectedYear &&
-        date.getMonth() + 1 === selectedMonth
-      );
-    })
-    .sort((a, b) => Number(a.start) - Number(b.start)) // Primary sort by date
-    .sort((a, b) => {
-      const statusOrder = { live: 1, upcoming: 2, past: 3 };
-      return statusOrder[getBannerStatus(a)] - statusOrder[getBannerStatus(b)];
-    });
+
+
+
+
+ const filteredBanners: BannerTypes[] = dataBanners
+  .filter((banner) => {
+    const startDate = new Date(Number(banner.start));
+    const endDate = new Date(Number(banner.end));
+    const now = Date.now();
+    
+ 
+    const selectedDate = new Date(selectedYear, selectedMonth - 1, 1);
+    const nextMonth = new Date(selectedYear, selectedMonth, 1); // 
+    
+    // Check if banner starts in selected month
+    const bannerStartsInMonth = startDate >= selectedDate && startDate < nextMonth;
+    
+    // Check if banner is ongoing in the selected month 
+    const bannerIsOngoingInMonth = startDate < selectedDate && endDate >= selectedDate;
+    
+    // Check if banner is currently live
+    const bannerIsLive = Number(banner.start) <= now && now <= Number(banner.end);
+    
+    // Show banner if:
+    // 1. Banner starts in the selected month OR
+    // 2. Banner is ongoing in the selected month AND is currently live
+    return bannerStartsInMonth || (bannerIsOngoingInMonth && bannerIsLive);
+  })
+  .sort((a, b) => Number(a.start) - Number(b.start)) // sort by date
+  .sort((a, b) => {
+    const statusOrder = { live: 1, upcoming: 2, past: 3 };
+    return statusOrder[getBannerStatus(a)] - statusOrder[getBannerStatus(b)];
+  });
+
+
+
+
   const handleYearChange = (y: number) => {
     setSelectedYear(y);
 
     const yearIndex = years.indexOf(y);
     const availableMonths = timeData[yearIndex][y];
 
-    // Check if we have a remembered month for this year
+    // Check if remembered month
     const rememberedMonth = yearMonthMemory[y];
 
     if (rememberedMonth && availableMonths.includes(rememberedMonth)) {
@@ -205,7 +228,7 @@ export default function DateTabs() {
           </div>
         </div>
 
-        {/* MONTHS - Grid layout */}
+        {/* MONTHS */}
         <div className="grid grid-cols-6 sm:grid-cols-12 gap-1 px-1 py-2">
           {years.includes(selectedYear) &&
             timeData[years.indexOf(selectedYear)][selectedYear]?.map(
@@ -231,9 +254,9 @@ export default function DateTabs() {
       </div>
 
       {/* GACHA BANNERS */}
-      <GachaTable 
-        filteredBanners={filteredBanners} 
-        selectedYear={selectedYear} 
+      <GachaTable
+        filteredBanners={filteredBanners}
+        selectedYear={selectedYear}
         selectedMonth={selectedMonth}
         parentRef={dateTabsRef}
       />

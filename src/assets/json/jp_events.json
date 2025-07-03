@@ -2935,10 +2935,11 @@
   {
     "id": 171,
     "name": "ordinary,yet special us",
-    "startAt": 1750676400000,
-    "aggregateAt": 1751713199000,
-    "closedAt": 1751867999000,
+    "start": 1750676400000,
+    "end": 1751713199000,
+    "close": 1751867999000,
     "unit": "l/n",
+    "banner_id":487,
     "cards": [1078, 1079, 1080, 1081],
     "keywords": [
       "l/n",

@@ -3817,7 +3817,7 @@
     "end": 1763668740000,
     "cards": [593, 594, 595],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":148
   },
   {
     "id": 458,
@@ -3826,7 +3826,7 @@
     "end": 1764532740000,
     "cards": [597, 598, 599],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":149
   },
   {
     "id": 459,
@@ -3851,7 +3851,7 @@
     "end": 1765483140000,
     "cards": [600, 601, 602],
     "banner_type": "Limited Event",
-    "type": "estimation"
+    "type": "estimation","event_id":150
   },
   {
     "id": 462,
@@ -3860,7 +3860,7 @@
     "end": 1766347140000,
     "cards": [604, 605, 606],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":151
   },
   {
     "id": 463,
@@ -3869,7 +3869,7 @@
     "end": 1767211140000,
     "cards": [607, 608, 609],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":152
   },
   {
     "id": 464,
@@ -3903,7 +3903,7 @@
     "end": 1767556740000,
     "cards": [612, 613, 614, 615, 616],
     "banner_type": "Bloom Festival",
-    "type": "estimation"
+    "type": "estimation","event_id":153
   },
   {
     "id": 468,
@@ -3912,7 +3912,7 @@
     "end": 1768161540000,
     "cards": [614, 615, 616],
     "banner_type": "Limited Event",
-    "type": "estimation"
+    "type": "estimation","event_id":153
   },
   {
     "id": 469,
@@ -3921,7 +3921,7 @@
     "end": 1769025540000,
     "cards": [618, 619, 620],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":154
   },
   {
     "id": 470,
@@ -3930,7 +3930,7 @@
     "end": 1769889540000,
     "cards": [621, 622, 623],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":155
   },
   {
     "id": 471,
@@ -3963,7 +3963,7 @@
     "end": 1770753540000,
     "cards": [626, 627, 628],
     "banner_type": "Limited Event",
-    "type": "estimation"
+    "type": "estimation","event_id":156
   },
   {
     "id": 475,
@@ -3972,7 +3972,7 @@
     "end": 1771617540000,
     "cards": [630, 631, 632],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":157
   },
   {
     "id": 476,
@@ -3981,7 +3981,7 @@
     "end": 1772308740000,
     "cards": [638, 639, 640],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":158
   },
   {
     "id": 477,
@@ -4006,7 +4006,7 @@
     "end": 1773169140000,
     "cards": [641, 642, 643],
     "banner_type": "Limited Event",
-    "type": "estimation"
+    "type": "estimation","event_id":159
   },
   {
     "id": 480,
@@ -4015,7 +4015,7 @@
     "end": 1774033140000,
     "cards": [645, 646, 647],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":160
   },
   {
     "id": 481,
@@ -4024,7 +4024,7 @@
     "end": 1774897140000,
     "cards": [649, 650, 651],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":161
   },
   {
     "id": 482,
@@ -4033,7 +4033,7 @@
     "end": 1775329140000,
     "cards": [652, 653, 654, 655, 656],
     "banner_type": "Bloom Festival",
-    "type": "estimation"
+    "type": "estimation","event_id":162
   },
   {
     "id": 483,
@@ -4058,7 +4058,7 @@
     "end": 1775674740000,
     "cards": [654, 655, 656],
     "banner_type": "Limited Event",
-    "type": "estimation"
+    "type": "estimation","event_id":162
   },
   {
     "id": 486,
@@ -4067,7 +4067,7 @@
     "end": 1776884340000,
     "cards": [657, 658, 659, 660],
     "banner_type": "Unit Limited Event",
-    "type": "estimation"
+    "type": "estimation","event_id":163
   },
   {
     "id": 487,
@@ -4076,7 +4076,7 @@
     "end": 1777575540000,
     "cards": [662, 663, 664],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":164
   },
   {
     "id": 488,
@@ -4101,7 +4101,7 @@
     "end": 1778353140000,
     "cards": [666, 667, 668],
     "banner_type": "Limited Event",
-    "type": "estimation"
+    "type": "estimation","event_id":165
   },
   {
     "id": 491,
@@ -4110,7 +4110,7 @@
     "end": 1779562740000,
     "cards": [671, 672, 673, 674],
     "banner_type": "Unit Limited Event",
-    "type": "estimation"
+    "type": "estimation","event_id":167
   },
   {
     "id": 492,
@@ -4119,7 +4119,7 @@
     "end": 1780253940000,
     "cards": [676, 677, 678],
     "banner_type": "Event",
-    "type": "estimation"
+    "type": "estimation","event_id":168
   },
   {
     "id": 493,
@@ -4152,7 +4152,7 @@
     "end": 1781031540000,
     "cards": [680, 681, 682],
     "banner_type": "Limited Event",
-    "type": "estimation"
+    "type": "estimation","event_id":169
   },
   {
     "id": 497,
@@ -4161,7 +4161,7 @@
     "end": 1782241140000,
     "cards": [683, 684, 685, 686],
     "banner_type": "Unit Limited Event",
-    "type": "estimation"
+    "type": "estimation","event_id":170
   },
   {
     "id": 498,
@@ -4170,7 +4170,7 @@
     "end": 1783450740000,
     "cards": [1078, 1079, 1080, 1081],
     "banner_type": "Unit Limited Event",
-    "type": "estimation"
+    "type": "estimation","event_id":171
   },
   {
     "id": 499,

@@ -92,10 +92,10 @@ export default function GachaTable({
   const handleImageError = (
     e: React.SyntheticEvent<HTMLImageElement, Event>
   ) => {
-    const target = e.currentTarget; // Use currentTarget instead of target
+    const target = e.currentTarget;
     target.onerror = null; // Prevent infinite loop
 
-    const en_id = Number(target.alt); // Now properly typed
+    const en_id = Number(target.alt); 
     const jp_variant = JpBanners.find((item) => item.en_id == en_id);
 
     target.src = jp_variant
