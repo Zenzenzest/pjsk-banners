@@ -33,7 +33,7 @@
     "end": 1603173599000,
     "cards": [13, 14, 15],
     "en_id": 4,
-    "event_id":1,
+    "event_id": 1,
     "banner_type": "Event"
   },
   {
@@ -63,7 +63,7 @@
     "end": 1607579999000,
     "cards": [22, 23, 24],
     "en_id": 7,
-     "banner_type": "Event",
+    "banner_type": "Event",
     "event_id": 6
   },
   {
@@ -73,7 +73,7 @@
     "end": 1605765599000,
     "cards": [25, 26, 27],
     "en_id": 8,
- "banner_type": "Event",
+    "banner_type": "Event",
     "event_id": 4
   },
   {
@@ -83,7 +83,7 @@
     "end": 1607061599000,
     "cards": [1, 2, 3, 13, 16, 19],
     "en_id": 9,
-      "banner_type": "4★ Guaranteed"
+    "banner_type": "4★ Guaranteed"
   },
   {
     "id": 10,
@@ -92,7 +92,7 @@
     "end": 1606715999000,
     "cards": [28, 29, 30],
     "en_id": 10,
-     "banner_type": "Event",
+    "banner_type": "Event",
     "event_id": 5
   },
   {
@@ -111,7 +111,7 @@
     "end": 1608443999000,
     "cards": [31, 32, 33],
     "en_id": 11,
-      "banner_type": "Event",
+    "banner_type": "Event",
     "event_id": 7
   },
   {
@@ -158,7 +158,7 @@
     "end": 1610258399000,
     "cards": [37, 38, 39, 40],
     "en_id": 13,
-      "banner_type": "Event",
+    "banner_type": "Event",
     "event_id": 9
   },
   {
@@ -178,7 +178,7 @@
     "end": 1612072799000,
     "cards": [44, 45, 46],
     "en_id": 17,
-       "banner_type": "Event",
+    "banner_type": "Event",
     "event_id": 11
   },
   {
@@ -188,7 +188,7 @@
     "end": 1612850399000,
     "cards": [47, 48, 49],
     "en_id": 18,
-      "banner_type": "Event",
+    "banner_type": "Event",
     "event_id": 12
   },
   {
@@ -208,7 +208,7 @@
     "end": 1614491999000,
     "cards": [53, 54, 55],
     "en_id": 21,
-     "banner_type": "Event",
+    "banner_type": "Event",
     "event_id": 14
   },
   {
@@ -227,7 +227,7 @@
     "end": 1615355999000,
     "cards": [56, 57, 58],
     "en_id": 23,
-  "banner_type": "Limited Event",
+    "banner_type": "Limited Event",
     "event_id": 15
   },
   {
@@ -247,7 +247,8 @@
     "end": 1617256799000,
     "cards": [62, 63, 64],
     "en_id": 25,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 17
   },
   {
     "id": 27,
@@ -256,7 +257,7 @@
     "end": 1617688799000,
     "cards": [83, 84],
     "en_id": 35,
-    "banner_type": "colorful"
+    "banner_type": "Colorful Festival"
   },
   {
     "id": 28,
@@ -265,7 +266,8 @@
     "end": 1618120799000,
     "cards": [65, 66, 67],
     "en_id": 27,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 18
   },
   {
     "id": 29,
@@ -274,7 +276,8 @@
     "end": 1618984799000,
     "cards": [68, 69, 70],
     "en_id": 28,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 19
   },
   {
     "id": 30,
@@ -283,7 +286,8 @@
     "end": 1619762399000,
     "cards": [71, 72, 73],
     "en_id": 29,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 20
   },
   {
     "id": 31,
@@ -292,7 +296,8 @@
     "end": 1620626399000,
     "cards": [74, 75, 76],
     "en_id": 30,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 21
   },
   {
     "id": 32,
@@ -301,7 +306,8 @@
     "end": 1621576799000,
     "cards": [77, 78, 79],
     "en_id": 32,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 22
   },
   {
     "id": 33,
@@ -310,7 +316,8 @@
     "end": 1622440799000,
     "cards": [80, 81, 82],
     "en_id": 34,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 23
   },
   {
     "id": 34,
@@ -319,7 +326,7 @@
     "end": 1622699999000,
     "cards": [51, 65, 62, 47, 58, 54],
     "en_id": 38,
-    "banner_type": "4_guaranteed"
+    "banner_type": "4★ Guaranteed"
   },
   {
     "id": 35,
@@ -328,7 +335,8 @@
     "end": 1623391199000,
     "cards": [85, 86, 87],
     "en_id": 36,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 24
   },
   {
     "id": 36,
@@ -337,7 +345,8 @@
     "end": 1624255199000,
     "cards": [88, 89, 90],
     "en_id": 37,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 25
   },
   {
     "id": 37,
@@ -346,7 +355,8 @@
     "end": 1625032799000,
     "cards": [91, 92, 93],
     "en_id": 39,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 26
   },
   {
     "id": 38,
@@ -355,7 +365,7 @@
     "end": 1625464799000,
     "cards": [94, 95],
     "en_id": 40,
-    "banner_type": "colorful"
+    "banner_type": "Colorful Festival"
   },
   {
     "id": 39,
@@ -364,7 +374,8 @@
     "end": 1625810399000,
     "cards": [96, 97, 98],
     "en_id": 41,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 27
   },
   {
     "id": 40,
@@ -373,7 +384,8 @@
     "end": 1626760799000,
     "cards": [99, 100, 101],
     "en_id": 42,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 28
   },
   {
     "id": 41,
@@ -382,7 +394,8 @@
     "end": 1627711199000,
     "cards": [102, 103, 104],
     "en_id": 43,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 29
   },
   {
     "id": 42,
@@ -391,7 +404,7 @@
     "end": 1628056799000,
     "cards": [96, 71, 62, 80, 78, 67, 88, 58, 91, 53, 76],
     "en_id": 44,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 43,
@@ -400,7 +413,8 @@
     "end": 1628575199000,
     "cards": [105, 106, 107],
     "en_id": 45,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 30
   },
   {
     "id": 44,
@@ -409,7 +423,8 @@
     "end": 1629439199000,
     "cards": [108, 109, 110],
     "en_id": 46,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 31
   },
   {
     "id": 45,
@@ -418,7 +433,8 @@
     "end": 1630389599000,
     "cards": [111, 112, 113],
     "en_id": 47,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 32
   },
   {
     "id": 46,
@@ -427,7 +443,7 @@
     "end": 1630735199000,
     "cards": [101, 71, 80, 102, 88, 91],
     "en_id": 48,
-    "banner_type": "4_guaranteed"
+    "banner_type": "4★ Guaranteed"
   },
   {
     "id": 47,
@@ -436,7 +452,8 @@
     "end": 1631253599000,
     "cards": [114, 115, 116],
     "en_id": 49,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 33
   },
   {
     "id": 48,
@@ -445,7 +462,8 @@
     "end": 1632203999000,
     "cards": [117, 118, 119],
     "en_id": 51,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 34
   },
   {
     "id": 49,
@@ -454,7 +472,8 @@
     "end": 1633067999000,
     "cards": [120, 121, 122],
     "en_id": 53,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 35
   },
   {
     "id": 50,
@@ -463,7 +482,7 @@
     "end": 1635659999000,
     "cards": [4, 82, 23, 20, 55, 18],
     "en_id": 54,
-    "banner_type": "anniversary_memorial_select"
+    "banner_type": "Memorial Seelct"
   },
   {
     "id": 51,
@@ -472,7 +491,7 @@
     "end": 1634482799000,
     "cards": [1, 65, 62, 99, 88, 91],
     "en_id": 57,
-    "banner_type": "anniversary_10x"
+    "banner_type": "Free Pull"
   },
   {
     "id": 52,
@@ -481,7 +500,7 @@
     "end": 1633413599000,
     "cards": [126, 127, 123, 124, 125],
     "en_id": 59,
-    "banner_type": "anniversary_colorful"
+    "banner_type": "Colorful Festival"
   },
   {
     "id": 53,
@@ -490,7 +509,7 @@
     "end": 1633154399000,
     "cards": [37, 30, 87, 14, 101, 21],
     "en_id": 55,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 54,
@@ -499,7 +518,7 @@
     "end": 1633240799000,
     "cards": [65, 68, 41, 71],
     "en_id": 58,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 55,
@@ -508,7 +527,7 @@
     "end": 1633327199000,
     "cards": [62, 80, 28, 44],
     "en_id": 60,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 56,
@@ -517,7 +536,7 @@
     "end": 1633413599000,
     "cards": [99, 22, 102, 47],
     "en_id": 61,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 57,
@@ -526,7 +545,7 @@
     "end": 1633499999000,
     "cards": [88, 89, 34, 19],
     "en_id": 62,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 58,
@@ -535,7 +554,8 @@
     "end": 1633931999000,
     "cards": [123, 124, 125],
     "en_id": 56,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 36
   },
   {
     "id": 59,
@@ -544,7 +564,7 @@
     "end": 1633964399000,
     "cards": [128],
     "en_id": 63,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 60,
@@ -553,7 +573,7 @@
     "end": 1633586399000,
     "cards": [91, 16, 53, 68],
     "en_id": 64,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 61,
@@ -562,7 +582,8 @@
     "end": 1634795999000,
     "cards": [129, 130, 131],
     "en_id": 65,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 37
   },
   {
     "id": 62,
@@ -571,7 +592,7 @@
     "end": 1635659999000,
     "cards": [425, 197, 539],
     "en_id": 0,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 63,
@@ -580,7 +601,7 @@
     "end": 1635865199000,
     "cards": [132],
     "en_id": 68,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 64,
@@ -589,7 +610,8 @@
     "end": 1636610399000,
     "cards": [133, 134, 135],
     "en_id": 69,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 39
   },
   {
     "id": 65,
@@ -601,7 +623,7 @@
       40, 31, 18, 51, 3, 45, 42, 32
     ],
     "en_id": 70,
-    "banner_type": "memorial_select"
+    "banner_type": "Memorial Seelct"
   },
   {
     "id": 66,
@@ -610,7 +632,7 @@
     "end": 1636642799000,
     "cards": [136],
     "en_id": 71,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 67,
@@ -619,7 +641,8 @@
     "end": 1637387999000,
     "cards": [137, 138, 139],
     "en_id": 73,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 40
   },
   {
     "id": 68,
@@ -628,7 +651,7 @@
     "end": 1637247599000,
     "cards": [140],
     "en_id": 74,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 69,
@@ -637,7 +660,8 @@
     "end": 1638251999000,
     "cards": [141, 142, 143],
     "en_id": 76,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 41
   },
   {
     "id": 70,
@@ -646,7 +670,7 @@
     "end": 1638597599000,
     "cards": [117, 137, 82, 110, 129, 130, 88, 112, 120, 68, 142, 122],
     "en_id": 103,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 71,
@@ -655,7 +679,8 @@
     "end": 1639115999000,
     "cards": [144, 145, 146],
     "en_id": 78,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 42
   },
   {
     "id": 72,
@@ -664,7 +689,7 @@
     "end": 1639321199000,
     "cards": [147],
     "en_id": 79,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 73,
@@ -673,7 +698,8 @@
     "end": 1639979999000,
     "cards": [148, 149, 150],
     "en_id": 81,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 43
   },
   {
     "id": 74,
@@ -682,7 +708,7 @@
     "end": 1640584799000,
     "cards": [151, 152, 153, 154, 155],
     "en_id": 82,
-    "banner_type": "event_limited"
+    "banner_type": "Collab"
   },
   {
     "id": 75,
@@ -691,7 +717,8 @@
     "end": 1640930399000,
     "cards": [156, 157, 158],
     "en_id": 84,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 44
   },
   {
     "id": 76,
@@ -700,7 +727,7 @@
     "end": 1641135599000,
     "cards": [159],
     "en_id": 85,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 77,
@@ -709,7 +736,7 @@
     "end": 1641135599000,
     "cards": [160],
     "en_id": 86,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 78,
@@ -718,7 +745,7 @@
     "end": 1641275999000,
     "cards": [161, 162, 163, 164, 165],
     "en_id": 87,
-    "banner_type": "ny_colorful"
+    "banner_type": "Colorful Festival"
   },
   {
     "id": 79,
@@ -727,7 +754,7 @@
     "end": 1641967199000,
     "cards": [37, 117, 82, 100, 112, 68],
     "en_id": 88,
-    "banner_type": "ny_premium"
+    "banner_type": "Premium Gift"
   },
   {
     "id": 80,
@@ -736,7 +763,7 @@
     "end": 1643641199000,
     "cards": [37, 117, 82, 100, 112, 68],
     "en_id": 89,
-    "banner_type": "ny_10x"
+    "banner_type": "Free Pull"
   },
   {
     "id": 81,
@@ -745,7 +772,8 @@
     "end": 1641967199000,
     "cards": [163, 164, 165],
     "en_id": 90,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 45
   },
   {
     "id": 82,
@@ -754,7 +782,7 @@
     "end": 1642172399000,
     "cards": [166],
     "en_id": 91,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 83,
@@ -763,7 +791,8 @@
     "end": 1642744799000,
     "cards": [167, 168, 169],
     "en_id": 92,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 46
   },
   {
     "id": 84,
@@ -772,7 +801,8 @@
     "end": 1643608799000,
     "cards": [170, 171, 172],
     "en_id": 94,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 47
   },
   {
     "id": 85,
@@ -781,7 +811,7 @@
     "end": 1643813999000,
     "cards": [173],
     "en_id": 95,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 86,
@@ -790,7 +820,7 @@
     "end": 1644073199000,
     "cards": [174],
     "en_id": 96,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 87,
@@ -799,7 +829,8 @@
     "end": 1644386399000,
     "cards": [175, 176, 177],
     "en_id": 97,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 48
   },
   {
     "id": 88,
@@ -808,7 +839,7 @@
     "end": 1644645599000,
     "cards": [37, 97, 109, 92, 42, 118],
     "en_id": 98,
-    "banner_type": "premium"
+    "banner_type": "Premium Gift"
   },
   {
     "id": 89,
@@ -817,7 +848,8 @@
     "end": 1645163999000,
     "cards": [178, 179, 180],
     "en_id": 99,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 49
   },
   {
     "id": 90,
@@ -826,7 +858,7 @@
     "end": 1645023599000,
     "cards": [181],
     "en_id": 100,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 91,
@@ -835,7 +867,7 @@
     "end": 1645628399000,
     "cards": [182],
     "en_id": 101,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 92,
@@ -844,7 +876,8 @@
     "end": 1646027999000,
     "cards": [183, 184, 185],
     "en_id": 10,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 5
   },
   {
     "id": 93,
@@ -853,7 +886,7 @@
     "end": 1646373599000,
     "cards": [117, 137, 82, 110, 129, 130, 88, 112, 120, 68, 142, 122],
     "en_id": 103,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 94,
@@ -862,7 +895,8 @@
     "end": 1646978399000,
     "cards": [186, 187, 188],
     "en_id": 104,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 51
   },
   {
     "id": 95,
@@ -871,7 +905,7 @@
     "end": 1646751599000,
     "cards": [189],
     "en_id": 105,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 96,
@@ -880,7 +914,8 @@
     "end": 1647755999000,
     "cards": [190, 191, 192],
     "en_id": 107,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 52
   },
   {
     "id": 97,
@@ -889,7 +924,7 @@
     "end": 1648220399000,
     "cards": [193],
     "en_id": 109,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 98,
@@ -898,7 +933,8 @@
     "end": 1648619999000,
     "cards": [194, 195, 196],
     "en_id": 110,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 53
   },
   {
     "id": 99,
@@ -907,7 +943,7 @@
     "end": 1649051999000,
     "cards": [198, 199, 200, 201, 202, 203],
     "en_id": 112,
-    "banner_type": "anniversary_colorful"
+    "banner_type": "Colorful Festival"
   },
   {
     "id": 100,
@@ -916,7 +952,7 @@
     "end": 1649656799000,
     "cards": [138, 148, 156, 197, 135, 142],
     "en_id": 111,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Premium Gift"
   },
   {
     "id": 101,
@@ -925,7 +961,7 @@
     "end": 1651298399000,
     "cards": [131, 65, 108, 156, 90, 91],
     "en_id": 106,
-    "banner_type": "miku_day"
+    "banner_type": "Normal"
   },
   {
     "id": 102,
@@ -934,7 +970,8 @@
     "end": 1649656799000,
     "cards": [200, 201, 202, 203],
     "en_id": 113,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 54
   },
   {
     "id": 103,
@@ -943,7 +980,8 @@
     "end": 1650509999000,
     "cards": [204, 205, 206],
     "en_id": 114,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 55
   },
   {
     "id": 104,
@@ -952,7 +990,7 @@
     "end": 1650466799000,
     "cards": [207],
     "en_id": 115,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 105,
@@ -961,7 +999,8 @@
     "end": 1651287599000,
     "cards": [208, 209, 210],
     "en_id": 117,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 56
   },
   {
     "id": 106,
@@ -970,7 +1009,7 @@
     "end": 1651849199000,
     "cards": [211],
     "en_id": 118,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 107,
@@ -979,7 +1018,8 @@
     "end": 1652151599000,
     "cards": [212, 213, 214],
     "en_id": 119,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 57
   },
   {
     "id": 108,
@@ -988,7 +1028,7 @@
     "end": 1652626799000,
     "cards": [215],
     "en_id": 121,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 109,
@@ -997,7 +1037,8 @@
     "end": 1653015599000,
     "cards": [216, 217, 218],
     "en_id": 122,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 58
   },
   {
     "id": 110,
@@ -1006,7 +1047,7 @@
     "end": 1653361199000,
     "cards": [56, 57, 58],
     "en_id": 120,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 111,
@@ -1015,7 +1056,7 @@
     "end": 1653317999000,
     "cards": [219],
     "en_id": 124,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 112,
@@ -1024,7 +1065,8 @@
     "end": 1653965999000,
     "cards": [220, 221, 222],
     "en_id": 125,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 59
   },
   {
     "id": 113,
@@ -1033,7 +1075,7 @@
     "end": 1654009199000,
     "cards": [223],
     "en_id": 126,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 114,
@@ -1042,7 +1084,7 @@
     "end": 1654225199000,
     "cards": [139, 183, 148, 108, 178, 156, 167, 111, 170, 103, 169, 185],
     "en_id": 123,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 115,
@@ -1051,7 +1093,8 @@
     "end": 1654829999000,
     "cards": [224, 225, 226],
     "en_id": 127,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 60
   },
   {
     "id": 116,
@@ -1060,7 +1103,8 @@
     "end": 1655693999000,
     "cards": [227, 228, 229],
     "en_id": 131,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 61
   },
   {
     "id": 117,
@@ -1069,7 +1113,7 @@
     "end": 1656039599000,
     "cards": [74, 75, 76],
     "en_id": 132,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 118,
@@ -1078,7 +1122,8 @@
     "end": 1656557999000,
     "cards": [230, 231, 232],
     "en_id": 134,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 62
   },
   {
     "id": 119,
@@ -1087,7 +1132,7 @@
     "end": 1656601199000,
     "cards": [233],
     "en_id": 135,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 120,
@@ -1096,7 +1141,7 @@
     "end": 1656903599000,
     "cards": [234, 235, 236, 237, 238],
     "en_id": 136,
-    "banner_type": "colorful"
+    "banner_type": "Colorful Festival"
   },
   {
     "id": 121,
@@ -1105,7 +1150,8 @@
     "end": 1657551599000,
     "cards": [236, 237, 238],
     "en_id": 138,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 63
   },
   {
     "id": 122,
@@ -1114,7 +1160,8 @@
     "end": 1658372399000,
     "cards": [239, 240, 241],
     "en_id": 139,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 64
   },
   {
     "id": 123,
@@ -1123,7 +1170,7 @@
     "end": 1658631599000,
     "cards": [85, 86, 87],
     "en_id": 140,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 124,
@@ -1132,7 +1179,7 @@
     "end": 1658847599000,
     "cards": [242],
     "en_id": 141,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 125,
@@ -1141,7 +1188,8 @@
     "end": 1659236399000,
     "cards": [243, 244, 245],
     "en_id": 142,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 65
   },
   {
     "id": 126,
@@ -1150,7 +1198,7 @@
     "end": 1659365999000,
     "cards": [246],
     "en_id": 143,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 127,
@@ -1159,7 +1207,7 @@
     "end": 1659927599000,
     "cards": [195, 179, 183, 204, 191, 142],
     "en_id": 144,
-    "banner_type": "happiness_package"
+    "banner_type": "Happiness Package"
   },
   {
     "id": 128,
@@ -1168,7 +1216,8 @@
     "end": 1660100399000,
     "cards": [247, 248, 249],
     "en_id": 145,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 66
   },
   {
     "id": 129,
@@ -1177,7 +1226,8 @@
     "end": 1660964399000,
     "cards": [250, 251, 252],
     "en_id": 146,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 67
   },
   {
     "id": 130,
@@ -1186,7 +1236,7 @@
     "end": 1660748399000,
     "cards": [253],
     "en_id": 147,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 131,
@@ -1195,7 +1245,7 @@
     "end": 1661137199000,
     "cards": [105, 106, 107],
     "en_id": 149,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 132,
@@ -1204,7 +1254,8 @@
     "end": 1661914799000,
     "cards": [254, 255, 256],
     "en_id": 150,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 68
   },
   {
     "id": 133,
@@ -1213,7 +1264,7 @@
     "end": 1662346799000,
     "cards": [208, 137, 108, 44, 178, 220, 111, 206, 170, 120, 196, 180],
     "en_id": 151,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 134,
@@ -1222,7 +1273,7 @@
     "end": 1662130799000,
     "cards": [257],
     "en_id": 152,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 135,
@@ -1231,7 +1282,7 @@
     "end": 1662476399000,
     "cards": [258],
     "en_id": 153,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 136,
@@ -1240,7 +1291,8 @@
     "end": 1662692399000,
     "cards": [259, 260, 261],
     "en_id": 154,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 69
   },
   {
     "id": 137,
@@ -1249,7 +1301,7 @@
     "end": 1663253999000,
     "cards": [262],
     "en_id": 155,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 138,
@@ -1258,7 +1310,8 @@
     "end": 1663642799000,
     "cards": [263, 264, 265],
     "en_id": 156,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 70
   },
   {
     "id": 139,
@@ -1267,7 +1320,7 @@
     "end": 1663815599000,
     "cards": [114, 115, 116],
     "en_id": 157,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 140,
@@ -1276,7 +1329,8 @@
     "end": 1664506799000,
     "cards": [266, 267, 268],
     "en_id": 158,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 71
   },
   {
     "id": 141,
@@ -1285,7 +1339,7 @@
     "end": 1665543599000,
     "cards": [192, 196, 229, 218, 169, 222],
     "en_id": 160,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 142,
@@ -1294,7 +1348,7 @@
     "end": 1665543599000,
     "cards": [208, 96, 137, 183],
     "en_id": 161,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 143,
@@ -1303,7 +1357,7 @@
     "end": 1665543599000,
     "cards": [191, 143, 149, 199],
     "en_id": 162,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 144,
@@ -1312,7 +1366,7 @@
     "end": 1665543599000,
     "cards": [178, 158, 220, 156],
     "en_id": 163,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 145,
@@ -1321,7 +1375,7 @@
     "end": 1665543599000,
     "cards": [204, 167, 230, 216],
     "en_id": 164,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 146,
@@ -1330,7 +1384,7 @@
     "end": 1665543599000,
     "cards": [170, 227, 103, 217],
     "en_id": 165,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 147,
@@ -1339,7 +1393,7 @@
     "end": 1664852399000,
     "cards": [269, 270, 271, 272, 273, 274],
     "en_id": 166,
-    "banner_type": "anniversary_colorful"
+    "banner_type": "Colorful Festival"
   },
   {
     "id": 148,
@@ -1348,7 +1402,7 @@
     "end": 1665543599000,
     "cards": [192, 208, 191, 178, 204, 170],
     "en_id": 167,
-    "banner_type": "anniversary_memorial_select"
+    "banner_type": "Memorial Seelct"
   },
   {
     "id": 149,
@@ -1357,7 +1411,7 @@
     "end": 1667185199000,
     "cards": [66, 184, 82, 141, 231, 17],
     "en_id": 168,
-    "banner_type": "anniversary_10x"
+    "banner_type": "Free Pull"
   },
   {
     "id": 150,
@@ -1366,7 +1420,8 @@
     "end": 1665543599000,
     "cards": [271, 272, 273, 274],
     "en_id": 169,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 72
   },
   {
     "id": 151,
@@ -1375,7 +1430,7 @@
     "end": 1665500399000,
     "cards": [275, 128],
     "en_id": 170,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 152,
@@ -1384,7 +1439,8 @@
     "end": 1666321199000,
     "cards": [276, 277, 278],
     "en_id": 171,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 73
   },
   {
     "id": 153,
@@ -1393,7 +1449,7 @@
     "end": 1666580399000,
     "cards": [123, 124, 125],
     "en_id": 172,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 154,
@@ -1402,7 +1458,8 @@
     "end": 1667185199000,
     "cards": [279, 280, 281],
     "en_id": 173,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 74
   },
   {
     "id": 155,
@@ -1411,7 +1468,7 @@
     "end": 1667530799000,
     "cards": [243, 239, 227, 230, 190, 229],
     "en_id": 175,
-    "banner_type": "happiness_package"
+    "banner_type": "Happiness Package"
   },
   {
     "id": 156,
@@ -1420,7 +1477,7 @@
     "end": 1667401199000,
     "cards": [282, 132],
     "en_id": 174,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 157,
@@ -1429,7 +1486,8 @@
     "end": 1668135599000,
     "cards": [283, 284, 285],
     "en_id": 176,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 75
   },
   {
     "id": 158,
@@ -1441,7 +1499,7 @@
       216, 170, 227, 103, 217, 192, 196, 229, 218, 169, 222
     ],
     "en_id": 148,
-    "banner_type": "m"
+    "banner_type": "Memorial Seelct"
   },
   {
     "id": 159,
@@ -1450,7 +1508,7 @@
     "end": 1668178799000,
     "cards": [286, 136],
     "en_id": 177,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 160,
@@ -1459,7 +1517,8 @@
     "end": 1668913199000,
     "cards": [287, 288, 289],
     "en_id": 178,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 76
   },
   {
     "id": 161,
@@ -1468,7 +1527,7 @@
     "end": 1668783599000,
     "cards": [290, 140],
     "en_id": 179,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 162,
@@ -1477,7 +1536,7 @@
     "end": 1669172399000,
     "cards": [133, 134, 135],
     "en_id": 180,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 163,
@@ -1486,7 +1545,8 @@
     "end": 1669777199000,
     "cards": [291, 292, 293],
     "en_id": 181,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 77
   },
   {
     "id": 164,
@@ -1495,7 +1555,8 @@
     "end": 1670727599000,
     "cards": [294, 295, 296],
     "en_id": 185,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 78
   },
   {
     "id": 165,
@@ -1504,7 +1565,7 @@
     "end": 1670122799000,
     "cards": [243, 183, 143, 251, 239, 102, 204, 216, 227, 254, 218, 222],
     "en_id": 184,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 166,
@@ -1513,7 +1574,7 @@
     "end": 1670857199000,
     "cards": [297, 147],
     "en_id": 186,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 167,
@@ -1522,7 +1583,8 @@
     "end": 1671591599000,
     "cards": [298, 299, 300],
     "en_id": 196,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 79
   },
   {
     "id": 168,
@@ -1531,7 +1593,7 @@
     "end": 1671850799000,
     "cards": [144, 145, 146],
     "en_id": 197,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 169,
@@ -1540,7 +1602,8 @@
     "end": 1672455599000,
     "cards": [301, 302, 303],
     "en_id": 199,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 80
   },
   {
     "id": 170,
@@ -1549,7 +1612,7 @@
     "end": 1672671599000,
     "cards": [304, 159],
     "en_id": 200,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 171,
@@ -1558,7 +1621,7 @@
     "end": 1672671599000,
     "cards": [305, 160],
     "en_id": 201,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 172,
@@ -1567,7 +1630,7 @@
     "end": 1672801199000,
     "cards": [306, 307, 308, 309, 310],
     "en_id": 202,
-    "banner_type": "ny_colorful"
+    "banner_type": "Colorful Festival"
   },
   {
     "id": 173,
@@ -1576,7 +1639,7 @@
     "end": 1673319599000,
     "cards": [131, 139, 149, 179, 206, 171],
     "en_id": 203,
-    "banner_type": "ny_premium"
+    "banner_type": "Premium Gift"
   },
   {
     "id": 174,
@@ -1585,7 +1648,7 @@
     "end": 1675133999000,
     "cards": [192, 184, 148, 267, 231, 195],
     "en_id": 204,
-    "banner_type": "ny_10x"
+    "banner_type": "Free Pull"
   },
   {
     "id": 175,
@@ -1594,7 +1657,8 @@
     "end": 1673319599000,
     "cards": [308, 309, 310],
     "en_id": 205,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 81
   },
   {
     "id": 176,
@@ -1603,7 +1667,7 @@
     "end": 1673708399000,
     "cards": [311, 166],
     "en_id": 206,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 177,
@@ -1612,7 +1676,8 @@
     "end": 1674269999000,
     "cards": [312, 313, 314],
     "en_id": 207,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 82
   },
   {
     "id": 178,
@@ -1621,7 +1686,7 @@
     "end": 1674356399000,
     "cards": [163, 164, 165],
     "en_id": 208,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 179,
@@ -1630,7 +1695,8 @@
     "end": 1675133999000,
     "cards": [315, 316, 317],
     "en_id": 209,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 83
   },
   {
     "id": 180,
@@ -1638,7 +1704,8 @@
     "start": 1674615600000,
     "end": 1675479599000,
     "cards": [244, 267, 228, 265, 250, 241],
-    "en_id": 210
+    "en_id": 210,
+    "banner_type": "Happiness Package"
   },
   {
     "id": 181,
@@ -1647,7 +1714,7 @@
     "end": 1675349999000,
     "cards": [318, 173],
     "en_id": 211,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 182,
@@ -1656,7 +1723,7 @@
     "end": 1675609199000,
     "cards": [319, 174],
     "en_id": 212,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 183,
@@ -1665,7 +1732,8 @@
     "end": 1675997999000,
     "cards": [320, 321, 322],
     "en_id": 213,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 84
   },
   {
     "id": 184,
@@ -1674,7 +1742,7 @@
     "end": 1676559599000,
     "cards": [323, 181],
     "en_id": 215,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 185,
@@ -1683,7 +1751,8 @@
     "end": 1676775599000,
     "cards": [324, 325, 326],
     "en_id": 216,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 85
   },
   {
     "id": 186,
@@ -1692,7 +1761,7 @@
     "end": 1677034799000,
     "cards": [175, 176, 177],
     "en_id": 218,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 187,
@@ -1701,7 +1770,7 @@
     "end": 1677164399000,
     "cards": [327, 182],
     "en_id": 219,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 188,
@@ -1710,7 +1779,8 @@
     "end": 1677553199000,
     "cards": [328, 329, 330],
     "en_id": 220,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 86
   },
   {
     "id": 189,
@@ -1719,7 +1789,7 @@
     "end": 1678647599000,
     "cards": [287, 210, 276, 149, 281, 221, 266, 195, 291, 192, 229],
     "en_id": 221,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 190,
@@ -1728,7 +1798,8 @@
     "end": 1678503599000,
     "cards": [331, 332, 333],
     "en_id": 222,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 87
   },
   {
     "id": 191,
@@ -1737,7 +1808,7 @@
     "end": 1678287599000,
     "cards": [334, 189],
     "en_id": 223,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 192,
@@ -1746,7 +1817,8 @@
     "end": 1679367599000,
     "cards": [335, 336, 337],
     "en_id": 226,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 88
   },
   {
     "id": 193,
@@ -1755,7 +1827,7 @@
     "end": 1679453999000,
     "cards": [186, 187, 188],
     "en_id": 227,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 194,
@@ -1764,7 +1836,7 @@
     "end": 1679756399000,
     "cards": [338, 193],
     "en_id": 228,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 195,
@@ -1773,7 +1845,8 @@
     "end": 1680145199000,
     "cards": [339, 340, 341],
     "en_id": 229,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 89
   },
   {
     "id": 196,
@@ -1782,7 +1855,7 @@
     "end": 1680577199000,
     "cards": [342, 343, 344, 345, 346, 347],
     "en_id": 232,
-    "banner_type": "anniversary_colorful"
+    "banner_type": "4★ Guaranteed"
   },
   {
     "id": 197,
@@ -1791,7 +1864,7 @@
     "end": 1681181999000,
     "cards": [303, 287, 301, 298, 279, 292],
     "en_id": 231,
-    "banner_type": "anniversary_premium"
+    "banner_type": "4★ Guaranteed"
   },
   {
     "id": 198,
@@ -1800,7 +1873,7 @@
     "end": 1681181999000,
     "cards": [117, 62, 178, 204, 292, 1],
     "en_id": 230,
-    "banner_type": "4_guaranteed"
+    "banner_type": "Paid Gacha"
   },
   {
     "id": 199,
@@ -1809,7 +1882,7 @@
     "end": 1682823599000,
     "cards": [252, 288, 277, 299, 280, 293],
     "en_id": 256,
-    "banner_type": "anniversary_10x"
+    "banner_type": "Free Pull"
   },
   {
     "id": 200,
@@ -1818,7 +1891,7 @@
     "end": 1684594799000,
     "cards": [118, 139, 108, 156, 167, 172],
     "en_id": 234,
-    "banner_type": "4_guaranteed"
+    "banner_type": "4★ Guaranteed"
   },
   {
     "id": 201,
@@ -1827,7 +1900,8 @@
     "end": 1681181999000,
     "cards": [344, 345, 346, 347],
     "en_id": 235,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 90
   },
   {
     "id": 202,
@@ -1836,7 +1910,8 @@
     "end": 1682045999000,
     "cards": [348, 349, 350],
     "en_id": 236,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 91
   },
   {
     "id": 203,
@@ -1845,7 +1920,7 @@
     "end": 1682132399000,
     "cards": [200, 201, 202, 203],
     "en_id": 239,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 204,
@@ -1854,7 +1929,7 @@
     "end": 1682002799000,
     "cards": [354, 207],
     "en_id": 238,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 205,
@@ -1863,7 +1938,8 @@
     "end": 1682823599000,
     "cards": [355, 356, 357],
     "en_id": 240,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 92
   },
   {
     "id": 206,
@@ -1872,7 +1948,7 @@
     "end": 1683169199000,
     "cards": [210, 190, 266, 313, 267, 185],
     "en_id": 241,
-    "banner_type": "happiness_package"
+    "banner_type": "Happiness Package"
   },
   {
     "id": 207,
@@ -1881,7 +1957,7 @@
     "end": 1683385199000,
     "cards": [358, 211],
     "en_id": 242,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 208,
@@ -1890,7 +1966,8 @@
     "end": 1683773999000,
     "cards": [359, 360, 361],
     "en_id": 243,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 93
   },
   {
     "id": 209,
@@ -1899,7 +1976,7 @@
     "end": 1684292399000,
     "cards": [212, 213, 214],
     "en_id": 244,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 210,
@@ -1908,7 +1985,7 @@
     "end": 1684162799000,
     "cards": [362, 215],
     "en_id": 245,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 211,
@@ -1916,7 +1993,9 @@
     "start": 1683774000000,
     "end": 1684551599000,
     "cards": [363, 364, 365],
-    "en_id": 246
+    "en_id": 246,
+    "event_id": 94,
+    "banner_type": "Event"
   },
   {
     "id": 212,
@@ -1925,7 +2004,8 @@
     "end": 1684853999000,
     "cards": [366, 219],
     "en_id": 249,
-    "banner_type": "bday"
+    "banner_type": "Event",
+    "event_id": 95
   },
   {
     "id": 213,
@@ -1934,7 +2014,7 @@
     "end": 1684897199000,
     "cards": [212, 213, 214],
     "en_id": 244,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 214,
@@ -1943,7 +2023,8 @@
     "end": 1685501999000,
     "cards": [367, 368, 369],
     "en_id": 249,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 95
   },
   {
     "id": 215,
@@ -1952,7 +2033,7 @@
     "end": 1685545199000,
     "cards": [370, 223],
     "en_id": 250,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 216,
@@ -1961,7 +2042,7 @@
     "end": 1685761199000,
     "cards": [13, 183, 82, 108, 67, 330, 88, 120, 241, 113],
     "en_id": 247,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 217,
@@ -1970,7 +2051,8 @@
     "end": 1686365999000,
     "cards": [371, 372, 373],
     "en_id": 251,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 96
   },
   {
     "id": 218,
@@ -1979,7 +2061,8 @@
     "end": 1687229999000,
     "cards": [374, 375, 351],
     "en_id": 257,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 97
   },
   {
     "id": 219,
@@ -1988,7 +2071,7 @@
     "end": 1687575599000,
     "cards": [224, 225, 226],
     "en_id": 258,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 220,
@@ -1997,7 +2080,7 @@
     "end": 1688093999000,
     "cards": [376, 377, 378],
     "en_id": 259,
-    "banner_type": "event"
+    "banner_type": "Premium Gift"
   },
   {
     "id": 221,
@@ -2006,7 +2089,7 @@
     "end": 1688137199000,
     "cards": [379, 233],
     "en_id": 261,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 222,
@@ -2015,7 +2098,7 @@
     "end": 1688439599000,
     "cards": [380, 381, 382, 383, 384],
     "en_id": 262,
-    "banner_type": "colorful"
+    "banner_type": "Colorful Festival"
   },
   {
     "id": 223,
@@ -2024,7 +2107,7 @@
     "end": 1689044399000,
     "cards": [382, 383, 384],
     "en_id": 265,
-    "banner_type": "event_limited"
+    "banner_type": "Free Pull"
   },
   {
     "id": 224,
@@ -2033,7 +2116,8 @@
     "end": 1689908399000,
     "cards": [385, 386, 387],
     "en_id": 266,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 100
   },
   {
     "id": 225,
@@ -2042,7 +2126,7 @@
     "end": 1690081199000,
     "cards": [236, 237, 238],
     "en_id": 270,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 226,
@@ -2051,7 +2135,7 @@
     "end": 1690383599000,
     "cards": [388, 242],
     "en_id": 268,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 227,
@@ -2060,7 +2144,8 @@
     "end": 1690772399000,
     "cards": [389, 390, 391],
     "en_id": 269,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 101
   },
   {
     "id": 228,
@@ -2069,7 +2154,7 @@
     "end": 1690901999000,
     "cards": [392, 246],
     "en_id": 271,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 229,
@@ -2078,7 +2163,7 @@
     "end": 1691117999000,
     "cards": [317, 356, 22, 111, 217, 252],
     "en_id": 272,
-    "banner_type": "happiness_package"
+    "banner_type": "Happiness Package"
   },
   {
     "id": 230,
@@ -2087,7 +2172,8 @@
     "end": 1691636399000,
     "cards": [393, 394, 395],
     "en_id": 273,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 102
   },
   {
     "id": 231,
@@ -2096,7 +2182,8 @@
     "end": 1692586799000,
     "cards": [396, 397, 398],
     "en_id": 275,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 103
   },
   {
     "id": 232,
@@ -2105,7 +2192,7 @@
     "end": 1692284399000,
     "cards": [399, 253],
     "en_id": 276,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 233,
@@ -2114,7 +2201,7 @@
     "end": 1692673199000,
     "cards": [247, 248, 249],
     "en_id": 277,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 234,
@@ -2123,7 +2210,8 @@
     "end": 1693450799000,
     "cards": [400, 401, 402],
     "en_id": 278,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 104
   },
   {
     "id": 235,
@@ -2132,7 +2220,7 @@
     "end": 1693882799000,
     "cards": [117, 315, 191, 324, 240, 279, 135, 340, 300, 369],
     "en_id": 279,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 236,
@@ -2141,7 +2229,7 @@
     "end": 1693666799000,
     "cards": [403, 257],
     "en_id": 280,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 237,
@@ -2150,7 +2238,7 @@
     "end": 1694012399000,
     "cards": [404, 258],
     "en_id": 282,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 238,
@@ -2159,7 +2247,8 @@
     "end": 1694401199000,
     "cards": [405, 406, 407, 408],
     "en_id": 283,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 105
   },
   {
     "id": 239,
@@ -2168,7 +2257,7 @@
     "end": 1694789999000,
     "cards": [409, 262],
     "en_id": 285,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 240,
@@ -2177,7 +2266,8 @@
     "end": 1695178799000,
     "cards": [410, 411, 412],
     "en_id": 286,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 107
   },
   {
     "id": 241,
@@ -2186,7 +2276,7 @@
     "end": 1695351599000,
     "cards": [259, 260, 261],
     "en_id": 284,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 242,
@@ -2195,7 +2285,8 @@
     "end": 1696042799000,
     "cards": [413, 414, 415],
     "en_id": 288,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 107
   },
   {
     "id": 243,
@@ -2213,7 +2304,7 @@
     "end": 1697079599000,
     "cards": [365, 351, 314, 300, 252, 268],
     "en_id": 293,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 245,
@@ -2222,7 +2313,7 @@
     "end": 1697079599000,
     "cards": [364, 348, 288, 317],
     "en_id": 294,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 246,
@@ -2231,7 +2322,7 @@
     "end": 1697079599000,
     "cards": [325, 277, 355, 301],
     "en_id": 295,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 247,
@@ -2240,7 +2331,7 @@
     "end": 1697079599000,
     "cards": [267, 329, 298, 375],
     "en_id": 296,
-    "banner_type": "anniversary_10x"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 248,
@@ -2249,7 +2340,7 @@
     "end": 1697079599000,
     "cards": [280, 336, 367, 313],
     "en_id": 297,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 249,
@@ -2258,7 +2349,7 @@
     "end": 1697079599000,
     "cards": [339, 302, 291, 254],
     "en_id": 298,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Unit Premium Gift"
   },
   {
     "id": 250,
@@ -2267,7 +2358,7 @@
     "end": 1696388399000,
     "cards": [416, 417, 418, 419, 420, 421],
     "en_id": 301,
-    "banner_type": "anniversary_colorful"
+    "banner_type": "Colorful Festival"
   },
   {
     "id": 251,
@@ -2276,7 +2367,7 @@
     "end": 1697079599000,
     "cards": [117, 276, 328, 335, 91, 289],
     "en_id": 299,
-    "banner_type": "anniversary_memorial_select"
+    "banner_type": "Memorial Seelct"
   },
   {
     "id": 252,
@@ -2284,7 +2375,8 @@
     "start": 1695999600000,
     "end": 1697079599000,
     "cards": [56, 105, 133, 187, 200, 212],
-    "en_id": 300
+    "en_id": 300,
+    "banner_type": "Your Pick"
   },
   {
     "id": 253,
@@ -2293,7 +2385,7 @@
     "end": 1698721199000,
     "cards": [365, 287, 62, 178, 204, 170],
     "en_id": 292,
-    "banner_type": "anniversary_10x"
+    "banner_type": "Free Pull"
   },
   {
     "id": 254,
@@ -2302,17 +2394,9 @@
     "end": 1700665199000,
     "cards": [209, 250, 266, 205, 77, 218],
     "en_id": 289,
-    "banner_type": "4_guaranteed"
+    "banner_type": "4★ Guaranteed"
   },
-  {
-    "id": 255,
-    "name": "[初心者応援]★4メンバー1人確定10連チケットガチャ",
-    "start": 1695999600000,
-    "end": 4102412399000,
-    "cards": [2, 183, 190, 239, 112, 103],
-    "en_id": 291,
-    "banner_type": "4_guaranteed"
-  },
+
   {
     "id": 256,
     "name": "Grow up with me！ガチャ",
@@ -2320,7 +2404,8 @@
     "end": 1697079599000,
     "cards": [418, 419, 420, 421],
     "en_id": 302,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 108
   },
   {
     "id": 257,
@@ -2329,7 +2414,7 @@
     "end": 1697036399000,
     "cards": [422, 275, 128],
     "en_id": 303,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 258,
@@ -2338,7 +2423,8 @@
     "end": 1697943599000,
     "cards": [423, 424, 352],
     "en_id": 305,
-    "banner_type": "event"
+    "banner_type": "Limited Event",
+    "event_id": 109
   },
   {
     "id": 259,
@@ -2350,7 +2436,7 @@
       91, 16, 194, 68, 289, 30, 314, 92, 350, 268
     ],
     "en_id": 306,
-    "banner_type": "memorial_select"
+    "banner_type": "Memorial Seelct"
   },
   {
     "id": 260,
@@ -2359,7 +2445,7 @@
     "end": 1698116399000,
     "cards": [271, 272, 273, 274],
     "en_id": 307,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 261,
@@ -2368,7 +2454,8 @@
     "end": 1698721199000,
     "cards": [426, 427, 428],
     "en_id": 308,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 110
   },
   {
     "id": 262,
@@ -2377,7 +2464,7 @@
     "end": 1699066799000,
     "cards": [348, 326, 299, 167, 93, 314],
     "en_id": 309,
-    "banner_type": "happiness_package"
+    "banner_type": "Happiness Package"
   },
   {
     "id": 263,
@@ -2386,7 +2473,7 @@
     "end": 1698937199000,
     "cards": [429, 282, 132],
     "en_id": 310,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 264,
@@ -2395,7 +2482,8 @@
     "end": 1699412399000,
     "cards": [430, 431, 432],
     "en_id": 311,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 111
   },
   {
     "id": 265,
@@ -2404,7 +2492,7 @@
     "end": 1700621999000,
     "cards": [339, 385, 291, 254, 146],
     "en_id": 312,
-    "banner_type": "world_link"
+    "banner_type": "Unit"
   },
   {
     "id": 266,
@@ -2413,7 +2501,7 @@
     "end": 1699714799000,
     "cards": [433, 286, 136],
     "en_id": 313,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 267,
@@ -2422,7 +2510,8 @@
     "end": 1700621999000,
     "cards": [434, 435, 436, 437],
     "en_id": 314,
-    "banner_type": "unit_limited"
+    "banner_type": "Unit Limited Event",
+    "event_id": 112
   },
   {
     "id": 268,
@@ -2431,7 +2520,7 @@
     "end": 1700319599000,
     "cards": [438, 290, 140],
     "en_id": 317,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 269,
@@ -2440,7 +2529,7 @@
     "end": 1700535599000,
     "cards": [283, 284, 285],
     "en_id": 316,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 270,
@@ -2449,7 +2538,7 @@
     "end": 1701053999000,
     "cards": [74, 75, 76],
     "en_id": 318,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 271,
@@ -2458,7 +2547,7 @@
     "end": 1701053999000,
     "cards": [200, 201, 202, 203],
     "en_id": 320,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 272,
@@ -2467,7 +2556,8 @@
     "end": 1701313199000,
     "cards": [439, 440, 353],
     "en_id": 319,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 113
   },
   {
     "id": 273,
@@ -2476,7 +2566,7 @@
     "end": 1701658799000,
     "cards": [390, 376, 363, 267, 22, 401, 291, 228, 97, 118],
     "en_id": 321,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 274,
@@ -2485,7 +2575,8 @@
     "end": 1702177199000,
     "cards": [441, 442, 443],
     "en_id": 323,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 114
   },
   {
     "id": 275,
@@ -2494,7 +2585,7 @@
     "end": 1702997999000,
     "cards": [458, 459, 460, 461, 462, 463],
     "en_id": 351,
-    "banner_type": "collab_limited"
+    "banner_type": "Collab"
   },
   {
     "id": 276,
@@ -2503,7 +2594,7 @@
     "end": 1702393199000,
     "cards": [444, 297, 147],
     "en_id": 324,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 277,
@@ -2512,7 +2603,8 @@
     "end": 1703041199000,
     "cards": [445, 446, 447],
     "en_id": 336,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 115
   },
   {
     "id": 278,
@@ -2521,7 +2613,7 @@
     "end": 1703127599000,
     "cards": [294, 295, 296],
     "en_id": 337,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 279,
@@ -2530,7 +2622,7 @@
     "end": 1703559599000,
     "cards": [85, 86, 87],
     "en_id": 343,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 280,
@@ -2539,7 +2631,7 @@
     "end": 1703559599000,
     "cards": [123, 124, 125],
     "en_id": 339,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 281,
@@ -2548,7 +2640,8 @@
     "end": 1703991599000,
     "cards": [448, 449, 450],
     "en_id": 340,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 116
   },
   {
     "id": 282,
@@ -2557,7 +2650,7 @@
     "end": 1704207599000,
     "cards": [451, 304, 159],
     "en_id": 344,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 283,
@@ -2566,7 +2659,7 @@
     "end": 1704207599000,
     "cards": [452, 305, 160],
     "en_id": 345,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 284,
@@ -2575,7 +2668,7 @@
     "end": 1704337199000,
     "cards": [453, 454, 455, 456, 457],
     "en_id": 348,
-    "banner_type": "ny_colorful"
+    "banner_type": "Colorful Festival"
   },
   {
     "id": 285,
@@ -2584,7 +2677,7 @@
     "end": 1704769199000,
     "cards": [131, 411, 356, 396, 335, 385],
     "en_id": 347,
-    "banner_type": "ny_premium"
+    "banner_type": "Premium Gift"
   },
   {
     "id": 286,
@@ -2593,7 +2686,7 @@
     "end": 1706756399000,
     "cards": [37, 389, 376, 141, 280, 135],
     "en_id": 346,
-    "banner_type": "ny_10x"
+    "banner_type": "Free Pull"
   },
   {
     "id": 287,
@@ -2602,7 +2695,7 @@
     "end": 1705978799000,
     "cards": [396, 374, 423, 266, 131],
     "en_id": 349,
-    "banner_type": "world_link"
+    "banner_type": "Unit"
   },
   {
     "id": 288,
@@ -2611,7 +2704,8 @@
     "end": 1704769199000,
     "cards": [455, 456, 457],
     "en_id": 350,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 117
   },
   {
     "id": 289,
@@ -2619,7 +2713,8 @@
     "start": 1704639600000,
     "end": 1705244399000,
     "cards": [464, 311, 166],
-    "en_id": 352
+    "en_id": 352,
+    "banner_type": "Birthday"
   },
   {
     "id": 290,
@@ -2628,7 +2723,8 @@
     "end": 1705978799000,
     "cards": [465, 466, 467, 468],
     "en_id": 353,
-    "banner_type": "unit_limited"
+    "banner_type": "Unit Limited Event",
+    "event_id": 118
   },
   {
     "id": 291,
@@ -2637,7 +2733,7 @@
     "end": 1705719599000,
     "cards": [308, 309, 310],
     "en_id": 354,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 292,
@@ -2646,7 +2742,7 @@
     "end": 1706151599000,
     "cards": [56, 57, 58],
     "en_id": 356,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 293,
@@ -2655,7 +2751,7 @@
     "end": 1706151599000,
     "cards": [163, 164, 165],
     "en_id": 358,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 294,
@@ -2664,7 +2760,8 @@
     "end": 1706756399000,
     "cards": [469, 470, 471],
     "en_id": 359,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 119
   },
   {
     "id": 295,
@@ -2673,7 +2770,7 @@
     "end": 1707015599000,
     "cards": [208, 410, 377, 357, 330, 400, 386, 171, 180, 350],
     "en_id": 360,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 296,
@@ -2682,7 +2779,7 @@
     "end": 1706885999000,
     "cards": [472, 318, 173],
     "en_id": 361,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 297,
@@ -2691,7 +2788,7 @@
     "end": 1707145199000,
     "cards": [473, 319, 174],
     "en_id": 362,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 298,
@@ -2700,7 +2797,8 @@
     "end": 1707533999000,
     "cards": [474, 475, 476],
     "en_id": 363,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 120
   },
   {
     "id": 299,
@@ -2709,7 +2807,7 @@
     "end": 1708095599000,
     "cards": [477, 323, 181],
     "en_id": 365,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 300,
@@ -2718,7 +2816,8 @@
     "end": 1708397999000,
     "cards": [478, 479, 480],
     "en_id": 366,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 121
   },
   {
     "id": 301,
@@ -2727,7 +2826,7 @@
     "end": 1708484399000,
     "cards": [320, 321, 322],
     "en_id": 367,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 302,
@@ -2736,7 +2835,7 @@
     "end": 1708700399000,
     "cards": [481, 327, 182],
     "en_id": 369,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 303,
@@ -2745,7 +2844,7 @@
     "end": 1708916399000,
     "cards": [186, 187, 188],
     "en_id": 364,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 304,
@@ -2754,7 +2853,7 @@
     "end": 1708916399000,
     "cards": [224, 225, 226],
     "en_id": 371,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 305,
@@ -2763,7 +2862,8 @@
     "end": 1709175599000,
     "cards": [482, 483, 484],
     "en_id": 370,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 122
   },
   {
     "id": 306,
@@ -2772,7 +2872,7 @@
     "end": 1709521199000,
     "cards": [426, 412, 412, 440, 254, 352],
     "en_id": 373,
-    "banner_type": "happiness_package"
+    "banner_type": "Happiness Package"
   },
   {
     "id": 307,
@@ -2781,7 +2881,8 @@
     "end": 1709866799000,
     "cards": [485, 486, 487],
     "en_id": 374,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 123
   },
   {
     "id": 308,
@@ -2790,7 +2891,7 @@
     "end": 1711076399000,
     "cards": [335, 312, 367, 279, 27],
     "en_id": 375,
-    "banner_type": "world_link"
+    "banner_type": "Unit"
   },
   {
     "id": 309,
@@ -2799,7 +2900,7 @@
     "end": 1709909999000,
     "cards": [488, 334, 189],
     "en_id": 376,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 310,
@@ -2808,7 +2909,8 @@
     "end": 1711076399000,
     "cards": [489, 490, 491, 492],
     "en_id": 377,
-    "banner_type": "unit_limited"
+    "banner_type": "Unit Limited Event",
+    "event_id": 124
   },
   {
     "id": 311,
@@ -2817,7 +2919,7 @@
     "end": 1710903599000,
     "cards": [331, 332, 333],
     "en_id": 378,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 312,
@@ -2826,7 +2928,7 @@
     "end": 1711508399000,
     "cards": [133, 134, 135],
     "en_id": 382,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 313,
@@ -2835,7 +2937,7 @@
     "end": 1711508399000,
     "cards": [175, 176, 177],
     "en_id": 379,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 314,
@@ -2844,7 +2946,7 @@
     "end": 1711378799000,
     "cards": [493, 338, 193],
     "en_id": 380,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 315,
@@ -2853,7 +2955,8 @@
     "end": 1711767599000,
     "cards": [494, 495, 496],
     "en_id": 381,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 125
   },
   {
     "id": 316,
@@ -2862,7 +2965,7 @@
     "end": 1712501999000,
     "cards": [364, 324, 424, 401, 263, 428],
     "en_id": 383,
-    "banner_type": "happiness_package"
+    "banner_type": "Happiness Package"
   },
   {
     "id": 317,
@@ -2871,7 +2974,7 @@
     "end": 1712199599000,
     "cards": [497, 498, 499, 500, 501, 502],
     "en_id": 384,
-    "banner_type": "anniversary_colorful"
+    "banner_type": "Collab"
   },
   {
     "id": 318,
@@ -2880,7 +2983,7 @@
     "end": 1714489199000,
     "cards": [289, 241, 314, 300, 69, 391],
     "en_id": 385,
-    "banner_type": "anniversary_premium"
+    "banner_type": "Premium Gift"
   },
   {
     "id": 319,
@@ -2889,7 +2992,7 @@
     "end": 1717167599000,
     "cards": [378, 411, 277, 158, 425, 217],
     "en_id": 386,
-    "banner_type": "4_guaranteed"
+    "banner_type": "4★ Guaranteed"
   },
   {
     "id": 320,
@@ -2898,7 +3001,7 @@
     "end": 1717167599000,
     "cards": [131, 65, 276, 67, 88, 195],
     "en_id": 387,
-    "banner_type": "anniversary_10x"
+    "banner_type": "Free Pull"
   },
   {
     "id": 321,
@@ -2907,7 +3010,8 @@
     "end": 1712717999000,
     "cards": [500, 501, 502],
     "en_id": 388,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 126
   },
   {
     "id": 322,
@@ -2916,7 +3020,8 @@
     "end": 1713581999000,
     "cards": [503, 504, 505],
     "en_id": 390,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 127
   },
   {
     "id": 323,
@@ -2925,7 +3030,7 @@
     "end": 1713668399000,
     "cards": [344, 345, 346, 347],
     "en_id": 391,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 324,
@@ -2933,7 +3038,8 @@
     "start": 1712977200000,
     "end": 1714489199000,
     "cards": [289, 351, 229, 352, 353, 303],
-    "en_id": 237
+    "en_id": 237,
+    "banner_type": "Premium Gift"
   },
   {
     "id": 325,
@@ -2942,7 +3048,7 @@
     "end": 1713625199000,
     "cards": [506, 354, 207],
     "en_id": 392,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 326,
@@ -2951,7 +3057,7 @@
     "end": 1714186799000,
     "cards": [105, 106, 107],
     "en_id": 0,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 327,
@@ -2960,7 +3066,7 @@
     "end": 1714186799000,
     "cards": [212, 213, 214],
     "en_id": 395,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 328,
@@ -2969,7 +3075,8 @@
     "end": 1714445999000,
     "cards": [507, 508, 509],
     "en_id": 394,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 128
   },
   {
     "id": 329,
@@ -2978,7 +3085,7 @@
     "end": 1714489199000,
     "cards": [365, 122, 245, 218, 350, 222],
     "en_id": 0,
-    "banner_type": "premium"
+    "banner_type": "Premium Gift"
   },
   {
     "id": 330,
@@ -2987,7 +3094,7 @@
     "end": 1715007599000,
     "cards": [510, 358, 211],
     "en_id": 396,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 331,
@@ -2996,7 +3103,8 @@
     "end": 1715223599000,
     "cards": [511, 512, 513],
     "en_id": 397,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 129
   },
   {
     "id": 332,
@@ -3005,7 +3113,7 @@
     "end": 1716433199000,
     "cards": [376, 277, 355, 190, 484],
     "en_id": 398,
-    "banner_type": "world_link"
+    "banner_type": "Unit"
   },
   {
     "id": 333,
@@ -3014,7 +3122,7 @@
     "end": 1715785199000,
     "cards": [514, 362, 215],
     "en_id": 401,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 334,
@@ -3023,7 +3131,8 @@
     "end": 1716433199000,
     "cards": [515, 516, 517, 518],
     "en_id": 402,
-    "banner_type": "unit_limited"
+    "banner_type": "Unit Limited Event",
+    "event_id": 130
   },
   {
     "id": 335,
@@ -3032,7 +3141,7 @@
     "end": 1716173999000,
     "cards": [359, 360, 361],
     "en_id": 404,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 336,
@@ -3041,7 +3150,7 @@
     "end": 1716605999000,
     "cards": [114, 115, 116],
     "en_id": 407,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 337,
@@ -3050,7 +3159,7 @@
     "end": 1716605999000,
     "cards": [236, 237, 238],
     "en_id": 413,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 338,
@@ -3059,7 +3168,7 @@
     "end": 1716476399000,
     "cards": [519, 366, 219],
     "en_id": 406,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 339,
@@ -3068,7 +3177,8 @@
     "end": 1717124399000,
     "cards": [520, 521, 522],
     "en_id": 409,
-    "banner_type": "event"
+    "banner_type": "Event",
+    "event_id": 131
   },
   {
     "id": 340,
@@ -3077,7 +3187,7 @@
     "end": 1717167599000,
     "cards": [523, 370, 223],
     "en_id": 410,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 341,
@@ -3086,7 +3196,7 @@
     "end": 1717469999000,
     "cards": [427, 446, 377, 424, 398, 439, 414, 387, 484, 352],
     "en_id": 411,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 342,
@@ -3095,7 +3205,8 @@
     "end": 1717988399000,
     "cards": [524, 525, 526],
     "en_id": 414,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 132
   },
   {
     "id": 343,
@@ -3103,7 +3214,9 @@
     "start": 1717988400000,
     "end": 1718852399000,
     "cards": [527, 528, 529],
-    "en_id": 418
+    "en_id": 418,
+    "event_id": 133,
+    "banner_type": "Event"
   },
   {
     "id": 344,
@@ -3112,7 +3225,7 @@
     "end": 1718938799000,
     "cards": [371, 372, 373],
     "en_id": 425,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 345,
@@ -3138,7 +3251,8 @@
     "start": 1718593200000,
     "end": 1719370799000,
     "cards": [259, 260, 261],
-    "en_id": 429,"banner_type":"Limited Event Rerun"
+    "en_id": 429,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 348,
@@ -3156,7 +3270,8 @@
     "end": 1719716399000,
     "cards": [530, 531, 532],
     "en_id": 419,
-    "banner_type": "Event"
+    "banner_type": "Event",
+    "event_id": 134
   },
   {
     "id": 350,
@@ -3165,7 +3280,7 @@
     "end": 1719759599000,
     "cards": [540, 379, 233],
     "en_id": 424,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 351,
@@ -3174,7 +3289,8 @@
     "end": 1720061999000,
     "cards": [536, 537, 533, 534, 535],
     "en_id": 420,
-    "banner_type": "bloom"
+    "banner_type": "Bloom Festival",
+    "event_id": 135
   },
   {
     "id": 352,
@@ -3183,7 +3299,8 @@
     "end": 1720493999000,
     "cards": [533, 534, 535],
     "en_id": 421,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event",
+    "event_id": 135
   },
   {
     "id": 353,
@@ -3192,7 +3309,7 @@
     "end": 1721185199000,
     "cards": [541, 542, 543],
     "en_id": 430,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 354,
@@ -3201,7 +3318,7 @@
     "end": 1722394799000,
     "cards": [479, 507, 427, 411, 289],
     "en_id": -3,
-    "banner_type": "world_link_support"
+    "banner_type": "Unit"
   },
   {
     "id": 355,
@@ -3210,7 +3327,7 @@
     "end": 1721444399000,
     "cards": [382, 383, 384],
     "en_id": 435,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 356,
@@ -3219,7 +3336,7 @@
     "end": 1721789999000,
     "cards": [144, 145, 146],
     "en_id": 436,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 357,
@@ -3228,7 +3345,7 @@
     "end": 1721789999000,
     "cards": [247, 248, 249],
     "en_id": 434,
-    "banner_type": "returning_limited"
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 358,
@@ -3237,7 +3354,7 @@
     "end": 1722394799000,
     "cards": [544, 545, 546, 547],
     "en_id": 431,
-    "banner_type": "unit_limited"
+    "banner_type": "Unit Limited Event"
   },
   {
     "id": 359,
@@ -3246,7 +3363,7 @@
     "end": 1722005999000,
     "cards": [548, 388, 242],
     "en_id": 432,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 360,
@@ -3255,7 +3372,7 @@
     "end": 1722524399000,
     "cards": [549, 392, 246],
     "en_id": 433,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 361,
@@ -3264,7 +3381,7 @@
     "end": 1722740399000,
     "cards": [349, 324, 375, 336, 385, 450],
     "en_id": 437,
-    "banner_type": "happiness_package"
+    "banner_type": "Happiness Package"
   },
   {
     "id": 362,
@@ -3273,7 +3390,7 @@
     "end": 1723172399000,
     "cards": [550, 551, 552],
     "en_id": 439,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event"
   },
   {
     "id": 363,
@@ -3282,7 +3399,7 @@
     "end": 1723863599000,
     "cards": [553, 554, 555],
     "en_id": 440,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 364,
@@ -3291,7 +3408,7 @@
     "end": 1725073199000,
     "cards": [484, 248, 522, 352, 496, 450],
     "en_id": -6,
-    "banner_type": "world_link_support"
+    "banner_type": "Unit"
   },
   {
     "id": 365,
@@ -3300,7 +3417,7 @@
     "end": 1723906799000,
     "cards": [556, 399, 253],
     "en_id": 442,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 366,
@@ -3308,8 +3425,8 @@
     "start": 1723431600000,
     "end": 1724209199000,
     "cards": [393, 394, 395],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 501,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 367,
@@ -3317,8 +3434,8 @@
     "start": 1723777200000,
     "end": 1724554799000,
     "cards": [283, 284, 285],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 502,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 368,
@@ -3326,8 +3443,8 @@
     "start": 1723777200000,
     "end": 1724554799000,
     "cards": [308, 309, 310],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 503,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 369,
@@ -3336,7 +3453,7 @@
     "end": 1725073199000,
     "cards": [557, 558, 559, 560, 561, 562],
     "en_id": 441,
-    "banner_type": "unit_limited"
+    "banner_type": "Unit Limited Event"
   },
   {
     "id": 370,
@@ -3345,7 +3462,7 @@
     "end": 1725289199000,
     "cards": [563, 403, 257],
     "en_id": 443,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 371,
@@ -3372,7 +3489,7 @@
     "end": 1725634799000,
     "cards": [564, 404, 258],
     "en_id": 444,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 374,
@@ -3381,7 +3498,7 @@
     "end": 1725937199000,
     "cards": [565, 566, 567],
     "en_id": 445,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event"
   },
   {
     "id": 375,
@@ -3390,7 +3507,7 @@
     "end": 1726412399000,
     "cards": [568, 409, 262],
     "en_id": 448,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 376,
@@ -3399,7 +3516,7 @@
     "end": 1726801199000,
     "cards": [569, 570, 571],
     "en_id": 446,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 377,
@@ -3407,8 +3524,8 @@
     "start": 1726110000000,
     "end": 1726887599000,
     "cards": [405, 406, 407, 408],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 504,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 378,
@@ -3416,8 +3533,8 @@
     "start": 1726455600000,
     "end": 1727233199000,
     "cards": [320, 321, 322],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 505,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 379,
@@ -3425,8 +3542,8 @@
     "start": 1726455600000,
     "end": 1727233199000,
     "cards": [331, 332, 333],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 506,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 380,
@@ -3435,17 +3552,9 @@
     "end": 1727665199000,
     "cards": [572, 573, 574],
     "en_id": 447,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
-  {
-    "id": 381,
-    "name": "ミッションガチャ",
-    "start": 1727488800000,
-    "end": 4102340399000,
-    "cards": [287, 278, 299, 337, 292, 365],
-    "en_id": -4,
-    "banner_type": "ticket"
-  },
+
   {
     "id": 382,
     "name": "4周年前夜祭スペシャルプライズガチャ",
@@ -3516,7 +3625,7 @@
     "end": 1728010799000,
     "cards": [575, 576, 577, 578, 579, 580],
     "en_id": 449,
-    "banner_type": "bloom"
+    "banner_type": "Bloom Festival"
   },
   {
     "id": 390,
@@ -3534,7 +3643,7 @@
     "end": 1730343599000,
     "cards": [344, 237, 273, 247, 373, 226],
     "en_id": -4,
-    "banner_type": "anniversary_your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 392,
@@ -3561,7 +3670,7 @@
     "end": 1728723599000,
     "cards": [577, 578, 579, 580],
     "en_id": 451,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event"
   },
   {
     "id": 395,
@@ -3570,7 +3679,7 @@
     "end": 1728658799000,
     "cards": [581, 422, 275, 128],
     "en_id": 454,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 396,
@@ -3579,7 +3688,7 @@
     "end": 1729479599000,
     "cards": [582, 583, 584],
     "en_id": 452,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 397,
@@ -3596,8 +3705,8 @@
     "start": 1728874800000,
     "end": 1729652399000,
     "cards": [418, 419, 420, 421],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 507,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 399,
@@ -3605,8 +3714,8 @@
     "start": 1728874800000,
     "end": 1729652399000,
     "cards": [294, 295, 296],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 508,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 400,
@@ -3615,7 +3724,7 @@
     "end": 1730343599000,
     "cards": [585, 586, 587],
     "en_id": 453,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 401,
@@ -3624,7 +3733,7 @@
     "end": 1730559599000,
     "cards": [588, 429, 282, 132],
     "en_id": 455,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 402,
@@ -3642,20 +3751,9 @@
     "end": 1731207599000,
     "cards": [589, 590, 591],
     "en_id": 456,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event"
   },
-  {
-    "id": 404,
-    "name": "初心者応援メモリアルセレクトガチャ",
-    "start": 1730343600000,
-    "end": 4102412399000,
-    "cards": [
-      389, 507, 478, 446, 482, 527, 377, 357, 396, 413, 423, 494, 521, 400, 367,
-      469, 448, 530, 503, 415, 484, 428, 378, 447, 509, 529
-    ],
-    "en_id": -3,
-    "banner_type": "memorial_select"
-  },
+
   {
     "id": 405,
     "name": "[MEIKO]HAPPY ANNIVERSARY2024ガチャ",
@@ -3663,7 +3761,7 @@
     "end": 1731337199000,
     "cards": [592, 433, 286, 136],
     "en_id": 459,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 406,
@@ -3672,7 +3770,7 @@
     "end": 1732071599000,
     "cards": [593, 594, 595],
     "en_id": 457,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 407,
@@ -3681,7 +3779,7 @@
     "end": 1731941999000,
     "cards": [596, 438, 290, 140],
     "en_id": 460,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 408,
@@ -3689,8 +3787,8 @@
     "start": 1731380400000,
     "end": 1732157999000,
     "cards": [344, 345, 346, 347],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 509,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 409,
@@ -3698,8 +3796,8 @@
     "start": 1731380400000,
     "end": 1732157999000,
     "cards": [430, 431, 432],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 510,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 410,
@@ -3708,7 +3806,7 @@
     "end": 1732935599000,
     "cards": [597, 598, 599],
     "en_id": 458,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 411,
@@ -3717,7 +3815,7 @@
     "end": 1733281199000,
     "cards": [479, 507, 482, 527, 555, 520, 504, 531, 353, 529],
     "en_id": -9,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 412,
@@ -3726,7 +3824,7 @@
     "end": 1733885999000,
     "cards": [600, 601, 602],
     "en_id": 461,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event"
   },
   {
     "id": 413,
@@ -3735,7 +3833,7 @@
     "end": 1734015599000,
     "cards": [603, 444, 297, 147],
     "en_id": 464,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 414,
@@ -3753,7 +3851,7 @@
     "end": 1734749999000,
     "cards": [604, 605, 606],
     "en_id": 462,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 416,
@@ -3761,8 +3859,8 @@
     "start": 1734058800000,
     "end": 1734836399000,
     "cards": [359, 360, 361],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 511,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 417,
@@ -3770,8 +3868,8 @@
     "start": 1734058800000,
     "end": 1734836399000,
     "cards": [441, 442, 443],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 512,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 418,
@@ -3780,7 +3878,7 @@
     "end": 1735613999000,
     "cards": [607, 608, 609],
     "en_id": 463,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 419,
@@ -3789,7 +3887,7 @@
     "end": 1735829999000,
     "cards": [610, 451, 304, 159],
     "en_id": 465,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 420,
@@ -3798,7 +3896,7 @@
     "end": 1735829999000,
     "cards": [611, 452, 305, 160],
     "en_id": 466,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 421,
@@ -3807,7 +3905,7 @@
     "end": 1735959599000,
     "cards": [612, 613, 614, 615, 616],
     "en_id": 467,
-    "banner_type": "bloom"
+    "banner_type": "Bloom Festival"
   },
   {
     "id": 422,
@@ -3843,7 +3941,7 @@
     "end": 1736564399000,
     "cards": [572, 478, 355, 528, 396, 570, 521, 470, 503, 484],
     "en_id": -9,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 426,
@@ -3852,7 +3950,7 @@
     "end": 1736564399000,
     "cards": [614, 615, 616],
     "en_id": 468,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event"
   },
   {
     "id": 427,
@@ -3861,7 +3959,7 @@
     "end": 1736866799000,
     "cards": [617, 464, 311, 166],
     "en_id": 471,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 428,
@@ -3870,7 +3968,7 @@
     "end": 1737428399000,
     "cards": [618, 619, 620],
     "en_id": 469,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 429,
@@ -3878,8 +3976,8 @@
     "start": 1736823600000,
     "end": 1737601199000,
     "cards": [382, 383, 384],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 513,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 430,
@@ -3887,8 +3985,8 @@
     "start": 1736823600000,
     "end": 1737601199000,
     "cards": [455, 456, 457],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 514,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 431,
@@ -3897,7 +3995,7 @@
     "end": 1737514799000,
     "cards": [320, 176, 427, 446, 289],
     "en_id": 400,
-    "banner_type": "unit_recollection"
+    "banner_type": "Unit Recollection"
   },
   {
     "id": 432,
@@ -3906,7 +4004,7 @@
     "end": 1738292399000,
     "cards": [621, 622, 623],
     "en_id": 470,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 433,
@@ -3915,7 +4013,7 @@
     "end": 1737946799000,
     "cards": [285, 412, 377, 272, 192],
     "en_id": 403,
-    "banner_type": "unit_recollection"
+    "banner_type": "Unit Recollection"
   },
   {
     "id": 434,
@@ -3933,7 +4031,7 @@
     "end": 1738508399000,
     "cards": [624, 472, 318, 173],
     "en_id": 472,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 436,
@@ -3942,7 +4040,7 @@
     "end": 1738378799000,
     "cards": [424, 309, 273, 299, 131],
     "en_id": 405,
-    "banner_type": "unit_recollection"
+    "banner_type": "Unit Recollection"
   },
   {
     "id": 437,
@@ -3951,7 +4049,7 @@
     "end": 1738767599000,
     "cards": [625, 473, 319, 174],
     "en_id": 473,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 438,
@@ -3960,7 +4058,7 @@
     "end": 1739156399000,
     "cards": [626, 627, 628],
     "en_id": 474,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event"
   },
   {
     "id": 439,
@@ -3969,7 +4067,7 @@
     "end": 1738810799000,
     "cards": [335, 400, 321, 274, 27],
     "en_id": 408,
-    "banner_type": "unit_recollection"
+    "banner_type": "Unit Recollection"
   },
   {
     "id": 440,
@@ -3978,7 +4076,7 @@
     "end": 1739242799000,
     "cards": [448, 271, 238, 415, 146],
     "en_id": 412,
-    "banner_type": "unit_recollection"
+    "banner_type": "Unit Recollection"
   },
   {
     "id": 441,
@@ -3987,7 +4085,7 @@
     "end": 1739717999000,
     "cards": [629, 477, 323, 181],
     "en_id": 477,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 442,
@@ -3996,7 +4094,7 @@
     "end": 1740020399000,
     "cards": [630, 631, 632],
     "en_id": 475,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 443,
@@ -4004,8 +4102,8 @@
     "start": 1739329200000,
     "end": 1740106799000,
     "cards": [371, 372, 373],
-    "en_id": -6,
-    "banner_type": "returning_limited"
+    "en_id": 515,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 444,
@@ -4013,8 +4111,8 @@
     "start": 1739329200000,
     "end": 1740106799000,
     "cards": [474, 475, 476],
-    "en_id": -6,
-    "banner_type": "returning_limited"
+    "en_id": 516,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 445,
@@ -4032,7 +4130,7 @@
     "end": 1740927599000,
     "cards": [633, 634, 635, 636],
     "en_id": 450,
-    "banner_type": "collab_limited"
+    "banner_type": "Collab"
   },
   {
     "id": 447,
@@ -4040,7 +4138,8 @@
     "start": 1739718000000,
     "end": 1740322799000,
     "cards": [637, 481, 327, 182],
-    "en_id": 478
+    "en_id": 478,
+    "banner_type": "Birthday"
   },
   {
     "id": 448,
@@ -4049,7 +4148,7 @@
     "end": 1740711599000,
     "cards": [638, 639, 640],
     "en_id": 476,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 449,
@@ -4058,7 +4157,7 @@
     "end": 1741057199000,
     "cards": [410, 390, 445, 569, 585, 375, 401, 554, 428, 505],
     "en_id": -9,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 450,
@@ -4067,7 +4166,7 @@
     "end": 1741575599000,
     "cards": [641, 642, 643],
     "en_id": 479,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event"
   },
   {
     "id": 451,
@@ -4076,7 +4175,7 @@
     "end": 1741445999000,
     "cards": [644, 488, 334, 189],
     "en_id": 483,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 452,
@@ -4094,7 +4193,7 @@
     "end": 1742439599000,
     "cards": [645, 646, 647],
     "en_id": 480,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 454,
@@ -4102,8 +4201,8 @@
     "start": 1741748400000,
     "end": 1742525999000,
     "cards": [405, 406, 407, 408],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 517,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 455,
@@ -4111,8 +4210,8 @@
     "start": 1741748400000,
     "end": 1742525999000,
     "cards": [485, 486, 487],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 518,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 456,
@@ -4121,7 +4220,7 @@
     "end": 1742914799000,
     "cards": [648, 493, 338, 193],
     "en_id": 484,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 457,
@@ -4130,7 +4229,7 @@
     "end": 1743303599000,
     "cards": [649, 650, 651],
     "en_id": 481,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 458,
@@ -4139,7 +4238,7 @@
     "end": 1743735599000,
     "cards": [652, 653, 654, 655, 656],
     "en_id": 482,
-    "banner_type": "bloom"
+    "banner_type": "Bloom Festival"
   },
   {
     "id": 459,
@@ -4166,7 +4265,7 @@
     "end": 1744081199000,
     "cards": [420, 176, 430, 248, 421, 395],
     "en_id": -4,
-    "banner_type": "anniversary_your_pick"
+    "banner_type": "Your Pick"
   },
   {
     "id": 462,
@@ -4184,7 +4283,7 @@
     "end": 1744081199000,
     "cards": [654, 655, 656],
     "en_id": 485,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event"
   },
   {
     "id": 464,
@@ -4193,7 +4292,7 @@
     "end": 1745290799000,
     "cards": [657, 658, 659, 660],
     "en_id": 486,
-    "banner_type": "unit_limited"
+    "banner_type": "Unit Limited Event"
   },
   {
     "id": 465,
@@ -4201,8 +4300,8 @@
     "start": 1744340400000,
     "end": 1745117999000,
     "cards": [393, 394, 395],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 519,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 466,
@@ -4210,8 +4309,8 @@
     "start": 1744340400000,
     "end": 1745117999000,
     "cards": [500, 501, 502],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 520,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 467,
@@ -4220,7 +4319,7 @@
     "end": 1745161199000,
     "cards": [661, 506, 354, 207],
     "en_id": 488,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 468,
@@ -4229,7 +4328,7 @@
     "end": 1745981999000,
     "cards": [662, 663, 664],
     "en_id": 487,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 469,
@@ -4238,7 +4337,7 @@
     "end": 1746543599000,
     "cards": [665, 510, 358, 211],
     "en_id": 489,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 470,
@@ -4247,7 +4346,7 @@
     "end": 1746759599000,
     "cards": [666, 667, 668],
     "en_id": 490,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event"
   },
   {
     "id": 471,
@@ -4274,7 +4373,7 @@
     "end": 1747321199000,
     "cards": [670, 514, 362, 215],
     "en_id": 493,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 474,
@@ -4283,7 +4382,7 @@
     "end": 1747969199000,
     "cards": [671, 672, 673, 674],
     "en_id": 491,
-    "banner_type": "unit_limited"
+    "banner_type": "Unit Limited Event"
   },
   {
     "id": 475,
@@ -4291,8 +4390,8 @@
     "start": 1747018800000,
     "end": 1747796399000,
     "cards": [418, 419, 420, 421],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 521,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 476,
@@ -4300,8 +4399,8 @@
     "start": 1747018800000,
     "end": 1747796399000,
     "cards": [511, 512, 513],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 522,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 477,
@@ -4310,7 +4409,7 @@
     "end": 1748012399000,
     "cards": [675, 519, 366, 219],
     "en_id": 494,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 478,
@@ -4319,7 +4418,7 @@
     "end": 1748660399000,
     "cards": [676, 677, 678],
     "en_id": 492,
-    "banner_type": "event"
+    "banner_type": "Event"
   },
   {
     "id": 479,
@@ -4328,7 +4427,7 @@
     "end": 1748703599000,
     "cards": [679, 523, 370, 223],
     "en_id": 495,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 480,
@@ -4346,7 +4445,7 @@
     "end": 1749437999000,
     "cards": [680, 681, 682],
     "en_id": 496,
-    "banner_type": "event_limited"
+    "banner_type": "Limited Event"
   },
   {
     "id": 482,
@@ -4364,7 +4463,7 @@
     "end": 1750647599000,
     "cards": [683, 684, 685, 686],
     "en_id": 497,
-    "banner_type": "world_link"
+    "banner_type": "Unit Limited Event"
   },
   {
     "id": 484,
@@ -4372,8 +4471,8 @@
     "cards": [524, 525, 526],
     "start": 1748718000000,
     "end": 1749581999000,
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 523,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 485,
@@ -4381,8 +4480,8 @@
     "start": 1749697200000,
     "end": 1750474799000,
     "cards": [430, 431, 432],
-    "en_id": -1,
-    "banner_type": "returning_limited"
+    "en_id": 524,
+    "banner_type": "Limited Event Rerun"
   },
   {
     "id": 486,
@@ -4400,7 +4499,7 @@
     "end": 1751857199000,
     "cards": [1078, 1079, 1080, 1081],
     "en_id": 498,
-    "banner_type": "world_link"
+    "banner_type": "Unit Limited Event"
   },
   {
     "id": 488,
@@ -4409,7 +4508,7 @@
     "end": 1751295599000,
     "cards": [1082, 233, 379, 540],
     "en_id": 499,
-    "banner_type": "bday"
+    "banner_type": "Birthday"
   },
   {
     "id": 489,
@@ -4418,6 +4517,6 @@
     "end": 1751597999000,
     "cards": [479, 622, 594, 571, 520, 555, 618, 503, 609, 496],
     "en_id": -9,
-    "banner_type": "your_pick"
+    "banner_type": "Your Pick"
   }
 ]

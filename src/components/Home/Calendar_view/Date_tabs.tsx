@@ -3,7 +3,7 @@ import GlobalBanners from "../../../assets/json/en_banners.json";
 import JpBbanners from "../../../assets/json/jp_banners.json";
 import { useTheme } from "../../../context/Theme_toggle";
 
-import GachaTable from "./Gacha_table";
+import GachaTable from "../../Shared/Gacha_table";
 import type { BannerTypes, ServerTimeData } from "../Types";
 import { useServer } from "../../../context/Server";
 

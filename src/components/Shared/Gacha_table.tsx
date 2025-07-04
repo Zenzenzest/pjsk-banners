@@ -1,14 +1,19 @@
 import { useState, useEffect, useRef } from "react";
-import JpBanners from "../../../assets/json/jp_banners.json";
-import EnEvents from "../../../assets/json/en_events.json";
+import JpBanners from "../../assets/json/jp_banners.json";
+import EnEvents from "../../assets/json/en_events.json";
 
-import Cards from "../../../assets/json/cards.json";
-import { useTheme } from "../../../context/Theme_toggle";
-import type { CardState, GachaBannersProps, AllCardTypes } from "../Types";
-import CountdownTimer from "../Countdown_timer";
-import CardModal from "../../Shared/Card_modal";
-import { useServer } from "../../../context/Server";
-import EventEndedTimer from "../EventEnded_timer";
+import Cards from "../../assets/json/cards.json";
+import { useTheme } from "../../context/Theme_toggle";
+import type {
+  CardState,
+  GachaBannersProps,
+  AllCardTypes,
+  BannerTypes,
+} from "../Home/Types";
+import CountdownTimer from "../Home/Countdown_timer";
+import CardModal from "./Card_modal";
+import { useServer } from "../../context/Server";
+import EventEndedTimer from "../Home/EventEnded_timer";
 
 export default function GachaTable({
   filteredBanners,
@@ -74,10 +79,10 @@ export default function GachaTable({
   };
 
   // localStorage.removeItem("banners");
+
   const handleSaveBanner = (id: number) => {
     if (savedBanners.includes(id)) {
       const updatedBanners = savedBanners.filter((item) => item !== id);
-
       setSavedBanners(updatedBanners);
       localStorage.setItem("banners", JSON.stringify(updatedBanners));
     } else {
@@ -86,6 +91,9 @@ export default function GachaTable({
       setSavedBanners(updatedBanners);
       localStorage.setItem("banners", JSON.stringify(updatedBanners));
     }
+
+    // Dispatch custom event to notify other components
+    window.dispatchEvent(new Event("localStorageChanged"));
   };
 
   const isBannerSaved = (id: number) => {
@@ -97,7 +105,6 @@ export default function GachaTable({
   };
 
   const handleCardClick = (card: AllCardTypes) => {
-    console.log(card.jp_sekai_id);
     setCardState({
       cardId: card.id,
       rarity: card.rarity,
@@ -140,7 +147,8 @@ export default function GachaTable({
       >
         {/* DISCLAIMER */}
         {((selectedMonth >= 8 && selectedYear === 2025) ||
-          selectedYear >= 2026) && (
+          selectedYear >= 2026 ||
+          server === "saved") && (
           <div
             className={`text-sm italic mb-3 px-4 py-2 mx-3 rounded-lg ${
               theme === "dark"
@@ -161,7 +169,7 @@ export default function GachaTable({
             Dates will be adjusted when officially announced.
           </div>
         )}
-        {filteredBanners.map((banner) => {
+        {filteredBanners.map((banner: BannerTypes) => {
           const formattedGachaId = formatId(banner.id);
           const startDate = new Date(Number(banner.start));
           const endDate = new Date(Number(banner.end));

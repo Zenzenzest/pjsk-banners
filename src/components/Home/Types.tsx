@@ -12,8 +12,8 @@ export interface BannerTypes {
 }
 export interface GachaBannersProps {
   filteredBanners: BannerTypes[];
-  selectedYear: number;
-  selectedMonth: number;
+  selectedYear?: number;
+  selectedMonth?: number;
   parentRef: React.RefObject<HTMLDivElement | null>;
 }
 
@@ -49,7 +49,6 @@ export interface AllCardTypes {
   unit: string;
   sub_unit?: string;
   real_id: number;
-  sekai_id?: number;
   en_sekai_id?: number;
   en_released?: number;
   jp_sekai_id: number;

@@ -11775,7 +11775,7 @@
     "card_type": "event",
     "real_id": 975,
     "released": 1757541600000,
-    "eekai_id": 997
+    "sekai_id": 997
   },
   {
     "id": 961,
@@ -11898,7 +11898,7 @@
     "card_type": "event",
     "real_id": 1009,
     "released": 1762815600000,
-    "eekai_id": 1031
+    "sekai_id": 1031
   },
   {
     "id": 971,
@@ -11910,7 +11910,7 @@
     "card_type": "event",
     "real_id": 1010,
     "released": 1762815600000,
-    "eekai_id": 1032
+    "sekai_id": 1032
   },
   {
     "id": 972,
@@ -12198,7 +12198,8 @@
     "attribute": "Mysterious",
     "real_id": 1115,
     "released": 1773180000000,
-    "sekai_id": 1137
+    "sekai_id": 1137,
+    "card_type": "event"
   },
   {
     "id": 996,
@@ -12297,7 +12298,8 @@
     "real_id": 1146,
     "released": 1777586400000,
     "sekai_id": 1166
-  },  {
+  },
+  {
     "id": 1004,
     "name": "Searching For A Production Know-How",
     "character": "Kiritani Haruka",
@@ -12320,7 +12322,8 @@
     "real_id": 1158,
     "released": 1779573600000,
     "sekai_id": 1178
-  },  {
+  },
+  {
     "id": 1006,
     "name": "The \"World\" Reflected In My Eyes",
     "character": "Shinonome Akito",
@@ -12331,7 +12334,6 @@
     "real_id": 1163,
     "released": 1780264800000,
     "sekai_id": 1183
-  
   },
   {
     "id": 1007,
