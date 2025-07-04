@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import type { CountdownProps } from "./types";
+import type { CountdownProps } from "./Types";
 import "./Countdown.css";
 
 export default function CountdownTimer({

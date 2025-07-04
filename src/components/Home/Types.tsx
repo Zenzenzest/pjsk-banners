@@ -4,7 +4,7 @@ export interface BannerTypes {
   cards: number[];
   start: number;
   end: number;
-  banner_type?: string;
+  banner_type: string;
   type?: string;
   confirmation?: string;
   event_id?: number;
@@ -49,6 +49,7 @@ export interface AllCardTypes {
   unit: string;
   sub_unit?: string;
   real_id: number;
+  sekai_id?: number;
   en_sekai_id?: number;
   en_released?: number;
   jp_sekai_id: number;

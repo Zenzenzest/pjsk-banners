@@ -54,9 +54,9 @@ export default function NavBar() {
             {/* Saved Cards Link */}
             <Link
               to="/saved_cards"
-              onClick={() => setServer("")}
+              onClick={() => setServer("saved")}
               className={`flex-1 text-center px-2 py-3 mx-1 rounded-md text-sm sm:text-base font-medium transition-colors ${
-                server === ""
+                server === "saved"
                   ? theme == "light"
                     ? "bg-blue-100 text-blue-700 shadow-inner"
                     : "bg-blue-900/50 text-blue-300 shadow-inner"

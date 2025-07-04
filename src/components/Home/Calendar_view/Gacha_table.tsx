@@ -1,13 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import JpBanners from "../../../assets/json/jp_banners.json";
 import EnEvents from "../../../assets/json/en_events.json";
-import JpEvents from "../../../assets/json/jp_events.json";
 
 import Cards from "../../../assets/json/cards.json";
 import { useTheme } from "../../../context/Theme_toggle";
-import type { CardState, GachaBannersProps, AllCardTypes } from "../types";
+import type { CardState, GachaBannersProps, AllCardTypes } from "../Types";
 import CountdownTimer from "../Countdown_timer";
-import CardModal from "../Card_modal";
+import CardModal from "../../Shared/Card_modal";
 import { useServer } from "../../../context/Server";
 import EventEndedTimer from "../EventEnded_timer";
 
@@ -23,6 +22,7 @@ export default function GachaTable({
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(true);
   const [showScrollButton, setShowScrollButton] = useState(false);
+  const [savedBanners, setSavedBanners] = useState<number[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
   const [cardState, setCardState] = useState<CardState>({
     cardId: 0,
@@ -30,7 +30,7 @@ export default function GachaTable({
     name: "",
     cardName: "",
     cardAttribute: "",
-    sekaiId:0
+    sekaiId: 0,
   });
 
   const formatId = (id: number) => String(id).padStart(4, "0");
@@ -38,6 +38,10 @@ export default function GachaTable({
 
   // Handle scroll detection, checks window scroll position
   useEffect(() => {
+    const saved = localStorage.getItem("banners");
+    if (saved) {
+      setSavedBanners(JSON.parse(saved));
+    }
     const handleScroll = () => {
       const scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
@@ -69,15 +73,38 @@ export default function GachaTable({
     }
   };
 
+  // localStorage.removeItem("banners");
+  const handleSaveBanner = (id: number) => {
+    if (savedBanners.includes(id)) {
+      const updatedBanners = savedBanners.filter((item) => item !== id);
+
+      setSavedBanners(updatedBanners);
+      localStorage.setItem("banners", JSON.stringify(updatedBanners));
+    } else {
+      const updatedBanners = [...savedBanners];
+      updatedBanners.push(id);
+      setSavedBanners(updatedBanners);
+      localStorage.setItem("banners", JSON.stringify(updatedBanners));
+    }
+  };
+
+  const isBannerSaved = (id: number) => {
+    if (savedBanners.includes(id)) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
   const handleCardClick = (card: AllCardTypes) => {
- 
+    console.log(card.jp_sekai_id);
     setCardState({
       cardId: card.id,
       rarity: card.rarity,
       name: card.character,
       cardName: card.name,
       cardAttribute: card.attribute,
-      sekaiId: card.jp_sekai_id
+      sekaiId: card.jp_sekai_id,
     });
     setIsOpen(true);
   };
@@ -219,6 +246,57 @@ export default function GachaTable({
                       </div>
                     )}
                 </div>
+                {/* SAVE OR REMOVE BANNER */}
+                {today < banner.start && (
+                  <div className="flex justify-center mt-2">
+                    <button
+                      onClick={() => handleSaveBanner(banner.id)}
+                      className={`flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium transition-all ${
+                        isBannerSaved(banner.id)
+                          ? theme === "dark"
+                            ? "bg-red-900/30 hover:bg-red-900/40 text-red-300 border border-red-700/50"
+                            : "bg-red-100 hover:bg-red-200 text-red-700 border border-red-300"
+                          : theme === "dark"
+                          ? "bg-indigo-900/30 hover:bg-indigo-900/40 text-indigo-300 border border-indigo-700/50"
+                          : "bg-indigo-100 hover:bg-indigo-200 text-indigo-700 border border-indigo-300"
+                      }`}
+                    >
+                      {isBannerSaved(banner.id) ? (
+                        <>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-4 w-4"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          Remove from Saved
+                        </>
+                      ) : (
+                        <>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-4 w-4"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          Save This Banner
+                        </>
+                      )}
+                    </button>
+                  </div>
+                )}
               </div>
               {/* CARDS */}
               <div className="w-1/2  flex flex-col items-center justify-center">

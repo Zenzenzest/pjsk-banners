@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react";
 import EnCards from "../../../assets/json/en_cards.json";
 import JpCards from "../../../assets/json/jp_cards.json";
-import type { CardsTypes, CardState, SelectedFilterTypesProps } from "../types";
-import CardModal from "../Card_modal";
+import type {
+  CardState,
+  SelectedFilterTypesProps,
+  CardsTypes,
+} from "../Types";
+import CardModal from "../../Shared/Card_modal";
 import { useTheme } from "../../../context/Theme_toggle";
 
 import { useServer } from "../../../context/Server";
@@ -21,10 +25,10 @@ export default function FilteredCards({
   const [cardState, setCardState] = useState<CardState>({
     cardId: 0,
     rarity: 4,
-    lastName: "",
-    firstName: "",
+    name: "",
     cardName: "",
     cardAttribute: "",
+    sekaiId: 0,
   });
 
   const { server } = useServer();
@@ -32,15 +36,16 @@ export default function FilteredCards({
   const today = Date.now();
 
   const handleCardClick = (card: CardsTypes) => {
-    const [lName, fName] = card.character.split(" ");
-    setCardState({
-      cardId: card.id,
-      rarity: card.rarity,
-      lastName: lName,
-      firstName: fName,
-      cardName: card.name,
-      cardAttribute: card.attribute,
-    });
+    if (card.sekai_id) {
+      setCardState({
+        cardId: card.id,
+        rarity: card.rarity,
+        name: card.character,
+        cardName: card.name,
+        cardAttribute: card.attribute,
+        sekaiId: card.sekai_id,
+      });
+    }
     setIsOpen(true);
   };
 

@@ -1,6 +1,6 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, ReactNode } from "react";
 
-type ServerType = "jp" | "global" | "";
+type ServerType = "jp" | "global" | "saved";
 
 type ServerContextType = {
   server: ServerType;

@@ -4,7 +4,7 @@ import JpBbanners from "../../../assets/json/jp_banners.json";
 import { useTheme } from "../../../context/Theme_toggle";
 
 import GachaTable from "./Gacha_table";
-import type { BannerTypes, ServerTimeData } from "../types";
+import type { BannerTypes, ServerTimeData } from "../Types";
 import { useServer } from "../../../context/Server";
 
 const months = [
@@ -120,7 +120,7 @@ export default function DateTabs() {
     setSelectedMonth(newDefaultMonth);
     // Clear when server changes since year/month availability might be different
     setYearMonthMemory({});
-  }, [server]); 
+  }, [server]);
 
   const getBannerStatus = (
     banner: BannerTypes
@@ -131,40 +131,37 @@ export default function DateTabs() {
     return "past";
   };
 
+  const filteredBanners: BannerTypes[] = dataBanners
+    .filter((banner) => {
+      const startDate = new Date(Number(banner.start));
+      const endDate = new Date(Number(banner.end));
+      const now = Date.now();
 
+      const selectedDate = new Date(selectedYear, selectedMonth - 1, 1);
+      const nextMonth = new Date(selectedYear, selectedMonth, 1);
 
+      const bannerStartsInMonth =
+        startDate >= selectedDate && startDate < nextMonth;
+      const bannerIsOngoingInMonth =
+        startDate < selectedDate && endDate >= selectedDate;
+      const bannerIsLive =
+        Number(banner.start) <= now && now <= Number(banner.end);
 
-const filteredBanners: BannerTypes[] = dataBanners
-  .filter((banner) => {
-    const startDate = new Date(Number(banner.start));
-    const endDate = new Date(Number(banner.end));
-    const now = Date.now();
-    
-    const selectedDate = new Date(selectedYear, selectedMonth - 1, 1);
-    const nextMonth = new Date(selectedYear, selectedMonth, 1);
-    
-    const bannerStartsInMonth = startDate >= selectedDate && startDate < nextMonth;
-    const bannerIsOngoingInMonth = startDate < selectedDate && endDate >= selectedDate;
-    const bannerIsLive = Number(banner.start) <= now && now <= Number(banner.end);
-    
-    return bannerStartsInMonth || (bannerIsOngoingInMonth && bannerIsLive);
-  })
-  .sort((a, b) => {
-    // First sort by rerun status (non-reruns first)
-    const rerunComparison = Number('rerun' in a) - Number('rerun' in b);
-    if (rerunComparison !== 0) return rerunComparison;
-    
-    // Then sort by date
-    const dateComparison = Number(a.start) - Number(b.start);
-    if (dateComparison !== 0) return dateComparison;
-    
-    // Finally sort by status
-    const statusOrder = { live: 1, upcoming: 2, past: 3 };
-    return statusOrder[getBannerStatus(a)] - statusOrder[getBannerStatus(b)];
-  });
+      return bannerStartsInMonth || (bannerIsOngoingInMonth && bannerIsLive);
+    })
+    .sort((a, b) => {
+      // First sort by rerun status (non-reruns first)
+      const rerunComparison = Number("rerun" in a) - Number("rerun" in b);
+      if (rerunComparison !== 0) return rerunComparison;
 
+      // Then sort by date
+      const dateComparison = Number(a.start) - Number(b.start);
+      if (dateComparison !== 0) return dateComparison;
 
-
+      // Finally sort by status
+      const statusOrder = { live: 1, upcoming: 2, past: 3 };
+      return statusOrder[getBannerStatus(a)] - statusOrder[getBannerStatus(b)];
+    });
 
   const handleYearChange = (y: number) => {
     setSelectedYear(y);

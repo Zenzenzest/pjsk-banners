@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import type { SelectedFilterTypes } from "../types";
+import type { SelectedFilterTypes } from "../Types";
 import { useTheme } from "../../../context/Theme_toggle";
 
 import FilteredCards from "./Filtered_cards";
