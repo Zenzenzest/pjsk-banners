@@ -2,11 +2,10 @@ import { useState, useEffect, useRef } from "react";
 import JpBanners from "../../../assets/json/jp_banners.json";
 import EnEvents from "../../../assets/json/en_events.json";
 import JpEvents from "../../../assets/json/jp_events.json";
-import EnCards from "../../../assets/json/en_cards.json";
-import JpCards from "../../../assets/json/jp_cards.json";
-// import Cards from "../../../assets/json/cards.json";
+
+import Cards from "../../../assets/json/cards.json";
 import { useTheme } from "../../../context/Theme_toggle";
-import type { CardState, GachaBannersProps, CardsTypes } from "../types";
+import type { CardState, GachaBannersProps, AllCardTypes } from "../types";
 import CountdownTimer from "../Countdown_timer";
 import CardModal from "../Card_modal";
 import { useServer } from "../../../context/Server";
@@ -28,16 +27,15 @@ export default function GachaTable({
   const [cardState, setCardState] = useState<CardState>({
     cardId: 0,
     rarity: 4,
-    lastName: "",
-    firstName: "",
+    name: "",
     cardName: "",
     cardAttribute: "",
-    sekaiId: 0,
+    sekaiId:0
   });
 
   const formatId = (id: number) => String(id).padStart(4, "0");
   const today = Date.now();
-  const Cards = server === "global" ? EnCards : JpCards;
+
   // Handle scroll detection, checks window scroll position
   useEffect(() => {
     const handleScroll = () => {
@@ -71,16 +69,15 @@ export default function GachaTable({
     }
   };
 
-  const handleCardClick = (card: CardsTypes) => {
-    const [lName, fName] = card.character.split(" ");
+  const handleCardClick = (card: AllCardTypes) => {
+ 
     setCardState({
       cardId: card.id,
       rarity: card.rarity,
-      lastName: lName,
-      firstName: fName,
+      name: card.character,
       cardName: card.name,
       cardAttribute: card.attribute,
-      sekaiId: card.sekai_id,
+      sekaiId: card.jp_sekai_id
     });
     setIsOpen(true);
   };
@@ -277,7 +274,7 @@ export default function GachaTable({
                         EVENT SHOP
                       </div>
                       {bannerShopCards.map((shopCard, i) => {
-                        const EnEventCard = EnCards.find(
+                        const EnEventCard = Cards.find(
                           (item) => shopCard == item.id
                         );
 

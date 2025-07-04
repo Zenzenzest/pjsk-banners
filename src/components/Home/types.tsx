@@ -39,23 +39,22 @@ export interface EnEventTypes {
   keywords: string[];
 }
 
-// export interface AllCardTypes {
-//   id: number;
-//   name: string;
-//   character: string;
-//   rarity: number;
-//   card_type: string;
-//   attribute: string;
-//   unit: string;
-//   sub_unit?: string;
-//   real_id: number;
-//   en_sekai_id?: number;
-//   en_released?: number;
-//   jp_sekai_id: number;
-//   jp_released: number;
-//   jp_name: string;
-//   sekai_id?: number;
-// }
+export interface AllCardTypes {
+  id: number;
+  name: string;
+  character: string;
+  rarity: number;
+  card_type: string;
+  attribute: string;
+  unit: string;
+  sub_unit?: string;
+  real_id: number;
+  en_sekai_id?: number;
+  en_released?: number;
+  jp_sekai_id: number;
+  jp_released: number;
+  jp_name: string;
+}
 
 export interface CardsTypes {
   id: number;
@@ -74,8 +73,7 @@ export interface CardsTypes {
 export interface CardState {
   cardId: number;
   rarity: number;
-  lastName: string;
-  firstName: string;
+  name: string;
   cardName: string;
   cardAttribute: string;
   sekaiId: number;

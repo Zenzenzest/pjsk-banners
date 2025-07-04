@@ -10,8 +10,7 @@ export default function CardModal({
   setIsLoading,
   isLoading2,
   setIsLoading2,
-  lastName,
-  firstName,
+ name,
   cardName,
   cardAttribute,
   sekaiId,
@@ -54,8 +53,8 @@ export default function CardModal({
             {/* CHARACTER NAME */}
             <div className="text-center">
               <h2 className="text-3xl md:text-4xl font-bold font-serif tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                {lastName}{" "}
-                <span className="whitespace-nowrap">{firstName}</span>
+               
+                <span className="whitespace-nowrap">{name}</span>
               </h2>
             </div>
           </div>{" "}
