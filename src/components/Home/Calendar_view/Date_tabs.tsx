@@ -4,7 +4,7 @@ import JpBbanners from "../../../assets/json/jp_banners.json";
 import { useTheme } from "../../../context/Theme_toggle";
 
 import GachaTable from "../../Shared/Gacha_table";
-import type { BannerTypes, ServerTimeData } from "../Types";
+import type { BannerTypes, ServerTimeData } from "../../Global/Types";
 import { useServer } from "../../../context/Server";
 
 const months = [
@@ -144,17 +144,18 @@ export default function DateTabs() {
         startDate >= selectedDate && startDate < nextMonth;
       const bannerIsOngoingInMonth =
         startDate < selectedDate && endDate >= selectedDate;
-      
+
       // Only show banners that are currently live if they're from previous months
-      const bannerIsLive = Number(banner.start) <= now && now <= Number(banner.end);
-      
+      const bannerIsLive =
+        Number(banner.start) <= now && now <= Number(banner.end);
+
       // Show banners that start in this month OR are ongoing from previous months AND still live
       return bannerStartsInMonth || (bannerIsOngoingInMonth && bannerIsLive);
     })
     .sort((a, b) => {
       const statusA = getBannerStatus(a);
       const statusB = getBannerStatus(b);
-      
+
       // First sort by status priority: live > upcoming > past
       const statusOrder = { live: 1, upcoming: 2, past: 3 };
       const statusComparison = statusOrder[statusA] - statusOrder[statusB];

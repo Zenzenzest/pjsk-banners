@@ -5,7 +5,7 @@ import type {
   CardState,
   SelectedFilterTypesProps,
   CardsTypes,
-} from "../Types";
+} from "../../Global/Types";
 import CardModal from "../../Shared/Card_modal";
 import { useTheme } from "../../../context/Theme_toggle";
 

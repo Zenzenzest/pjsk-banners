@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useTheme } from "../../context/Theme_toggle";
 import { useServer } from "../../context/Server";
 import EnBanners from "../../assets/json/en_banners.json";
-import type { BannerTypes } from "../Home/Types";
+import type { BannerTypes } from "../Global/Types";
 import GachaTable from "../Shared/Gacha_table";
 
 export default function SavedBannersContainer() {

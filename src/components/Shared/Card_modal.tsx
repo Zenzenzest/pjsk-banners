@@ -1,5 +1,5 @@
 import { useTheme } from "../../context/Theme_toggle";
-import type { CardModalProps } from "../Home/Types";
+import type { CardModalProps } from "../Global/Types";
 import LoadingComponent from "../Global/Loading";
 export default function CardModal({
   isOpen,

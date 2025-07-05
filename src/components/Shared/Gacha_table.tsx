@@ -9,11 +9,11 @@ import type {
   GachaBannersProps,
   AllCardTypes,
   BannerTypes,
-} from "../Home/Types";
-import CountdownTimer from "../Home/Countdown_timer";
+} from "../Global/Types";
+import CountdownTimer from "./Countdown_timer";
 import CardModal from "./Card_modal";
 import { useServer } from "../../context/Server";
-import EventEndedTimer from "../Home/EventEnded_timer";
+import EventEndedTimer from "./EventEnded_timer";
 
 export default function GachaTable({
   filteredBanners,

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import type { EventEndedProps } from "./Types";
+import type { EventEndedProps } from "../Global/Types";
 
 export default function EventEndedTimer({
   endDate,
