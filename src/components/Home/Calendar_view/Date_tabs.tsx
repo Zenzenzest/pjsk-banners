@@ -144,23 +144,28 @@ export default function DateTabs() {
         startDate >= selectedDate && startDate < nextMonth;
       const bannerIsOngoingInMonth =
         startDate < selectedDate && endDate >= selectedDate;
-      const bannerIsLive =
-        Number(banner.start) <= now && now <= Number(banner.end);
-
+      
+      // Only show banners that are currently live if they're from previous months
+      const bannerIsLive = Number(banner.start) <= now && now <= Number(banner.end);
+      
+      // Show banners that start in this month OR are ongoing from previous months AND still live
       return bannerStartsInMonth || (bannerIsOngoingInMonth && bannerIsLive);
     })
     .sort((a, b) => {
-      // First sort by rerun status (non-reruns first)
+      const statusA = getBannerStatus(a);
+      const statusB = getBannerStatus(b);
+      
+      // First sort by status priority: live > upcoming > past
+      const statusOrder = { live: 1, upcoming: 2, past: 3 };
+      const statusComparison = statusOrder[statusA] - statusOrder[statusB];
+      if (statusComparison !== 0) return statusComparison;
+
+      // Then sort by rerun status (non-reruns first within same status)
       const rerunComparison = Number("rerun" in a) - Number("rerun" in b);
       if (rerunComparison !== 0) return rerunComparison;
 
-      // Then sort by date
-      const dateComparison = Number(a.start) - Number(b.start);
-      if (dateComparison !== 0) return dateComparison;
-
-      // Finally sort by status
-      const statusOrder = { live: 1, upcoming: 2, past: 3 };
-      return statusOrder[getBannerStatus(a)] - statusOrder[getBannerStatus(b)];
+      // Finally sort by start date
+      return Number(a.start) - Number(b.start);
     });
 
   const handleYearChange = (y: number) => {
