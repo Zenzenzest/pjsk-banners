@@ -3697,7 +3697,7 @@
     "end": 1730343599000,
     "cards": [411, 326, 178, 401, 291, 543],
     "en_id": -4,
-    "banner_type": "happiness_package"
+    "banner_type": "Happiness Package"
   },
   {
     "id": 398,
@@ -4022,7 +4022,7 @@
     "end": 1738637999000,
     "cards": [573, 527, 587, 542, 530, 496],
     "en_id": -7,
-    "banner_type": "happiness_package"
+    "banner_type": "Happiness Package"
   },
   {
     "id": 435,
@@ -4274,7 +4274,7 @@
     "end": 1745290799000,
     "cards": [396, 374, 423, 266, 131],
     "en_id": -1,
-    "banner_type": "world_link_support"
+    "banner_type": "World Link Support"
   },
   {
     "id": 463,
@@ -4355,7 +4355,7 @@
     "end": 1747969199000,
     "cards": [335, 312, 367, 279, 27],
     "en_id": -1,
-    "banner_type": "world_link_support"
+    "banner_type": "World Link Support"
   },
   {
     "id": 472,
@@ -4364,7 +4364,7 @@
     "end": 1747148399000,
     "cards": [669],
     "en_id": -3,
-    "banner_type": "collab_limited"
+    "banner_type": "Collab"
   },
   {
     "id": 473,
@@ -4436,7 +4436,7 @@
     "end": 1749005999000,
     "cards": [446, 412, 570, 470, 621, 522],
     "en_id": -7,
-    "banner_type": "happiness_package"
+    "banner_type": "Happiness Package"
   },
   {
     "id": 481,
@@ -4454,7 +4454,7 @@
     "end": 1750647599000,
     "cards": [339, 385, 291, 254, 146],
     "en_id": -1,
-    "banner_type": "world_link_support"
+    "banner_type": "World Link Support"
   },
   {
     "id": 483,
@@ -4490,7 +4490,7 @@
     "start": 1750042800000,
     "end": 1751857199000,
     "en_id": -1,
-    "banner_type": "world_link_support"
+    "banner_type": "World Link Support"
   },
   {
     "id": 487,

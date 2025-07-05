@@ -78,8 +78,6 @@ export default function GachaTable({
     }
   };
 
-  localStorage.removeItem("banners");
-
   const handleSaveBanner = (id: number) => {
     if (savedBanners.includes(id)) {
       const updatedBanners = savedBanners.filter((item) => item !== id);
@@ -138,7 +136,7 @@ export default function GachaTable({
   };
 
   return (
-    <div className={`relative ${server == "saved" && "mt-2"}`}>
+    <div className={` ${server == "saved" && "mt-2"}`}>
       <div
         ref={containerRef}
         className={`flex flex-col ${
@@ -168,7 +166,8 @@ export default function GachaTable({
                 year & ±15 days)
               </li>
             </ul>
-            Dates will be adjusted when officially announced.
+            Schedules from August 2025 onward will be adjusted when officially
+            announced.
           </div>
         )}
         {filteredBanners.map((banner: BannerTypes) => {

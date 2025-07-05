@@ -4,7 +4,7 @@ import DateTabs from "./Calendar_view/Date_tabs";
 import { useTheme } from "../../context/Theme_toggle";
 import FilterTab from "./Card_view/Filter_tab";
 import { useServer } from "../../context/Server";
-import SavedBannersContainer from "../SavedCards/SavedBanners_container";
+import SavedBannersContainer from "../SavedBanners/SavedBanners_container";
 
 type ViewModeType = "dateview" | "filterview";
 
