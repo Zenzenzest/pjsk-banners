@@ -102,3 +102,13 @@ export type EventEndedProps = {
 export interface ServerTimeData {
   [year: number]: number[];
 }
+
+export type SelectedBannerFilterTypes = {
+  "Banner Type": string[];
+  Characters: string[];
+  search: string;
+};
+
+export type FilteredBannersPropType = {
+  selectedFilters: SelectedBannerFilterTypes;
+};

@@ -222,7 +222,11 @@ export default function GachaTable({
                   {banner.name}
                 </span>
                 {/* BANNER TYPE */}
-                <div className="text-[15px]">
+                <div
+                  className={`text-[15px] ${
+                    theme === "light" ? "text-gray-800" : "text-gray-200"
+                  }`}
+                >
                   &#x28;{banner.banner_type}&#x29;
                 </div>{" "}
                 {banner.type === "confirmed" && (

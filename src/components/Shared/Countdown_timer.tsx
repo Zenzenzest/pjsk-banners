@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import type { CountdownProps } from "../Global/Types";
 import "./Countdown.css";
+import { useTheme } from "../../context/Theme_toggle";
 
 export default function CountdownTimer({
   targetDate,
@@ -11,7 +12,7 @@ export default function CountdownTimer({
   const [remainingTime, setRemainingTime] = useState<number>(
     targetDate.getTime() - Date.now()
   );
-
+  const { theme } = useTheme();
   useEffect(() => {
     const timer = setInterval(() => {
       const diff = targetDate.getTime() - Date.now();
@@ -105,7 +106,7 @@ export default function CountdownTimer({
           ${
             compact
               ? "w-1.5 h-1.5 sm:w-2 sm:h-2 bg-red-500"
-              : "live-pulse bg-red-500 text-white px-1.5 py-0.5 text-[10px] sm:text-xs"
+              : `live-pulse bg-red-500  px-1.5 py-0.5 text-[10px] sm:text-xs`
           }
         `}
         >
@@ -113,7 +114,11 @@ export default function CountdownTimer({
         </span>
       )}
 
-      <div className="flex items-center">
+      <div
+        className={`flex items-center ${
+          theme === "light" ? "text-gray-800" : "text-gray-100"
+        }`}
+      >
         {!compact && (
           <span className="mr-1 sm:mr-2 hidden xs:inline">
             {mode === "start" ? "Starts:" : "Ends:"}

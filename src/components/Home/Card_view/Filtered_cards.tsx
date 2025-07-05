@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import EnCards from "../../../assets/json/en_cards.json";
 import JpCards from "../../../assets/json/jp_cards.json";
 import type {
@@ -21,6 +21,8 @@ export default function FilteredCards({
   const [currentPage, setCurrentPage] = useState(1);
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
   const [cardsPerPage] = useState(20);
+  const [shouldScrollToTop, setShouldScrollToTop] = useState(false);
+  const filteredCardsRef = useRef<HTMLDivElement>(null);
 
   const [cardState, setCardState] = useState<CardState>({
     cardId: 0,
@@ -103,14 +105,37 @@ export default function FilteredCards({
   const endIndex = startIndex + cardsPerPage;
   const currentCards = sortedCards.slice(startIndex, endIndex);
 
+  // Effect to handle scrolling after content loads
+  useEffect(() => {
+    if (shouldScrollToTop) {
+      // Use requestAnimationFrame to ensure DOM is updated
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          if (filteredCardsRef.current) {
+            filteredCardsRef.current.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          } else {
+            // Fallback to window scroll
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }
+          setShouldScrollToTop(false);
+        }, 100); // Small delay to ensure cards have finished rendering
+      });
+    }
+  }, [currentPage, currentCards, shouldScrollToTop]);
+
   const toggleSortOrder = () => {
     setSortOrder((prev) => (prev === "asc" ? "desc" : "asc"));
   };
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
-    // Scroll to top when page changes
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    setShouldScrollToTop(true);
   };
 
   const generatePageNumbers = () => {
@@ -162,7 +187,8 @@ export default function FilteredCards({
     <div
       className={`${
         theme == "dark" ? "bg-bg-dark-mode" : "bg-bg-light-mode"
-      } flex flex-col items-center justify-center gap-5 w-full pb-10`}
+      } flex flex-col items-center justify-center gap-2 w-full pb-12`}
+      ref={filteredCardsRef}
     >
       <div className="flex  text-center flex-row w-full justify-center items-center pl-1 pr-1">
         {/* CARD TYPES */}

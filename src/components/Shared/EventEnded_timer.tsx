@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import type { EventEndedProps } from "../Global/Types";
+import { useTheme } from "../../context/Theme_toggle";
 
 export default function EventEndedTimer({
   endDate,
   compact = false,
 }: EventEndedProps) {
   const [diffInDays, setDiffInDays] = useState<number>(0);
-
+  const { theme } = useTheme();
   useEffect(() => {
     const calculateDays = () => {
       const now = new Date();
@@ -22,7 +23,7 @@ export default function EventEndedTimer({
 
   return (
     <div
-      className={`
+      className={`${theme === "light" ? "text-gray-800" : "text-gray-300"}
       inline-flex items-center rounded-lg px-3 py-1.5
       bg-gray-500/10 border border-gray-500/20
       ${compact ? "text-xs sm:text-sm" : "text-sm sm:text-base"}
