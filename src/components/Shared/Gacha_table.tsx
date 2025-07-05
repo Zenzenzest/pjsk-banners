@@ -138,7 +138,7 @@ export default function GachaTable({
   };
 
   return (
-    <div className="relative">
+    <div className={`relative ${server == "saved" && "mt-2"}`}>
       <div
         ref={containerRef}
         className={`flex flex-col ${
@@ -146,8 +146,10 @@ export default function GachaTable({
         }`}
       >
         {/* DISCLAIMER */}
-        {((selectedMonth >= 8 && selectedYear === 2025) ||
-          selectedYear >= 2026 ||
+        {((selectedMonth &&
+          selectedYear &&
+          ((selectedMonth >= 8 && selectedYear === 2025) ||
+            selectedYear >= 2026)) ||
           server === "saved") && (
           <div
             className={`text-sm italic mb-3 px-4 py-2 mx-3 rounded-lg ${
@@ -185,7 +187,7 @@ export default function GachaTable({
           });
 
           const gachaBannerImage =
-            server === "global"
+            server === "global" || server === "saved"
               ? `/images/banners/${formattedGachaId}.webp`
               : `/images/jp_banners/${formattedGachaId}.webp`;
 
@@ -259,7 +261,7 @@ export default function GachaTable({
                   <div className="flex justify-center mt-2">
                     <button
                       onClick={() => handleSaveBanner(banner.id)}
-                      className={`flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium transition-all ${
+                      className={`flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium transition-all cursor-pointer ${
                         isBannerSaved(banner.id)
                           ? theme === "dark"
                             ? "bg-red-900/30 hover:bg-red-900/40 text-red-300 border border-red-700/50"
@@ -283,7 +285,7 @@ export default function GachaTable({
                               clipRule="evenodd"
                             />
                           </svg>
-                          Remove from Saved
+                          Remove
                         </>
                       ) : (
                         <>
@@ -299,7 +301,7 @@ export default function GachaTable({
                               clipRule="evenodd"
                             />
                           </svg>
-                          Save This Banner
+                          Save
                         </>
                       )}
                     </button>
@@ -319,7 +321,7 @@ export default function GachaTable({
                 {banner.type == "rerun_estimation" && banner.rerun && (
                   <div className="flex flex-row">
                     <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg px-2 py-1 sm:px-3 sm:py-1.5 font-bold">
-                      {Math.floor((banner.rerun[0] - today) / 86400000)} -{" "}
+                      In {Math.floor((banner.rerun[0] - today) / 86400000)} -{" "}
                       {Math.floor((banner.rerun[1] - today) / 86400000)} Days
                     </div>
                   </div>

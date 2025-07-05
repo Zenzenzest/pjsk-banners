@@ -5,10 +5,10 @@ import EnBanners from "../../assets/json/en_banners.json";
 import type { BannerTypes } from "../Home/Types";
 import GachaTable from "../Shared/Gacha_table";
 
-export default function SavedCardsContainer() {
+export default function SavedBannersContainer() {
   const [savedBanners, setSavedBanners] = useState<number[]>([]);
   const { theme } = useTheme();
-  const { server, setServer } = useServer();
+  const { server } = useServer();
   const savedRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -23,14 +23,14 @@ export default function SavedCardsContainer() {
 
     updateSavedBanners();
 
-    // Listen for storage changes
+    // Detect storage changed
     const handleStorageChange = (e: StorageEvent) => {
       if (e.key === "banners") {
         updateSavedBanners();
       }
     };
 
-    // Listen for custom storage events (for same-tab updates)
+    // detect custom storage events (for same-tab updates)
     const handleCustomStorageChange = () => {
       updateSavedBanners();
     };
@@ -54,7 +54,9 @@ export default function SavedCardsContainer() {
   return (
     <div
       className={`h-dvh w-full ${
-        theme == "dark" ? "bg-[#0e1721]" : "bg-[#f2f2f2]"
+        theme == "dark"
+          ? "bg-[#0e1721] text-gray-200"
+          : "bg-[#f2f2f2] text-gray-700"
       }`}
     >
       {savedBanners.length >= 1 ? (

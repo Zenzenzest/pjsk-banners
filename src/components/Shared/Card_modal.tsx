@@ -200,7 +200,7 @@ export default function CardModal({
             href={`https://sekai.best/card/${sekaiId}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-4 py-2 bg-[#152857] hover:bg-[#6e80b8] text-white rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            className="inline-flex items-center text-sm px-4 py-2 bg-[#152857] hover:bg-[#6e80b8] text-white rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
             <span>View on Sekai Viewer</span>
             <svg
@@ -221,7 +221,7 @@ export default function CardModal({
           </a>
           <button
             onClick={onClose}
-            className="bg-[#152857] text-white px-4 py-2 rounded hover:bg-[#6e80b8]"
+            className="bg-[#152857] text-sm text-white px-4 py-2 rounded hover:bg-[#6e80b8]"
           >
             Close
           </button>
