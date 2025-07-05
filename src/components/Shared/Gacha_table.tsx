@@ -78,7 +78,7 @@ export default function GachaTable({
     }
   };
 
-  // localStorage.removeItem("banners");
+  localStorage.removeItem("banners");
 
   const handleSaveBanner = (id: number) => {
     if (savedBanners.includes(id)) {

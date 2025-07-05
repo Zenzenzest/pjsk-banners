@@ -299,41 +299,63 @@ export default function FilteredCards({
                     </div>
                   )}
                 </button>
-                {/* CARD NAME */}
+                {/* CARD DETAILS*/}
+
                 <div
-                  className={`text-center text-xs flex flex-col justify-center items-center sm:text-sm md:text-base font-medium line-clamp-2 h-20 gap-2 ${
-                    theme === "light" ? "text-gray-800" : "text-gray-200"
+                  className={`text-center flex flex-col justify-center items-center gap-1 px-1 h-20 ${
+                    theme === "light" ? "text-gray-700" : "text-gray-200"
                   }`}
                 >
-                  <div className="flex flex-row gap-2 justify-center items-center">
+                  {/* CARD NAME */}
+                  <h3 className="font-medium text-sm sm:text-base line-clamp-2 leading-tight">
+                    {card.name}
+                  </h3>
+
+                  {/* CHARACTER + ATTRIBUTE*/}
+                  <div className="flex items-center gap-1.5">
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
+                      {card.character}
+                    </p>
                     <img
                       src={`/images/attribute_icons/${card.attribute}.webp`}
-                      style={{
-                        width: "1.5rem",
-                      }}
+                      className="w-4 h-4 object-contain opacity-90"
+                      alt={card.attribute}
+                      title={card.attribute.toUpperCase()}
                     />
-                    {card.name}
                   </div>
-                  <div>{card.character}</div>
-                  <div className="text-[10px]">
-                    (
-                    {(card.card_type === "event" || card.card_type === "") && (
-                      <span>Permanent</span>
-                    )}
-                    {card.card_type === "limited" && <span>Limited</span>}
-                    {card.card_type === "bday" && <span>Birthday</span>}
-                    {card.card_type === "bloom_fes" && <span>Bloom Fes</span>}
-                    {card.card_type === "color_fes" && <span>Color Fes</span>}
-                    {card.card_type === "movie_exclusive" && (
-                      <span>Movie Exclusive</span>
-                    )}
-                    {card.card_type === "limited_collab" && (
-                      <span>Limited Collab</span>
-                    )}
-                    {card.card_type === "unit_limited" && (
-                      <span>Unit Limited</span>
-                    )}
-                    )
+
+                  {/* CARD TYPE */}
+                  <div className="text-[10px] mt-0.5">
+                    <span
+                      className={`
+      px-1.5 py-0.5 rounded-full ${
+        theme === "light"
+          ? "bg-gray-100 text-gray-600"
+          : "bg-gray-700 text-gray-300"
+      }
+    `}
+                    >
+                      {(() => {
+                        switch (card.card_type) {
+                          case "limited":
+                            return "LIMITED";
+                          case "bday":
+                            return "BD";
+                          case "bloom_fes":
+                            return "BLOOM";
+                          case "color_fes":
+                            return "COLOR";
+                          case "movie_exclusive":
+                            return "MOVIE";
+                          case "limited_collab":
+                            return "COLLAB";
+                          case "unit_limited":
+                            return "UNIT";
+                          default:
+                            return "PERM";
+                        }
+                      })()}
+                    </span>
                   </div>
                 </div>
               </div>
