@@ -4,7 +4,7 @@ import { useTheme } from "../../../context/Theme_toggle";
 
 import FilteredCards from "./Filtered_cards";
 
-const grouped = {
+const grouped: Record<string, string[]> = {
   "Virtual Singers": [
     "Hatsune Miku",
     "Kagamine Rin",
@@ -171,22 +171,31 @@ export default function FilterTab() {
         };
       }
 
-      if (category === "Attribute" || category === "Rarity") {
-        const current = prev[category] as string[] | number[];
+      if (category === "Attribute") {
+        const current = prev.Attribute;
+        const isSelected = current.includes(option as string);
+        const updated = isSelected
+          ? current.filter((o) => o !== option)
+          : [...current, option as string];
+        return {
+          ...prev,
+          Attribute: updated,
+        };
+      }
+
+      if (category === "Rarity") {
+        const current = prev.Rarity;
         const isSelected = current.includes(option);
         const updated = isSelected
           ? current.filter((o) => o !== option)
           : [...current, option];
         return {
           ...prev,
-          [category]: updated,
+          Rarity: updated,
         };
       }
 
-      return {
-        ...prev,
-        [category]: option,
-      };
+      return prev;
     });
   };
 
@@ -243,12 +252,20 @@ export default function FilterTab() {
                   const attributeIcon = `/images/attribute_icons/${option}.webp`;
                   const rarityIcon = `images/rarity_icons/${i + 1}.webp`;
 
-                  const isSelected =
-                    category === "Characters"
-                      ? tempFilters.Character.includes(option)
-                      : Array.isArray(tempFilters[category])
-                      ? tempFilters[category].includes(option)
-                      : tempFilters[category] === option;
+                  const isSelected = (() => {
+                    switch (category) {
+                      case "Characters":
+                        return tempFilters.Character.includes(option as string);
+                      case "Unit":
+                        return tempFilters.Unit.includes(option as string);
+                      case "Attribute":
+                        return tempFilters.Attribute.includes(option as string);
+                      case "Rarity":
+                        return tempFilters.Rarity.includes(option);
+                      default:
+                        return false;
+                    }
+                  })();
 
                   const isOutsideUnit =
                     category === "Characters" &&

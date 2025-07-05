@@ -101,11 +101,12 @@ export default function CardModal({
           {(rarity === 3 || rarity === 4) && (
             <div className="flex flex-col justify-center items-center gap-5 mb-3">
               <div className={`${isLoading && "h-30"}`}>
-              {isLoading && (
-                <div className=" absolute inset-0 flex items-center justify-center  z-10 h-40">
-                  <LoadingComponent />
-                </div>
-              )}</div>
+                {isLoading && (
+                  <div className=" absolute inset-0 flex items-center justify-center  z-10 h-40">
+                    <LoadingComponent />
+                  </div>
+                )}
+              </div>
               <div className="relative">
                 {" "}
                 <img
