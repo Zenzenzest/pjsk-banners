@@ -265,8 +265,15 @@ export default function FilterTab() {
     });
   };
 
+  // New function to handle immediate search changes
   const handleSearchChange = (searchTerm: string) => {
     setTempBannerFilters((prev) => ({
+      ...prev,
+      search: searchTerm,
+    }));
+    
+    // Apply the search immediately
+    setSelectedBannerFilters((prev) => ({
       ...prev,
       search: searchTerm,
     }));
@@ -282,6 +289,21 @@ export default function FilterTab() {
       });
     } else {
       setTempBannerFilters({
+        "Banner Type": [],
+        Characters: [],
+        search: "",
+      });
+    }
+
+    if (viewMode === "cards") {
+      setSelectedCardFilters({
+        Character: [],
+        Unit: [],
+        Attribute: [],
+        Rarity: [],
+      });
+    } else {
+      setSelectedBannerFilters({
         "Banner Type": [],
         Characters: [],
         search: "",
@@ -342,6 +364,54 @@ export default function FilterTab() {
           )}
         </button>
       </div>
+
+      {/* SEARCH INPUT - Only visible for banners */}
+      {viewMode === "banners" && (
+        <div className={`w-full px-4 py-3 ${
+          theme === "light" ? "bg-[#f5f7f9]" : "bg-bg-dark-mode"
+        }`}>
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search banners... (e.g., Mafu4, wl1...)"
+              value={selectedBannerFilters.search}
+              onChange={(e) => handleSearchChange(e.target.value)}
+              className={`w-full px-3 py-2 pr-10 rounded-md border focus:outline-none focus:ring-2 focus:ring-[#52649e] ${
+                theme === "light"
+                  ? "bg-white text-gray-900 border-gray-300"
+                  : "bg-gray-700 text-white border-gray-600"
+              }`}
+            />
+            {selectedBannerFilters.search && (
+              <button
+                onClick={() => handleSearchChange("")}
+                className={`absolute right-2 top-1/2 transform -translate-y-1/2 p-1 rounded-full hover:bg-opacity-20 transition-colors ${
+                  theme === "light"
+                    ? "text-gray-500 hover:bg-gray-500"
+                    : "text-gray-400 hover:bg-gray-400"
+                }`}
+                aria-label="Clear search"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
       <div
         className={`p-3 w-full shrink-0  flex flex-col justify-end items-center ${
           theme == "light" ? "bg-bg-light-mode2" : "bg-bg-dark-mode"
@@ -364,6 +434,7 @@ export default function FilterTab() {
             />
           </svg>
         </button>
+        {/* CARDS FILTERS */}
         {viewMode == "cards" ? (
           <div
             className={`transition-all duration-500 ease-in-out overflow-hidden max-w-[500px] ${
@@ -461,18 +532,6 @@ export default function FilterTab() {
               isOpen ? "max-h-[800px]  opacity-100" : "max-h-0 opacity-0"
             } bg-gray-600 rounded-lg p-1.5`}
           >
-            {/* SEARCH INPUT */}
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2 text-white">Search</h3>
-              <input
-                type="text"
-                placeholder="Mafu4, wl1..."
-                value={tempBannerFilters.search}
-                onChange={(e) => handleSearchChange(e.target.value)}
-                className="w-full px-3 py-2 bg-gray-700 text-white rounded-md border border-gray-500 focus:outline-none focus:border-blue-400"
-              />
-            </div>
-
             {/* BANNER TYPE FILTER */}
             <div className="mb-4">
               <h3 className="text-lg font-semibold mb-2 text-white">
