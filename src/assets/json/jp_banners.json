@@ -6434,5 +6434,17 @@
     "en_id": -9,
     "banner_type": "Your Pick",
     "characters": [1, 2, 8, 10, 12, 13, 14, 19, 24, 25]
+  },
+  {
+    "id": 490,
+    "name": "ブルームフェスティバルガチャ",
+    "start": 1751857200000,
+    "end": 1752206399000,
+    "cards": [1172, 1173, 1174, 1175, 1176],
+    "en_id": -1,
+    "banner_type": "Bloom Festival",
+    "event_id": 172,
+    "characters": [19, 26, 16, 13, 15],
+    "keywords": []
   }
 ]

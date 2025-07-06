@@ -2939,7 +2939,7 @@
     "end": 1751713199000,
     "close": 1751867999000,
     "unit": "l/n",
-    "banner_id":487,
+    "banner_id": 487,
     "cards": [1078, 1079, 1080, 1081],
     "keywords": [
       "l/n",
@@ -2951,5 +2951,26 @@
       "world link 2"
     ],
     "type": "world_link"
+  },
+  {
+    "id": 172,
+    "name": "Deeper and deeper",
+    "start": 1751868000000,
+    "end": 1752411599000,
+    "close": 1752559199000,
+    "unit": "l/n",
+    "banner_id": 487,
+    "cards": [1174, 1175, 1176, 1177, 1178],
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "rui",
+      "rui5",
+      "focus"
+    ],
+    "type": "marathon"
   }
 ]

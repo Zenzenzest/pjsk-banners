@@ -227,7 +227,7 @@ export default function FilteredBanners({
               <span
                 className={`inline-block h-3 w-3 sm:h-4 sm:w-4 rounded-full bg-white transition-transform ${
                   hideFutureBanners
-                    ? "translate-x-6 sm:translate-x-7"
+                    ? "translate-x-6 sm:translate-x-6"
                     : "translate-x-1 sm:translate-x-1"
                 }`}
               />

@@ -128,11 +128,15 @@ export default function GachaTable({
     target.onerror = null; // Prevent infinite loop
 
     const en_id = Number(target.alt);
-    const jp_variant = JpBanners.find((item) => item.en_id == en_id);
-
-    target.src = jp_variant
-      ? `/images/jp_banners/${formatId(jp_variant.id)}.webp`
-      : "/images/banners/placeholder.jpg";
+    if (server === "global" || server === "saved") {
+      const jp_variant = JpBanners.find((item) => item.en_id == en_id);
+      console.log(target.src);
+      target.src = jp_variant
+        ? `/images/jp_banners/${formatId(jp_variant.id)}.webp`
+        : "/images/banners/placeholder.jpg";
+    } else {
+      target.src = "/images/banners/placeholder.jpg";
+    }
   };
 
   return (
@@ -260,56 +264,57 @@ export default function GachaTable({
                     )}
                 </div>
                 {/* SAVE OR REMOVE BANNER */}
-                {today < banner.start && (
-                  <div className="flex justify-center mt-2">
-                    <button
-                      onClick={() => handleSaveBanner(banner.id)}
-                      className={`flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium transition-all cursor-pointer ${
-                        isBannerSaved(banner.id)
-                          ? theme === "dark"
-                            ? "bg-red-900/30 hover:bg-red-900/40 text-red-300 border border-red-700/50"
-                            : "bg-red-100 hover:bg-red-200 text-red-700 border border-red-300"
-                          : theme === "dark"
-                          ? "bg-indigo-900/30 hover:bg-indigo-900/40 text-indigo-300 border border-indigo-700/50"
-                          : "bg-indigo-100 hover:bg-indigo-200 text-indigo-700 border border-indigo-300"
-                      }`}
-                    >
-                      {isBannerSaved(banner.id) ? (
-                        <>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                          Remove
-                        </>
-                      ) : (
-                        <>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                          Save
-                        </>
-                      )}
-                    </button>
-                  </div>
-                )}
+                {(server === "global" || server == "saved") &&
+                  today < banner.start && (
+                    <div className="flex justify-center mt-2">
+                      <button
+                        onClick={() => handleSaveBanner(banner.id)}
+                        className={`flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium transition-all cursor-pointer ${
+                          isBannerSaved(banner.id)
+                            ? theme === "dark"
+                              ? "bg-red-900/30 hover:bg-red-900/40 text-red-300 border border-red-700/50"
+                              : "bg-red-100 hover:bg-red-200 text-red-700 border border-red-300"
+                            : theme === "dark"
+                            ? "bg-indigo-900/30 hover:bg-indigo-900/40 text-indigo-300 border border-indigo-700/50"
+                            : "bg-indigo-100 hover:bg-indigo-200 text-indigo-700 border border-indigo-300"
+                        }`}
+                      >
+                        {isBannerSaved(banner.id) ? (
+                          <>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-4 w-4"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                            Remove
+                          </>
+                        ) : (
+                          <>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-4 w-4"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                            Save
+                          </>
+                        )}
+                      </button>
+                    </div>
+                  )}
               </div>
               {/* CARDS */}
               <div className="w-1/2  flex flex-col items-center justify-center">
