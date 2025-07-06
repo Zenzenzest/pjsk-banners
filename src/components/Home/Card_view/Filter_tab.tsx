@@ -95,7 +95,7 @@ const bannerFilterCategories = {
     "Colorful Festival",
     "Limited Collab",
     "Unit Limited Event",
-    "Birthday"
+    "Birthday",
   ],
   Characters: filterCategories.Characters,
 };
@@ -116,11 +116,13 @@ export default function FilterTab() {
     Rarity: [],
   });
 
-  const [tempBannerFilters, setTempBannerFilters] = useState<BannerFilterTypes>({
-    "Banner Type": [],
-    Characters: [],
-    search: "",
-  });
+  const [tempBannerFilters, setTempBannerFilters] = useState<BannerFilterTypes>(
+    {
+      "Banner Type": [],
+      Characters: [],
+      search: "",
+    }
+  );
 
   // APPLIED filters used for actual filtering
   const [selectedCardFilters, setSelectedCardFilters] =
@@ -131,11 +133,12 @@ export default function FilterTab() {
       Rarity: [],
     });
 
-  const [selectedBannerFilters, setSelectedBannerFilters] = useState<BannerFilterTypes>({
-    "Banner Type": [],
-    Characters: [],
-    search: "",
-  });
+  const [selectedBannerFilters, setSelectedBannerFilters] =
+    useState<BannerFilterTypes>({
+      "Banner Type": [],
+      Characters: [],
+      search: "",
+    });
 
   const { theme } = useTheme();
   const panelRef = useRef<HTMLDivElement>(null);
@@ -284,6 +287,7 @@ export default function FilterTab() {
         search: "",
       });
     }
+    setIsOpen(false);
   };
 
   const handleApply = () => {
@@ -471,7 +475,9 @@ export default function FilterTab() {
 
             {/* BANNER TYPE FILTER */}
             <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2 text-white">Banner Type</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">
+                Banner Type
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {bannerFilterCategories["Banner Type"].map((type) => (
                   <button
@@ -491,11 +497,14 @@ export default function FilterTab() {
 
             {/* CHARACTERS FILTER */}
             <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2 text-white">Characters</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">
+                Characters
+              </h3>
               <div className="flex justify-center items-center flex-wrap gap-3">
                 {bannerFilterCategories.Characters.map((character, i) => {
                   const characterIcon = `/images/character_icons/${i + 1}.webp`;
-                  const isSelected = tempBannerFilters.Characters.includes(character);
+                  const isSelected =
+                    tempBannerFilters.Characters.includes(character);
 
                   return (
                     <button
@@ -503,7 +512,9 @@ export default function FilterTab() {
                       className={`border-2 aspect-square rounded-full ${
                         isSelected ? "border-white" : "border-gray-600"
                       }`}
-                      onClick={() => handleBannerFilters("Characters", character)}
+                      onClick={() =>
+                        handleBannerFilters("Characters", character)
+                      }
                     >
                       <img
                         src={characterIcon}

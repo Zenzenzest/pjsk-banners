@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { useServer } from "../../../context/Server";
 import { useTheme } from "../../../context/Theme_toggle";
 import EnBanners from "../../../assets/json/en_banners.json";
-import type { FilteredBannersPropType } from "../../Global/Types";
+import JpBanners from "../../../assets/json/jp_banners.json";
+import type { FilteredBannersPropType, BannerTypes } from "../../Global/Types";
 import GachaTable from "../../Shared/Gacha_table";
 
 const characters = [
@@ -34,31 +35,37 @@ const characters = [
   "KAITO",
 ];
 
-
-
 export default function FilteredBanners({
   selectedFilters,
 }: FilteredBannersPropType) {
-  const [filteredBanners, setFilteredBanners] = useState(EnBanners);
+  const { server } = useServer();
+  // Define a type that covers all possible banner properties
+
+  const [filteredBanners, setFilteredBanners] = useState<BannerTypes[]>([]); // Initialize as empty array with proper type
   const [currentPage, setCurrentPage] = useState(1);
   const [bannersPerPage] = useState(10); // You can make this configurable
   const [shouldScrollToTop, setShouldScrollToTop] = useState(false);
+  const [hideFutureBanners, setHideFutureBanners] = useState(true);
   const { theme } = useTheme();
-  const { server } = useServer();
+
   const filteredBannersRef = useRef<HTMLDivElement>(null);
 
   // Calculate pagination values
-  const totalPages = Math.ceil(filteredBanners.length / bannersPerPage);
+  const totalPages = Math.ceil((filteredBanners?.length || 0) / bannersPerPage);
   const startIndex = (currentPage - 1) * bannersPerPage;
   const endIndex = startIndex + bannersPerPage;
-  const currentBanners = filteredBanners.slice(startIndex, endIndex);
+  const currentBanners = filteredBanners?.slice(startIndex, endIndex) || [];
 
   useEffect(() => {
-    let filtered = [...EnBanners];
+    const bannersArr = server === "global" ? EnBanners : JpBanners;
 
-    //Filter out future banners 
-    const currentTime = Date.now();
-    filtered = filtered.filter((banner) => banner.start <= currentTime);
+    let filtered = [...bannersArr];
+
+    //Filter out future banners (only if toggle is enabled)
+    if (hideFutureBanners) {
+      const currentTime = Date.now();
+      filtered = filtered.filter((banner) => banner.start <= currentTime);
+    }
 
     //Apply Banner Type filter
     if (selectedFilters["Banner Type"].length > 0) {
@@ -79,8 +86,10 @@ export default function FilteredBanners({
         ).filter((id) => id !== null);
 
         //Check if any of the banner's characters match the selected character IDs
-        return banner.characters.some((characterId) =>
-          selectedCharacterIds.includes(characterId)
+        return (
+          banner.characters?.some((characterId) =>
+            selectedCharacterIds.includes(characterId)
+          ) || false
         );
       });
     }
@@ -106,7 +115,7 @@ export default function FilteredBanners({
     setFilteredBanners(filtered);
     // Reset to first page when filters change
     setCurrentPage(1);
-  }, [selectedFilters]);
+  }, [selectedFilters, server, hideFutureBanners]); // Added hideFutureBanners to dependencies
 
   // Effect to handle scrolling after content loads
   useEffect(() => {
@@ -177,14 +186,61 @@ export default function FilteredBanners({
       className={`${theme == "light" ? "bg-[#f2f2f2]" : ""} mb-20`}
       ref={filteredBannersRef}
     >
-      {/** BBANNER COUNT **/}
-      <div
-        className={`text-center text-sm md:text-base px-2 mb-4 ${
-          theme === "light" ? "text-gray-600" : "text-gray-400"
-        }`}
-      >
-        Showing {startIndex + 1}-{Math.min(endIndex, filteredBanners.length)} of{" "}
-        {filteredBanners.length} banners
+      {/** BANNER COUNT WITH TOGGLE **/}
+      <div className="flex flex-col items-center justify-center gap-2 sm:gap-3 mb-4 px-2">
+        <div
+          className={`text-center text-sm md:text-base ${
+            theme === "light" ? "text-gray-600" : "text-gray-400"
+          }`}
+        >
+          Showing {startIndex + 1}-
+          {Math.min(endIndex, filteredBanners?.length || 0)} of{" "}
+          {filteredBanners?.length || 0} banners
+        </div>
+
+        {server === "global" && (
+          <div className="flex items-center gap-1.5 sm:gap-2">
+            <span
+              className={`text-xs sm:text-sm ${
+                theme === "light" ? "text-gray-600" : "text-gray-400"
+              }`}
+            >
+              Show Upcoming Banners
+            </span>
+            <button
+              onClick={() => setHideFutureBanners(!hideFutureBanners)}
+              className={`relative inline-flex h-7 w-11  items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 ${
+                hideFutureBanners
+                  ? theme === "light"
+                    ? "bg-gray-300"
+                    : "bg-gray-600"
+                  : theme === "light"
+                  ? "bg-blue-600"
+                  : "bg-blue-500"
+              }`}
+              title={
+                hideFutureBanners
+                  ? "Show future banners"
+                  : "Hide future banners"
+              }
+            >
+              <span
+                className={`inline-block h-3 w-3 sm:h-4 sm:w-4 rounded-full bg-white transition-transform ${
+                  hideFutureBanners
+                    ? "translate-x-6 sm:translate-x-7"
+                    : "translate-x-1 sm:translate-x-1"
+                }`}
+              />
+            </button>
+            <span
+              className={`text-xs sm:text-sm ${
+                theme === "light" ? "text-gray-600" : "text-gray-400"
+              }`}
+            >
+              Global Banners Only
+            </span>
+          </div>
+        )}
       </div>
 
       {/** CURRENT PAGE **/}

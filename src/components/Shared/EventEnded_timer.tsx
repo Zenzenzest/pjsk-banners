@@ -31,7 +31,7 @@ export default function EventEndedTimer({
     >
       <div className="flex items-center">
         <span className={`mr-1 sm:mr-2 ${compact ? "hidden" : "block"}`}>
-          Ended:
+          Ended:{" "}
         </span>
         <div className="flex items-center">
           {diffInDays === 0 ? (

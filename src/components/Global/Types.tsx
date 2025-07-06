@@ -9,6 +9,9 @@ export interface BannerTypes {
   confirmation?: string;
   event_id?: number;
   rerun?: number[];
+  characters: number[];
+  keywords?: string[] | undefined;
+  en_id?: number;
 }
 export interface GachaBannersProps {
   filteredBanners: BannerTypes[];
