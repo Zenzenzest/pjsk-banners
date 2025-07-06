@@ -130,7 +130,7 @@ export default function GachaTable({
     const en_id = Number(target.alt);
     if (server === "global" || server === "saved") {
       const jp_variant = JpBanners.find((item) => item.en_id == en_id);
-      console.log(target.src);
+
       target.src = jp_variant
         ? `/images/jp_banners/${formatId(jp_variant.id)}.webp`
         : "/images/banners/placeholder.jpg";
@@ -354,7 +354,6 @@ export default function GachaTable({
                               margin: "0.3rem",
                             }}
                           />
-                          {card}
                         </div>
                       );
                     })}

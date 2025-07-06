@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { useServer } from "../../../context/Server";
 import { useTheme } from "../../../context/Theme_toggle";
 import EnBanners from "../../../assets/json/en_banners.json";
@@ -50,11 +50,15 @@ export default function FilteredBanners({
 
   const filteredBannersRef = useRef<HTMLDivElement>(null);
 
-  // Calculate pagination values
+  // Calculate pagination values with useMemo
   const totalPages = Math.ceil((filteredBanners?.length || 0) / bannersPerPage);
   const startIndex = (currentPage - 1) * bannersPerPage;
   const endIndex = startIndex + bannersPerPage;
-  const currentBanners = filteredBanners?.slice(startIndex, endIndex) || [];
+  
+  // Memoize currentBanners to prevent unnecessary re-renders
+  const currentBanners = useMemo(() => {
+    return filteredBanners?.slice(startIndex, endIndex) || [];
+  }, [filteredBanners, startIndex, endIndex]);
 
   useEffect(() => {
     const bannersArr = server === "global" ? EnBanners : JpBanners;
