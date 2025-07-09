@@ -51,7 +51,7 @@ export default function DateTabs() {
   const timeData = server === "global" ? timeData_global : timeData_jp;
   const dataBanners = server === "global" ? GlobalBanners : JpBbanners;
 
-  // Get current date
+
   const currentDate = new Date();
   const currentYearValue = currentDate.getFullYear();
   const currentMonthValue = currentDate.getMonth() + 1;
@@ -151,6 +151,7 @@ export default function DateTabs() {
 
       return Number(a.start) - Number(b.start);
     });
+
   const handleYearChange = (y: number) => {
     const yearIndex = years.indexOf(y);
     const availableMonths = timeData[yearIndex][y];
@@ -180,7 +181,7 @@ export default function DateTabs() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 py-1">
-        {/* Year Selection */}
+        {/* YEARS*/}
         <div className="mb-4">
           <div
             className={`p-4 rounded-xl ${
@@ -220,7 +221,7 @@ export default function DateTabs() {
           </div>
         </div>
 
-        {/* Month Selection */}
+        {/* MONTHS*/}
         <div className="mb-4">
           <div
             className={`p-4 rounded-xl ${
@@ -261,7 +262,7 @@ export default function DateTabs() {
           </div>
         </div>
 
-        {/* Gacha Banners */}
+        {/* BANNERS */}
         <BannerContainer
           filteredBanners={filteredBanners}
           selectedYear={selectedYear}
