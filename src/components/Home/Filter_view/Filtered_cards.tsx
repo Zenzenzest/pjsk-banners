@@ -186,7 +186,7 @@ export default function FilteredCards({
   return (
     <div
       className={`${
-        theme == "dark" ? "bg-bg-dark-mode" : "bg-bg-light-mode"
+        theme == "dark" ? "bg-[#101828]`````" : "bg-bg-light-mode"
       } flex flex-col items-center justify-center gap-2 w-full pb-12`}
       ref={filteredCardsRef}
     >

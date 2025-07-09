@@ -4,7 +4,8 @@ import { useTheme } from "../../../context/Theme_toggle";
 import EnBanners from "../../../assets/json/en_banners.json";
 import JpBanners from "../../../assets/json/jp_banners.json";
 import type { FilteredBannersPropType, BannerTypes } from "../../Global/Types";
-import GachaTable from "../../Shared/Gacha_table";
+
+import BannerContainer from "../../BannerContainer/Banner_container";
 
 const characters = [
   "Hoshino Ichika",
@@ -248,7 +249,7 @@ export default function FilteredBanners({
       </div>
 
       {/** CURRENT PAGE **/}
-      <GachaTable
+      <BannerContainer
         filteredBanners={currentBanners}
         parentRef={filteredBannersRef}
       />
