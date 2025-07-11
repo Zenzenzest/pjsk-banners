@@ -5,7 +5,7 @@
     "unit": "l/n",
     "cards": [13, 14, 15, 688, 687],
     "banner_id": 4,
-    "type": "marathon",
+    "event_type": "marathon",
     "keywords": [
       "leo/need",
       "leoneed",
@@ -17,7 +17,8 @@
     ],
     "start": 1602223200000,
     "end": 1603022399000,
-    "close": 1603173599000
+    "close": 1603173599000,
+    "type": "Saki 1st Focus Event"
   },
   {
     "id": 2,
@@ -25,7 +26,7 @@
     "unit": "n25",
     "cards": [16, 17, 18, 689, 690],
     "banner_id": 5,
-    "type": "marathon",
+    "event_type": "marathon",
     "keywords": [
       "mafuyu",
       "mafuyu1",
@@ -37,7 +38,8 @@
     ],
     "start": 1603173600000,
     "end": 1603972799000,
-    "close": 1604123999000
+    "close": 1604123999000,
+    "type": "Mafuyu 1st Focus Event"
   },
   {
     "id": 3,
@@ -45,7 +47,7 @@
     "unit": "wxs",
     "cards": [19, 20, 21, 691, 692],
     "banner_id": 6,
-    "type": "marathon",
+    "event_type": "marathon",
     "keywords": [
       "wxs",
       "wandasho",
@@ -59,7 +61,8 @@
     ],
     "start": 1604124000000,
     "end": 1604750399000,
-    "close": 1604901599000
+    "close": 1604901599000,
+    "type": "Rui 1st Focus Event"
   },
   {
     "id": 4,
@@ -67,7 +70,7 @@
     "unit": "mixed",
     "cards": [25, 26, 27, 693, 694],
     "banner_id": 8,
-    "type": "marathon",
+    "event_type": "marathon",
     "keywords": [
       "sports",
       "sports festival",
@@ -78,7 +81,8 @@
     ],
     "start": 1604901600000,
     "end": 1605614399000,
-    "close": 1605765599000
+    "close": 1605765599000,
+    "type": "Mixed Event"
   },
   {
     "id": 5,
@@ -86,11 +90,12 @@
     "unit": "mmj",
     "cards": [28, 29, 30, 695, 696],
     "banner_id": 10,
-    "type": "marathon",
+    "event_type": "marathon",
     "keywords": ["mmj", "more more jump", "momojan", "airi", "airi1", "focus"],
     "start": 1605765600000,
     "end": 1606564799000,
-    "close": 1606715999000
+    "close": 1606715999000,
+    "type": "Airi 1st Focus Event"
   },
   {
     "id": 6,
@@ -98,7 +103,7 @@
     "unit": "vbs",
     "cards": [22, 23, 24, 697, 698],
     "banner_id": 7,
-    "type": "marathon",
+    "event_type": "marathon",
     "keywords": [
       "vbs",
       "vivibasu",
@@ -110,7 +115,8 @@
     ],
     "start": 1606716000000,
     "end": 1607428799000,
-    "close": 1607579999000
+    "close": 1607579999000,
+    "type": "An 1st Focus Event"
   },
   {
     "id": 7,
@@ -119,10 +125,11 @@
     "banner_id": 12,
     "cards": [31, 32, 33, 699, 700],
     "keywords": ["festival", "school festival", "kamiyama", "kamikou"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1607580000000,
     "end": 1608292799000,
-    "close": 1608443999000
+    "close": 1608443999000,
+    "type": "Mixed Event"
   },
   {
     "id": 8,
@@ -142,10 +149,11 @@
       "christmas",
       "xmas"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1608444000000,
     "end": 1609243199000,
-    "close": 1609394399000
+    "close": 1609394399000,
+    "type": "Nene 1st Focus Event"
   },
   {
     "id": 9,
@@ -154,10 +162,11 @@
     "banner_id": 15,
     "cards": [37, 38, 39, 40, 703, 704],
     "keywords": ["new year", "ny", "happy new year"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1609394400000,
     "end": 1610107199000,
-    "close": 1610258399000
+    "close": 1610258399000,
+    "type": "New Year Event"
   },
   {
     "id": 10,
@@ -175,10 +184,11 @@
       "hona1",
       "honami1"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1610258400000,
     "end": 1611057599000,
-    "close": 1611208799000
+    "close": 1611208799000,
+    "type": "Honami 1st Focus Event"
   },
   {
     "id": 11,
@@ -195,10 +205,11 @@
       "shizu1",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1611208800000,
     "end": 1611921599000,
-    "close": 1612072799000
+    "close": 1612072799000,
+    "type": "Shizuku 1st Focus Event"
   },
   {
     "id": 12,
@@ -215,10 +226,11 @@
       "toya1",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1612072800000,
     "end": 1612699199000,
-    "close": 1612850399000
+    "close": 1612850399000,
+    "type": "Toya 1st Focus Event"
   },
   {
     "id": 13,
@@ -227,10 +239,11 @@
     "banner_id": 21,
     "cards": [50, 51, 52, 711, 712],
     "keywords": [],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1612850400000,
     "end": 1613476799000,
-    "close": 1613627999000
+    "close": 1613627999000,
+    "type": "Mixed Event"
   },
   {
     "id": 14,
@@ -239,10 +252,11 @@
     "banner_id": 22,
     "cards": [53, 54, 55, 713, 714],
     "keywords": ["ena1", "ena", "n25", "nightcord", "niigo", "focus"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1613628000000,
     "end": 1614340799000,
-    "close": 1614491999000
+    "close": 1614491999000,
+    "type": "Ena 1st Focus Event"
   },
   {
     "id": 15,
@@ -262,10 +276,11 @@
       "emu1",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1614492000000,
     "end": 1615204799000,
-    "close": 1615355999000
+    "close": 1615355999000,
+    "type": "Emu 1st Focus Event"
   },
   {
     "id": 16,
@@ -274,10 +289,11 @@
     "banner_id": 25,
     "cards": [59, 60, 61, 717, 718],
     "keywords": ["festival", "doll festival"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1615356000000,
     "end": 1616241599000,
-    "close": 1616392799000
+    "close": 1616392799000,
+    "type": "Mixed Event"
   },
   {
     "id": 17,
@@ -294,10 +310,11 @@
       "mino1",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1616392800000,
     "end": 1617105599000,
-    "close": 1617256799000
+    "close": 1617256799000,
+    "type": "Minori 1st Focus Event"
   },
   {
     "id": 18,
@@ -306,10 +323,11 @@
     "banner_id": 28,
     "cards": [65, 66, 67, 721, 722],
     "keywords": ["cherry blossom", "sakura"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1617256800000,
     "end": 1617969599000,
-    "close": 1618120799000
+    "close": 1618120799000,
+    "type": "Mixed Event"
   },
   {
     "id": 19,
@@ -326,10 +344,11 @@
       "niigo",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1618120800000,
     "end": 1618833599000,
-    "close": 1618984799000
+    "close": 1618984799000,
+    "type": "Mizuki 1st Focus Event"
   },
   {
     "id": 20,
@@ -346,10 +365,11 @@
       "shiho",
       "shiho1"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1618984800000,
     "end": 1619611199000,
-    "close": 1619762399000
+    "close": 1619762399000,
+    "type": "Shiho 1st Focus Event"
   },
   {
     "id": 21,
@@ -367,10 +387,11 @@
       "akito1",
       "focus"
     ],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1619762400000,
     "end": 1620475199000,
-    "close": 1620626399000
+    "close": 1620626399000,
+    "type": "Akito 1st Focus Event"
   },
   {
     "id": 22,
@@ -379,10 +400,11 @@
     "banner_id": 32,
     "cards": [77, 78, 79, 729, 730],
     "keywords": ["picnic"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1620626400000,
     "end": 1621425599000,
-    "close": 1621576799000
+    "close": 1621576799000,
+    "type": "Mixed Event"
   },
   {
     "id": 23,
@@ -399,10 +421,11 @@
       "haruka1",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1621576800000,
     "end": 1622289599000,
-    "close": 1622440799000
+    "close": 1622440799000,
+    "type": "Haruka 1st Focus Event"
   },
   {
     "id": 24,
@@ -411,10 +434,11 @@
     "banner_id": 35,
     "cards": [85, 86, 87, 733, 734],
     "keywords": ["wedding", "marriage", "groom", "bride"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1622440800000,
     "end": 1623239999000,
-    "close": 1623391199000
+    "close": 1623391199000,
+    "type": "Mixed Event"
   },
   {
     "id": 25,
@@ -435,10 +459,11 @@
       "tsukasa1",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1623391200000,
     "end": 1624103999000,
-    "close": 1624255199000
+    "close": 1624255199000,
+    "type": "Tsukasa 1st Focus Event"
   },
   {
     "id": 26,
@@ -455,10 +480,11 @@
       "niigo",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1624255200000,
     "end": 1624881599000,
-    "close": 1625032799000
+    "close": 1625032799000,
+    "type": "Kanade 1st Focus Event"
   },
   {
     "id": 27,
@@ -475,10 +501,11 @@
       "saki",
       "saki2"
     ],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1625032800000,
     "end": 1625659199000,
-    "close": 1625810399000
+    "close": 1625810399000,
+    "type": "Saki 2nd Focus Event"
   },
   {
     "id": 28,
@@ -496,10 +523,11 @@
       "koha1",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1625810400000,
     "end": 1626609599000,
-    "close": 1626760799000
+    "close": 1626760799000,
+    "type": "Kohane 1st Focus Event"
   },
   {
     "id": 29,
@@ -508,10 +536,11 @@
     "banner_id": 41,
     "cards": [102, 103, 104, 743, 744],
     "keywords": ["festival", "summer festival", "summer"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1626760800000,
     "end": 1627559999000,
-    "close": 1627711199000
+    "close": 1627711199000,
+    "type": "Mixed Event"
   },
   {
     "id": 30,
@@ -520,10 +549,11 @@
     "banner_id": 43,
     "cards": [105, 106, 107, 745, 746],
     "keywords": ["summer", "swimsuit"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1627711200000,
     "end": 1628423999000,
-    "close": 1628575199000
+    "close": 1628575199000,
+    "type": "Mixed Event"
   },
   {
     "id": 31,
@@ -532,10 +562,11 @@
     "banner_id": 44,
     "cards": [108, 109, 110, 747, 748],
     "keywords": ["mmj", "more more jump", "momojan", "airi", "airi2", "focus"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1628575200000,
     "end": 1629287999000,
-    "close": 1629439199000
+    "close": 1629439199000,
+    "type": "Airi 2nd Focus Event"
   },
   {
     "id": 32,
@@ -553,10 +584,11 @@
       "nene2",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1629439200000,
     "end": 1630238399000,
-    "close": 1630389599000
+    "close": 1630389599000,
+    "type": "Nene 2nd Focus Event"
   },
   {
     "id": 33,
@@ -565,10 +597,11 @@
     "banner_id": 47,
     "cards": [114, 115, 116, 751, 752],
     "keywords": ["autumn", "moon rabbit"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1630389600000,
     "end": 1631102399000,
-    "close": 1631253599000
+    "close": 1631253599000,
+    "type": "Mixed Event"
   },
   {
     "id": 34,
@@ -586,10 +619,11 @@
       "ichika1",
       "ichi1"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1631253600000,
     "end": 1632052799000,
-    "close": 1632203999000
+    "close": 1632203999000,
+    "type": "Ichika 1st Focus Event"
   },
   {
     "id": 35,
@@ -606,10 +640,11 @@
       "mafuyu2",
       "mafu2"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1632204000000,
     "end": 1632916799000,
-    "close": 1633067999000
+    "close": 1633067999000,
+    "type": "Mafuyu 2nd Focus Event"
   },
   {
     "id": 36,
@@ -618,10 +653,11 @@
     "banner_id": 58,
     "cards": [123, 124, 125, 757],
     "keywords": ["Fan festival", "festival"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1633068000000,
     "end": 1633780799000,
-    "close": 1633931999000
+    "close": 1633931999000,
+    "type": "Mixed Event"
   },
   {
     "id": 37,
@@ -638,10 +674,11 @@
       "an2",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1633932000000,
     "end": 1634644799000,
-    "close": 1634795999000
+    "close": 1634795999000,
+    "type": "An 2nd Focus Event"
   },
   {
     "id": 38,
@@ -659,10 +696,11 @@
       "rui2",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1634796000000,
     "end": 1635508799000,
-    "close": 1635659999000
+    "close": 1635659999000,
+    "type": "Rui 2nd Focus Event"
   },
   {
     "id": 39,
@@ -679,10 +717,11 @@
       "mizuki2",
       "mizuki"
     ],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1635660000000,
     "end": 1636459199000,
-    "close": 1636610399000
+    "close": 1636610399000,
+    "type": "Mizuki 2nd Focus Event"
   },
   {
     "id": 40,
@@ -700,10 +739,11 @@
       "hona2",
       "honami2"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1636610400000,
     "end": 1637236799000,
-    "close": 1637387999000
+    "close": 1637387999000,
+    "type": "Honami 2nd Focus Event"
   },
   {
     "id": 41,
@@ -712,10 +752,11 @@
     "banner_id": 69,
     "cards": [141, 142, 143, 766, 767],
     "keywords": ["time to hang out"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1637388000000,
     "end": 1638100799000,
-    "close": 1638251999000
+    "close": 1638251999000,
+    "type": "Mixed Event"
   },
   {
     "id": 42,
@@ -724,10 +765,11 @@
     "banner_id": 71,
     "cards": [144, 145, 146, 768, 769],
     "keywords": ["ichikana"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1638252000000,
     "end": 1638964799000,
-    "close": 1639115999000
+    "close": 1639115999000,
+    "type": "Mixed Event"
   },
   {
     "id": 43,
@@ -746,10 +788,11 @@
       "xmas",
       "christmas"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1639116000000,
     "end": 1639828799000,
-    "close": 1639979999000
+    "close": 1639979999000,
+    "type": "Minori 2nd Focus Event"
   },
   {
     "id": 44,
@@ -766,10 +809,11 @@
       "toya2",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1639980000000,
     "end": 1640779199000,
-    "close": 1640930399000
+    "close": 1640930399000,
+    "type": "Toya 2nd Focus Event"
   },
   {
     "id": 45,
@@ -778,10 +822,11 @@
     "banner_id": 81,
     "cards": [163, 164, 165, 774, 775],
     "keywords": ["new year", "happy new year"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1640930400000,
     "end": 1641815999000,
-    "close": 1641967199000
+    "close": 1641967199000,
+    "type": "New Year Event"
   },
   {
     "id": 46,
@@ -801,10 +846,11 @@
       "emu2",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1641967200000,
     "end": 1642593599000,
-    "close": 1642744799000
+    "close": 1642744799000,
+    "type": "Emu 2nd Focus Event"
   },
   {
     "id": 47,
@@ -821,10 +867,11 @@
       "kana2",
       "kanade2"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1642744800000,
     "end": 1643457599000,
-    "close": 1643608799000
+    "close": 1643608799000,
+    "type": "Kanade 2nd Focus Event"
   },
   {
     "id": 48,
@@ -833,10 +880,11 @@
     "banner_id": 87,
     "cards": [175, 176, 177, 780, 781],
     "keywords": ["valentine's"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1643608800000,
     "end": 1644235199000,
-    "close": 1644386399000
+    "close": 1644386399000,
+    "type": "Valentine's Event"
   },
   {
     "id": 49,
@@ -854,10 +902,11 @@
       "koha2",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1644386400000,
     "end": 1645012799000,
-    "close": 1645163999000
+    "close": 1645163999000,
+    "type": "Kohane 2nd Focus Event"
   },
   {
     "id": 50,
@@ -874,10 +923,11 @@
       "shiho",
       "shiho2"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1645164000000,
     "end": 1645876799000,
-    "close": 1646027999000
+    "close": 1646027999000,
+    "type": "Shiho 2nd Focus Event"
   },
   {
     "id": 51,
@@ -886,10 +936,11 @@
     "banner_id": 94,
     "cards": [186, 187, 188, 786, 787],
     "keywords": ["white day"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1646028000000,
     "end": 1646827199000,
-    "close": 1646978399000
+    "close": 1646978399000,
+    "type": "White Day Event"
   },
   {
     "id": 52,
@@ -906,10 +957,11 @@
       "shizu2",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1646978400000,
     "end": 1647604799000,
-    "close": 1647755999000
+    "close": 1647755999000,
+    "type": "Shizuku 2nd Focus Event"
   },
   {
     "id": 53,
@@ -918,10 +970,11 @@
     "banner_id": 98,
     "cards": [194, 195, 196, 790, 791],
     "keywords": ["n25", "nightcord", "niigo", "focus", "ena", "ena2"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1647756000000,
     "end": 1648468799000,
-    "close": 1648619999000
+    "close": 1648619999000,
+    "type": "Ena 2nd Focus Event"
   },
   {
     "id": 54,
@@ -930,10 +983,11 @@
     "banner_id": 102,
     "cards": [200, 201, 202, 203, 792, 793],
     "keywords": ["cherry blossom", "sakura"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1648620000000,
     "end": 1649505599000,
-    "close": 1649656799000
+    "close": 1649656799000,
+    "type": "Virtual Singer Event"
   },
   {
     "id": 55,
@@ -954,10 +1008,11 @@
       "kasa2",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1649656800000,
     "end": 1650369599000,
-    "close": 1650520799000
+    "close": 1650520799000,
+    "type": "Tsukasa 2nd Focus Event"
   },
   {
     "id": 56,
@@ -975,10 +1030,11 @@
       "ichika2",
       "ichi2"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1650520800000,
     "end": 1651147199000,
-    "close": 1651298399000
+    "close": 1651298399000,
+    "type": "Ichika 2nd Focus Event"
   },
   {
     "id": 57,
@@ -995,10 +1051,11 @@
       "haruka2",
       "focus"
     ],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1651298400000,
     "end": 1652011199000,
-    "close": 1652162399000
+    "close": 1652162399000,
+    "type": "Haruka 2nd Focus Event"
   },
   {
     "id": 58,
@@ -1013,10 +1070,11 @@
       "kamiyama",
       "kamikou"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1652162400000,
     "end": 1652875199000,
-    "close": 1653026399000
+    "close": 1653026399000,
+    "type": "Mixed Event"
   },
   {
     "id": 59,
@@ -1034,10 +1092,11 @@
       "akito2",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1653026400000,
     "end": 1653825599000,
-    "close": 1653976799000
+    "close": 1653976799000,
+    "type": "Akito 2nd Focus Event"
   },
   {
     "id": 60,
@@ -1046,10 +1105,11 @@
     "banner_id": 115,
     "cards": [224, 225, 226, 804, 805],
     "keywords": ["bride", "wedding", "marriage"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1653976800000,
     "end": 1654689599000,
-    "close": 1654840799000
+    "close": 1654840799000,
+    "type": "Mixed Event"
   },
   {
     "id": 61,
@@ -1066,10 +1126,11 @@
       "mafuyu",
       "mafuyu3"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1654840800000,
     "end": 1655553599000,
-    "close": 1655704799000
+    "close": 1655704799000,
+    "type": "Mafuyu 3rd Focus Event"
   },
   {
     "id": 62,
@@ -1087,10 +1148,11 @@
       "nene3",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1655704800000,
     "end": 1656417599000,
-    "close": 1656568799000
+    "close": 1656568799000,
+    "type": "Nene 3rd Focus Event"
   },
   {
     "id": 63,
@@ -1099,10 +1161,11 @@
     "banner_id": 121,
     "cards": [236, 237, 238, 810, 811],
     "keywords": ["sporty", "sport"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1656568800000,
     "end": 1657367999000,
-    "close": 1657519199000
+    "close": 1657519199000,
+    "type": "Mixed Event"
   },
   {
     "id": 64,
@@ -1119,10 +1182,11 @@
       "an3",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1657519200000,
     "end": 1658231999000,
-    "close": 1658383199000
+    "close": 1658383199000,
+    "type": "An 3rd Focus Event"
   },
   {
     "id": 65,
@@ -1139,10 +1203,11 @@
       "saki",
       "saki3"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1658383200000,
     "end": 1659095999000,
-    "close": 1659247199000
+    "close": 1659247199000,
+    "type": "Saki 3rd Focus Event"
   },
   {
     "id": 66,
@@ -1151,10 +1216,11 @@
     "banner_id": 128,
     "cards": [247, 248, 249, 816, 817],
     "keywords": ["gaming", "tournament"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1659247200000,
     "end": 1659959999000,
-    "close": 1660111199000
+    "close": 1660111199000,
+    "type": "Mixed Event"
   },
   {
     "id": 67,
@@ -1163,10 +1229,11 @@
     "banner_id": 129,
     "cards": [250, 251, 252, 818, 819],
     "keywords": ["mmj", "more more jump", "momojan", "airi", "airi3", "focus"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1660111200000,
     "end": 1660823999000,
-    "close": 1660975199000
+    "close": 1660975199000,
+    "type": "Airi 3rd Focus Event"
   },
   {
     "id": 68,
@@ -1183,10 +1250,11 @@
       "mizu3",
       "mizuki3"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1660975200000,
     "end": 1661774399000,
-    "close": 1661925599000
+    "close": 1661925599000,
+    "type": "Mizuki 3rd Focus Event"
   },
   {
     "id": 69,
@@ -1203,10 +1271,11 @@
       "shiho",
       "shiho3"
     ],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1661925600000,
     "end": 1662551999000,
-    "close": 1662703199000
+    "close": 1662703199000,
+    "type": "Shiho 3rd Focus Event"
   },
   {
     "id": 70,
@@ -1215,10 +1284,11 @@
     "banner_id": 138,
     "cards": [263, 264, 265, 824, 825],
     "keywords": ["paint"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1662703200000,
     "end": 1663502399000,
-    "close": 1663653599000
+    "close": 1663653599000,
+    "type": "Mixed Event"
   },
   {
     "id": 71,
@@ -1235,10 +1305,11 @@
       "toya3",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1663653600000,
     "end": 1664366399000,
-    "close": 1664517599000
+    "close": 1664517599000,
+    "type": "Toya 3rd Focus Event"
   },
   {
     "id": 72,
@@ -1247,10 +1318,11 @@
     "banner_id": 150,
     "cards": [271, 272, 273, 274, 828],
     "keywords": ["festival", "shibuya festival"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1664517600000,
     "end": 1665403199000,
-    "close": 1665554399000
+    "close": 1665554399000,
+    "type": "Mixed Event"
   },
   {
     "id": 73,
@@ -1267,10 +1339,11 @@
       "mino3",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1665554400000,
     "end": 1666180799000,
-    "close": 1666331999000
+    "close": 1666331999000,
+    "type": "Minori 3rd Focus Event"
   },
   {
     "id": 74,
@@ -1288,10 +1361,11 @@
       "rui3",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1666332000000,
     "end": 1667044799000,
-    "close": 1667195999000
+    "close": 1667195999000,
+    "type": "Rui 3rd Focus Event"
   },
   {
     "id": 75,
@@ -1300,10 +1374,11 @@
     "banner_id": 157,
     "cards": [283, 284, 285, 833, 834],
     "keywords": ["school", "festival", "miyajou", "school festival"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1667196000000,
     "end": 1667995199000,
-    "close": 1668146399000
+    "close": 1668146399000,
+    "type": "Mixed Event"
   },
   {
     "id": 76,
@@ -1321,10 +1396,11 @@
       "ichika3",
       "ichi3"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1668146400000,
     "end": 1668772799000,
-    "close": 1668923999000
+    "close": 1668923999000,
+    "type": "Ichika 3rd Focus Event"
   },
   {
     "id": 77,
@@ -1333,10 +1409,11 @@
     "banner_id": 163,
     "cards": [291, 292, 293, 837, 838],
     "keywords": ["n25", "nightcord", "niigo", "focus", "ena", "ena3"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1668924000000,
     "end": 1669636799000,
-    "close": 1669787999000
+    "close": 1669787999000,
+    "type": "Ena 3rd Focus Event"
   },
   {
     "id": 78,
@@ -1353,10 +1430,11 @@
       "haru3",
       "focus"
     ],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1669788000000,
     "end": 1670587199000,
-    "close": 1670738399000
+    "close": 1670738399000,
+    "type": "Haruka 3rd Focus Event"
   },
   {
     "id": 79,
@@ -1374,10 +1452,11 @@
       "akito3",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1670738400000,
     "end": 1671451199000,
-    "close": 1671602399000
+    "close": 1671602399000,
+    "type": "Akito 3rd Focus Event"
   },
   {
     "id": 80,
@@ -1386,10 +1465,11 @@
     "banner_id": 169,
     "cards": [301, 302, 303, 843, 844],
     "keywords": ["shizumafu"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1671602400000,
     "end": 1672315199000,
-    "close": 1672466399000
+    "close": 1672466399000,
+    "type": "Mixed Event"
   },
   {
     "id": 81,
@@ -1398,10 +1478,11 @@
     "banner_id": 175,
     "cards": [308, 309, 310, 845, 846],
     "keywords": ["new year", "happy new year", "ny"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1672466400000,
     "end": 1673179199000,
-    "close": 1673330399000
+    "close": 1673330399000,
+    "type": "New Year Event"
   },
   {
     "id": 82,
@@ -1421,10 +1502,11 @@
       "emu3",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1673330400000,
     "end": 1674129599000,
-    "close": 1674280799000
+    "close": 1674280799000,
+    "type": "Emu 3rd Focus Event"
   },
   {
     "id": 83,
@@ -1442,10 +1524,11 @@
       "hona3",
       "honami3"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1674280800000,
     "end": 1674993599000,
-    "close": 1675144799000
+    "close": 1675144799000,
+    "type": "Honami 3rd Focus Event"
   },
   {
     "id": 84,
@@ -1454,10 +1537,11 @@
     "banner_id": 183,
     "cards": [320, 321, 322, 851, 852],
     "keywords": ["valentine's"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1675144800000,
     "end": 1675857599000,
-    "close": 1676008799000
+    "close": 1676008799000,
+    "type": "Valentine's Event"
   },
   {
     "id": 85,
@@ -1474,10 +1558,11 @@
       "shizu3",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1676008800000,
     "end": 1676635199000,
-    "close": 1676786399000
+    "close": 1676786399000,
+    "type": "Shizuku 3rd Focus Event"
   },
   {
     "id": 86,
@@ -1495,10 +1580,11 @@
       "kohane3",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1676786400000,
     "end": 1677412799000,
-    "close": 1677563999000
+    "close": 1677563999000,
+    "type": "Kohane 3rd Focus Event"
   },
   {
     "id": 87,
@@ -1507,10 +1593,11 @@
     "banner_id": 190,
     "cards": [331, 332, 333, 857, 858],
     "keywords": ["white day"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1677564000000,
     "end": 1678363199000,
-    "close": 1678514399000
+    "close": 1678514399000,
+    "type": "White Day Event"
   },
   {
     "id": 88,
@@ -1531,10 +1618,11 @@
       "kasa3",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1678514400000,
     "end": 1679227199000,
-    "close": 1679378399000
+    "close": 1679378399000,
+    "type": "Tsukasa 3rd Focus Event"
   },
   {
     "id": 89,
@@ -1551,10 +1639,11 @@
       "kanade3",
       "kana3"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1679378400000,
     "end": 1680004799000,
-    "close": 1680155999000
+    "close": 1680155999000,
+    "type": "Kanade 3rd Focus Event"
   },
   {
     "id": 90,
@@ -1563,10 +1652,11 @@
     "banner_id": 201,
     "cards": [344, 345, 346, 347, 863],
     "keywords": ["anshiho", "shihoan"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1680156000000,
     "end": 1681041599000,
-    "close": 1681192799000
+    "close": 1681192799000,
+    "type": "Mixed Event"
   },
   {
     "id": 91,
@@ -1583,10 +1673,11 @@
       "saki",
       "saki4"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1681192800000,
     "end": 1681905599000,
-    "close": 1682056799000
+    "close": 1682056799000,
+    "type": "Saki 4th Focus Event"
   },
   {
     "id": 92,
@@ -1595,10 +1686,11 @@
     "banner_id": 205,
     "cards": [355, 356, 357, 866, 867],
     "keywords": ["mmj", "more more jump", "momojan", "airi", "airi4"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1682056800000,
     "end": 1682683199000,
-    "close": 1682834399000
+    "close": 1682834399000,
+    "type": "Airi 4th Focus Event"
   },
   {
     "id": 93,
@@ -1615,10 +1707,11 @@
       "mizuki4",
       "mizu4"
     ],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1682834400000,
     "end": 1683633599000,
-    "close": 1683784799000
+    "close": 1683784799000,
+    "type": "Mizuki 4th Focus Event"
   },
   {
     "id": 94,
@@ -1627,10 +1720,11 @@
     "banner_id": 211,
     "cards": [363, 364, 365, 870, 871],
     "keywords": ["school trip", "field trip", "miyajou", "yokohama"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1683784800000,
     "end": 1684411199000,
-    "close": 1684562399000
+    "close": 1684562399000,
+    "type": "Mixed Event"
   },
   {
     "id": 95,
@@ -1648,10 +1742,11 @@
       "nene4",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1684562400000,
     "end": 1685361599000,
-    "close": 1685512799000
+    "close": 1685512799000,
+    "type": "Nene 4th Focus Event"
   },
   {
     "id": 96,
@@ -1660,10 +1755,11 @@
     "banner_id": 217,
     "cards": [371, 372, 373, 874, 875],
     "keywords": ["wedding", "bride", "marriage"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1685512800000,
     "end": 1686225599000,
-    "close": 1686376799000
+    "close": 1686376799000,
+    "type": "Mixed Event"
   },
   {
     "id": 97,
@@ -1680,10 +1776,11 @@
       "an4",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1686376800000,
     "end": 1687089599000,
-    "close": 1687240799000
+    "close": 1687240799000,
+    "type": "An 4th Focus Event"
   },
   {
     "id": 98,
@@ -1700,10 +1797,11 @@
       "minori4",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1687240800000,
     "end": 1687953599000,
-    "close": 1688104799000
+    "close": 1688104799000,
+    "type": "Minori 4th Focus Event"
   },
   {
     "id": 99,
@@ -1712,10 +1810,11 @@
     "banner_id": 223,
     "cards": [382, 383, 384, 880, 881],
     "keywords": ["school trip", "field trip", "kamikou", "kamiyama"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1688104800000,
     "end": 1688903999000,
-    "close": 1689055199000
+    "close": 1689055199000,
+    "type": "Mixed Event"
   },
   {
     "id": 100,
@@ -1732,10 +1831,11 @@
       "mafu4",
       "mafuyu4"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1689055200000,
     "end": 1689767999000,
-    "close": 1689919199000
+    "close": 1689919199000,
+    "type": "Mafuyu 4th Focus Event"
   },
   {
     "id": 101,
@@ -1753,10 +1853,11 @@
       "ichi4",
       "ichika4"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1689919200000,
     "end": 1690631999000,
-    "close": 1690783199000
+    "close": 1690783199000,
+    "type": "Ichika 4th Focus Event"
   },
   {
     "id": 102,
@@ -1765,10 +1866,11 @@
     "banner_id": 230,
     "cards": [393, 394, 395, 886, 887],
     "keywords": ["diner", "cafe"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1690783200000,
     "end": 1691495999000,
-    "close": 1691647199000
+    "close": 1691647199000,
+    "type": "Mixed Event"
   },
   {
     "id": 103,
@@ -1786,10 +1888,11 @@
       "kohane4",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1691647200000,
     "end": 1692446399000,
-    "close": 1692597599000
+    "close": 1692597599000,
+    "type": "Kohane 4th Focus Event"
   },
   {
     "id": 104,
@@ -1809,10 +1912,11 @@
       "emu4",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1692597600000,
     "end": 1693310399000,
-    "close": 1693461599000
+    "close": 1693461599000,
+    "type": "Emu 4th Focus Event"
   },
   {
     "id": 105,
@@ -1821,7 +1925,7 @@
     "banner_id": 238,
     "cards": [405, 406, 407, 408, 892, 893],
     "keywords": ["vs"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1693461600000,
     "end": 1694260799000,
     "close": 1694411999000
@@ -1833,10 +1937,11 @@
     "banner_id": 240,
     "cards": [410, 411, 412, 894, 895],
     "keywords": ["miyajou", "miyama"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1694412000000,
     "end": 1695038399000,
-    "close": 1695189599000
+    "close": 1695189599000,
+    "type": "Mixed Event"
   },
   {
     "id": 107,
@@ -1845,10 +1950,11 @@
     "banner_id": 242,
     "cards": [413, 414, 415, 896, 897],
     "keywords": ["kamikou", "kamiyama"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1695189600000,
     "end": 1695902399000,
-    "close": 1696053599000
+    "close": 1696053599000,
+    "type": "Mixed Event"
   },
   {
     "id": 108,
@@ -1857,10 +1963,11 @@
     "banner_id": 256,
     "cards": [418, 419, 420, 421, 897, 898],
     "keywords": ["new school year"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1696053600000,
     "end": 1696939199000,
-    "close": 1697090399000
+    "close": 1697090399000,
+    "type": "Mixed Event"
   },
   {
     "id": 109,
@@ -1878,10 +1985,11 @@
       "akito4",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1697090400000,
     "end": 1697803199000,
-    "close": 1697954399000
+    "close": 1697954399000,
+    "type": "Akito 4th Focus Event"
   },
   {
     "id": 110,
@@ -1898,10 +2006,11 @@
       "shiho",
       "shiho4"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1697954400000,
     "end": 1698580799000,
-    "close": 1698731999000
+    "close": 1698731999000,
+    "type": "Shiho 4th Focus Event"
   },
   {
     "id": 111,
@@ -1918,10 +2027,11 @@
       "shizu4",
       "focus"
     ],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1698732000000,
     "end": 1699271999000,
-    "close": 1699441199000
+    "close": 1699441199000,
+    "type": "Shizuku 4th Focus Event"
   },
   {
     "id": 112,
@@ -1930,10 +2040,11 @@
     "banner_id": 267,
     "cards": [434, 435, 436, 437, 905],
     "keywords": ["n25", "nightcord", "niigo", "wl1", "world link"],
-    "type": "world_link",
+    "event_type": "world_link",
     "start": 1699441200000,
     "end": 1700477999000,
-    "close": 1700632799000
+    "close": 1700632799000,
+    "type": "Nightcord at 25:00 World Link 1"
   },
   {
     "id": 113,
@@ -1954,10 +2065,11 @@
       "kasa4",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1700632800000,
     "end": 1701172799000,
-    "close": 1701323999000
+    "close": 1701323999000,
+    "type": "Tsukasa 4th Focus Event"
   },
   {
     "id": 114,
@@ -1972,10 +2084,11 @@
       "school festival",
       "kamiyama"
     ],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1701324000000,
     "end": 1702036799000,
-    "close": 1702187999000
+    "close": 1702187999000,
+    "type": "Mixed Event"
   },
   {
     "id": 115,
@@ -1984,10 +2097,11 @@
     "banner_id": 277,
     "cards": [445, 446, 447, 910, 911],
     "keywords": ["zoo", "animal", "caretaker"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1702188000000,
     "end": 1702900799000,
-    "close": 1703051999000
+    "close": 1703051999000,
+    "type": "Mixed Event"
   },
   {
     "id": 116,
@@ -2004,10 +2118,11 @@
       "kana4",
       "kanade4"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1703052000000,
     "end": 1703851199000,
-    "close": 1704002399000
+    "close": 1704002399000,
+    "type": "Kanade 4th Focus Event"
   },
   {
     "id": 117,
@@ -2016,10 +2131,11 @@
     "banner_id": 288,
     "cards": [455, 456, 457, 914, 915],
     "keywords": ["new year", "ny", "happy new year"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1704002400000,
     "end": 1704628799000,
-    "close": 1704797999000
+    "close": 1704797999000,
+    "type": "New Year Event"
   },
   {
     "id": 118,
@@ -2035,10 +2151,11 @@
       "world link",
       "world link 1"
     ],
-    "type": "world_link",
+    "event_type": "world_link",
     "start": 1704798000000,
     "end": 1705834799000,
-    "close": 1705989599000
+    "close": 1705989599000,
+    "type": "Vivid BAD SQUAD World Link 1"
   },
   {
     "id": 119,
@@ -2056,10 +2173,11 @@
       "rui4",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1705989600000,
     "end": 1706529599000,
-    "close": 1706698799000
+    "close": 1706698799000,
+    "type": "Rui 4th Focus Event"
   },
   {
     "id": 120,
@@ -2068,10 +2186,11 @@
     "banner_id": 298,
     "cards": [474, 475, 476, 920, 921],
     "keywords": ["valentine's"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1706698800000,
     "end": 1707393599000,
-    "close": 1707544799000
+    "close": 1707544799000,
+    "type": "Valentine's Event"
   },
   {
     "id": 121,
@@ -2089,10 +2208,11 @@
       "hona4",
       "honami4"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1707544800000,
     "end": 1708257599000,
-    "close": 1708408799000
+    "close": 1708408799000,
+    "type": "Honami 4th Focus Event"
   },
   {
     "id": 122,
@@ -2109,10 +2229,11 @@
       "minori5",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1708408800000,
     "end": 1709035199000,
-    "close": 1709186399000
+    "close": 1709186399000,
+    "type": "Minori 5th Focus Event"
   },
   {
     "id": 123,
@@ -2121,10 +2242,11 @@
     "banner_id": 307,
     "cards": [485, 486, 487, 926, 927],
     "keywords": ["white day"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1709186400000,
     "end": 1709726399000,
-    "close": 1709895599000
+    "close": 1709895599000,
+    "type": "White Day Event"
   },
   {
     "id": 124,
@@ -2143,10 +2265,11 @@
       "world link",
       "world link 1"
     ],
-    "type": "world_link",
+    "event_type": "world_link",
     "start": 1709895600000,
     "end": 1710932399000,
-    "close": 1711087199000
+    "close": 1711087199000,
+    "type": "Wonderlands x Showtime World Link 1"
   },
   {
     "id": 125,
@@ -2163,10 +2286,11 @@
       "toya4",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1711087200000,
     "end": 1711627199000,
-    "close": 1711778399000
+    "close": 1711778399000,
+    "type": "Toya 4th Focus Event"
   },
   {
     "id": 126,
@@ -2175,10 +2299,11 @@
     "banner_id": 321,
     "cards": [500, 501, 502, 931, 932],
     "keywords": ["furry"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1711778400000,
     "end": 1712577599000,
-    "close": 1712728799000
+    "close": 1712728799000,
+    "type": "Mixed Event"
   },
   {
     "id": 127,
@@ -2187,10 +2312,11 @@
     "banner_id": 322,
     "cards": [503, 504, 505, 933, 934],
     "keywords": ["niigo", "nightcord", "n25", "focus", "ena4", "ena"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1712728800000,
     "end": 1713441599000,
-    "close": 1713592799000
+    "close": 1713592799000,
+    "type": "Ena 4th Focus Event"
   },
   {
     "id": 128,
@@ -2207,10 +2333,11 @@
       "saki",
       "saki5"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1713592800000,
     "end": 1714305599000,
-    "close": 1714456799000
+    "close": 1714456799000,
+    "type": "Saki 5th Focus Event"
   },
   {
     "id": 129,
@@ -2227,10 +2354,11 @@
       "an5",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1714456800000,
     "end": 1715083199000,
-    "close": 1715252399000
+    "close": 1715252399000,
+    "type": "An 5th Focus Event"
   },
   {
     "id": 130,
@@ -2247,10 +2375,11 @@
       "wl1",
       "world link 1"
     ],
-    "type": "world_link",
+    "event_type": "world_link",
     "start": 1715252400000,
     "end": 1716289199000,
-    "close": 1716443999000
+    "close": 1716443999000,
+    "type": "MORE MORE JUMP! World Link 1"
   },
   {
     "id": 131,
@@ -2270,10 +2399,11 @@
       "emu5",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1716444000000,
     "end": 1716983999000,
-    "close": 1717135199000
+    "close": 1717135199000,
+    "type": "Emu 5th Focus Event"
   },
   {
     "id": 132,
@@ -2282,10 +2412,11 @@
     "banner_id": 342,
     "cards": [524, 525, 526, 942, 943],
     "keywords": ["wedding", "bride", "marriage"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1717135200000,
     "end": 1717847999000,
-    "close": 1717999199000
+    "close": 1717999199000,
+    "type": "Mixed Event"
   },
   {
     "id": 133,
@@ -2302,10 +2433,11 @@
       "haru4",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1717999200000,
     "end": 1718711999000,
-    "close": 1718863199000
+    "close": 1718863199000,
+    "type": "Haruka 4th Focus Event"
   },
   {
     "id": 134,
@@ -2322,10 +2454,11 @@
       "mafu5",
       "mafuyu5"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1718863200000,
     "end": 1719575999000,
-    "close": 1719727199000
+    "close": 1719727199000,
+    "type": "Mafuyu 5th Focus Event"
   },
   {
     "id": 135,
@@ -2343,10 +2476,11 @@
       "koha5",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1719727200000,
     "end": 1720353599000,
-    "close": 1720504799000
+    "close": 1720504799000,
+    "type": "Kohane 5th Focus Event"
   },
   {
     "id": 136,
@@ -2367,10 +2501,11 @@
       "tsukasa5",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1720504800000,
     "end": 1721044799000,
-    "close": 1721213999000
+    "close": 1721213999000,
+    "type": "Tsukasa 5th Focus Event"
   },
   {
     "id": 137,
@@ -2387,10 +2522,11 @@
       "wl1",
       "world link 1"
     ],
-    "type": "world_link",
+    "event_type": "world_link",
     "start": 1721214000000,
     "end": 1722250799000,
-    "close": 1722405599000
+    "close": 1722405599000,
+    "type": "Leo/Need World Link 1"
   },
   {
     "id": 138,
@@ -2399,10 +2535,11 @@
     "banner_id": 362,
     "cards": [550, 551, 552, 953, 954],
     "keywords": ["mmj", "more more jump", "momojan", "airi", "airi5", "focus"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1722405600000,
     "end": 1723031999000,
-    "close": 1723183199000
+    "close": 1723183199000,
+    "type": "Airi 5th Focus Event"
   },
   {
     "id": 139,
@@ -2411,10 +2548,11 @@
     "banner_id": 363,
     "cards": [553, 554, 555, 955, 956],
     "keywords": ["toyakana", "kanatoya"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1723183200000,
     "end": 1723723199000,
-    "close": 1723892399000
+    "close": 1723892399000,
+    "type": "Mixed Event"
   },
   {
     "id": 140,
@@ -2423,10 +2561,11 @@
     "banner_id": 369,
     "cards": [557, 558, 559, 560, 561, 562],
     "keywords": ["wl1", "world link 1", "world link"],
-    "type": "world_link",
+    "event_type": "world_link",
     "start": 1723892400000,
     "end": 1724929199000,
-    "close": 1725083999000
+    "close": 1725083999000,
+    "type": "Virtual Singer World Link 1"
   },
   {
     "id": 141,
@@ -2435,10 +2574,11 @@
     "banner_id": 374,
     "cards": [565, 566, 567, 957, 958],
     "keywords": ["miyama", "miyajou"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1725084000000,
     "end": 1725796799000,
-    "close": 1725947999000
+    "close": 1725947999000,
+    "type": "Mixed Event"
   },
   {
     "id": 142,
@@ -2447,10 +2587,11 @@
     "banner_id": 376,
     "cards": [569, 570, 571, 959, 960],
     "keywords": ["sports", "athletic event"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1725948000000,
     "end": 1726660799000,
-    "close": 1726811999000
+    "close": 1726811999000,
+    "type": "Mixed Event"
   },
   {
     "id": 143,
@@ -2468,10 +2609,11 @@
       "ichi5",
       "ichika5"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1726812000000,
     "end": 1727524799000,
-    "close": 1727675999000
+    "close": 1727675999000,
+    "type": "Ichika 5th Focus Event"
   },
   {
     "id": 144,
@@ -2480,10 +2622,11 @@
     "banner_id": 394,
     "cards": [577, 578, 579, 580, 963],
     "keywords": ["shibuya festival", "festival"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1727676000000,
     "end": 1728475199000,
-    "close": 1728723599000
+    "close": 1728723599000,
+    "type": "Mixed Event"
   },
   {
     "id": 145,
@@ -2501,10 +2644,11 @@
       "mizu5",
       "ominous bell"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1728723600000,
     "end": 1729339199000,
-    "close": 1729490399000
+    "close": 1729490399000,
+    "type": "Mizuki 5th Focus Event"
   },
   {
     "id": 146,
@@ -2522,10 +2666,11 @@
       "akito5",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1729490400000,
     "end": 1730203199000,
-    "close": 1730354399000
+    "close": 1730354399000,
+    "type": "Akito 5th Focus Event"
   },
   {
     "id": 147,
@@ -2542,10 +2687,11 @@
       "saki",
       "saki6"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1730354400000,
     "end": 1731067199000,
-    "close": 1731218399000
+    "close": 1731218399000,
+    "type": "Saki 6th Focus Event"
   },
   {
     "id": 148,
@@ -2554,10 +2700,11 @@
     "banner_id": 406,
     "cards": [593, 594, 595, 970, 971],
     "keywords": ["autumn"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1731218400000,
     "end": 1731931199000,
-    "close": 1732082399000
+    "close": 1732082399000,
+    "type": "Mixed Event"
   },
   {
     "id": 149,
@@ -2575,10 +2722,11 @@
       "nene5",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1732082400000,
     "end": 1732795199000,
-    "close": 1732946399000
+    "close": 1732946399000,
+    "type": "Nene 5th Focus Event"
   },
   {
     "id": 150,
@@ -2595,10 +2743,11 @@
       "ena",
       "wedding"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1732946400000,
     "end": 1733745599000,
-    "close": 1733896799000
+    "close": 1733896799000,
+    "type": "Ena 5th Focus Event"
   },
   {
     "id": 151,
@@ -2615,10 +2764,11 @@
       "shizu5",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1733896800000,
     "end": 1734609599000,
-    "close": 1734760799000
+    "close": 1734760799000,
+    "type": "Shizuku 5th Focus Event"
   },
   {
     "id": 152,
@@ -2627,10 +2777,11 @@
     "banner_id": 418,
     "cards": [607, 608, 609, 978, 979],
     "keywords": ["christmas", "xmas"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1734760800000,
     "end": 1735473599000,
-    "close": 1735624799000
+    "close": 1735624799000,
+    "type": "Mixed Event"
   },
   {
     "id": 153,
@@ -2639,10 +2790,11 @@
     "banner_id": 426,
     "cards": [614, 615, 616, 980, 981],
     "keywords": ["new year", "happy new year", "ny"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1735624800000,
     "end": 1736423999000,
-    "close": 1736575199000
+    "close": 1736575199000,
+    "type": "New Year Event"
   },
   {
     "id": 154,
@@ -2659,10 +2811,11 @@
       "toya5",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1736575200000,
     "end": 1737287999000,
-    "close": 1737439199000
+    "close": 1737439199000,
+    "type": "Toya 5th Focus Event"
   },
   {
     "id": 155,
@@ -2671,10 +2824,11 @@
     "banner_id": 432,
     "cards": [621, 622, 623, 984, 985],
     "keywords": ["model"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1737439200000,
     "end": 1738151999000,
-    "close": 1738303199000
+    "close": 1738303199000,
+    "type": "Mixed Event"
   },
   {
     "id": 156,
@@ -2683,10 +2837,11 @@
     "banner_id": 438,
     "cards": [626, 627, 628, 986, 987],
     "keywords": ["valentine's"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1738303200000,
     "end": 1739015999000,
-    "close": 1739167199000
+    "close": 1739167199000,
+    "type": "Valentine's Event"
   },
   {
     "id": 157,
@@ -2703,10 +2858,11 @@
       "haru5",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1739167200000,
     "end": 1739879999000,
-    "close": 1740031199000
+    "close": 1740031199000,
+    "type": "Haruka 5th Focus Event"
   },
   {
     "id": 158,
@@ -2715,10 +2871,11 @@
     "banner_id": 448,
     "cards": [638, 639, 640, 990, 991],
     "keywords": [],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1740031200000,
     "end": 1740571199000,
-    "close": 1740722399000
+    "close": 1740722399000,
+    "type": "Mixed Event"
   },
   {
     "id": 159,
@@ -2726,11 +2883,12 @@
     "unit": "mixed",
     "banner_id": 450,
     "cards": [641, 642, 643, 992, 993],
-    "keywords": ["miyama", "miyajou"],
-    "type": "marathon",
+    "keywords": ["miyama", "miyajou", "white day"],
+    "event_type": "marathon",
     "start": 1740722400000,
     "end": 1741435199000,
-    "close": 1741586399000
+    "close": 1741586399000,
+    "type": "White Day Event"
   },
   {
     "id": 160,
@@ -2739,10 +2897,11 @@
     "banner_id": 453,
     "cards": [645, 646, 647, 994, 995],
     "keywords": ["cat"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1741586400000,
     "end": 1742299199000,
-    "close": 1742450399000
+    "close": 1742450399000,
+    "type": "Mixed Event"
   },
   {
     "id": 161,
@@ -2759,10 +2918,11 @@
       "kana5",
       "kanade5"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1742450400000,
     "end": 1743163199000,
-    "close": 1743314399000
+    "close": 1743314399000,
+    "type": "Kanade 5th Focus Event"
   },
   {
     "id": 162,
@@ -2779,10 +2939,11 @@
       "shiho",
       "shiho5"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1743314400000,
     "end": 1743940799000,
-    "close": 1744109999000
+    "close": 1744109999000,
+    "type": "Shiho 5th Focus Event"
   },
   {
     "id": 163,
@@ -2798,10 +2959,11 @@
       "world link",
       "world link 2"
     ],
-    "type": "world_link",
+    "event_type": "world_link",
     "start": 1744110000000,
     "end": 1745146799000,
-    "close": 1745301599000
+    "close": 1745301599000,
+    "type": "Vivid Bad Squad World Link 2"
   },
   {
     "id": 164,
@@ -2821,10 +2983,11 @@
       "emu6",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1745301600000,
     "end": 1745841599000,
-    "close": 1745992799000
+    "close": 1745992799000,
+    "type": "Emu 6th Focus Event"
   },
   {
     "id": 165,
@@ -2841,10 +3004,11 @@
       "mafu6",
       "mafuyu6"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1745992800000,
     "end": 1746532799000,
-    "close": 1746619199000
+    "close": 1746619199000,
+    "type": "Mafuyu 6th Focus Event"
   },
   {
     "id": 166,
@@ -2853,7 +3017,7 @@
     "banner_id": 0,
     "cards": [65, 191, 67, 847, 756],
     "keywords": ["test event"],
-    "type": "cheerful_carnival",
+    "event_type": "cheerful_carnival",
     "start": 1746619200000,
     "end": 1746705599000,
     "close": 1746788399000
@@ -2875,10 +3039,11 @@
       "world link",
       "world link 2"
     ],
-    "type": "world_link",
+    "event_type": "world_link",
     "start": 1746788400000,
     "end": 1747825199000,
-    "close": 1747979999000
+    "close": 1747979999000,
+    "type": "Wonderlands x Showtime World Link 2"
   },
   {
     "id": 168,
@@ -2887,10 +3052,11 @@
     "banner_id": 478,
     "cards": [676, 677, 678, 1004, 1005],
     "keywords": ["mmj", "more more jump", "momojan", "airi", "airi6", "focus"],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1747980000000,
     "end": 1748519999000,
-    "close": 1748671199000
+    "close": 1748671199000,
+    "type": "Airi 6th Focus Event"
   },
   {
     "id": 169,
@@ -2908,10 +3074,11 @@
       "koha6",
       "focus"
     ],
-    "type": "marathon",
+    "event_type": "marathon",
     "start": 1748671200000,
     "end": 1749297599000,
-    "close": 1749466799000
+    "close": 1749466799000,
+    "type": "Kohane 6th Focus Event"
   },
   {
     "id": 170,
@@ -2927,10 +3094,11 @@
       "world link",
       "world link 2"
     ],
-    "type": "world_link",
+    "event_type": "world_link",
     "start": 1749466800000,
     "end": 1750503599000,
-    "close": 1750676399000
+    "close": 1750676399000,
+    "type": "Nightcord at 25:00 World Link 2"
   },
   {
     "id": 171,
@@ -2950,13 +3118,14 @@
       "world link",
       "world link 2"
     ],
-    "type": "world_link"
+    "event_type": "world_link",
+    "type": "Leo/Need World Link 2"
   },
   {
     "id": 172,
     "name": "Deeper and deeper",
-    "start": 1751868000000,
-    "end": 1752407940000,
+    "start": 1751875200000,
+    "end": 1752407999000,
     "close": 1752559199000,
     "unit": "wxs",
     "banner_id": 487,
@@ -2971,6 +3140,7 @@
       "rui5",
       "focus"
     ],
-    "type": "marathon"
+    "event_type": "marathon",
+    "type": "Rui 5th Focus Event"
   }
 ]

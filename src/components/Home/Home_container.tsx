@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import DateTabs from "./Calendar_view/Date_tabs";
 import { useTheme } from "../../context/Theme_toggle";
-import FilterTab from "./Card_view/Filter_tab";
+import FilterTab from "./Filter_view/Filter_tab";
 import { useServer } from "../../context/Server";
 import SavedBannersContainer from "../SavedBanners/SavedBanners_container";
 
@@ -27,7 +27,7 @@ export default function HomeContainer() {
             {/* VIEWMODE TABS */}
             <div
               className={`w-full flex flex-row items-center justify-center text-center h-8 ${
-                theme == "light" ? "bg-bg-light-mode2" : ""
+                theme == "light" ? "bg-bg-light-mode2" : "bg-[#101828"
               }`}
             >
               <div

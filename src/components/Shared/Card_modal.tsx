@@ -166,11 +166,13 @@ export default function CardModal({
           )}
           {rarity <= 2 && (
             <div className="flex flex-col justify-center items-center gap-5 mb-3 relative">
-              {isLoading && (
-                <div className="absolute inset-0 flex items-center justify-center  z-10 h-15">
-                  <LoadingComponent />
-                </div>
-              )}
+              <div className={`${isLoading && "h-30"}`}>
+                {isLoading && (
+                  <div className="absolute inset-0 flex items-center justify-center  z-10 h-15">
+                    <LoadingComponent />
+                  </div>
+                )}
+              </div>
               <img
                 src={`${imageHost}${cardId}.webp`}
                 style={{

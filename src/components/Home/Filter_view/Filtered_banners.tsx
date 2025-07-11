@@ -5,7 +5,7 @@ import EnBanners from "../../../assets/json/en_banners.json";
 import JpBanners from "../../../assets/json/jp_banners.json";
 import type { FilteredBannersPropType, BannerTypes } from "../../Global/Types";
 
-import BannerContainer from "../../BannerContainer/Banner_container";
+import BannerContainer from "../../GachaContainer/Gacha_container";
 
 const characters = [
   "Hoshino Ichika",
@@ -55,7 +55,7 @@ export default function FilteredBanners({
   const totalPages = Math.ceil((filteredBanners?.length || 0) / bannersPerPage);
   const startIndex = (currentPage - 1) * bannersPerPage;
   const endIndex = startIndex + bannersPerPage;
-  
+
   // Memoize currentBanners to prevent unnecessary re-renders
   const currentBanners = useMemo(() => {
     return filteredBanners?.slice(startIndex, endIndex) || [];
@@ -188,7 +188,7 @@ export default function FilteredBanners({
 
   return (
     <div
-      className={`${theme == "light" ? "bg-[#f2f2f2]" : ""} mb-20`}
+      className={`${theme == "light" ? "bg-[#f9fafb]" : "bg-[#101828]"} pb-20`}
       ref={filteredBannersRef}
     >
       {/** BANNER COUNT WITH TOGGLE **/}

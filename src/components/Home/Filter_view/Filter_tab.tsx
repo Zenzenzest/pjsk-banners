@@ -271,7 +271,7 @@ export default function FilterTab() {
       ...prev,
       search: searchTerm,
     }));
-    
+
     // Apply the search immediately
     setSelectedBannerFilters((prev) => ({
       ...prev,
@@ -325,7 +325,9 @@ export default function FilterTab() {
     <div className="flex flex-col justify-center items-center w-full h-full">
       <div
         className={`w-full flex  border-b ${
-          theme === "light" ? "border-gray-200 bg-[#f5f7f9]" : "border-gray-700"
+          theme === "light"
+            ? "border-gray-200 bg-[#f5f7f9]"
+            : "border-gray-700 bg-[#101828]"
         }`}
       >
         <button
@@ -367,9 +369,11 @@ export default function FilterTab() {
 
       {/* SEARCH INPUT - Only visible for banners */}
       {viewMode === "banners" && (
-        <div className={`w-full px-4 py-3 ${
-          theme === "light" ? "bg-[#f5f7f9]" : "bg-bg-dark-mode"
-        }`}>
+        <div
+          className={`w-full px-4 py-3 ${
+            theme === "light" ? "bg-[#f5f7f9]" : "bg-bg-dark-mode"
+          }`}
+        >
           <div className="relative">
             <input
               type="text"
@@ -414,7 +418,7 @@ export default function FilterTab() {
 
       <div
         className={`p-3 w-full shrink-0  flex flex-col justify-end items-center ${
-          theme == "light" ? "bg-bg-light-mode2" : "bg-bg-dark-mode"
+          theme == "light" ? "bg-[#f9fafb]" : "bg-[#101828]"
         }`}
         ref={panelRef}
       >

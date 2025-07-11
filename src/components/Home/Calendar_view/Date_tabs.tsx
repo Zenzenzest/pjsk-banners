@@ -5,7 +5,7 @@ import { useTheme } from "../../../context/Theme_toggle";
 
 import type { BannerTypes, ServerTimeData } from "../../Global/Types";
 import { useServer } from "../../../context/Server";
-import BannerContainer from "../../BannerContainer/Banner_container";
+import BannerContainer from "../../GachaContainer/Gacha_container";
 
 const months = [
   "Jan",
@@ -50,7 +50,6 @@ export default function DateTabs() {
   const years = server === "global" ? years_global : years_jp;
   const timeData = server === "global" ? timeData_global : timeData_jp;
   const dataBanners = server === "global" ? GlobalBanners : JpBbanners;
-
 
   const currentDate = new Date();
   const currentYearValue = currentDate.getFullYear();
