@@ -1,0 +1,111 @@
+import { useTheme } from "../../../context/Theme_toggle";
+import AllCards from "../../../assets/json/cards.json";
+import type { EventCardsProps } from "../Gacha_types";
+
+export default function EventCards({
+  bannerCards,
+  bannerShopCards,
+  handleCardClick,
+}: EventCardsProps) {
+  const { theme } = useTheme();
+  const formatId = (id: number) => String(id).padStart(4, "0");
+
+  return (
+    <div className="space-y-3">
+      {/* <div className="flex items-center space-x-2">
+        <svg
+          className="w-4 h-4 text-blue-500"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+          />
+        </svg>
+        <h4
+          className={`text-sm font-medium ${
+            theme === "dark" ? "text-blue-300" : "text-blue-700"
+          }`}
+        >
+          Event Shop
+        </h4>
+      </div> */}
+
+      <div
+        className={`grid ${
+          bannerCards.length === 4
+            ? "grid-cols-4 pb-1"
+            : bannerCards.length <= 3
+            ? "grid-cols-3 pb-1"
+            : bannerCards.length > 4 && bannerShopCards.length < 1
+            ? "grid-cols-4 grid-rows-2"
+            : bannerCards.length > 4 && bannerShopCards.length > 0
+            ? "grid-cols-4 grid-rows-2 pb-2"
+            : ""
+        } gap-1 }`}
+      >
+        {bannerShopCards.map((shopCard, i) => {
+          const EnEventCard = AllCards.find((item) => shopCard === item.id);
+          const formattedCardId = formatId(shopCard);
+          const cardIconImage =
+            EnEventCard && EnEventCard.rarity === 3
+              ? `/images/card_icons/${formattedCardId}_t.webp`
+              : `/images/card_icons/${formattedCardId}.webp`;
+
+          return (
+            <div
+              key={`shop-${i}`}
+              className="group cursor-pointer transition-transform duration-200 hover:scale-105"
+              onClick={() => handleCardClick(AllCards[shopCard - 1])}
+            >
+              <div
+                className={`relative overflow-hidden rounded-xl ${
+                  theme === "dark" ? "bg-gray-700" : "bg-gray-100"
+                }`}
+              >
+                <img
+                  src={cardIconImage}
+                  className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
+                  alt={`Shop Card ${shopCard}`}
+                />
+              </div>
+            </div>
+          );
+        })}
+        {bannerShopCards.length < 1 &&
+          bannerCards.map((card, i) => {
+            const formattedCardId = formatId(card);
+            const cardIconImage = `/images/card_icons/${formattedCardId}_t.webp`;
+            return (
+              <div
+                key={i}
+                className="group cursor-pointer transition-transform duration-200 hover:scale-105 invisible"
+                onClick={() => handleCardClick(AllCards[card - 1])}
+              >
+                <div
+                  className={`relative overflow-hidden rounded-xl ${
+                    theme === "dark" ? "bg-gray-700" : "bg-gray-100"
+                  }`}
+                >
+                  <img
+                    src={cardIconImage}
+                    className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
+                    alt={`Card ${card}`}
+                  />
+                </div>
+                <p
+                  className={`text-xs text-center mt-1 ${
+                    theme === "dark" ? "text-gray-400" : "text-gray-500"
+                  }`}
+                ></p>
+              </div>
+            );
+          })}
+      </div>
+    </div>
+  );
+}
