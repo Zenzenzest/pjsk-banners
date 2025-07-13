@@ -1,8 +1,8 @@
 import { useTheme } from "../../../context/Theme_toggle";
-import AllCards from "../../../assets/json/cards.json" with { type: "json" };
+
 import type { CardsProps } from "../Gacha_types";
 
-export default function Cards({ banner, handleCardClick }: CardsProps) {
+export default function Cards({ AllCards,banner, handleCardClick }: CardsProps) {
   const { theme } = useTheme();
   const formatId = (id: number) => String(id).padStart(4, "0");
 

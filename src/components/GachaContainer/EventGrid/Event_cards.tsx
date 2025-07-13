@@ -1,8 +1,9 @@
 import { useTheme } from "../../../context/Theme_toggle";
-import AllCards from "../../../assets/json/cards.json" with { type: "json" };
+
 import type { AllCardTypes, EventCardsProps } from "../Gacha_types";
 
 export default function EventCards({
+  AllCards,
   bannerCards,
   bannerShopCards,
   handleCardClick,
