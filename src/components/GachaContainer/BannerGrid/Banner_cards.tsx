@@ -1,13 +1,11 @@
 import { useTheme } from "../../../context/Theme_toggle";
-import CardsAll from "../../../assets/json/cards.json";
-import type { AllCardTypes,CardsProps  } from "../Gacha_types";
+import AllCards from "../../../assets/json/cards.json" assert {type: "json"}
+import type { CardsProps } from "../Gacha_types";
 
 export default function Cards({ banner, handleCardClick }: CardsProps) {
   const { theme } = useTheme();
   const formatId = (id: number) => String(id).padStart(4, "0");
 
-  const AllCards = CardsAll as AllCardTypes[]
-  
   return (
     <div className="space-y-3">
       <div

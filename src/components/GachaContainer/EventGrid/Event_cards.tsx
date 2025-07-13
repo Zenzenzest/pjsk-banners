@@ -1,5 +1,5 @@
 import { useTheme } from "../../../context/Theme_toggle";
-import CardsAll from "../../../assets/json/cards.json";
+import AllCards from "../../../assets/json/cards.json" assert { type: "json" };
 import type { AllCardTypes, EventCardsProps } from "../Gacha_types";
 
 export default function EventCards({
@@ -9,7 +9,7 @@ export default function EventCards({
 }: EventCardsProps) {
   const { theme } = useTheme();
   const formatId = (id: number) => String(id).padStart(4, "0");
-  const AllCards = CardsAll as AllCardTypes[];
+
   return (
     <div className="space-y-3">
       {/* <div className="flex items-center space-x-2">
