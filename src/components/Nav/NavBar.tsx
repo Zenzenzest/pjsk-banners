@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { useTheme } from "../../context/Theme_toggle";
 import { useServer } from "../../context/Server";
+import WebsiteDisclaimer from "./Website_disclaimer";
 
 export default function NavBar() {
   const { server, setServer } = useServer();
@@ -52,7 +53,7 @@ export default function NavBar() {
             {/* Saved Banners div */}
             <div
               onClick={() => setServer("saved")}
-              className={`flex-1 text-center px-2 py-1 mx-1 rounded-md text-sm sm:text-base font-medium transition-colors mt-auto mb-auto ${
+              className={`flex-1 text-center px-2 py-3 mx-1 rounded-md text-sm sm:text-base font-medium transition-colors mt-auto mb-auto ${
                 server === "saved"
                   ? theme == "light"
                     ? "bg-blue-100 text-blue-700 shadow-inner"
@@ -62,12 +63,14 @@ export default function NavBar() {
                   : "hover:bg-gray-700/50 text-gray-300"
               }`}
             >
-              Saved Banners
+              <span className="sm:hidden">Saved</span>
+              <span className="hidden sm:inline">Saved Banners</span>
             </div>
           </div>
         </div>
       </nav>
       <Outlet />
+      <WebsiteDisclaimer />
     </>
   );
 }
