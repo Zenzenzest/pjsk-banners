@@ -385,13 +385,13 @@
     "event_id": 19,
     "characters": [19, 20, 25],
     "keywords": [
-      "leo/need",
-      "leoneed",
-      "ln",
-      "leoni",
+      "n25",
+      "nightcord",
+      "niigo",
       "focus",
-      "shiho",
-      "shiho1"
+      "mizu1",
+      "mizuki1",
+      "mizuki"
     ]
   },
   {
@@ -919,7 +919,7 @@
       "mizuki"
     ]
   },
-  
+
   {
     "id": 71,
     "name": "MEIKO Happy Anniversary Gacha",
@@ -3479,7 +3479,15 @@
     "end": 1726426799000,
     "banner_type": "Limited Event Rerun",
     "characters": [1, 2, 4],
-    "keywords": []
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "shiho",
+      "shiho3"
+    ]
   },
   {
     "id": 285,
@@ -5794,7 +5802,7 @@
     "type": "estimation",
     "event_id": 159,
     "characters": [2, 14, 22],
-    "keywords": ["miyama", "miyajou","white day"]
+    "keywords": ["miyama", "miyajou", "white day"]
   },
   {
     "id": 480,

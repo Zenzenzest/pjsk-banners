@@ -6,12 +6,13 @@ import JpBanners from "../../assets/json/jp_banners.json";
 import type { BannerTemplateProps } from "./Gacha_types";
 import JpEvents from "../../assets/json/jp_events.json";
 import EnEvents from "../../assets/json/en_events.json";
-import type { BannerTypes } from "./Gacha_types";
+
 import BannerStatus from "./BannerGrid/Banner_status";
 import CountdownTimer from "./Countdown_timer";
 import EventEndedTimer from "./EventEnded_timer";
 import EventCards from "./EventGrid/Event_cards";
 import Cards from "./BannerGrid/Banner_cards";
+
 export default function BannerTemplate({
   banner,
   mode,
@@ -39,10 +40,10 @@ export default function BannerTemplate({
       ? `/images/en_events/${banner.event_id}.webp`
       : `/images/jp_events/${banner.event_id}.webp`;
 
-  const getBannerStatus = (banner: BannerTypes) => {
+  const getBannerStatus = (item: { start: number; end: number }) => {
     const now = Date.now();
-    const start = Number(banner.start);
-    const end = Number(banner.end);
+    const start = Number(item.start);
+    const end = Number(item.end);
 
     if (now < start) return "upcoming";
     if (now > end) return "ended";
@@ -114,18 +115,29 @@ export default function BannerTemplate({
     : [];
 
   const EventObj =
-    server === "global" && mode === "event"
+    (server === "global" || server === "saved") && mode === "event"
       ? EnEvents.find((item) => item.id === banner.event_id)
       : JpEvents.find((item) => item.id === banner.event_id);
 
-  const bannerStatus = getBannerStatus(mode === "gacha" ? banner : EventObj);
+  // Add null check for EventObj
+  if (mode === "event" && !EventObj) {
+    return (
+      <div className="p-4 text-red-500">
+        Error: Event not found for ID {banner.event_id}
+      </div>
+    );
+  }
+
+  // Use banner for gacha mode, EventObj for event mode (with null check)
+  const bannerStatus = getBannerStatus(mode === "gacha" ? banner : EventObj!);
   const statusColor = getStatusColor(bannerStatus);
+
   const startDate = new Date(
-    Number(mode === "gacha" ? banner.start : EventObj.start)
+    Number(mode === "gacha" ? banner.start : EventObj!.start)
   );
 
   const endDate = new Date(
-    Number(mode === "gacha" ? banner.end : EventObj.end)
+    Number(mode === "gacha" ? banner.end : EventObj!.end)
   );
 
   const formattedStart = startDate.toLocaleDateString("en-US", {
@@ -139,8 +151,6 @@ export default function BannerTemplate({
     day: "numeric",
   });
 
-
-
   return (
     <div
       className={`${
@@ -150,33 +160,35 @@ export default function BannerTemplate({
       {/* BANNER + EVENT */}
       <div className="space-y-4">
         <div className="relative group">
-          <div className="overflow-hidden rounded-xl bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800">
+          <div className="overflow-hidden rounded-sm sm:rounded-xl ">
             <img
               src={gachaBannerImage}
-              alt={mode === "gacha" ? banner.id : banner.event_id}
-              className={`w-full h-auto transition-all duration-300 group-hover:scale-105 `}
-     
+              alt={
+                mode === "gacha"
+                  ? banner.id.toString()
+                  : banner.event_id?.toString()
+              }
+              className={`w-full h-auto `}
               onError={handleImageError}
             />
-   
           </div>
           <BannerStatus bannerStatus={bannerStatus} statusColor={statusColor} />
         </div>
         <div className="space-y-3">
           <div>
             <h3
-              className={`text-sm md:text-md font-bold ${
-                banner.event_id && "min-h-[60px] md:min-h-[50px]"
-              } ${theme === "dark" ? "text-white" : "text-gray-900"}`}
+              className={`text-xs sm:text-sm truncate md:text-md font-bold ${
+                theme === "dark" ? "text-white" : "text-gray-900"
+              }`}
             >
-              {mode === "gacha" ? banner.name : EventObj.name}
+              {mode === "gacha" ? banner.name : EventObj!.name}
             </h3>
             <p
-              className={`text-sm ${
-                banner.event_id && "min-h-[40px] sm:min-h-[20px]"
-              } ${theme === "dark" ? "text-gray-300" : "text-gray-500"}`}
+              className={`text-xs sm:text-sm truncate ${
+                theme === "dark" ? "text-gray-300" : "text-gray-500"
+              }`}
             >
-              {mode === "gacha" ? banner.banner_type : EventObj.type}
+              {mode === "gacha" ? banner.banner_type : EventObj!.type}
             </p>{" "}
           </div>
           {/* BANNER CONFIRMED BADGE */}
@@ -221,7 +233,7 @@ export default function BannerTemplate({
                       d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-                  <span>Start: {formattedStart}</span>
+                  <span className="text-xs sm:text-sm">Start: {formattedStart}</span>
                 </div>
                 <div
                   className={`flex items-center space-x-2 px-3 py-1 rounded-lg text-sm ${
@@ -243,7 +255,9 @@ export default function BannerTemplate({
                       d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-                  <span>End: {formattedEnd}</span>
+                  <span className="text-xs sm:text-sm">
+                    End: {formattedEnd}
+                  </span>
                 </div>
               </div>
             )}

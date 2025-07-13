@@ -130,12 +130,22 @@ export default function DateTabs() {
 
       const bannerStartsInMonth =
         startDate >= selectedDate && startDate < nextMonth;
+
+      // Check if the selected month/year is the current month/year
+      const isCurrentMonth =
+        selectedYear === currentYearValue &&
+        selectedMonth === currentMonthValue;
+
       const bannerIsOngoingInMonth =
         startDate < selectedDate && endDate >= selectedDate;
       const bannerIsLive =
         Number(banner.start) <= now && now <= Number(banner.end);
 
-      return bannerStartsInMonth || (bannerIsOngoingInMonth && bannerIsLive);
+      // Only show ongoing banners from previous months if we're viewing the current month
+      const shouldShowOngoing =
+        bannerIsOngoingInMonth && bannerIsLive && isCurrentMonth;
+
+      return bannerStartsInMonth || shouldShowOngoing;
     })
     .sort((a, b) => {
       const statusA = getBannerStatus(a);
@@ -179,7 +189,7 @@ export default function DateTabs() {
         theme === "dark" ? "bg-gray-900" : "bg-gray-50"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 py-1">
+      <div className="max-w-7xl mx-auto px-4 py-1 pt-2">
         {/* YEARS*/}
         <div className="mb-4">
           <div
@@ -197,7 +207,7 @@ export default function DateTabs() {
               Select Year
             </h2>
             <div className="flex overflow-x-auto pb-2 hide-scrollbar">
-              <div className="flex space-x-2">
+              <div className="flex space-x-1">
                 {years.map((year) => (
                   <button
                     key={year}
