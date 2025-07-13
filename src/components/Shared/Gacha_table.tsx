@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import JpBanners from "../../assets/json/jp_banners.json";
 import EnEvents from "../../assets/json/en_events.json";
-
-import Cards from "../../assets/json/cards.json";
+import AllCards from "../../assets/json/cards.json";
 import { useTheme } from "../../context/Theme_toggle";
 import type {
   CardState,
@@ -38,6 +37,7 @@ export default function GachaTable({
     sekaiId: 0,
   });
 
+  const Cards = AllCards as AllCardTypes[]
   const formatId = (id: number) => String(id).padStart(4, "0");
   const today = Date.now();
 
@@ -370,7 +370,7 @@ export default function GachaTable({
                       </div>
                       {bannerShopCards.map((shopCard, i) => {
                         const EnEventCard = Cards.find(
-                          (item) => shopCard == item.id
+                          (item:AllCardTypes) => shopCard == item.id
                         );
 
                         const formattedCardId = formatId(shopCard);

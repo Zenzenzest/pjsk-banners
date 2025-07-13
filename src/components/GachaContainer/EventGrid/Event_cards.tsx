@@ -1,6 +1,6 @@
 import { useTheme } from "../../../context/Theme_toggle";
-import AllCards from "../../../assets/json/cards.json";
-import type { EventCardsProps } from "../Gacha_types";
+import CardsAll from "../../../assets/json/cards.json";
+import type { AllCardTypes, EventCardsProps } from "../Gacha_types";
 
 export default function EventCards({
   bannerCards,
@@ -9,7 +9,7 @@ export default function EventCards({
 }: EventCardsProps) {
   const { theme } = useTheme();
   const formatId = (id: number) => String(id).padStart(4, "0");
-
+  const AllCards = CardsAll as AllCardTypes[];
   return (
     <div className="space-y-3">
       {/* <div className="flex items-center space-x-2">
@@ -49,7 +49,9 @@ export default function EventCards({
         } gap-1 }`}
       >
         {bannerShopCards.map((shopCard, i) => {
-          const EnEventCard = AllCards.find((item) => shopCard === item.id);
+          const EnEventCard = AllCards.find(
+            (item: AllCardTypes) => shopCard === item.id
+          );
           const formattedCardId = formatId(shopCard);
           const cardIconImage =
             EnEventCard && EnEventCard.rarity === 3
