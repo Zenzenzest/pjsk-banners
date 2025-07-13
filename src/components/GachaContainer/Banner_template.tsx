@@ -12,12 +12,14 @@ import CountdownTimer from "./Countdown_timer";
 import EventEndedTimer from "./EventEnded_timer";
 import EventCards from "./EventGrid/Event_cards";
 import Cards from "./BannerGrid/Banner_cards";
+import BannerTemplateSkeleton from "./Skeletons/Banner_skeleton";
 
 export default function BannerTemplate({
   banner,
   mode,
   handleCardClick,
-}: BannerTemplateProps) {
+  isLoading = false,
+}: BannerTemplateProps & { isLoading?: boolean }) {
   const { server } = useServer();
   const { theme } = useTheme();
 
@@ -30,6 +32,27 @@ export default function BannerTemplate({
       setSavedBanners(JSON.parse(saved));
     }
   }, []);
+
+  // Show skeleton while loading
+  if (isLoading) {
+    return (
+      <BannerTemplateSkeleton
+        hasEventId={!!banner?.event_id}
+        showSaveButton={
+          (server === "global" || server === "saved") &&
+          today < (banner?.start || 0) &&
+          mode === "gacha" &&
+          !!banner?.event_id
+        }
+        showConfirmedBadge={banner?.type === "confirmed"}
+        showRerunEstimation={banner?.type === "rerun_estimation"}
+        showDateRange={
+          banner?.type !== "confirmed" &&
+          banner?.type !== "rerun_estimation"
+        }
+      />
+    );
+  }
 
   const gachaBannerImage =
     mode === "gacha"

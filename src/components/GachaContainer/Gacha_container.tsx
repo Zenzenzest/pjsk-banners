@@ -78,7 +78,7 @@ export default function BannerContainer({
 
   return (
     <div
-      className={`min-h-screen transition-colors duration-300 pb-10 ${
+      className={`min-h-screen transition-colors duration-300 pb-5 ${
         theme === "dark" ? "bg-gray-900" : "bg-gray-50"
       } ${server === "saved" ? "mt-2" : ""}`}
     >
