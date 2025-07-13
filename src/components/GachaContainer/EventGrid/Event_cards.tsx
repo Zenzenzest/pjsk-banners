@@ -1,6 +1,7 @@
 import { useTheme } from "../../../context/Theme_toggle";
-import AllCards from "../../../assets/json/cards.json" assert { type: "json" };
+import AllCards from "../../../assets/json/cards.json";
 import type { AllCardTypes, EventCardsProps } from "../Gacha_types";
+
 
 export default function EventCards({
   bannerCards,
@@ -49,9 +50,7 @@ export default function EventCards({
         } gap-1 }`}
       >
         {bannerShopCards.map((shopCard, i) => {
-          const EnEventCard = AllCards.find(
-            (item: AllCardTypes) => shopCard === item.id
-          );
+          const EnEventCard = AllCards.find((item:AllCardTypes) => shopCard === item.id);
           const formattedCardId = formatId(shopCard);
           const cardIconImage =
             EnEventCard && EnEventCard.rarity === 3

@@ -5,7 +5,6 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "resolveJsonModule": true,
-    "esModuleInterop": true
+    "typeRoots": ["./node_modules/@types", "./types"]
   }
 }
