@@ -41,13 +41,12 @@ export interface BannerStatusProps {
 }
 
 export interface CardsProps {
-  AllCards: AllCardTypes[];
+  
   banner: BannerTypes;
   handleCardClick: (card: AllCardTypes) => void;
 }
 
 export interface EventCardsProps {
-  AllCards: AllCardTypes[];
   bannerCards: number[];
   bannerShopCards: number[];
   handleCardClick: (card: AllCardTypes) => void;
