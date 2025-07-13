@@ -5,8 +5,7 @@ import NavBar from "./components/Nav/NavBar";
 import { ThemeProvider } from "./context/Theme_toggle";
 
 import { ServerProvider } from "./context/Server";
-import CreateData from "./pages/CreateData";
-import Test from "./pages/Test";
+
 function App() {
   const didLog = useRef(false);
   useEffect(() => {
@@ -59,8 +58,8 @@ function App() {
             <Route path="/" element={<NavBar />}>
               <Route index element={<Home />} />
 
-              <Route path="/create_mode" element={<CreateData />} />
-              <Route path="/test" element={<Test />} />
+              {/* <Route path="/create_mode" element={<CreateData />} />
+              <Route path="/test" element={<Test />} /> */}
               <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
           </Routes>
