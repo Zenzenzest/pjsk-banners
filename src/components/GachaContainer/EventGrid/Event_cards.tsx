@@ -1,5 +1,5 @@
 import { useTheme } from "../../../context/Theme_toggle";
-import AllCards from "../../../assets/json/cards.json";
+import * as AllCards from "../../../assets/json/cards.json";
 import type { AllCardTypes, EventCardsProps } from "../Gacha_types";
 
 
