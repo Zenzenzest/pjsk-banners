@@ -3,13 +3,13 @@ export default function WebsiteDisclaimer() {
   const { theme } = useTheme();
   return (
     <div
-      className={`max-w-3xl mx-auto p-4 pb-15 ${
+      className={`w-full mx-auto p-4 pb-15 ${
         theme == "dark"
           ? "bg-[#101828]  text-gray-300"
           : "bg-[#f9fafb]  text-gray-800"
       }  shadow-sm`}
     >
-      <div className="flex items-start gap-4">
+      <div className="flex items-start max-w-3xl mx-auto gap-4">
         <svg
           className="w-6 h-6 flex-shrink-0 text-amber-500 mt-0.5"
           xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@ export default function WebsiteDisclaimer() {
           />
         </svg>
 
-        <div>
+        <div className="">
           <h2 className="text-xl font-bold text-blue-400 mb-3">Disclaimer</h2>
 
           <div className={`space-y-3 `}>
