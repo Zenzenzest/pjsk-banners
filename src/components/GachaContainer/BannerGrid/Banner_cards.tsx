@@ -1,5 +1,5 @@
 import { useTheme } from "../../../context/Theme_toggle";
-import * as AllCards from "../../../assets/json/cards.json";
+import AllCards from "../../../assets/json/cards.json" with { type: "json" };
 import type { CardsProps } from "../Gacha_types";
 
 export default function Cards({ banner, handleCardClick }: CardsProps) {

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import JpBanners from "../../assets/json/jp_banners.json";
 import EnEvents from "../../assets/json/en_events.json";
-import * as Cards from "../../assets/json/cards.json";
+import Cards from "../../assets/json/cards.json" with { type: "json" };
 import { useTheme } from "../../context/Theme_toggle";
 import type {
   CardState,
