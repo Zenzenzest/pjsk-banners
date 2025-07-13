@@ -214,7 +214,7 @@ export default function BannerTemplate({
             banner.event_id && (
               <div className="flex flex-col   gap-2">
                 <div
-                  className={`flex items-center space-x-2 px-3 py-1 rounded-lg text-sm ${
+                  className={`flex items-center space-x-1 px-3 py-1 rounded-lg text-sm ${
                     theme === "dark"
                       ? "bg-gray-700 text-gray-300"
                       : "bg-gray-100 text-gray-600"
@@ -233,10 +233,12 @@ export default function BannerTemplate({
                       d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-                  <span className="text-xs sm:text-sm">Start: {formattedStart}</span>
+                  <span className="text-xs sm:text-sm">
+                    Start: {formattedStart}
+                  </span>
                 </div>
                 <div
-                  className={`flex items-center space-x-2 px-3 py-1 rounded-lg text-sm ${
+                  className={`flex items-center space-x-1 px-3 py-1 rounded-lg text-sm ${
                     theme === "dark"
                       ? "bg-gray-700 text-gray-300"
                       : "bg-gray-100 text-gray-600"

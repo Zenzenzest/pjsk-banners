@@ -78,7 +78,7 @@ export default function BannerContainer({
 
   return (
     <div
-      className={`min-h-screen transition-colors duration-300 ${
+      className={`min-h-screen transition-colors duration-300 pb-10 ${
         theme === "dark" ? "bg-gray-900" : "bg-gray-50"
       } ${server === "saved" ? "mt-2" : ""}`}
     >
@@ -89,8 +89,6 @@ export default function BannerContainer({
           ((selectedMonth >= 8 && selectedYear === 2025) ||
             selectedYear >= 2026)) ||
           server === "saved") && <Disclaimer />}
-
-     
 
         <div className="pb-2 grid grid-cols-1 lg:grid-cols-2 gap-6">
           {filteredBanners.map((banner: BannerTypes) => {
@@ -119,7 +117,6 @@ export default function BannerContainer({
                           return (
                             <BannerTemplate
                               key={i}
-                    
                               banner={banner}
                               mode={mode}
                               handleCardClick={handleCardClick}

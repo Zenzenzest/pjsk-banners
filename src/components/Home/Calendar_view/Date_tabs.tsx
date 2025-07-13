@@ -189,7 +189,7 @@ export default function DateTabs() {
         theme === "dark" ? "bg-gray-900" : "bg-gray-50"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 py-1 pt-2">
+      <div className="max-w-7xl mx-auto px-4 py-1 pt-3 max-sm:px-2">
         {/* YEARS*/}
         <div className="mb-4">
           <div
