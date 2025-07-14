@@ -298,18 +298,22 @@ export default function BannerTemplate({
                 </div>
               )}{" "}
               {/* ACTIVE/ENDED STATUS */}
-              {today > Number(banner.end) && (
+              {today >
+                Number(mode === "gacha" ? banner.end : EventObj!.end) && (
                 <div className="flex justify-center">
                   <EventEndedTimer endDate={endDate} />
                 </div>
               )}
-              {today > Number(banner.start) && today < Number(banner.end) && (
-                <div className="flex justify-center">
-                  {endDate.getTime() < 2000000000000 && (
-                    <CountdownTimer targetDate={endDate} mode="end" />
-                  )}
-                </div>
-              )}
+              {today >
+                Number(mode === "gacha" ? banner.start : EventObj!.start) &&
+                today <
+                  Number(mode === "gacha" ? banner.end : EventObj!.end) && (
+                  <div className="flex justify-center">
+                    {endDate.getTime() < 2000000000000 && (
+                      <CountdownTimer targetDate={endDate} mode="end" />
+                    )}
+                  </div>
+                )}
             </div>
           )}
           {/* SAVE BUTTON */}
