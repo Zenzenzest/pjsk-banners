@@ -68,6 +68,7 @@ export default function EventCards({
                     src={cardIconImage}
                     className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
                     alt={`Shop Card ${shopCard}`}
+                    onLoad={iconsLoader.handleLoad}
                   />
                 </div>
               </div>
