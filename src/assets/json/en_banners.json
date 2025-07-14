@@ -1059,7 +1059,7 @@
     "cards": [151, 152, 153, 154, 155],
     "start": 1671058800000,
     "end": 1672181999000,
-    "banner_type": "Collab",
+    "banner_type": "Limited Collab",
     "characters": [22, 23, 24, 25, 26],
     "keywords": []
   },
@@ -4233,7 +4233,7 @@
     "cards": [458, 459, 460, 461, 462, 463],
     "start": 1736280000000,
     "end": 1737532799000,
-    "banner_type": "Collab",
+    "banner_type": "Limited Collab",
     "characters": [2, 7, 12, 14, 19, 21],
     "keywords": ["sanrio"]
   },
@@ -5423,7 +5423,7 @@
     "start": 1756666800000,
     "end": 1759247999000,
     "cards": [633, 634, 635, 636],
-    "banner_type": "Collab",
+    "banner_type": "Limited Collab",
     "type": "confirmed",
     "confirmation": "Confirmed for September",
     "characters": [11, 12, 13, 16],
