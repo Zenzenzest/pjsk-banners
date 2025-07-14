@@ -164,7 +164,7 @@ export default function BannerTemplate({
         <div className="relative group">
           <div className="overflow-hidden rounded-sm sm:rounded-xl ">
             {!bannerLoader.isLoaded && (
-              <div className="animate-pulse bg-gray-300 dark:bg-gray-600 h-32 w-full rounded-lg" />
+              <div className="animate-pulse bg-gray-300 dark:bg-gray-600 aspect-[359/152] w-full rounded-lg" />
             )}
             <img
               src={gachaBannerImage}
