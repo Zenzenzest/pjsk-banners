@@ -281,22 +281,40 @@ export default function FilteredCards({
                       </div>
                     </div>
                   )}
-                  {card.rarity == 5 && (
+                  {/* MIKU TOUHOU CARD THAT DOESNT HAVE TRAINED CARD FOR SOME REASON */}
+                  {(card.rarity == 5 || card.id === 669) && (
                     <div className="relative">
                       <img
                         src={`/images/card_thumbnails/${card.id}_bd.webp`}
                         className="h-auto w-full max-w-[300px]  rounded"
                         alt={card.name}
                       />
-                      <img
-                        src="/images/rarity_icons/bday.png"
-                        style={{
-                          position: "absolute",
-                          bottom: 5,
-                          left: 5,
-                          width: "1.5rem",
-                        }}
-                      />
+                      {card.id === 669 ? (
+                        <div className="absolute top-0 right-1">
+                          {Array(card.rarity-1)
+                            .fill(0)
+                            .map((_, i) => (
+                              <img
+                                key={i}
+                                src="/images/rarity_icons/untrained_star.png"
+                                style={{
+                                  width: "15px",
+                                  display: "inline-block",
+                                }}
+                              />
+                            ))}
+                        </div>
+                      ) : (
+                        <img
+                          src="/images/rarity_icons/bday.png"
+                          style={{
+                            position: "absolute",
+                            bottom: 5,
+                            left: 5,
+                            width: "1.5rem",
+                          }}
+                        />
+                      )}
                     </div>
                   )}
                   {card.rarity <= 2 && (

@@ -66,7 +66,7 @@ export default function CardModal({
         {/* CARDS */}
         <div className="relative">
           {/* BDAY CARD */}
-          {rarity === 5 && (
+          {(rarity === 5 || cardId === 669) && (
             <div className="flex flex-col justify-center items-center gap-5 mb-3 relative">
               {" "}
               <div className={`${isLoading && "h-30"}`}>
@@ -86,15 +86,30 @@ export default function CardModal({
                 className="w-full transition-opacity duration-300"
               />
               {/* RARITY ICON */}
-              <img
-                src="/images/rarity_icons/bday.png"
-                style={{
-                  position: "absolute",
-                  bottom: 5,
-                  left: 5,
-                  width: "2rem",
-                }}
-              />
+              {/* MIKU TOUJOU NO TRAINED ART CARD */}
+              {cardId === 669 ? (
+                <div className="absolute top-6 left-1">
+                  {Array(rarity - 1)
+                    .fill(0)
+                    .map((_, i) => (
+                      <img
+                        key={i}
+                        src="/images/rarity_icons/untrained_star.png"
+                        style={{ width: "30px", display: "inline-block" }}
+                      />
+                    ))}
+                </div>
+              ) : (
+                <img
+                  src="/images/rarity_icons/bday.png"
+                  style={{
+                    position: "absolute",
+                    bottom: 5,
+                    left: 5,
+                    width: "2rem",
+                  }}
+                />
+              )}
             </div>
           )}
           {/* 3 & 4 CARD */}
