@@ -35,39 +35,38 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
             ))}
           </>
         )}
-        <div
-          className={`${iconsLoader.isLoaded ? "contents" : "hidden"}`}
-        ></div>
-        {banner.cards.map((card, i) => {
-          const formattedCardId = formatId(card);
-          const cardIconImage = `/images/card_icons/${formattedCardId}_t.webp`;
+        <div className={`${iconsLoader.isLoaded ? "contents" : "hidden"}`}>
+          {banner.cards.map((card, i) => {
+            const formattedCardId = formatId(card);
+            const cardIconImage = `/images/card_icons/${formattedCardId}_t.webp`;
 
-          return (
-            <div
-              key={i}
-              className="group cursor-pointer transition-transform duration-200 hover:scale-105"
-              onClick={() => handleCardClick(AllCards[card - 1])}
-            >
+            return (
               <div
-                className={`relative overflow-hidden rounded-xl ${
-                  theme === "dark" ? "bg-gray-700" : "bg-gray-100"
-                }`}
+                key={i}
+                className="group cursor-pointer transition-transform duration-200 hover:scale-105"
+                onClick={() => handleCardClick(AllCards[card - 1])}
               >
-                <img
-                  src={cardIconImage}
-                  className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
-                  alt={`Card ${card}`}
-                  onLoad={iconsLoader.handleLoad}
-                />
+                <div
+                  className={`relative overflow-hidden rounded-xl ${
+                    theme === "dark" ? "bg-gray-700" : "bg-gray-100"
+                  }`}
+                >
+                  <img
+                    src={cardIconImage}
+                    className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
+                    alt={`Card ${card}`}
+                    onLoad={iconsLoader.handleLoad}
+                  />
+                </div>
+                <p
+                  className={`text-xs text-center mt-1 ${
+                    theme === "dark" ? "text-gray-400" : "text-gray-500"
+                  }`}
+                ></p>
               </div>
-              <p
-                className={`text-xs text-center mt-1 ${
-                  theme === "dark" ? "text-gray-400" : "text-gray-500"
-                }`}
-              ></p>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );
