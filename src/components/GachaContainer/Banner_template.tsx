@@ -6,24 +6,22 @@ import JpBanners from "../../assets/json/jp_banners.json";
 import type { BannerTemplateProps } from "./Gacha_types";
 import JpEvents from "../../assets/json/jp_events.json";
 import EnEvents from "../../assets/json/en_events.json";
-
+import { ImageLoader } from "../../hooks/imageLoader";
 import BannerStatus from "./BannerGrid/Banner_status";
 import CountdownTimer from "./Countdown_timer";
 import EventEndedTimer from "./EventEnded_timer";
 import EventCards from "./EventGrid/Event_cards";
 import Cards from "./BannerGrid/Banner_cards";
-import BannerTemplateSkeleton from "./Skeletons/Banner_skeleton";
 
 export default function BannerTemplate({
   banner,
   mode,
   handleCardClick,
-  isLoading = false,
-}: BannerTemplateProps & { isLoading?: boolean }) {
+}: BannerTemplateProps) {
+  const [savedBanners, setSavedBanners] = useState<number[]>([]);
   const { server } = useServer();
   const { theme } = useTheme();
-
-  const [savedBanners, setSavedBanners] = useState<number[]>([]);
+  const bannerLoader = ImageLoader(1);
   const today = Date.now();
 
   useEffect(() => {
@@ -31,28 +29,9 @@ export default function BannerTemplate({
     if (saved) {
       setSavedBanners(JSON.parse(saved));
     }
-  }, []);
 
-  // Show skeleton while loading
-  if (isLoading) {
-    return (
-      <BannerTemplateSkeleton
-        hasEventId={!!banner?.event_id}
-        showSaveButton={
-          (server === "global" || server === "saved") &&
-          today < (banner?.start || 0) &&
-          mode === "gacha" &&
-          !!banner?.event_id
-        }
-        showConfirmedBadge={banner?.type === "confirmed"}
-        showRerunEstimation={banner?.type === "rerun_estimation"}
-        showDateRange={
-          banner?.type !== "confirmed" &&
-          banner?.type !== "rerun_estimation"
-        }
-      />
-    );
-  }
+    bannerLoader.reset();
+  }, [banner]);
 
   const gachaBannerImage =
     mode === "gacha"
@@ -184,6 +163,9 @@ export default function BannerTemplate({
       <div className="space-y-4">
         <div className="relative group">
           <div className="overflow-hidden rounded-sm sm:rounded-xl ">
+            {!bannerLoader.isLoaded && (
+              <div className="animate-pulse bg-gray-300 dark:bg-gray-600 h-32 w-full rounded-lg" />
+            )}
             <img
               src={gachaBannerImage}
               alt={
@@ -193,6 +175,7 @@ export default function BannerTemplate({
               }
               className={`w-full h-auto `}
               onError={handleImageError}
+              onLoad={bannerLoader.handleLoad}
             />
           </div>
           <BannerStatus bannerStatus={bannerStatus} statusColor={statusColor} />

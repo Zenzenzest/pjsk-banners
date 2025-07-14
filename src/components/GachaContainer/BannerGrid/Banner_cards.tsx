@@ -1,24 +1,18 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import { useTheme } from "../../../context/Theme_toggle";
 import AllCards from "../../../assets/json/cards.json";
 import type { CardsProps } from "../Gacha_types";
-import CardSkeleton from "../Skeletons/Cards_skeleton";
+import { ImageLoader } from "../../../hooks/imageLoader";
 
 export default function Cards({ banner, handleCardClick }: CardsProps) {
   const { theme } = useTheme();
-  const [loadingStates, setLoadingStates] = useState<{
-    [key: number]: boolean;
-  }>({});
 
   const formatId = (id: number) => String(id).padStart(4, "0");
+  const iconsLoader = ImageLoader(banner.cards.length);
 
-  const handleImageLoad = (index: number) => {
-    setLoadingStates((prev) => ({ ...prev, [index]: false }));
-  };
-
-  const handleImageError = (index: number) => {
-    setLoadingStates((prev) => ({ ...prev, [index]: false }));
-  };
+  useEffect(() => {
+    iconsLoader.reset();
+  }, [banner.cards]);
 
   return (
     <div className="space-y-3">
@@ -31,10 +25,22 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
             : "grid-cols-3"
         } gap-1`}
       >
+        {!iconsLoader.isLoaded && (
+          <>
+            {banner.cards.map((_, i) => (
+              <div
+                key={`skeleton-${i}`}
+                className="animate-pulse bg-gray-300 dark:bg-gray-600 aspect-square rounded-xl"
+              />
+            ))}
+          </>
+        )}
+        <div
+          className={`${iconsLoader.isLoaded ? "contents" : "hidden"}`}
+        ></div>
         {banner.cards.map((card, i) => {
           const formattedCardId = formatId(card);
           const cardIconImage = `/images/card_icons/${formattedCardId}_t.webp`;
-          const isLoading = loadingStates[i] !== false;
 
           return (
             <div
@@ -42,23 +48,17 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
               className="group cursor-pointer transition-transform duration-200 hover:scale-105"
               onClick={() => handleCardClick(AllCards[card - 1])}
             >
-              <div className="relative">
-                {isLoading && <CardSkeleton />}
-                <div
-                  className={`relative overflow-hidden rounded-xl transition-opacity duration-200 ${
-                    theme === "dark" ? "bg-gray-700" : "bg-gray-100"
-                  } ${
-                    isLoading ? "absolute inset-0 opacity-0" : "opacity-100"
-                  }`}
-                >
-                  <img
-                    src={cardIconImage}
-                    className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
-                    alt={`Card ${card}`}
-                    onLoad={() => handleImageLoad(i)}
-                    onError={() => handleImageError(i)}
-                  />
-                </div>
+              <div
+                className={`relative overflow-hidden rounded-xl ${
+                  theme === "dark" ? "bg-gray-700" : "bg-gray-100"
+                }`}
+              >
+                <img
+                  src={cardIconImage}
+                  className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
+                  alt={`Card ${card}`}
+                  onLoad={iconsLoader.handleLoad}
+                />
               </div>
               <p
                 className={`text-xs text-center mt-1 ${
