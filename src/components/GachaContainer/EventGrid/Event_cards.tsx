@@ -14,7 +14,7 @@ export default function EventCards({
 
   useEffect(() => {
     iconsLoader.reset();
-  }, [bannerShopCards]);
+  }, [bannerCards]);
 
   return (
     <div className="space-y-3">
