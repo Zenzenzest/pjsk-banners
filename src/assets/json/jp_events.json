@@ -3143,7 +3143,8 @@
     ],
     "event_type": "marathon",
     "type": "Rui 5th Focus Event"
-  }, {
+  },
+  {
     "id": 173,
     "name": "Unsteady, still steady step",
     "start": 1752559200000,
@@ -3151,8 +3152,8 @@
     "close": 1753250399000,
     "unit": "l/n",
     "banner_id": 494,
-    "cards": [1179,1180,1181,1182,1183],
-     "keywords": [
+    "cards": [1179, 1180, 1181, 1182, 1183],
+    "keywords": [
       "leo/need",
       "leoneed",
       "ln",
