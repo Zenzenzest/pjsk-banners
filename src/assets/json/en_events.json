@@ -156,7 +156,8 @@
     "close": 1645225199000,
     "cards": [37, 38, 39, 40, 703, 704],
     "event_type": "marathon",
-    "keywords": ["new year", "ny", "happy new year"],"type":"New Year Event"
+    "keywords": ["new year", "ny", "happy new year"],
+    "type": "New Year Event"
   },
   {
     "id": 10,
@@ -1801,7 +1802,8 @@
     "close": 1726005599000,
     "cards": [405, 406, 407, 408, 892, 893],
     "event_type": "cheerful_carnival",
-    "keywords": ["vs"]
+    "keywords": ["vs"],
+    "type": "Mixed Event"
   },
   {
     "id": 106,
@@ -2185,7 +2187,16 @@
     "close": 1746050399000,
     "cards": [507, 508, 509, 935, 936],
     "event_type": "marathon",
-    "keywords": ["leo/need", "leoneed", "ln", "leoni", "focus", "saki", "saki5"],"type":"Saki 5th Focus Event"
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "saki",
+      "saki5"
+    ],
+    "type": "Saki 5th Focus Event"
   },
   {
     "id": 129,
@@ -2377,7 +2388,7 @@
     "start": 1753999200000,
     "end": 1754625599000,
     "close": 1754776799000,
-    "type":"Airi 5th Focus Event"
+    "type": "Airi 5th Focus Event"
   },
   {
     "id": 139,
@@ -2532,7 +2543,8 @@
     "event_type": "marathon",
     "start": 1762815600000,
     "end": 1763528399000,
-    "close": 1763679599000,"type":"Mixed Event"
+    "close": 1763679599000,
+    "type": "Mixed Event"
   },
   {
     "id": 149,
@@ -2854,7 +2866,7 @@
     "start": 1779573600000,
     "end": 1780113599000,
     "close": 1780264799000,
-    "type":"Airi 6th Focus Event"
+    "type": "Airi 6th Focus Event"
   },
   {
     "id": 169,
@@ -2921,7 +2933,7 @@
     "name": "Deeper And Deeper",
     "start": 1783461600000,
     "end": 1784001540000,
-    "close": 1784152740000,
+    "close": 1784152799000,
     "unit": "wxs",
     "cards": [1174, 1175, 1176, 1177, 1178],
     "keywords": [
@@ -2936,5 +2948,26 @@
     ],
     "event_type": "marathon",
     "type": "Rui 5th Focus Event"
+  },
+  {
+    "id": 173,
+    "name": "Unsteady, Still Steady Step",
+    "start": 1784152800000,
+    "end": 1784692799000,
+    "close": 1784861999000,
+    "unit": "l/n",
+    "cards": [1179, 1180, 1181, 1182, 1183],
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "honami",
+      "hona5",
+      "honami5"
+    ],
+    "event_type": "marathon",
+    "type": "Honami 5th Focus Event"
   }
 ]
