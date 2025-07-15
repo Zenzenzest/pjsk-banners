@@ -50,7 +50,7 @@ export default function EventEndedTimer({
               >
                 {diffInDays}
               </div>
-              <span className="ml-1 text-center">
+              <span className="ml-1 text-center pl-1">
                 {diffInDays === 1 ? "day ago" : "days ago"}
               </span>
             </>

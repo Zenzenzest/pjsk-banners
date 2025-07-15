@@ -165,18 +165,20 @@ export default function BannerTemplate({
           <div className="overflow-hidden rounded-sm sm:rounded-xl ">
             {!bannerLoader.isLoaded && (
               <div className="animate-pulse bg-gray-300 dark:bg-gray-600 aspect-[359/152] w-full rounded-lg" />
-            )}
-            <img
-              src={gachaBannerImage}
-              alt={
-                mode === "gacha"
-                  ? banner.id.toString()
-                  : banner.event_id?.toString()
-              }
-              className={`w-full h-auto `}
-              onError={handleImageError}
-              onLoad={bannerLoader.handleLoad}
-            />
+            )}{" "}
+            <div className={`${bannerLoader.isLoaded ? "contents" : "hidden"}`}>
+              <img
+                src={gachaBannerImage}
+                alt={
+                  mode === "gacha"
+                    ? banner.id.toString()
+                    : banner.event_id?.toString()
+                }
+                className={`w-full h-auto `}
+                onError={handleImageError}
+                onLoad={bannerLoader.handleLoad}
+              />
+            </div>
           </div>
           <BannerStatus bannerStatus={bannerStatus} statusColor={statusColor} />
         </div>
