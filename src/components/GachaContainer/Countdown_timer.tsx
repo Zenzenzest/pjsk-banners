@@ -9,6 +9,9 @@ export default function CountdownTimer({
   compact,
   onComplete,
 }: CountdownProps) {
+  if (targetDate.getTime() === 1752735600000) {
+    console.log(targetDate.getTime());
+  }
   const [remainingTime, setRemainingTime] = useState<number>(
     targetDate.getTime() - Date.now()
   );
@@ -150,7 +153,7 @@ export default function CountdownTimer({
       >
         {!compact && !isMobile && (
           <span className="mr-2 whitespace-nowrap">
-            {mode === "start" ? "Starts:" : ""}
+            {mode === "start" ? "Start:" : ""}
           </span>
         )}
         {formatTime(remainingTime)}

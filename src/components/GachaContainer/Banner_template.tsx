@@ -276,7 +276,7 @@ export default function BannerTemplate({
           {banner.event_id && (
             <div>
               {/* COUNTDOWN TIMER */}
-              {today < Number(banner.start) &&
+              {today < Number(mode === "gacha" ? banner.start : EventObj!.start) &&
                 banner.type !== "confirmed" &&
                 banner.type !== "rerun_estimation" &&
                 banner.event_id && (
