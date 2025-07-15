@@ -6424,7 +6424,7 @@
     "cards": [479, 507, 427, 411, 289],
     "start": 1750042800000,
     "end": 1751857199000,
-    "en_id": -1,
+    "en_id": 529,
     "banner_type": "World Link Support",
     "characters": [1, 2, 3, 4, 21]
   },
@@ -6541,5 +6541,35 @@
     "banner_type": "Limited Event Rerun",
     "characters": [4, 20, 25],
     "keywords": ["new year", "ny", "happy new year"]
+  },  {
+    "id": 494,
+    "name": "Seeking my way",
+    "start": 1752548400000,
+    "end": 1753239599000,
+    "cards": [1179, 1180,1181],
+    "en_id": 530,
+    "event_id":173,
+    "banner_type": "Event",
+    "characters": [3,1,22],
+     "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "honami",
+      "hona5",
+      "honami5"
+    ]
+  }, {
+    "id": 495,
+    "name": "[神代類]HAPPY BIRTHDAY2025ガチャ",
+    "start": 1752937200000,
+    "end": 1753498799000,
+    "cards": [1184,548, 388, 242],
+    "en_id": 531,
+    "banner_type": "Birthday",
+    "characters": [15],
+    "keywords": []
   }
 ]

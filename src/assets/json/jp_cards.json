@@ -14346,5 +14346,76 @@
     "card_type": "event",
     "released": 1751868000000,
     "sekai_id": 1200
+  },  {
+    "id": 1179,
+    "name": "困惑は静寂に落ちて",
+    "character": "Mochizuki Honami",
+    "rarity": 4,
+    "unit": "Leo/Need",
+    "attribute": "Cute",
+    "real_id": 1103,
+    "card_type": "event",
+    "released": 1752548400000,
+    "sekai_id": 1201
+  },
+  {
+    "id": 1180,
+    "name": "ビー・ウィズ・ユー",
+    "character": "Hoshino Ichika",
+    "rarity": 4,
+    "unit": "Leo/Need",
+    "attribute": "Cute",
+    "real_id": 1103,
+    "card_type": "event",
+    "released": 1752548400000,
+    "sekai_id": 1202
+  },
+  {
+    "id": 1181,
+    "name": "お楽しみ委員の本領発揮♪",
+    "character": "Kagamine Rin",
+    "rarity": 4,
+    "unit": "Virtual Singers",
+    "sub_unit": "Leo/Need",
+    "attribute": "Cute",
+    "real_id": 1103,
+    "card_type": "event",
+    "released": 1752548400000,
+    "sekai_id": 1203
+   
+  }, {
+    "id": 1182,
+    "name": "目覚めと共に",
+    "character": "Hinomori Shiho",
+    "rarity": 3,
+    "unit": "Leo/Need",
+    "attribute": "Happy",
+    "real_id": 1103,
+    "card_type": "event",
+    "released": 1752559200000,
+    "sekai_id": 1204
+  }, {
+    "id": 1183,
+    "name": "熱いコンセプト",
+    "character": "MEIKO",
+    "rarity": 2,
+    "unit": "Virtual Singers",
+    "sub_unit": "Leo/Need",
+    "attribute": "Happy",
+    "real_id": 1103,
+    "card_type": "event",
+    "released": 1752559200000,
+    "sekai_id": 1205
+  },{
+    "id": 1184,
+    "name": "Happy Birthday！！2025",
+    "character": "Kusanagi Nene",
+    "rarity": 5,
+    "unit": "Wonderlands x Showtime",
+    "attribute": "Cute",
+    "real_id": 1103,
+    "card_type": "bday",
+    "released": 1752937200000,
+    "sekai_id": 1206
   }
 ]

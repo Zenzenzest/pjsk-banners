@@ -161,13 +161,12 @@ export default function BannerTemplate({
     >
       {/* BANNER + EVENT */}
       <div className="space-y-4">
-        {" "}
-        {!bannerLoader.isLoaded && (
-          <div className="animate-pulse bg-gray-300 dark:bg-gray-600 aspect-[359/152] w-full rounded-lg" />
-        )}{" "}
-        <div className={`${bannerLoader.isLoaded ? "contents" : "hidden"}`}>
-          <div className="relative group">
-            <div className="overflow-hidden rounded-sm sm:rounded-xl ">
+        <div className="relative group">
+          <div className="overflow-hidden rounded-sm sm:rounded-xl ">
+            {!bannerLoader.isLoaded && (
+              <div className="animate-pulse bg-gray-300 dark:bg-gray-600 aspect-[359/152] w-full rounded-lg" />
+            )}{" "}
+            <div className={`${bannerLoader.isLoaded ? "contents" : "hidden"}`}>
               <img
                 src={gachaBannerImage}
                 alt={
@@ -180,11 +179,8 @@ export default function BannerTemplate({
                 onLoad={bannerLoader.handleLoad}
               />
             </div>
-            <BannerStatus
-              bannerStatus={bannerStatus}
-              statusColor={statusColor}
-            />
           </div>
+          <BannerStatus bannerStatus={bannerStatus} statusColor={statusColor} />
         </div>
         <div className="space-y-3">
           <div>
