@@ -1801,7 +1801,8 @@
     "close": 1726005599000,
     "cards": [405, 406, 407, 408, 892, 893],
     "event_type": "cheerful_carnival",
-    "keywords": ["vs"]
+    "keywords": ["vs"],
+    "type": "Mixed Event"
   },
   {
     "id": 106,

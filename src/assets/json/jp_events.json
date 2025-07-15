@@ -1928,7 +1928,8 @@
     "event_type": "cheerful_carnival",
     "start": 1693461600000,
     "end": 1694260799000,
-    "close": 1694411999000
+    "close": 1694411999000,
+    "type": "Mixed Event"
   },
   {
     "id": 106,
