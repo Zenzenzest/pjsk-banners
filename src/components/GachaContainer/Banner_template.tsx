@@ -13,6 +13,7 @@ import EventEndedTimer from "./EventEnded_timer";
 import EventCards from "./EventGrid/Event_cards";
 import Cards from "./BannerGrid/Banner_cards";
 
+
 export default function BannerTemplate({
   banner,
   mode,
@@ -21,6 +22,7 @@ export default function BannerTemplate({
   const [savedBanners, setSavedBanners] = useState<number[]>([]);
   const { server } = useServer();
   const { theme } = useTheme();
+
   const bannerLoader = ImageLoader(1);
   const today = Date.now();
 

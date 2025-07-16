@@ -1,4 +1,5 @@
 import { useTheme } from "../../context/Theme_toggle";
+import { IsDeviceIpad } from "../../hooks/isIpad";
 import type { CardModalProps } from "../Global/Types";
 
 export default function CardModal({
@@ -16,9 +17,9 @@ export default function CardModal({
   sekaiId,
 }: CardModalProps) {
   const { theme } = useTheme();
-
   const imageHost = "https://r2-image-proxy.zenzenzest.workers.dev/";
-
+  const isIpad = IsDeviceIpad();
+  console.log(isIpad);
   if (!isOpen) return null;
 
   return (
@@ -33,7 +34,9 @@ export default function CardModal({
       ></div>
 
       <div
-        className={`relative z-10 w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
+        className={`relative z-10 ${
+          isIpad ? "w-2/3" : "w-full"
+        } max-w-7xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
           theme === "dark"
             ? "bg-gray-800 border-gray-700"
             : "bg-white border-gray-200"
@@ -148,7 +151,11 @@ export default function CardModal({
 
           {/* 3 & 4 STAR */}
           {(rarity === 3 || rarity === 4) && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div
+              className={`grid grid-cols-1 ${
+                isIpad ? "md:grid-cols-1" : "md:grid-cols-2"
+              } gap-4`}
+            >
               {/* Untrained Card */}
               <div className="relative">
                 <div className="relative overflow-hidden rounded-xl shadow-lg">
