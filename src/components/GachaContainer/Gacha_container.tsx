@@ -33,6 +33,7 @@ export default function BannerContainer({
     cardAttribute: "",
     sekaiId: 0,
   });
+
   // Handle scroll detection
   useEffect(() => {
     const handleScroll = () => {
@@ -63,7 +64,7 @@ export default function BannerContainer({
       cardId: card.id,
       rarity: card.rarity,
       name: card.character,
-      cardName: card.name,
+      cardName: server === "global" ? card.name : card.jp_name,
       cardAttribute: card.attribute,
       sekaiId: card.jp_sekai_id,
     });
