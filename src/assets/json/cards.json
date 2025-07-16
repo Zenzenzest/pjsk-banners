@@ -36,7 +36,7 @@
     "name": "New Troupe Member!",
     "character": "Kagamine Len",
     "rarity": 4,
-    "attribute": "Mysterious",
+    "attribute": "Cool",
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 77,
@@ -419,7 +419,7 @@
     "name": "Always Looking Ahead",
     "character": "Momoi Airi",
     "rarity": 4,
-    "attribute": "Happy",
+    "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 107,
     "en_sekai_id": 129,
@@ -434,7 +434,7 @@
     "name": "Wh-Wh-Wh-What?!",
     "character": "Hanasato Minori",
     "rarity": 4,
-    "attribute": "Happy",
+    "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 108,
     "en_sekai_id": 130,
@@ -449,7 +449,7 @@
     "name": "All To See You Smile",
     "character": "Kagamine Rin",
     "rarity": 4,
-    "attribute": "Happy",
+    "attribute": "Cute",
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 109,
@@ -3305,7 +3305,7 @@
     "name": "What Do Kappas Like?",
     "character": "Megurine Luka",
     "rarity": 4,
-    "attribute": "Mysterious",
+    "attribute": "Cool",
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 408,
@@ -9906,7 +9906,7 @@
     "rarity": 5,
     "card_type": "bday",
     "unit": "MORE MORE JUMP!",
-    "attribute": "Cool",
+    "attribute": "Cute",
     "real_id": 1133,
     "jp_sekai_id": 1155,
     "jp_name": "Happy Birthday！！2025",
@@ -10260,7 +10260,7 @@
     "character": "Akiyama Mizuki",
     "rarity": 4,
     "unit": "Nightcord at 25:00",
-    "attribute": "Mysterious",
+    "attribute": "Happy",
     "card_type": "unit_limited",
     "real_id": 1168,
     "jp_sekai_id": 1188,
@@ -15289,7 +15289,7 @@
     "character": "Hinomori Shiho",
     "rarity": 2,
     "unit": "Leo/Need",
-    "attribute": "Happy",
+    "attribute": "Mysterious",
     "card_type": "limited_collab",
     "real_id": 787,
     "en_sekai_id": 809,
@@ -17787,8 +17787,7 @@
     "en_released": 1784142000000,
     "en_sekai_id": 1203,
     "jp_name": "お楽しみ委員の本領発揮♪"
-  },
-  {
+  }, {
     "id": 1182,
     "name": "Waking Up At The Same Time",
     "character": "Hinomori Shiho",
@@ -17802,8 +17801,7 @@
     "en_released": 0,
     "en_sekai_id": 1204,
     "jp_name": "目覚めと共に"
-  },
-  {
+  }, {
     "id": 1183,
     "name": "Hot Concept",
     "character": "MEIKO",
@@ -17818,8 +17816,7 @@
     "en_released": 0,
     "en_sekai_id": 1205,
     "jp_name": "熱いコンセプト"
-  },
-  {
+  },{
     "id": 1184,
     "name": "Happy Birthday!! 2026",
     "character": "Kusanagi Nene",

@@ -30,7 +30,7 @@
     "name": "新団員登場！",
     "character": "Kagamine Len",
     "rarity": 4,
-    "attribute": "Mysterious",
+    "attribute": "Cool",
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 77,
@@ -338,7 +338,7 @@
     "name": "いつでも前を向いて",
     "character": "Momoi Airi",
     "rarity": 4,
-    "attribute": "Happy",
+    "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 107,
     "card_type": "",
@@ -350,7 +350,7 @@
     "name": "あわわわわっ！？",
     "character": "Hanasato Minori",
     "rarity": 4,
-    "attribute": "Happy",
+    "attribute": "Cute",
     "unit": "MORE MORE JUMP!",
     "real_id": 108,
     "card_type": "",
@@ -362,7 +362,7 @@
     "name": "キミの笑顔のために",
     "character": "Kagamine Rin",
     "rarity": 4,
-    "attribute": "Happy",
+    "attribute": "Cute",
     "unit": "Virtual Singers",
     "sub_unit": "MORE MORE JUMP!",
     "real_id": 109,
@@ -2654,7 +2654,7 @@
     "name": "カッパさんの好きな物？",
     "character": "Megurine Luka",
     "rarity": 4,
-    "attribute": "Mysterious",
+    "attribute": "Cool",
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "real_id": 408,
@@ -8035,7 +8035,7 @@
     "rarity": 5,
     "card_type": "bday",
     "unit": "MORE MORE JUMP!",
-    "attribute": "Cool",
+    "attribute": "Cute",
     "real_id": 1133,
     "released": 1744556400000,
     "sekai_id": 1155
@@ -8338,7 +8338,7 @@
     "character": "Akiyama Mizuki",
     "rarity": 4,
     "unit": "Nightcord at 25:00",
-    "attribute": "Mysterious",
+    "attribute": "Happy",
     "card_type": "unit_limited",
     "real_id": 1168,
     "released": 1749438000000,
@@ -12378,7 +12378,7 @@
     "character": "Hinomori Shiho",
     "rarity": 2,
     "unit": "Leo/Need",
-    "attribute": "Happy",
+    "attribute": "Mysterious",
     "card_type": "limited_collab",
     "real_id": 787,
     "sekai_id": 809,
@@ -14261,7 +14261,7 @@
     "card_type": "limited_collab",
     "sekai_id": 1119,
     "released": 1739599200000
-  }, 
+  },
   {
     "id": 1172,
     "name": "あの絵を一緒に",
@@ -14346,7 +14346,8 @@
     "card_type": "event",
     "released": 1751868000000,
     "sekai_id": 1200
-  },  {
+  },
+  {
     "id": 1179,
     "name": "困惑は静寂に落ちて",
     "character": "Mochizuki Honami",
@@ -14382,8 +14383,8 @@
     "card_type": "event",
     "released": 1752548400000,
     "sekai_id": 1203
-   
-  }, {
+  },
+  {
     "id": 1182,
     "name": "目覚めと共に",
     "character": "Hinomori Shiho",
@@ -14394,7 +14395,8 @@
     "card_type": "event",
     "released": 1752559200000,
     "sekai_id": 1204
-  }, {
+  },
+  {
     "id": 1183,
     "name": "熱いコンセプト",
     "character": "MEIKO",
@@ -14406,7 +14408,8 @@
     "card_type": "event",
     "released": 1752559200000,
     "sekai_id": 1205
-  },{
+  },
+  {
     "id": 1184,
     "name": "Happy Birthday！！2025",
     "character": "Kusanagi Nene",
