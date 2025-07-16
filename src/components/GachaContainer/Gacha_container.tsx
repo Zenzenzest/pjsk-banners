@@ -64,7 +64,8 @@ export default function BannerContainer({
       cardId: card.id,
       rarity: card.rarity,
       name: card.character,
-      cardName: server === "global" ? card.name : card.jp_name,
+      cardName:
+        server === "global" || server === "saved" ? card.name : card.jp_name,
       cardAttribute: card.attribute,
       sekaiId: card.jp_sekai_id,
     });
