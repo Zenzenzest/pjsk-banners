@@ -90,29 +90,30 @@ export default function FilteredBanners({
           }
         ).filter((id) => id !== null);
 
-        //Check if any of the banner's characters match the selected character IDs
+        //Check if selected character filters match in banners
         return (
-          banner.characters?.some((characterId) =>
-            selectedCharacterIds.includes(characterId)
-          ) || false
+          selectedCharacterIds.length > 0 &&
+          selectedCharacterIds.every((characterId) =>
+            banner.characters?.includes(characterId)
+          )
         );
       });
     }
 
     //* Apply search filter
-if (selectedFilters.search.trim() !== "") {
-  const searchTerm = selectedFilters.search.toLowerCase().trim();
-  filtered = filtered.filter((banner) => {
-    // Check if banner has keywords property and it's an array
-    if (banner.keywords && Array.isArray(banner.keywords)) {
-      return banner.keywords.some((keyword) =>
-        keyword.toLowerCase().startsWith(searchTerm)
-      );
+    if (selectedFilters.search.trim() !== "") {
+      const searchTerm = selectedFilters.search.toLowerCase().trim();
+      filtered = filtered.filter((banner) => {
+        // Check if banner has keywords property and it's an array
+        if (banner.keywords && Array.isArray(banner.keywords)) {
+          return banner.keywords.some((keyword) =>
+            keyword.toLowerCase().startsWith(searchTerm)
+          );
+        }
+        // If no keywords, also check the banner name as fallback
+        return banner.name.toLowerCase().startsWith(searchTerm);
+      });
     }
-    // If no keywords, also check the banner name as fallback
-    return banner.name.toLowerCase().startsWith(searchTerm);
-  });
-}
 
     //* Sort by start date (latest to oldest)
     filtered.sort((a, b) => b.start - a.start);
