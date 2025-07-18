@@ -177,7 +177,7 @@ export default function BannerTemplate({
                     : banner.event_id?.toString()
                 }
                 fetchPriority="high"
-                className={`w-full h-auto  `}
+                className={`w-full h-auto`}
                 onError={handleImageError}
                 onLoad={bannerLoader.handleLoad}
               />
