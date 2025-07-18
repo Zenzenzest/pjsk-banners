@@ -258,7 +258,7 @@ export default function FilteredCards({
                 {/* CARD THUMBNAIL */}
                 <button
                   onClick={() => handleCardClick(card)}
-                  className="text-white rounded  hover:opacity-80 transition-opacity mb-2 e"
+                  className="text-white rounded  hover:opacity-80 transition-opacity mb-2 w-full"
                 >
                   {(card.rarity == 4 || card.rarity == 3) && (
                     <div className="relative">

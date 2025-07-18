@@ -13,7 +13,7 @@ export default function CardGrid({ mode, cardId, cardName }: CardGridPropType) {
     <div className="overflow-hidden rounded-sm sm:rounded-xl ">
       {!thumbLoader.isLoaded && (
         <div className="animate-pulse bg-gray-300 dark:bg-gray-600 aspect-[1.76/1] w-full rounded-lg" />
-      )}{" "}
+      )}
       <div className={`${thumbLoader.isLoaded ? "contents" : "hidden"}`}>
         <img
           src={`/images/card_thumbnails/${cardId}${
