@@ -115,3 +115,10 @@ export type SelectedBannerFilterTypes = {
 export type FilteredBannersPropType = {
   selectedFilters: SelectedBannerFilterTypes;
 };
+
+
+export interface CardGridPropType {
+  mode: string;
+  cardId: number;
+  cardName:string
+}
