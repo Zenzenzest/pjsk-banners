@@ -36,7 +36,7 @@ export default function CardModal({
       <div
         className={`relative z-10 ${
           isIpad ? "w-2/3" : "w-full"
-        } max-w-7xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
+        } max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
           theme === "dark"
             ? "bg-gray-800 border-gray-700"
             : "bg-white border-gray-200"
@@ -104,6 +104,7 @@ export default function CardModal({
         {/* IMAGE*/}
         <div className="p-6 space-y-6">
           {/* Birthday Card (5 star or card ID 669) */}
+          {/* CARDID 669 MIKU TOUHOU CARD THAT HAS NO TRAINED IMAGE  */}
           {(rarity === 5 || cardId === 669) && (
             <div className="relative w-full">
               <div className="relative overflow-hidden rounded-xl shadow-lg">
@@ -123,34 +124,34 @@ export default function CardModal({
                   />
                 </div>
                 {/* Rarity Badge */}
-                <div className="absolute bottom-1 left-1">
-                  {cardId === 669 ? (
-                    <div className="flex">
-                      {Array(rarity - 1)
-                        .fill(0)
-                        .map((_, i) => (
-                          <img
-                            key={i}
-                            src="/images/rarity_icons/untrained_star.png"
-                            className="sm:w-7 sm:h-7 lg:w-10 lg:h-10 w-6 h-6"
-                            alt="star"
-                          />
-                        ))}
-                    </div>
-                  ) : (
+                {cardId === 669 ? (
+                  <div className="absolute top-3 left-3 flex space-x-1">
+                    {Array(rarity)
+                      .fill(0)
+                      .map((_, i) => (
+                        <img
+                          key={i}
+                          src="/images/rarity_icons/untrained_star.png"
+                          className="w-6 h-6"
+                          alt="star"
+                        />
+                      ))}
+                  </div>
+                ) : (
+                  <div className="absolute bottom-1 left-1">
                     <img
                       src="/images/rarity_icons/bday.png"
                       className="sm:w-7 sm:h-7 lg:w-10 lg:h-10 w-6 h-6"
                       alt="birthday"
                     />
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
             </div>
           )}
 
           {/* 3 & 4 STAR */}
-          {(rarity === 3 || rarity === 4) && (
+          {(rarity === 3 || rarity === 4) && cardId != 669 && (
             <div
               className={`grid grid-cols-1 ${
                 isIpad ? "md:grid-cols-1" : "md:grid-cols-2"
@@ -202,49 +203,51 @@ export default function CardModal({
               </div>
 
               {/* TRAINED CARD */}
-              <div className="relative">
-                <div className="relative overflow-hidden rounded-xl shadow-lg">
-                  {isLoading2 && (
-                    <div
-                      className="animate-pulse bg-gray-300 dark:bg-gray-600 
+              {cardId != 669 && (
+                <div className="relative">
+                  <div className="relative overflow-hidden rounded-xl shadow-lg">
+                    {isLoading2 && (
+                      <div
+                        className="animate-pulse bg-gray-300 dark:bg-gray-600 
                   
                   aspect-[1.75/1] w-full rounded-lg"
-                    />
-                  )}{" "}
-                  <div className={`${!isLoading2 ? "contents" : "hidden"}`}>
-                    <img
-                      src={`${imageHost}${cardId}_t.webp`}
-                      className="w-full h-auto transition-opacity duration-300"
-                      onLoad={() => setIsLoading2(false)}
-                      alt="Trained card"
-                    />
+                      />
+                    )}{" "}
+                    <div className={`${!isLoading2 ? "contents" : "hidden"}`}>
+                      <img
+                        src={`${imageHost}${cardId}_t.webp`}
+                        className="w-full h-auto transition-opacity duration-300"
+                        onLoad={() => setIsLoading2(false)}
+                        alt="Trained card"
+                      />
+                    </div>
+                    {/*TRAINED STARS*/}
+                    <div className="absolute bottom-3 right-3 flex space-x-1">
+                      {Array(rarity)
+                        .fill(0)
+                        .map((_, i) => (
+                          <img
+                            key={i}
+                            src="/images/rarity_icons/trained_star.png"
+                            className="w-6 h-6"
+                            alt="star"
+                          />
+                        ))}
+                    </div>
                   </div>
-                  {/*TRAINED STARS*/}
-                  <div className="absolute bottom-3 right-3 flex space-x-1">
-                    {Array(rarity)
-                      .fill(0)
-                      .map((_, i) => (
-                        <img
-                          key={i}
-                          src="/images/rarity_icons/trained_star.png"
-                          className="w-6 h-6"
-                          alt="star"
-                        />
-                      ))}
-                  </div>
-                </div>
 
-                {/* TRAINED LABEL*/}
-                <div
-                  className={`mt-2 text-center px-3 py-1 rounded-lg text-sm font-medium ${
-                    theme === "dark"
-                      ? "bg-gray-700 text-gray-300"
-                      : "bg-gray-100 text-gray-600"
-                  }`}
-                >
-                  Trained
+                  {/* TRAINED LABEL*/}
+                  <div
+                    className={`mt-2 text-center px-3 py-1 rounded-lg text-sm font-medium ${
+                      theme === "dark"
+                        ? "bg-gray-700 text-gray-300"
+                        : "bg-gray-100 text-gray-600"
+                    }`}
+                  >
+                    Trained
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           )}
 
