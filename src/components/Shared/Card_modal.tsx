@@ -19,7 +19,7 @@ export default function CardModal({
   const { theme } = useTheme();
   const imageHost = "https://r2-image-proxy.zenzenzest.workers.dev/";
   const isIpad = IsDeviceIpad();
-  console.log(isIpad);
+
   if (!isOpen) return null;
 
   return (
