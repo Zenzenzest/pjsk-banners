@@ -262,7 +262,9 @@ export default function FilteredCards({
                   {(card.rarity == 4 || card.rarity == 3) && (
                     <div className="relative">
                       <img
-                        src={`/images/card_thumbnails/${card.id}_t.webp`}
+                        src={`/images/card_thumbnails/${card.id}_${
+                          card.id === 669 ? "bd" : "t"
+                        }.webp`}
                         className={`h-auto w-full -2 max-w-[300px] ml-auto mr-auto rounded 
                       
                           `}
@@ -274,7 +276,9 @@ export default function FilteredCards({
                           .map((_, i) => (
                             <img
                               key={i}
-                              src="/images/rarity_icons/trained_star.png"
+                              src={`images/rarity_icons/${
+                                card.id === 669 ? "un" : ""
+                              }trained_star.png`}
                               style={{ width: "15px", display: "inline-block" }}
                             />
                           ))}
@@ -282,39 +286,23 @@ export default function FilteredCards({
                     </div>
                   )}
                   {/* MIKU TOUHOU CARD THAT DOESNT HAVE TRAINED CARD FOR SOME REASON */}
-                  {(card.rarity == 5 || card.id === 669) && (
+                  {card.rarity == 5 && (
                     <div className="relative">
                       <img
                         src={`/images/card_thumbnails/${card.id}_bd.webp`}
                         className="h-auto w-full max-w-[300px]  rounded"
                         alt={card.name}
                       />
-                      {card.id === 669 ? (
-                        <div className="absolute top-0 right-1">
-                          {Array(card.rarity-1)
-                            .fill(0)
-                            .map((_, i) => (
-                              <img
-                                key={i}
-                                src="/images/rarity_icons/untrained_star.png"
-                                style={{
-                                  width: "15px",
-                                  display: "inline-block",
-                                }}
-                              />
-                            ))}
-                        </div>
-                      ) : (
-                        <img
-                          src="/images/rarity_icons/bday.png"
-                          style={{
-                            position: "absolute",
-                            bottom: 5,
-                            left: 5,
-                            width: "1.5rem",
-                          }}
-                        />
-                      )}
+
+                      <img
+                        src="/images/rarity_icons/bday.png"
+                        style={{
+                          position: "absolute",
+                          bottom: 5,
+                          left: 5,
+                          width: "1.5rem",
+                        }}
+                      />
                     </div>
                   )}
                   {card.rarity <= 2 && (
