@@ -8,8 +8,8 @@ import type {
 } from "../../Global/Types";
 import CardModal from "../../Shared/Card_modal";
 import { useTheme } from "../../../context/Theme_toggle";
-
 import { useServer } from "../../../context/Server";
+import CardGrid from "./Card_grid";
 
 export default function FilteredCards({
   selectedFilters,
@@ -22,6 +22,7 @@ export default function FilteredCards({
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
   const [cardsPerPage] = useState(20);
   const [shouldScrollToTop, setShouldScrollToTop] = useState(false);
+
   const filteredCardsRef = useRef<HTMLDivElement>(null);
 
   const [cardState, setCardState] = useState<CardState>({
@@ -261,14 +262,10 @@ export default function FilteredCards({
                 >
                   {(card.rarity == 4 || card.rarity == 3) && (
                     <div className="relative">
-                      <img
-                        src={`/images/card_thumbnails/${card.id}_${
-                          card.id === 669 ? "bd" : "t"
-                        }.webp`}
-                        className={`h-auto w-full -2 max-w-[300px] ml-auto mr-auto rounded 
-                      
-                          `}
-                        alt={card.name}
+                      <CardGrid
+                        mode="t"
+                        cardId={card.id}
+                        cardName={card.name}
                       />
                       <div className="absolute top-0 right-1">
                         {Array(card.rarity)
@@ -286,12 +283,13 @@ export default function FilteredCards({
                     </div>
                   )}
                   {/* MIKU TOUHOU CARD THAT DOESNT HAVE TRAINED CARD FOR SOME REASON */}
+
                   {card.rarity == 5 && (
                     <div className="relative">
-                      <img
-                        src={`/images/card_thumbnails/${card.id}_bd.webp`}
-                        className="h-auto w-full max-w-[300px]  rounded"
-                        alt={card.name}
+                      <CardGrid
+                        mode="bd"
+                        cardId={card.id}
+                        cardName={card.name}
                       />
 
                       <img
@@ -307,10 +305,10 @@ export default function FilteredCards({
                   )}
                   {card.rarity <= 2 && (
                     <div className="relative">
-                      <img
-                        src={`/images/card_thumbnails/${card.id}.webp`}
-                        className="h-auto w-full max-w-[300px]  rounded"
-                        alt={card.name}
+                      <CardGrid
+                        mode="u"
+                        cardId={card.id}
+                        cardName={card.name}
                       />
                       <div className="absolute top-0 left-1">
                         {Array(card.rarity)
