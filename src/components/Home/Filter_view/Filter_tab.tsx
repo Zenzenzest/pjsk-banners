@@ -265,7 +265,7 @@ export default function FilterTab() {
     });
   };
 
-  // New function to handle immediate search changes
+  // handle immediate search changes
   const handleSearchChange = (searchTerm: string) => {
     setTempBannerFilters((prev) => ({
       ...prev,
@@ -277,6 +277,9 @@ export default function FilterTab() {
       ...prev,
       search: searchTerm,
     }));
+
+
+    
   };
 
   const handleReset = () => {
@@ -377,7 +380,7 @@ export default function FilterTab() {
           <div className="relative">
             <input
               type="text"
-              placeholder="Search banners... (e.g., Mafu4, wl1...)"
+              placeholder="Search banners... (e.g., Banner name, Mafu4, wl1...)"
               value={selectedBannerFilters.search}
               onChange={(e) => handleSearchChange(e.target.value)}
               className={`w-full px-3 py-2 pr-10 rounded-md border focus:outline-none focus:ring-2 focus:ring-[#52649e] ${
