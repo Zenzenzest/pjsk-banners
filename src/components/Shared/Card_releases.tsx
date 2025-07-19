@@ -49,7 +49,10 @@ export default function CardReleases({ cardId }: CardReleasesType) {
       <div className="gap-6 w-full">
         {JpAppearances.map((banner) => {
           return (
-            <div className="grid grid-cols-2 gap-3 border-b border-gray-500">
+            <div
+              className="grid grid-cols-2 gap-3 border-b border-gray-500"
+              key={banner.id}
+            >
               {" "}
               <div className="md:truncate flex flex-row justify-start items-center gap-1">
                 <span>
@@ -76,7 +79,10 @@ export default function CardReleases({ cardId }: CardReleasesType) {
       <div className="gap-6 w-full">
         {EnAppearances.map((banner) => {
           return (
-            <div className="grid grid-cols-2 gap-3 border-b border-gray-500">
+            <div
+              className="grid grid-cols-2 gap-3 border-b border-gray-500"
+              key={banner.id}
+            >
               {" "}
               <div className="md:truncate flex flex-row justify-start items-center gap-1">
                 <span>
