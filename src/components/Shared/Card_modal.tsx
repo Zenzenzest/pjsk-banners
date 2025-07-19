@@ -1,6 +1,7 @@
 import { useTheme } from "../../context/Theme_toggle";
 import { IsDeviceIpad } from "../../hooks/isIpad";
 import type { CardModalProps } from "../Global/Types";
+import CardReleases from "./Card_releases";
 
 export default function CardModal({
   isOpen,
@@ -289,6 +290,9 @@ export default function CardModal({
           )}
         </div>
 
+
+          {/* BANNERS */}
+          <CardReleases cardId={cardId}/>
         {/* FOOTER BUTTONS */}
         <div
           className={`p-3 border-t ${

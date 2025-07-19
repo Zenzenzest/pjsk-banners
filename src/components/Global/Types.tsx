@@ -122,3 +122,7 @@ export interface CardGridPropType {
   cardId: number;
   cardName:string
 }
+
+export interface CardReleasesType {
+  cardId: number
+}
