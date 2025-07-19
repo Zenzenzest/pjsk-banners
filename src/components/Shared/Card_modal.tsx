@@ -112,7 +112,7 @@ export default function CardModal({
                   <div
                     className="animate-pulse bg-gray-300 dark:bg-gray-600 
                   
-                  aspect-[1.75/1] w-full rounded-lg"
+                  aspect-[1.63/1] w-full rounded-lg"
                   />
                 )}
                 <div className={`${!isLoading ? "contents" : "hidden"}`}>
@@ -164,7 +164,7 @@ export default function CardModal({
                     <div
                       className="animate-pulse bg-gray-300 dark:bg-gray-600 
                   
-                  aspect-[1.75/1] w-full rounded-lg"
+                  aspect-[1.63/1] w-full rounded-lg"
                     />
                   )}
                   <div className={`${!isLoading ? "contents" : "hidden"}`}>
@@ -210,7 +210,7 @@ export default function CardModal({
                       <div
                         className="animate-pulse bg-gray-300 dark:bg-gray-600 
                   
-                  aspect-[1.75/1] w-full rounded-lg"
+                  aspect-[1.63/1] w-full rounded-lg"
                       />
                     )}{" "}
                     <div className={`${!isLoading2 ? "contents" : "hidden"}`}>

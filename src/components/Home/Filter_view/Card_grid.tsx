@@ -4,7 +4,7 @@ import type { CardGridPropType } from "../../Global/Types";
 
 export default function CardGrid({ mode, cardId, cardName }: CardGridPropType) {
   const thumbLoader = ImageLoader(1);
-  console.log(thumbLoader.isLoaded);
+
   useEffect(() => {
     thumbLoader.reset();
   }, [cardId]);
