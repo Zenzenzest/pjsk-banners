@@ -6522,7 +6522,8 @@
     "end": 1753988399000,
     "cards": [479, 507, 427, 411, 289],
     "banner_type": "World Link Support",
-    "characters": [1, 2, 3, 4, 21]
+    "characters": [1, 2, 3, 4, 21],
+    "keywords": []
   },
   {
     "id": 530,
@@ -6554,5 +6555,45 @@
     "banner_type": "Birthday",
     "characters": [15],
     "keywords": []
+  },
+  {
+    "id": 532,
+    "name": "Vivid BAD SQUAD World Link Event Support Gacha",
+    "cards": [465, 466, 467, 468],
+    "start": 1775070000000,
+    "end": 1776884399000,
+    "banner_type": "World Link Support",
+    "characters": [9, 10, 11, 12],
+    "keywords": ["wl", "world link 1", "wl1"]
+  },
+  {
+    "id": 533,
+    "name": "Wonderlands×Showtime World Link Event Support Gacha",
+    "cards": [465, 466, 467, 468],
+    "start": 1777748400000,
+    "end": 1779562799000,
+    "banner_type": "World Link Support",
+    "characters": [9, 10, 11, 12],
+    "keywords": ["wl", "world link 1", "wl1"]
+  },
+  {
+    "id": 534,
+    "name": "Nightcord at 25:00 World Link Event Support Gacha",
+    "cards": [434, 435, 436, 437],
+    "start": 1780426800000,
+    "end": 1782241199000,
+    "banner_type": "World Link Support",
+    "characters": [17, 18, 19, 20],
+    "keywords": ["wl", "world link 1", "wl1"]
+  },
+  {
+    "id": 535,
+    "name": "Leo/need World Link Event Support Gacha",
+    "cards": [544, 545, 546, 547],
+    "start": 1781636400000,
+    "end": 1783450799000,
+    "banner_type": "World Link Support",
+    "characters": [1, 2, 3, 4],
+    "keywords": ["wl", "world link 1", "wl1"]
   }
 ]

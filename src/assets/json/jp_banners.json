@@ -156,7 +156,8 @@
     "cards": [1, 2, 3, 13, 16, 19],
     "en_id": 0,
     "banner_type": "Normal",
-    "characters": [2, 16, 18, 21, 22, 23]
+    "characters": [2, 16, 18, 21, 22, 23],
+    "keywords": []
   },
   {
     "id": 12,
@@ -942,7 +943,6 @@
       "mizuki"
     ]
   },
-
   {
     "id": 66,
     "name": "[MEIKO]HAPPY ANNIVERSARYガチャ",
@@ -2186,7 +2186,6 @@
     "characters": [4, 5, 9],
     "keywords": ["school", "festival", "miyajou", "school festival", "miyama"]
   },
-
   {
     "id": 159,
     "name": "[MEIKO]HAPPY ANNIVERSARY2022ガチャ",
@@ -2863,8 +2862,7 @@
     "en_id": 214,
     "banner_type": "Collab Rerun",
     "characters": [22, 23, 24, 25, 26],
-    "keywords":[]
- 
+    "keywords": []
   },
   {
     "id": 210,
@@ -2897,7 +2895,8 @@
     "cards": [366, 219],
     "en_id": 248,
     "banner_type": "Birthday",
-    "characters": [13]
+    "characters": [13],
+    "keywords": []
   },
   {
     "id": 213,
@@ -3320,7 +3319,8 @@
     "cards": [378, 317, 363, 298, 312, 341],
     "en_id": 0,
     "banner_type": "Free Pull",
-    "characters": [4, 6, 11, 14, 20, 23]
+    "characters": [4, 6, 11, 14, 20, 23],
+    "keywords": []
   },
   {
     "id": 244,
@@ -3487,7 +3487,6 @@
       "focus"
     ]
   },
-
   {
     "id": 260,
     "name": "[復刻]Darkness Festaガチャ",
@@ -4376,7 +4375,8 @@
     "cards": [105, 106, 107],
     "en_id": 0,
     "banner_type": "Limited Event Rerun",
-    "characters": [2, 3, 14]
+    "characters": [2, 3, 14],
+    "keywords": []
   },
   {
     "id": 327,
@@ -4417,7 +4417,8 @@
     "cards": [365, 122, 245, 218, 350, 222],
     "en_id": 0,
     "banner_type": "Premium Gift",
-    "characters": [21, 22, 23, 24, 25, 26]
+    "characters": [21, 22, 23, 24, 25, 26],
+    "keywords": []
   },
   {
     "id": 330,
@@ -4789,7 +4790,8 @@
     "cards": [479, 507, 427, 411, 289],
     "en_id": -3,
     "banner_type": "World Link Support",
-    "characters": [1, 2, 3, 4, 21]
+    "characters": [1, 2, 3, 4, 21],
+    "keywords": []
   },
   {
     "id": 355,
@@ -4909,7 +4911,8 @@
     "cards": [484, 428, 522, 352, 496, 450],
     "en_id": -6,
     "banner_type": "World Link Support",
-    "characters": [14, 21, 23, 24, 25, 26]
+    "characters": [14, 21, 23, 24, 25, 26],
+    "keywords": []
   },
   {
     "id": 365,
@@ -4986,7 +4989,8 @@
     "cards": [126, 186, 148],
     "en_id": -3,
     "banner_type": "Recollection",
-    "characters": [5, 13, 21]
+    "characters": [5, 13, 21],
+    "keywords": []
   },
   {
     "id": 372,
@@ -4996,7 +5000,8 @@
     "cards": [289, 365, 131, 27, 146],
     "en_id": -3,
     "banner_type": "Premium Gift",
-    "characters": [21]
+    "characters": [21],
+    "keywords": []
   },
   {
     "id": 373,
@@ -5106,7 +5111,8 @@
     "cards": [423, 504, 289],
     "en_id": -4,
     "banner_type": "Normal",
-    "characters": [11, 18, 21]
+    "characters": [11, 18, 21],
+    "keywords": []
   },
   {
     "id": 383,
@@ -5116,7 +5122,8 @@
     "cards": [365, 471, 229, 300, 350, 529],
     "en_id": -4,
     "banner_type": "Unit Premium Gift",
-    "characters": [21, 22, 23, 24, 25, 26]
+    "characters": [21, 22, 23, 24, 25, 26],
+    "keywords": []
   },
   {
     "id": 384,
@@ -5126,7 +5133,8 @@
     "cards": [479, 507, 478, 508],
     "en_id": -4,
     "banner_type": "Unit Premium Gift",
-    "characters": [1, 2, 3, 4]
+    "characters": [1, 2, 3, 4],
+    "keywords": []
   },
   {
     "id": 385,
@@ -5136,7 +5144,8 @@
     "cards": [482, 527, 377, 528],
     "en_id": -4,
     "banner_type": "Unit Premium Gift",
-    "characters": [5, 6, 7, 8]
+    "characters": [5, 6, 7, 8],
+    "keywords": []
   },
   {
     "id": 386,
@@ -5146,7 +5155,8 @@
     "cards": [424, 495, 423, 494],
     "en_id": -4,
     "banner_type": "Unit Premium Gift",
-    "characters": [9, 10, 11, 12]
+    "characters": [9, 10, 11, 12],
+    "keywords": []
   },
   {
     "id": 387,
@@ -5156,7 +5166,8 @@
     "cards": [521, 520, 470, 469],
     "en_id": -4,
     "banner_type": "Unit Premium Gift",
-    "characters": [13, 14, 15, 16]
+    "characters": [13, 14, 15, 16],
+    "keywords": []
   },
   {
     "id": 388,
@@ -5166,7 +5177,8 @@
     "cards": [448, 530, 503, 531],
     "en_id": -4,
     "banner_type": "Unit Premium Gift",
-    "characters": [17, 18, 19, 20]
+    "characters": [17, 18, 19, 20],
+    "keywords": []
   },
   {
     "id": 389,
@@ -5188,7 +5200,8 @@
     "cards": [389, 482, 396, 521, 448, 484],
     "en_id": -4,
     "banner_type": "Memorial Seelct",
-    "characters": [1, 5, 9, 13, 17, 21]
+    "characters": [1, 5, 9, 13, 17, 21],
+    "keywords": []
   },
   {
     "id": 391,
@@ -5198,7 +5211,8 @@
     "cards": [344, 237, 273, 247, 373, 226],
     "en_id": -4,
     "banner_type": "Your Pick",
-    "characters": [4, 5, 11, 15, 17, 25]
+    "characters": [4, 5, 11, 15, 17, 25],
+    "keywords": []
   },
   {
     "id": 392,
@@ -5208,7 +5222,8 @@
     "cards": [109, 59, 64, 413, 206, 293],
     "en_id": -4,
     "banner_type": "4★ Guaranteed",
-    "characters": [2, 8, 10, 16, 18, 23]
+    "characters": [2, 8, 10, 16, 18, 23],
+    "keywords": []
   },
   {
     "id": 393,
@@ -5218,7 +5233,8 @@
     "cards": [447, 316, 357, 374, 335, 341],
     "en_id": -4,
     "banner_type": "Free Pull",
-    "characters": [2, 8, 10, 13, 20, 24]
+    "characters": [2, 8, 10, 13, 20, 24],
+    "keywords": []
   },
   {
     "id": 394,
@@ -5272,7 +5288,8 @@
     "cards": [411, 326, 178, 401, 291, 543],
     "en_id": -4,
     "banner_type": "Happiness Package",
-    "characters": [4, 7, 9, 15, 19, 24]
+    "characters": [4, 7, 9, 15, 19, 24],
+    "keywords": []
   },
   {
     "id": 398,
@@ -5344,7 +5361,8 @@
     "cards": [483, 427, 368],
     "en_id": -5,
     "banner_type": "Normal",
-    "characters": [3, 6, 16]
+    "characters": [3, 6, 16],
+    "keywords": []
   },
   {
     "id": 403,
@@ -5459,7 +5477,8 @@
     "cards": [479, 507, 482, 527, 555, 520, 504, 531, 353, 529],
     "en_id": -9,
     "banner_type": "Your Pick",
-    "characters": [1, 2, 5, 6, 10, 14, 18, 20, 25, 26]
+    "characters": [1, 2, 5, 6, 10, 14, 18, 20, 25, 26],
+    "keywords": []
   },
   {
     "id": 412,
@@ -5500,7 +5519,8 @@
     "cards": [484, 532, 522, 543, 496, 480],
     "en_id": -3,
     "banner_type": "Premium Gift",
-    "characters": [21, 22, 23, 24, 25, 26]
+    "characters": [21, 22, 23, 24, 25, 26],
+    "keywords": []
   },
   {
     "id": 415,
@@ -5612,7 +5632,8 @@
     "cards": [428, 507, 528, 424, 440, 531],
     "en_id": -3,
     "banner_type": "Premium Gift",
-    "characters": [2, 8, 9, 16, 20, 22]
+    "characters": [2, 8, 9, 16, 20, 22],
+    "keywords": []
   },
   {
     "id": 423,
@@ -5622,7 +5643,8 @@
     "cards": [574, 411, 482, 553, 520, 554],
     "en_id": -3,
     "banner_type": "Free Pull",
-    "characters": [4, 5, 12, 14, 17, 23]
+    "characters": [4, 5, 12, 14, 17, 23],
+    "keywords": []
   },
   {
     "id": 424,
@@ -5632,7 +5654,8 @@
     "cards": [37, 40, 38],
     "en_id": -3,
     "banner_type": "Premium Gift",
-    "characters": [19, 21, 23]
+    "characters": [19, 21, 23],
+    "keywords": []
   },
   {
     "id": 425,
@@ -5642,7 +5665,8 @@
     "cards": [572, 478, 355, 528, 396, 570, 521, 470, 503, 484],
     "en_id": -9,
     "banner_type": "Your Pick",
-    "characters": [1, 3, 7, 8, 9, 11, 13, 15, 19, 21]
+    "characters": [1, 3, 7, 8, 9, 11, 13, 15, 19, 21],
+    "keywords": []
   },
   {
     "id": 426,
@@ -5751,7 +5775,8 @@
     "cards": [573, 527, 587, 542, 530, 496],
     "en_id": -7,
     "banner_type": "Happiness Package",
-    "characters": [2, 6, 10, 16, 18, 25]
+    "characters": [2, 6, 10, 16, 18, 25],
+    "keywords": []
   },
   {
     "id": 435,
@@ -5881,7 +5906,8 @@
     "cards": [570, 553, 521, 542, 574, 480],
     "en_id": -3,
     "banner_type": "Premium Gift",
-    "characters": [11, 12, 13, 16, 23, 26]
+    "characters": [11, 12, 13, 16, 23, 26],
+    "keywords": []
   },
   {
     "id": 446,
@@ -5925,7 +5951,8 @@
     "cards": [410, 390, 445, 569, 585, 375, 401, 554, 428, 505],
     "en_id": -9,
     "banner_type": "Your Pick",
-    "characters": [2, 4, 5, 6, 11, 12, 15, 17, 22, 23]
+    "characters": [2, 4, 5, 6, 11, 12, 15, 17, 22, 23],
+    "keywords": []
   },
   {
     "id": 450,
@@ -5958,7 +5985,8 @@
     "cards": [289, 365, 37, 35, 146],
     "en_id": -3,
     "banner_type": "Premium Gift",
-    "characters": [21]
+    "characters": [21],
+    "keywords": []
   },
   {
     "id": 453,
@@ -6053,7 +6081,8 @@
     "cards": [572, 483, 585, 542, 530, 529],
     "en_id": -4,
     "banner_type": "Free Pull",
-    "characters": [1, 6, 11, 16, 18, 26]
+    "characters": [1, 6, 11, 16, 18, 26],
+    "keywords": []
   },
   {
     "id": 460,
@@ -6063,7 +6092,8 @@
     "cards": [484, 532, 599, 609, 509, 584],
     "en_id": -4,
     "banner_type": "Premium Gift",
-    "characters": [21, 22, 23, 24, 25, 26]
+    "characters": [21, 22, 23, 24, 25, 26],
+    "keywords": []
   },
   {
     "id": 461,
@@ -6073,17 +6103,19 @@
     "cards": [420, 176, 430, 248, 421, 395],
     "en_id": -4,
     "banner_type": "Your Pick",
-    "characters": [2, 8, 13, 14, 17, 20]
+    "characters": [2, 8, 13, 14, 17, 20],
+    "keywords": []
   },
   {
     "id": 462,
     "name": "[Vivid BAD SQUAD]ワールドリンクイベントサポートガチャ",
     "start": 1743476400000,
     "end": 1745290799000,
-    "cards": [396, 374, 423, 266, 131],
-    "en_id": -1,
+    "cards": [465, 466, 467, 468],
+    "en_id": 532,
     "banner_type": "World Link Support",
-    "characters": [9, 10, 11, 12, 21]
+    "characters": [9, 10, 11, 12],
+    "keywords": ["wl", "world link 1", "wl1"]
   },
   {
     "id": 463,
@@ -6216,10 +6248,11 @@
     "name": "[ワンダーランズ×ショウタイム]ワールドリンクイベントサポートガチャ",
     "start": 1746154800000,
     "end": 1747969199000,
-    "cards": [335, 312, 367, 279, 27],
-    "en_id": -1,
+    "cards": [489, 490, 491, 492],
+    "en_id": 533,
     "banner_type": "World Link Support",
-    "characters": [13, 14, 15, 16, 21]
+    "characters": [13, 14, 15, 16],
+    "keywords": ["wl", "world link 1", "wl1"]
   },
   {
     "id": 472,
@@ -6229,7 +6262,8 @@
     "cards": [669],
     "en_id": -3,
     "banner_type": "Collab",
-    "characters": [21]
+    "characters": [21],
+    "keywords": []
   },
   {
     "id": 473,
@@ -6336,7 +6370,8 @@
     "cards": [446, 412, 570, 470, 621, 522],
     "en_id": -7,
     "banner_type": "Happiness Package",
-    "characters": [4, 6, 11, 15, 17, 23]
+    "characters": [4, 6, 11, 15, 17, 23],
+    "keywords": []
   },
   {
     "id": 481,
@@ -6364,10 +6399,11 @@
     "name": "[25時、ナイトコードで。]ワールドリンクイベントサポートガチャ",
     "start": 1748833200000,
     "end": 1750647599000,
-    "cards": [339, 385, 291, 254, 146],
-    "en_id": -1,
+    "cards": [434, 435, 436, 437],
+    "en_id": 534,
     "banner_type": "World Link Support",
-    "characters": [17, 18, 19, 20, 21]
+    "characters": [17, 18, 19, 20],
+    "keywords": ["wl", "world link 1", "wl1"]
   },
   {
     "id": 483,
@@ -6421,12 +6457,13 @@
   {
     "id": 486,
     "name": "[Leo/need]ワールドリンクイベントサポートガチャ",
-    "cards": [479, 507, 427, 411, 289],
+    "cards": [544, 545, 546, 547],
     "start": 1750042800000,
     "end": 1751857199000,
-    "en_id": 529,
+    "en_id": 535,
     "banner_type": "World Link Support",
-    "characters": [1, 2, 3, 4, 21]
+    "characters": [1, 2, 3, 4],
+    "keywords": ["wl", "world link 1", "wl1"]
   },
   {
     "id": 487,
@@ -6467,7 +6504,8 @@
     "cards": [479, 622, 594, 571, 520, 555, 618, 503, 609, 496],
     "en_id": -9,
     "banner_type": "Your Pick",
-    "characters": [1, 2, 8, 10, 12, 13, 14, 19, 24, 25]
+    "characters": [1, 2, 8, 10, 12, 13, 14, 19, 24, 25],
+    "keywords": []
   },
   {
     "id": 490,
@@ -6541,17 +6579,18 @@
     "banner_type": "Limited Event Rerun",
     "characters": [4, 20, 25],
     "keywords": ["new year", "ny", "happy new year"]
-  },  {
+  },
+  {
     "id": 494,
     "name": "Seeking my way",
     "start": 1752548400000,
     "end": 1753239599000,
-    "cards": [1179, 1180,1181],
+    "cards": [1179, 1180, 1181],
     "en_id": 530,
-    "event_id":173,
+    "event_id": 173,
     "banner_type": "Event",
-    "characters": [3,1,22],
-     "keywords": [
+    "characters": [3, 1, 22],
+    "keywords": [
       "leo/need",
       "leoneed",
       "ln",
@@ -6561,12 +6600,13 @@
       "hona5",
       "honami5"
     ]
-  }, {
+  },
+  {
     "id": 495,
     "name": "[神代類]HAPPY BIRTHDAY2025ガチャ",
     "start": 1752937200000,
     "end": 1753498799000,
-    "cards": [1184,548, 388, 242],
+    "cards": [1184, 548, 388, 242],
     "en_id": 531,
     "banner_type": "Birthday",
     "characters": [15],
