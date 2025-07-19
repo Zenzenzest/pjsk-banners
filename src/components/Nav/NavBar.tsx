@@ -70,7 +70,6 @@ export default function NavBar() {
         </div>
       </nav>
       <Outlet />
-      <WebsiteDisclaimer />
     </>
   );
 }

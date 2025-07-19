@@ -3,6 +3,7 @@ import type { SelectedFilterTypes } from "../../Global/Types";
 import { useTheme } from "../../../context/Theme_toggle";
 import FilteredBanners from "./Filtered_banners";
 import FilteredCards from "./Filtered_cards";
+import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
 
 const grouped: Record<string, string[]> = {
   "Virtual Singers": [
@@ -277,9 +278,6 @@ export default function FilterTab() {
       ...prev,
       search: searchTerm,
     }));
-
-
-    
   };
 
   const handleReset = () => {
@@ -617,6 +615,7 @@ export default function FilterTab() {
           <FilteredCards selectedFilters={selectedCardFilters} />
         )}
       </div>
+      <WebsiteDisclaimer />
     </div>
   );
 }

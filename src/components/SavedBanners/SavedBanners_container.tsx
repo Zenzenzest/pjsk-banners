@@ -4,6 +4,7 @@ import { useServer } from "../../context/Server";
 import EnBanners from "../../assets/json/en_banners.json";
 import type { BannerTypes } from "../Global/Types";
 import BannerContainer from "../GachaContainer/Gacha_container";
+import WebsiteDisclaimer from "../Nav/Website_disclaimer";
 
 export default function SavedBannersContainer() {
   const [savedBanners, setSavedBanners] = useState<number[]>([]);
@@ -99,6 +100,7 @@ export default function SavedBannersContainer() {
           </p>
         </div>
       )}
+      <WebsiteDisclaimer />
     </div>
   );
 }

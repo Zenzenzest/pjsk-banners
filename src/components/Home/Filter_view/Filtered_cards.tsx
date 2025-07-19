@@ -188,7 +188,7 @@ export default function FilteredCards({
     <div
       className={`${
         theme == "dark" ? "bg-[#101828]" : "bg-[#f9fafb]"
-      } flex flex-col items-center justify-center gap-2 w-full pb-12`}
+      } flex flex-col items-center justify-center gap-2 w-full `}
       ref={filteredCardsRef}
     >
       <div className="flex  text-center flex-row w-full justify-center items-center pl-1 pr-1">

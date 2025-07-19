@@ -193,7 +193,7 @@ export default function FilteredBanners({
 
   return (
     <div
-      className={`${theme == "light" ? "bg-[#f9fafb]" : "bg-[#101828]"} pb-20`}
+      className={`${theme == "light" ? "bg-[#f9fafb]" : "bg-[#101828]"} `}
       ref={filteredBannersRef}
     >
       {/** BANNER COUNT WITH TOGGLE **/}

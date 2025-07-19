@@ -6,6 +6,7 @@ import { useTheme } from "../../../context/Theme_toggle";
 import type { BannerTypes, ServerTimeData } from "../../Global/Types";
 import { useServer } from "../../../context/Server";
 import BannerContainer from "../../GachaContainer/Gacha_container";
+import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
 
 const months = [
   "Jan",
@@ -109,17 +110,20 @@ export default function DateTabs() {
       const selectedButton = yearScrollRef.current.querySelector(
         `button[data-year="${selectedYear}"]`
       ) as HTMLElement;
-      
+
       if (selectedButton) {
         const container = yearScrollRef.current;
         const containerRect = container.getBoundingClientRect();
         const buttonRect = selectedButton.getBoundingClientRect();
-        
-        const scrollLeft = selectedButton.offsetLeft - (containerRect.width / 2) + (buttonRect.width / 2);
-        
+
+        const scrollLeft =
+          selectedButton.offsetLeft -
+          containerRect.width / 2 +
+          buttonRect.width / 2;
+
         container.scrollTo({
           left: scrollLeft,
-          behavior: 'smooth'
+          behavior: "smooth",
         });
       }
     }
@@ -138,7 +142,7 @@ export default function DateTabs() {
     const timer = setTimeout(() => {
       scrollToSelectedYear();
     }, 100); // Small delay to ensure DOM is updated
-    
+
     return () => clearTimeout(timer);
   }, [selectedYear, server]);
 
@@ -236,7 +240,7 @@ export default function DateTabs() {
             >
               Select Year
             </h2>
-            <div 
+            <div
               ref={yearScrollRef}
               className="flex overflow-x-auto pb-2 hide-scrollbar scroll-smooth"
             >
@@ -313,6 +317,7 @@ export default function DateTabs() {
           parentRef={dateTabsRef}
         />
       </div>
+      <WebsiteDisclaimer />
     </div>
   );
 }
