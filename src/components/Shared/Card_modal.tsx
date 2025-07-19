@@ -68,9 +68,9 @@ export default function CardModal({
               />
             </svg>
           </button>
-          <div className="flex flex-col items-center space-y-4">
+          <div className="flex flex-col items-center space-y-2">
             {/* CARD ATTRIBUTE AND CHARACTER NAME*/}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-1">
               <div className="relative">
                 <img
                   src={`/images/attribute_icons/${cardAttribute}.webp`}
@@ -79,7 +79,7 @@ export default function CardModal({
                 />
               </div>
               <h2
-                className={`text-2xl md:text-3xl font-bold font-serif tracking-wide w-[130px] sm:w-full text-center   ${
+                className={`text-xl md:text-3xl font-bold font-serif tracking-wide w-[130px] sm:w-full text-center   ${
                   theme === "dark" ? "text-white" : "text-gray-900"
                 }`}
               >
@@ -91,7 +91,7 @@ export default function CardModal({
 
             {/* CARD NAME*/}
             <div
-              className={`text-center px-4 py-2 rounded-lg ${
+              className={`text-center px-3 py-1 rounded-lg ${
                 theme === "dark"
                   ? "bg-gray-700/50 text-gray-300"
                   : "bg-gray-100 text-gray-600"
@@ -103,7 +103,7 @@ export default function CardModal({
         </div>
 
         {/* IMAGE*/}
-        <div className="p-6 space-y-6">
+        <div className="p-4 space-y-4">
           {/* Birthday Card (5 star or card ID 669) */}
           {/* CARDID 669 MIKU TOUHOU CARD THAT HAS NO TRAINED IMAGE  */}
           {(rarity === 5 || cardId === 669) && (
