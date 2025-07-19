@@ -26,6 +26,7 @@ export default function DateTabs() {
   const { theme } = useTheme();
   const { server } = useServer();
   const dateTabsRef = useRef<HTMLDivElement>(null);
+  const yearScrollRef = useRef<HTMLDivElement>(null);
 
   const years_global = [2021, 2022, 2023, 2024, 2025, 2026];
   const timeData_global: ServerTimeData[] = [
@@ -102,6 +103,28 @@ export default function DateTabs() {
     Record<number, number>
   >({});
 
+  // Auto-scroll to selected year
+  const scrollToSelectedYear = () => {
+    if (yearScrollRef.current && selectedYear) {
+      const selectedButton = yearScrollRef.current.querySelector(
+        `button[data-year="${selectedYear}"]`
+      ) as HTMLElement;
+      
+      if (selectedButton) {
+        const container = yearScrollRef.current;
+        const containerRect = container.getBoundingClientRect();
+        const buttonRect = selectedButton.getBoundingClientRect();
+        
+        const scrollLeft = selectedButton.offsetLeft - (containerRect.width / 2) + (buttonRect.width / 2);
+        
+        container.scrollTo({
+          left: scrollLeft,
+          behavior: 'smooth'
+        });
+      }
+    }
+  };
+
   useEffect(() => {
     const { defaultYear: newDefaultYear, defaultMonth: newDefaultMonth } =
       getDefaultValues();
@@ -109,6 +132,15 @@ export default function DateTabs() {
     setSelectedMonth(newDefaultMonth);
     setYearMonthMemory({});
   }, [server]);
+
+  // Auto-scroll when selectedYear changes
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      scrollToSelectedYear();
+    }, 100); // Small delay to ensure DOM is updated
+    
+    return () => clearTimeout(timer);
+  }, [selectedYear, server]);
 
   const getBannerStatus = (
     banner: BannerTypes
@@ -131,7 +163,6 @@ export default function DateTabs() {
       const bannerStartsInMonth =
         startDate >= selectedDate && startDate < nextMonth;
 
-      // Check if the selected month/year is the current month/year
       const isCurrentMonth =
         selectedYear === currentYearValue &&
         selectedMonth === currentMonthValue;
@@ -141,7 +172,6 @@ export default function DateTabs() {
       const bannerIsLive =
         Number(banner.start) <= now && now <= Number(banner.end);
 
-      // Only show ongoing banners from previous months if we're viewing the current month
       const shouldShowOngoing =
         bannerIsOngoingInMonth && bannerIsLive && isCurrentMonth;
 
@@ -190,7 +220,7 @@ export default function DateTabs() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 py-1 pt-3 max-sm:px-2">
-        {/* YEARS*/}
+        {/* SOLUTION 1: Improved Scrollable Years with Auto-scroll */}
         <div className="mb-4">
           <div
             className={`p-4 rounded-xl ${
@@ -206,13 +236,17 @@ export default function DateTabs() {
             >
               Select Year
             </h2>
-            <div className="flex overflow-x-auto pb-2 hide-scrollbar">
+            <div 
+              ref={yearScrollRef}
+              className="flex overflow-x-auto pb-2 hide-scrollbar scroll-smooth"
+            >
               <div className="flex space-x-1">
                 {years.map((year) => (
                   <button
                     key={year}
+                    data-year={year}
                     onClick={() => handleYearChange(year)}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium  ${
+                    className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap ${
                       year === selectedYear
                         ? theme === "dark"
                           ? "bg-blue-500/10 text-blue-400 border border-blue-500/20"
@@ -230,7 +264,7 @@ export default function DateTabs() {
           </div>
         </div>
 
-        {/* MONTHS*/}
+        {/* MONTHS */}
         <div className="mb-4">
           <div
             className={`p-4 rounded-xl ${
@@ -253,7 +287,7 @@ export default function DateTabs() {
                     <button
                       key={month}
                       onClick={() => handleMonthChange(month)}
-                      className={`px-3 py-2 rounded-lg text-sm font-medium  ${
+                      className={`px-3 py-2 rounded-lg text-sm font-medium ${
                         month === selectedMonth
                           ? theme === "dark"
                             ? "bg-blue-500/10 text-blue-400 border border-blue-500/20"
