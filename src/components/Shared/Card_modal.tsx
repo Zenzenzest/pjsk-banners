@@ -45,6 +45,7 @@ export default function CardModal({
       >
         {/* ATTRIBUTE AND NAME */}
         <div className="p-3 border-b border-gray-200 dark:border-gray-700">
+          {/* CLOSE BUTTON */}
           <button
             onClick={onClose}
             className={`absolute top-3 right-3 z-20 p-2 rounded-full transition-colors ${
@@ -68,21 +69,21 @@ export default function CardModal({
             </svg>
           </button>
           <div className="flex flex-col items-center space-y-4">
-            {/* Card Attribute & Character Name */}
+            {/* CARD ATTRIBUTE AND CHARACTER NAME*/}
             <div className="flex items-center space-x-3">
               <div className="relative">
                 <img
                   src={`/images/attribute_icons/${cardAttribute}.webp`}
-                  className="w-8 h-8 rounded-lg shadow-sm"
+                  className="w-full h-auto rounded-lg shadow-sm"
                   alt={`${cardAttribute} attribute`}
                 />
               </div>
               <h2
-                className={`text-2xl md:text-3xl font-bold font-serif tracking-wide ${
+                className={`text-2xl md:text-3xl font-bold font-serif tracking-wide w-[130px] sm:w-full text-center   ${
                   theme === "dark" ? "text-white" : "text-gray-900"
                 }`}
               >
-                <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent ">
                   {name}
                 </span>
               </h2>
@@ -112,7 +113,7 @@ export default function CardModal({
                   <div
                     className="animate-pulse bg-gray-300 dark:bg-gray-600 
                   
-                  aspect-[1.63/1] w-full rounded-lg"
+                  aspect-[1.759/1] w-full rounded-lg"
                   />
                 )}
                 <div className={`${!isLoading ? "contents" : "hidden"}`}>
@@ -164,7 +165,7 @@ export default function CardModal({
                     <div
                       className="animate-pulse bg-gray-300 dark:bg-gray-600 
                   
-                  aspect-[1.63/1] w-full rounded-lg"
+                  aspect-[1.759/1] w-full rounded-lg"
                     />
                   )}
                   <div className={`${!isLoading ? "contents" : "hidden"}`}>
@@ -210,7 +211,7 @@ export default function CardModal({
                       <div
                         className="animate-pulse bg-gray-300 dark:bg-gray-600 
                   
-                  aspect-[1.63/1] w-full rounded-lg"
+                  aspect-[1.759/1] w-full rounded-lg"
                       />
                     )}{" "}
                     <div className={`${!isLoading2 ? "contents" : "hidden"}`}>
@@ -259,7 +260,7 @@ export default function CardModal({
                   <div
                     className="animate-pulse bg-gray-300 dark:bg-gray-600 
                   
-                  aspect-[1.75/1] w-full rounded-lg"
+                  aspect-[1.759/1] w-full rounded-lg"
                   />
                 )}
                 <div className={`${!isLoading ? "contents" : "hidden"}`}>
