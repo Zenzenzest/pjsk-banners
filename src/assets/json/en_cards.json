@@ -11825,19 +11825,6 @@
     "sekai_id": 965
   },
   {
-    "id": 952,
-    "name": "The Place Where It All Began",
-    "character": "Megurine Luka",
-    "rarity": 2,
-    "unit": "Virtual Singers",
-    "attribute": "Cool",
-    "sub_unit": "Leo/Need",
-    "card_type": "event",
-    "real_id": 943,
-    "released": 1752789600000,
-    "sekai_id": 965
-  },
-  {
     "id": 953,
     "name": "Adding My Message!",
     "character": "Kagamine Rin",
