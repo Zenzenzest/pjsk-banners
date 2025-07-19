@@ -20,14 +20,16 @@ export default function EventCards({
     <div className="space-y-3">
       <div
         className={`grid ${
-          bannerCards.length === 4
-            ? "grid-cols-4 pb-1"
+          bannerCards.length === 4 && bannerShopCards.length >= 1
+            ? "grid-cols-3 sm:grid-cols-4 grid-rows-2 sm:grid-rows-1 pb-2 sm:pb-1"
             : bannerCards.length <= 3
             ? "grid-cols-3 pb-1"
-            : bannerCards.length > 4 && bannerShopCards.length < 1
-            ? "grid-cols-4 grid-rows-2"
+            : bannerCards.length >= 5 && bannerShopCards.length < 1
+            ? "grid-cols-3 sm:grid-cols-4 grid-rows-2 "
+            : bannerCards.length === 4 && bannerShopCards.length < 1
+            ? "grid-cols-3 sm:grid-cols-4 grid-rows-1 "
             : bannerCards.length > 4 && bannerShopCards.length > 0
-            ? "grid-cols-4 grid-rows-2 pb-2"
+            ? "grid-cols-3 sm:grid-cols-4 grid-rows-2 pb-2"
             : ""
         } gap-1 }`}
       >

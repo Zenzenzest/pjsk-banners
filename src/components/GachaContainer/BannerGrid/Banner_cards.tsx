@@ -21,7 +21,7 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
           !banner.event_id
             ? "grid-cols-4"
             : banner.cards.length > 3 && banner.event_id
-            ? "grid-cols-4"
+            ? "grid-cols-3 sm:grid-cols-4"
             : "grid-cols-3"
         } gap-1`}
       >
