@@ -290,42 +290,41 @@ export default function CardModal({
           )}
         </div>
 
-
-          {/* BANNERS */}
-          <CardReleases cardId={cardId}/>
+        {/* BANNERS */}
+        <CardReleases cardId={cardId} />
         {/* FOOTER BUTTONS */}
-        <div
-          className={`p-3 border-t ${
-            theme === "dark" ? "border-gray-700" : "border-gray-200"
-          }`}
-        >
-          <div className="flex flex-col sm:flex-row gap-3 sm:justify-between sm:items-center">
-            <a
-              href={`https://sekai.best/card/${sekaiId}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                theme === "dark"
-                  ? "bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/20"
-                  : "bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200"
-              }`}
+        <div className="flex flex-row justify-between items-center py-2">
+          <a
+            href={`https://sekai.best/card/${sekaiId}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-sm px-4 py-2 bg-[#152857] hover:bg-[#6e80b8] text-white rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          >
+            <span>View on Sekai Viewer</span>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 ml-1.5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
             >
-              <span>View on Sekai Viewer</span>
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
-              </svg>
-            </a>
-          </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
+          </a>
+
+          <button
+            onClick={onClose}
+            className="bg-[#152857] text-sm text-white px-4 py-2 rounded hover:bg-[#6e80b8]"
+          >
+            Close
+          </button>
         </div>
       </div>
     </div>
