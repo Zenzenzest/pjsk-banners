@@ -293,12 +293,16 @@ export default function CardModal({
         {/* BANNERS */}
         <CardReleases cardId={cardId} />
         {/* FOOTER BUTTONS */}
-        <div className="flex flex-row justify-between items-center py-2">
+        <div className="flex flex-row justify-between items-center p-2">
           <a
             href={`https://sekai.best/card/${sekaiId}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-sm px-4 py-2 bg-[#152857] hover:bg-[#6e80b8] text-white rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            className={`inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+              theme === "dark"
+                ? "bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/20"
+                : "bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200"
+            }`}
           >
             <span>View on Sekai Viewer</span>
 
@@ -321,7 +325,11 @@ export default function CardModal({
 
           <button
             onClick={onClose}
-            className="bg-[#152857] text-sm text-white px-4 py-2 rounded hover:bg-[#6e80b8]"
+            className={`inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+              theme === "dark"
+                ? "bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/20"
+                : "bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200"
+            }`}
           >
             Close
           </button>
