@@ -85,8 +85,12 @@ export default function FilteredCards({
     } else if (hasUnitFilter) {
       matchesCharacterOrUnit = matchesUnit;
     }
+    const searchTerm = selectedFilters.search.toLowerCase().trim();
+    const nameMatch = card.name?.toLowerCase().includes(searchTerm) || false;
 
-    return matchesCharacterOrUnit && matchesAttribute && matchesRarity;
+    return (
+      matchesCharacterOrUnit && matchesAttribute && matchesRarity && nameMatch
+    );
   });
 
   const sortedCards = [...filteredCards].sort((a, b) => {
