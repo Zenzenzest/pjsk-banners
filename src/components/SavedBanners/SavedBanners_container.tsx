@@ -15,6 +15,7 @@ export default function SavedBannersContainer() {
   useEffect(() => {
     const updateSavedBanners = () => {
       const saved = localStorage.getItem("banners");
+
       if (saved) {
         setSavedBanners(JSON.parse(saved));
       } else {
@@ -24,25 +25,30 @@ export default function SavedBannersContainer() {
 
     updateSavedBanners();
 
-    // Detect storage changed
+    // Listen for storage changes
+
     const handleStorageChange = (e: StorageEvent) => {
       if (e.key === "banners") {
         updateSavedBanners();
       }
     };
 
-    // detect custom storage events (for same-tab updates)
+    // Listen for custom storage events (for same-tab updates)
+
     const handleCustomStorageChange = () => {
       updateSavedBanners();
     };
 
     window.addEventListener("storage", handleStorageChange);
+
     window.addEventListener("localStorageChanged", handleCustomStorageChange);
 
     return () => {
       window.removeEventListener("storage", handleStorageChange);
+
       window.removeEventListener(
         "localStorageChanged",
+
         handleCustomStorageChange
       );
     };

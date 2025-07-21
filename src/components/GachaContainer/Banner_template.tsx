@@ -13,7 +13,6 @@ import EventEndedTimer from "./EventEnded_timer";
 import EventCards from "./EventGrid/Event_cards";
 import Cards from "./BannerGrid/Banner_cards";
 
-
 export default function BannerTemplate({
   banner,
   mode,
@@ -27,12 +26,33 @@ export default function BannerTemplate({
   const today = Date.now();
 
   useEffect(() => {
-    const saved = localStorage.getItem("banners");
-    if (saved) {
-      setSavedBanners(JSON.parse(saved));
-    }
+    const loadSavedBanners = () => {
+      const saved = localStorage.getItem("banners");
+      if (saved) {
+        try {
+          setSavedBanners(JSON.parse(saved));
+        } catch (error) {
+          console.error("Error parsing saved banners:", error);
+          setSavedBanners([]);
+        }
+      } else {
+        setSavedBanners([]);
+      }
+    };
 
+    loadSavedBanners();
     bannerLoader.reset();
+
+    // Listen for custom storage events
+    const handleStorageChange = () => {
+      loadSavedBanners();
+    };
+
+    window.addEventListener("localStorageChanged", handleStorageChange);
+
+    return () => {
+      window.removeEventListener("localStorageChanged", handleStorageChange);
+    };
   }, [banner]);
 
   const gachaBannerImage =
@@ -74,15 +94,33 @@ export default function BannerTemplate({
   };
 
   const handleSaveBanner = (id: number) => {
-    if (savedBanners.includes(id)) {
-      const updatedBanners = savedBanners.filter((item) => item !== id);
-      setSavedBanners(updatedBanners);
-      localStorage.setItem("banners", JSON.stringify(updatedBanners));
-    } else {
-      const updatedBanners = [...savedBanners, id];
-      setSavedBanners(updatedBanners);
-      localStorage.setItem("banners", JSON.stringify(updatedBanners));
+    // Get fresh data from localStorage to avoid stale state
+    const currentSaved = localStorage.getItem("banners");
+    let currentSavedArray: number[] = [];
+
+    if (currentSaved) {
+      try {
+        currentSavedArray = JSON.parse(currentSaved);
+      } catch (error) {
+        console.error("Error parsing current saved banners:", error);
+        currentSavedArray = [];
+      }
     }
+
+    let updatedBanners: number[];
+    if (currentSavedArray.includes(id)) {
+      updatedBanners = currentSavedArray.filter((item) => item !== id);
+    } else {
+      updatedBanners = [...currentSavedArray, id];
+    }
+
+    // Update localStorage
+    localStorage.setItem("banners", JSON.stringify(updatedBanners));
+
+    // Update local state
+    setSavedBanners(updatedBanners);
+
+    // Dispatch custom event to notify other components
     window.dispatchEvent(new Event("localStorageChanged"));
   };
 
