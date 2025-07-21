@@ -402,18 +402,17 @@ export default function FilterTab() {
         </button>
       </div>
 
-      {/* SEARCH INPUT - Only visible for banners */}
       <div
         className={`w-full px-4 py-3 ${
-          theme === "light" ? "bg-[#f5f7f9]" : "bg-bg-dark-mode"
+          theme === "light" ? "bg-[#f5f7f9]" : "bg-[#101828]"
         }`}
       >
-        <div className="relative">
+        <div className="relative flex justify-center">
           <input
             type="text"
             placeholder={`${
               viewMode === "banners"
-                ? "Search banners... (e.g., Banner name, Mafu4, wl1...)"
+                ? "Banner name, Mafu4, wl1..."
                 : "Card name"
             }`}
             value={
@@ -422,7 +421,7 @@ export default function FilterTab() {
                 : selectedCardFilters.search
             }
             onChange={(e) => handleSearchChange(e.target.value)}
-            className={`w-full px-3 py-2 pr-10 rounded-md border focus:outline-none focus:ring-2 focus:ring-[#52649e] ${
+            className={`w-[300px] sm:w-[500px] px-3 py-2 pr-10 rounded-md border focus:outline-none focus:ring-2 focus:ring-[#52649e] ${
               theme === "light"
                 ? "bg-white text-gray-900 border-gray-300"
                 : "bg-gray-700 text-white border-gray-600"
