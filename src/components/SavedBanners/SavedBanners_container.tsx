@@ -106,9 +106,10 @@ export default function SavedBannersContainer() {
               any upcoming banner
             </p>
           </div>
-        )}
+        )}{" "}
+        {savedBanners.length >= 1 && <WebsiteDisclaimer />}
       </div>
-      <WebsiteDisclaimer />
+      {savedBanners.length === 0 && <WebsiteDisclaimer />}
     </>
   );
 }
