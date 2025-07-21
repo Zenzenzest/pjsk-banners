@@ -61,52 +61,54 @@ export default function SavedBannersContainer() {
   });
 
   return (
-    <div
-      className={`h-dvh w-full ${
-        theme == "dark"
-          ? "bg-[#0e1721] text-gray-200"
-          : "bg-[#f2f2f2] text-gray-700"
-      }`}
-    >
-      {savedBanners.length >= 1 ? (
-        <div>
-          <BannerContainer
-            filteredBanners={filteredBanners}
-            parentRef={savedRef}
-          />
-        </div>
-      ) : (
-        <div className="flex flex-col items-center justify-center h-[60vh] gap-4 px-4 text-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className={`h-12 w-12 ${
-              theme === "dark" ? "text-gray-500" : "text-gray-400"
-            }`}
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"
+    <>
+      <div
+        className={`h-[75vh] w-full ${
+          theme == "dark"
+            ? "bg-[#0e1721] text-gray-200"
+            : "bg-[#f2f2f2] text-gray-700"
+        }`}
+      >
+        {savedBanners.length >= 1 ? (
+          <div>
+            <BannerContainer
+              filteredBanners={filteredBanners}
+              parentRef={savedRef}
             />
-          </svg>
-          <h3 className="text-lg font-medium">
-            Your saved banners will appear here
-          </h3>
-          <p
-            className={`max-w-md ${
-              theme === "dark" ? "text-gray-400" : "text-gray-500"
-            }`}
-          >
-            Save banners you want to track by clicking the "Save" button on any
-            upcoming banner
-          </p>
-        </div>
-      )}
+          </div>
+        ) : (
+          <div className="flex flex-col items-center justify-center h-[60vh] gap-4 px-4 text-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className={`h-12 w-12 ${
+                theme === "dark" ? "text-gray-500" : "text-gray-400"
+              }`}
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1.5}
+                d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"
+              />
+            </svg>
+            <h3 className="text-lg font-medium">
+              Your saved banners will appear here
+            </h3>
+            <p
+              className={`max-w-md ${
+                theme === "dark" ? "text-gray-400" : "text-gray-500"
+              }`}
+            >
+              Save banners you want to track by clicking the "Save" button on
+              any upcoming banner
+            </p>
+          </div>
+        )}
+      </div>
       <WebsiteDisclaimer />
-    </div>
+    </>
   );
 }
