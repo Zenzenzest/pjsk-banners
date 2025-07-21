@@ -40,11 +40,9 @@ export default function FilteredBanners({
   selectedFilters,
 }: FilteredBannersPropType) {
   const { server } = useServer();
-  // Define a type that covers all possible banner properties
-
-  const [filteredBanners, setFilteredBanners] = useState<BannerTypes[]>([]); // Initialize as empty array with proper type
+  const [filteredBanners, setFilteredBanners] = useState<BannerTypes[]>([]); 
   const [currentPage, setCurrentPage] = useState(1);
-  const [bannersPerPage] = useState(10); // You can make this configurable
+  const [bannersPerPage] = useState(10);
   const [shouldScrollToTop, setShouldScrollToTop] = useState(false);
   const [hideFutureBanners, setHideFutureBanners] = useState(true);
   const { theme } = useTheme();
@@ -66,7 +64,7 @@ export default function FilteredBanners({
 
     let filtered = [...bannersArr];
 
-    //Filter out future banners (only if toggle is enabled)
+    //Filter out future banners (if toggle is enabled)
     if (hideFutureBanners) {
       const currentTime = Date.now();
       filtered = filtered.filter((banner) => banner.start <= currentTime);
@@ -82,7 +80,8 @@ export default function FilteredBanners({
     //Apply Characters filter
     if (selectedFilters.Characters.length > 0) {
       filtered = filtered.filter((banner) => {
-        //* Convert selected character names to their corresponding IDs*
+        
+        // Convert selected character names to their corresponding IDs
         const selectedCharacterIds = selectedFilters.Characters.map(
           (characterName) => {
             const index = characters.indexOf(characterName);
@@ -90,16 +89,26 @@ export default function FilteredBanners({
           }
         ).filter((id) => id !== null);
 
-        //Check if selected character filters match in banners
-        return (
-          selectedCharacterIds.length > 0 &&
-          selectedCharacterIds.every((characterId) =>
-            banner.characters?.includes(characterId)
-          )
-        );
+        // Early return if no valid character IDs found
+        if (selectedCharacterIds.length === 0) {
+          return false;
+        }
+
+
+        // Apply filter based on selected mode
+        if (selectedFilters.characterFilterMode === "all") {
+          // All selected characters must be present in the banner
+          return selectedCharacterIds.every((characterId) =>
+            banner.characters.includes(characterId)
+          );
+        } else {
+          // "any" mode - at least one selected character must be present
+          return selectedCharacterIds.some((characterId) =>
+            banner.characters.includes(characterId)
+          );
+        }
       });
     }
-
     //* Apply search filter
     if (selectedFilters.search.trim() !== "") {
       const searchTerm = selectedFilters.search.toLowerCase().trim();
