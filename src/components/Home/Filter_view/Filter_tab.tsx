@@ -105,16 +105,18 @@ type BannerFilterTypes = {
   "Banner Type": string[];
   Characters: string[];
   search: string;
+  characterFilterMode: "all" | "any";
 };
 
 export default function FilterTab() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [viewMode, setViewMode] = useState<"banners" | "cards">("banners");
-  const [tempFilters, setTempFilters] = useState<SelectedFilterTypes>({
+  const [tempCardFilters, setTempCardFilters] = useState<SelectedFilterTypes>({
     Character: [],
     Unit: [],
     Attribute: [],
     Rarity: [],
+    search: "",
   });
 
   const [tempBannerFilters, setTempBannerFilters] = useState<BannerFilterTypes>(
@@ -122,6 +124,7 @@ export default function FilterTab() {
       "Banner Type": [],
       Characters: [],
       search: "",
+      characterFilterMode: "all",
     }
   );
 
@@ -132,6 +135,7 @@ export default function FilterTab() {
       Unit: [],
       Attribute: [],
       Rarity: [],
+      search: "",
     });
 
   const [selectedBannerFilters, setSelectedBannerFilters] =
@@ -139,6 +143,7 @@ export default function FilterTab() {
       "Banner Type": [],
       Characters: [],
       search: "",
+      characterFilterMode: "all",
     });
 
   const { theme } = useTheme();
@@ -167,7 +172,7 @@ export default function FilterTab() {
   }, [isOpen]);
 
   const handleCardFilters = (category: string, option: string | number) => {
-    setTempFilters((prev) => {
+    setTempCardFilters((prev) => {
       if (category === "Unit") {
         const unit = option as string;
         const isSelected = prev.Unit.includes(unit);
@@ -266,33 +271,56 @@ export default function FilterTab() {
     });
   };
 
-  // handle immediate search changes
-  const handleSearchChange = (searchTerm: string) => {
+  //  handle character filter mode toggle
+  const handleCharacterFilterModeToggle = () => {
     setTempBannerFilters((prev) => ({
       ...prev,
-      search: searchTerm,
+      characterFilterMode: prev.characterFilterMode === "all" ? "any" : "all",
     }));
+  };
 
-    // Apply the search immediately
-    setSelectedBannerFilters((prev) => ({
-      ...prev,
-      search: searchTerm,
-    }));
+  // handle immediate search changes
+  const handleSearchChange = (searchTerm: string) => {
+    if (viewMode === "banners") {
+      setTempBannerFilters((prev) => ({
+        ...prev,
+        search: searchTerm,
+      }));
+
+      // Apply the search immediately
+      setSelectedBannerFilters((prev) => ({
+        ...prev,
+        search: searchTerm,
+      }));
+    } else {
+      setTempCardFilters((prev) => ({
+        ...prev,
+        search: searchTerm,
+      }));
+
+      // Apply the search immediately
+      setSelectedCardFilters((prev) => ({
+        ...prev,
+        search: searchTerm,
+      }));
+    }
   };
 
   const handleReset = () => {
     if (viewMode === "cards") {
-      setTempFilters({
+      setTempCardFilters({
         Character: [],
         Unit: [],
         Attribute: [],
         Rarity: [],
+        search: "",
       });
     } else {
       setTempBannerFilters({
         "Banner Type": [],
         Characters: [],
         search: "",
+        characterFilterMode: "all",
       });
     }
 
@@ -302,12 +330,14 @@ export default function FilterTab() {
         Unit: [],
         Attribute: [],
         Rarity: [],
+        search: "",
       });
     } else {
       setSelectedBannerFilters({
         "Banner Type": [],
         Characters: [],
         search: "",
+        characterFilterMode: "all",
       });
     }
     setIsOpen(false);
@@ -315,7 +345,7 @@ export default function FilterTab() {
 
   const handleApply = () => {
     if (viewMode === "cards") {
-      setSelectedCardFilters(tempFilters);
+      setSelectedCardFilters(tempCardFilters);
     } else {
       setSelectedBannerFilters(tempBannerFilters);
     }
@@ -369,54 +399,59 @@ export default function FilterTab() {
       </div>
 
       {/* SEARCH INPUT - Only visible for banners */}
-      {viewMode === "banners" && (
-        <div
-          className={`w-full px-4 py-3 ${
-            theme === "light" ? "bg-[#f5f7f9]" : "bg-bg-dark-mode"
-          }`}
-        >
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="Search banners... (e.g., Banner name, Mafu4, wl1...)"
-              value={selectedBannerFilters.search}
-              onChange={(e) => handleSearchChange(e.target.value)}
-              className={`w-full px-3 py-2 pr-10 rounded-md border focus:outline-none focus:ring-2 focus:ring-[#52649e] ${
+      <div
+        className={`w-full px-4 py-3 ${
+          theme === "light" ? "bg-[#f5f7f9]" : "bg-bg-dark-mode"
+        }`}
+      >
+        <div className="relative">
+          <input
+            type="text"
+            placeholder={`${
+              viewMode === "banners"
+                ? "Search banners... (e.g., Banner name, Mafu4, wl1...)"
+                : "Card name"
+            }`}
+            value={
+              viewMode === "banners"
+                ? selectedBannerFilters.search
+                : selectedCardFilters.search
+            }
+            onChange={(e) => handleSearchChange(e.target.value)}
+            className={`w-full px-3 py-2 pr-10 rounded-md border focus:outline-none focus:ring-2 focus:ring-[#52649e] ${
+              theme === "light"
+                ? "bg-white text-gray-900 border-gray-300"
+                : "bg-gray-700 text-white border-gray-600"
+            }`}
+          />
+          {selectedBannerFilters.search && (
+            <button
+              onClick={() => handleSearchChange("")}
+              className={`absolute right-2 top-1/2 transform -translate-y-1/2 p-1 rounded-full hover:bg-opacity-20 transition-colors ${
                 theme === "light"
-                  ? "bg-white text-gray-900 border-gray-300"
-                  : "bg-gray-700 text-white border-gray-600"
+                  ? "text-gray-500 hover:bg-gray-500"
+                  : "text-gray-400 hover:bg-gray-400"
               }`}
-            />
-            {selectedBannerFilters.search && (
-              <button
-                onClick={() => handleSearchChange("")}
-                className={`absolute right-2 top-1/2 transform -translate-y-1/2 p-1 rounded-full hover:bg-opacity-20 transition-colors ${
-                  theme === "light"
-                    ? "text-gray-500 hover:bg-gray-500"
-                    : "text-gray-400 hover:bg-gray-400"
-                }`}
-                aria-label="Clear search"
+              aria-label="Clear search"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-5 h-5"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            )}
-          </div>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          )}
         </div>
-      )}
-
+      </div>
       <div
         className={`p-3 w-full shrink-0  flex flex-col justify-end items-center ${
           theme == "light" ? "bg-[#f9fafb]" : "bg-[#101828]"
@@ -461,17 +496,19 @@ export default function FilterTab() {
                     const isSelected = (() => {
                       switch (category) {
                         case "Characters":
-                          return tempFilters.Character.includes(
+                          return tempCardFilters.Character.includes(
                             option as string
                           );
                         case "Unit":
-                          return tempFilters.Unit.includes(option as string);
+                          return tempCardFilters.Unit.includes(
+                            option as string
+                          );
                         case "Attribute":
-                          return tempFilters.Attribute.includes(
+                          return tempCardFilters.Attribute.includes(
                             option as string
                           );
                         case "Rarity":
-                          return tempFilters.Rarity.includes(option);
+                          return tempCardFilters.Rarity.includes(option);
                         default:
                           return false;
                       }
@@ -479,11 +516,11 @@ export default function FilterTab() {
 
                     const isOutsideUnit =
                       category === "Characters" &&
-                      tempFilters.Unit.length > 0 &&
-                      !tempFilters.Unit.some((unit) =>
+                      tempCardFilters.Unit.length > 0 &&
+                      !tempCardFilters.Unit.some((unit) =>
                         grouped[unit]?.includes(option as string)
                       ) &&
-                      !tempFilters.Character.includes(option as string);
+                      !tempCardFilters.Character.includes(option as string);
                     return (
                       <button
                         key={option as string}
@@ -561,9 +598,55 @@ export default function FilterTab() {
 
             {/* CHARACTERS FILTER */}
             <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2 text-white">
-                Characters
-              </h3>
+              <div className="flex justify-between items-center mb-2">
+                <h3 className="text-lg font-semibold text-white">Characters</h3>
+
+                {/* CHARACTER FILTER MODE TOGGLE */}
+                {tempBannerFilters.Characters.length > 1 && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm text-gray-300">
+                      {tempBannerFilters.characterFilterMode === "all"
+                        ? "All selected"
+                        : "Any selected"}
+                    </span>
+                    <label className="relative inline-flex items-center cursor-pointer">
+                      <input
+                        type="checkbox"
+                        className="sr-only"
+                        checked={
+                          tempBannerFilters.characterFilterMode === "any"
+                        }
+                        onChange={handleCharacterFilterModeToggle}
+                      />
+                      <div
+                        className={`w-11 h-6 rounded-full transition-colors ${
+                          tempBannerFilters.characterFilterMode === "any"
+                            ? "bg-blue-500"
+                            : "bg-gray-400"
+                        }`}
+                      >
+                        <div
+                          className={`w-5 h-5 bg-white rounded-full transition-transform duration-200 transform ${
+                            tempBannerFilters.characterFilterMode === "any"
+                              ? "translate-x-5"
+                              : "translate-x-0.5"
+                          } mt-0.5`}
+                        ></div>
+                      </div>
+                    </label>
+                  </div>
+                )}
+              </div>
+
+              {/* SHOW EXPLANATION */}
+              {tempBannerFilters.Characters.length > 1 && (
+                <div className="mb-3 p-2 bg-gray-700 rounded text-xs text-gray-300">
+                  {tempBannerFilters.characterFilterMode === "all"
+                    ? "Show banners that contain ALL selected characters"
+                    : "Show banners that contain ANY of the selected characters"}
+                </div>
+              )}
+
               <div className="flex justify-center items-center flex-wrap gap-3">
                 {bannerFilterCategories.Characters.map((character, i) => {
                   const characterIcon = `/images/character_icons/${i + 1}.webp`;

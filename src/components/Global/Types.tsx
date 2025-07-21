@@ -25,6 +25,7 @@ export type SelectedFilterTypes = {
   Unit: string[];
   Attribute: string[];
   Rarity: (string | number)[];
+  search: string;
 };
 export type SelectedFilterTypesProps = {
   selectedFilters: SelectedFilterTypes;
@@ -110,19 +111,19 @@ export type SelectedBannerFilterTypes = {
   "Banner Type": string[];
   Characters: string[];
   search: string;
+  characterFilterMode: "any" | "all";
 };
 
 export type FilteredBannersPropType = {
   selectedFilters: SelectedBannerFilterTypes;
 };
 
-
 export interface CardGridPropType {
   mode: string;
   cardId: number;
-  cardName:string
+  cardName: string;
 }
 
 export interface CardReleasesType {
-  cardId: number
+  cardId: number;
 }
