@@ -4,6 +4,7 @@ import { useTheme } from "../../../context/Theme_toggle";
 import FilteredBanners from "./Filtered_banners";
 import FilteredCards from "./Filtered_cards";
 import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
+import { useServer } from "../../../context/Server";
 
 const grouped: Record<string, string[]> = {
   "Virtual Singers": [
@@ -145,7 +146,7 @@ export default function FilterTab() {
       search: "",
       characterFilterMode: "all",
     });
-
+  const { server } = useServer();
   const { theme } = useTheme();
   const panelRef = useRef<HTMLDivElement>(null);
   const toggleFilter = () => setIsOpen((prev) => !prev);
@@ -306,6 +307,9 @@ export default function FilterTab() {
     }
   };
 
+  useEffect(() => {
+    handleReset();
+  }, [server]);
   const handleReset = () => {
     if (viewMode === "cards") {
       setTempCardFilters({
