@@ -407,7 +407,7 @@ export default function FilterTab() {
           theme === "light" ? "bg-[#f5f7f9]" : "bg-[#101828]"
         }`}
       >
-        <div className="relative flex justify-center">
+        <div className="relative w-[300px] sm:w-[500px] mx-auto">
           <input
             type="text"
             placeholder={`${
@@ -421,7 +421,7 @@ export default function FilterTab() {
                 : selectedCardFilters.search
             }
             onChange={(e) => handleSearchChange(e.target.value)}
-            className={`w-[300px] sm:w-[500px] px-3 py-2 pr-10 rounded-md border focus:outline-none focus:ring-2 focus:ring-[#52649e] ${
+            className={`w-full px-3 py-2 pr-10 rounded-md border focus:outline-none focus:ring-2 focus:ring-[#52649e] ${
               theme === "light"
                 ? "bg-white text-gray-900 border-gray-300"
                 : "bg-gray-700 text-white border-gray-600"
