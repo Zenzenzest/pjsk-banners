@@ -6569,11 +6569,11 @@
   {
     "id": 533,
     "name": "Wonderlands×Showtime World Link 2 Event Support Gacha",
-    "cards": [465, 466, 467, 468],
+     "cards": [489, 490, 491, 492],
     "start": 1777748400000,
     "end": 1779562799000,
     "banner_type": "World Link Support",
-    "characters": [9, 10, 11, 12],
+    "characters": [13,14,15,16],
     "keywords": ["wl", "world link 1", "wl1"]
   },
   {
