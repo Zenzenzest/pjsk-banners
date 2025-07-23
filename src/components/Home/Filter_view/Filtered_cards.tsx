@@ -194,7 +194,7 @@ export default function FilteredCards({
   if (filteredCards.length === 0) {
     return (
       <div
-        className={`p-8 text-center ${
+        className={`p-8 h-[75vh] text-center ${
           theme === "light"
             ? "text-gray-600 bg-[#f9fafb]"
             : "text-gray-400 bg-[#101828]"
