@@ -180,7 +180,9 @@ export default function FilteredCards({
     return (
       <div
         className={`p-8 text-center ${
-          theme === "light" ? "text-gray-600" : "text-gray-400"
+          theme === "light"
+            ? "text-gray-600 bg-[#f9fafb]"
+            : "text-gray-400 bg-[#101828]"
         }`}
       >
         No cards match the selected filters.
