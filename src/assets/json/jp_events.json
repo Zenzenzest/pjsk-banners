@@ -3165,5 +3165,26 @@
     ],
     "event_type": "marathon",
     "type": "Honami 5th Focus Event"
+  },
+  {
+    "id": 174,
+    "name": "start rolling! stars' crossing",
+    "start": 1753250400000,
+    "end": 1753790399000,
+    "close": 1753941599000,
+    "unit": "mmj",
+    "banner_id": 496,
+    "cards": [1185, 1186, 1187, 1188, 1189],
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "minori",
+      "mino6",
+      "minori6",
+      "focus"
+    ],
+    "event_type": "marathon",
+    "type": "Minori 6th Focus Event"
   }
 ]

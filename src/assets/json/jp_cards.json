@@ -14420,5 +14420,73 @@
     "card_type": "bday",
     "released": 1752937200000,
     "sekai_id": 1206
+  },
+  {
+    "id": 1185,
+    "name": "素直な想いを紡いで",
+    "character": "Hanasato Minori",
+    "rarity": 4,
+    "unit": "MORE MORE JUMP!",
+    "attribute": "Pure",
+    "real_id": 1103,
+    "card_type": "event",
+    "released": 1753239600000,
+    "sekai_id": 1207
+  },  {
+    "id": 1186,
+    "name": "Fantastic！トレーニングルーム",
+    "character": "Kiritani Haruka",
+    "rarity": 4,
+    "unit": "MORE MORE JUMP!",
+    "attribute": "Pure",
+    "real_id": 1103,
+    "card_type": "event",
+    "released": 1753239600000,
+    "sekai_id": 1208
+  }, {
+    "id": 1187,
+    "name": "「ホッとする朝ごはん」",
+    "character": "Hinomori Shizuku",
+    "rarity": 4,
+    "unit": "MORE MORE JUMP!",
+    "attribute": "Pure",
+    "real_id": 1103,
+    "card_type": "event",
+    "released": 1753239600000,
+    "sekai_id": 1209
+  },  {
+    "id": 1188,
+    "name": "愛莉のビューティーサロン",
+    "character": "Momoi Airi",
+    "rarity": 3,
+    "unit": "MORE MORE JUMP!",
+    "attribute": "Mysterious",
+    "real_id": 1103,
+    "card_type": "event",
+    "released": 1753250400000,
+    "sekai_id": 1210
+  }, {
+    "id": 1189,
+    "name": "セカイのアイドルファン",
+    "character": "KAITO",
+    "rarity": 2,
+    "unit": "Virtual Singers",
+    "attribute": "Cool",
+    "sub_unit":"MORE MORE JUMP!",
+    "real_id": 1103,
+    "card_type": "event",
+    "released": 1753250400000,
+    "sekai_id": 1211
+  }, {
+    "id": 1190,
+    "name": "Happy Birthday！！2025",
+    "character": "Shiraishi An",
+    "rarity": 5,
+    "unit": "Vivid BAD SQUAD",
+    "attribute": "Happy",
+    "real_id": 1103,
+    "card_type": "bday",
+    "released": 1753455600000,
+    "sekai_id": 1212
   }
 ]
