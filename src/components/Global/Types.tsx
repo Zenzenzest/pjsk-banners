@@ -81,6 +81,7 @@ export interface CardState {
   cardName: string;
   cardAttribute: string;
   sekaiId: number;
+  cardType: string;
 }
 
 export interface CardModalProps extends CardState {

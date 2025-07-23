@@ -32,6 +32,7 @@ export default function BannerContainer({
     cardName: "",
     cardAttribute: "",
     sekaiId: 0,
+    cardType: ""
   });
 
   // Handle scroll detection
@@ -68,6 +69,7 @@ export default function BannerContainer({
         server === "global" || server === "saved" ? card.name : card.jp_name,
       cardAttribute: card.attribute,
       sekaiId: card.jp_sekai_id,
+      cardType: card.card_type
     });
     setIsOpen(true);
   };

@@ -32,6 +32,7 @@ export default function FilteredCards({
     cardName: "",
     cardAttribute: "",
     sekaiId: 0,
+    cardType: "",
   });
 
   const { server } = useServer();
@@ -47,6 +48,7 @@ export default function FilteredCards({
         cardName: card.name,
         cardAttribute: card.attribute,
         sekaiId: card.sekai_id,
+        cardType: card.card_type,
       });
     }
     setIsOpen(true);

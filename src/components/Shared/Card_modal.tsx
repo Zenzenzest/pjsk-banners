@@ -8,6 +8,7 @@ export default function CardModal({
   onClose,
   cardId,
   rarity,
+  cardType,
   isLoading,
   setIsLoading,
   isLoading2,
@@ -84,12 +85,14 @@ export default function CardModal({
                   theme === "dark" ? "text-white" : "text-gray-900"
                 }`}
               >
-                <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent ">
+                <span
+                  className="bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]   
+                    "
+                >
                   {name}
                 </span>
               </h2>
             </div>
-
             {/* CARD NAME*/}
             <div
               className={`text-center px-3 py-1 rounded-lg ${
@@ -99,7 +102,33 @@ export default function CardModal({
               }`}
             >
               <p className="text-sm font-medium italic">{cardName}</p>
-            </div>
+            </div>{" "}
+            <span
+              className="
+      px-1.5 py-0.5 rounded-full text-[10px] bg-gray-700 text-gray-300
+    "
+            >
+              {(() => {
+                switch (cardType) {
+                  case "limited":
+                    return "LIMITED";
+                  case "bday":
+                    return "BDAY";
+                  case "bloom_fes":
+                    return "BLOOMFES";
+                  case "color_fes":
+                    return "COLORFES";
+                  case "movie_exclusive":
+                    return "MOVIE EXCLUSIVE";
+                  case "limited_collab":
+                    return "COLLAB";
+                  case "unit_limited":
+                    return "UNIT LIMITED";
+                  default:
+                    return "PERMANENT";
+                }
+              })()}
+            </span>
           </div>
         </div>
 
@@ -192,16 +221,7 @@ export default function CardModal({
                   </div>
                 </div>
 
-                {/*UNTRAINED LABEL */}
-                <div
-                  className={`mt-2 text-center px-3 py-1 rounded-lg text-sm font-medium ${
-                    theme === "dark"
-                      ? "bg-gray-700 text-gray-300"
-                      : "bg-gray-100 text-gray-600"
-                  }`}
-                >
-                  Untrained
-                </div>
+        
               </div>
 
               {/* TRAINED CARD */}
@@ -238,16 +258,7 @@ export default function CardModal({
                     </div>
                   </div>
 
-                  {/* TRAINED LABEL*/}
-                  <div
-                    className={`mt-2 text-center px-3 py-1 rounded-lg text-sm font-medium ${
-                      theme === "dark"
-                        ? "bg-gray-700 text-gray-300"
-                        : "bg-gray-100 text-gray-600"
-                    }`}
-                  >
-                    Trained
-                  </div>
+              
                 </div>
               )}
             </div>
