@@ -427,7 +427,8 @@ export default function FilterTab() {
                 : "bg-gray-700 text-white border-gray-600"
             }`}
           />
-          {selectedBannerFilters.search && (
+          {((selectedBannerFilters.search && viewMode === "banners") ||
+            (selectedCardFilters.search && viewMode === "cards")) && (
             <button
               onClick={() => handleSearchChange("")}
               className={`absolute right-2 top-1/2 transform -translate-y-1/2 p-1 rounded-full hover:bg-opacity-20 transition-colors ${
