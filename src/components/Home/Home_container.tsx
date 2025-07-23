@@ -37,8 +37,8 @@ export default function HomeContainer() {
                   "bg-highlight-dark-mode text-text-dark-mode"
                 } ${
                   viewMode == "filterview" && theme == "light"
-                    ? "text-text-light-mode"
-                    : "bg-bg-dark-mode"
+                    ? "text-[#364153] "
+                    : "bg-bg-dark-mode text-[#f2f3f6]"
                 } w-1/2 h-full pt-1`}
               >
                 Calendar View
@@ -50,8 +50,8 @@ export default function HomeContainer() {
                   "bg-highlight-dark-mode text-text-dark-mode"
                 } ${
                   viewMode == "dateview" && theme == "light"
-                    ? "text-text-light-mode"
-                    : "bg-bg-dark-mode"
+                    ? "text-[#364153]"
+                    : "bg-bg-dark-mode text-[#f2f3f6]"
                 } `}
               >
                 Filter & Search

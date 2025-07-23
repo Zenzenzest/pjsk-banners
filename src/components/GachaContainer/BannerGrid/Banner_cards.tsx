@@ -6,7 +6,6 @@ import { ImageLoader } from "../../../hooks/imageLoader";
 
 export default function Cards({ banner, handleCardClick }: CardsProps) {
   const { theme } = useTheme();
-
   const formatId = (id: number) => String(id).padStart(4, "0");
   const iconsLoader = ImageLoader(banner.cards.length);
 
@@ -39,23 +38,40 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
           {banner.cards.map((card, i) => {
             const formattedCardId = formatId(card);
             const cardIconImage = `/images/card_icons/${formattedCardId}_t.webp`;
-
             return (
               <div
                 key={i}
-                className="group cursor-pointer transition-transform duration-200 hover:scale-105"
+                className="group cursor-pointer will-change-transform"
                 onClick={() => handleCardClick(AllCards[card - 1])}
+                style={{
+                  transition: 'transform 0.2s ease-out'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.05)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}
               >
                 <div
-                  className={`relative overflow-hidden rounded-xl ${
+                  className={`relative overflow-hidden rounded-xl aspect-square ${
                     theme === "dark" ? "bg-gray-700" : "bg-gray-100"
                   }`}
                 >
                   <img
                     src={cardIconImage}
-                    className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
+                    className="w-full h-full object-cover will-change-opacity"
                     alt={`Card ${card}`}
                     onLoad={iconsLoader.handleLoad}
+                    style={{
+                      transition: 'opacity 0.2s ease-out'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.opacity = '0.8';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.opacity = '1';
+                    }}
                   />
                 </div>
                 <p
