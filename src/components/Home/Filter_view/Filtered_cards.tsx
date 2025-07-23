@@ -68,8 +68,12 @@ export default function FilteredCards({
     }
     const hasCharacterFilter = selectedFilters.Character.length > 0;
     const hasUnitFilter = selectedFilters.Unit.length > 0;
+    const hasSubUnitFilter = selectedFilters.sub_unit.length > 0;
     const matchesCharacter = selectedFilters.Character.includes(card.character);
     const matchesUnit = selectedFilters.Unit.includes(card.unit);
+    const matchesSubUnit =
+      (card.sub_unit && selectedFilters.sub_unit.includes(card.sub_unit)) ||
+      !card.sub_unit;
     const matchesAttribute =
       selectedFilters.Attribute.length === 0 ||
       selectedFilters.Attribute.includes(card.attribute);
@@ -87,11 +91,20 @@ export default function FilteredCards({
     } else if (hasUnitFilter) {
       matchesCharacterOrUnit = matchesUnit;
     }
+    let subUnitMatch = true;
+
+    if (hasSubUnitFilter) {
+      subUnitMatch = matchesSubUnit;
+    }
     const searchTerm = selectedFilters.search.toLowerCase().trim();
     const nameMatch = card.name?.toLowerCase().includes(searchTerm) || false;
 
     return (
-      matchesCharacterOrUnit && matchesAttribute && matchesRarity && nameMatch
+      matchesCharacterOrUnit &&
+      matchesAttribute &&
+      matchesRarity &&
+      nameMatch &&
+      subUnitMatch
     );
   });
 

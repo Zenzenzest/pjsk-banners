@@ -84,6 +84,13 @@ const filterCategories = {
     "Wonderlands x Showtime",
     "Nightcord at 25:00",
   ],
+  sub_unit: [
+    "Leo/Need",
+    "MORE MORE JUMP!",
+    "Vivid BAD SQUAD",
+    "Wonderlands x Showtime",
+    "Nightcord at 25:00",
+  ],
   Attribute: ["Cute", "Pure", "Mysterious", "Cool", "Happy"],
   Rarity: [1, 2, 3, 4, 5],
 };
@@ -118,6 +125,7 @@ export default function FilterTab() {
     Attribute: [],
     Rarity: [],
     search: "",
+    sub_unit: [],
   });
 
   const [tempBannerFilters, setTempBannerFilters] = useState<BannerFilterTypes>(
@@ -137,6 +145,7 @@ export default function FilterTab() {
       Attribute: [],
       Rarity: [],
       search: "",
+      sub_unit: [],
     });
 
   const [selectedBannerFilters, setSelectedBannerFilters] =
@@ -184,6 +193,7 @@ export default function FilterTab() {
 
         // If deselecting, remove characters from deselected unit
         let updatedCharacters = [...prev.Character];
+        let updatedSubUnit = [...prev.sub_unit];
 
         if (isSelected) {
           const charactersToRemove = grouped[unit] || [];
@@ -198,10 +208,21 @@ export default function FilterTab() {
           );
         }
 
+        // Check if any Virtual Singer characters remain selected
+        const hasVirtualSingers = updatedCharacters.some((char) =>
+          grouped["Virtual Singers"].includes(char)
+        );
+
+        // If no Virtual Singer characters are selected, reset sub_unit
+        if (!hasVirtualSingers) {
+          updatedSubUnit = [];
+        }
+
         return {
           ...prev,
           Unit: updatedUnits,
           Character: updatedCharacters,
+          sub_unit: updatedSubUnit,
         };
       }
       if (category === "Characters") {
@@ -210,12 +231,34 @@ export default function FilterTab() {
           ? prev.Character.filter((name) => name !== option)
           : [...prev.Character, option as string];
 
+        // Check if any Virtual Singer characters remain selected after this change
+        const hasVirtualSingersAfterChange = updated.some((char) =>
+          grouped["Virtual Singers"].includes(char)
+        );
+
+        // If no Virtual Singer characters are selected, reset sub_unit
+        const updatedSubUnit = hasVirtualSingersAfterChange
+          ? prev.sub_unit
+          : [];
+
         return {
           ...prev,
           Character: updated,
+          sub_unit: updatedSubUnit,
         };
       }
-
+      if (category === "sub_unit") {
+   
+        const current = prev.sub_unit;
+        const isSelected = current.includes(option as string);
+        const updated = isSelected
+          ? current.filter((o) => o !== option)
+          : [...current, option as string];
+        return {
+          ...prev,
+          sub_unit: updated,
+        };
+      }
       if (category === "Attribute") {
         const current = prev.Attribute;
         const isSelected = current.includes(option as string);
@@ -318,6 +361,7 @@ export default function FilterTab() {
         Attribute: [],
         Rarity: [],
         search: "",
+        sub_unit: [],
       });
     } else {
       setTempBannerFilters({
@@ -335,6 +379,7 @@ export default function FilterTab() {
         Attribute: [],
         Rarity: [],
         search: "",
+        sub_unit: [],
       });
     } else {
       setSelectedBannerFilters({
@@ -353,6 +398,7 @@ export default function FilterTab() {
     } else {
       setSelectedBannerFilters(tempBannerFilters);
     }
+
     setIsOpen(false);
   };
 
@@ -485,78 +531,98 @@ export default function FilterTab() {
               isOpen ? "max-h-[800px]  opacity-100" : "max-h-0 opacity-0"
             } bg-gray-600 rounded-lg p-1.5`}
           >
-            {Object.entries(filterCategories).map(([category, options]) => (
-              <div key={category} className="mb-2">
-                <h3 className="text-lg font-semibold mb-1">{category}</h3>
-                <div className="flex justify-center items-center flex-wrap gap-3">
-                  {options.map((option, i) => {
-                    const unitIcon = `images/unit_icons/${i + 1}.png`;
-                    const characterIcon = `/images/character_icons/${
-                      i + 1
-                    }.webp`;
-                    const attributeIcon = `/images/attribute_icons/${option}.webp`;
-                    const rarityIcon = `images/rarity_icons/${i + 1}.webp`;
+            {Object.entries(filterCategories).map(([category, options]) => {
+              const isVs = tempCardFilters.Character.some((char) =>
+                grouped["Virtual Singers"].includes(char)
+              );
 
-                    const isSelected = (() => {
-                      switch (category) {
-                        case "Characters":
-                          return tempCardFilters.Character.includes(
-                            option as string
-                          );
-                        case "Unit":
-                          return tempCardFilters.Unit.includes(
-                            option as string
-                          );
-                        case "Attribute":
-                          return tempCardFilters.Attribute.includes(
-                            option as string
-                          );
-                        case "Rarity":
-                          return tempCardFilters.Rarity.includes(option);
-                        default:
-                          return false;
-                      }
-                    })();
+              return (
+                <div key={category} className="mb-2">
+                  {category != "sub_unit" && (
+                    <h3 className="text-lg font-semibold mb-1">{category}</h3>
+                  )}
 
-                    const isOutsideUnit =
-                      category === "Characters" &&
-                      tempCardFilters.Unit.length > 0 &&
-                      !tempCardFilters.Unit.some((unit) =>
-                        grouped[unit]?.includes(option as string)
-                      ) &&
-                      !tempCardFilters.Character.includes(option as string);
-                    return (
-                      <button
-                        key={option as string}
-                        className={` border-2 aspect-square rounded-full ${
-                          isSelected ? "border-white" : "border-gray-600"
-                        } ${isOutsideUnit ? "opacity-30" : ""}`}
-                        onClick={() => handleCardFilters(category, option)}
-                      >
-                        {category === "Characters" && (
-                          <img
-                            src={characterIcon}
-                            style={{ width: "2.25rem" }}
-                          />
-                        )}
-                        {category === "Unit" && (
-                          <img src={unitIcon} style={{ width: "2rem" }} />
-                        )}
-                        {category === "Attribute" && (
-                          <img
-                            src={attributeIcon}
-                            style={{ width: "1.75rem" }}
-                          />
-                        )}
-                        {category === "Rarity" && (
-                          <img src={rarityIcon} style={{ width: "2rem" }} />
-                        )}
-                      </button>
-                    );
-                  })}
+                  {category === "sub_unit" && isVs && (
+                    <h3 className="text-lg font-semibold mb-1">VS Sub Unit</h3>
+                  )}
+                  <div className="flex justify-center items-center flex-wrap gap-3">
+                    {options.map((option, i) => {
+                      const unitIcon = `images/unit_icons/${i + 1}.png`;
+                      const characterIcon = `/images/character_icons/${
+                        i + 1
+                      }.webp`;
+                      const subUnitIcon = `images/unit_icons/${i + 2}.png`;
+                      const attributeIcon = `/images/attribute_icons/${option}.webp`;
+                      const rarityIcon = `images/rarity_icons/${i + 1}.webp`;
+
+                      const isSelected = (() => {
+                        switch (category) {
+                          case "Characters":
+                            return tempCardFilters.Character.includes(
+                              option as string
+                            );
+                          case "Unit":
+                            return tempCardFilters.Unit.includes(
+                              option as string
+                            );
+                          case "sub_unit":
+                            return tempCardFilters.sub_unit.includes(
+                              option as string
+                            );
+                          case "Attribute":
+                            return tempCardFilters.Attribute.includes(
+                              option as string
+                            );
+                          case "Rarity":
+                            return tempCardFilters.Rarity.includes(option);
+                          default:
+                            return false;
+                        }
+                      })();
+
+                      const isOutsideUnit =
+                        category === "Characters" &&
+                        tempCardFilters.Unit.length > 0 &&
+                        !tempCardFilters.Unit.some((unit) =>
+                          grouped[unit]?.includes(option as string)
+                        ) &&
+                        !tempCardFilters.Character.includes(option as string);
+                      return (
+                        <button
+                          key={option as string}
+                          className={` border-2 aspect-square rounded-full ${
+                            isSelected ? "border-white" : "border-gray-600"
+                          } ${isOutsideUnit ? "opacity-30" : ""}`}
+                          onClick={() => handleCardFilters(category, option)}
+                        >
+                          {category === "Characters" && (
+                            <img
+                              src={characterIcon}
+                              style={{ width: "2.25rem" }}
+                            />
+                          )}
+                          {category === "Unit" && (
+                            <img src={unitIcon} style={{ width: "2rem" }} />
+                          )}{" "}
+                          {category === "sub_unit" && isVs && (
+                            <img src={subUnitIcon} style={{ width: "2rem" }} />
+                          )}
+                          {category === "Attribute" && (
+                            <img
+                              src={attributeIcon}
+                              style={{ width: "1.75rem" }}
+                            />
+                          )}
+                          {category === "Rarity" && (
+                            <img src={rarityIcon} style={{ width: "2rem" }} />
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
             <div className="flex justify-between">
               <button
                 onClick={handleReset}
