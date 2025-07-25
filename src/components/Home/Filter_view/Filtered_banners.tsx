@@ -40,7 +40,7 @@ export default function FilteredBanners({
   selectedFilters,
 }: FilteredBannersPropType) {
   const { server } = useServer();
-  const [filteredBanners, setFilteredBanners] = useState<BannerTypes[]>([]); 
+  const [filteredBanners, setFilteredBanners] = useState<BannerTypes[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [bannersPerPage] = useState(10);
   const [shouldScrollToTop, setShouldScrollToTop] = useState(false);
@@ -80,7 +80,6 @@ export default function FilteredBanners({
     //Apply Characters filter
     if (selectedFilters.Characters.length > 0) {
       filtered = filtered.filter((banner) => {
-        
         // Convert selected character names to their corresponding IDs
         const selectedCharacterIds = selectedFilters.Characters.map(
           (characterName) => {
@@ -93,7 +92,6 @@ export default function FilteredBanners({
         if (selectedCharacterIds.length === 0) {
           return false;
         }
-
 
         // Apply filter based on selected mode
         if (selectedFilters.characterFilterMode === "all") {
@@ -270,7 +268,7 @@ export default function FilteredBanners({
 
       {/** PAGINATION**/}
       {totalPages > 1 && (
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mt-5 mb-4 px-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mt-5  px-4">
           <div
             className={`text-sm mb-2 sm:hidden ${
               theme === "light" ? "text-gray-600" : "text-gray-400"
