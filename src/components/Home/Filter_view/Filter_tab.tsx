@@ -248,7 +248,6 @@ export default function FilterTab() {
         };
       }
       if (category === "sub_unit") {
-   
         const current = prev.sub_unit;
         const isSelected = current.includes(option as string);
         const updated = isSelected
@@ -539,11 +538,15 @@ export default function FilterTab() {
               return (
                 <div key={category} className="mb-2">
                   {category != "sub_unit" && (
-                    <h3 className="text-lg font-semibold mb-1">{category}</h3>
+                    <h3 className="text-lg text-gray-200 font-semibold mb-1">
+                      {category}
+                    </h3>
                   )}
 
                   {category === "sub_unit" && isVs && (
-                    <h3 className="text-lg font-semibold mb-1">VS Sub Unit</h3>
+                    <h3 className="text-lg text-gray-200  font-semibold mb-1">
+                      VS Sub Unit
+                    </h3>
                   )}
                   <div className="flex justify-center items-center flex-wrap gap-3">
                     {options.map((option, i) => {
