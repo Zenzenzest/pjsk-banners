@@ -6662,7 +6662,8 @@
     "end": 1765483199000,
     "cards": [575, 576, 577, 578, 579, 580],
     "banner_type": "Bloom Festival",
-    "type": "estimation",
+    "type": "questionable",
+    "tag": "Possible Anniv Rerun",
     "characters": [4, 7, 12, 15, 16, 22]
   }
 ]
