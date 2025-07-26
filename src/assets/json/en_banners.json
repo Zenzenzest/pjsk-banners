@@ -7,7 +7,8 @@
     "end": 1639695599000,
     "banner_type": "Normal",
     "characters": [1, 21, 22, 23],
-    "keywords": []
+    "keywords": [],
+    "sekai_id": 1
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "end": 1639695599000,
     "banner_type": "Normal",
     "characters": [24, 25, 26],
-    "keywords": []
+    "keywords": [],
+    "sekai_id": 3
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "end": 1642067999000,
     "banner_type": "Ticket",
     "characters": [1, 5, 9, 13, 17],
-    "keywords": []
+    "keywords": [],
+    "sekai_id": 2
   },
   {
     "id": 4,
@@ -38,7 +41,16 @@
     "banner_type": "Event",
     "event_id": 1,
     "characters": [2, 4, 24],
-    "keywords": ["leo/need", "leoneed", "ln", "leoni", "focus", "saki", "saki1"]
+    "keywords": [
+      "leo/need",
+      "leoneed",
+      "ln",
+      "leoni",
+      "focus",
+      "saki",
+      "saki1"
+    ],
+    "sekai_id": 4
   },
   {
     "id": 5,
@@ -57,7 +69,8 @@
       "nightcord",
       "niigo",
       "focus"
-    ]
+    ],
+    "sekai_id": 5
   },
   {
     "id": 6,
@@ -78,7 +91,8 @@
       "rui1",
       "focus",
       "halloween"
-    ]
+    ],
+    "sekai_id": 6
   },
   {
     "id": 7,
@@ -97,7 +111,8 @@
       "an",
       "an1",
       "focus"
-    ]
+    ],
+    "sekai_id": 17
   },
   {
     "id": 8,
@@ -115,7 +130,8 @@
       "kamiyama",
       "school festival",
       "festival"
-    ]
+    ],
+    "sekai_id": 9
   },
   {
     "id": 9,
@@ -4821,7 +4837,7 @@
     "cards": [320, 176, 427, 446, 289],
     "start": 1746558000000,
     "end": 1746989999000,
-    "banner_type": "Unit Recollection",
+    "banner_type": "Recollection",
     "characters": [1, 2, 3, 4, 21],
     "keywords": []
   },
@@ -4860,7 +4876,7 @@
     "cards": [285, 412, 377, 272, 192],
     "start": 1746990000000,
     "end": 1747421999000,
-    "banner_type": "Unit Recollection",
+    "banner_type": "Recollection",
     "characters": [5, 6, 7, 8, 21],
     "keywords": []
   },
@@ -4888,7 +4904,7 @@
     "cards": [424, 309, 273, 299, 131],
     "start": 1747422000000,
     "end": 1747853999000,
-    "banner_type": "Unit Recollection",
+    "banner_type": "Recollection",
     "characters": [9, 10, 11, 12, 21],
     "keywords": []
   },
@@ -4918,7 +4934,7 @@
     "cards": [335, 400, 321, 274, 27],
     "start": 1747854000000,
     "end": 1748285999000,
-    "banner_type": "Unit Recollection",
+    "banner_type": "Recollection",
     "characters": [13, 14, 15, 16, 21],
     "keywords": []
   },
@@ -4970,7 +4986,7 @@
     "cards": [448, 271, 238, 415, 146],
     "start": 1748286000000,
     "end": 1748717999000,
-    "banner_type": "Unit Recollection",
+    "banner_type": "Recollection",
     "characters": [17, 18, 19, 20, 21],
     "keywords": []
   },
@@ -6625,5 +6641,28 @@
     "banner_type": "Birthday",
     "characters": [10],
     "keywords": []
+  },
+  {
+    "id": 538,
+    "name": "Recollection Festival Gacha",
+    "start": 1756407600000,
+    "end": 1756753199000,
+    "cards": [126, 186, 148],
+    "banner_type": "Recollection",
+    "characters": [5, 13, 21],
+    "type": "questionable",
+
+    "tag": "Possible August Release",
+    "keywords": []
+  },
+  {
+    "id": 539,
+    "name": "[Rerun] JP 4th Anniversary Bloom Festival Gacha",
+    "start": 1765051200000,
+    "end": 1765483199000,
+    "cards": [575, 576, 577, 578, 579, 580],
+    "banner_type": "Bloom Festival",
+    "type": "estimation",
+    "characters": [4, 7, 12, 15, 16, 22]
   }
 ]

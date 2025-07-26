@@ -12,6 +12,8 @@ export interface BannerTypes {
   characters: number[];
   keywords?: string[] | undefined;
   en_id?: number;
+  tag?: string;
+  questionable?: string;
 }
 export interface AllCardTypes {
   id: number;
@@ -41,7 +43,6 @@ export interface BannerStatusProps {
 }
 
 export interface CardsProps {
-  
   banner: BannerTypes;
   handleCardClick: (card: AllCardTypes) => void;
 }

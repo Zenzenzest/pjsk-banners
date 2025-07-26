@@ -4987,7 +4987,7 @@
     "start": 1724814000000,
     "end": 1725159599000,
     "cards": [126, 186, 148],
-    "en_id": -3,
+    "en_id": 538,
     "banner_type": "Recollection",
     "characters": [5, 13, 21],
     "keywords": []
@@ -5740,7 +5740,7 @@
     "end": 1737514799000,
     "cards": [320, 176, 427, 446, 289],
     "en_id": 400,
-    "banner_type": "Unit Recollection",
+    "banner_type": "Recollection",
     "characters": [1, 2, 3, 4, 21],
     "keywords": []
   },
@@ -5763,7 +5763,7 @@
     "end": 1737946799000,
     "cards": [285, 412, 377, 272, 192],
     "en_id": 403,
-    "banner_type": "Unit Recollection",
+    "banner_type": "Recollection",
     "characters": [5, 6, 7, 8, 21],
     "keywords": []
   },
@@ -5796,7 +5796,7 @@
     "end": 1738378799000,
     "cards": [424, 309, 273, 299, 131],
     "en_id": 405,
-    "banner_type": "Unit Recollection",
+    "banner_type": "Recollection",
     "characters": [9, 10, 11, 12, 21],
     "keywords": []
   },
@@ -5830,7 +5830,7 @@
     "end": 1738810799000,
     "cards": [335, 400, 321, 274, 27],
     "en_id": 408,
-    "banner_type": "Unit Recollection",
+    "banner_type": "Recollection",
     "characters": [13, 14, 15, 16, 21],
     "keywords": []
   },
@@ -5841,7 +5841,7 @@
     "end": 1739242799000,
     "cards": [448, 271, 238, 415, 146],
     "en_id": 412,
-    "banner_type": "Unit Recollection",
+    "banner_type": "Recollection",
     "characters": [17, 18, 19, 20, 21],
     "keywords": []
   },

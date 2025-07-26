@@ -246,6 +246,12 @@ export default function BannerTemplate({
               <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
               <span>{banner.confirmation}</span>
             </div>
+          )}{" "}
+          {banner.type === "questionable" && (
+            <div className="flex items-center w-auto max-w-[300px] space-x-2 px-3 py-1 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-sm font-medium">
+              <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+              <span>{banner.tag}</span>
+            </div>
           )}
           {/* CARDS */}
           {mode === "gacha" ? (
@@ -312,7 +318,6 @@ export default function BannerTemplate({
                 </div>
               </div>
             )}
-
           {/* COUNTDOWN */}
           {banner.event_id && (
             <div>
