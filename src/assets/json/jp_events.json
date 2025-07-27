@@ -3,7 +3,13 @@
     "id": 1,
     "name": "雨上がりの一番星",
     "unit": "l/n",
-    "cards": [13, 14, 15, 688, 687],
+    "cards": [
+      109,
+      110,
+      111,
+      112,
+      113
+    ],
     "banner_id": 4,
     "event_type": "marathon",
     "keywords": [
@@ -24,7 +30,13 @@
     "id": 2,
     "name": "囚われのマリオネット",
     "unit": "n25",
-    "cards": [16, 17, 18, 689, 690],
+    "cards": [
+      114,
+      115,
+      116,
+      117,
+      118
+    ],
     "banner_id": 5,
     "event_type": "marathon",
     "keywords": [
@@ -45,7 +57,13 @@
     "id": 3,
     "name": "全力！ワンダーハロウィン！",
     "unit": "wxs",
-    "cards": [19, 20, 21, 691, 692],
+    "cards": [
+      119,
+      120,
+      121,
+      122,
+      123
+    ],
     "banner_id": 6,
     "event_type": "marathon",
     "keywords": [
@@ -68,7 +86,13 @@
     "id": 4,
     "name": "走れ！体育祭！～実行委員は大忙し～",
     "unit": "mixed",
-    "cards": [25, 26, 27, 693, 694],
+    "cards": [
+      124,
+      125,
+      126,
+      127,
+      128
+    ],
     "banner_id": 8,
     "event_type": "marathon",
     "keywords": [
@@ -88,10 +112,23 @@
     "id": 5,
     "name": "ここからRE:START！",
     "unit": "mmj",
-    "cards": [28, 29, 30, 695, 696],
+    "cards": [
+      129,
+      130,
+      131,
+      132,
+      133
+    ],
     "banner_id": 10,
     "event_type": "marathon",
-    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi1", "focus"],
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "airi",
+      "airi1",
+      "focus"
+    ],
     "start": 1605765600000,
     "end": 1606564799000,
     "close": 1606715999000,
@@ -101,7 +138,13 @@
     "id": 6,
     "name": "いつか、背中あわせのリリックを",
     "unit": "vbs",
-    "cards": [22, 23, 24, 697, 698],
+    "cards": [
+      134,
+      135,
+      136,
+      137,
+      138
+    ],
     "banner_id": 7,
     "event_type": "marathon",
     "keywords": [
@@ -123,8 +166,19 @@
     "name": "KAMIKOU FESTIVAL！",
     "unit": "mixed",
     "banner_id": 12,
-    "cards": [31, 32, 33, 699, 700],
-    "keywords": ["festival", "school festival", "kamiyama", "kamikou"],
+    "cards": [
+      139,
+      140,
+      141,
+      142,
+      143
+    ],
+    "keywords": [
+      "festival",
+      "school festival",
+      "kamiyama",
+      "kamikou"
+    ],
     "event_type": "marathon",
     "start": 1607580000000,
     "end": 1608292799000,
@@ -136,7 +190,13 @@
     "name": "聖なる夜に、この歌声を",
     "unit": "wxs",
     "banner_id": 13,
-    "cards": [34, 35, 36, 701, 702],
+    "cards": [
+      144,
+      145,
+      146,
+      147,
+      148
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -160,8 +220,19 @@
     "name": "セカイのハッピーニューイヤー！",
     "unit": "mixed",
     "banner_id": 15,
-    "cards": [37, 38, 39, 40, 703, 704],
-    "keywords": ["new year", "ny", "happy new year"],
+    "cards": [
+      149,
+      150,
+      151,
+      152,
+      153,
+      154
+    ],
+    "keywords": [
+      "new year",
+      "ny",
+      "happy new year"
+    ],
     "event_type": "marathon",
     "start": 1609394400000,
     "end": 1610107199000,
@@ -173,7 +244,13 @@
     "name": "揺れるまま、でも君は前へ",
     "unit": "l/n",
     "banner_id": 18,
-    "cards": [41, 42, 43, 705, 706],
+    "cards": [
+      155,
+      156,
+      157,
+      158,
+      159
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -195,7 +272,13 @@
     "name": "Color of Myself！",
     "unit": "mmj",
     "banner_id": 19,
-    "cards": [44, 45, 46, 707, 708],
+    "cards": [
+      160,
+      161,
+      162,
+      163,
+      164
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -216,7 +299,13 @@
     "name": "Period of NOCTURNE",
     "unit": "vbs",
     "banner_id": 20,
-    "cards": [47, 48, 49, 709, 710],
+    "cards": [
+      165,
+      166,
+      167,
+      168,
+      169
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -237,7 +326,13 @@
     "name": "響くトワイライトパレード",
     "unit": "mixed",
     "banner_id": 21,
-    "cards": [50, 51, 52, 711, 712],
+    "cards": [
+      170,
+      171,
+      172,
+      173,
+      174
+    ],
     "keywords": [],
     "event_type": "marathon",
     "start": 1612850400000,
@@ -250,8 +345,21 @@
     "name": "満たされないペイルカラー",
     "unit": "n25",
     "banner_id": 22,
-    "cards": [53, 54, 55, 713, 714],
-    "keywords": ["ena1", "ena", "n25", "nightcord", "niigo", "focus"],
+    "cards": [
+      175,
+      176,
+      177,
+      178,
+      179
+    ],
+    "keywords": [
+      "ena1",
+      "ena",
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus"
+    ],
     "event_type": "marathon",
     "start": 1613628000000,
     "end": 1614340799000,
@@ -263,7 +371,13 @@
     "name": "スマイルオブドリーマー",
     "unit": "wxs",
     "banner_id": 24,
-    "cards": [56, 57, 58, 715, 716],
+    "cards": [
+      180,
+      181,
+      182,
+      183,
+      184
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -287,8 +401,17 @@
     "name": "天馬さんちのひな祭り",
     "unit": "mixed",
     "banner_id": 25,
-    "cards": [59, 60, 61, 717, 718],
-    "keywords": ["festival", "doll festival"],
+    "cards": [
+      185,
+      186,
+      187,
+      188,
+      189
+    ],
+    "keywords": [
+      "festival",
+      "doll festival"
+    ],
     "event_type": "marathon",
     "start": 1615356000000,
     "end": 1616241599000,
@@ -300,7 +423,13 @@
     "name": "届け！HOPEFUL STAGE♪",
     "unit": "mmj",
     "banner_id": 26,
-    "cards": [62, 63, 64, 719, 720],
+    "cards": [
+      190,
+      191,
+      192,
+      193,
+      194
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -321,8 +450,17 @@
     "name": "君と歌う、桜舞う世界で",
     "unit": "mixed",
     "banner_id": 28,
-    "cards": [65, 66, 67, 721, 722],
-    "keywords": ["cherry blossom", "sakura"],
+    "cards": [
+      197,
+      198,
+      199,
+      200,
+      201
+    ],
+    "keywords": [
+      "cherry blossom",
+      "sakura"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1617256800000,
     "end": 1617969599000,
@@ -334,7 +472,13 @@
     "name": "シークレット・ディスタンス",
     "unit": "n25",
     "banner_id": 29,
-    "cards": [68, 69, 70, 723, 724],
+    "cards": [
+      202,
+      203,
+      204,
+      205,
+      206
+    ],
     "keywords": [
       "mizu1",
       "mizuki1",
@@ -355,7 +499,13 @@
     "name": "Resonate with you",
     "unit": "l/n",
     "banner_id": 30,
-    "cards": [71, 72, 73, 725, 726],
+    "cards": [
+      207,
+      208,
+      209,
+      210,
+      211
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -376,7 +526,13 @@
     "name": "STRAY BAD DOG",
     "unit": "vbs",
     "banner_id": 31,
-    "cards": [74, 75, 76, 727, 728],
+    "cards": [
+      212,
+      213,
+      214,
+      215,
+      216
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -398,8 +554,16 @@
     "name": "お悩み聞かせて！わくわくピクニック",
     "unit": "mixed",
     "banner_id": 32,
-    "cards": [77, 78, 79, 729, 730],
-    "keywords": ["picnic"],
+    "cards": [
+      217,
+      218,
+      219,
+      220,
+      221
+    ],
+    "keywords": [
+      "picnic"
+    ],
     "event_type": "marathon",
     "start": 1620626400000,
     "end": 1621425599000,
@@ -411,7 +575,13 @@
     "name": "頑張るあなたにBreak Time！",
     "unit": "mmj",
     "banner_id": 33,
-    "cards": [80, 81, 82, 731, 732],
+    "cards": [
+      222,
+      223,
+      224,
+      225,
+      226
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -432,8 +602,19 @@
     "name": "純白の貴方へ、誓いの歌を！",
     "unit": "mixed",
     "banner_id": 35,
-    "cards": [85, 86, 87, 733, 734],
-    "keywords": ["wedding", "marriage", "groom", "bride"],
+    "cards": [
+      227,
+      228,
+      229,
+      230,
+      231
+    ],
+    "keywords": [
+      "wedding",
+      "marriage",
+      "groom",
+      "bride"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1622440800000,
     "end": 1623239999000,
@@ -445,7 +626,13 @@
     "name": "ワンダーマジカルショウタイム！",
     "unit": "wxs",
     "banner_id": 36,
-    "cards": [88, 89, 90, 735, 736],
+    "cards": [
+      232,
+      233,
+      234,
+      235,
+      236
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -470,7 +657,13 @@
     "name": "カーネーション・リコレクション",
     "unit": "n25",
     "banner_id": 37,
-    "cards": [91, 92, 93, 737, 738],
+    "cards": [
+      237,
+      238,
+      239,
+      240,
+      241
+    ],
     "keywords": [
       "kanade",
       "kanade1",
@@ -491,7 +684,13 @@
     "name": "Unnamed Harmony",
     "unit": "l/n",
     "banner_id": 39,
-    "cards": [96, 97, 98, 739, 740],
+    "cards": [
+      244,
+      245,
+      246,
+      247,
+      248
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -512,7 +711,13 @@
     "name": "Awakening Beat",
     "unit": "vbs",
     "banner_id": 40,
-    "cards": [99, 100, 101, 741, 742],
+    "cards": [
+      249,
+      250,
+      251,
+      252,
+      253
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -534,8 +739,18 @@
     "name": "夏祭り、鳴り響く音は",
     "unit": "mixed",
     "banner_id": 41,
-    "cards": [102, 103, 104, 743, 744],
-    "keywords": ["festival", "summer festival", "summer"],
+    "cards": [
+      254,
+      255,
+      256,
+      257,
+      258
+    ],
+    "keywords": [
+      "festival",
+      "summer festival",
+      "summer"
+    ],
     "event_type": "marathon",
     "start": 1626760800000,
     "end": 1627559999000,
@@ -547,8 +762,17 @@
     "name": "きっと最高のsummer！",
     "unit": "mixed",
     "banner_id": 43,
-    "cards": [105, 106, 107, 745, 746],
-    "keywords": ["summer", "swimsuit"],
+    "cards": [
+      259,
+      260,
+      261,
+      262,
+      263
+    ],
+    "keywords": [
+      "summer",
+      "swimsuit"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1627711200000,
     "end": 1628423999000,
@@ -560,8 +784,21 @@
     "name": "ハッピー・ラブリー・エブリデイ！",
     "unit": "mmj",
     "banner_id": 44,
-    "cards": [108, 109, 110, 747, 748],
-    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi2", "focus"],
+    "cards": [
+      264,
+      265,
+      266,
+      267,
+      268
+    ],
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "airi",
+      "airi2",
+      "focus"
+    ],
     "event_type": "marathon",
     "start": 1628575200000,
     "end": 1629287999000,
@@ -573,7 +810,13 @@
     "name": "マーメイドにあこがれて",
     "unit": "wxs",
     "banner_id": 45,
-    "cards": [111, 112, 113, 749, 750],
+    "cards": [
+      269,
+      270,
+      271,
+      272,
+      273
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -595,8 +838,17 @@
     "name": "ふたり、月うさぎ",
     "unit": "mixed",
     "banner_id": 47,
-    "cards": [114, 115, 116, 751, 752],
-    "keywords": ["autumn", "moon rabbit"],
+    "cards": [
+      274,
+      275,
+      276,
+      277,
+      278
+    ],
+    "keywords": [
+      "autumn",
+      "moon rabbit"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1630389600000,
     "end": 1631102399000,
@@ -608,7 +860,13 @@
     "name": "Knock the Future!!",
     "unit": "l/n",
     "banner_id": 48,
-    "cards": [117, 118, 119, 753, 754],
+    "cards": [
+      279,
+      280,
+      281,
+      282,
+      283
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -630,7 +888,13 @@
     "name": "灯のミラージュ",
     "unit": "n25",
     "banner_id": 49,
-    "cards": [120, 121, 122, 755, 756],
+    "cards": [
+      284,
+      285,
+      286,
+      287,
+      288
+    ],
     "keywords": [
       "n25",
       "nightcord",
@@ -651,8 +915,16 @@
     "name": "スクランブル・ファンフェスタ！",
     "unit": "mixed",
     "banner_id": 58,
-    "cards": [123, 124, 125, 757],
-    "keywords": ["Fan festival", "festival"],
+    "cards": [
+      291,
+      292,
+      293,
+      294
+    ],
+    "keywords": [
+      "Fan festival",
+      "festival"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1633068000000,
     "end": 1633780799000,
@@ -664,7 +936,13 @@
     "name": "Bout for Beside You",
     "unit": "vbs",
     "banner_id": 61,
-    "cards": [129, 130, 131, 758, 759],
+    "cards": [
+      296,
+      297,
+      298,
+      299,
+      300
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -685,7 +963,13 @@
     "name": "Revival my dream",
     "unit": "wxs",
     "banner_id": 62,
-    "cards": [425, 197, 539, 760, 761],
+    "cards": [
+      301,
+      302,
+      303,
+      304,
+      305
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -707,7 +991,13 @@
     "name": "ボクのあしあと キミのゆくさき",
     "unit": "n25",
     "banner_id": 64,
-    "cards": [133, 134, 135, 762, 763],
+    "cards": [
+      307,
+      308,
+      309,
+      310,
+      311
+    ],
     "keywords": [
       "n25",
       "nightcord",
@@ -728,7 +1018,13 @@
     "name": "揺るがぬ想い、今言葉にして",
     "unit": "l/n",
     "banner_id": 67,
-    "cards": [137, 138, 139, 764, 765],
+    "cards": [
+      313,
+      314,
+      315,
+      316,
+      317
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -750,8 +1046,16 @@
     "name": "バディ・ファニー・スペンドタイム♪",
     "unit": "mixed",
     "banner_id": 69,
-    "cards": [141, 142, 143, 766, 767],
-    "keywords": ["time to hang out"],
+    "cards": [
+      319,
+      320,
+      321,
+      322,
+      323
+    ],
+    "keywords": [
+      "time to hang out"
+    ],
     "event_type": "marathon",
     "start": 1637388000000,
     "end": 1638100799000,
@@ -763,8 +1067,16 @@
     "name": "交わる旋律 灯るぬくもり",
     "unit": "mixed",
     "banner_id": 71,
-    "cards": [144, 145, 146, 768, 769],
-    "keywords": ["ichikana"],
+    "cards": [
+      324,
+      325,
+      326,
+      327,
+      328
+    ],
+    "keywords": [
+      "ichikana"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1638252000000,
     "end": 1638964799000,
@@ -776,7 +1088,13 @@
     "name": "MOREMOREMakingXmas",
     "unit": "mmj",
     "banner_id": 73,
-    "cards": [148, 149, 150, 770, 771],
+    "cards": [
+      330,
+      331,
+      332,
+      333,
+      334
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -799,7 +1117,13 @@
     "name": "Same Dreams,Same Colors",
     "unit": "vbs",
     "banner_id": 75,
-    "cards": [156, 157, 158, 772, 773],
+    "cards": [
+      341,
+      342,
+      343,
+      344,
+      345
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -820,8 +1144,17 @@
     "name": "祈りの先 願う明日は",
     "unit": "mixed",
     "banner_id": 81,
-    "cards": [163, 164, 165, 774, 775],
-    "keywords": ["new year", "happy new year"],
+    "cards": [
+      350,
+      351,
+      352,
+      353,
+      354
+    ],
+    "keywords": [
+      "new year",
+      "happy new year"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1640930400000,
     "end": 1641815999000,
@@ -833,7 +1166,13 @@
     "name": "POP IN MY HEART!!",
     "unit": "wxs",
     "banner_id": 83,
-    "cards": [167, 168, 169, 776, 777],
+    "cards": [
+      356,
+      357,
+      358,
+      359,
+      360
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -857,7 +1196,13 @@
     "name": "いつか、絶望の底から",
     "unit": "n25",
     "banner_id": 84,
-    "cards": [170, 171, 172, 778, 779],
+    "cards": [
+      361,
+      362,
+      363,
+      364,
+      365
+    ],
     "keywords": [
       "n25",
       "nightcord",
@@ -878,8 +1223,16 @@
     "name": "秘密の♡バレンタイン大作戦！",
     "unit": "mixed",
     "banner_id": 87,
-    "cards": [175, 176, 177, 780, 781],
-    "keywords": ["valentine's"],
+    "cards": [
+      368,
+      369,
+      370,
+      371,
+      372
+    ],
+    "keywords": [
+      "valentine's"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1643608800000,
     "end": 1644235199000,
@@ -891,7 +1244,13 @@
     "name": "Legend still vivid",
     "unit": "vbs",
     "banner_id": 89,
-    "cards": [178, 179, 180, 782, 783],
+    "cards": [
+      373,
+      374,
+      375,
+      376,
+      377
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -913,7 +1272,13 @@
     "name": "あの日、空は遠かった",
     "unit": "l/n",
     "banner_id": 92,
-    "cards": [183, 184, 185, 784, 785],
+    "cards": [
+      380,
+      381,
+      382,
+      383,
+      384
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -934,8 +1299,16 @@
     "name": "怪盗紳士のハラハラ！？ホワイトデー",
     "unit": "mixed",
     "banner_id": 94,
-    "cards": [186, 187, 188, 786, 787],
-    "keywords": ["white day"],
+    "cards": [
+      385,
+      386,
+      387,
+      388,
+      389
+    ],
+    "keywords": [
+      "white day"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1646028000000,
     "end": 1646827199000,
@@ -947,7 +1320,13 @@
     "name": "Cast Spell on You",
     "unit": "mmj",
     "banner_id": 96,
-    "cards": [190, 191, 192, 788, 789],
+    "cards": [
+      391,
+      392,
+      393,
+      394,
+      395
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -968,8 +1347,21 @@
     "name": "空白のキャンバスに描く私は",
     "unit": "n25",
     "banner_id": 98,
-    "cards": [194, 195, 196, 790, 791],
-    "keywords": ["n25", "nightcord", "niigo", "focus", "ena", "ena2"],
+    "cards": [
+      397,
+      398,
+      399,
+      400,
+      401
+    ],
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "ena",
+      "ena2"
+    ],
     "event_type": "marathon",
     "start": 1647756000000,
     "end": 1648468799000,
@@ -981,8 +1373,18 @@
     "name": "セカイの桜、つながる想い",
     "unit": "vs",
     "banner_id": 102,
-    "cards": [200, 201, 202, 203, 792, 793],
-    "keywords": ["cherry blossom", "sakura"],
+    "cards": [
+      404,
+      405,
+      406,
+      407,
+      408,
+      409
+    ],
+    "keywords": [
+      "cherry blossom",
+      "sakura"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1648620000000,
     "end": 1649505599000,
@@ -994,7 +1396,13 @@
     "name": "まばゆい光のステージで",
     "unit": "wxs",
     "banner_id": 103,
-    "cards": [204, 205, 206, 794, 795],
+    "cards": [
+      410,
+      411,
+      412,
+      413,
+      414
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -1019,7 +1427,13 @@
     "name": "Live with memories",
     "unit": "l/n",
     "banner_id": 105,
-    "cards": [208, 209, 210, 796, 797],
+    "cards": [
+      416,
+      417,
+      418,
+      419,
+      420
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -1041,7 +1455,13 @@
     "name": "つなぐPainful Hope",
     "unit": "mmj",
     "banner_id": 107,
-    "cards": [212, 213, 214, 798, 799],
+    "cards": [
+      422,
+      423,
+      424,
+      425,
+      426
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -1062,7 +1482,13 @@
     "name": "白熱！神高応援団！",
     "unit": "mixed",
     "banner_id": 109,
-    "cards": [216, 217, 218, 800, 801],
+    "cards": [
+      428,
+      429,
+      430,
+      431,
+      432
+    ],
     "keywords": [
       "sports",
       "festival",
@@ -1081,7 +1507,13 @@
     "name": "THE POWER OF UNITY",
     "unit": "vbs",
     "banner_id": 112,
-    "cards": [220, 221, 222, 802, 803],
+    "cards": [
+      434,
+      435,
+      436,
+      437,
+      438
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -1103,8 +1535,18 @@
     "name": "青空に願うユア・ハピネス！",
     "unit": "mixed",
     "banner_id": 115,
-    "cards": [224, 225, 226, 804, 805],
-    "keywords": ["bride", "wedding", "marriage"],
+    "cards": [
+      440,
+      441,
+      442,
+      443,
+      444
+    ],
+    "keywords": [
+      "bride",
+      "wedding",
+      "marriage"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1653976800000,
     "end": 1654689599000,
@@ -1116,7 +1558,13 @@
     "name": "迷い子の手を引く、そのさきは",
     "unit": "n25",
     "banner_id": 116,
-    "cards": [227, 228, 229, 806, 807],
+    "cards": [
+      445,
+      446,
+      447,
+      448,
+      449
+    ],
     "keywords": [
       "n25",
       "nightcord",
@@ -1137,7 +1585,13 @@
     "name": "絶体絶命！？アイランドパニック！",
     "unit": "wxs",
     "banner_id": 118,
-    "cards": [230, 231, 232, 808, 809],
+    "cards": [
+      450,
+      451,
+      452,
+      453,
+      454
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -1159,8 +1613,17 @@
     "name": "みんなでエンジョイ！スポジョイパーク",
     "unit": "mixed",
     "banner_id": 121,
-    "cards": [236, 237, 238, 810, 811],
-    "keywords": ["sporty", "sport"],
+    "cards": [
+      458,
+      459,
+      460,
+      461,
+      462
+    ],
+    "keywords": [
+      "sporty",
+      "sport"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1656568800000,
     "end": 1657367999000,
@@ -1172,7 +1635,13 @@
     "name": "The Vivid Old Tale",
     "unit": "vbs",
     "banner_id": 122,
-    "cards": [239, 240, 241, 812, 813],
+    "cards": [
+      463,
+      464,
+      465,
+      466,
+      467
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -1193,7 +1662,13 @@
     "name": "No seek No find",
     "unit": "l/n",
     "banner_id": 125,
-    "cards": [243, 244, 245, 814, 815],
+    "cards": [
+      469,
+      470,
+      471,
+      472,
+      473
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -1214,8 +1689,17 @@
     "name": "close game/OFFLINE",
     "unit": "mixed",
     "banner_id": 128,
-    "cards": [247, 248, 249, 816, 817],
-    "keywords": ["gaming", "tournament"],
+    "cards": [
+      475,
+      476,
+      477,
+      478,
+      479
+    ],
+    "keywords": [
+      "gaming",
+      "tournament"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1659247200000,
     "end": 1659959999000,
@@ -1227,8 +1711,21 @@
     "name": "青空の先、輝きを追いかけて",
     "unit": "mmj",
     "banner_id": 129,
-    "cards": [250, 251, 252, 818, 819],
-    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi3", "focus"],
+    "cards": [
+      481,
+      482,
+      483,
+      484,
+      485
+    ],
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "airi",
+      "airi3",
+      "focus"
+    ],
     "event_type": "marathon",
     "start": 1660111200000,
     "end": 1660823999000,
@@ -1240,7 +1737,13 @@
     "name": "そしていま、リボンを結んで",
     "unit": "n25",
     "banner_id": 132,
-    "cards": [254, 255, 256, 820, 821],
+    "cards": [
+      486,
+      487,
+      488,
+      489,
+      490
+    ],
     "keywords": [
       "n25",
       "nightcord",
@@ -1261,7 +1764,13 @@
     "name": "Don't lose faith!",
     "unit": "l/n",
     "banner_id": 136,
-    "cards": [259, 260, 261, 822, 823],
+    "cards": [
+      493,
+      494,
+      495,
+      496,
+      497
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -1282,8 +1791,16 @@
     "name": "好きを描いて♪レインボーキャンバス",
     "unit": "mixed",
     "banner_id": 138,
-    "cards": [263, 264, 265, 824, 825],
-    "keywords": ["paint"],
+    "cards": [
+      499,
+      500,
+      501,
+      502,
+      503
+    ],
+    "keywords": [
+      "paint"
+    ],
     "event_type": "marathon",
     "start": 1662703200000,
     "end": 1663502399000,
@@ -1295,7 +1812,13 @@
     "name": "Walk on and on",
     "unit": "vbs",
     "banner_id": 140,
-    "cards": [266, 267, 268, 826, 827],
+    "cards": [
+      504,
+      505,
+      506,
+      507,
+      508
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -1316,8 +1839,17 @@
     "name": "この祭に 夕闇色も",
     "unit": "mixed",
     "banner_id": 150,
-    "cards": [271, 272, 273, 274, 828],
-    "keywords": ["festival", "shibuya festival"],
+    "cards": [
+      511,
+      512,
+      513,
+      514,
+      515
+    ],
+    "keywords": [
+      "festival",
+      "shibuya festival"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1664517600000,
     "end": 1665403199000,
@@ -1329,7 +1861,13 @@
     "name": "拝啓、あの頃のわたしへ",
     "unit": "mmj",
     "banner_id": 152,
-    "cards": [276, 277, 278, 829, 830],
+    "cards": [
+      517,
+      518,
+      519,
+      520,
+      521
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -1350,7 +1888,13 @@
     "name": "カーテンコールに惜別を",
     "unit": "wxs",
     "banner_id": 154,
-    "cards": [279, 280, 281, 831, 832],
+    "cards": [
+      522,
+      523,
+      524,
+      525,
+      526
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -1372,8 +1916,19 @@
     "name": "絶叫！？ オオカミの森へようこそ！",
     "unit": "mixed",
     "banner_id": 157,
-    "cards": [283, 284, 285, 833, 834],
-    "keywords": ["school", "festival", "miyajou", "school festival"],
+    "cards": [
+      528,
+      529,
+      530,
+      531,
+      532
+    ],
+    "keywords": [
+      "school",
+      "festival",
+      "miyajou",
+      "school festival"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1667196000000,
     "end": 1667995199000,
@@ -1385,7 +1940,13 @@
     "name": "Echo my melody",
     "unit": "l/n",
     "banner_id": 160,
-    "cards": [287, 288, 289, 835, 836],
+    "cards": [
+      535,
+      536,
+      537,
+      538,
+      539
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -1407,8 +1968,21 @@
     "name": "願いは、いつか朝をこえて",
     "unit": "n25",
     "banner_id": 163,
-    "cards": [291, 292, 293, 837, 838],
-    "keywords": ["n25", "nightcord", "niigo", "focus", "ena", "ena3"],
+    "cards": [
+      540,
+      541,
+      542,
+      543,
+      544
+    ],
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "ena",
+      "ena3"
+    ],
     "event_type": "marathon",
     "start": 1668924000000,
     "end": 1669636799000,
@@ -1420,7 +1994,13 @@
     "name": "あの日の夢の、彼方向こうへ",
     "unit": "mmj",
     "banner_id": 164,
-    "cards": [294, 295, 296, 839, 840],
+    "cards": [
+      545,
+      546,
+      547,
+      548,
+      549
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -1441,7 +2021,13 @@
     "name": "Find A Way Out",
     "unit": "vbs",
     "banner_id": 167,
-    "cards": [298, 299, 300, 841, 842],
+    "cards": [
+      551,
+      552,
+      553,
+      554,
+      555
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -1463,8 +2049,16 @@
     "name": "弓引け、白の世界で",
     "unit": "mixed",
     "banner_id": 169,
-    "cards": [301, 302, 303, 843, 844],
-    "keywords": ["shizumafu"],
+    "cards": [
+      556,
+      557,
+      558,
+      559,
+      560
+    ],
+    "keywords": [
+      "shizumafu"
+    ],
     "event_type": "marathon",
     "start": 1671602400000,
     "end": 1672315199000,
@@ -1476,8 +2070,18 @@
     "name": "新春！ 獅子舞ロボのお正月ショー！",
     "unit": "mixed",
     "banner_id": 175,
-    "cards": [308, 309, 310, 845, 846],
-    "keywords": ["new year", "happy new year", "ny"],
+    "cards": [
+      565,
+      566,
+      567,
+      568,
+      569
+    ],
+    "keywords": [
+      "new year",
+      "happy new year",
+      "ny"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1672466400000,
     "end": 1673179199000,
@@ -1489,7 +2093,13 @@
     "name": "夢の途中、輝く星たちへ",
     "unit": "wxs",
     "banner_id": 177,
-    "cards": [312, 313, 314, 847, 848],
+    "cards": [
+      571,
+      572,
+      573,
+      574,
+      575
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -1513,7 +2123,13 @@
     "name": "Little Bravers！",
     "unit": "l/n",
     "banner_id": 179,
-    "cards": [315, 316, 317, 849, 850],
+    "cards": [
+      576,
+      577,
+      578,
+      579,
+      580
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -1535,8 +2151,16 @@
     "name": "キャンドルの香りは思い出と共に",
     "unit": "mixed",
     "banner_id": 183,
-    "cards": [320, 321, 322, 851, 852],
-    "keywords": ["valentine's"],
+    "cards": [
+      583,
+      584,
+      585,
+      586,
+      587
+    ],
+    "keywords": [
+      "valentine's"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1675144800000,
     "end": 1675857599000,
@@ -1548,7 +2172,13 @@
     "name": "ほどかれた糸のその先に",
     "unit": "mmj",
     "banner_id": 185,
-    "cards": [324, 325, 326, 853, 854],
+    "cards": [
+      589,
+      590,
+      591,
+      592,
+      593
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -1569,7 +2199,13 @@
     "name": "Kick it up a notch",
     "unit": "vbs",
     "banner_id": 188,
-    "cards": [328, 329, 330, 855, 856],
+    "cards": [
+      595,
+      596,
+      597,
+      598,
+      599
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -1591,8 +2227,16 @@
     "name": "Never Give Up Cooking！",
     "unit": "mixed",
     "banner_id": 190,
-    "cards": [331, 332, 333, 857, 858],
-    "keywords": ["white day"],
+    "cards": [
+      600,
+      601,
+      602,
+      603,
+      604
+    ],
+    "keywords": [
+      "white day"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1677564000000,
     "end": 1678363199000,
@@ -1604,7 +2248,13 @@
     "name": "天の果てのフェニックスへ",
     "unit": "wxs",
     "banner_id": 192,
-    "cards": [335, 336, 337, 859, 860],
+    "cards": [
+      606,
+      607,
+      608,
+      609,
+      610
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -1629,7 +2279,13 @@
     "name": "イミシブル・ディスコード",
     "unit": "n25",
     "banner_id": 195,
-    "cards": [339, 340, 341, 861, 862],
+    "cards": [
+      612,
+      613,
+      614,
+      615,
+      616
+    ],
     "keywords": [
       "n25",
       "nightcord",
@@ -1650,8 +2306,17 @@
     "name": "交響する街の片隅で",
     "unit": "mixed",
     "banner_id": 201,
-    "cards": [344, 345, 346, 347, 863],
-    "keywords": ["anshiho", "shihoan"],
+    "cards": [
+      619,
+      620,
+      621,
+      622,
+      623
+    ],
+    "keywords": [
+      "anshiho",
+      "shihoan"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1680156000000,
     "end": 1681041599000,
@@ -1663,7 +2328,13 @@
     "name": "Get over it.",
     "unit": "l/n",
     "banner_id": 202,
-    "cards": [348, 349, 350, 864, 865],
+    "cards": [
+      624,
+      625,
+      626,
+      627,
+      628
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -1684,8 +2355,20 @@
     "name": "Re-tie Friendship",
     "unit": "mmj",
     "banner_id": 205,
-    "cards": [355, 356, 357, 866, 867],
-    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi4"],
+    "cards": [
+      630,
+      631,
+      632,
+      633,
+      634
+    ],
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "airi",
+      "airi4"
+    ],
     "event_type": "marathon",
     "start": 1682056800000,
     "end": 1682683199000,
@@ -1697,7 +2380,13 @@
     "name": "ボク達の生存逃走",
     "unit": "n25",
     "banner_id": 208,
-    "cards": [359, 360, 361, 868, 869],
+    "cards": [
+      636,
+      637,
+      638,
+      639,
+      640
+    ],
     "keywords": [
       "n25",
       "nightcord",
@@ -1718,8 +2407,19 @@
     "name": "船出の前のワンデイトリップ",
     "unit": "mixed",
     "banner_id": 211,
-    "cards": [363, 364, 365, 870, 871],
-    "keywords": ["school trip", "field trip", "miyajou", "yokohama"],
+    "cards": [
+      642,
+      643,
+      644,
+      645,
+      646
+    ],
+    "keywords": [
+      "school trip",
+      "field trip",
+      "miyajou",
+      "yokohama"
+    ],
     "event_type": "marathon",
     "start": 1683784800000,
     "end": 1684411199000,
@@ -1731,7 +2431,13 @@
     "name": "カナリアは窮境に歌う",
     "unit": "wxs",
     "banner_id": 214,
-    "cards": [367, 368, 369, 872, 873],
+    "cards": [
+      648,
+      649,
+      650,
+      651,
+      652
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -1753,8 +2459,18 @@
     "name": "隣に立つ、優しいあなたへ",
     "unit": "mixed",
     "banner_id": 217,
-    "cards": [371, 372, 373, 874, 875],
-    "keywords": ["wedding", "bride", "marriage"],
+    "cards": [
+      654,
+      655,
+      656,
+      657,
+      658
+    ],
+    "keywords": [
+      "wedding",
+      "bride",
+      "marriage"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1685512800000,
     "end": 1686225599000,
@@ -1766,7 +2482,13 @@
     "name": "Light Up the Fire",
     "unit": "vbs",
     "banner_id": 218,
-    "cards": [374, 375, 351, 876, 877],
+    "cards": [
+      659,
+      660,
+      661,
+      662,
+      663
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -1787,7 +2509,13 @@
     "name": "STEP by STEP！",
     "unit": "mmj",
     "banner_id": 220,
-    "cards": [376, 377, 378, 878, 879],
+    "cards": [
+      664,
+      665,
+      666,
+      667,
+      668
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -1808,8 +2536,19 @@
     "name": "一期一会な百鬼夜行！？",
     "unit": "mixed",
     "banner_id": 223,
-    "cards": [382, 383, 384, 880, 881],
-    "keywords": ["school trip", "field trip", "kamikou", "kamiyama"],
+    "cards": [
+      672,
+      673,
+      674,
+      675,
+      676
+    ],
+    "keywords": [
+      "school trip",
+      "field trip",
+      "kamikou",
+      "kamiyama"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1688104800000,
     "end": 1688903999000,
@@ -1821,7 +2560,13 @@
     "name": "仮面の私にさよならを",
     "unit": "n25",
     "banner_id": 224,
-    "cards": [385, 386, 387, 882, 883],
+    "cards": [
+      677,
+      678,
+      679,
+      680,
+      681
+    ],
     "keywords": [
       "n25",
       "nightcord",
@@ -1842,7 +2587,13 @@
     "name": "つなぐ、星の歌",
     "unit": "l/n",
     "banner_id": 227,
-    "cards": [389, 390, 391, 884, 885],
+    "cards": [
+      683,
+      684,
+      685,
+      686,
+      687
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -1864,8 +2615,17 @@
     "name": "ドタバタ cafe ●REC!!",
     "unit": "mixed",
     "banner_id": 230,
-    "cards": [393, 394, 395, 886, 887],
-    "keywords": ["diner", "cafe"],
+    "cards": [
+      689,
+      690,
+      691,
+      692,
+      693
+    ],
+    "keywords": [
+      "diner",
+      "cafe"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1690783200000,
     "end": 1691495999000,
@@ -1877,7 +2637,13 @@
     "name": "On Your Feet",
     "unit": "vbs",
     "banner_id": 231,
-    "cards": [396, 397, 398, 888, 889],
+    "cards": [
+      694,
+      695,
+      696,
+      697,
+      698
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -1899,7 +2665,13 @@
     "name": "あたしたちのハッピーエンド",
     "unit": "wxs",
     "banner_id": 234,
-    "cards": [400, 401, 402, 890, 891],
+    "cards": [
+      700,
+      701,
+      702,
+      703,
+      704
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -1923,8 +2695,17 @@
     "name": "セカイに響け！Your Song",
     "unit": "vs",
     "banner_id": 238,
-    "cards": [405, 406, 407, 408, 892, 893],
-    "keywords": ["vs"],
+    "cards": [
+      707,
+      708,
+      709,
+      710,
+      711,
+      712
+    ],
+    "keywords": [
+      "vs"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1693461600000,
     "end": 1694260799000,
@@ -1936,8 +2717,17 @@
     "name": "君と紡ぐPrecious memories",
     "unit": "mixed",
     "banner_id": 240,
-    "cards": [410, 411, 412, 894, 895],
-    "keywords": ["miyajou", "miyama"],
+    "cards": [
+      714,
+      715,
+      716,
+      717,
+      718
+    ],
+    "keywords": [
+      "miyajou",
+      "miyama"
+    ],
     "event_type": "marathon",
     "start": 1694412000000,
     "end": 1695038399000,
@@ -1949,8 +2739,17 @@
     "name": "Let's study hard！",
     "unit": "mixed",
     "banner_id": 242,
-    "cards": [413, 414, 415, 896, 897],
-    "keywords": ["kamikou", "kamiyama"],
+    "cards": [
+      719,
+      720,
+      721,
+      722,
+      723
+    ],
+    "keywords": [
+      "kamikou",
+      "kamiyama"
+    ],
     "event_type": "marathon",
     "start": 1695189600000,
     "end": 1695902399000,
@@ -1962,8 +2761,17 @@
     "name": "ハロー・グッド・デイ！",
     "unit": "mixed",
     "banner_id": 256,
-    "cards": [418, 419, 420, 421, 897, 898],
-    "keywords": ["new school year"],
+    "cards": [
+      762,
+      763,
+      764,
+      765,
+      723,
+      766
+    ],
+    "keywords": [
+      "new school year"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1696053600000,
     "end": 1696939199000,
@@ -1975,7 +2783,13 @@
     "name": "BURN MY SOUL",
     "unit": "vbs",
     "banner_id": 258,
-    "cards": [423, 424, 352, 899, 900],
+    "cards": [
+      768,
+      769,
+      770,
+      771,
+      772
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -1997,7 +2811,13 @@
     "name": "Stick to your faith",
     "unit": "l/n",
     "banner_id": 261,
-    "cards": [426, 427, 428, 901, 902],
+    "cards": [
+      773,
+      774,
+      775,
+      776,
+      777
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -2018,7 +2838,13 @@
     "name": "その手導くぬくもりは",
     "unit": "mmj",
     "banner_id": 264,
-    "cards": [430, 431, 432, 903, 904],
+    "cards": [
+      779,
+      780,
+      781,
+      782,
+      783
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -2039,8 +2865,20 @@
     "name": "水底に影を探して",
     "unit": "n25",
     "banner_id": 267,
-    "cards": [434, 435, 436, 437, 905],
-    "keywords": ["n25", "nightcord", "niigo", "wl1", "world link"],
+    "cards": [
+      785,
+      786,
+      787,
+      788,
+      789
+    ],
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "wl1",
+      "world link"
+    ],
     "event_type": "world_link",
     "start": 1699441200000,
     "end": 1700477999000,
@@ -2052,7 +2890,13 @@
     "name": "君が主役の物語を",
     "unit": "wxs",
     "banner_id": 272,
-    "cards": [439, 440, 353, 906, 907],
+    "cards": [
+      791,
+      792,
+      793,
+      794,
+      795
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -2077,7 +2921,13 @@
     "name": "最高のクランクアップ！",
     "unit": "mixed",
     "banner_id": 274,
-    "cards": [441, 442, 443, 908, 909],
+    "cards": [
+      796,
+      797,
+      798,
+      799,
+      800
+    ],
     "keywords": [
       "arts festival",
       "festival",
@@ -2096,8 +2946,18 @@
     "name": "あっちこっち飼育員体験！",
     "unit": "mixed",
     "banner_id": 277,
-    "cards": [445, 446, 447, 910, 911],
-    "keywords": ["zoo", "animal", "caretaker"],
+    "cards": [
+      828,
+      829,
+      830,
+      831,
+      832
+    ],
+    "keywords": [
+      "zoo",
+      "animal",
+      "caretaker"
+    ],
     "event_type": "marathon",
     "start": 1702188000000,
     "end": 1702900799000,
@@ -2109,7 +2969,13 @@
     "name": "あの日、奏でた音色を",
     "unit": "n25",
     "banner_id": 281,
-    "cards": [448, 449, 450, 912, 913],
+    "cards": [
+      833,
+      834,
+      835,
+      836,
+      837
+    ],
     "keywords": [
       "niigo",
       "nightcord",
@@ -2130,8 +2996,18 @@
     "name": "変わらぬあたたかさの隣で",
     "unit": "mixed",
     "banner_id": 288,
-    "cards": [455, 456, 457, 914, 915],
-    "keywords": ["new year", "ny", "happy new year"],
+    "cards": [
+      842,
+      843,
+      844,
+      845,
+      846
+    ],
+    "keywords": [
+      "new year",
+      "ny",
+      "happy new year"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1704002400000,
     "end": 1704628799000,
@@ -2143,7 +3019,14 @@
     "name": "BREAK DOWN THE WALL",
     "unit": "vbs",
     "banner_id": 290,
-    "cards": [465, 466, 467, 468, 916, 917],
+    "cards": [
+      848,
+      849,
+      850,
+      851,
+      853,
+      852
+    ],
     "keywords": [
       "vbs",
       "vivid bad squad",
@@ -2163,7 +3046,13 @@
     "name": "逆光のレンズフレア",
     "unit": "wxs",
     "banner_id": 294,
-    "cards": [469, 470, 471, 918, 919],
+    "cards": [
+      854,
+      855,
+      856,
+      857,
+      858
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -2185,8 +3074,16 @@
     "name": "Take the Best Shot！",
     "unit": "mixed",
     "banner_id": 298,
-    "cards": [474, 475, 476, 920, 921],
-    "keywords": ["valentine's"],
+    "cards": [
+      861,
+      862,
+      863,
+      864,
+      865
+    ],
+    "keywords": [
+      "valentine's"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1706698800000,
     "end": 1707393599000,
@@ -2198,7 +3095,13 @@
     "name": "導く勇気、優しさを胸に",
     "unit": "l/n",
     "banner_id": 300,
-    "cards": [478, 479, 480, 922, 923],
+    "cards": [
+      867,
+      868,
+      869,
+      870,
+      871
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -2220,7 +3123,13 @@
     "name": "刻まれた傷は、やがて",
     "unit": "mmj",
     "banner_id": 305,
-    "cards": [482, 483, 484, 924, 925],
+    "cards": [
+      873,
+      874,
+      875,
+      876,
+      877
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -2241,8 +3150,16 @@
     "name": "リラックスティータイム",
     "unit": "mixed",
     "banner_id": 307,
-    "cards": [485, 486, 487, 926, 927],
-    "keywords": ["white day"],
+    "cards": [
+      878,
+      879,
+      880,
+      881,
+      882
+    ],
+    "keywords": [
+      "white day"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1709186400000,
     "end": 1709726399000,
@@ -2254,7 +3171,13 @@
     "name": "星を目指して、ヨーソロー！",
     "unit": "wxs",
     "banner_id": 310,
-    "cards": [489, 490, 491, 492, 928],
+    "cards": [
+      884,
+      885,
+      886,
+      887,
+      888
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -2277,7 +3200,13 @@
     "name": "The first concerto",
     "unit": "vbs",
     "banner_id": 315,
-    "cards": [494, 495, 496, 929, 930],
+    "cards": [
+      890,
+      891,
+      892,
+      893,
+      894
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -2298,8 +3227,16 @@
     "name": "Rise as ONE！",
     "unit": "mixed",
     "banner_id": 321,
-    "cards": [500, 501, 502, 931, 932],
-    "keywords": ["furry"],
+    "cards": [
+      898,
+      899,
+      900,
+      901,
+      902
+    ],
+    "keywords": [
+      "furry"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1711778400000,
     "end": 1712577599000,
@@ -2311,8 +3248,21 @@
     "name": "Knowing the Unseen",
     "unit": "n25",
     "banner_id": 322,
-    "cards": [503, 504, 505, 933, 934],
-    "keywords": ["niigo", "nightcord", "n25", "focus", "ena4", "ena"],
+    "cards": [
+      903,
+      904,
+      905,
+      906,
+      907
+    ],
+    "keywords": [
+      "niigo",
+      "nightcord",
+      "n25",
+      "focus",
+      "ena4",
+      "ena"
+    ],
     "event_type": "marathon",
     "start": 1712728800000,
     "end": 1713441599000,
@@ -2324,7 +3274,13 @@
     "name": "Parallel Harmonies",
     "unit": "l/n",
     "banner_id": 328,
-    "cards": [507, 508, 509, 935, 936],
+    "cards": [
+      909,
+      910,
+      911,
+      912,
+      913
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -2345,7 +3301,13 @@
     "name": "Whip the wimp girl!!",
     "unit": "vbs",
     "banner_id": 331,
-    "cards": [511, 512, 513, 937, 938],
+    "cards": [
+      915,
+      916,
+      917,
+      918,
+      919
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -2366,7 +3328,13 @@
     "name": "いつか花咲くステージへ",
     "unit": "mmj",
     "banner_id": 334,
-    "cards": [515, 516, 517, 518, 939],
+    "cards": [
+      921,
+      922,
+      923,
+      924,
+      925
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -2387,7 +3355,13 @@
     "name": "perspective for smile",
     "unit": "wxs",
     "banner_id": 339,
-    "cards": [520, 521, 522, 940, 941],
+    "cards": [
+      927,
+      928,
+      929,
+      930,
+      931
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -2411,8 +3385,18 @@
     "name": "みんなで配信♡WEDDING LIVE！",
     "unit": "mixed",
     "banner_id": 342,
-    "cards": [524, 525, 526, 942, 943],
-    "keywords": ["wedding", "bride", "marriage"],
+    "cards": [
+      933,
+      934,
+      935,
+      936,
+      937
+    ],
+    "keywords": [
+      "wedding",
+      "bride",
+      "marriage"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1717135200000,
     "end": 1717847999000,
@@ -2424,7 +3408,13 @@
     "name": "Lead to shine more",
     "unit": "mmj",
     "banner_id": 343,
-    "cards": [527, 528, 529, 944, 945],
+    "cards": [
+      938,
+      939,
+      940,
+      941,
+      942
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -2445,7 +3435,13 @@
     "name": "灯を手繰りよせて",
     "unit": "n25",
     "banner_id": 349,
-    "cards": [530, 531, 532, 946, 947],
+    "cards": [
+      943,
+      944,
+      945,
+      946,
+      947
+    ],
     "keywords": [
       "niigo",
       "nightcord",
@@ -2466,7 +3462,13 @@
     "name": "OVER RAD SQUAD!!",
     "unit": "vbs",
     "banner_id": 352,
-    "cards": [533, 534, 535, 948, 949],
+    "cards": [
+      951,
+      952,
+      953,
+      954,
+      955
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -2488,7 +3490,13 @@
     "name": "お縄を頂戴！？天馬捕物帳",
     "unit": "wxs",
     "banner_id": 353,
-    "cards": [541, 542, 543, 950, 951],
+    "cards": [
+      956,
+      957,
+      958,
+      959,
+      960
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -2513,7 +3521,13 @@
     "name": "あの日見た夜空は、いつかの未来へ",
     "unit": "l/n",
     "banner_id": 358,
-    "cards": [544, 545, 546, 547, 952],
+    "cards": [
+      961,
+      962,
+      963,
+      964,
+      965
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -2534,8 +3548,21 @@
     "name": "Chase my IDEAL IDOL！",
     "unit": "mmj",
     "banner_id": 362,
-    "cards": [550, 551, 552, 953, 954],
-    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi5", "focus"],
+    "cards": [
+      968,
+      969,
+      970,
+      971,
+      972
+    ],
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "airi",
+      "airi5",
+      "focus"
+    ],
     "event_type": "marathon",
     "start": 1722405600000,
     "end": 1723031999000,
@@ -2547,8 +3574,17 @@
     "name": "鳴らせビューティフルサウンド！",
     "unit": "mixed",
     "banner_id": 363,
-    "cards": [553, 554, 555, 955, 956],
-    "keywords": ["toyakana", "kanatoya"],
+    "cards": [
+      973,
+      974,
+      975,
+      976,
+      977
+    ],
+    "keywords": [
+      "toyakana",
+      "kanatoya"
+    ],
     "event_type": "marathon",
     "start": 1723183200000,
     "end": 1723723199000,
@@ -2560,8 +3596,19 @@
     "name": "キミと、セカイの始まりで",
     "unit": "vs",
     "banner_id": 369,
-    "cards": [557, 558, 559, 560, 561, 562],
-    "keywords": ["wl1", "world link 1", "world link"],
+    "cards": [
+      979,
+      980,
+      981,
+      982,
+      983,
+      984
+    ],
+    "keywords": [
+      "wl1",
+      "world link 1",
+      "world link"
+    ],
     "event_type": "world_link",
     "start": 1723892400000,
     "end": 1724929199000,
@@ -2573,8 +3620,17 @@
     "name": "わんだほら～！？な肝だめし！",
     "unit": "mixed",
     "banner_id": 374,
-    "cards": [565, 566, 567, 957, 958],
-    "keywords": ["miyama", "miyajou"],
+    "cards": [
+      987,
+      988,
+      989,
+      990,
+      991
+    ],
+    "keywords": [
+      "miyama",
+      "miyajou"
+    ],
     "event_type": "marathon",
     "start": 1725084000000,
     "end": 1725796799000,
@@ -2586,8 +3642,17 @@
     "name": "鍛えてFLY！Muscle Training！",
     "unit": "mixed",
     "banner_id": 376,
-    "cards": [569, 570, 571, 959, 960],
-    "keywords": ["sports", "athletic event"],
+    "cards": [
+      993,
+      994,
+      995,
+      996,
+      997
+    ],
+    "keywords": [
+      "sports",
+      "athletic event"
+    ],
     "event_type": "marathon",
     "start": 1725948000000,
     "end": 1726660799000,
@@ -2599,7 +3664,13 @@
     "name": "This moment with you！",
     "unit": "l/n",
     "banner_id": 380,
-    "cards": [572, 573, 574, 961, 962],
+    "cards": [
+      998,
+      999,
+      1000,
+      1001,
+      1002
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -2621,8 +3692,17 @@
     "name": "想いをのせて！Dream Stage",
     "unit": "mixed",
     "banner_id": 394,
-    "cards": [577, 578, 579, 580, 963],
-    "keywords": ["shibuya festival", "festival"],
+    "cards": [
+      1005,
+      1006,
+      1007,
+      1008,
+      1009
+    ],
+    "keywords": [
+      "shibuya festival",
+      "festival"
+    ],
     "event_type": "marathon",
     "start": 1727676000000,
     "end": 1728475199000,
@@ -2634,7 +3714,13 @@
     "name": "荊棘の道は何処へ",
     "unit": "n25",
     "banner_id": 396,
-    "cards": [582, 583, 584, 964, 965],
+    "cards": [
+      1011,
+      1012,
+      1013,
+      1014,
+      1015
+    ],
     "keywords": [
       "n25",
       "nightcord",
@@ -2656,7 +3742,13 @@
     "name": "Rekindle the flame",
     "unit": "vbs",
     "banner_id": 400,
-    "cards": [585, 586, 587, 966, 967],
+    "cards": [
+      1016,
+      1017,
+      1018,
+      1019,
+      1020
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -2678,7 +3770,13 @@
     "name": "Happy Enjoy Music！",
     "unit": "l/n",
     "banner_id": 403,
-    "cards": [589, 590, 591, 968, 969],
+    "cards": [
+      1022,
+      1023,
+      1024,
+      1025,
+      1026
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -2699,8 +3797,16 @@
     "name": "また、木の葉の色づく頃に",
     "unit": "mixed",
     "banner_id": 406,
-    "cards": [593, 594, 595, 970, 971],
-    "keywords": ["autumn"],
+    "cards": [
+      1028,
+      1029,
+      1030,
+      1031,
+      1032
+    ],
+    "keywords": [
+      "autumn"
+    ],
     "event_type": "marathon",
     "start": 1731218400000,
     "end": 1731931199000,
@@ -2712,7 +3818,13 @@
     "name": "The Power Of Regret",
     "unit": "wxs",
     "banner_id": 410,
-    "cards": [597, 598, 599, 972, 973],
+    "cards": [
+      1034,
+      1035,
+      1036,
+      1037,
+      1038
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -2734,7 +3846,13 @@
     "name": "傷だらけの手で、私達は",
     "unit": "n25",
     "banner_id": 412,
-    "cards": [600, 601, 602, 974, 975],
+    "cards": [
+      1039,
+      1040,
+      1041,
+      1042,
+      1043
+    ],
     "keywords": [
       "niigo",
       "nightcord",
@@ -2755,7 +3873,13 @@
     "name": "Grow glorious glow",
     "unit": "mmj",
     "banner_id": 415,
-    "cards": [604, 605, 606, 976, 977],
+    "cards": [
+      1045,
+      1046,
+      1047,
+      1048,
+      1049
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -2776,8 +3900,17 @@
     "name": "Special present for YOU！",
     "unit": "mixed",
     "banner_id": 418,
-    "cards": [607, 608, 609, 978, 979],
-    "keywords": ["christmas", "xmas"],
+    "cards": [
+      1050,
+      1051,
+      1052,
+      1053,
+      1054
+    ],
+    "keywords": [
+      "christmas",
+      "xmas"
+    ],
     "event_type": "marathon",
     "start": 1734760800000,
     "end": 1735473599000,
@@ -2789,8 +3922,18 @@
     "name": "Unfading wishing",
     "unit": "mixed",
     "banner_id": 426,
-    "cards": [614, 615, 616, 980, 981],
-    "keywords": ["new year", "happy new year", "ny"],
+    "cards": [
+      1059,
+      1060,
+      1061,
+      1062,
+      1063
+    ],
+    "keywords": [
+      "new year",
+      "happy new year",
+      "ny"
+    ],
     "event_type": "marathon",
     "start": 1735624800000,
     "end": 1736423999000,
@@ -2802,7 +3945,13 @@
     "name": "Time to take off！",
     "unit": "vbs",
     "banner_id": 428,
-    "cards": [618, 619, 620, 982, 983],
+    "cards": [
+      1065,
+      1066,
+      1067,
+      1068,
+      1069
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -2823,8 +3972,16 @@
     "name": "Show your shine",
     "unit": "mixed",
     "banner_id": 432,
-    "cards": [621, 622, 623, 984, 985],
-    "keywords": ["model"],
+    "cards": [
+      1097,
+      1098,
+      1099,
+      1100,
+      1101
+    ],
+    "keywords": [
+      "model"
+    ],
     "event_type": "marathon",
     "start": 1737439200000,
     "end": 1738151999000,
@@ -2836,8 +3993,16 @@
     "name": "このひと針に想いを込めて",
     "unit": "mixed",
     "banner_id": 438,
-    "cards": [626, 627, 628, 986, 987],
-    "keywords": ["valentine's"],
+    "cards": [
+      1104,
+      1105,
+      1106,
+      1107,
+      1108
+    ],
+    "keywords": [
+      "valentine's"
+    ],
     "event_type": "marathon",
     "start": 1738303200000,
     "end": 1739015999000,
@@ -2849,7 +4014,13 @@
     "name": "Rise and Strive",
     "unit": "mmj",
     "banner_id": 442,
-    "cards": [630, 631, 632, 988, 989],
+    "cards": [
+      1110,
+      1111,
+      1112,
+      1113,
+      1114
+    ],
     "keywords": [
       "mmj",
       "more more jump",
@@ -2870,7 +4041,13 @@
     "name": "昔日のRead-aloud",
     "unit": "mixed",
     "banner_id": 448,
-    "cards": [638, 639, 640, 990, 991],
+    "cards": [
+      1122,
+      1123,
+      1124,
+      1125,
+      1126
+    ],
     "keywords": [],
     "event_type": "marathon",
     "start": 1740031200000,
@@ -2883,8 +4060,18 @@
     "name": "Connect hearts message",
     "unit": "mixed",
     "banner_id": 450,
-    "cards": [641, 642, 643, 992, 993],
-    "keywords": ["miyama", "miyajou", "white day"],
+    "cards": [
+      1127,
+      1128,
+      1129,
+      1130,
+      1131
+    ],
+    "keywords": [
+      "miyama",
+      "miyajou",
+      "white day"
+    ],
     "event_type": "marathon",
     "start": 1740722400000,
     "end": 1741435199000,
@@ -2896,8 +4083,16 @@
     "name": "You are my HERO!!",
     "unit": "mixed",
     "banner_id": 453,
-    "cards": [645, 646, 647, 994, 995],
-    "keywords": ["cat"],
+    "cards": [
+      1133,
+      1134,
+      1135,
+      1136,
+      1137
+    ],
+    "keywords": [
+      "cat"
+    ],
     "event_type": "marathon",
     "start": 1741586400000,
     "end": 1742299199000,
@@ -2909,7 +4104,13 @@
     "name": "Unreliable Notes",
     "unit": "n25",
     "banner_id": 457,
-    "cards": [649, 650, 651, 996, 997],
+    "cards": [
+      1139,
+      1140,
+      1141,
+      1142,
+      1143
+    ],
     "keywords": [
       "niigo",
       "nightcord",
@@ -2930,7 +4131,13 @@
     "name": "Find the dream view",
     "unit": "l/n",
     "banner_id": 463,
-    "cards": [654, 655, 656, 998, 999],
+    "cards": [
+      1146,
+      1147,
+      1148,
+      1149,
+      1150
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -2951,7 +4158,12 @@
     "name": "Turning Pain into Drive",
     "unit": "vbs",
     "banner_id": 464,
-    "cards": [657, 658, 659, 660],
+    "cards": [
+      1151,
+      1152,
+      1153,
+      1154
+    ],
     "keywords": [
       "vbs",
       "vivid bad squad",
@@ -2971,7 +4183,13 @@
     "name": "Choices for the future",
     "unit": "wxs",
     "banner_id": 468,
-    "cards": [662, 663, 664, 1000, 1001],
+    "cards": [
+      1156,
+      1157,
+      1158,
+      1159,
+      1160
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -2995,7 +4213,13 @@
     "name": "そして、針は動き出す",
     "unit": "n25",
     "banner_id": 470,
-    "cards": [666, 667, 668, 1002, 1003],
+    "cards": [
+      1162,
+      1163,
+      1164,
+      1165,
+      1166
+    ],
     "keywords": [
       "niigo",
       "nightcord",
@@ -3016,8 +4240,16 @@
     "name": "チアフルカーニバルイベントテストイベント",
     "unit": "mixed",
     "banner_id": 0,
-    "cards": [65, 191, 67, 847, 756],
-    "keywords": ["test event"],
+    "cards": [
+      197,
+      392,
+      199,
+      574,
+      288
+    ],
+    "keywords": [
+      "test event"
+    ],
     "event_type": "cheerful_carnival",
     "start": 1746619200000,
     "end": 1746705599000,
@@ -3028,7 +4260,12 @@
     "name": "Dear my fellows",
     "unit": "wxs",
     "banner_id": 474,
-    "cards": [671, 672, 673, 674],
+    "cards": [
+      1169,
+      1170,
+      1171,
+      1172
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -3051,8 +4288,21 @@
     "name": "Cheer with my Heart!",
     "unit": "mmj",
     "banner_id": 478,
-    "cards": [676, 677, 678, 1004, 1005],
-    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi6", "focus"],
+    "cards": [
+      1174,
+      1175,
+      1176,
+      1177,
+      1178
+    ],
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "airi",
+      "airi6",
+      "focus"
+    ],
     "event_type": "marathon",
     "start": 1747980000000,
     "end": 1748519999000,
@@ -3064,7 +4314,13 @@
     "name": "Aim higher and higher！",
     "unit": "vbs",
     "banner_id": 481,
-    "cards": [680, 681, 682, 1006, 1007],
+    "cards": [
+      1180,
+      1181,
+      1182,
+      1183,
+      1184
+    ],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -3086,7 +4342,12 @@
     "name": "泡沫に抱かれて",
     "unit": "n25",
     "banner_id": 483,
-    "cards": [683, 684, 685, 686],
+    "cards": [
+      1185,
+      1186,
+      1187,
+      1188
+    ],
     "keywords": [
       "n25",
       "niigo",
@@ -3109,7 +4370,12 @@
     "close": 1751867999000,
     "unit": "l/n",
     "banner_id": 487,
-    "cards": [1078, 1079, 1080, 1081],
+    "cards": [
+      1189,
+      1190,
+      1191,
+      1192
+    ],
     "keywords": [
       "l/n",
       "leoneed",
@@ -3130,7 +4396,13 @@
     "close": 1752559199000,
     "unit": "wxs",
     "banner_id": 487,
-    "cards": [1174, 1175, 1176, 1177, 1178],
+    "cards": [
+      1196,
+      1197,
+      1198,
+      1199,
+      1200
+    ],
     "keywords": [
       "wxs",
       "wandasho",
@@ -3152,7 +4424,13 @@
     "close": 1753250399000,
     "unit": "l/n",
     "banner_id": 494,
-    "cards": [1179, 1180, 1181, 1182, 1183],
+    "cards": [
+      1201,
+      1202,
+      1203,
+      1204,
+      1205
+    ],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -3174,7 +4452,13 @@
     "close": 1753941599000,
     "unit": "mmj",
     "banner_id": 496,
-    "cards": [1185, 1186, 1187, 1188, 1189],
+    "cards": [
+      1207,
+      1208,
+      1209,
+      1210,
+      1211
+    ],
     "keywords": [
       "mmj",
       "more more jump",

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Release Celebration Gacha",
-    "cards": [1, 2, 3, 4],
+    "cards": [88, 92, 96, 4],
     "start": 1636099200000,
     "end": 1639695599000,
     "banner_type": "Normal",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "name": "VIRTUAL SINGER Limited Gacha",
-    "cards": [5, 6, 7],
+    "cards": [99, 103, 107],
     "start": 1638918000000,
     "end": 1639695599000,
     "banner_type": "Normal",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "name": "3★ or Higher Guaranteed Ticket Gacha",
-    "cards": [8, 9, 10, 11, 12],
+    "cards": [3, 19, 35, 51, 67],
     "start": 1633647600000,
     "end": 1642067999000,
     "banner_type": "Ticket",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "name": "Starry Night Memories Gacha",
-    "cards": [13, 14, 15],
+    "cards": [109, 110, 111],
     "start": 1639004400000,
     "end": 1639695599000,
     "banner_type": "Event",
@@ -55,7 +55,7 @@
   {
     "id": 5,
     "name": "Ball of the Marionettes Gacha",
-    "cards": [16, 17, 18],
+    "cards": [114, 115, 116],
     "start": 1639695600000,
     "end": 1640386799000,
     "banner_type": "Event",
@@ -75,7 +75,7 @@
   {
     "id": 6,
     "name": "Gentle★Potato Star Gacha",
-    "cards": [19, 20, 21],
+    "cards": [119, 120, 121],
     "start": 1640386800000,
     "end": 1641077999000,
     "banner_type": "Event",
@@ -97,7 +97,7 @@
   {
     "id": 7,
     "name": "Rookie Partner Gacha",
-    "cards": [22, 23, 24],
+    "cards": [134, 135, 136],
     "start": 1641078000000,
     "end": 1641769199000,
     "banner_type": "Event",
@@ -117,7 +117,7 @@
   {
     "id": 8,
     "name": "Ever Energetic♪ Cheer Squad Gacha",
-    "cards": [25, 26, 27],
+    "cards": [124, 125, 126],
     "start": 1641769200000,
     "end": 1642460399000,
     "banner_type": "Event",
@@ -136,7 +136,7 @@
   {
     "id": 9,
     "name": "4★ Guaranteed Gacha",
-    "cards": [1, 2, 3, 13, 16, 19],
+    "cards": [88, 92, 96, 109, 114, 119],
     "start": 1642114800000,
     "end": 1642633199000,
     "banner_type": "4★ Guaranteed",
@@ -146,7 +146,7 @@
   {
     "id": 10,
     "name": "MORE MORE SMILE! Gacha",
-    "cards": [28, 29, 30],
+    "cards": [129, 130, 131],
     "start": 1642460400000,
     "end": 1643151599000,
     "banner_type": "Event",
@@ -157,7 +157,7 @@
   {
     "id": 11,
     "name": "High School Carnival Gacha",
-    "cards": [31, 32, 33],
+    "cards": [139, 140, 141],
     "start": 1643151600000,
     "end": 1643842799000,
     "banner_type": "Event",
@@ -168,7 +168,7 @@
   {
     "id": 12,
     "name": "Wonder Carol Gacha",
-    "cards": [34, 35, 36],
+    "cards": [144, 145, 146],
     "start": 1643842800000,
     "end": 1644533999000,
     "banner_type": "Event",
@@ -190,7 +190,7 @@
   {
     "id": 13,
     "name": "SEKAI Thrilling New Year Gacha",
-    "cards": [37, 38, 39, 40],
+    "cards": [149, 150, 151, 152],
     "start": 1644534000000,
     "end": 1645225199000,
     "banner_type": "Event",
@@ -201,7 +201,7 @@
   {
     "id": 14,
     "name": "(Goodbye 2021) Colorful Festival Gacha",
-    "cards": [13, 19, 22, 31],
+    "cards": [109, 119, 134, 139],
     "start": 1644534000000,
     "end": 1645225199000,
     "banner_type": "Colorful Festival",
@@ -211,7 +211,7 @@
   {
     "id": 15,
     "name": "[Hello 2022] Colorful Festival Gacha",
-    "cards": [37, 38, 39, 40],
+    "cards": [149, 150, 151, 152],
     "start": 1644534000000,
     "end": 1645225199000,
     "banner_type": "Colorful Festival",
@@ -221,7 +221,7 @@
   {
     "id": 16,
     "name": "A Little Courage Goes a Long Way Gacha",
-    "cards": [41, 42, 43],
+    "cards": [155, 156, 157],
     "start": 1645225200000,
     "end": 1645916399000,
     "banner_type": "Event",
@@ -241,7 +241,7 @@
   {
     "id": 17,
     "name": "A Rainbow Follows the Rain Gacha",
-    "cards": [44, 45, 46],
+    "cards": [160, 161, 162],
     "start": 1645916400000,
     "end": 1646607599000,
     "banner_type": "Event",
@@ -260,7 +260,7 @@
   {
     "id": 18,
     "name": "Classical Memories Gacha",
-    "cards": [47, 48, 49],
+    "cards": [165, 166, 167],
     "start": 1646607600000,
     "end": 1647295199000,
     "banner_type": "Event",
@@ -279,7 +279,7 @@
   {
     "id": 19,
     "name": "Rockin' Parade Gacha",
-    "cards": [50, 51, 52],
+    "cards": [170, 171, 172],
     "start": 1647295200000,
     "end": 1647986399000,
     "banner_type": "Event",
@@ -290,7 +290,7 @@
   {
     "id": 20,
     "name": "1 Million Players! Once Daily Free 10x Gacha",
-    "cards": [1, 4, 29, 23, 20, 17],
+    "cards": [88, 4, 130, 135, 120, 115],
     "start": 1647846000000,
     "end": 1648105199000,
     "banner_type": "Free Pull",
@@ -300,7 +300,7 @@
   {
     "id": 21,
     "name": "Illuminated Canvas Gacha",
-    "cards": [53, 54, 55],
+    "cards": [175, 176, 177],
     "start": 1647986400000,
     "end": 1648677599000,
     "banner_type": "Event",
@@ -311,7 +311,7 @@
   {
     "id": 22,
     "name": "Your Pick Gacha",
-    "cards": [13, 41, 28, 22, 25, 34, 19, 16, 31, 37, 2, 3],
+    "cards": [109, 155, 129, 134, 124, 144, 119, 114, 139, 149, 92, 96],
     "start": 1648245600000,
     "end": 1648850399000,
     "banner_type": "Your Pick",
@@ -321,7 +321,7 @@
   {
     "id": 23,
     "name": "Fluffy☆ Dreamland Gacha",
-    "cards": [56, 57, 58],
+    "cards": [180, 181, 182],
     "start": 1648677600000,
     "end": 1649368799000,
     "banner_type": "Limited Event",
@@ -343,7 +343,7 @@
   {
     "id": 24,
     "name": "Heavenly Happy Doll Festival☆ Gacha",
-    "cards": [59, 60, 61],
+    "cards": [185, 186, 187],
     "start": 1649368800000,
     "end": 1650059999000,
     "banner_type": "Event",
@@ -354,7 +354,7 @@
   {
     "id": 25,
     "name": "An Angel Spreads Its Wings Gacha",
-    "cards": [62, 63, 64],
+    "cards": [190, 191, 192],
     "start": 1650060000000,
     "end": 1650751199000,
     "banner_type": "Event",
@@ -373,7 +373,7 @@
   {
     "id": 26,
     "name": "4★ Guaranteed Gacha",
-    "cards": [43, 44, 51, 33, 37, 47],
+    "cards": [157, 160, 171, 141, 149, 165],
     "start": 1650405600000,
     "end": 1650924000000,
     "banner_type": "4★ Guaranteed",
@@ -383,7 +383,7 @@
   {
     "id": 27,
     "name": "Cherry Blossom Lane Gacha",
-    "cards": [65, 66, 67],
+    "cards": [197, 198, 199],
     "start": 1650751200000,
     "end": 1651442399000,
     "banner_type": "Event",
@@ -394,7 +394,7 @@
   {
     "id": 28,
     "name": "Secret Dressing Room Gacha",
-    "cards": [68, 69, 70],
+    "cards": [202, 203, 204],
     "start": 1651442400000,
     "end": 1652133599000,
     "banner_type": "Event",
@@ -413,7 +413,7 @@
   {
     "id": 29,
     "name": "4=1 Gacha",
-    "cards": [71, 72, 73],
+    "cards": [207, 208, 209],
     "start": 1652133600000,
     "end": 1652824799000,
     "banner_type": "Event",
@@ -432,7 +432,7 @@
   {
     "id": 30,
     "name": "One With My Crew Gacha",
-    "cards": [74, 75, 76],
+    "cards": [212, 213, 214],
     "start": 1652824800000,
     "end": 1653515999000,
     "banner_type": "Limited Event",
@@ -452,7 +452,7 @@
   {
     "id": 31,
     "name": "Your Pick Gacha",
-    "cards": [13, 50, 44, 48, 34, 19, 31, 37, 51, 3, 45],
+    "cards": [109, 170, 160, 166, 144, 119, 139, 149, 171, 96, 161],
     "start": 1653170400000,
     "end": 1653688799000,
     "banner_type": "Event",
@@ -462,7 +462,7 @@
   {
     "id": 32,
     "name": "Forest Fairy Gacha",
-    "cards": [77, 78, 79],
+    "cards": [217, 218, 219],
     "start": 1653516000000,
     "end": 1654207199000,
     "banner_type": "Event",
@@ -473,7 +473,7 @@
   {
     "id": 33,
     "name": "Half Anniversary Special! Once Daily Free 10x Gacha",
-    "cards": [1, 63, 59, 22, 58, 53],
+    "cards": [88, 191, 185, 134, 182, 175],
     "start": 1654016400000,
     "end": 1654685999000,
     "banner_type": "Free Pull",
@@ -483,7 +483,7 @@
   {
     "id": 34,
     "name": "Welcome to the Penguin Cafe♪ Gacha",
-    "cards": [80, 81, 82],
+    "cards": [222, 223, 224],
     "start": 1654207200000,
     "end": 1654898399000,
     "banner_type": "Event",
@@ -502,7 +502,7 @@
   {
     "id": 35,
     "name": "Half Anniversary Colorful Festival Gacha",
-    "cards": [83, 84],
+    "cards": [195, 196],
     "start": 1654639200000,
     "end": 1655157599000,
     "banner_type": "Colorful Festival",
@@ -512,7 +512,7 @@
   {
     "id": 36,
     "name": "Romantic Bride Gacha",
-    "cards": [85, 86, 87],
+    "cards": [227, 228, 229],
     "start": 1654898400000,
     "end": 1655589599000,
     "banner_type": "Limited Event",
@@ -523,7 +523,7 @@
   {
     "id": 37,
     "name": "Welcome♪ Wonderland Gacha",
-    "cards": [88, 89, 90],
+    "cards": [232, 233, 234],
     "start": 1655589600000,
     "end": 1656280799000,
     "banner_type": "Event",
@@ -546,7 +546,7 @@
   {
     "id": 38,
     "name": "4★ Guaranteed Gacha",
-    "cards": [51, 65, 62, 47, 58, 54],
+    "cards": [171, 197, 190, 165, 182, 176],
     "start": 1655848800000,
     "end": 1656453599000,
     "banner_type": "4★ Guaranteed",
@@ -556,7 +556,7 @@
   {
     "id": 39,
     "name": "Memories Melody Gacha",
-    "cards": [91, 92, 93],
+    "cards": [237, 238, 239],
     "start": 1656280800000,
     "end": 1656971999000,
     "banner_type": "Event",
@@ -575,7 +575,7 @@
   {
     "id": 40,
     "name": "Colorful Festival Gacha",
-    "cards": [94, 95],
+    "cards": [242, 243],
     "start": 1656972000000,
     "end": 1657403999000,
     "banner_type": "Colorful Festival",
@@ -585,7 +585,7 @@
   {
     "id": 41,
     "name": "Rainbow Harmony Gacha",
-    "cards": [96, 97, 98],
+    "cards": [244, 245, 246],
     "start": 1656972000000,
     "end": 1657663199000,
     "banner_type": "Event",
@@ -596,7 +596,7 @@
   {
     "id": 42,
     "name": "The Beast Inside Gacha",
-    "cards": [99, 100, 101],
+    "cards": [249, 250, 251],
     "start": 1657663200000,
     "end": 1658440799000,
     "banner_type": "Event",
@@ -616,7 +616,7 @@
   {
     "id": 43,
     "name": "Summer Night Memories Gacha",
-    "cards": [102, 103, 104],
+    "cards": [254, 255, 256],
     "start": 1658440800000,
     "end": 1659391199000,
     "banner_type": "Event",
@@ -627,7 +627,7 @@
   {
     "id": 44,
     "name": "Your Pick Gacha",
-    "cards": [96, 71, 62, 80, 78, 67, 88, 58, 91, 53, 76],
+    "cards": [244, 207, 190, 222, 218, 199, 232, 182, 237, 175, 214],
     "start": 1659132000000,
     "end": 1659909599000,
     "banner_type": "Your Pick",
@@ -637,7 +637,7 @@
   {
     "id": 45,
     "name": "Let's Enjoy Summer! Gacha",
-    "cards": [105, 106, 107],
+    "cards": [259, 260, 261],
     "start": 1659391200000,
     "end": 1660168799000,
     "banner_type": "Limited Event",
@@ -648,7 +648,7 @@
   {
     "id": 46,
     "name": "Lovely Messenger Gacha",
-    "cards": [108, 109, 110],
+    "cards": [264, 265, 266],
     "start": 1660168800000,
     "end": 1661032799000,
     "banner_type": "Event",
@@ -659,7 +659,7 @@
   {
     "id": 47,
     "name": "Hear My Song! Dreaming Mermaid Gacha",
-    "cards": [111, 112, 113],
+    "cards": [269, 270, 271],
     "start": 1661032800000,
     "end": 1661896799000,
     "banner_type": "Event",
@@ -679,7 +679,7 @@
   {
     "id": 48,
     "name": "4★ Guaranteed Gacha",
-    "cards": [101, 71, 80, 102, 88, 91],
+    "cards": [251, 207, 222, 254, 232, 237],
     "start": 1661551200000,
     "end": 1662155999000,
     "banner_type": "4★ Guaranteed",
@@ -689,7 +689,7 @@
   {
     "id": 49,
     "name": "Moonlit Night's Sister Rabbits Gacha",
-    "cards": [114, 115, 116],
+    "cards": [274, 275, 276],
     "start": 1661896800000,
     "end": 1662760799000,
     "banner_type": "Limited Event",
@@ -700,7 +700,7 @@
   {
     "id": 50,
     "name": "Hatsune Miku Anniversary Celebration Free 10x Gacha",
-    "cards": [66, 71, 88],
+    "cards": [198, 207, 232],
     "start": 1661929200000,
     "end": 1662015599000,
     "banner_type": "Free Pull",
@@ -710,7 +710,7 @@
   {
     "id": 51,
     "name": "No More Doubts Full Metal Gacha",
-    "cards": [117, 118, 119],
+    "cards": [279, 280, 281],
     "start": 1662760800000,
     "end": 1663711199000,
     "banner_type": "Event",
@@ -730,7 +730,7 @@
   {
     "id": 52,
     "name": "Your Pick Gacha",
-    "cards": [98, 62, 81, 67, 102, 88, 90, 91, 53, 68, 97, 104],
+    "cards": [246, 190, 223, 199, 254, 232, 234, 237, 175, 202, 245, 256],
     "start": 1663279200000,
     "end": 1664143199000,
     "banner_type": "Your Pick",
@@ -740,7 +740,7 @@
   {
     "id": 53,
     "name": "Forgotten Snow White Gacha",
-    "cards": [120, 121, 122],
+    "cards": [284, 285, 286],
     "start": 1663711200000,
     "end": 1664661599000,
     "banner_type": "Event",
@@ -759,7 +759,7 @@
   {
     "id": 54,
     "name": "1st Anniversary Memorial Select Gacha",
-    "cards": [4, 82, 23, 20, 55, 18],
+    "cards": [4, 224, 135, 120, 177, 116],
     "start": 1664521200000,
     "end": 1667253599000,
     "banner_type": "Memorial Seelct",
@@ -769,7 +769,7 @@
   {
     "id": 55,
     "name": "VIRTUAL SINGER Premium Gift Gacha.",
-    "cards": [37, 30, 87, 14, 101, 21],
+    "cards": [149, 131, 229, 110, 251, 121],
     "start": 1664661600000,
     "end": 1664920799000,
     "banner_type": "Unit Premium Gift",
@@ -779,7 +779,7 @@
   {
     "id": 56,
     "name": "Scramble Flower Gacha",
-    "cards": [123, 124, 125],
+    "cards": [291, 292, 293],
     "start": 1665007200000,
     "end": 1665784799000,
     "banner_type": "Limited Event",
@@ -790,7 +790,7 @@
   {
     "id": 57,
     "name": "1st Anniversary 10 Free Gacha ",
-    "cards": [1, 65, 62, 99, 88, 91],
+    "cards": [88, 197, 190, 249, 232, 237],
     "start": 1664622000000,
     "end": 1666421999000,
     "banner_type": "Free Pull",
@@ -800,7 +800,7 @@
   {
     "id": 58,
     "name": "Leo/need Premium Gift Gacha",
-    "cards": [65, 68, 41, 71],
+    "cards": [197, 202, 155, 207],
     "start": 1664748000000,
     "end": 1665007199000,
     "banner_type": "Unit Premium Gift",
@@ -810,7 +810,7 @@
   {
     "id": 59,
     "name": "1st Anniversary Colorful Festival Gacha",
-    "cards": [126, 127, 123, 124, 125],
+    "cards": [289, 290, 291, 292, 293],
     "start": 1664661600000,
     "end": 1665007199000,
     "banner_type": "Colorful Festival",
@@ -820,7 +820,7 @@
   {
     "id": 60,
     "name": "MORE MORE JUMP! Premium Gift Gacha",
-    "cards": [62, 80, 28, 44],
+    "cards": [190, 222, 129, 160],
     "start": 1664834400000,
     "end": 1665093599000,
     "banner_type": "Unit Premium Gift",
@@ -830,7 +830,7 @@
   {
     "id": 61,
     "name": "Vivid BAD SQUAD Premium Gift Gacha",
-    "cards": [99, 22, 102, 47],
+    "cards": [249, 134, 254, 165],
     "start": 1664920800000,
     "end": 1665179999000,
     "banner_type": "Unit Premium Gift",
@@ -840,7 +840,7 @@
   {
     "id": 62,
     "name": "Wonderlands×Showtime Premium Gift Gacha.",
-    "cards": [88, 89, 34, 19],
+    "cards": [232, 233, 144, 119],
     "start": 1665007200000,
     "end": 1665266399000,
     "banner_type": "Unit Premium Gift",
@@ -850,7 +850,7 @@
   {
     "id": 63,
     "name": "Haruka Kiritani Happy Birthday Gacha",
-    "cards": [128],
+    "cards": [295],
     "start": 1664953200000,
     "end": 1665557999000,
     "banner_type": "Birthday",
@@ -860,7 +860,7 @@
   {
     "id": 64,
     "name": "Nightcord at 25:00 Premium Gift Gacha.",
-    "cards": [91, 16, 53, 68],
+    "cards": [237, 114, 175, 202],
     "start": 1665093600000,
     "end": 1665352799000,
     "banner_type": "Unit Premium Gift",
@@ -870,7 +870,7 @@
   {
     "id": 65,
     "name": "Break The Fence! Gacha",
-    "cards": [129, 130, 131],
+    "cards": [296, 297, 298],
     "start": 1665784800000,
     "end": 1666994399000,
     "banner_type": "Event",
@@ -889,7 +889,7 @@
   {
     "id": 66,
     "name": "Fall 2022 Special! Once Daily Free 10x Gacha",
-    "cards": [117, 109, 107, 103, 100],
+    "cards": [279, 265, 261, 255, 250],
     "start": 1666681200000,
     "end": 1666940399000,
     "banner_type": "Free Pull",
@@ -899,7 +899,7 @@
   {
     "id": 67,
     "name": "4★ Guaranteed Gacha",
-    "cards": [113, 93, 108, 99, 68, 112],
+    "cards": [271, 239, 264, 249, 202, 270],
     "start": 1666821600000,
     "end": 1667426399000,
     "banner_type": "4★ Guaranteed",
@@ -909,7 +909,7 @@
   {
     "id": 68,
     "name": "Honami Mochizuki Happy Birthday Gacha",
-    "cards": [132],
+    "cards": [306],
     "start": 1666854000000,
     "end": 1667458799000,
     "banner_type": "Birthday",
@@ -919,7 +919,7 @@
   {
     "id": 69,
     "name": "Wanderer's Journey Gacha",
-    "cards": [133, 134, 135],
+    "cards": [307, 308, 309],
     "start": 1666994400000,
     "end": 1667948399000,
     "banner_type": "Limited Event",
@@ -935,11 +935,10 @@
       "mizuki"
     ]
   },
-
   {
     "id": 71,
     "name": "MEIKO Happy Anniversary Gacha",
-    "cards": [136],
+    "cards": [312],
     "start": 1667631600000,
     "end": 1668239999000,
     "banner_type": "Birthday",
@@ -949,7 +948,7 @@
   {
     "id": 72,
     "name": "4★Guaranteed Fall Gacha",
-    "cards": [1, 2, 3, 13, 16, 19],
+    "cards": [88, 92, 96, 109, 114, 119],
     "start": 1667862000000,
     "end": 1669071599000,
     "banner_type": "4★ Guaranteed",
@@ -959,7 +958,7 @@
   {
     "id": 73,
     "name": "Kind-hearted Words Gacha",
-    "cards": [137, 138, 139],
+    "cards": [313, 314, 315],
     "start": 1667948400000,
     "end": 1668812399000,
     "banner_type": "Event",
@@ -979,7 +978,7 @@
   {
     "id": 74,
     "name": "Akito Shinonome Happy Birthday Gacha",
-    "cards": [140],
+    "cards": [318],
     "start": 1668240000000,
     "end": 1668844799000,
     "banner_type": "Birthday",
@@ -989,7 +988,7 @@
   {
     "id": 75,
     "name": "Your Pick Gacha",
-    "cards": [73, 71, 108, 81, 99, 102, 107, 58, 91, 77, 87, 101],
+    "cards": [209, 207, 264, 223, 249, 254, 261, 182, 237, 217, 229, 251],
     "start": 1668553200000,
     "end": 1669071599000,
     "banner_type": "Your Pick",
@@ -999,7 +998,7 @@
   {
     "id": 76,
     "name": "Secret Illumination Gacha",
-    "cards": [141, 142, 143],
+    "cards": [319, 320, 321],
     "start": 1668812400000,
     "end": 1669762799000,
     "banner_type": "Event",
@@ -1010,7 +1009,7 @@
   {
     "id": 77,
     "name": "4★ Guaranteed Gacha",
-    "cards": [67, 110, 118, 89, 77, 98],
+    "cards": [199, 266, 280, 233, 217, 246],
     "start": 1669244400000,
     "end": 1670281199000,
     "banner_type": "4★ Guaranteed",
@@ -1020,7 +1019,7 @@
   {
     "id": 78,
     "name": "Growing Feelings, Words in the Snow Gacha",
-    "cards": [144, 145, 146],
+    "cards": [324, 325, 326],
     "start": 1669762800000,
     "end": 1670713199000,
     "banner_type": "Limited Event",
@@ -1031,7 +1030,7 @@
   {
     "id": 79,
     "name": "Shizuku Hinomori Happy Birthday Gacha",
-    "cards": [147],
+    "cards": [329],
     "start": 1670313600000,
     "end": 1670918399000,
     "banner_type": "Birthday",
@@ -1041,7 +1040,7 @@
   {
     "id": 80,
     "name": "1st Anniversary 10x Free Gacha",
-    "cards": [1, 65, 62, 99, 88, 91],
+    "cards": [88, 197, 190, 249, 232, 237],
     "start": 1670414400000,
     "end": 1672041599000,
     "banner_type": "Free Pull",
@@ -1051,7 +1050,7 @@
   {
     "id": 81,
     "name": "Christmas Eve Checkmate Gacha",
-    "cards": [148, 149, 150],
+    "cards": [330, 331, 332],
     "start": 1670713200000,
     "end": 1671577199000,
     "banner_type": "Event",
@@ -1072,7 +1071,7 @@
   {
     "id": 82,
     "name": "Memoirs of Wrongdoings Gacha",
-    "cards": [151, 152, 153, 154, 155],
+    "cards": [335, 336, 337, 338, 339],
     "start": 1671058800000,
     "end": 1672181999000,
     "banner_type": "Limited Collab",
@@ -1082,7 +1081,7 @@
   {
     "id": 83,
     "name": "4★ Guaranteed Gacha",
-    "cards": [131, 73, 130, 121, 60, 82],
+    "cards": [298, 209, 297, 285, 186, 224],
     "start": 1671404400000,
     "end": 1672268399000,
     "banner_type": "4★ Guaranteed",
@@ -1092,7 +1091,7 @@
   {
     "id": 84,
     "name": "Embarking on a Winter Railway Gacha",
-    "cards": [156, 157, 158],
+    "cards": [341, 342, 343],
     "start": 1671577200000,
     "end": 1672527599000,
     "banner_type": "Event",
@@ -1111,7 +1110,7 @@
   {
     "id": 85,
     "name": "Kagamine Rin Happy Anniversary Gacha",
-    "cards": [159],
+    "cards": [346],
     "start": 1672128000000,
     "end": 1672732799000,
     "banner_type": "Birthday",
@@ -1121,7 +1120,7 @@
   {
     "id": 86,
     "name": "Kagamine Len Happy Anniversary Gacha",
-    "cards": [160],
+    "cards": [347],
     "start": 1672128000000,
     "end": 1672732799000,
     "banner_type": "Birthday",
@@ -1131,7 +1130,7 @@
   {
     "id": 87,
     "name": "2023 New Year Colorful Festival Gacha",
-    "cards": [161, 162, 163, 164, 165],
+    "cards": [348, 349, 350, 351, 352],
     "start": 1672527600000,
     "end": 1672873199000,
     "banner_type": "Colorful Festival",
@@ -1141,7 +1140,7 @@
   {
     "id": 88,
     "name": "2023 New Year Premium Gift Gacha",
-    "cards": [37, 117, 82, 100, 112, 68],
+    "cards": [149, 279, 224, 250, 270, 202],
     "start": 1672527600000,
     "end": 1673564399000,
     "banner_type": "Premium Gift",
@@ -1151,7 +1150,7 @@
   {
     "id": 89,
     "name": "2023 New Year 10x Free Gacha",
-    "cards": [37, 117, 82, 100, 112, 68],
+    "cards": [149, 279, 224, 250, 270, 202],
     "start": 1672574400000,
     "end": 1675238399000,
     "banner_type": "Free Pull",
@@ -1161,7 +1160,7 @@
   {
     "id": 90,
     "name": "A Maiden's Hope For The New Year Gacha",
-    "cards": [163, 164, 165],
+    "cards": [350, 351, 352],
     "start": 1672873200000,
     "end": 1673564399000,
     "banner_type": "Limited Event",
@@ -1172,7 +1171,7 @@
   {
     "id": 91,
     "name": "Shiho Hinomori Happy Birthday Gacha",
-    "cards": [166],
+    "cards": [355],
     "start": 1673164800000,
     "end": 1673769599000,
     "banner_type": "Birthday",
@@ -1182,7 +1181,7 @@
   {
     "id": 92,
     "name": "Popping Mix of Dreams and Reality Gacha",
-    "cards": [167, 168, 169],
+    "cards": [356, 357, 358],
     "start": 1673564400000,
     "end": 1674341999000,
     "banner_type": "Event",
@@ -1204,7 +1203,7 @@
   {
     "id": 93,
     "name": "4★ Guaranteed Gacha",
-    "cards": [129, 120, 109, 58],
+    "cards": [296, 284, 265, 182],
     "start": 1674082800000,
     "end": 1674601199000,
     "banner_type": "4★ Guaranteed",
@@ -1214,7 +1213,7 @@
   {
     "id": 94,
     "name": "An Overture That Echoes in The Silence Gacha",
-    "cards": [170, 171, 172],
+    "cards": [361, 362, 363],
     "start": 1674342000000,
     "end": 1675205999000,
     "banner_type": "Event",
@@ -1233,7 +1232,7 @@
   {
     "id": 95,
     "name": "Mafuyu Asahina Happy Birthday Gacha",
-    "cards": [173],
+    "cards": [366],
     "start": 1674806400000,
     "end": 1675411199000,
     "banner_type": "Birthday",
@@ -1243,7 +1242,7 @@
   {
     "id": 96,
     "name": "Megurine Luka Happy Anniversary Gacha",
-    "cards": [174],
+    "cards": [367],
     "start": 1675065600000,
     "end": 1675670399000,
     "banner_type": "Birthday",
@@ -1253,7 +1252,7 @@
   {
     "id": 97,
     "name": "Secret Tea Time Gacha",
-    "cards": [175, 176, 177],
+    "cards": [368, 369, 370],
     "start": 1675206000000,
     "end": 1675983599000,
     "banner_type": "Limited Event",
@@ -1264,7 +1263,7 @@
   {
     "id": 98,
     "name": "SNOW MIKU 2022 Premium Gift Gacha",
-    "cards": [37, 97, 109, 92, 42, 118],
+    "cards": [149, 245, 265, 238, 156, 280],
     "start": 1675551600000,
     "end": 1676242799000,
     "banner_type": "Premium Gift",
@@ -1274,7 +1273,7 @@
   {
     "id": 99,
     "name": "Sky Runners! Gacha",
-    "cards": [178, 179, 180],
+    "cards": [373, 374, 375],
     "start": 1675983600000,
     "end": 1676761199000,
     "banner_type": "Event",
@@ -1294,7 +1293,7 @@
   {
     "id": 100,
     "name": "Kanade Yoisaki Happy Birthday Gacha",
-    "cards": [181],
+    "cards": [378],
     "start": 1676016000000,
     "end": 1676620799000,
     "banner_type": "Birthday",
@@ -1304,7 +1303,7 @@
   {
     "id": 101,
     "name": "KAITO Happy Anniversary Gacha",
-    "cards": [182],
+    "cards": [379],
     "start": 1676620800000,
     "end": 1677225599000,
     "banner_type": "Birthday",
@@ -1314,7 +1313,7 @@
   {
     "id": 102,
     "name": "Journey with U Gacha",
-    "cards": [183, 184, 185],
+    "cards": [380, 381, 382],
     "start": 1676761200000,
     "end": 1677625199000,
     "banner_type": "Event",
@@ -1333,7 +1332,7 @@
   {
     "id": 103,
     "name": "Your Pick Gacha",
-    "cards": [117, 137, 82, 110, 129, 130, 88, 112, 120, 68, 142, 122],
+    "cards": [279, 313, 224, 266, 296, 297, 232, 270, 284, 202, 320, 286],
     "start": 1677106800000,
     "end": 1677970799000,
     "banner_type": "Your Pick",
@@ -1343,7 +1342,7 @@
   {
     "id": 104,
     "name": "Knights of White Gacha",
-    "cards": [186, 187, 188],
+    "cards": [385, 386, 387],
     "start": 1677625200000,
     "end": 1678575599000,
     "banner_type": "Limited Event",
@@ -1354,7 +1353,7 @@
   {
     "id": 105,
     "name": "Kohane Azusawa Happy Birthday Gacha",
-    "cards": [189],
+    "cards": [390],
     "start": 1677744000000,
     "end": 1678348799000,
     "banner_type": "Birthday",
@@ -1364,7 +1363,7 @@
   {
     "id": 106,
     "name": "Miku Day Campaign Gacha",
-    "cards": [131, 65, 108, 156, 90, 91],
+    "cards": [298, 197, 264, 341, 234, 237],
     "start": 1678402800000,
     "end": 1679554799000,
     "banner_type": "Normal",
@@ -1374,7 +1373,7 @@
   {
     "id": 107,
     "name": "Casting Magic! Witch Craft Gacha",
-    "cards": [190, 191, 192],
+    "cards": [391, 392, 393],
     "start": 1678575600000,
     "end": 1679349599000,
     "banner_type": "Event",
@@ -1393,7 +1392,7 @@
   {
     "id": 108,
     "name": "4★ Guaranteed Gacha",
-    "cards": [146, 138, 148, 141, 135, 88],
+    "cards": [326, 314, 330, 319, 309, 232],
     "start": 1679004000000,
     "end": 1679867999000,
     "banner_type": "4★ Guaranteed",
@@ -1403,7 +1402,7 @@
   {
     "id": 109,
     "name": "Airi Momoi Happy Birthday Gacha",
-    "cards": [193],
+    "cards": [396],
     "start": 1679209200000,
     "end": 1679813999000,
     "banner_type": "Birthday",
@@ -1413,7 +1412,7 @@
   {
     "id": 110,
     "name": "Drowning in Blotchy Colors Gacha",
-    "cards": [194, 195, 196],
+    "cards": [397, 398, 399],
     "start": 1679349600000,
     "end": 1680213599000,
     "banner_type": "Event",
@@ -1424,7 +1423,7 @@
   {
     "id": 111,
     "name": "JP 1.5 Year Anniversary 4★ Guaranteed Premium Gift Gacha",
-    "cards": [138, 148, 156, 135, 142],
+    "cards": [314, 330, 341, 309, 320],
     "start": 1680213600000,
     "end": 1681250399000,
     "banner_type": "Premium Gift",
@@ -1434,7 +1433,7 @@
   {
     "id": 112,
     "name": "JP 1.5 Year Anniversary Colorful Festival Gacha",
-    "cards": [198, 199, 200, 201, 202, 203],
+    "cards": [402, 403, 404, 405, 406, 407],
     "start": 1680213600000,
     "end": 1680645599000,
     "banner_type": "Colorful Festival",
@@ -1444,7 +1443,7 @@
   {
     "id": 113,
     "name": "Yearning for Spring, A Moment in the Night Gacha",
-    "cards": [200, 201, 202, 203],
+    "cards": [404, 405, 406, 407],
     "start": 1680645600000,
     "end": 1681250399000,
     "banner_type": "Limited Event",
@@ -1455,7 +1454,7 @@
   {
     "id": 114,
     "name": "Pop Up! Picture Book Actors Gacha",
-    "cards": [204, 205, 206],
+    "cards": [410, 411, 412],
     "start": 1681239600000,
     "end": 1682103599000,
     "banner_type": "Event",
@@ -1478,7 +1477,7 @@
   {
     "id": 115,
     "name": "Minori Hanasato Happy Birthday Gacha",
-    "cards": [207],
+    "cards": [415],
     "start": 1681455600000,
     "end": 1682060399000,
     "banner_type": "Birthday",
@@ -1488,7 +1487,7 @@
   {
     "id": 116,
     "name": "4★ Guaranteed Gacha",
-    "cards": [172, 156, 169, 167, 150, 139],
+    "cards": [363, 341, 358, 356, 332, 315],
     "start": 1681758000000,
     "end": 1682967599000,
     "banner_type": "4★ Guaranteed",
@@ -1498,7 +1497,7 @@
   {
     "id": 117,
     "name": "Glittering Galactic Stardust Gacha",
-    "cards": [208, 209, 210],
+    "cards": [416, 417, 418],
     "start": 1682103600000,
     "end": 1682881199000,
     "banner_type": "Event",
@@ -1518,7 +1517,7 @@
   {
     "id": 118,
     "name": "Ena Shinonome Happy Birthday Gacha",
-    "cards": [211],
+    "cards": [421],
     "start": 1682838000000,
     "end": 1683442799000,
     "banner_type": "Birthday",
@@ -1528,7 +1527,7 @@
   {
     "id": 119,
     "name": "The Naive Voice That Cries Out to You Gacha",
-    "cards": [212, 213, 214],
+    "cards": [422, 423, 424],
     "start": 1682881200000,
     "end": 1683745199000,
     "banner_type": "Limited Event",
@@ -1547,7 +1546,7 @@
   {
     "id": 120,
     "name": "[Rerun] Fluffy☆ Dreamland Gacha",
-    "cards": [56, 57, 58],
+    "cards": [180, 181, 182],
     "start": 1683226800000,
     "end": 1684004399000,
     "banner_type": "Limited Event Rerun",
@@ -1568,7 +1567,7 @@
   {
     "id": 121,
     "name": "Saki Tenma Happy Birthday Gacha",
-    "cards": [215],
+    "cards": [427],
     "start": 1683615600000,
     "end": 1684220399000,
     "banner_type": "Birthday",
@@ -1578,7 +1577,7 @@
   {
     "id": 122,
     "name": "The Plot of the Wise Gacha",
-    "cards": [216, 217, 218],
+    "cards": [428, 429, 430],
     "start": 1683745200000,
     "end": 1684609199000,
     "banner_type": "Event",
@@ -1589,7 +1588,7 @@
   {
     "id": 123,
     "name": "Your Pick Gacha",
-    "cards": [139, 183, 148, 108, 178, 156, 167, 111, 170, 103, 169, 185],
+    "cards": [315, 380, 330, 264, 373, 341, 356, 269, 361, 255, 358, 382],
     "start": 1684004400000,
     "end": 1685127599000,
     "banner_type": "Your Pick",
@@ -1599,7 +1598,7 @@
   {
     "id": 124,
     "name": "Tsukasa Tenma Happy Birthday Gacha",
-    "cards": [219],
+    "cards": [433],
     "start": 1684306800000,
     "end": 1684911599000,
     "banner_type": "Birthday",
@@ -1609,7 +1608,7 @@
   {
     "id": 125,
     "name": "Aim for Legend Gacha",
-    "cards": [220, 221, 222],
+    "cards": [434, 435, 436],
     "start": 1684609200000,
     "end": 1685559599000,
     "banner_type": "Event",
@@ -1629,7 +1628,7 @@
   {
     "id": 126,
     "name": "Toya Aoyagi Happy Birthday Gacha",
-    "cards": [223],
+    "cards": [439],
     "start": 1684998000000,
     "end": 1685602799000,
     "banner_type": "Birthday",
@@ -1639,7 +1638,7 @@
   {
     "id": 127,
     "name": "Graceful Marriage Gacha",
-    "cards": [224, 225, 226],
+    "cards": [440, 441, 442],
     "start": 1685559600000,
     "end": 1686423599000,
     "banner_type": "Limited Event",
@@ -1650,7 +1649,7 @@
   {
     "id": 128,
     "name": "1.5 Year Anniversary Free 10x Gacha",
-    "cards": [192, 184, 168, 194, 130, 191],
+    "cards": [393, 381, 357, 397, 297, 392],
     "start": 1686034800000,
     "end": 1686293999000,
     "banner_type": "Free Pull",
@@ -1660,7 +1659,7 @@
   {
     "id": 129,
     "name": "[Rerun] JP 1.5 Year Anniversary Colorful Festival Gacha",
-    "cards": [198, 199, 200, 201, 202, 203],
+    "cards": [402, 403, 404, 405, 406, 407],
     "start": 1686164400000,
     "end": 1686509999000,
     "banner_type": "Colorful Festival",
@@ -1670,7 +1669,7 @@
   {
     "id": 130,
     "name": "[Rerun] JP 1.5 Year Anniversary 4★ Guaranteed Premium Gift Gacha",
-    "cards": [138, 148, 156, 135, 142],
+    "cards": [314, 330, 341, 309, 320],
     "start": 1686164400000,
     "end": 1687114799000,
     "banner_type": "Premium Gift",
@@ -1680,7 +1679,7 @@
   {
     "id": 131,
     "name": "Nursing my ES Gacha",
-    "cards": [227, 228, 229],
+    "cards": [445, 446, 447],
     "start": 1686423600000,
     "end": 1687287599000,
     "banner_type": "Event",
@@ -1699,7 +1698,7 @@
   {
     "id": 132,
     "name": "[Rerun] One With My Crew Gacha",
-    "cards": [74, 75, 76],
+    "cards": [212, 213, 214],
     "start": 1686769200000,
     "end": 1687633199000,
     "banner_type": "Limited Event Rerun",
@@ -1718,7 +1717,7 @@
   {
     "id": 133,
     "name": "4★ Guaranteed Gacha",
-    "cards": [183, 195, 185, 111, 143, 178],
+    "cards": [380, 398, 382, 269, 321, 373],
     "start": 1687201200000,
     "end": 1688151599000,
     "banner_type": "4★ Guaranteed",
@@ -1728,7 +1727,7 @@
   {
     "id": 134,
     "name": "Enchanting Tropical Resort Gacha",
-    "cards": [230, 231, 232],
+    "cards": [450, 451, 452],
     "start": 1687287600000,
     "end": 1688151599000,
     "banner_type": "Event",
@@ -1748,7 +1747,7 @@
   {
     "id": 135,
     "name": "Rui Kamishiro Happy Birthday Gacha",
-    "cards": [233],
+    "cards": [455],
     "start": 1687590000000,
     "end": 1688194799000,
     "banner_type": "Birthday",
@@ -1758,7 +1757,7 @@
   {
     "id": 136,
     "name": "Colorful Festival Gacha",
-    "cards": [234, 235, 236, 237, 238],
+    "cards": [456, 457, 458, 459, 460],
     "start": 1688151600000,
     "end": 1688497199000,
     "banner_type": "Colorful Festival",
@@ -1768,7 +1767,7 @@
   {
     "id": 137,
     "name": "Anime Expo 2023 Once Daily Free 10x Gacha",
-    "cards": [131, 65, 82, 121, 179, 107],
+    "cards": [298, 197, 224, 285, 374, 261],
     "start": 1688194800000,
     "end": 1688540399000,
     "banner_type": "Free Pull",
@@ -1778,7 +1777,7 @@
   {
     "id": 138,
     "name": "Sporty Girl♡ Gacha",
-    "cards": [236, 237, 238],
+    "cards": [458, 459, 460],
     "start": 1688497200000,
     "end": 1689101999000,
     "banner_type": "Limited Event",
@@ -1789,7 +1788,7 @@
   {
     "id": 139,
     "name": "Chasing That Day's Light Gacha",
-    "cards": [239, 240, 241],
+    "cards": [463, 464, 465],
     "start": 1689102000000,
     "end": 1689965999000,
     "banner_type": "Event",
@@ -1808,7 +1807,7 @@
   {
     "id": 140,
     "name": "[Rerun] Romantic Bride Gacha",
-    "cards": [85, 86, 87],
+    "cards": [227, 228, 229],
     "start": 1689274800000,
     "end": 1690225199000,
     "banner_type": "Limited Event Rerun",
@@ -1818,7 +1817,7 @@
   {
     "id": 141,
     "name": "Nene Kusanagi Happy Birthday Gacha",
-    "cards": [242],
+    "cards": [468],
     "start": 1689836400000,
     "end": 1690441199000,
     "banner_type": "Birthday",
@@ -1828,7 +1827,7 @@
   {
     "id": 142,
     "name": "Bleak adolescence Gacha",
-    "cards": [243, 244, 245],
+    "cards": [469, 470, 471],
     "start": 1689966000000,
     "end": 1690829999000,
     "banner_type": "Event",
@@ -1839,7 +1838,7 @@
   {
     "id": 143,
     "name": "An Shiraishi Happy Birthday Gacha",
-    "cards": [246],
+    "cards": [474],
     "start": 1690354800000,
     "end": 1690959599000,
     "banner_type": "Birthday",
@@ -1849,7 +1848,7 @@
   {
     "id": 144,
     "name": "Happiness Package Gacha",
-    "cards": [195, 179, 183, 204, 191, 142],
+    "cards": [398, 374, 380, 410, 392, 320],
     "start": 1690743600000,
     "end": 1691607599000,
     "banner_type": "Happiness Package",
@@ -1859,7 +1858,7 @@
   {
     "id": 145,
     "name": "CYBER SNIPER Gacha",
-    "cards": [247, 248, 249],
+    "cards": [475, 476, 477],
     "start": 1690830000000,
     "end": 1691693999000,
     "banner_type": "Limited Event",
@@ -1870,7 +1869,7 @@
   {
     "id": 146,
     "name": "Lovely Flowers Blooming by the Water Gacha",
-    "cards": [250, 251, 252],
+    "cards": [481, 482, 483],
     "start": 1691694000000,
     "end": 1692557999000,
     "banner_type": "Event",
@@ -1881,18 +1880,17 @@
   {
     "id": 147,
     "name": "Ichika Hoshino Happy Birthday Gacha",
-    "cards": [253],
+    "cards": [480],
     "start": 1691737200000,
     "end": 1692341999000,
     "banner_type": "Birthday",
     "characters": [1],
     "keywords": []
   },
-
   {
     "id": 149,
     "name": "[Rerun] Let's Enjoy Summer! Gacha",
-    "cards": [105, 106, 107],
+    "cards": [259, 260, 261],
     "start": 1691953200000,
     "end": 1692730799000,
     "banner_type": "Limited Event Rerun",
@@ -1902,7 +1900,7 @@
   {
     "id": 150,
     "name": "Drifting Slumber at Dawn Gacha",
-    "cards": [254, 255, 256],
+    "cards": [486, 487, 488],
     "start": 1692558000000,
     "end": 1693508399000,
     "banner_type": "Event",
@@ -1921,7 +1919,7 @@
   {
     "id": 151,
     "name": "Your Pick Gacha",
-    "cards": [208, 137, 108, 44, 178, 220, 111, 206, 170, 120, 196, 180],
+    "cards": [416, 313, 264, 160, 373, 434, 269, 412, 361, 284, 399, 375],
     "start": 1692990000000,
     "end": 1693853999000,
     "banner_type": "Your Pick",
@@ -1931,7 +1929,7 @@
   {
     "id": 152,
     "name": "Mizuki Akiyama Happy Birthday Gacha",
-    "cards": [257],
+    "cards": [491],
     "start": 1693119600000,
     "end": 1693724399000,
     "banner_type": "Birthday",
@@ -1941,7 +1939,7 @@
   {
     "id": 153,
     "name": "Hatsune Miku Happy Anniversary Gacha",
-    "cards": [258],
+    "cards": [492],
     "start": 1693465200000,
     "end": 1694069999000,
     "banner_type": "Birthday",
@@ -1951,7 +1949,7 @@
   {
     "id": 154,
     "name": "Before the storm Gacha",
-    "cards": [259, 260, 261],
+    "cards": [493, 494, 495],
     "start": 1693508400000,
     "end": 1694372399000,
     "banner_type": "Limited Event",
@@ -1970,7 +1968,7 @@
   {
     "id": 155,
     "name": "Emu Otori Happy Birthday Gacha",
-    "cards": [262],
+    "cards": [498],
     "start": 1694242800000,
     "end": 1694847599000,
     "banner_type": "Birthday",
@@ -1980,7 +1978,7 @@
   {
     "id": 156,
     "name": "Colorful Paint Gacha",
-    "cards": [263, 264, 265],
+    "cards": [499, 500, 501],
     "start": 1694372400000,
     "end": 1695236399000,
     "banner_type": "Event",
@@ -1991,7 +1989,7 @@
   {
     "id": 157,
     "name": "[Rerun] Moonlit Night's Sister Rabbits Gacha",
-    "cards": [114, 115, 116],
+    "cards": [274, 275, 276],
     "start": 1694631600000,
     "end": 1695409199000,
     "banner_type": "Limited Event Rerun",
@@ -2001,7 +1999,7 @@
   {
     "id": 158,
     "name": "From on a perch Gacha",
-    "cards": [266, 267, 268],
+    "cards": [504, 505, 506],
     "start": 1695236400000,
     "end": 1696100399000,
     "banner_type": "Event",
@@ -2020,7 +2018,7 @@
   {
     "id": 159,
     "name": "Happiness Package Gacha",
-    "cards": [208, 217, 180, 221, 205, 148],
+    "cards": [416, 429, 375, 435, 411, 330],
     "start": 1695409200000,
     "end": 1699387199000,
     "banner_type": "Happiness Package",
@@ -2030,7 +2028,7 @@
   {
     "id": 160,
     "name": "[JP 2nd Anniversary] VIRTUAL SINGER Premium Gift Gacha",
-    "cards": [192, 196, 229, 218, 169, 222],
+    "cards": [393, 399, 447, 430, 358, 436],
     "start": 1696057200000,
     "end": 1697137199000,
     "banner_type": "Unit Premium Gift",
@@ -2040,7 +2038,7 @@
   {
     "id": 161,
     "name": "[JP 2nd Anniversary] Leo/need Premium Gift Gacha",
-    "cards": [208, 96, 137, 183],
+    "cards": [416, 244, 313, 380],
     "start": 1696057200000,
     "end": 1697137199000,
     "banner_type": "Unit Premium Gift",
@@ -2050,7 +2048,7 @@
   {
     "id": 162,
     "name": "[JP 2nd Anniversary] MORE MORE JUMP! Premium Gift Gacha",
-    "cards": [191, 143, 149, 199],
+    "cards": [392, 321, 331, 403],
     "start": 1696057200000,
     "end": 1697137199000,
     "banner_type": "Unit Premium Gift",
@@ -2060,7 +2058,7 @@
   {
     "id": 163,
     "name": "[JP 2nd Anniversary] Vivid BAD SQUAD Premium Gift Gacha",
-    "cards": [178, 158, 220, 156],
+    "cards": [373, 343, 434, 341],
     "start": 1696057200000,
     "end": 1697137199000,
     "banner_type": "Unit Premium Gift",
@@ -2070,7 +2068,7 @@
   {
     "id": 164,
     "name": "[JP 2nd Anniversary] Wonderlands×Showtime Premium Gift Gacha",
-    "cards": [204, 167, 230, 216],
+    "cards": [410, 356, 450, 428],
     "start": 1696057200000,
     "end": 1697137199000,
     "banner_type": "Unit Premium Gift",
@@ -2080,7 +2078,7 @@
   {
     "id": 165,
     "name": "[JP 2nd Anniversary] Nightcord at 25:00 Premium Gift Gacha",
-    "cards": [170, 227, 103, 217],
+    "cards": [361, 445, 255, 429],
     "start": 1696057200000,
     "end": 1697137199000,
     "banner_type": "Unit Premium Gift",
@@ -2090,7 +2088,7 @@
   {
     "id": 166,
     "name": "[JP 2nd Anniversary] Colorful Festival Gacha Dream Pick",
-    "cards": [269, 270, 271, 272, 273, 274],
+    "cards": [509, 510, 511, 512, 513, 514],
     "start": 1696100400000,
     "end": 1696445999000,
     "banner_type": "Colorful Festival",
@@ -2100,7 +2098,7 @@
   {
     "id": 167,
     "name": "[JP 2nd Anniversary] Memorial Select Gacha",
-    "cards": [192, 208, 191, 178, 204, 170],
+    "cards": [393, 416, 392, 373, 410, 361],
     "start": 1696057200000,
     "end": 1697137199000,
     "banner_type": "Memorial Seelct",
@@ -2110,7 +2108,7 @@
   {
     "id": 168,
     "name": "[JP 2nd Anniversary] 10x Free Gacha",
-    "cards": [66, 184, 82, 141, 231, 17],
+    "cards": [198, 381, 224, 319, 451, 115],
     "start": 1696100400000,
     "end": 1698778799000,
     "banner_type": "Free Pull",
@@ -2120,7 +2118,7 @@
   {
     "id": 169,
     "name": "Darkness Festa Gacha",
-    "cards": [271, 272, 273, 274],
+    "cards": [511, 512, 513, 514],
     "start": 1696446000000,
     "end": 1697050799000,
     "banner_type": "Limited Event",
@@ -2131,7 +2129,7 @@
   {
     "id": 170,
     "name": "Haruka Kiritani Happy Birthday 2023 Gacha",
-    "cards": [275, 128],
+    "cards": [516, 295],
     "start": 1696489200000,
     "end": 1697093999000,
     "banner_type": "Birthday",
@@ -2141,7 +2139,7 @@
   {
     "id": 171,
     "name": "Dreams come true Gacha",
-    "cards": [276, 277, 278],
+    "cards": [517, 518, 519],
     "start": 1697050800000,
     "end": 1697914799000,
     "banner_type": "Event",
@@ -2160,7 +2158,7 @@
   {
     "id": 172,
     "name": "[Rerun] Scramble Flower Gacha",
-    "cards": [123, 124, 125],
+    "cards": [291, 292, 293],
     "start": 1697396400000,
     "end": 1698173999000,
     "banner_type": "Limited Event Rerun",
@@ -2170,7 +2168,7 @@
   {
     "id": 173,
     "name": "Temple of Chronos Gacha",
-    "cards": [279, 280, 281],
+    "cards": [522, 523, 524],
     "start": 1697914800000,
     "end": 1698778799000,
     "banner_type": "Event",
@@ -2190,7 +2188,7 @@
   {
     "id": 174,
     "name": "Honami Mochizuki Happy Birthday 2023 Gacha",
-    "cards": [282, 132],
+    "cards": [527, 306],
     "start": 1698390000000,
     "end": 1698994799000,
     "banner_type": "Birthday",
@@ -2200,7 +2198,7 @@
   {
     "id": 175,
     "name": "Happiness Package Gacha",
-    "cards": [243, 239, 227, 230, 190, 229],
+    "cards": [469, 463, 445, 450, 391, 447],
     "start": 1698606000000,
     "end": 1699387199000,
     "banner_type": "Happiness Package",
@@ -2210,7 +2208,7 @@
   {
     "id": 176,
     "name": "Spooky Forest Gacha",
-    "cards": [283, 284, 285],
+    "cards": [528, 529, 530],
     "start": 1698778800000,
     "end": 1699646399000,
     "banner_type": "Limited Event",
@@ -2221,7 +2219,7 @@
   {
     "id": 177,
     "name": "MEIKO Happy Anniversary 2023 Gacha",
-    "cards": [286, 136],
+    "cards": [533, 312],
     "start": 1699167600000,
     "end": 1699775999000,
     "banner_type": "Birthday",
@@ -2231,7 +2229,7 @@
   {
     "id": 178,
     "name": "NEON Universe Gacha",
-    "cards": [287, 288, 289],
+    "cards": [535, 536, 537],
     "start": 1699646400000,
     "end": 1700510399000,
     "banner_type": "Event",
@@ -2251,7 +2249,7 @@
   {
     "id": 179,
     "name": "Akito Shinonome Happy Birthday 2023 Gacha",
-    "cards": [290, 140],
+    "cards": [534, 318],
     "start": 1699776000000,
     "end": 1700380799000,
     "banner_type": "Birthday",
@@ -2261,7 +2259,7 @@
   {
     "id": 180,
     "name": "[Rerun] Wanderer's Journey Gacha",
-    "cards": [133, 134, 135],
+    "cards": [307, 308, 309],
     "start": 1699992000000,
     "end": 1700769599000,
     "banner_type": "Limited Event Rerun",
@@ -2279,7 +2277,7 @@
   {
     "id": 181,
     "name": "Portray Yourself Gacha",
-    "cards": [291, 292, 293],
+    "cards": [540, 541, 542],
     "start": 1700510400000,
     "end": 1701374399000,
     "banner_type": "Event",
@@ -2290,7 +2288,7 @@
   {
     "id": 182,
     "name": "Thanksgiving Celebration Free 10x Gacha",
-    "cards": [119, 116, 90, 68],
+    "cards": [281, 276, 234, 202],
     "start": 1700726400000,
     "end": 1700899199000,
     "banner_type": "Free Pull",
@@ -2300,7 +2298,7 @@
   {
     "id": 183,
     "name": "Black Friday Special Once Daily Free 10x Gacha",
-    "cards": [218, 230, 240, 243, 250, 255],
+    "cards": [430, 450, 464, 469, 481, 487],
     "start": 1700812800000,
     "end": 1701158399000,
     "banner_type": "Free Pull",
@@ -2310,7 +2308,7 @@
   {
     "id": 184,
     "name": "Your Pick Gacha",
-    "cards": [243, 183, 143, 251, 239, 102, 204, 216, 227, 254, 218, 222],
+    "cards": [469, 380, 321, 482, 463, 254, 410, 428, 445, 486, 430, 436],
     "start": 1700856000000,
     "end": 1701633599000,
     "banner_type": "Your Pick",
@@ -2320,7 +2318,7 @@
   {
     "id": 185,
     "name": "Fly to The Future! Gacha",
-    "cards": [294, 295, 296],
+    "cards": [545, 546, 547],
     "start": 1701374400000,
     "end": 1702324799000,
     "banner_type": "Limited Event",
@@ -2339,7 +2337,7 @@
   {
     "id": 186,
     "name": "Shizuku Hinomori Happy Birthday 2023 Gacha",
-    "cards": [297, 147],
+    "cards": [550, 329],
     "start": 1701849600000,
     "end": 1702454399000,
     "banner_type": "Birthday",
@@ -2349,7 +2347,7 @@
   {
     "id": 187,
     "name": "[Rerun][JP 2nd Anniversary] Colorful Festival Gacha Dream Pick",
-    "cards": [269, 270, 271, 272, 273, 274],
+    "cards": [509, 510, 511, 512, 513, 514],
     "start": 1701936000000,
     "end": 1702583999000,
     "banner_type": "Colorful Festival",
@@ -2359,7 +2357,7 @@
   {
     "id": 188,
     "name": "[2nd Anniversary] 10x Free Gacha",
-    "cards": [66, 184, 82, 141, 231, 17],
+    "cards": [198, 381, 224, 319, 451, 115],
     "start": 1701979200000,
     "end": 1704052799000,
     "banner_type": "Free Pull",
@@ -2369,7 +2367,7 @@
   {
     "id": 189,
     "name": "[Rerun][JP 2nd Anniversary] Memorial Select Gacha",
-    "cards": [192, 208, 191, 178, 204, 170],
+    "cards": [393, 416, 392, 373, 410, 361],
     "start": 1701936000000,
     "end": 1703188799000,
     "banner_type": "Unit Premium Gift",
@@ -2379,7 +2377,7 @@
   {
     "id": 190,
     "name": "[Rerun][JP 2nd Anniversary] Memorial Select Gacha",
-    "cards": [192, 196, 229, 218, 169, 22],
+    "cards": [393, 399, 447, 430, 358, 134],
     "start": 1701936000000,
     "end": 1703188799000,
     "banner_type": "Memorial Seelct",
@@ -2389,7 +2387,7 @@
   {
     "id": 191,
     "name": "[Rerun][JP 2nd Anniversary] Leo/need Premium Gift Gacha",
-    "cards": [208, 96, 137, 183],
+    "cards": [416, 244, 313, 380],
     "start": 1701936000000,
     "end": 1703188799000,
     "banner_type": "Unit Premium Gift",
@@ -2399,7 +2397,7 @@
   {
     "id": 192,
     "name": "[Rerun][JP 2nd Anniversary] MORE MORE JUMP! Premium Gift Gacha",
-    "cards": [191, 143, 149, 190],
+    "cards": [392, 321, 331, 391],
     "start": 1701936000000,
     "end": 1703188799000,
     "banner_type": "Unit Premium Gift",
@@ -2409,7 +2407,7 @@
   {
     "id": 193,
     "name": "[Rerun][JP 2nd Anniversary] Vivid BAD SQUAD Premium Gift Gacha",
-    "cards": [178, 158, 220, 156],
+    "cards": [373, 343, 434, 341],
     "start": 1701936000000,
     "end": 1703188799000,
     "banner_type": "Unit Premium Gift",
@@ -2419,7 +2417,7 @@
   {
     "id": 194,
     "name": "[Rerun][JP 2nd Anniversary] Wonderlands×Showtime Premium Gift Gacha",
-    "cards": [204, 167, 230, 216],
+    "cards": [410, 356, 450, 428],
     "start": 1701936000000,
     "end": 1703188799000,
     "banner_type": "Unit Premium Gift",
@@ -2429,7 +2427,7 @@
   {
     "id": 195,
     "name": "[Rerun][JP 2nd Anniversary] Nightcord at 25:00 Premium Gift Gacha",
-    "cards": [170, 227, 103, 217],
+    "cards": [361, 445, 255, 429],
     "start": 1701936000000,
     "end": 1703188799000,
     "banner_type": "Unit Premium Gift",
@@ -2439,7 +2437,7 @@
   {
     "id": 196,
     "name": "Break The Chain Gacha",
-    "cards": [298, 299, 300],
+    "cards": [551, 552, 553],
     "start": 1702324800000,
     "end": 1703188799000,
     "banner_type": "Event",
@@ -2459,7 +2457,7 @@
   {
     "id": 197,
     "name": "[Rerun] Growing Feelings, Words in the Snow Gacha",
-    "cards": [144, 145, 146],
+    "cards": [324, 325, 326],
     "start": 1702584000000,
     "end": 1703361599000,
     "banner_type": "Limited Event Rerun",
@@ -2469,7 +2467,7 @@
   {
     "id": 198,
     "name": "Happiness Package Gacha",
-    "cards": [263, 204, 251, 239, 210, 252],
+    "cards": [499, 410, 482, 463, 418, 483],
     "start": 1702753200000,
     "end": 1703534399000,
     "banner_type": "Happiness Package",
@@ -2479,7 +2477,7 @@
   {
     "id": 199,
     "name": "Alighting Archer of Compassion Gacha",
-    "cards": [301, 302, 303],
+    "cards": [556, 557, 558],
     "start": 1703188800000,
     "end": 1704052799000,
     "banner_type": "Event",
@@ -2490,7 +2488,7 @@
   {
     "id": 200,
     "name": "Kagamine Rin Happy Anniversary 2023 Gacha",
-    "cards": [304, 159],
+    "cards": [561, 346],
     "start": 1703664000000,
     "end": 1704268799000,
     "banner_type": "Birthday",
@@ -2500,7 +2498,7 @@
   {
     "id": 201,
     "name": "Kagamine Len Happy Anniversary 2023 Gacha",
-    "cards": [305, 160],
+    "cards": [562, 347],
     "start": 1703664000000,
     "end": 1704268799000,
     "banner_type": "Birthday",
@@ -2510,7 +2508,7 @@
   {
     "id": 202,
     "name": "2024 New Year Colorful Festival Gacha",
-    "cards": [306, 307, 308, 309, 310],
+    "cards": [563, 564, 565, 566, 567],
     "start": 1704052800000,
     "end": 1704398399000,
     "banner_type": "Colorful Festival",
@@ -2520,7 +2518,7 @@
   {
     "id": 203,
     "name": "2024 New Year Premium Gift Gacha",
-    "cards": [131, 139, 149, 179, 206, 171],
+    "cards": [298, 315, 331, 374, 412, 362],
     "start": 1704052800000,
     "end": 1704916799000,
     "banner_type": "Premium Gift",
@@ -2530,7 +2528,7 @@
   {
     "id": 204,
     "name": "2024 New Year 10x Free Gacha",
-    "cards": [192, 184, 148, 267, 231, 195],
+    "cards": [393, 381, 330, 505, 451, 398],
     "start": 1704139200000,
     "end": 1706731199000,
     "banner_type": "Free Pull",
@@ -2540,7 +2538,7 @@
   {
     "id": 205,
     "name": "New Year's Divine Beasts Gacha",
-    "cards": [308, 309, 310],
+    "cards": [565, 566, 567],
     "start": 1704398400000,
     "end": 1704916799000,
     "banner_type": "Limited Event",
@@ -2551,7 +2549,7 @@
   {
     "id": 206,
     "name": "Shiho Hinomori Happy Birthday 2024 Gacha",
-    "cards": [311, 166],
+    "cards": [570, 355],
     "start": 1704700800000,
     "end": 1705305599000,
     "banner_type": "Birthday",
@@ -2561,7 +2559,7 @@
   {
     "id": 207,
     "name": "Twinkling Night Sky Milky Way Gacha",
-    "cards": [312, 313, 314],
+    "cards": [571, 572, 573],
     "start": 1704916800000,
     "end": 1705867199000,
     "banner_type": "Event",
@@ -2583,7 +2581,7 @@
   {
     "id": 208,
     "name": "[Rerun] A Maiden's Hope For The New Year Gacha",
-    "cards": [163, 164, 165],
+    "cards": [350, 351, 352],
     "start": 1705176000000,
     "end": 1705953599000,
     "banner_type": "Limited Event Rerun",
@@ -2593,7 +2591,7 @@
   {
     "id": 209,
     "name": "Your Rhythm's Symphony Gacha",
-    "cards": [315, 316, 317],
+    "cards": [576, 577, 578],
     "start": 1705867200000,
     "end": 1706731199000,
     "banner_type": "Event",
@@ -2613,7 +2611,7 @@
   {
     "id": 210,
     "name": "Happiness Package Gacha",
-    "cards": [244, 267, 228, 265, 250, 241],
+    "cards": [470, 505, 446, 501, 481, 465],
     "start": 1706212800000,
     "end": 1707076799000,
     "banner_type": "Happiness Package",
@@ -2623,7 +2621,7 @@
   {
     "id": 211,
     "name": "Mafuyu Asahina Happy Birthday 2024 Gacha",
-    "cards": [318, 173],
+    "cards": [581, 366],
     "start": 1706342400000,
     "end": 1706947199000,
     "banner_type": "Birthday",
@@ -2633,7 +2631,7 @@
   {
     "id": 212,
     "name": "Megurine Luka Happy Anniversary 2024 Gacha",
-    "cards": [319, 174],
+    "cards": [582, 367],
     "start": 1706601600000,
     "end": 1707206399000,
     "banner_type": "Birthday",
@@ -2643,7 +2641,7 @@
   {
     "id": 213,
     "name": "Sweet, Cute Valentine! Gacha",
-    "cards": [320, 321, 322],
+    "cards": [583, 584, 585],
     "start": 1706731200000,
     "end": 1707595199000,
     "banner_type": "Limited Event",
@@ -2654,7 +2652,7 @@
   {
     "id": 214,
     "name": "[Rerun] Memoirs of Wrongdoings Gacha",
-    "cards": [151, 152, 153, 154, 155],
+    "cards": [335, 336, 337, 338, 339],
     "start": 1707076800000,
     "end": 1708286399000,
     "banner_type": "Limited Collab Event Rerun",
@@ -2664,7 +2662,7 @@
   {
     "id": 215,
     "name": "Kanade Yoisaki Happy Birthday 2024 Gacha",
-    "cards": [323, 181],
+    "cards": [588, 378],
     "start": 1707552000000,
     "end": 1708156799000,
     "banner_type": "Birthday",
@@ -2674,7 +2672,7 @@
   {
     "id": 216,
     "name": "Herald of Dewy Rainy Spring Gacha",
-    "cards": [324, 325, 326],
+    "cards": [589, 590, 591],
     "start": 1707595200000,
     "end": 1708372799000,
     "banner_type": "Event",
@@ -2693,7 +2691,7 @@
   {
     "id": 217,
     "name": "9 Million Downloads! 4★ Guaranteed Gacha",
-    "cards": [146, 156, 172, 167, 149, 119],
+    "cards": [326, 341, 363, 356, 331, 281],
     "start": 1707854400000,
     "end": 1708891199000,
     "banner_type": "4★ Guaranteed",
@@ -2703,7 +2701,7 @@
   {
     "id": 218,
     "name": "[Rerun] Secret Tea Time Gacha",
-    "cards": [175, 176, 177],
+    "cards": [368, 369, 370],
     "start": 1707854400000,
     "end": 1708631999000,
     "banner_type": "Limited Event Rerun",
@@ -2713,7 +2711,7 @@
   {
     "id": 219,
     "name": "KAITO Happy Anniversary 2024 Gacha",
-    "cards": [327, 182],
+    "cards": [594, 379],
     "start": 1708156800000,
     "end": 1708761599000,
     "banner_type": "Birthday",
@@ -2723,7 +2721,7 @@
   {
     "id": 220,
     "name": "Let Out The Lambs Gacha",
-    "cards": [328, 329, 330],
+    "cards": [595, 596, 597],
     "start": 1708372800000,
     "end": 1709236799000,
     "banner_type": "Event",
@@ -2743,7 +2741,7 @@
   {
     "id": 221,
     "name": "Your Pick Gacha",
-    "cards": [287, 210, 276, 149, 281, 221, 266, 195, 291, 192, 229],
+    "cards": [535, 418, 517, 331, 524, 435, 504, 398, 540, 393, 447],
     "start": 1708718400000,
     "end": 1709582399000,
     "banner_type": "Your Pick",
@@ -2753,7 +2751,7 @@
   {
     "id": 222,
     "name": "Imperial Soldiers Gacha",
-    "cards": [331, 332, 333],
+    "cards": [600, 601, 602],
     "start": 1709236800000,
     "end": 1710183599000,
     "banner_type": "Limited Event",
@@ -2764,7 +2762,7 @@
   {
     "id": 223,
     "name": "Kohane Azusawa Happy Birthday 2024 Gacha",
-    "cards": [334, 189],
+    "cards": [605, 390],
     "start": 1709366400000,
     "end": 1709971199000,
     "banner_type": "Birthday",
@@ -2774,7 +2772,7 @@
   {
     "id": 224,
     "name": "Happiness Package Gacha",
-    "cards": [289, 277, 279, 267, 293, 287],
+    "cards": [537, 518, 522, 505, 542, 535],
     "start": 1709755200000,
     "end": 1710442799000,
     "banner_type": "Happiness Package",
@@ -2784,7 +2782,7 @@
   {
     "id": 225,
     "name": "Miku Day 2024 Campaign Gacha",
-    "cards": [131, 150, 157, 167, 172, 183],
+    "cards": [298, 332, 342, 356, 363, 380],
     "start": 1709971200000,
     "end": 1710399599000,
     "banner_type": "Normal",
@@ -2794,7 +2792,7 @@
   {
     "id": 226,
     "name": "Hidden Circus Gacha",
-    "cards": [335, 336, 337],
+    "cards": [606, 607, 608],
     "start": 1710183600000,
     "end": 1711047599000,
     "banner_type": "Event",
@@ -2817,7 +2815,7 @@
   {
     "id": 227,
     "name": "[Rerun] Knights of White Gacha",
-    "cards": [186, 187, 188],
+    "cards": [385, 386, 387],
     "start": 1710702000000,
     "end": 1711479599000,
     "banner_type": "Limited Event Rerun",
@@ -2827,7 +2825,7 @@
   {
     "id": 228,
     "name": "Airi Momoi Happy Birthday 2024 Gacha",
-    "cards": [338, 193],
+    "cards": [611, 396],
     "start": 1710831600000,
     "end": 1711436399000,
     "banner_type": "Birthday",
@@ -2837,7 +2835,7 @@
   {
     "id": 229,
     "name": "Fangs in the Shadows Gacha",
-    "cards": [339, 340, 341],
+    "cards": [612, 613, 614],
     "start": 1711047600000,
     "end": 1711825199000,
     "banner_type": "Event",
@@ -2856,7 +2854,7 @@
   {
     "id": 230,
     "name": "JP 2.5 Year Anniversary Greatest Hits Gacha",
-    "cards": [117, 62, 178, 204, 292, 1],
+    "cards": [279, 190, 373, 410, 541, 88],
     "start": 1711825200000,
     "end": 1712861999000,
     "banner_type": "Paid Gacha",
@@ -2866,7 +2864,7 @@
   {
     "id": 231,
     "name": "JP 2.5 Year Anniversary 4★ Guaranteed Premium Gift Gacha",
-    "cards": [303, 287, 301, 298, 279, 292],
+    "cards": [558, 535, 556, 551, 522, 541],
     "start": 1711825200000,
     "end": 1712861999000,
     "banner_type": "4★ Guaranteed",
@@ -2876,7 +2874,7 @@
   {
     "id": 232,
     "name": "JP 2.5 Year Anniversary Colorful Festival Gacha",
-    "cards": [342, 343, 344, 345, 346, 347],
+    "cards": [617, 618, 619, 620, 621, 622],
     "start": 1711825200000,
     "end": 1712257199000,
     "banner_type": "Colorful Festival",
@@ -2886,7 +2884,7 @@
   {
     "id": 233,
     "name": "3900's 10x Free Gacha",
-    "cards": [131, 65, 276, 67, 88, 195],
+    "cards": [298, 197, 517, 199, 232, 398],
     "start": 1711825200000,
     "end": 1714503599000,
     "banner_type": "Free Pull",
@@ -2896,7 +2894,7 @@
   {
     "id": 234,
     "name": "[Friend Invitation] 4★ Character Guaranteed Gacha",
-    "cards": [118, 139, 108, 156, 167, 172],
+    "cards": [280, 315, 264, 341, 356, 363],
     "start": 1711825200000,
     "end": 1717138799000,
     "banner_type": "4★ Guaranteed",
@@ -2906,7 +2904,7 @@
   {
     "id": 235,
     "name": "Fluttering Maidens Gacha",
-    "cards": [344, 345, 346, 347],
+    "cards": [619, 620, 621, 622],
     "start": 1712257200000,
     "end": 1712861999000,
     "banner_type": "Limited Event",
@@ -2917,7 +2915,7 @@
   {
     "id": 236,
     "name": "Space Colony Gacha",
-    "cards": [348, 349, 350],
+    "cards": [624, 625, 626],
     "start": 1712862000000,
     "end": 1713725999000,
     "banner_type": "Event",
@@ -2928,7 +2926,7 @@
   {
     "id": 237,
     "name": "3900's World Championship 2024 Spring Premium Gift Gacha",
-    "cards": [289, 351, 229, 352, 353, 303],
+    "cards": [537, 661, 447, 770, 793, 558],
     "start": 1713034800000,
     "end": 1713725999000,
     "banner_type": "Premium Gift",
@@ -2938,7 +2936,7 @@
   {
     "id": 238,
     "name": "Minori Hanasato Happy Birthday 2024 Gacha",
-    "cards": [354, 207],
+    "cards": [629, 415],
     "start": 1713078000000,
     "end": 1713682799000,
     "banner_type": "Birthday",
@@ -2948,7 +2946,7 @@
   {
     "id": 239,
     "name": "[Rerun] Yearning for Spring, A Moment in the Night Gacha",
-    "cards": [200, 201, 202, 203],
+    "cards": [404, 405, 406, 407],
     "start": 1713380400000,
     "end": 1714503599000,
     "banner_type": "Limited Event Rerun",
@@ -2958,7 +2956,7 @@
   {
     "id": 240,
     "name": "Where Turning Wheels Take Us Gacha",
-    "cards": [355, 356, 357],
+    "cards": [630, 631, 632],
     "start": 1713726000000,
     "end": 1714503599000,
     "banner_type": "Event",
@@ -2969,7 +2967,7 @@
   {
     "id": 241,
     "name": "Happiness Package Gacha",
-    "cards": [210, 190, 266, 313, 267, 185],
+    "cards": [418, 391, 504, 572, 505, 382],
     "start": 1714158000000,
     "end": 1714935599000,
     "banner_type": "Happiness Package",
@@ -2979,7 +2977,7 @@
   {
     "id": 242,
     "name": "Ena Shinonome Happy Birthday 2024 Gacha",
-    "cards": [358, 211],
+    "cards": [635, 421],
     "start": 1714460400000,
     "end": 1715065199000,
     "banner_type": "Birthday",
@@ -2989,7 +2987,7 @@
   {
     "id": 243,
     "name": "Escape the Rain Gacha",
-    "cards": [359, 360, 361],
+    "cards": [636, 637, 638],
     "start": 1714503600000,
     "end": 1715453999000,
     "banner_type": "Limited Event",
@@ -3008,7 +3006,7 @@
   {
     "id": 244,
     "name": "[Rerun] The Naive Voice That Cries Out to You Gacha",
-    "cards": [212, 213, 214],
+    "cards": [422, 423, 424],
     "start": 1714762800000,
     "end": 1715626799000,
     "banner_type": "Limited Event Rerun",
@@ -3026,7 +3024,7 @@
   {
     "id": 245,
     "name": "Saki Tenma Happy Birthday 2024 Gacha",
-    "cards": [362, 215],
+    "cards": [641, 427],
     "start": 1715238000000,
     "end": 1715842799000,
     "banner_type": "Birthday",
@@ -3036,7 +3034,7 @@
   {
     "id": 246,
     "name": "Bon Voyage! Friendship Ahoy! Gacha",
-    "cards": [363, 364, 365],
+    "cards": [642, 643, 644],
     "start": 1715454000000,
     "end": 1716231599000,
     "banner_type": "Event",
@@ -3047,7 +3045,7 @@
   {
     "id": 247,
     "name": "Your Pick Gacha",
-    "cards": [13, 183, 82, 108, 67, 330, 88, 120, 241, 113],
+    "cards": [109, 380, 224, 264, 199, 597, 232, 284, 465, 271],
     "start": 1715799600000,
     "end": 1716577199000,
     "banner_type": "Your Pick",
@@ -3057,7 +3055,7 @@
   {
     "id": 248,
     "name": "Tsukasa Tenma Happy Birthday 2024 Gacha",
-    "cards": [366, 219],
+    "cards": [647, 433],
     "start": 1715929200000,
     "end": 1716533999000,
     "banner_type": "Birthday",
@@ -3067,7 +3065,7 @@
   {
     "id": 249,
     "name": "Memories Swept Off on Ripples Gacha",
-    "cards": [367, 368, 369],
+    "cards": [648, 649, 650],
     "start": 1716231600000,
     "end": 1717181999000,
     "banner_type": "Event",
@@ -3087,7 +3085,7 @@
   {
     "id": 250,
     "name": "Toya Aoyagi Happy Birthday 2024 Gacha",
-    "cards": [370, 223],
+    "cards": [653, 439],
     "start": 1716620400000,
     "end": 1717225199000,
     "banner_type": "Birthday",
@@ -3097,7 +3095,7 @@
   {
     "id": 251,
     "name": "Under Eternal Bells Gacha",
-    "cards": [371, 372, 373],
+    "cards": [654, 655, 656],
     "start": 1717182000000,
     "end": 1718045999000,
     "banner_type": "Limited Event",
@@ -3108,7 +3106,7 @@
   {
     "id": 252,
     "name": "[Friend Invitation] 4★ Character Guaranteed Gacha",
-    "cards": [118, 139, 108, 156, 167, 172],
+    "cards": [280, 315, 264, 341, 356, 363],
     "start": 1717786800000,
     "end": 1722236399000,
     "banner_type": "4★ Guaranteed",
@@ -3118,7 +3116,7 @@
   {
     "id": 253,
     "name": "[Rerun] JP 2.5 Year Anniversary Colorful Festival Gacha",
-    "cards": [342, 343, 344, 345, 346, 347],
+    "cards": [617, 618, 619, 620, 621, 622],
     "start": 1717786800000,
     "end": 1718132399000,
     "banner_type": "Colorful Festival",
@@ -3128,7 +3126,7 @@
   {
     "id": 254,
     "name": "[Rerun] JP 2.5 Year Anniversary Greatest Hits Gacha",
-    "cards": [117, 62, 178, 204, 292, 1],
+    "cards": [279, 190, 373, 410, 541, 88],
     "start": 1717786800000,
     "end": 1718823599000,
     "banner_type": "Paid Gacha",
@@ -3138,7 +3136,7 @@
   {
     "id": 255,
     "name": "[Rerun] JP 2.5 Year Anniversary 4★ Guaranteed Premium Gift Gacha",
-    "cards": [303, 287, 301, 298, 279, 292],
+    "cards": [558, 535, 556, 551, 522, 541],
     "start": 1717786800000,
     "end": 1718823599000,
     "banner_type": "4★ Guaranteed",
@@ -3148,7 +3146,7 @@
   {
     "id": 256,
     "name": "2.5 Year Anniversary 10x Free Gacha",
-    "cards": [252, 288, 277, 299, 280, 293],
+    "cards": [483, 536, 518, 552, 523, 542],
     "start": 1717786800000,
     "end": 1720465199000,
     "banner_type": "Free Pull",
@@ -3158,7 +3156,7 @@
   {
     "id": 257,
     "name": "Someone's Dear Ones Gacha",
-    "cards": [374, 375, 351],
+    "cards": [659, 660, 661],
     "start": 1718046000000,
     "end": 1718909999000,
     "banner_type": "Event",
@@ -3177,7 +3175,7 @@
   {
     "id": 258,
     "name": "[Rerun] Graceful Marriage Gacha",
-    "cards": [224, 225, 226],
+    "cards": [440, 441, 442],
     "start": 1718391600000,
     "end": 1719255599000,
     "banner_type": "Limited Event Rerun",
@@ -3187,7 +3185,7 @@
   {
     "id": 259,
     "name": "2024 June Premium Gift Gacha",
-    "cards": [266, 256, 252, 281, 264, 278],
+    "cards": [504, 488, 483, 524, 500, 519],
     "start": 1718650800000,
     "end": 1719946799000,
     "banner_type": "Premium Gift",
@@ -3197,7 +3195,7 @@
   {
     "id": 260,
     "name": "Chest of Glittering Emotions Gacha",
-    "cards": [376, 377, 378],
+    "cards": [664, 665, 666],
     "start": 1718910000000,
     "end": 1719773999000,
     "banner_type": "Event",
@@ -3216,7 +3214,7 @@
   {
     "id": 261,
     "name": "Rui Kamishiro Happy Birthday 2024 Gacha",
-    "cards": [379, 233],
+    "cards": [669, 455],
     "start": 1719212400000,
     "end": 1719817199000,
     "banner_type": "Birthday",
@@ -3226,7 +3224,7 @@
   {
     "id": 262,
     "name": "Colorful Festival Gacha",
-    "cards": [380, 381, 382, 383, 384],
+    "cards": [670, 671, 672, 673, 674],
     "start": 1719774000000,
     "end": 1720119599000,
     "banner_type": "Colorful Festival",
@@ -3236,7 +3234,7 @@
   {
     "id": 263,
     "name": "Anime Expo 2024 4★Guaranteed Gacha",
-    "cards": [300, 317, 325, 328, 335, 340],
+    "cards": [553, 578, 590, 595, 606, 613],
     "start": 1720119600000,
     "end": 1720983599000,
     "banner_type": "4★ Guaranteed",
@@ -3246,7 +3244,7 @@
   {
     "id": 264,
     "name": "City of Spirits Gacha",
-    "cards": [382, 383, 384],
+    "cards": [672, 673, 674],
     "start": 1720119600000,
     "end": 1720724399000,
     "banner_type": "Limited Event",
@@ -3257,7 +3255,7 @@
   {
     "id": 265,
     "name": "Anime Expo 2024 Once Daily Free 10x Gacha",
-    "cards": [281, 292, 314, 316, 326, 330],
+    "cards": [524, 541, 573, 577, 591, 597],
     "start": 1720076400000,
     "end": 1720421999000,
     "banner_type": "Free Pull",
@@ -3267,7 +3265,7 @@
   {
     "id": 266,
     "name": "Where Is the ♡? Gacha",
-    "cards": [385, 386, 387],
+    "cards": [677, 678, 679],
     "start": 1720724400000,
     "end": 1721588399000,
     "banner_type": "Event",
@@ -3286,7 +3284,7 @@
   {
     "id": 267,
     "name": "2024 July Premium Gift Gacha",
-    "cards": [350, 337, 348, 325, 339, 328],
+    "cards": [626, 608, 624, 590, 612, 595],
     "start": 1720897200000,
     "end": 1722193199000,
     "banner_type": "Premium Gift",
@@ -3296,7 +3294,7 @@
   {
     "id": 268,
     "name": "Nene Kusanagi Happy Birthday 2024 Gacha",
-    "cards": [388, 242],
+    "cards": [682, 468],
     "start": 1721458800000,
     "end": 1722063599000,
     "banner_type": "Birthday",
@@ -3306,7 +3304,7 @@
   {
     "id": 269,
     "name": "Upon That Shooting Star Gacha",
-    "cards": [389, 390, 391],
+    "cards": [683, 684, 685],
     "start": 1721588400000,
     "end": 1722452399000,
     "banner_type": "Event",
@@ -3326,7 +3324,7 @@
   {
     "id": 270,
     "name": "[Rerun] Sporty Girl♡ Gacha",
-    "cards": [236, 237, 238],
+    "cards": [458, 459, 460],
     "start": 1721761200000,
     "end": 1722625199000,
     "banner_type": "Limited Event Rerun",
@@ -3336,7 +3334,7 @@
   {
     "id": 271,
     "name": "An Shiraishi Happy Birthday 2024 Gacha",
-    "cards": [392, 246],
+    "cards": [688, 474],
     "start": 1721977200000,
     "end": 1722581999000,
     "banner_type": "Birthday",
@@ -3346,7 +3344,7 @@
   {
     "id": 272,
     "name": "Happiness Package Gacha",
-    "cards": [317, 356, 22, 111, 217, 252],
+    "cards": [578, 631, 134, 269, 429, 483],
     "start": 1722193200000,
     "end": 1722970799000,
     "banner_type": "Happiness Package",
@@ -3356,7 +3354,7 @@
   {
     "id": 273,
     "name": "Welcome to the Diner! Gacha",
-    "cards": [393, 394, 395],
+    "cards": [689, 690, 691],
     "start": 1722452400000,
     "end": 1723316399000,
     "banner_type": "Limited Event",
@@ -3367,7 +3365,7 @@
   {
     "id": 274,
     "name": "2024 Summer Campaign Gacha",
-    "cards": [192, 244, 251, 231, 239, 256],
+    "cards": [393, 470, 482, 451, 463, 488],
     "start": 1722884400000,
     "end": 1723964399000,
     "banner_type": "Event",
@@ -3377,7 +3375,7 @@
   {
     "id": 275,
     "name": "Repaint My Colors! Gacha",
-    "cards": [396, 397, 398],
+    "cards": [694, 695, 696],
     "start": 1723316400000,
     "end": 1724266799000,
     "banner_type": "Event",
@@ -3397,7 +3395,7 @@
   {
     "id": 276,
     "name": "Ichika Hoshino Happy Birthday 2024 Gacha",
-    "cards": [399, 253],
+    "cards": [699, 480],
     "start": 1723359600000,
     "end": 1723964399000,
     "banner_type": "Birthday",
@@ -3407,7 +3405,7 @@
   {
     "id": 277,
     "name": "[Rerun] CYBER SNIPER Gacha",
-    "cards": [247, 248, 249],
+    "cards": [475, 476, 477],
     "start": 1723662000000,
     "end": 1724439599000,
     "banner_type": "Limited Event Rerun",
@@ -3417,7 +3415,7 @@
   {
     "id": 278,
     "name": "Never-Ending Showtime Gacha",
-    "cards": [400, 401, 402],
+    "cards": [700, 701, 702],
     "start": 1724266800000,
     "end": 1725130799000,
     "banner_type": "Event",
@@ -3439,7 +3437,7 @@
   {
     "id": 279,
     "name": "Your Pick Gacha",
-    "cards": [117, 315, 191, 324, 240, 279, 135, 340, 300, 369],
+    "cards": [279, 576, 392, 589, 464, 522, 309, 613, 553, 650],
     "start": 1724526000000,
     "end": 1725476399000,
     "banner_type": "Your Pick",
@@ -3449,7 +3447,7 @@
   {
     "id": 280,
     "name": "Mizuki Akiyama Happy Birthday 2024 Gacha",
-    "cards": [403, 257],
+    "cards": [705, 491],
     "start": 1724742000000,
     "end": 1725346799000,
     "banner_type": "Birthday",
@@ -3459,7 +3457,7 @@
   {
     "id": 281,
     "name": "Magical Mirai 2024 Premium Gift Gacha",
-    "cards": [289, 365, 131, 27, 146],
+    "cards": [537, 644, 298, 126, 326],
     "start": 1725044400000,
     "end": 1725562799000,
     "banner_type": "Premium Gift",
@@ -3469,7 +3467,7 @@
   {
     "id": 282,
     "name": "Hatsune Miku Happy Anniversary 2024 Gacha",
-    "cards": [404, 258],
+    "cards": [706, 492],
     "start": 1725087600000,
     "end": 1725692399000,
     "banner_type": "Birthday",
@@ -3479,7 +3477,7 @@
   {
     "id": 283,
     "name": "Emotional Musical March Gacha",
-    "cards": [405, 406, 407, 408],
+    "cards": [707, 708, 709, 710],
     "start": 1725130800000,
     "end": 1725994799000,
     "banner_type": "Limited Event",
@@ -3490,7 +3488,7 @@
   {
     "id": 284,
     "name": "[Rerun] Before the storm Gacha",
-    "cards": [259, 260, 261],
+    "cards": [493, 494, 495],
     "start": 1725649200000,
     "end": 1726426799000,
     "banner_type": "Limited Event Rerun",
@@ -3508,7 +3506,7 @@
   {
     "id": 285,
     "name": "Emu Otori Happy Birthday 2024 Gacha",
-    "cards": [409, 262],
+    "cards": [713, 498],
     "start": 1725865200000,
     "end": 1726469999000,
     "banner_type": "Birthday",
@@ -3518,7 +3516,7 @@
   {
     "id": 286,
     "name": "Page 1 of Youth Gacha",
-    "cards": [410, 411, 412],
+    "cards": [714, 715, 716],
     "start": 1725994800000,
     "end": 1726858799000,
     "banner_type": "Event",
@@ -3529,7 +3527,7 @@
   {
     "id": 287,
     "name": "Happiness Package Gacha",
-    "cards": [349, 357, 375, 336, 339, 351],
+    "cards": [625, 632, 660, 607, 612, 661],
     "start": 1726513200000,
     "end": 1727636399000,
     "banner_type": "Happiness Package",
@@ -3539,7 +3537,7 @@
   {
     "id": 288,
     "name": "Phantom Chaser Gacha",
-    "cards": [413, 414, 415],
+    "cards": [719, 720, 721],
     "start": 1726858800000,
     "end": 1727722799000,
     "banner_type": "Event",
@@ -3550,7 +3548,7 @@
   {
     "id": 289,
     "name": "[Friend Invitation] 4★ Character Guaranteed Gacha",
-    "cards": [209, 250, 266, 205, 77, 218],
+    "cards": [417, 481, 504, 411, 217, 430],
     "start": 1727074800000,
     "end": 1733039999000,
     "banner_type": "4★ Guaranteed",
@@ -3560,7 +3558,7 @@
   {
     "id": 290,
     "name": "2024 September Premium Gift Gacha",
-    "cards": [378, 364, 377, 374, 368, 340],
+    "cards": [666, 643, 665, 659, 649, 613],
     "start": 1727204400000,
     "end": 1727981999000,
     "banner_type": "Premium Gift",
@@ -3570,7 +3568,7 @@
   {
     "id": 291,
     "name": "Beginner's 1 Guaranteed 4★ Character 10x Ticket Gacha",
-    "cards": [2, 183, 190, 239, 112, 103],
+    "cards": [92, 380, 391, 463, 270, 255],
     "start": 1727679600000,
     "end": 1749106186471,
     "banner_type": "4★ Guaranteed",
@@ -3580,7 +3578,7 @@
   {
     "id": 292,
     "name": "JP 3rd Anniversary 10x Free Gacha",
-    "cards": [365, 287, 62, 178, 204, 170],
+    "cards": [644, 535, 190, 373, 410, 361],
     "start": 1727679600000,
     "end": 1730401199000,
     "banner_type": "Free Pull",
@@ -3590,7 +3588,7 @@
   {
     "id": 293,
     "name": "JP 3rd Anniversary VIRTUAL SINGER Premium Gift Gacha",
-    "cards": [365, 351, 314, 300, 252, 268],
+    "cards": [644, 661, 573, 553, 483, 506],
     "start": 1727679600000,
     "end": 1728759599000,
     "banner_type": "Unit Premium Gift",
@@ -3600,7 +3598,7 @@
   {
     "id": 294,
     "name": "JP 3rd Anniversary Leo/need Premium Gift Gacha",
-    "cards": [364, 348, 288, 317],
+    "cards": [643, 624, 536, 578],
     "start": 1727679600000,
     "end": 1728759599000,
     "banner_type": "Unit Premium Gift",
@@ -3610,7 +3608,7 @@
   {
     "id": 295,
     "name": "JP 3rd Anniversary MORE MORE JUMP! Premium Gift Gacha",
-    "cards": [325, 277, 355, 301],
+    "cards": [590, 518, 630, 556],
     "start": 1727679600000,
     "end": 1728759599000,
     "banner_type": "Unit Premium Gift",
@@ -3620,7 +3618,7 @@
   {
     "id": 296,
     "name": "JP 3rd Anniversary Vivid BAD SQUAD Premium Gift Gacha",
-    "cards": [267, 329, 298, 375],
+    "cards": [505, 596, 551, 660],
     "start": 1727679600000,
     "end": 1728759599000,
     "banner_type": "Unit Premium Gift",
@@ -3630,7 +3628,7 @@
   {
     "id": 297,
     "name": "JP 3rd Anniversary Wonderlands×Showtime Premium Gift Gacha",
-    "cards": [280, 336, 367, 313],
+    "cards": [523, 607, 648, 572],
     "start": 1727679600000,
     "end": 1728759599000,
     "banner_type": "Unit Premium Gift",
@@ -3640,7 +3638,7 @@
   {
     "id": 298,
     "name": "JP 3rd Anniversary Nightcord at 25:00 Premium Gift Gacha",
-    "cards": [339, 302, 291, 254],
+    "cards": [612, 557, 540, 486],
     "start": 1727679600000,
     "end": 1728759599000,
     "banner_type": "Unit Premium Gift",
@@ -3650,7 +3648,7 @@
   {
     "id": 299,
     "name": "JP 3rd Anniversary Memorial Select Gacha",
-    "cards": [117, 276, 328, 335, 91, 289],
+    "cards": [279, 517, 595, 606, 237, 537],
     "start": 1727679600000,
     "end": 1728759599000,
     "banner_type": "Memorial Seelct",
@@ -3660,7 +3658,7 @@
   {
     "id": 300,
     "name": "JP 3rd Anniversary Your Pick Gacha (Limited Edition)",
-    "cards": [56, 105, 133, 187, 200, 212],
+    "cards": [180, 259, 307, 386, 404, 422],
     "start": 1727679600000,
     "end": 1728759599000,
     "banner_type": "Your Pick",
@@ -3670,7 +3668,7 @@
   {
     "id": 301,
     "name": "JP 3rd Anniversary Colorful Festival Gacha Dream Pick",
-    "cards": [416, 417, 418, 419, 420, 421],
+    "cards": [760, 761, 762, 763, 764, 765],
     "start": 1727722800000,
     "end": 1728068399000,
     "banner_type": "Colorful Festival",
@@ -3680,7 +3678,7 @@
   {
     "id": 302,
     "name": "Grow Up With Me! Gacha",
-    "cards": [418, 419, 420, 421],
+    "cards": [762, 763, 764, 765],
     "start": 1728068400000,
     "end": 1728759599000,
     "banner_type": "Limited Event",
@@ -3691,7 +3689,7 @@
   {
     "id": 303,
     "name": "Haruka Kiritani Happy Birthday 2024 Gacha",
-    "cards": [422, 275, 128],
+    "cards": [767, 516, 295],
     "start": 1728111600000,
     "end": 1728716399000,
     "banner_type": "Birthday",
@@ -3701,7 +3699,7 @@
   {
     "id": 304,
     "name": "2024 October Premium Gift Gacha",
-    "cards": [300, 298, 317, 385, 335],
+    "cards": [553, 551, 578, 677, 606],
     "start": 1728586800000,
     "end": 1730487599000,
     "banner_type": "Premium Gift",
@@ -3711,7 +3709,7 @@
   {
     "id": 305,
     "name": "Find the Exit Gacha",
-    "cards": [423, 424, 352],
+    "cards": [768, 769, 770],
     "start": 1728759600000,
     "end": 1729623599000,
     "banner_type": "Limited Event",
@@ -3728,11 +3726,10 @@
       "focus"
     ]
   },
-
   {
     "id": 307,
     "name": "[Rerun] Darkness Festa Gacha",
-    "cards": [271, 272, 273, 274],
+    "cards": [511, 512, 513, 514],
     "start": 1729018800000,
     "end": 1729796399000,
     "banner_type": "Limited Event Rerun",
@@ -3742,7 +3739,7 @@
   {
     "id": 308,
     "name": "Azure Resonance Gacha",
-    "cards": [426, 427, 428],
+    "cards": [773, 774, 775],
     "start": 1729623600000,
     "end": 1730401199000,
     "banner_type": "Event",
@@ -3761,7 +3758,7 @@
   {
     "id": 309,
     "name": "Happiness Package Gacha",
-    "cards": [348, 326, 299, 167, 93, 314],
+    "cards": [624, 591, 552, 356, 239, 573],
     "start": 1729796400000,
     "end": 1730573999000,
     "banner_type": "Happiness Package",
@@ -3771,7 +3768,7 @@
   {
     "id": 310,
     "name": "Honami Mochizuki Happy Birthday 2024 Gacha",
-    "cards": [429, 282, 132],
+    "cards": [778, 527, 306],
     "start": 1730012400000,
     "end": 1730617199000,
     "banner_type": "Birthday",
@@ -3781,7 +3778,7 @@
   {
     "id": 311,
     "name": "As Autumn Dusk Wanes Gacha",
-    "cards": [430, 431, 432],
+    "cards": [779, 780, 781],
     "start": 1730401200000,
     "end": 1731095999000,
     "banner_type": "Limited Event",
@@ -3800,7 +3797,7 @@
   {
     "id": 312,
     "name": "Nightcord at 25:00 World Link Event Support Gacha",
-    "cards": [339, 385, 291, 254, 146],
+    "cards": [612, 677, 540, 486, 326],
     "start": 1730487600000,
     "end": 1732305599000,
     "banner_type": "World Link Support",
@@ -3810,7 +3807,7 @@
   {
     "id": 313,
     "name": "MEIKO Happy Anniversary 2024 Gacha",
-    "cards": [433, 286, 136],
+    "cards": [784, 533, 312],
     "start": 1730793600000,
     "end": 1731398399000,
     "banner_type": "Birthday",
@@ -3820,7 +3817,7 @@
   {
     "id": 314,
     "name": "Heart in Water Gacha",
-    "cards": [434, 435, 436, 437],
+    "cards": [785, 786, 787, 788],
     "start": 1731096000000,
     "end": 1732305599000,
     "banner_type": "Unit Limited Event",
@@ -3838,7 +3835,7 @@
   {
     "id": 315,
     "name": "2024 Fall Campaign Gacha",
-    "cards": [341, 351, 313, 326, 390, 396],
+    "cards": [614, 661, 572, 591, 684, 694],
     "start": 1731182400000,
     "end": 1732564799000,
     "banner_type": "Event",
@@ -3848,7 +3845,7 @@
   {
     "id": 316,
     "name": "[Rerun] Spooky Forest Gacha",
-    "cards": [283, 284, 285],
+    "cards": [528, 529, 530],
     "start": 1731355200000,
     "end": 1732132799000,
     "banner_type": "Limited Event Rerun",
@@ -3858,7 +3855,7 @@
   {
     "id": 317,
     "name": "Akito Shinonome Happy Birthday 2024 Gacha",
-    "cards": [438, 290, 140],
+    "cards": [790, 534, 318],
     "start": 1731398400000,
     "end": 1732003199000,
     "banner_type": "Birthday",
@@ -3868,7 +3865,7 @@
   {
     "id": 318,
     "name": "[Rerun] One With My Crew Gacha",
-    "cards": [74, 75, 76],
+    "cards": [212, 213, 214],
     "start": 1731787200000,
     "end": 1732564799000,
     "banner_type": "Limited Event Rerun",
@@ -3887,7 +3884,7 @@
   {
     "id": 319,
     "name": "Play the Shadow Gacha",
-    "cards": [439, 440, 353],
+    "cards": [791, 792, 793],
     "start": 1732305600000,
     "end": 1732996799000,
     "banner_type": "Event",
@@ -3910,7 +3907,7 @@
   {
     "id": 320,
     "name": "[Rerun] Yearning for Spring, A Moment in the Night Gacha",
-    "cards": [200, 201, 202, 203],
+    "cards": [404, 405, 406, 407],
     "start": 1732564800000,
     "end": 1733342399000,
     "banner_type": "Limited Event Rerun",
@@ -3920,7 +3917,7 @@
   {
     "id": 321,
     "name": "Your Pick Gacha",
-    "cards": [390, 376, 363, 267, 22, 401, 291, 228, 97, 118],
+    "cards": [684, 664, 642, 505, 134, 701, 540, 446, 245, 280],
     "start": 1732737600000,
     "end": 1733515199000,
     "banner_type": "Your Pick",
@@ -3930,7 +3927,7 @@
   {
     "id": 322,
     "name": "Black Friday Special Once Daily Free 10x Gacha",
-    "cards": [402, 387, 349, 400, 398, 356],
+    "cards": [702, 679, 625, 700, 696, 631],
     "start": 1732867200000,
     "end": 1733212799000,
     "banner_type": "Free Pull",
@@ -3940,7 +3937,7 @@
   {
     "id": 323,
     "name": "Your Ticket to the City of Splendor Gacha",
-    "cards": [441, 442, 443],
+    "cards": [796, 797, 798],
     "start": 1732996800000,
     "end": 1733860799000,
     "banner_type": "Limited Event",
@@ -3957,7 +3954,7 @@
   {
     "id": 324,
     "name": "Shizuku Hinomori Happy Birthday 2024 Gacha",
-    "cards": [444, 297, 147],
+    "cards": [827, 550, 329],
     "start": 1733472000000,
     "end": 1734076799000,
     "banner_type": "Birthday",
@@ -3967,7 +3964,7 @@
   {
     "id": 325,
     "name": "3rd Anniversary 10x Free Gacha",
-    "cards": [365, 287, 62, 178, 204, 170],
+    "cards": [644, 535, 190, 373, 410, 361],
     "start": 1733558400000,
     "end": 1736279999000,
     "banner_type": "Free Pull",
@@ -3977,7 +3974,7 @@
   {
     "id": 326,
     "name": "[Rerun] JP 3rd Anniversary VIRTUAL SINGER Premium Gift Gacha",
-    "cards": [365, 351, 314, 300, 252, 268],
+    "cards": [644, 661, 573, 553, 483, 506],
     "start": 1733558400000,
     "end": 1734638399000,
     "banner_type": "Unit Premium Gift",
@@ -3987,7 +3984,7 @@
   {
     "id": 327,
     "name": "[Rerun] JP 3rd Anniversary Leo/need Premium Gift Gacha",
-    "cards": [364, 348, 288, 317],
+    "cards": [643, 624, 536, 578],
     "start": 1733558400000,
     "end": 1734638399000,
     "banner_type": "Unit Premium Gift",
@@ -3997,7 +3994,7 @@
   {
     "id": 328,
     "name": "[Rerun] JP 3rd Anniversary MORE MORE JUMP! Premium Gift Gacha",
-    "cards": [325, 277, 355, 301],
+    "cards": [590, 518, 630, 556],
     "start": 1733558400000,
     "end": 1734638399000,
     "banner_type": "Unit Premium Gift",
@@ -4007,7 +4004,7 @@
   {
     "id": 329,
     "name": "[Rerun] JP 3rd Anniversary Vivid BAD SQUAD Premium Gift Gacha",
-    "cards": [267, 329, 298, 375],
+    "cards": [505, 596, 551, 660],
     "start": 1733558400000,
     "end": 1734638399000,
     "banner_type": "Unit Premium Gift",
@@ -4017,7 +4014,7 @@
   {
     "id": 330,
     "name": "[Rerun] JP 3rd Anniversary Wonderlands×Showtime Premium Gift Gacha",
-    "cards": [280, 336, 367, 313],
+    "cards": [523, 607, 648, 572],
     "start": 1733558400000,
     "end": 1734638399000,
     "banner_type": "Unit Premium Gift",
@@ -4027,7 +4024,7 @@
   {
     "id": 331,
     "name": "[Rerun] JP 3rd Anniversary Nightcord at 25:00 Premium Gift Gacha",
-    "cards": [339, 302, 291, 254],
+    "cards": [612, 557, 540, 486],
     "start": 1733558400000,
     "end": 1734638399000,
     "banner_type": "Unit Premium Gift",
@@ -4037,7 +4034,7 @@
   {
     "id": 332,
     "name": "[Rerun] JP 3rd Anniversary Your Pick Gacha (Limited Edition)",
-    "cards": [56, 105, 133, 187, 200, 212],
+    "cards": [180, 259, 307, 386, 404, 422],
     "start": 1733558400000,
     "end": 1734638399000,
     "banner_type": "Your Pick",
@@ -4047,7 +4044,7 @@
   {
     "id": 333,
     "name": "[Rerun] JP 3rd Anniversary Memorial Select Gacha",
-    "cards": [117, 276, 328, 335, 91, 289],
+    "cards": [279, 517, 595, 606, 237, 537],
     "start": 1733558400000,
     "end": 1734638399000,
     "banner_type": "Memorial Seelct",
@@ -4057,7 +4054,7 @@
   {
     "id": 334,
     "name": "[Friend Invitation] 4★ Character Guaranteed Gacha",
-    "cards": [209, 250, 266, 205, 77, 218],
+    "cards": [417, 481, 504, 411, 217, 430],
     "start": 1733558400000,
     "end": 1738353599000,
     "banner_type": "4★ Guaranteed",
@@ -4067,7 +4064,7 @@
   {
     "id": 335,
     "name": "[Rerun] JP 3rd Anniversary Colorful Festival Gacha Dream Pick",
-    "cards": [416, 417, 418, 419, 420, 421],
+    "cards": [760, 761, 762, 763, 764, 765],
     "start": 1733601600000,
     "end": 1733947199000,
     "banner_type": "Colorful Festival",
@@ -4077,7 +4074,7 @@
   {
     "id": 336,
     "name": "24 Hours With the Animal Police! Gacha",
-    "cards": [445, 446, 447],
+    "cards": [828, 829, 830],
     "start": 1733860800000,
     "end": 1734724799000,
     "banner_type": "Event",
@@ -4088,7 +4085,7 @@
   {
     "id": 337,
     "name": "[Rerun] Fly to The Future! Gacha",
-    "cards": [294, 295, 296],
+    "cards": [545, 546, 547],
     "start": 1734120000000,
     "end": 1734897599000,
     "banner_type": "Limited Event Rerun",
@@ -4106,7 +4103,7 @@
   {
     "id": 338,
     "name": "3rd ANNIV. Premium Gift Gacha",
-    "cards": [365, 387, 336, 349, 355, 375],
+    "cards": [644, 679, 607, 625, 630, 660],
     "start": 1734379200000,
     "end": 1735675199000,
     "banner_type": "Premium Gift",
@@ -4116,7 +4113,7 @@
   {
     "id": 339,
     "name": "[Rerun] Scramble Flower Gacha",
-    "cards": [123, 124, 125],
+    "cards": [291, 292, 293],
     "start": 1734638400000,
     "end": 1735415999000,
     "banner_type": "Limited Event Rerun",
@@ -4126,7 +4123,7 @@
   {
     "id": 340,
     "name": "Memory of Melody Gacha",
-    "cards": [448, 449, 450],
+    "cards": [833, 834, 835],
     "start": 1734724800000,
     "end": 1735675199000,
     "banner_type": "Event",
@@ -4145,7 +4142,7 @@
   {
     "id": 341,
     "name": "13 Million Downloads! 4★ Guaranteed Gacha",
-    "cards": [410, 256, 280, 276, 413, 314],
+    "cards": [714, 488, 523, 517, 719, 573],
     "start": 1734811200000,
     "end": 1736107199000,
     "banner_type": "4★ Guaranteed",
@@ -4155,7 +4152,7 @@
   {
     "id": 342,
     "name": "2024 December Premium Gift Gacha",
-    "cards": [386, 351, 244, 330, 357, 367],
+    "cards": [678, 661, 470, 597, 632, 648],
     "start": 1734984000000,
     "end": 1735675199000,
     "banner_type": "Premium Gift",
@@ -4165,7 +4162,7 @@
   {
     "id": 343,
     "name": "[Rerun] Romantic Bride Gacha",
-    "cards": [85, 86, 87],
+    "cards": [227, 228, 229],
     "start": 1735156800000,
     "end": 1735934399000,
     "banner_type": "Limited Event Rerun",
@@ -4175,7 +4172,7 @@
   {
     "id": 344,
     "name": "Kagamine Rin Happy Anniversary 2024 Gacha",
-    "cards": [451, 304, 159],
+    "cards": [838, 561, 346],
     "start": 1735286400000,
     "end": 1735891199000,
     "banner_type": "Birthday",
@@ -4185,7 +4182,7 @@
   {
     "id": 345,
     "name": "Kagamine Len Happy Anniversary 2024 Gacha",
-    "cards": [452, 305, 160],
+    "cards": [839, 562, 347],
     "start": 1735286400000,
     "end": 1735891199000,
     "banner_type": "Birthday",
@@ -4195,7 +4192,7 @@
   {
     "id": 346,
     "name": "2025 New Year 10x Free Gacha",
-    "cards": [37, 389, 376, 141, 280, 135],
+    "cards": [149, 683, 664, 319, 523, 309],
     "start": 1735675200000,
     "end": 1738353599000,
     "banner_type": "Free Pull",
@@ -4205,7 +4202,7 @@
   {
     "id": 347,
     "name": "2025 New Year Premium Gift Gacha",
-    "cards": [131, 411, 356, 396, 335, 385],
+    "cards": [298, 715, 631, 694, 606, 677],
     "start": 1735675200000,
     "end": 1736452799000,
     "banner_type": "Premium Gift",
@@ -4215,7 +4212,7 @@
   {
     "id": 348,
     "name": "2025 New Year Colorful Festival Gacha",
-    "cards": [453, 454, 455, 456, 457],
+    "cards": [840, 841, 842, 843, 844],
     "start": 1735675200000,
     "end": 1736020799000,
     "banner_type": "Colorful Festival",
@@ -4225,7 +4222,7 @@
   {
     "id": 349,
     "name": "Vivid BAD SQUAD World Link Event Support Gacha",
-    "cards": [396, 374, 423, 266, 131],
+    "cards": [694, 659, 768, 504, 298],
     "start": 1735848000000,
     "end": 1737662399000,
     "banner_type": "World Link Support",
@@ -4235,7 +4232,7 @@
   {
     "id": 350,
     "name": "New Year's Enchanting Flowers Bloom Bright Gacha",
-    "cards": [455, 456, 457],
+    "cards": [842, 843, 844],
     "start": 1736020800000,
     "end": 1736452799000,
     "banner_type": "Limited Event",
@@ -4246,7 +4243,7 @@
   {
     "id": 351,
     "name": "Hello♡SEKAI Magical Meetings Gacha",
-    "cards": [458, 459, 460, 461, 462, 463],
+    "cards": [801, 802, 803, 804, 805, 806],
     "start": 1736280000000,
     "end": 1737532799000,
     "banner_type": "Limited Collab",
@@ -4256,7 +4253,7 @@
   {
     "id": 352,
     "name": "Shiho Hinomori Happy Birthday 2025 Gacha",
-    "cards": [464, 311, 166],
+    "cards": [847, 570, 355],
     "start": 1736323200000,
     "end": 1736927999000,
     "banner_type": "Birthday",
@@ -4266,7 +4263,7 @@
   {
     "id": 353,
     "name": "Here Comes the Challenger Gacha",
-    "cards": [465, 466, 467, 468],
+    "cards": [848, 849, 850, 851],
     "start": 1736452800000,
     "end": 1737662399000,
     "banner_type": "Unit Limited Event",
@@ -4284,7 +4281,7 @@
   {
     "id": 354,
     "name": "[Rerun] New Year's Divine Beasts Gacha",
-    "cards": [308, 309, 310],
+    "cards": [565, 566, 567],
     "start": 1736539200000,
     "end": 1737316799000,
     "banner_type": "Limited Event Rerun",
@@ -4294,7 +4291,7 @@
   {
     "id": 355,
     "name": "2025 January Premium Gift Gacha",
-    "cards": [410, 413, 391, 400, 256, 326],
+    "cards": [714, 719, 685, 700, 488, 591],
     "start": 1736798400000,
     "end": 1738267199000,
     "banner_type": "Premium Gift",
@@ -4304,7 +4301,7 @@
   {
     "id": 356,
     "name": "[Rerun] Fluffy☆ Dreamland Gacha",
-    "cards": [56, 57, 58],
+    "cards": [180, 181, 182],
     "start": 1737057600000,
     "end": 1737835199000,
     "banner_type": "Limited Event Rerun",
@@ -4325,7 +4322,7 @@
   {
     "id": 357,
     "name": "2025 Winter Campaign Gacha",
-    "cards": [423, 339, 412, 352, 401, 427],
+    "cards": [768, 612, 716, 770, 701, 774],
     "start": 1737316800000,
     "end": 1738439999000,
     "banner_type": "Event",
@@ -4335,7 +4332,7 @@
   {
     "id": 358,
     "name": "[Rerun] A Maiden's Hope For The New Year Gacha",
-    "cards": [163, 164, 165],
+    "cards": [350, 351, 352],
     "start": 1737403200000,
     "end": 1738180799000,
     "banner_type": "Limited Event Rerun",
@@ -4345,7 +4342,7 @@
   {
     "id": 359,
     "name": "Punk Night Tokyo Gacha",
-    "cards": [469, 470, 471],
+    "cards": [854, 855, 856],
     "start": 1737662400000,
     "end": 1738353599000,
     "banner_type": "Event",
@@ -4365,7 +4362,7 @@
   {
     "id": 360,
     "name": "Your Pick Gacha",
-    "cards": [208, 410, 377, 357, 330, 400, 386, 171, 180, 350],
+    "cards": [416, 714, 665, 632, 597, 700, 678, 362, 375, 626],
     "start": 1737921600000,
     "end": 1738699199000,
     "banner_type": "Your Pick",
@@ -4375,7 +4372,7 @@
   {
     "id": 361,
     "name": "Mafuyu Asahina Happy Birthday 2025 Gacha",
-    "cards": [472, 318, 173],
+    "cards": [859, 581, 366],
     "start": 1737964800000,
     "end": 1738569599000,
     "banner_type": "Birthday",
@@ -4385,7 +4382,7 @@
   {
     "id": 362,
     "name": "Megurine Luka Happy Anniversary 2025 Gacha",
-    "cards": [473, 319, 174],
+    "cards": [860, 582, 367],
     "start": 1738224000000,
     "end": 1738828799000,
     "banner_type": "Birthday",
@@ -4395,7 +4392,7 @@
   {
     "id": 363,
     "name": "Photogenic ♡ Valentine Gacha",
-    "cards": [474, 475, 476],
+    "cards": [861, 862, 863],
     "start": 1738353600000,
     "end": 1739217599000,
     "banner_type": "Limited Event",
@@ -4406,7 +4403,7 @@
   {
     "id": 364,
     "name": "[Rerun] Knights of White Gacha",
-    "cards": [186, 187, 188],
+    "cards": [385, 386, 387],
     "start": 1738785600000,
     "end": 1739390399000,
     "banner_type": "Limited Event Rerun",
@@ -4416,7 +4413,7 @@
   {
     "id": 365,
     "name": "Kanade Yoisaki Happy Birthday 2025 Gacha",
-    "cards": [477, 323, 181],
+    "cards": [866, 588, 378],
     "start": 1739174400000,
     "end": 1739779199000,
     "banner_type": "Birthday",
@@ -4426,7 +4423,7 @@
   {
     "id": 366,
     "name": "Gazing Ever Higher Gacha",
-    "cards": [478, 479, 480],
+    "cards": [867, 868, 869],
     "start": 1739217600000,
     "end": 1740081599000,
     "banner_type": "Event",
@@ -4446,7 +4443,7 @@
   {
     "id": 367,
     "name": "[Rerun] Sweet, Cute Valentine! Gacha",
-    "cards": [320, 321, 322],
+    "cards": [583, 584, 585],
     "start": 1739390400000,
     "end": 1740167999000,
     "banner_type": "Limited Event Rerun",
@@ -4456,7 +4453,7 @@
   {
     "id": 368,
     "name": "2025 February Premium Gift Gacha",
-    "cards": [415, 353, 424, 439, 426, 325],
+    "cards": [721, 793, 769, 791, 773, 590],
     "start": 1739563200000,
     "end": 1740772799000,
     "banner_type": "Premium Gift",
@@ -4466,7 +4463,7 @@
   {
     "id": 369,
     "name": "KAITO Happy Anniversary 2025 Gacha",
-    "cards": [481, 327, 182],
+    "cards": [872, 594, 379],
     "start": 1739779200000,
     "end": 1740383999000,
     "banner_type": "Birthday",
@@ -4476,7 +4473,7 @@
   {
     "id": 370,
     "name": "Rainbow Magic Drawn in the Sky Gacha",
-    "cards": [482, 483, 484],
+    "cards": [873, 874, 875],
     "start": 1740081600000,
     "end": 1740772799000,
     "banner_type": "Event",
@@ -4495,7 +4492,7 @@
   {
     "id": 371,
     "name": "[Rerun] Graceful Marriage Gacha",
-    "cards": [224, 225, 226],
+    "cards": [440, 441, 442],
     "start": 1740340800000,
     "end": 1741118399000,
     "banner_type": "Limited Event Rerun",
@@ -4505,7 +4502,7 @@
   {
     "id": 372,
     "name": "14 Million Downloads! 10x Gacha",
-    "cards": [427, 355, 375, 401, 339, 428],
+    "cards": [774, 630, 660, 701, 612, 775],
     "start": 1740427200000,
     "end": 1741633199000,
     "banner_type": "Free Pull",
@@ -4515,7 +4512,7 @@
   {
     "id": 373,
     "name": "Happiness Package Gacha",
-    "cards": [426, 412, 440, 254, 352],
+    "cards": [773, 716, 792, 486, 770],
     "start": 1740513600000,
     "end": 1741204799000,
     "banner_type": "Happiness Package",
@@ -4525,7 +4522,7 @@
   {
     "id": 374,
     "name": "What Awaits After the Battle Gacha",
-    "cards": [485, 486, 487],
+    "cards": [878, 879, 880],
     "start": 1740772800000,
     "end": 1741463999000,
     "banner_type": "Limited Event",
@@ -4536,7 +4533,7 @@
   {
     "id": 375,
     "name": "Wonderlands×Showtime World Link Event Support Gacha",
-    "cards": [335, 312, 367, 279, 27],
+    "cards": [606, 571, 648, 522, 126],
     "start": 1740859200000,
     "end": 1742669999000,
     "banner_type": "World Link Support",
@@ -4546,7 +4543,7 @@
   {
     "id": 376,
     "name": "Kohane Azusawa Happy Birthday 2025 Gacha",
-    "cards": [488, 334, 189],
+    "cards": [883, 605, 390],
     "start": 1740902400000,
     "end": 1741507199000,
     "banner_type": "Birthday",
@@ -4556,7 +4553,7 @@
   {
     "id": 377,
     "name": "Crown of Suit Gacha",
-    "cards": [489, 490, 491, 492],
+    "cards": [884, 885, 886, 887],
     "start": 1741464000000,
     "end": 1742669999000,
     "banner_type": "Unit Limited Event",
@@ -4577,7 +4574,7 @@
   {
     "id": 378,
     "name": "[Rerun] Imperial Soldiers Gacha",
-    "cards": [331, 332, 333],
+    "cards": [600, 601, 602],
     "start": 1741719600000,
     "end": 1742497199000,
     "banner_type": "Limited Event Rerun",
@@ -4587,7 +4584,7 @@
   {
     "id": 379,
     "name": "[Rerun] Secret Tea Time Gacha",
-    "cards": [175, 176, 177],
+    "cards": [368, 369, 370],
     "start": 1742065200000,
     "end": 1742842799000,
     "banner_type": "Limited Event Rerun",
@@ -4597,7 +4594,7 @@
   {
     "id": 380,
     "name": "Airi Momoi Happy Birthday 2025 Gacha",
-    "cards": [493, 338, 193],
+    "cards": [889, 611, 396],
     "start": 1742367600000,
     "end": 1742972399000,
     "banner_type": "Birthday",
@@ -4607,7 +4604,7 @@
   {
     "id": 381,
     "name": "Roots in the Snow Gacha",
-    "cards": [494, 495, 496],
+    "cards": [890, 891, 892],
     "start": 1742670000000,
     "end": 1743361199000,
     "banner_type": "Event",
@@ -4626,7 +4623,7 @@
   {
     "id": 382,
     "name": "[Rerun] Wanderer's Journey Gacha",
-    "cards": [133, 134, 135],
+    "cards": [307, 308, 309],
     "start": 1743015600000,
     "end": 1743793199000,
     "banner_type": "Limited Event Rerun",
@@ -4644,7 +4641,7 @@
   {
     "id": 383,
     "name": "JP 3.5 Year Anniversary Run-Up Happiness Package Gacha",
-    "cards": [364, 324, 424, 401, 263, 428],
+    "cards": [643, 589, 769, 701, 499, 775],
     "start": 1743188400000,
     "end": 1744095599000,
     "banner_type": "Happiness Package",
@@ -4654,7 +4651,7 @@
   {
     "id": 384,
     "name": "JP 3.5 Year Anniversary Colorful Festival Gacha",
-    "cards": [497, 498, 499, 500, 501, 502],
+    "cards": [895, 896, 897, 898, 899, 900],
     "start": 1743361200000,
     "end": 1743793199000,
     "banner_type": "Colorful Festival",
@@ -4664,7 +4661,7 @@
   {
     "id": 385,
     "name": "JP 3.5 Year Anniversary Premium Gift Gacha",
-    "cards": [289, 241, 314, 300, 69, 391],
+    "cards": [537, 465, 573, 553, 203, 685],
     "start": 1743361200000,
     "end": 1746082799000,
     "banner_type": "Premium Gift",
@@ -4674,7 +4671,7 @@
   {
     "id": 386,
     "name": "JP 3.5 Year Anniversary 4★ Guaranteed Gacha ",
-    "cards": [378, 411, 277, 158, 217],
+    "cards": [666, 715, 518, 343, 429],
     "start": 1743361200000,
     "end": 1748761199000,
     "banner_type": "4★ Guaranteed",
@@ -4684,7 +4681,7 @@
   {
     "id": 387,
     "name": "JP 3.5 Year Anniversary 10x Free Gacha",
-    "cards": [131, 65, 276, 67, 88, 195],
+    "cards": [298, 197, 517, 199, 232, 398],
     "start": 1743361200000,
     "end": 1748761199000,
     "banner_type": "Free Pull",
@@ -4694,7 +4691,7 @@
   {
     "id": 388,
     "name": "Play With Dogs Gacha",
-    "cards": [500, 501, 502],
+    "cards": [898, 899, 900],
     "start": 1743793200000,
     "end": 1744311599000,
     "banner_type": "Limited Event",
@@ -4705,7 +4702,7 @@
   {
     "id": 389,
     "name": "2025 April Premium Gift Gacha",
-    "cards": [471, 470, 449, 398, 389, 412],
+    "cards": [856, 855, 834, 696, 683, 716],
     "start": 1744052400000,
     "end": 1746039599000,
     "banner_type": "Premium Gift",
@@ -4715,7 +4712,7 @@
   {
     "id": 390,
     "name": "Drawing Blooming Gacha",
-    "cards": [503, 504, 505],
+    "cards": [903, 904, 905],
     "start": 1744311600000,
     "end": 1745175599000,
     "banner_type": "Event",
@@ -4726,7 +4723,7 @@
   {
     "id": 391,
     "name": "[Rerun] Fluttering Maidens Gacha",
-    "cards": [344, 345, 346, 347],
+    "cards": [619, 620, 621, 622],
     "start": 1744484400000,
     "end": 1745261999000,
     "banner_type": "Limited Event Rerun",
@@ -4736,7 +4733,7 @@
   {
     "id": 392,
     "name": "Minori Hanasato Happy Birthday 2025 Gacha",
-    "cards": [506, 354, 207],
+    "cards": [908, 629, 415],
     "start": 1744614000000,
     "end": 1745218799000,
     "banner_type": "Birthday",
@@ -4746,7 +4743,7 @@
   {
     "id": 393,
     "name": "Easter 10x Gacha",
-    "cards": [424, 415, 412, 450, 439, 446],
+    "cards": [769, 721, 716, 835, 791, 829],
     "start": 1744830000000,
     "end": 1746039599000,
     "banner_type": "Normal",
@@ -4756,7 +4753,7 @@
   {
     "id": 394,
     "name": "Not Overlap Sounds Gacha",
-    "cards": [507, 508, 509],
+    "cards": [909, 910, 911],
     "start": 1745175600000,
     "end": 1746039599000,
     "banner_type": "Event",
@@ -4767,7 +4764,7 @@
   {
     "id": 395,
     "name": "[Rerun] The Naive Voice That Cries Out to You Gacha",
-    "cards": [212, 213, 214],
+    "cards": [422, 423, 424],
     "start": 1745607600000,
     "end": 1746385199000,
     "banner_type": "Limited Event Rerun",
@@ -4785,7 +4782,7 @@
   {
     "id": 396,
     "name": "Ena Shinonome Happy Birthday 2025 Gacha",
-    "cards": [510, 358, 211],
+    "cards": [914, 635, 421],
     "start": 1745996400000,
     "end": 1746601199000,
     "banner_type": "Birthday",
@@ -4795,7 +4792,7 @@
   {
     "id": 397,
     "name": "Eternal Bout Gacha",
-    "cards": [511, 512, 513],
+    "cards": [915, 916, 917],
     "start": 1746039600000,
     "end": 1746817199000,
     "banner_type": "Limited Event",
@@ -4814,7 +4811,7 @@
   {
     "id": 398,
     "name": "MORE MORE JUMP! World Link Event Support Gacha",
-    "cards": [376, 277, 355, 190, 484],
+    "cards": [664, 518, 630, 391, 875],
     "start": 1746212400000,
     "end": 1748026799000,
     "banner_type": "World Link Support",
@@ -4824,7 +4821,7 @@
   {
     "id": 399,
     "name": "2025 May Premium Gift Gacha",
-    "cards": [484, 478, 469, 482, 448, 374],
+    "cards": [875, 867, 854, 873, 833, 659],
     "start": 1746558000000,
     "end": 1748717999000,
     "banner_type": "Premium Gift",
@@ -4834,7 +4831,7 @@
   {
     "id": 400,
     "name": "COLORFUL STAGE! The Movie Release L/N Recollection Gacha",
-    "cards": [320, 176, 427, 446, 289],
+    "cards": [583, 369, 774, 829, 537],
     "start": 1746558000000,
     "end": 1746989999000,
     "banner_type": "Recollection",
@@ -4844,7 +4841,7 @@
   {
     "id": 401,
     "name": "Saki Tenma Happy Birthday 2025 Gacha",
-    "cards": [514, 362, 215],
+    "cards": [920, 641, 427],
     "start": 1746774000000,
     "end": 1747378799000,
     "banner_type": "Birthday",
@@ -4854,7 +4851,7 @@
   {
     "id": 402,
     "name": "Giving You Our All! Gacha",
-    "cards": [515, 516, 517, 518],
+    "cards": [921, 922, 923, 924],
     "start": 1746817200000,
     "end": 1748026799000,
     "banner_type": "Unit Limited Event",
@@ -4873,7 +4870,7 @@
   {
     "id": 403,
     "name": "COLORFUL STAGE! The Movie Release MMJ Recollection Gacha",
-    "cards": [285, 412, 377, 272, 192],
+    "cards": [530, 716, 665, 512, 393],
     "start": 1746990000000,
     "end": 1747421999000,
     "banner_type": "Recollection",
@@ -4883,7 +4880,7 @@
   {
     "id": 404,
     "name": "[Rerun] Escape the Rain Gacha",
-    "cards": [359, 360, 361],
+    "cards": [636, 637, 638],
     "start": 1747162800000,
     "end": 1747940399000,
     "banner_type": "Limited Event Rerun",
@@ -4901,7 +4898,7 @@
   {
     "id": 405,
     "name": "COLORFUL STAGE! The Movie Release VBS Recollection Gacha",
-    "cards": [424, 309, 273, 299, 131],
+    "cards": [769, 566, 513, 552, 298],
     "start": 1747422000000,
     "end": 1747853999000,
     "banner_type": "Recollection",
@@ -4911,7 +4908,7 @@
   {
     "id": 406,
     "name": "Tsukasa Tenma Happy Birthday 2025 Gacha",
-    "cards": [519, 366, 219],
+    "cards": [926, 647, 433],
     "start": 1747465200000,
     "end": 1748069999000,
     "banner_type": "Birthday",
@@ -4921,7 +4918,7 @@
   {
     "id": 407,
     "name": "[Rerun] Moonlit Night's Sister Rabbits Gacha",
-    "cards": [114, 115, 116],
+    "cards": [274, 275, 276],
     "start": 1747767600000,
     "end": 1748545199000,
     "banner_type": "Limited Event Rerun",
@@ -4931,7 +4928,7 @@
   {
     "id": 408,
     "name": "COLORFUL STAGE! The Movie Release WXS Recollection Gacha",
-    "cards": [335, 400, 321, 274, 27],
+    "cards": [606, 700, 584, 514, 126],
     "start": 1747854000000,
     "end": 1748285999000,
     "banner_type": "Recollection",
@@ -4941,7 +4938,7 @@
   {
     "id": 409,
     "name": "Encountering the Unknown?! Cosmic Opera Gacha",
-    "cards": [520, 521, 522],
+    "cards": [927, 928, 929],
     "start": 1748026800000,
     "end": 1748717999000,
     "banner_type": "Event",
@@ -4963,7 +4960,7 @@
   {
     "id": 410,
     "name": "Toya Aoyagi Happy Birthday 2025 Gacha",
-    "cards": [523, 370, 223],
+    "cards": [932, 653, 439],
     "start": 1748156400000,
     "end": 1748761199000,
     "banner_type": "Birthday",
@@ -4973,7 +4970,7 @@
   {
     "id": 411,
     "name": "Your Pick Gacha",
-    "cards": [427, 446, 377, 424, 398, 439, 414, 387, 484, 352],
+    "cards": [774, 829, 665, 769, 696, 791, 720, 679, 875, 770],
     "start": 1748286000000,
     "end": 1749063599000,
     "banner_type": "Your Pick",
@@ -4983,7 +4980,7 @@
   {
     "id": 412,
     "name": "COLORFUL STAGE! The Movie Release N25 Recollection Gacha",
-    "cards": [448, 271, 238, 415, 146],
+    "cards": [833, 511, 460, 721, 326],
     "start": 1748286000000,
     "end": 1748717999000,
     "banner_type": "Recollection",
@@ -4993,7 +4990,7 @@
   {
     "id": 413,
     "name": "[Rerun] Sporty Girl♡ Gacha",
-    "cards": [236, 237, 238],
+    "cards": [458, 459, 460],
     "start": 1748458800000,
     "end": 1749236399000,
     "banner_type": "Limited Event Rerun",
@@ -5003,7 +5000,7 @@
   {
     "id": 414,
     "name": "In My Fairytale Gacha",
-    "cards": [524, 525, 526],
+    "cards": [933, 934, 935],
     "start": 1748718000000,
     "end": 1749581999000,
     "banner_type": "Limited Event",
@@ -5014,18 +5011,17 @@
   {
     "id": 415,
     "name": "3.5 Year Anniversary Countdown Happiness Package Gacha",
-    "cards": [364, 324, 424, 401, 263, 428],
+    "cards": [643, 589, 769, 701, 499, 775],
     "start": 1748804400000,
     "end": 1749711599000,
     "banner_type": "Happiness Package",
     "characters": [1, 8, 9, 15, 19, 22],
     "keywords": []
   },
-
   {
     "id": 417,
     "name": "[Rerun] Darkness Festa Gacha",
-    "cards": [271, 272, 273, 274],
+    "cards": [511, 512, 513, 514],
     "start": 1749063600000,
     "end": 1749841199000,
     "banner_type": "Limited Event Rerun",
@@ -5035,7 +5031,7 @@
   {
     "id": 418,
     "name": "going upstairs Gacha",
-    "cards": [527, 528, 529],
+    "cards": [938, 939, 940],
     "start": 1749582000000,
     "end": 1750445940000,
     "banner_type": "Event",
@@ -5054,7 +5050,7 @@
   {
     "id": 419,
     "name": "Reknit Relation Gacha",
-    "cards": [530, 531, 532],
+    "cards": [943, 944, 945],
     "start": 1750446000000,
     "end": 1751309999000,
     "banner_type": "Event",
@@ -5073,7 +5069,7 @@
   {
     "id": 420,
     "name": "Bloom Festival Gacha",
-    "cards": [536, 537, 533, 534, 535],
+    "cards": [949, 950, 951, 952, 953],
     "start": 1751310000000,
     "end": 1751655599000,
     "banner_type": "Bloom Festival",
@@ -5084,7 +5080,7 @@
   {
     "id": 421,
     "name": "The Party of Blast!! Gacha",
-    "cards": [533, 534, 535],
+    "cards": [951, 952, 953],
     "start": 1751655600000,
     "end": 1752087599000,
     "banner_type": "Limited Event",
@@ -5104,7 +5100,7 @@
   {
     "id": 422,
     "name": "[Rerun] 3.5 Year Anniversary 10x Free Gacha",
-    "cards": [131, 65, 276, 67, 88, 195],
+    "cards": [298, 197, 517, 199, 232, 398],
     "start": 1749322800000,
     "end": 1751353140000,
     "banner_type": "Free Pull",
@@ -5114,7 +5110,7 @@
   {
     "id": 423,
     "name": "[Rerun] 3.5 Year Anniversary Colorful Festival Gacha",
-    "cards": [497, 498, 499, 500, 501, 502],
+    "cards": [895, 896, 897, 898, 899, 900],
     "start": 1749322800000,
     "end": 1749884340000,
     "banner_type": "Colorful Festival",
@@ -5124,7 +5120,7 @@
   {
     "id": 424,
     "name": "Rui Kamishiro Happy Birthday 2025 Gacha",
-    "cards": [540, 379, 233],
+    "cards": [948, 669, 455],
     "start": 1750748400000,
     "end": 1751353199000,
     "banner_type": "Birthday",
@@ -5134,7 +5130,7 @@
   {
     "id": 425,
     "name": "[Rerun] Under Eternal Bells Gacha",
-    "cards": [371, 372, 373],
+    "cards": [654, 655, 656],
     "start": 1750186800000,
     "end": 1750964340000,
     "banner_type": "Limited Event Rerun",
@@ -5144,7 +5140,7 @@
   {
     "id": 426,
     "name": "3.5 Year Anniversary Premium Gift Gacha",
-    "cards": [479, 480, 341, 483, 396, 401],
+    "cards": [868, 869, 614, 874, 694, 701],
     "start": 1749322800000,
     "end": 1751353199000,
     "banner_type": "Premium Gift",
@@ -5154,7 +5150,7 @@
   {
     "id": 427,
     "name": "3.5 Year Anniversary Leo/need Premium Gift Gacha",
-    "cards": [479, 410, 315, 390, 289],
+    "cards": [868, 714, 576, 684, 537],
     "start": 1749927600000,
     "end": 1750445940000,
     "banner_type": "Unit Premium Gift",
@@ -5164,7 +5160,7 @@
   {
     "id": 428,
     "name": "3.5 Year Anniversary Vivid BAD SQUAD Premium Gift Gacha",
-    "cards": [424, 413, 397, 299, 131],
+    "cards": [769, 719, 695, 552, 298],
     "start": 1749927600000,
     "end": 1750489140000,
     "banner_type": "Unit Premium Gift",
@@ -5174,7 +5170,7 @@
   {
     "id": 429,
     "name": "[Rerun] Before the storm Gacha",
-    "cards": [259, 260, 261],
+    "cards": [493, 494, 495],
     "start": 1751050800000,
     "end": 1751828340000,
     "banner_type": "Limited Event Rerun",
@@ -5192,7 +5188,7 @@
   {
     "id": 430,
     "name": "Strike Down Evil in the Name of Justice Gacha",
-    "cards": [541, 542, 543],
+    "cards": [956, 957, 958],
     "start": 1752087600000,
     "end": 1752778799000,
     "banner_type": "Event",
@@ -5215,7 +5211,7 @@
   {
     "id": 431,
     "name": "Youths Assemble! Gacha",
-    "cards": [544, 545, 546, 547],
+    "cards": [961, 962, 963, 964],
     "start": 1752778800000,
     "end": 1753988399000,
     "banner_type": "Unit Limited Event",
@@ -5234,7 +5230,7 @@
   {
     "id": 432,
     "name": "Nene Kusanagi Happy Birthday 2025 Gacha",
-    "cards": [548, 388, 242],
+    "cards": [966, 682, 468],
     "start": 1752994800000,
     "end": 1753599540000,
     "banner_type": "Birthday",
@@ -5244,7 +5240,7 @@
   {
     "id": 433,
     "name": "An Shiraishi Happy Birthday 2025 Gacha",
-    "cards": [549, 392, 246],
+    "cards": [967, 688, 474],
     "start": 1753513200000,
     "end": 1754117940000,
     "banner_type": "Birthday",
@@ -5254,7 +5250,7 @@
   {
     "id": 434,
     "name": "[Rerun] CYBER SNIPER Gacha",
-    "cards": [247, 248, 249],
+    "cards": [475, 476, 477],
     "start": 1751914800000,
     "end": 1752692340000,
     "banner_type": "Limited Event Rerun",
@@ -5264,7 +5260,7 @@
   {
     "id": 435,
     "name": "[Rerun] City of Spirits Gacha",
-    "cards": [382, 383, 384],
+    "cards": [672, 673, 674],
     "start": 1752433200000,
     "end": 1753210740000,
     "banner_type": "Limited Event Rerun",
@@ -5274,7 +5270,7 @@
   {
     "id": 436,
     "name": "[Rerun] Growing Feelings, Words in the Snow Gacha",
-    "cards": [144, 145, 146],
+    "cards": [324, 325, 326],
     "start": 1753210800000,
     "end": 1753988340000,
     "banner_type": "Limited Event Rerun",
@@ -5284,7 +5280,7 @@
   {
     "id": 437,
     "name": "Happiness Package Gacha",
-    "cards": [349, 324, 375, 336, 385, 450],
+    "cards": [625, 589, 660, 607, 677, 835],
     "start": 1753556400000,
     "end": 1754333940000,
     "banner_type": "Happiness Package",
@@ -5294,7 +5290,7 @@
   {
     "id": 438,
     "name": "Anime Expo Free 10x Gacha",
-    "cards": [449, 479, 484, 482, 397],
+    "cards": [834, 868, 875, 873, 695],
     "start": 1751526000000,
     "end": 1751871540000,
     "banner_type": "Free Pull",
@@ -5304,7 +5300,7 @@
   {
     "id": 439,
     "name": "Delivered to You♡ Live Streaming Gacha",
-    "cards": [550, 551, 552],
+    "cards": [968, 969, 970],
     "start": 1753988400000,
     "end": 1754765999000,
     "banner_type": "Limited Event",
@@ -5315,7 +5311,7 @@
   {
     "id": 440,
     "name": "The Blue World Orchestra Gacha",
-    "cards": [553, 554, 555],
+    "cards": [973, 974, 975],
     "start": 1754766000000,
     "end": 1755457140000,
     "type": "estimation",
@@ -5327,7 +5323,7 @@
   {
     "id": 441,
     "name": "Melody of Wishes Gacha",
-    "cards": [557, 558, 559, 560, 561, 562],
+    "cards": [979, 980, 981, 982, 983, 984],
     "start": 1755457200000,
     "end": 1756666740000,
     "type": "estimation",
@@ -5341,7 +5337,7 @@
     "name": "Ichika Hoshino Happy Birthday 2025 Gacha",
     "start": 1754895600000,
     "end": 1755500340000,
-    "cards": [556, 399, 253],
+    "cards": [978, 699, 480],
     "banner_type": "Birthday",
     "characters": [1],
     "keywords": []
@@ -5351,7 +5347,7 @@
     "name": "Mizuki Akiyama Happy Birthday 2025 Gacha",
     "start": 1756278000000,
     "end": 1756882740000,
-    "cards": [563, 403, 257],
+    "cards": [985, 705, 491],
     "banner_type": "Birthday",
     "characters": [20],
     "keywords": []
@@ -5361,7 +5357,7 @@
     "name": "Hatsune Miku Happy Anniversary 2025 Gacha",
     "start": 1756623600000,
     "end": 1757228340000,
-    "cards": [564, 404, 258],
+    "cards": [986, 706, 492],
     "banner_type": "Birthday",
     "characters": [21],
     "keywords": []
@@ -5371,7 +5367,7 @@
     "name": "A Very Ghostly Vacation! Gacha ",
     "start": 1756666800000,
     "end": 1757530799000,
-    "cards": [565, 566, 567],
+    "cards": [987, 988, 989],
     "type": "estimation",
     "banner_type": "Limited Event",
     "event_id": 141,
@@ -5383,7 +5379,7 @@
     "name": "SUPREME SPORTY Gacha",
     "start": 1757530800000,
     "end": 1758394799000,
-    "cards": [569, 570, 571],
+    "cards": [993, 994, 995],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 142,
@@ -5395,7 +5391,7 @@
     "name": "Me And My Diva Gacha",
     "start": 1758394800000,
     "end": 1759258799000,
-    "cards": [572, 573, 574],
+    "cards": [998, 999, 1000],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 143,
@@ -5416,7 +5412,7 @@
     "name": "Emu Otori Happy Birthday 2025 Gacha",
     "start": 1757401200000,
     "end": 1758005940000,
-    "cards": [568, 409, 262],
+    "cards": [992, 713, 498],
     "banner_type": "Birthday",
     "characters": [14],
     "keywords": []
@@ -5426,7 +5422,7 @@
     "name": "JP 4th Year Anniversary Bloom Festival Gacha",
     "start": 1759258800000,
     "end": 1759604340000,
-    "cards": [575, 576, 577, 578, 579, 580],
+    "cards": [1003, 1004, 1005, 1006, 1007, 1008],
     "banner_type": "Bloom Festival",
     "type": "estimation",
     "event_id": 144,
@@ -5438,7 +5434,7 @@
     "name": "Crossing SEKAI With ENSEMBLE Gacha",
     "start": 1756666800000,
     "end": 1759247999000,
-    "cards": [633, 634, 635, 636],
+    "cards": [1115, 1116, 1117, 1118],
     "banner_type": "Limited Collab",
     "type": "confirmed",
     "confirmation": "Confirmed for September",
@@ -5450,7 +5446,7 @@
     "name": "Talent Blooms Gacha",
     "start": 1759604400000,
     "end": 1760295540000,
-    "cards": [577, 578, 579, 580],
+    "cards": [1005, 1006, 1007, 1008],
     "banner_type": "Limited Event",
     "type": "estimation",
     "event_id": 144,
@@ -5462,7 +5458,7 @@
     "name": "A Decaying Flower In The End Gacha",
     "start": 1760295600000,
     "end": 1761073140000,
-    "cards": [582, 583, 584],
+    "cards": [1011, 1012, 1013],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 145,
@@ -5483,7 +5479,7 @@
     "name": "Fuel my passionガチャ",
     "start": 1761073200000,
     "end": 1761937140000,
-    "cards": [585, 586, 587],
+    "cards": [1016, 1017, 1018],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 146,
@@ -5504,7 +5500,7 @@
     "name": "Haruka Kiritani Happy Birthday 2025 Gacha",
     "start": 1759647600000,
     "end": 1760252340000,
-    "cards": [581, 422, 275, 128],
+    "cards": [1010, 767, 516, 295],
     "banner_type": "Birthday",
     "characters": [6],
     "keywords": []
@@ -5514,7 +5510,7 @@
     "name": "Honami Mochizuki Happy Birthday 2025 Gacha",
     "start": 1761548400000,
     "end": 1762156740000,
-    "cards": [588, 429, 282, 132],
+    "cards": [1021, 778, 527, 306],
     "banner_type": "Birthday",
     "characters": [3],
     "keywords": []
@@ -5524,7 +5520,7 @@
     "name": "The Street Corner Where Music Plays Gacha",
     "start": 1761937200000,
     "end": 1762804740000,
-    "cards": [589, 590, 591],
+    "cards": [1022, 1023, 1024],
     "banner_type": "Limited Event",
     "type": "estimation",
     "event_id": 147,
@@ -5536,7 +5532,7 @@
     "name": "The Tea Room Where Falling Leaves Dance Gacha",
     "start": 1762804800000,
     "end": 1763668740000,
-    "cards": [593, 594, 595],
+    "cards": [1028, 1029, 1030],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 148,
@@ -5548,7 +5544,7 @@
     "name": "Noble Conqueror Knights Gacha",
     "start": 1763668800000,
     "end": 1764532740000,
-    "cards": [597, 598, 599],
+    "cards": [1034, 1035, 1036],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 149,
@@ -5569,7 +5565,7 @@
     "name": "MEIKO Happy Anniversary 2025 Gacha",
     "start": 1762329600000,
     "end": 1762934340000,
-    "cards": [592, 433, 286, 136],
+    "cards": [1027, 784, 533, 312],
     "banner_type": "Birthday",
     "characters": [25],
     "keywords": []
@@ -5579,7 +5575,7 @@
     "name": "Akito Shinonome Happy Birthday 2025 Gacha",
     "start": 1762934400000,
     "end": 1763539140000,
-    "cards": [596, 438, 290, 140],
+    "cards": [1033, 790, 534, 318],
     "banner_type": "Birthday",
     "characters": [11],
     "keywords": []
@@ -5589,7 +5585,7 @@
     "name": "That flower, once more Gacha",
     "start": 1764532800000,
     "end": 1765483140000,
-    "cards": [600, 601, 602],
+    "cards": [1039, 1040, 1041],
     "banner_type": "Limited Event",
     "type": "estimation",
     "event_id": 150,
@@ -5601,7 +5597,7 @@
     "name": "high-flapping hope Gacha",
     "start": 1765483200000,
     "end": 1766347140000,
-    "cards": [604, 605, 606],
+    "cards": [1045, 1046, 1047],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 151,
@@ -5621,7 +5617,7 @@
     "name": "Watching the Light Snowfall With You Gacha",
     "start": 1766347200000,
     "end": 1767211140000,
-    "cards": [607, 608, 609],
+    "cards": [1050, 1051, 1052],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 152,
@@ -5633,7 +5629,7 @@
     "name": "Shizuku Hinomori Happy Birthday 2025 Gacha",
     "start": 1765008000000,
     "end": 1765612740000,
-    "cards": [603, 444, 297, 147],
+    "cards": [1044, 827, 550, 329],
     "banner_type": "Birthday",
     "characters": [8],
     "keywords": []
@@ -5643,7 +5639,7 @@
     "name": "Kagamine Rin Happy Anniversary 2025 Gacha",
     "start": 1766822400000,
     "end": 1767427140000,
-    "cards": [610, 451, 304, 159],
+    "cards": [1055, 838, 561, 346],
     "banner_type": "Birthday",
     "characters": [22],
     "keywords": []
@@ -5653,7 +5649,7 @@
     "name": "Kagamine Len Happy Anniversary 2025 Gacha",
     "start": 1766822400000,
     "end": 1767427140000,
-    "cards": [611, 452, 305, 160],
+    "cards": [1056, 839, 562, 347],
     "banner_type": "Birthday",
     "characters": [23],
     "keywords": []
@@ -5663,7 +5659,7 @@
     "name": "2026 New Year Bloom Festival Gacha",
     "start": 1767211200000,
     "end": 1767556740000,
-    "cards": [612, 613, 614, 615, 616],
+    "cards": [1057, 1058, 1059, 1060, 1061],
     "banner_type": "Bloom Festival",
     "type": "estimation",
     "event_id": 153,
@@ -5675,7 +5671,7 @@
     "name": "Resplendent Recollection Gacha",
     "start": 1767556800000,
     "end": 1768161540000,
-    "cards": [614, 615, 616],
+    "cards": [1059, 1060, 1061],
     "banner_type": "Limited Event",
     "type": "estimation",
     "event_id": 153,
@@ -5687,7 +5683,7 @@
     "name": "Unknown Tone Gacha",
     "start": 1768161600000,
     "end": 1769025540000,
-    "cards": [618, 619, 620],
+    "cards": [1065, 1066, 1067],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 154,
@@ -5707,7 +5703,7 @@
     "name": "Doll Dream Gacha",
     "start": 1769025600000,
     "end": 1769889540000,
-    "cards": [621, 622, 623],
+    "cards": [1097, 1098, 1099],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 155,
@@ -5719,7 +5715,7 @@
     "name": "Shiho Hinomori Happy Birthday 2026 Gacha",
     "start": 1767859200000,
     "end": 1768463940000,
-    "cards": [617, 464, 311, 166],
+    "cards": [1064, 847, 570, 355],
     "banner_type": "Birthday",
     "characters": [4],
     "keywords": []
@@ -5729,7 +5725,7 @@
     "name": "Mafuyu Asahina Happy Birthday 2026 Gacha",
     "start": 1769500800000,
     "end": 1770105540000,
-    "cards": [624, 472, 318, 173],
+    "cards": [1102, 859, 581, 366],
     "banner_type": "Birthday",
     "characters": [18],
     "keywords": []
@@ -5739,7 +5735,7 @@
     "name": "Megurine Luka Happy Anniversary 2026 Gacha",
     "start": 1769760000000,
     "end": 1770364740000,
-    "cards": [625, 473, 319, 174],
+    "cards": [1103, 860, 582, 367],
     "banner_type": "Birthday",
     "characters": [24],
     "keywords": []
@@ -5749,7 +5745,7 @@
     "name": "Night Sweet Meal Gacha",
     "start": 1769889600000,
     "end": 1770753540000,
-    "cards": [626, 627, 628],
+    "cards": [1104, 1105, 1106],
     "banner_type": "Limited Event",
     "type": "estimation",
     "event_id": 156,
@@ -5761,7 +5757,7 @@
     "name": "Stay determinedガチャ",
     "start": 1770753600000,
     "end": 1771617540000,
-    "cards": [630, 631, 632],
+    "cards": [1110, 1111, 1112],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 157,
@@ -5781,7 +5777,7 @@
     "name": "A Fairy Tale Spun by Witches Gacha ",
     "start": 1771617600000,
     "end": 1772308740000,
-    "cards": [638, 639, 640],
+    "cards": [1122, 1123, 1124],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 158,
@@ -5793,7 +5789,7 @@
     "name": "Kanade Yoisaki Happy Birthday 2026 Gacha",
     "start": 1770710400000,
     "end": 1771315140000,
-    "cards": [629, 477, 323, 181],
+    "cards": [1109, 866, 588, 378],
     "banner_type": "Birthday",
     "characters": [17],
     "keywords": []
@@ -5803,7 +5799,7 @@
     "name": "KAITO Happy Anniversary 2026 Gacha",
     "start": 1771315200000,
     "end": 1771919940000,
-    "cards": [637, 481, 327, 182],
+    "cards": [1121, 872, 594, 379],
     "banner_type": "Birthday",
     "characters": [26],
     "keywords": []
@@ -5813,7 +5809,7 @@
     "name": "The Endless Battle for Peace Gacha ",
     "start": 1772308800000,
     "end": 1773169140000,
-    "cards": [641, 642, 643],
+    "cards": [1127, 1128, 1129],
     "banner_type": "Limited Event",
     "type": "estimation",
     "event_id": 159,
@@ -5825,7 +5821,7 @@
     "name": "Let's Play With Cats Gacha",
     "start": 1773169200000,
     "end": 1774033140000,
-    "cards": [645, 646, 647],
+    "cards": [1133, 1134, 1135],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 160,
@@ -5837,7 +5833,7 @@
     "name": "Obscurity Parade Gacha",
     "start": 1774033200000,
     "end": 1774897140000,
-    "cards": [649, 650, 651],
+    "cards": [1139, 1140, 1141],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 161,
@@ -5857,7 +5853,7 @@
     "name": "JP 4.5 Year Anniversary Bloom Festival Gacha",
     "start": 1774897200000,
     "end": 1775329140000,
-    "cards": [652, 653, 654, 655, 656],
+    "cards": [1144, 1145, 1146, 1147, 1148],
     "banner_type": "Bloom Festival",
     "type": "estimation",
     "event_id": 162,
@@ -5869,7 +5865,7 @@
     "name": "Kohane Azusawa Happy Birthday 2026 Gacha",
     "start": 1772438400000,
     "end": 1773043140000,
-    "cards": [644, 488, 334, 189],
+    "cards": [1132, 883, 605, 390],
     "banner_type": "Birthday",
     "characters": [9],
     "keywords": []
@@ -5879,7 +5875,7 @@
     "name": "Airi Momoi Happy Birthday 2026 Gacha",
     "start": 1773903600000,
     "end": 1774508340000,
-    "cards": [648, 493, 338, 193],
+    "cards": [1138, 889, 611, 396],
     "banner_type": "Birthday",
     "characters": [7],
     "keywords": []
@@ -5889,7 +5885,7 @@
     "name": "Living With Music Gacha",
     "start": 1775329200000,
     "end": 1775674740000,
-    "cards": [654, 655, 656],
+    "cards": [1146, 1147, 1148],
     "banner_type": "Limited Event",
     "type": "estimation",
     "event_id": 162,
@@ -5909,7 +5905,7 @@
     "name": "Glance At The Same World Gacha",
     "start": 1775674800000,
     "end": 1776884340000,
-    "cards": [657, 658, 659, 660],
+    "cards": [1151, 1152, 1153, 1154],
     "banner_type": "Unit Limited Event",
     "type": "estimation",
     "event_id": 163,
@@ -5928,7 +5924,7 @@
     "name": "Blooming Light Gacha",
     "start": 1776884400000,
     "end": 1777575540000,
-    "cards": [662, 663, 664],
+    "cards": [1156, 1157, 1158],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 164,
@@ -5951,7 +5947,7 @@
     "name": "Minori Hanasato Happy Birthday 2026 Gacha",
     "start": 1776150000000,
     "end": 1776754740000,
-    "cards": [661, 506, 354, 207],
+    "cards": [1155, 908, 629, 415],
     "banner_type": "Birthday",
     "characters": [5],
     "keywords": []
@@ -5961,7 +5957,7 @@
     "name": "Ena Shinonome Happy Birthday 2026 Gacha",
     "start": 1777532400000,
     "end": 1778137140000,
-    "cards": [665, 510, 358, 211],
+    "cards": [1161, 914, 635, 421],
     "banner_type": "Birthday",
     "characters": [19],
     "keywords": []
@@ -5971,7 +5967,7 @@
     "name": "Papilio Vinculatus Gacha",
     "start": 1777575600000,
     "end": 1778353140000,
-    "cards": [666, 667, 668],
+    "cards": [1162, 1163, 1164],
     "banner_type": "Limited Event",
     "type": "estimation",
     "event_id": 165,
@@ -5991,7 +5987,7 @@
     "name": "Dream A Wonder Dream Gacha",
     "start": 1778353200000,
     "end": 1779562740000,
-    "cards": [671, 672, 673, 674],
+    "cards": [1169, 1170, 1171, 1172],
     "banner_type": "Unit Limited Event",
     "type": "estimation",
     "event_id": 167,
@@ -6013,7 +6009,7 @@
     "name": "Starry-eyed Princess Gacha",
     "start": 1779562800000,
     "end": 1780253940000,
-    "cards": [676, 677, 678],
+    "cards": [1174, 1175, 1176],
     "banner_type": "Event",
     "type": "estimation",
     "event_id": 168,
@@ -6025,7 +6021,7 @@
     "name": "Saki Tenma Happy Birthday 2026 Gacha",
     "start": 1778310000000,
     "end": 1778914740000,
-    "cards": [670, 514, 362, 215],
+    "cards": [1168, 920, 641, 427],
     "banner_type": "Birthday",
     "characters": [2],
     "keywords": []
@@ -6035,7 +6031,7 @@
     "name": "Tsukasa Tenma Happy Birthday 2026 Gacha",
     "start": 1779001200000,
     "end": 1779605940000,
-    "cards": [675, 519, 366, 219],
+    "cards": [1173, 926, 647, 433],
     "banner_type": "Birthday",
     "characters": [13],
     "keywords": []
@@ -6045,7 +6041,7 @@
     "name": "Toya Aoyagi Happy Birthday 2026 Gacha",
     "start": 1779692400000,
     "end": 1780297140000,
-    "cards": [679, 523, 370, 223],
+    "cards": [1179, 932, 653, 439],
     "banner_type": "Birthday",
     "characters": [12],
     "keywords": []
@@ -6055,7 +6051,7 @@
     "name": "Dawn's Radiance Gacha",
     "start": 1780254000000,
     "end": 1781031540000,
-    "cards": [680, 681, 682],
+    "cards": [1180, 1181, 1182],
     "banner_type": "Limited Event",
     "type": "estimation",
     "event_id": 169,
@@ -6076,7 +6072,7 @@
     "name": "Night's Treasure Gacha",
     "start": 1781031600000,
     "end": 1782241140000,
-    "cards": [683, 684, 685, 686],
+    "cards": [1185, 1186, 1187, 1188],
     "banner_type": "Unit Limited Event",
     "type": "estimation",
     "event_id": 170,
@@ -6095,7 +6091,7 @@
     "name": "Another Sparkle Stars Gacha",
     "start": 1782241200000,
     "end": 1783450740000,
-    "cards": [1078, 1079, 1080, 1081],
+    "cards": [1189, 1190, 1191, 1192],
     "banner_type": "Unit Limited Event",
     "type": "estimation",
     "event_id": 171,
@@ -6115,7 +6111,7 @@
     "name": "Rui Kamishiro Happy Birthday 2026 Gacha",
     "start": 1782284400000,
     "end": 1782889140000,
-    "cards": [1082, 233, 379, 540],
+    "cards": [1193, 455, 669, 948],
     "banner_type": "Birthday",
     "characters": [16],
     "keywords": []
@@ -6123,7 +6119,7 @@
   {
     "id": 500,
     "name": "[Rerun] Let's Enjoy Summer! Gacha",
-    "cards": [105, 106, 107],
+    "cards": [259, 260, 261],
     "start": 1744916400000,
     "end": 1745780399000,
     "banner_type": "Limited Event Rerun",
@@ -6133,7 +6129,7 @@
   {
     "id": 501,
     "name": "[Rerun] Welcome to the Diner! Gacha",
-    "cards": [393, 394, 395],
+    "cards": [689, 690, 691],
     "start": 1756494000000,
     "end": 1756494000000,
     "banner_type": "Limited Event Rerun",
@@ -6145,7 +6141,7 @@
   {
     "id": 502,
     "name": "[Rerun] Spooky Forest Gacha",
-    "cards": [283, 284, 285],
+    "cards": [528, 529, 530],
     "start": 1756494000000,
     "end": 1756494000000,
     "banner_type": "Limited Event Rerun",
@@ -6157,7 +6153,7 @@
   {
     "id": 503,
     "name": "[Rerun] New Year's Divine Beasts Gacha",
-    "cards": [308, 309, 310],
+    "cards": [565, 566, 567],
     "start": 1756494000000,
     "end": 1756494000000,
     "banner_type": "Limited Event Rerun",
@@ -6169,7 +6165,7 @@
   {
     "id": 504,
     "name": "[Rerun] Emotional Musical March Gacha",
-    "cards": [405, 406, 407, 408],
+    "cards": [707, 708, 709, 710],
     "start": 1759204800000,
     "end": 1759204800000,
     "banner_type": "Limited Event Rerun",
@@ -6181,7 +6177,7 @@
   {
     "id": 505,
     "name": "[Rerun] Sweet, Cute Valentine! Gacha",
-    "cards": [320, 321, 322],
+    "cards": [583, 584, 585],
     "start": 1759204800000,
     "end": 1759204800000,
     "banner_type": "Limited Event Rerun",
@@ -6193,7 +6189,7 @@
   {
     "id": 506,
     "name": "[Rerun] Imperial Soldiers Gacha",
-    "cards": [331, 332, 333],
+    "cards": [600, 601, 602],
     "start": 1759204800000,
     "end": 1759204800000,
     "banner_type": "Limited Event Rerun",
@@ -6205,7 +6201,7 @@
   {
     "id": 507,
     "name": "[Rerun] Grow Up With Me! Gacha",
-    "cards": [418, 419, 420, 421],
+    "cards": [762, 763, 764, 765],
     "start": 1761883200000,
     "end": 1761883200000,
     "banner_type": "Limited Event Rerun",
@@ -6217,7 +6213,7 @@
   {
     "id": 508,
     "name": "[Rerun] Fly to The Future! Gacha",
-    "cards": [294, 295, 296],
+    "cards": [545, 546, 547],
     "start": 1761883200000,
     "end": 1761883200000,
     "banner_type": "Limited Event Rerun",
@@ -6237,7 +6233,7 @@
   {
     "id": 509,
     "name": "[Rerun] Fluttering Maidens Gacha",
-    "cards": [344, 345, 346, 347],
+    "cards": [619, 620, 621, 622],
     "start": 1764475200000,
     "end": 1764475200000,
     "banner_type": "Limited Event Rerun",
@@ -6249,7 +6245,7 @@
   {
     "id": 510,
     "name": "[Rerun] As Autumn Dusk Wanes Gacha",
-    "cards": [430, 431, 432],
+    "cards": [779, 780, 781],
     "start": 1764475200000,
     "end": 1764475200000,
     "banner_type": "Limited Event Rerun",
@@ -6269,7 +6265,7 @@
   {
     "id": 511,
     "name": "[Rerun] Escape the Rain Gacha",
-    "cards": [359, 360, 361],
+    "cards": [636, 637, 638],
     "start": 1767067200000,
     "end": 1767067200000,
     "banner_type": "Limited Event Rerun",
@@ -6289,7 +6285,7 @@
   {
     "id": 512,
     "name": "[Rerun] Your Ticket to the City of Splendor Gacha",
-    "cards": [441, 442, 443],
+    "cards": [796, 797, 798],
     "start": 1767067200000,
     "end": 1767067200000,
     "banner_type": "Limited Event Rerun",
@@ -6307,7 +6303,7 @@
   {
     "id": 513,
     "name": "[Rerun] City of Spirits Gacha",
-    "cards": [382, 383, 384],
+    "cards": [672, 673, 674],
     "start": 1769745600000,
     "end": 1769745600000,
     "banner_type": "Limited Event Rerun",
@@ -6319,7 +6315,7 @@
   {
     "id": 514,
     "name": "[Rerun] New Year's Enchanting Flowers Bloom Bright Gacha",
-    "cards": [455, 456, 457],
+    "cards": [842, 843, 844],
     "start": 1769745600000,
     "end": 1769745600000,
     "banner_type": "Limited Event Rerun",
@@ -6331,7 +6327,7 @@
   {
     "id": 515,
     "name": "[Rerun] Under Eternal Bells Gacha",
-    "cards": [371, 372, 373],
+    "cards": [654, 655, 656],
     "start": 1772251200000,
     "end": 1772251200000,
     "banner_type": "Limited Event Rerun",
@@ -6343,7 +6339,7 @@
   {
     "id": 516,
     "name": "[Rerun] Photogenic ♡ Valentine Gacha",
-    "cards": [474, 475, 476],
+    "cards": [861, 862, 863],
     "start": 1772251200000,
     "end": 1772251200000,
     "banner_type": "Limited Event Rerun",
@@ -6355,7 +6351,7 @@
   {
     "id": 517,
     "name": "[Rerun] Emotional Musical March Gacha",
-    "cards": [405, 406, 407, 408],
+    "cards": [707, 708, 709, 710],
     "start": 1774843200000,
     "end": 1774843200000,
     "banner_type": "Limited Event Rerun",
@@ -6367,7 +6363,7 @@
   {
     "id": 518,
     "name": "[Rerun] What Awaits After the Battle Gacha",
-    "cards": [485, 486, 487],
+    "cards": [878, 879, 880],
     "start": 1774843200000,
     "end": 1774843200000,
     "banner_type": "Limited Event Rerun",
@@ -6379,7 +6375,7 @@
   {
     "id": 519,
     "name": "[Rerun] Welcome to the Diner! Gacha",
-    "cards": [393, 394, 395],
+    "cards": [689, 690, 691],
     "start": 1777521600000,
     "end": 1777521600000,
     "banner_type": "Limited Event Rerun",
@@ -6391,7 +6387,7 @@
   {
     "id": 520,
     "name": "[Rerun] Play With Dogs Gacha",
-    "cards": [500, 501, 502],
+    "cards": [898, 899, 900],
     "start": 1777521600000,
     "end": 1777521600000,
     "banner_type": "Limited Event Rerun",
@@ -6403,7 +6399,7 @@
   {
     "id": 521,
     "name": "[Rerun] Grow Up With Me! Gacha",
-    "cards": [418, 419, 420, 421],
+    "cards": [762, 763, 764, 765],
     "start": 1780113600000,
     "end": 1780113600000,
     "banner_type": "Limited Event Rerun",
@@ -6415,7 +6411,7 @@
   {
     "id": 522,
     "name": "[Rerun] Eternal Bout Gacha",
-    "cards": [511, 512, 513],
+    "cards": [915, 916, 917],
     "start": 1780113600000,
     "end": 1780113600000,
     "banner_type": "Limited Event Rerun",
@@ -6435,7 +6431,7 @@
   {
     "id": 523,
     "name": "[Rerun] In My Fairytale Gacha",
-    "cards": [524, 525, 526],
+    "cards": [933, 934, 935],
     "start": 1782792000000,
     "end": 1782792000000,
     "banner_type": "Limited Event Rerun",
@@ -6447,7 +6443,7 @@
   {
     "id": 524,
     "name": "[Rerun] As Autumn Dusk Wanes Gacha",
-    "cards": [430, 431, 432],
+    "cards": [779, 780, 781],
     "start": 1782792000000,
     "end": 1782792000000,
     "banner_type": "Limited Event Rerun",
@@ -6469,7 +6465,7 @@
     "name": "Bloom Festival Gacha",
     "start": 1783450800000,
     "end": 1783796340000,
-    "cards": [1172, 1173, 1174, 1175, 1176],
+    "cards": [1194, 1195, 1196, 1197, 1198],
     "banner_type": "Bloom Festival",
     "event_id": 172,
     "characters": [19, 26, 16, 13, 15],
@@ -6481,7 +6477,7 @@
     "name": "Strange Workshop Gacha",
     "start": 1783796400000,
     "end": 1784141999000,
-    "cards": [1174, 1175, 1176],
+    "cards": [1196, 1197, 1198],
     "event_id": 172,
     "characters": [16, 13, 15],
     "banner_type": "Limited Event",
@@ -6502,7 +6498,7 @@
     "name": "[Rerun]The Party of Blast!! Gacha",
     "start": 1785384000000,
     "end": 1785384000000,
-    "cards": [533, 534, 535],
+    "cards": [951, 952, 953],
     "en_id": 527,
     "banner_type": "Limited Event Rerun",
     "characters": [9, 11, 21],
@@ -6522,7 +6518,7 @@
   {
     "id": 528,
     "name": "[Rerun] New Year's Enchanting Flowers Bloom Bright Gacha",
-    "cards": [455, 456, 457],
+    "cards": [842, 843, 844],
     "start": 1785384000000,
     "end": 1785384000000,
     "banner_type": "Limited Event Rerun",
@@ -6536,7 +6532,7 @@
     "name": "Leo/need World Link Event Support Gacha",
     "start": 1752174000000,
     "end": 1753988399000,
-    "cards": [479, 507, 427, 411, 289],
+    "cards": [868, 909, 774, 715, 537],
     "banner_type": "World Link Support",
     "characters": [1, 2, 3, 4, 21],
     "keywords": []
@@ -6546,7 +6542,7 @@
     "name": "Seeking My Way gacha",
     "start": 1784142000000,
     "end": 1784833199000,
-    "cards": [1179, 1180, 1181],
+    "cards": [1201, 1202, 1203],
     "event_id": 173,
     "banner_type": "Event",
     "characters": [3, 1, 22],
@@ -6567,7 +6563,7 @@
     "name": "Kusanagi Nene Happy Birthday 2026 Gacha",
     "start": 1784530800000,
     "end": 1785135599000,
-    "cards": [1184, 548, 388, 242],
+    "cards": [1206, 966, 682, 468],
     "banner_type": "Birthday",
     "characters": [15],
     "keywords": []
@@ -6575,7 +6571,7 @@
   {
     "id": 532,
     "name": "Vivid BAD SQUAD World Link 2 Event Support Gacha",
-    "cards": [465, 466, 467, 468],
+    "cards": [848, 849, 850, 851],
     "start": 1775070000000,
     "end": 1776884399000,
     "banner_type": "World Link Support",
@@ -6585,7 +6581,7 @@
   {
     "id": 533,
     "name": "Wonderlands×Showtime World Link 2 Event Support Gacha",
-    "cards": [489, 490, 491, 492],
+    "cards": [884, 885, 886, 887],
     "start": 1777748400000,
     "end": 1779562799000,
     "banner_type": "World Link Support",
@@ -6595,7 +6591,7 @@
   {
     "id": 534,
     "name": "Nightcord at 25:00 World Link 2 Event Support Gacha",
-    "cards": [434, 435, 436, 437],
+    "cards": [785, 786, 787, 788],
     "start": 1780426800000,
     "end": 1782241199000,
     "banner_type": "World Link Support",
@@ -6605,7 +6601,7 @@
   {
     "id": 535,
     "name": "Leo/need World Link 2 Event Support Gacha",
-    "cards": [544, 545, 546, 547],
+    "cards": [961, 962, 963, 964],
     "start": 1781636400000,
     "end": 1783450799000,
     "banner_type": "World Link Support",
@@ -6617,7 +6613,7 @@
     "name": "Open Up My Feelings Gacha",
     "start": 1784833200000,
     "end": 1785524399000,
-    "cards": [1185, 1186, 1187],
+    "cards": [1207, 1208, 1209],
     "event_id": 174,
     "banner_type": "Event",
     "characters": [5, 6, 8],
@@ -6637,7 +6633,7 @@
     "name": "Shiraishi An Happy Birthday 2026 Gacha",
     "start": 1785049200000,
     "end": 1785653999000,
-    "cards": [1190, 549, 392, 246],
+    "cards": [1212, 967, 688, 474],
     "banner_type": "Birthday",
     "characters": [10],
     "keywords": []
@@ -6647,11 +6643,10 @@
     "name": "Recollection Festival Gacha",
     "start": 1756407600000,
     "end": 1756753199000,
-    "cards": [126, 186, 148],
+    "cards": [289, 385, 330],
     "banner_type": "Recollection",
     "characters": [5, 13, 21],
     "type": "questionable",
-
     "tag": "Possible August Release",
     "keywords": []
   },
@@ -6660,7 +6655,7 @@
     "name": "[Rerun] JP 4th Anniversary Bloom Festival Gacha",
     "start": 1765051200000,
     "end": 1765483199000,
-    "cards": [575, 576, 577, 578, 579, 580],
+    "cards": [1003, 1004, 1005, 1006, 1007, 1008],
     "banner_type": "Bloom Festival",
     "type": "questionable",
     "tag": "Possible Anniv Rerun",
