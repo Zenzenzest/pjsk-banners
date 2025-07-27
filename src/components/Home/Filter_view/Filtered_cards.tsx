@@ -1,10 +1,9 @@
 import { useState, useEffect, useRef } from "react";
-import EnCards from "../../../assets/json/en_cards.json";
-import JpCards from "../../../assets/json/jp_cards.json";
+import AllCards from "../../../assets/json/cards.json";
 import type {
   CardState,
   SelectedFilterTypesProps,
-  CardsTypes,
+  AllCardTypes,
 } from "../../Global/Types";
 import CardModal from "../../Shared/Card_modal";
 import { useTheme } from "../../../context/Theme_toggle";
@@ -39,18 +38,18 @@ export default function FilteredCards({
   // const formatCardName = (id: number) => String(id).padStart(4, "0");
   const today = Date.now();
 
-  const handleCardClick = (card: CardsTypes) => {
-    if (card.sekai_id) {
-      setCardState({
-        cardId: card.id,
-        rarity: card.rarity,
-        name: card.character,
-        cardName: card.name,
-        cardAttribute: card.attribute,
-        sekaiId: card.sekai_id,
-        cardType: card.card_type,
-      });
-    }
+  const handleCardClick = (card: AllCardTypes) => {
+    setCardState({
+      cardId: card.id,
+      rarity: card.rarity,
+      name: card.character,
+      cardName:
+        server === "global" || server === "saved" ? card.name : card.jp_name,
+      cardAttribute: card.attribute,
+      sekaiId: card.id,
+      cardType: card.card_type,
+    });
+
     setIsOpen(true);
   };
 
@@ -60,12 +59,33 @@ export default function FilteredCards({
     setIsOpen(false);
   };
 
-  const cardsData: CardsTypes[] = server === "global" ? EnCards : JpCards;
-
-  const filteredCards = cardsData.filter((card) => {
-    if (today < card.released) {
-      return;
+  const filteredCards = AllCards.filter((card) => {
+    // Filter out cards with invalid en_released values
+    if (card.en_released <= 0) {
+      return false;
     }
+    // Server-based release date filtering
+    if (server === "global" || server === "saved") {
+      if (today < card.en_released) {
+        return false;
+      }
+    } else if (server === "jp") {
+      if (today < card.jp_released) {
+        return false;
+      }
+    }
+
+    // Keep your existing released filter if needed for backward compatibility
+    if (server === "global") {
+      if (today < card.en_released) {
+        return false;
+      }
+    } else {
+      if (today < card.jp_released) {
+        return false;
+      }
+    }
+
     const hasCharacterFilter = selectedFilters.Character.length > 0;
     const hasUnitFilter = selectedFilters.Unit.length > 0;
     const hasSubUnitFilter = selectedFilters.sub_unit.length > 0;
@@ -91,11 +111,12 @@ export default function FilteredCards({
     } else if (hasUnitFilter) {
       matchesCharacterOrUnit = matchesUnit;
     }
-    let subUnitMatch = true;
 
+    let subUnitMatch = true;
     if (hasSubUnitFilter) {
       subUnitMatch = matchesSubUnit;
     }
+
     const searchTerm = selectedFilters.search.toLowerCase().trim();
     const nameMatch = card.name?.toLowerCase().includes(searchTerm) || false;
 
@@ -109,9 +130,11 @@ export default function FilteredCards({
   });
 
   const sortedCards = [...filteredCards].sort((a, b) => {
-    return sortOrder === "desc"
-      ? b.released - a.released
-      : a.real_id - b.real_id;
+    return (server === "global" || server === "saved") && sortOrder === "desc"
+      ? b.en_released - a.en_released
+      : server === "jp" && sortOrder === "desc"
+      ? b.id - a.id
+      : a.id - b.id;
   });
 
   // Reset to first page when filters change
@@ -363,7 +386,7 @@ export default function FilteredCards({
                 >
                   {/* CARD NAME */}
                   <h3 className="font-medium text-sm sm:text-base line-clamp-2 leading-tight">
-                    {card.name}
+                    {server === "global" ? card.name : card.jp_name}
                   </h3>
 
                   {/* CHARACTER + ATTRIBUTE*/}

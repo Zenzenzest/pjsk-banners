@@ -6,7 +6,7 @@ import { ImageLoader } from "../../../hooks/imageLoader";
 
 export default function Cards({ banner, handleCardClick }: CardsProps) {
   const { theme } = useTheme();
-  const formatId = (id: number) => String(id).padStart(4, "0");
+
   const iconsLoader = ImageLoader(banner.cards.length);
 
   useEffect(() => {
@@ -36,21 +36,25 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
         )}
         <div className={`${iconsLoader.isLoaded ? "contents" : "hidden"}`}>
           {banner.cards.map((card, i) => {
-            const formattedCardId = formatId(card);
-            const cardIconImage = `/images/card_icons/${formattedCardId}_t.webp`;
+            const cardData = AllCards.find((item) => item.id === card);
+            const cardIconImage = `/images/card_icons/${card}_t.webp`;
             return (
               <div
                 key={i}
                 className="group cursor-pointer will-change-transform"
-                onClick={() => handleCardClick(AllCards[card - 1])}
+                onClick={() => {
+                  if (cardData) {
+                    handleCardClick(cardData);
+                  }
+                }}
                 style={{
-                  transition: 'transform 0.2s ease-out'
+                  transition: "transform 0.2s ease-out",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.05)';
+                  e.currentTarget.style.transform = "scale(1.05)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.transform = "scale(1)";
                 }}
               >
                 <div
@@ -64,13 +68,13 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
                     alt={`Card ${card}`}
                     onLoad={iconsLoader.handleLoad}
                     style={{
-                      transition: 'opacity 0.2s ease-out'
+                      transition: "opacity 0.2s ease-out",
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.opacity = '0.8';
+                      e.currentTarget.style.opacity = "0.8";
                     }}
                     onMouseLeave={(e) => {
-                      e.currentTarget.style.opacity = '1';
+                      e.currentTarget.style.opacity = "1";
                     }}
                   />
                 </div>

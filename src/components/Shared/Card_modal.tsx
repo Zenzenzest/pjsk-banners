@@ -19,7 +19,7 @@ export default function CardModal({
   sekaiId,
 }: CardModalProps) {
   const { theme } = useTheme();
-  const imageHost = "https://r2-image-proxy.zenzenzest.workers.dev/";
+  const imageHost = "https://r2-image-proxy.zenzenzest.workers.dev/n/";
   const isIpad = IsDeviceIpad();
 
   if (!isOpen) return null;
@@ -220,8 +220,6 @@ export default function CardModal({
                       ))}
                   </div>
                 </div>
-
-        
               </div>
 
               {/* TRAINED CARD */}
@@ -257,8 +255,6 @@ export default function CardModal({
                         ))}
                     </div>
                   </div>
-
-              
                 </div>
               )}
             </div>

@@ -1,15 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { useTheme } from "../../context/Theme_toggle";
-import type {
-  CardState,
-  GachaBannersProps,
-  AllCardTypes,
-} from "../Global/Types";
+import type { CardState, GachaBannersProps } from "../Global/Types";
 import CardModal from "../Shared/Card_modal";
 import { useServer } from "../../context/Server";
 import Disclaimer from "./Disclaimer";
 
-import type { BannerTypes } from "./Gacha_types";
+import type { AllCardTypes, BannerTypes } from "./Gacha_types";
 import BannerTemplate from "./Banner_template";
 
 export default function BannerContainer({
@@ -32,7 +28,7 @@ export default function BannerContainer({
     cardName: "",
     cardAttribute: "",
     sekaiId: 0,
-    cardType: ""
+    cardType: "",
   });
 
   // Handle scroll detection
@@ -68,8 +64,8 @@ export default function BannerContainer({
       cardName:
         server === "global" || server === "saved" ? card.name : card.jp_name,
       cardAttribute: card.attribute,
-      sekaiId: card.jp_sekai_id,
-      cardType: card.card_type
+      sekaiId: card.id,
+      cardType: card.card_type,
     });
     setIsOpen(true);
   };

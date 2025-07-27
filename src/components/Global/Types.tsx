@@ -53,12 +53,10 @@ export interface AllCardTypes {
   attribute: string;
   unit: string;
   sub_unit?: string;
-  real_id: number;
-  en_sekai_id?: number;
-  en_released?: number;
-  jp_sekai_id: number;
+  en_released: number;
   jp_released: number;
   jp_name: string;
+  prev_id?: number;
 }
 
 export interface CardsTypes {

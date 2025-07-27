@@ -11,7 +11,7 @@ import BannerStatus from "./BannerGrid/Banner_status";
 import CountdownTimer from "./Countdown_timer";
 import EventEndedTimer from "./EventEnded_timer";
 import EventCards from "./EventGrid/Event_cards";
-import Cards from "./BannerGrid/Banner_cards";
+import BannerCards from "./BannerGrid/Banner_cards";
 
 export default function BannerTemplate({
   banner,
@@ -255,7 +255,7 @@ export default function BannerTemplate({
           )}
           {/* CARDS */}
           {mode === "gacha" ? (
-            <Cards banner={banner} handleCardClick={handleCardClick} />
+            <BannerCards banner={banner} handleCardClick={handleCardClick} />
           ) : (
             <EventCards
               bannerCards={banner.cards}

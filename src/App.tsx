@@ -58,8 +58,6 @@ function App() {
             <Route path="/" element={<NavBar />}>
               <Route index element={<Home />} />
 
-              {/* <Route path="/create_mode" element={<CreateData />} />
-              <Route path="/test" element={<Test />} /> */}
               <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
           </Routes>

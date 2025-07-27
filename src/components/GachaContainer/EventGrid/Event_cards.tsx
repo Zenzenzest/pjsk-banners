@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AllCards from "../../../assets/json/cards.json";
 import { useTheme } from "../../../context/Theme_toggle";
-import type { AllCardTypes, EventCardsProps } from "../Gacha_types";
+import type { EventCardsProps } from "../Gacha_types";
 import { ImageLoader } from "../../../hooks/imageLoader";
 export default function EventCards({
   bannerCards,
@@ -9,7 +9,7 @@ export default function EventCards({
   handleCardClick,
 }: EventCardsProps) {
   const { theme } = useTheme();
-  const formatId = (id: number) => String(id).padStart(4, "0");
+
   const iconsLoader = ImageLoader(bannerShopCards.length);
 
   useEffect(() => {
@@ -46,20 +46,22 @@ export default function EventCards({
         )}
         <div className={`${iconsLoader.isLoaded ? "contents" : "hidden"}`}>
           {bannerShopCards.map((shopCard, i) => {
-            const EnEventCard = AllCards.find(
-              (item: AllCardTypes) => shopCard === item.id
-            );
-            const formattedCardId = formatId(shopCard);
+            const EnEventCard = AllCards.find((item) => shopCard === item.id);
+
             const cardIconImage =
               EnEventCard && EnEventCard.rarity === 3
-                ? `/images/card_icons/${formattedCardId}_t.webp`
-                : `/images/card_icons/${formattedCardId}.webp`;
+                ? `/images/card_icons/${shopCard}_t.webp`
+                : `/images/card_icons/${shopCard}.webp`;
 
             return (
               <div
                 key={`shop-${i}`}
                 className="group cursor-pointer transition-transform duration-200 hover:scale-105"
-                onClick={() => handleCardClick(AllCards[shopCard - 1])}
+                onClick={() => {
+                  if (EnEventCard) {
+                    handleCardClick(EnEventCard);
+                  }
+                }}
               >
                 <div
                   className={`relative overflow-hidden rounded-xl ${
@@ -81,13 +83,11 @@ export default function EventCards({
         {/* FOR SPACING */}
         {bannerShopCards.length < 1 &&
           bannerCards.map((card, i) => {
-            const formattedCardId = formatId(card);
-            const cardIconImage = `/images/card_icons/${formattedCardId}_t.webp`;
+            const cardIconImage = `/images/card_icons/${card}_t.webp`;
             return (
               <div
                 key={i}
                 className="group cursor-pointer transition-transform duration-200 hover:scale-105 invisible"
-                onClick={() => handleCardClick(AllCards[card - 1])}
               >
                 <div
                   className={`relative overflow-hidden rounded-xl ${
