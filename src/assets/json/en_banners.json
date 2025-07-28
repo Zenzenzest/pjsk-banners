@@ -6659,6 +6659,17 @@
     "banner_type": "Bloom Festival",
     "type": "questionable",
     "tag": "Possible Anniv Rerun",
-    "characters": [4, 7, 12, 15, 16, 22]
+    "characters": [4, 7, 12, 15, 16, 22],
+    "keywords": []
+  },
+  {
+    "id": 540,
+    "name": "2025 Summer Premium Gift Gacha",
+    "end": 1756666799000,
+    "start": 1753729200000,
+    "banner_type": "Premium Gift",
+    "cards": [770, 624, 556, 504, 607, 541],
+    "characters": [24, 2, 12, 16, 14, 17],
+    "keywords": []
   }
 ]
