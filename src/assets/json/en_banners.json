@@ -5310,11 +5310,10 @@
   },
   {
     "id": 440,
-    "name": "The Blue World Orchestra Gacha",
+    "name": "Blue World Orchestra Gacha",
     "cards": [973, 974, 975],
     "start": 1754766000000,
     "end": 1755457140000,
-    "type": "estimation",
     "banner_type": "Event",
     "event_id": 139,
     "characters": [10, 12, 17],
@@ -6130,8 +6129,8 @@
     "id": 501,
     "name": "[Rerun] Welcome to the Diner! Gacha",
     "cards": [689, 690, 691],
-    "start": 1756494000000,
-    "end": 1756494000000,
+    "start": 1755111600000,
+    "end": 1755889199000,
     "banner_type": "Limited Event Rerun",
     "type": "rerun_estimation",
     "rerun": [1755025200000, 1755370800000],
@@ -6142,11 +6141,9 @@
     "id": 502,
     "name": "[Rerun] Spooky Forest Gacha",
     "cards": [528, 529, 530],
-    "start": 1756494000000,
-    "end": 1756494000000,
+    "start": 1755975600000,
+    "end": 1756753199000,
     "banner_type": "Limited Event Rerun",
-    "type": "rerun_estimation",
-    "rerun": [1755576000000, 1756440000000],
     "characters": [4, 5, 9],
     "keywords": ["school", "festival", "miyajou", "school festival", "miyama"]
   },
@@ -6154,11 +6151,9 @@
     "id": 503,
     "name": "[Rerun] New Year's Divine Beasts Gacha",
     "cards": [565, 566, 567],
-    "start": 1756494000000,
-    "end": 1756494000000,
+    "start": 1754593200000,
+    "end": 1755370799000,
     "banner_type": "Limited Event Rerun",
-    "type": "rerun_estimation",
-    "rerun": [1754280000000, 1755921600000],
     "characters": [10, 13, 22],
     "keywords": ["new year", "happy new year", "ny"]
   },
@@ -6646,8 +6641,6 @@
     "cards": [289, 385, 330],
     "banner_type": "Recollection",
     "characters": [5, 13, 21],
-    "type": "questionable",
-    "tag": "Possible August Release",
     "keywords": []
   },
   {
@@ -6671,5 +6664,44 @@
     "cards": [770, 624, 556, 504, 607, 541],
     "characters": [24, 2, 12, 16, 14, 17],
     "keywords": []
+  },
+  {
+    "id": 541,
+    "name": "VIRTUAL SINGER World Link Event Support Gacha",
+    "cards": [875, 775, 929, 770, 892, 835],
+    "start": 1754852400000,
+    "end": 1756666799000,
+    "banner_type": "World Link Support",
+    "characters": [21, 22, 23, 24, 25, 26],
+    "keywords": []
+  },
+  {
+    "id": 542,
+    "name": "Those Who Dare Gacha",
+    "cards": [1213, 1214, 1215],
+    "start": 1785524400000,
+    "end": 1786215599000,
+    "banner_type": "Limited Event",
+    "event_id": 175,
+    "characters": [10, 12, 24],
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "an",
+      "an6",
+      "focus"
+    ]
+  },
+  {
+    "id": 543,
+    "name": "MORE MORE JUMP! World Link Link 2 Event Support Gacha",
+    "cards": [921, 922, 923, 924],
+    "start": 1785610800000,
+    "end": 1787425199000,
+    "banner_type": "World Link Support",
+    "characters": [5, 6, 7, 8],
+    "keywords": ["wl", "world link 1", "wl1"]
   }
 ]

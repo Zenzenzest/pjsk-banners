@@ -46,7 +46,7 @@ export default function Disclaimer() {
             </div>
           </div>
           <p className="text-sm mt-3 opacity-80">
-            Schedules from August 2025 onward will be adjusted when officially
+            Schedules from September 2025 onward will be adjusted when officially
             announced.
           </p>
         </div>

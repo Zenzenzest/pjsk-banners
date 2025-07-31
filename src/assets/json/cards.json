@@ -11587,7 +11587,7 @@
   },
   {
     "id": 973,
-    "name": "Together With My Aspirations",
+    "name": "Shared Admiration",
     "character": "Aoyagi Toya",
     "rarity": 4,
     "unit": "Vivid BAD SQUAD",
@@ -11599,7 +11599,7 @@
   },
   {
     "id": 974,
-    "name": "Testing Out! Mouthpiece",
+    "name": "Mouthpiece Challenge!",
     "character": "Yoisaki Kanade",
     "rarity": 4,
     "unit": "Nightcord at 25:00",
@@ -11611,7 +11611,7 @@
   },
   {
     "id": 975,
-    "name": "Smiles Are a Standard Feature",
+    "name": "Don't Forget The Smile",
     "character": "Shiraishi An",
     "rarity": 4,
     "unit": "Vivid BAD SQUAD",
@@ -11623,7 +11623,7 @@
   },
   {
     "id": 976,
-    "name": "Unexpected Pair of Tickets",
+    "name": "Ticket Serendipitiy",
     "character": "Asahina Mafuyu",
     "rarity": 3,
     "unit": "Nightcord at 25:00",
@@ -11659,7 +11659,7 @@
   },
   {
     "id": 979,
-    "name": "Entrusting Your Feelings",
+    "name": "Entrusted Feelings",
     "character": "Hatsune Miku",
     "rarity": 4,
     "unit": "Virtual Singers",
@@ -11671,7 +11671,7 @@
   },
   {
     "id": 980,
-    "name": "Cheering On From the Front Row!",
+    "name": "Cheering Front And Center!",
     "character": "Kagamine Rin",
     "rarity": 4,
     "unit": "Virtual Singers",
@@ -11683,7 +11683,7 @@
   },
   {
     "id": 981,
-    "name": "My Best Partner No Matter Where",
+    "name": "Always The Best Partners!",
     "character": "Kagamine Len",
     "rarity": 4,
     "unit": "Virtual Singers",
@@ -11695,7 +11695,7 @@
   },
   {
     "id": 982,
-    "name": "Staying Close to Your Feelings",
+    "name": "Being There",
     "character": "Megurine Luka",
     "rarity": 4,
     "unit": "Virtual Singers",
@@ -11707,7 +11707,7 @@
   },
   {
     "id": 983,
-    "name": "With a Gentle Aroma",
+    "name": "With A Soothing Fragrance",
     "character": "MEIKO",
     "rarity": 4,
     "unit": "Virtual Singers",
@@ -11719,7 +11719,7 @@
   },
   {
     "id": 984,
-    "name": "Wanting to Encourage Them",
+    "name": "Wanting To Give A Push",
     "character": "KAITO",
     "rarity": 4,
     "unit": "Virtual Singers",
@@ -11755,7 +11755,7 @@
   },
   {
     "id": 987,
-    "name": "I'm a Meow-Meow Monster!",
+    "name": "I'm The Meow-Meow Monster!",
     "character": "Otori Emu",
     "rarity": 4,
     "unit": "Wonderlands x Showtime",
@@ -11767,7 +11767,7 @@
   },
   {
     "id": 988,
-    "name": "A Cat-Eared Ghost Guide",
+    "name": "Cat-Eared Guide",
     "character": "Asahina Mafuyu",
     "rarity": 4,
     "unit": "Nightcord at 25:00",
@@ -11779,7 +11779,7 @@
   },
   {
     "id": 989,
-    "name": "The Second Test of Courage?!",
+    "name": "Test of Courage 2?!",
     "character": "Mochizuki Honami",
     "rarity": 4,
     "unit": "Leo/Need",
@@ -11791,7 +11791,7 @@
   },
   {
     "id": 990,
-    "name": "A Stitch of Thought",
+    "name": "Careful Stitching",
     "character": "Hinomori Shizuku",
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
@@ -14493,5 +14493,66 @@
     "jp_released": 1753455600000,
     "en_released": 1785049200000,
     "jp_name": "Happy Birthday！！2025"
+  },
+  {
+    "id": 1213,
+    "name": "Waving With A Smile",
+    "character": "Shiraishi An",
+    "rarity": 4,
+    "unit": "Vivid BAD SQUAD",
+    "attribute": "Happy",
+    "card_type": "limited",
+    "jp_released": 1753930800000,
+    "en_released": 0,
+    "jp_name": "笑顔で手を振って"
+  },
+  {
+    "id": 1214,
+    "name": "The Best Souvenir!",
+    "character": "Aoyagi Toya",
+    "rarity": 4,
+    "unit": "Vivid BAD SQUAD",
+    "attribute": "Happy",
+    "card_type": "limited",
+    "jp_released": 1753930800000,
+    "en_released": 0,
+    "jp_name": "最高のお土産を！"
+  },
+  {
+    "id": 1215,
+    "name": "A Secret Conversation Between The Two",
+    "character": "Megurine Luka",
+    "rarity": 4,
+    "unit": "Virtual Singers",
+    "attribute": "Happy",
+    "card_type": "limited",
+    "jp_released": 1753930800000,
+    "en_released": 0,
+    "jp_name": "ふたりのナイショ話",
+    "sub_unit": "Vivid BAD SQUAD"
+  },
+  {
+    "id": 1216,
+    "name": "Someday, To The Future Me",
+    "character": "Azusawa Kohane",
+    "rarity": 3,
+    "unit": "Vivid BAD SQUAD",
+    "attribute": "Pure",
+    "card_type": "event",
+    "jp_released": 1753941600000,
+    "en_released": 0,
+    "jp_name": "いつか未来の私へ"
+  },
+  {
+    "id": 1217,
+    "name": "Return To Everyday Life",
+    "character": "Shinonome Akito",
+    "rarity": 2,
+    "unit": "Vivid BAD SQUAD",
+    "attribute": "Cute",
+    "card_type": "event",
+    "jp_released": 1753941600000,
+    "en_released": 0,
+    "jp_name": "帰ってきた日常"
   }
 ]

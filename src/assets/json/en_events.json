@@ -6,13 +6,7 @@
     "start": 1639004400000,
     "end": 1639544399000,
     "close": 1639695599000,
-    "cards": [
-      109,
-      110,
-      111,
-      112,
-      113
-    ],
+    "cards": [109, 110, 111, 112, 113],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -32,13 +26,7 @@
     "start": 1639695600000,
     "end": 1640235599000,
     "close": 1640386799000,
-    "cards": [
-      114,
-      115,
-      116,
-      117,
-      118
-    ],
+    "cards": [114, 115, 116, 117, 118],
     "event_type": "marathon",
     "keywords": [
       "mafuyu",
@@ -58,13 +46,7 @@
     "start": 1640386800000,
     "end": 1640926799000,
     "close": 1641077999000,
-    "cards": [
-      119,
-      120,
-      121,
-      122,
-      123
-    ],
+    "cards": [119, 120, 121, 122, 123],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -86,13 +68,7 @@
     "start": 1641769200000,
     "end": 1642309199000,
     "close": 1642460399000,
-    "cards": [
-      124,
-      125,
-      126,
-      127,
-      128
-    ],
+    "cards": [124, 125, 126, 127, 128],
     "event_type": "marathon",
     "keywords": [
       "sports",
@@ -111,22 +87,9 @@
     "start": 1642460400000,
     "end": 1643000399000,
     "close": 1643151599000,
-    "cards": [
-      129,
-      130,
-      131,
-      132,
-      133
-    ],
+    "cards": [129, 130, 131, 132, 133],
     "event_type": "marathon",
-    "keywords": [
-      "mmj",
-      "more more jump",
-      "momojan",
-      "airi",
-      "airi1",
-      "focus"
-    ],
+    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi1", "focus"],
     "type": "Airi 1st Focus Event"
   },
   {
@@ -136,13 +99,7 @@
     "start": 1641078000000,
     "end": 1641617999000,
     "close": 1641769199000,
-    "cards": [
-      134,
-      135,
-      136,
-      137,
-      138
-    ],
+    "cards": [134, 135, 136, 137, 138],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -162,20 +119,9 @@
     "start": 1643151600000,
     "end": 1643691599000,
     "close": 1643842799000,
-    "cards": [
-      139,
-      140,
-      141,
-      142,
-      143
-    ],
+    "cards": [139, 140, 141, 142, 143],
     "event_type": "marathon",
-    "keywords": [
-      "festival",
-      "school festival",
-      "kamiyama",
-      "kamikou"
-    ],
+    "keywords": ["festival", "school festival", "kamiyama", "kamikou"],
     "type": "Mixed Event"
   },
   {
@@ -185,13 +131,7 @@
     "start": 1643842800000,
     "end": 1644382799000,
     "close": 1644533999000,
-    "cards": [
-      144,
-      145,
-      146,
-      147,
-      148
-    ],
+    "cards": [144, 145, 146, 147, 148],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -214,20 +154,9 @@
     "start": 1644534000000,
     "end": 1645073999000,
     "close": 1645225199000,
-    "cards": [
-      149,
-      150,
-      151,
-      152,
-      153,
-      154
-    ],
+    "cards": [149, 150, 151, 152, 153, 154],
     "event_type": "marathon",
-    "keywords": [
-      "new year",
-      "ny",
-      "happy new year"
-    ],
+    "keywords": ["new year", "ny", "happy new year"],
     "type": "New Year Event"
   },
   {
@@ -237,13 +166,7 @@
     "start": 1645225200000,
     "end": 1645765199000,
     "close": 1645916399000,
-    "cards": [
-      155,
-      156,
-      157,
-      158,
-      159
-    ],
+    "cards": [155, 156, 157, 158, 159],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -264,13 +187,7 @@
     "start": 1645916400000,
     "end": 1646456399000,
     "close": 1646607599000,
-    "cards": [
-      160,
-      161,
-      162,
-      163,
-      164
-    ],
+    "cards": [160, 161, 162, 163, 164],
     "event_type": "marathon",
     "keywords": [
       "mmj",
@@ -290,13 +207,7 @@
     "start": 1646607600000,
     "end": 1647147599000,
     "close": 1647295198000,
-    "cards": [
-      165,
-      166,
-      167,
-      168,
-      169
-    ],
+    "cards": [165, 166, 167, 168, 169],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -316,13 +227,7 @@
     "start": 1647295200000,
     "end": 1647835199000,
     "close": 1647986399000,
-    "cards": [
-      170,
-      171,
-      172,
-      173,
-      174
-    ],
+    "cards": [170, 171, 172, 173, 174],
     "event_type": "marathon",
     "keywords": [],
     "type": "Mixed Event"
@@ -334,22 +239,9 @@
     "start": 1647986400000,
     "end": 1648526399000,
     "close": 1648677599000,
-    "cards": [
-      175,
-      176,
-      177,
-      178,
-      179
-    ],
+    "cards": [175, 176, 177, 178, 179],
     "event_type": "marathon",
-    "keywords": [
-      "ena1",
-      "ena",
-      "n25",
-      "nightcord",
-      "niigo",
-      "focus"
-    ],
+    "keywords": ["ena1", "ena", "n25", "nightcord", "niigo", "focus"],
     "type": "Ena 1st Focus Event"
   },
   {
@@ -359,13 +251,7 @@
     "start": 1648677600000,
     "end": 1649217599000,
     "close": 1649368799000,
-    "cards": [
-      180,
-      181,
-      182,
-      183,
-      184
-    ],
+    "cards": [180, 181, 182, 183, 184],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -388,18 +274,9 @@
     "start": 1649368800000,
     "end": 1649908799000,
     "close": 1650059999000,
-    "cards": [
-      185,
-      186,
-      187,
-      188,
-      189
-    ],
+    "cards": [185, 186, 187, 188, 189],
     "event_type": "marathon",
-    "keywords": [
-      "festival",
-      "doll festival"
-    ],
+    "keywords": ["festival", "doll festival"],
     "type": "Mixed Event"
   },
   {
@@ -409,13 +286,7 @@
     "start": 1650060000000,
     "end": 1650599999000,
     "close": 1650751199000,
-    "cards": [
-      190,
-      191,
-      192,
-      193,
-      194
-    ],
+    "cards": [190, 191, 192, 193, 194],
     "event_type": "marathon",
     "keywords": [
       "mmj",
@@ -435,18 +306,9 @@
     "start": 1650751200000,
     "end": 1651291199000,
     "close": 1651442399000,
-    "cards": [
-      197,
-      198,
-      199,
-      200,
-      201
-    ],
+    "cards": [197, 198, 199, 200, 201],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "cherry blossom",
-      "sakura"
-    ],
+    "keywords": ["cherry blossom", "sakura"],
     "type": "Mixed Event"
   },
   {
@@ -456,13 +318,7 @@
     "start": 1651442400000,
     "end": 1651982399000,
     "close": 1652133599000,
-    "cards": [
-      202,
-      203,
-      204,
-      205,
-      206
-    ],
+    "cards": [202, 203, 204, 205, 206],
     "event_type": "marathon",
     "keywords": [
       "mizu1",
@@ -482,13 +338,7 @@
     "start": 1652133600000,
     "end": 1652673599000,
     "close": 1652824799000,
-    "cards": [
-      207,
-      208,
-      209,
-      210,
-      211
-    ],
+    "cards": [207, 208, 209, 210, 211],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -508,13 +358,7 @@
     "start": 1652824800000,
     "end": 1653364799000,
     "close": 1653515999000,
-    "cards": [
-      212,
-      213,
-      214,
-      215,
-      216
-    ],
+    "cards": [212, 213, 214, 215, 216],
     "event_type": "cheerful_carnival",
     "keywords": [
       "vbs",
@@ -535,17 +379,9 @@
     "start": 1653516000000,
     "end": 1654055999000,
     "close": 1654207199000,
-    "cards": [
-      217,
-      218,
-      219,
-      220,
-      221
-    ],
+    "cards": [217, 218, 219, 220, 221],
     "event_type": "marathon",
-    "keywords": [
-      "picnic"
-    ],
+    "keywords": ["picnic"],
     "type": "Mixed Event"
   },
   {
@@ -555,13 +391,7 @@
     "start": 1654207200000,
     "end": 1654747199000,
     "close": 1654898399000,
-    "cards": [
-      222,
-      223,
-      224,
-      225,
-      226
-    ],
+    "cards": [222, 223, 224, 225, 226],
     "event_type": "marathon",
     "keywords": [
       "mmj",
@@ -581,20 +411,9 @@
     "start": 1654898400000,
     "end": 1655438399000,
     "close": 1655589599000,
-    "cards": [
-      227,
-      228,
-      229,
-      230,
-      231
-    ],
+    "cards": [227, 228, 229, 230, 231],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "wedding",
-      "marriage",
-      "groom",
-      "bride"
-    ],
+    "keywords": ["wedding", "marriage", "groom", "bride"],
     "type": "Mixed Event"
   },
   {
@@ -604,13 +423,7 @@
     "start": 1655589600000,
     "end": 1656129599000,
     "close": 1656280799000,
-    "cards": [
-      232,
-      233,
-      234,
-      235,
-      236
-    ],
+    "cards": [232, 233, 234, 235, 236],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -634,13 +447,7 @@
     "start": 1656280800000,
     "end": 1656820799000,
     "close": 1656971999000,
-    "cards": [
-      237,
-      238,
-      239,
-      240,
-      241
-    ],
+    "cards": [237, 238, 239, 240, 241],
     "event_type": "marathon",
     "keywords": [
       "kanade",
@@ -660,13 +467,7 @@
     "start": 1656972000000,
     "end": 1657511999000,
     "close": 1657663199000,
-    "cards": [
-      244,
-      245,
-      246,
-      247,
-      248
-    ],
+    "cards": [244, 245, 246, 247, 248],
     "event_type": "cheerful_carnival",
     "keywords": [
       "leo/need",
@@ -686,13 +487,7 @@
     "start": 1657663200000,
     "end": 1658289599000,
     "close": 1658440799000,
-    "cards": [
-      249,
-      250,
-      251,
-      252,
-      253
-    ],
+    "cards": [249, 250, 251, 252, 253],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -713,19 +508,9 @@
     "start": 1658440800000,
     "end": 1659239999000,
     "close": 1659391199000,
-    "cards": [
-      254,
-      255,
-      256,
-      257,
-      258
-    ],
+    "cards": [254, 255, 256, 257, 258],
     "event_type": "marathon",
-    "keywords": [
-      "festival",
-      "summer festival",
-      "summer"
-    ],
+    "keywords": ["festival", "summer festival", "summer"],
     "type": "Mixed Event"
   },
   {
@@ -735,18 +520,9 @@
     "start": 1659391200000,
     "end": 1660017599000,
     "close": 1660168799000,
-    "cards": [
-      259,
-      260,
-      261,
-      262,
-      263
-    ],
+    "cards": [259, 260, 261, 262, 263],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "summer",
-      "swimsuit"
-    ],
+    "keywords": ["summer", "swimsuit"],
     "type": "Mixed Event"
   },
   {
@@ -756,22 +532,9 @@
     "start": 1660168800000,
     "end": 1660881599000,
     "close": 1661032799000,
-    "cards": [
-      264,
-      265,
-      266,
-      267,
-      268
-    ],
+    "cards": [264, 265, 266, 267, 268],
     "event_type": "marathon",
-    "keywords": [
-      "mmj",
-      "more more jump",
-      "momojan",
-      "airi",
-      "airi2",
-      "focus"
-    ],
+    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi2", "focus"],
     "type": "Airi 2nd Focus Event"
   },
   {
@@ -781,13 +544,7 @@
     "start": 1661032800000,
     "end": 1661745599000,
     "close": 1661896799000,
-    "cards": [
-      269,
-      270,
-      271,
-      272,
-      273
-    ],
+    "cards": [269, 270, 271, 272, 273],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -808,18 +565,9 @@
     "start": 1661896800000,
     "end": 1662609599000,
     "close": 1662760799000,
-    "cards": [
-      274,
-      275,
-      276,
-      277,
-      278
-    ],
+    "cards": [274, 275, 276, 277, 278],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "autumn",
-      "moon rabbit"
-    ],
+    "keywords": ["autumn", "moon rabbit"],
     "type": "Mixed Event"
   },
   {
@@ -829,13 +577,7 @@
     "start": 1662760800000,
     "end": 1663559999000,
     "close": 1663711199000,
-    "cards": [
-      279,
-      280,
-      281,
-      282,
-      283
-    ],
+    "cards": [279, 280, 281, 282, 283],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -856,13 +598,7 @@
     "start": 1663711200000,
     "end": 1664510399000,
     "close": 1664661599000,
-    "cards": [
-      284,
-      285,
-      286,
-      287,
-      288
-    ],
+    "cards": [284, 285, 286, 287, 288],
     "event_type": "marathon",
     "keywords": [
       "n25",
@@ -882,17 +618,9 @@
     "start": 1664661600000,
     "end": 1665633599000,
     "close": 1665784799000,
-    "cards": [
-      291,
-      292,
-      293,
-      294
-    ],
+    "cards": [291, 292, 293, 294],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "Fan festival",
-      "festival"
-    ],
+    "keywords": ["Fan festival", "festival"],
     "type": "Mixed Event"
   },
   {
@@ -902,13 +630,7 @@
     "start": 1665784800000,
     "end": 1666756799000,
     "close": 1666994398000,
-    "cards": [
-      296,
-      297,
-      298,
-      299,
-      300
-    ],
+    "cards": [296, 297, 298, 299, 300],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -928,13 +650,7 @@
     "start": 1666994400000,
     "end": 1667797199000,
     "close": 1667948399000,
-    "cards": [
-      307,
-      308,
-      309,
-      310,
-      311
-    ],
+    "cards": [307, 308, 309, 310, 311],
     "event_type": "cheerful_carnival",
     "keywords": [
       "n25",
@@ -954,13 +670,7 @@
     "start": 1667948400000,
     "end": 1668661199000,
     "close": 1668812399000,
-    "cards": [
-      313,
-      314,
-      315,
-      316,
-      317
-    ],
+    "cards": [313, 314, 315, 316, 317],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -981,17 +691,9 @@
     "start": 1668812400000,
     "end": 1669611599000,
     "close": 1669762799000,
-    "cards": [
-      319,
-      320,
-      321,
-      322,
-      323
-    ],
+    "cards": [319, 320, 321, 322, 323],
     "event_type": "marathon",
-    "keywords": [
-      "time to hang out"
-    ],
+    "keywords": ["time to hang out"],
     "type": "Mixed Event"
   },
   {
@@ -1001,17 +703,9 @@
     "start": 1669762800000,
     "end": 1670561999000,
     "close": 1670713199000,
-    "cards": [
-      324,
-      325,
-      326,
-      327,
-      328
-    ],
+    "cards": [324, 325, 326, 327, 328],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "ichikana"
-    ],
+    "keywords": ["ichikana"],
     "type": "Mixed Event"
   },
   {
@@ -1021,13 +715,7 @@
     "start": 1670713200000,
     "end": 1671425999000,
     "close": 1671577199000,
-    "cards": [
-      330,
-      331,
-      332,
-      333,
-      334
-    ],
+    "cards": [330, 331, 332, 333, 334],
     "event_type": "marathon",
     "keywords": [
       "mmj",
@@ -1049,13 +737,7 @@
     "start": 1671577200000,
     "end": 1672376399000,
     "close": 1672527599000,
-    "cards": [
-      341,
-      342,
-      343,
-      344,
-      345
-    ],
+    "cards": [341, 342, 343, 344, 345],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -1075,18 +757,9 @@
     "start": 1672527600000,
     "end": 1673413199000,
     "close": 1673564399000,
-    "cards": [
-      350,
-      351,
-      352,
-      353,
-      354
-    ],
+    "cards": [350, 351, 352, 353, 354],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "new year",
-      "happy new year"
-    ],
+    "keywords": ["new year", "happy new year"],
     "type": "New Year Event"
   },
   {
@@ -1096,13 +769,7 @@
     "start": 1673564400000,
     "end": 1674190799000,
     "close": 1674341999000,
-    "cards": [
-      356,
-      357,
-      358,
-      359,
-      360
-    ],
+    "cards": [356, 357, 358, 359, 360],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -1125,13 +792,7 @@
     "start": 1674342000000,
     "end": 1675054799000,
     "close": 1675205999000,
-    "cards": [
-      361,
-      362,
-      363,
-      364,
-      365
-    ],
+    "cards": [361, 362, 363, 364, 365],
     "event_type": "marathon",
     "keywords": [
       "n25",
@@ -1151,17 +812,9 @@
     "start": 1675206000000,
     "end": 1675832399000,
     "close": 1675983599000,
-    "cards": [
-      368,
-      369,
-      370,
-      371,
-      372
-    ],
+    "cards": [368, 369, 370, 371, 372],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "valentine's"
-    ],
+    "keywords": ["valentine's"],
     "type": "Valentine's Event"
   },
   {
@@ -1171,13 +824,7 @@
     "start": 1675983600000,
     "end": 1676609999000,
     "close": 1676761199000,
-    "cards": [
-      373,
-      374,
-      375,
-      376,
-      377
-    ],
+    "cards": [373, 374, 375, 376, 377],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -1198,13 +845,7 @@
     "start": 1676761200000,
     "end": 1677473999000,
     "close": 1677625199000,
-    "cards": [
-      380,
-      381,
-      382,
-      383,
-      384
-    ],
+    "cards": [380, 381, 382, 383, 384],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -1224,17 +865,9 @@
     "start": 1677625200000,
     "end": 1678424399000,
     "close": 1678575599000,
-    "cards": [
-      385,
-      386,
-      387,
-      388,
-      389
-    ],
+    "cards": [385, 386, 387, 388, 389],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "white day"
-    ],
+    "keywords": ["white day"],
     "type": "White Day Event"
   },
   {
@@ -1244,13 +877,7 @@
     "start": 1678575600000,
     "end": 1679198399000,
     "close": 1679349599000,
-    "cards": [
-      391,
-      392,
-      393,
-      394,
-      395
-    ],
+    "cards": [391, 392, 393, 394, 395],
     "event_type": "marathon",
     "keywords": [
       "mmj",
@@ -1270,22 +897,9 @@
     "start": 1679349600000,
     "end": 1680062399000,
     "close": 1680213599000,
-    "cards": [
-      397,
-      398,
-      399,
-      400,
-      401
-    ],
+    "cards": [397, 398, 399, 400, 401],
     "event_type": "marathon",
-    "keywords": [
-      "n25",
-      "nightcord",
-      "niigo",
-      "focus",
-      "ena",
-      "ena2"
-    ],
+    "keywords": ["n25", "nightcord", "niigo", "focus", "ena", "ena2"],
     "type": "Ena 2nd Focus Event"
   },
   {
@@ -1295,19 +909,9 @@
     "start": 1680213600000,
     "end": 1681099199000,
     "close": 1681250399000,
-    "cards": [
-      404,
-      405,
-      406,
-      407,
-      408,
-      409
-    ],
+    "cards": [404, 405, 406, 407, 408, 409],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "cherry blossom",
-      "sakura"
-    ],
+    "keywords": ["cherry blossom", "sakura"],
     "type": "Virtual Singer Event"
   },
   {
@@ -1317,13 +921,7 @@
     "start": 1681250400000,
     "end": 1681963199000,
     "close": 1682114399000,
-    "cards": [
-      410,
-      411,
-      412,
-      413,
-      414
-    ],
+    "cards": [410, 411, 412, 413, 414],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -1347,13 +945,7 @@
     "start": 1682114400000,
     "end": 1682740799000,
     "close": 1682891999000,
-    "cards": [
-      416,
-      417,
-      418,
-      419,
-      420
-    ],
+    "cards": [416, 417, 418, 419, 420],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -1374,13 +966,7 @@
     "start": 1682892000000,
     "end": 1683604799000,
     "close": 1683755999000,
-    "cards": [
-      422,
-      423,
-      424,
-      425,
-      426
-    ],
+    "cards": [422, 423, 424, 425, 426],
     "event_type": "cheerful_carnival",
     "keywords": [
       "mmj",
@@ -1400,13 +986,7 @@
     "start": 1683756000000,
     "end": 1684468799000,
     "close": 1684619999000,
-    "cards": [
-      428,
-      429,
-      430,
-      431,
-      432
-    ],
+    "cards": [428, 429, 430, 431, 432],
     "event_type": "marathon",
     "keywords": [
       "sports",
@@ -1424,13 +1004,7 @@
     "start": 1684620000000,
     "end": 1685419199000,
     "close": 1685570399000,
-    "cards": [
-      434,
-      435,
-      436,
-      437,
-      438
-    ],
+    "cards": [434, 435, 436, 437, 438],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -1451,19 +1025,9 @@
     "start": 1685570400000,
     "end": 1686283199000,
     "close": 1686434399000,
-    "cards": [
-      440,
-      441,
-      442,
-      443,
-      444
-    ],
+    "cards": [440, 441, 442, 443, 444],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "bride",
-      "wedding",
-      "marriage"
-    ],
+    "keywords": ["bride", "wedding", "marriage"],
     "type": "Mixed Event"
   },
   {
@@ -1473,13 +1037,7 @@
     "start": 1686434400000,
     "end": 1687147199000,
     "close": 1687298399000,
-    "cards": [
-      445,
-      446,
-      447,
-      448,
-      449
-    ],
+    "cards": [445, 446, 447, 448, 449],
     "event_type": "marathon",
     "keywords": [
       "n25",
@@ -1499,13 +1057,7 @@
     "start": 1687298400000,
     "end": 1688011199000,
     "close": 1688162399000,
-    "cards": [
-      450,
-      451,
-      452,
-      453,
-      454
-    ],
+    "cards": [450, 451, 452, 453, 454],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -1526,18 +1078,9 @@
     "start": 1688162400000,
     "end": 1688961599000,
     "close": 1689112799000,
-    "cards": [
-      458,
-      459,
-      460,
-      461,
-      462
-    ],
+    "cards": [458, 459, 460, 461, 462],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "sporty",
-      "sport"
-    ],
+    "keywords": ["sporty", "sport"],
     "type": "Mixed Event"
   },
   {
@@ -1547,13 +1090,7 @@
     "start": 1689112800000,
     "end": 1689825599000,
     "close": 1689976799000,
-    "cards": [
-      463,
-      464,
-      465,
-      466,
-      467
-    ],
+    "cards": [463, 464, 465, 466, 467],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -1573,13 +1110,7 @@
     "start": 1689976800000,
     "end": 1690689599000,
     "close": 1690840799000,
-    "cards": [
-      469,
-      470,
-      471,
-      472,
-      473
-    ],
+    "cards": [469, 470, 471, 472, 473],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -1599,18 +1130,9 @@
     "start": 1690840800000,
     "end": 1691553599000,
     "close": 1691704799000,
-    "cards": [
-      475,
-      476,
-      477,
-      478,
-      479
-    ],
+    "cards": [475, 476, 477, 478, 479],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "gaming",
-      "tournament"
-    ],
+    "keywords": ["gaming", "tournament"],
     "type": "Mixed Event"
   },
   {
@@ -1620,22 +1142,9 @@
     "start": 1691704800000,
     "end": 1692417599000,
     "close": 1692568799000,
-    "cards": [
-      481,
-      482,
-      483,
-      484,
-      485
-    ],
+    "cards": [481, 482, 483, 484, 485],
     "event_type": "marathon",
-    "keywords": [
-      "mmj",
-      "more more jump",
-      "momojan",
-      "airi",
-      "airi3",
-      "focus"
-    ],
+    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi3", "focus"],
     "type": "Airi 3rd Focus Event"
   },
   {
@@ -1645,13 +1154,7 @@
     "start": 1692568800000,
     "end": 1693367999000,
     "close": 1693519199000,
-    "cards": [
-      486,
-      487,
-      488,
-      489,
-      490
-    ],
+    "cards": [486, 487, 488, 489, 490],
     "event_type": "marathon",
     "keywords": [
       "n25",
@@ -1671,13 +1174,7 @@
     "start": 1693519200000,
     "end": 1694231999000,
     "close": 1694383199000,
-    "cards": [
-      493,
-      494,
-      495,
-      496,
-      497
-    ],
+    "cards": [493, 494, 495, 496, 497],
     "event_type": "cheerful_carnival",
     "keywords": [
       "leo/need",
@@ -1697,17 +1194,9 @@
     "start": 1694383200000,
     "end": 1695095999000,
     "close": 1695247199000,
-    "cards": [
-      499,
-      500,
-      501,
-      502,
-      503
-    ],
+    "cards": [499, 500, 501, 502, 503],
     "event_type": "marathon",
-    "keywords": [
-      "paint"
-    ],
+    "keywords": ["paint"],
     "type": "Mixed Event"
   },
   {
@@ -1717,13 +1206,7 @@
     "start": 1695247200000,
     "end": 1695959999000,
     "close": 1696111199000,
-    "cards": [
-      504,
-      505,
-      506,
-      507,
-      508
-    ],
+    "cards": [504, 505, 506, 507, 508],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -1743,18 +1226,9 @@
     "start": 1696111200000,
     "end": 1696910399000,
     "close": 1697061599000,
-    "cards": [
-      511,
-      512,
-      513,
-      514,
-      515
-    ],
+    "cards": [511, 512, 513, 514, 515],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "festival",
-      "shibuya festival"
-    ],
+    "keywords": ["festival", "shibuya festival"],
     "type": "Mixed Event"
   },
   {
@@ -1764,13 +1238,7 @@
     "start": 1697061600000,
     "end": 1697774399000,
     "close": 1697925599000,
-    "cards": [
-      517,
-      518,
-      519,
-      520,
-      521
-    ],
+    "cards": [517, 518, 519, 520, 521],
     "event_type": "marathon",
     "keywords": [
       "mmj",
@@ -1790,13 +1258,7 @@
     "start": 1697925600000,
     "end": 1698638399000,
     "close": 1698789599000,
-    "cards": [
-      522,
-      523,
-      524,
-      525,
-      526
-    ],
+    "cards": [522, 523, 524, 525, 526],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -1817,21 +1279,9 @@
     "start": 1698789600000,
     "end": 1699505999000,
     "close": 1699657199000,
-    "cards": [
-      528,
-      529,
-      530,
-      531,
-      532
-    ],
+    "cards": [528, 529, 530, 531, 532],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "school",
-      "festival",
-      "miyajou",
-      "school festival",
-      "miyama"
-    ],
+    "keywords": ["school", "festival", "miyajou", "school festival", "miyama"],
     "type": "Mixed Event"
   },
   {
@@ -1841,13 +1291,7 @@
     "start": 1699657200000,
     "end": 1700369999000,
     "close": 1700521199000,
-    "cards": [
-      535,
-      536,
-      537,
-      538,
-      539
-    ],
+    "cards": [535, 536, 537, 538, 539],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -1868,22 +1312,9 @@
     "start": 1700521200000,
     "end": 1701233999000,
     "close": 1701385199000,
-    "cards": [
-      540,
-      541,
-      542,
-      543,
-      544
-    ],
+    "cards": [540, 541, 542, 543, 544],
     "event_type": "marathon",
-    "keywords": [
-      "n25",
-      "nightcord",
-      "niigo",
-      "focus",
-      "ena",
-      "ena3"
-    ],
+    "keywords": ["n25", "nightcord", "niigo", "focus", "ena", "ena3"],
     "type": "Ena 3rd Focus Event"
   },
   {
@@ -1893,13 +1324,7 @@
     "start": 1701385200000,
     "end": 1702184399000,
     "close": 1702335599000,
-    "cards": [
-      545,
-      546,
-      547,
-      548,
-      549
-    ],
+    "cards": [545, 546, 547, 548, 549],
     "event_type": "cheerful_carnival",
     "keywords": [
       "mmj",
@@ -1919,13 +1344,7 @@
     "start": 1702335600000,
     "end": 1703048399000,
     "close": 1703199599000,
-    "cards": [
-      551,
-      552,
-      553,
-      554,
-      555
-    ],
+    "cards": [551, 552, 553, 554, 555],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -1946,17 +1365,9 @@
     "start": 1703199600000,
     "end": 1703912399000,
     "close": 1704063599000,
-    "cards": [
-      556,
-      557,
-      558,
-      559,
-      560
-    ],
+    "cards": [556, 557, 558, 559, 560],
     "event_type": "marathon",
-    "keywords": [
-      "shizumafu"
-    ],
+    "keywords": ["shizumafu"],
     "type": "Mixed Event"
   },
   {
@@ -1966,19 +1377,9 @@
     "start": 1704063600000,
     "end": 1704776399000,
     "close": 1704927599000,
-    "cards": [
-      565,
-      566,
-      567,
-      568,
-      569
-    ],
+    "cards": [565, 566, 567, 568, 569],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "new year",
-      "happy new year",
-      "ny"
-    ],
+    "keywords": ["new year", "happy new year", "ny"],
     "type": "New Year Event"
   },
   {
@@ -1988,13 +1389,7 @@
     "start": 1704927600000,
     "end": 1705726799000,
     "close": 1705877999000,
-    "cards": [
-      571,
-      572,
-      573,
-      574,
-      575
-    ],
+    "cards": [571, 572, 573, 574, 575],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -2017,13 +1412,7 @@
     "start": 1705878000000,
     "end": 1706590799000,
     "close": 1706741999000,
-    "cards": [
-      576,
-      577,
-      578,
-      579,
-      580
-    ],
+    "cards": [576, 577, 578, 579, 580],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -2044,17 +1433,9 @@
     "start": 1706742000000,
     "end": 1707454799000,
     "close": 1707605999000,
-    "cards": [
-      583,
-      584,
-      585,
-      586,
-      587
-    ],
+    "cards": [583, 584, 585, 586, 587],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "valentine's"
-    ],
+    "keywords": ["valentine's"],
     "type": "Valentine's Event"
   },
   {
@@ -2064,13 +1445,7 @@
     "start": 1707606000000,
     "end": 1708232399000,
     "close": 1708383599000,
-    "cards": [
-      589,
-      590,
-      591,
-      592,
-      593
-    ],
+    "cards": [589, 590, 591, 592, 593],
     "event_type": "marathon",
     "keywords": [
       "mmj",
@@ -2090,13 +1465,7 @@
     "start": 1708383600000,
     "end": 1709096399000,
     "close": 1709247599000,
-    "cards": [
-      595,
-      596,
-      597,
-      598,
-      599
-    ],
+    "cards": [595, 596, 597, 598, 599],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -2117,17 +1486,9 @@
     "start": 1709247600000,
     "end": 1710046799000,
     "close": 1710194399000,
-    "cards": [
-      600,
-      601,
-      602,
-      603,
-      604
-    ],
+    "cards": [600, 601, 602, 603, 604],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "white day"
-    ],
+    "keywords": ["white day"],
     "type": "White Day Event"
   },
   {
@@ -2137,13 +1498,7 @@
     "start": 1710194400000,
     "end": 1710907199000,
     "close": 1711058399000,
-    "cards": [
-      606,
-      607,
-      608,
-      609,
-      610
-    ],
+    "cards": [606, 607, 608, 609, 610],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -2167,13 +1522,7 @@
     "start": 1711058400000,
     "end": 1711684799000,
     "close": 1711835999000,
-    "cards": [
-      612,
-      613,
-      614,
-      615,
-      616
-    ],
+    "cards": [612, 613, 614, 615, 616],
     "event_type": "marathon",
     "keywords": [
       "n25",
@@ -2193,18 +1542,9 @@
     "start": 1711836000000,
     "end": 1712721599000,
     "close": 1712872799000,
-    "cards": [
-      619,
-      620,
-      621,
-      622,
-      623
-    ],
+    "cards": [619, 620, 621, 622, 623],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "anshiho",
-      "shihoan"
-    ],
+    "keywords": ["anshiho", "shihoan"],
     "type": "Mixed Event"
   },
   {
@@ -2214,13 +1554,7 @@
     "start": 1712872800000,
     "end": 1713585599000,
     "close": 1713736799000,
-    "cards": [
-      624,
-      625,
-      626,
-      627,
-      628
-    ],
+    "cards": [624, 625, 626, 627, 628],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -2240,21 +1574,9 @@
     "start": 1713736800000,
     "end": 1714363199000,
     "close": 1714514399000,
-    "cards": [
-      630,
-      631,
-      632,
-      633,
-      634
-    ],
+    "cards": [630, 631, 632, 633, 634],
     "event_type": "marathon",
-    "keywords": [
-      "mmj",
-      "more more jump",
-      "momojan",
-      "airi",
-      "airi4"
-    ],
+    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi4"],
     "type": "Airi 4th Focus Event"
   },
   {
@@ -2264,13 +1586,7 @@
     "start": 1714514400000,
     "end": 1715313599000,
     "close": 1715464799000,
-    "cards": [
-      636,
-      637,
-      638,
-      639,
-      640
-    ],
+    "cards": [636, 637, 638, 639, 640],
     "event_type": "cheerful_carnival",
     "keywords": [
       "n25",
@@ -2290,21 +1606,9 @@
     "start": 1715464800000,
     "end": 1716091199000,
     "close": 1716242399000,
-    "cards": [
-      642,
-      643,
-      644,
-      645,
-      646
-    ],
+    "cards": [642, 643, 644, 645, 646],
     "event_type": "marathon",
-    "keywords": [
-      "school trip",
-      "field trip",
-      "miyajou",
-      "yokohama",
-      "miyama"
-    ],
+    "keywords": ["school trip", "field trip", "miyajou", "yokohama", "miyama"],
     "type": "Mixed Event"
   },
   {
@@ -2314,13 +1618,7 @@
     "start": 1716242400000,
     "end": 1717041599000,
     "close": 1717192799000,
-    "cards": [
-      648,
-      649,
-      650,
-      651,
-      652
-    ],
+    "cards": [648, 649, 650, 651, 652],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -2341,19 +1639,9 @@
     "start": 1717192800000,
     "end": 1717905599000,
     "close": 1718056799000,
-    "cards": [
-      654,
-      655,
-      656,
-      657,
-      658
-    ],
+    "cards": [654, 655, 656, 657, 658],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "wedding",
-      "bride",
-      "marriage"
-    ],
+    "keywords": ["wedding", "bride", "marriage"],
     "type": "Mixed Event"
   },
   {
@@ -2363,13 +1651,7 @@
     "start": 1718056800000,
     "end": 1718769599000,
     "close": 1718920799000,
-    "cards": [
-      659,
-      660,
-      661,
-      662,
-      663
-    ],
+    "cards": [659, 660, 661, 662, 663],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -2389,13 +1671,7 @@
     "start": 1718920800000,
     "end": 1719633599000,
     "close": 1719784799000,
-    "cards": [
-      664,
-      665,
-      666,
-      667,
-      668
-    ],
+    "cards": [664, 665, 666, 667, 668],
     "event_type": "marathon",
     "keywords": [
       "mmj",
@@ -2415,20 +1691,9 @@
     "start": 1719784800000,
     "end": 1720583999000,
     "close": 1720735199000,
-    "cards": [
-      672,
-      673,
-      674,
-      675,
-      676
-    ],
+    "cards": [672, 673, 674, 675, 676],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "school trip",
-      "field trip",
-      "kamikou",
-      "kamiyama"
-    ],
+    "keywords": ["school trip", "field trip", "kamikou", "kamiyama"],
     "type": "Mixed Event"
   },
   {
@@ -2438,13 +1703,7 @@
     "start": 1720735200000,
     "end": 1721447999000,
     "close": 1721599199000,
-    "cards": [
-      677,
-      678,
-      679,
-      680,
-      681
-    ],
+    "cards": [677, 678, 679, 680, 681],
     "event_type": "marathon",
     "keywords": [
       "n25",
@@ -2464,13 +1723,7 @@
     "start": 1721599200000,
     "end": 1722311999000,
     "close": 1722463199000,
-    "cards": [
-      683,
-      684,
-      685,
-      686,
-      687
-    ],
+    "cards": [683, 684, 685, 686, 687],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -2491,18 +1744,9 @@
     "start": 1722463200000,
     "end": 1723175999000,
     "close": 1723327199000,
-    "cards": [
-      689,
-      690,
-      691,
-      692,
-      693
-    ],
+    "cards": [689, 690, 691, 692, 693],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "diner",
-      "cafe"
-    ],
+    "keywords": ["diner", "cafe"],
     "type": "Mixed Event"
   },
   {
@@ -2512,13 +1756,7 @@
     "start": 1723327200000,
     "end": 1724126399000,
     "close": 1724277599000,
-    "cards": [
-      694,
-      695,
-      696,
-      697,
-      698
-    ],
+    "cards": [694, 695, 696, 697, 698],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -2539,13 +1777,7 @@
     "start": 1724277600000,
     "end": 1724990399000,
     "close": 1725141599000,
-    "cards": [
-      700,
-      701,
-      702,
-      703,
-      704
-    ],
+    "cards": [700, 701, 702, 703, 704],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -2568,18 +1800,9 @@
     "start": 1725141600000,
     "end": 1725854399000,
     "close": 1726005599000,
-    "cards": [
-      707,
-      708,
-      709,
-      710,
-      711,
-      712
-    ],
+    "cards": [707, 708, 709, 710, 711, 712],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "vs"
-    ],
+    "keywords": ["vs"],
     "type": "Mixed Event"
   },
   {
@@ -2589,18 +1812,9 @@
     "start": 1726005600000,
     "end": 1726718399000,
     "close": 1726869599000,
-    "cards": [
-      714,
-      715,
-      716,
-      717,
-      718
-    ],
+    "cards": [714, 715, 716, 717, 718],
     "event_type": "marathon",
-    "keywords": [
-      "miyajou",
-      "miyama"
-    ],
+    "keywords": ["miyajou", "miyama"],
     "type": "Mixed Event"
   },
   {
@@ -2610,18 +1824,9 @@
     "start": 1726869600000,
     "end": 1727582399000,
     "close": 1727733599000,
-    "cards": [
-      719,
-      720,
-      721,
-      722,
-      723
-    ],
+    "cards": [719, 720, 721, 722, 723],
     "event_type": "marathon",
-    "keywords": [
-      "kamikou",
-      "kamiyama"
-    ],
+    "keywords": ["kamikou", "kamiyama"],
     "type": "Mixed Event"
   },
   {
@@ -2631,18 +1836,9 @@
     "start": 1727733600000,
     "end": 1728619199000,
     "close": 1728770399000,
-    "cards": [
-      762,
-      763,
-      764,
-      765,
-      723,
-      766
-    ],
+    "cards": [762, 763, 764, 765, 723, 766],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "new school year"
-    ],
+    "keywords": ["new school year"],
     "type": "Mixed Event"
   },
   {
@@ -2652,13 +1848,7 @@
     "start": 1728770400000,
     "end": 1729483199000,
     "close": 1729634399000,
-    "cards": [
-      768,
-      769,
-      770,
-      771,
-      772
-    ],
+    "cards": [768, 769, 770, 771, 772],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -2679,13 +1869,7 @@
     "start": 1729634400000,
     "end": 1730260799000,
     "close": 1730411999000,
-    "cards": [
-      773,
-      774,
-      775,
-      776,
-      777
-    ],
+    "cards": [773, 774, 775, 776, 777],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -2705,13 +1889,7 @@
     "start": 1730412000000,
     "end": 1730955599000,
     "close": 1731124799000,
-    "cards": [
-      779,
-      780,
-      781,
-      782,
-      783
-    ],
+    "cards": [779, 780, 781, 782, 783],
     "event_type": "cheerful_carnival",
     "keywords": [
       "mmj",
@@ -2731,13 +1909,7 @@
     "start": 1731124800000,
     "end": 1732161599000,
     "close": 1732316399000,
-    "cards": [
-      785,
-      786,
-      787,
-      788,
-      789
-    ],
+    "cards": [785, 786, 787, 788, 789],
     "event_type": "world_link",
     "keywords": [
       "n25",
@@ -2756,13 +1928,7 @@
     "start": 1732316400000,
     "end": 1732856399000,
     "close": 1733007599000,
-    "cards": [
-      791,
-      792,
-      793,
-      794,
-      795
-    ],
+    "cards": [791, 792, 793, 794, 795],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -2786,13 +1952,7 @@
     "start": 1733007600000,
     "end": 1733720399000,
     "close": 1733871599000,
-    "cards": [
-      796,
-      797,
-      798,
-      799,
-      800
-    ],
+    "cards": [796, 797, 798, 799, 800],
     "event_type": "cheerful_carnival",
     "keywords": [
       "arts festival",
@@ -2810,19 +1970,9 @@
     "start": 1733871600000,
     "end": 1734584399000,
     "close": 1734735599000,
-    "cards": [
-      828,
-      829,
-      830,
-      831,
-      832
-    ],
+    "cards": [828, 829, 830, 831, 832],
     "event_type": "marathon",
-    "keywords": [
-      "zoo",
-      "animal",
-      "caretaker"
-    ],
+    "keywords": ["zoo", "animal", "caretaker"],
     "type": "Mixed Event"
   },
   {
@@ -2832,13 +1982,7 @@
     "start": 1734735600000,
     "end": 1735534799000,
     "close": 1735685999000,
-    "cards": [
-      833,
-      834,
-      835,
-      836,
-      837
-    ],
+    "cards": [833, 834, 835, 836, 837],
     "event_type": "marathon",
     "keywords": [
       "niigo",
@@ -2858,19 +2002,9 @@
     "start": 1735686000000,
     "end": 1736312399000,
     "close": 1736481599000,
-    "cards": [
-      842,
-      843,
-      844,
-      845,
-      846
-    ],
+    "cards": [842, 843, 844, 845, 846],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "new year",
-      "ny",
-      "happy new year"
-    ],
+    "keywords": ["new year", "ny", "happy new year"],
     "type": "New Year Event"
   },
   {
@@ -2880,14 +2014,7 @@
     "start": 1736481600000,
     "end": 1737518399000,
     "close": 1737673199000,
-    "cards": [
-      848,
-      849,
-      850,
-      851,
-      853,
-      852
-    ],
+    "cards": [848, 849, 850, 851, 853, 852],
     "event_type": "world_link",
     "keywords": [
       "vbs",
@@ -2906,13 +2033,7 @@
     "start": 1737673200000,
     "end": 1738213199000,
     "close": 1738364399000,
-    "cards": [
-      854,
-      855,
-      856,
-      857,
-      858
-    ],
+    "cards": [854, 855, 856, 857, 858],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -2933,17 +2054,9 @@
     "start": 1738364400000,
     "end": 1739077199000,
     "close": 1739228399000,
-    "cards": [
-      861,
-      862,
-      863,
-      864,
-      865
-    ],
+    "cards": [861, 862, 863, 864, 865],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "valentine's"
-    ],
+    "keywords": ["valentine's"],
     "type": "Valentine's Event"
   },
   {
@@ -2953,13 +2066,7 @@
     "start": 1739228400000,
     "end": 1739941199000,
     "close": 1740092399000,
-    "cards": [
-      867,
-      868,
-      869,
-      870,
-      871
-    ],
+    "cards": [867, 868, 869, 870, 871],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -2980,13 +2087,7 @@
     "start": 1740092400000,
     "end": 1740632399000,
     "close": 1740783599000,
-    "cards": [
-      873,
-      874,
-      875,
-      876,
-      877
-    ],
+    "cards": [873, 874, 875, 876, 877],
     "event_type": "marathon",
     "keywords": [
       "mmj",
@@ -3006,17 +2107,9 @@
     "start": 1740783600000,
     "end": 1741323599000,
     "close": 1741492799000,
-    "cards": [
-      878,
-      879,
-      880,
-      881,
-      882
-    ],
+    "cards": [878, 879, 880, 881, 882],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "white day"
-    ],
+    "keywords": ["white day"],
     "type": "White Day Event"
   },
   {
@@ -3026,13 +2119,7 @@
     "start": 1741492800000,
     "end": 1742525999000,
     "close": 1742680799000,
-    "cards": [
-      884,
-      885,
-      886,
-      887,
-      888
-    ],
+    "cards": [884, 885, 886, 887, 888],
     "event_type": "world_link",
     "keywords": [
       "wxs",
@@ -3054,13 +2141,7 @@
     "start": 1742680800000,
     "end": 1743220799000,
     "close": 1743371999000,
-    "cards": [
-      890,
-      891,
-      892,
-      893,
-      894
-    ],
+    "cards": [890, 891, 892, 893, 894],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -3080,17 +2161,9 @@
     "start": 1743372000000,
     "end": 1744171199000,
     "close": 1744322399000,
-    "cards": [
-      898,
-      899,
-      900,
-      901,
-      902
-    ],
+    "cards": [898, 899, 900, 901, 902],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "furry"
-    ],
+    "keywords": ["furry"],
     "type": "Mixed Event"
   },
   {
@@ -3100,22 +2173,9 @@
     "start": 1744322400000,
     "end": 1745035199000,
     "close": 1745186399000,
-    "cards": [
-      903,
-      904,
-      905,
-      906,
-      907
-    ],
+    "cards": [903, 904, 905, 906, 907],
     "event_type": "marathon",
-    "keywords": [
-      "niigo",
-      "nightcord",
-      "n25",
-      "focus",
-      "ena4",
-      "ena"
-    ],
+    "keywords": ["niigo", "nightcord", "n25", "focus", "ena4", "ena"],
     "type": "Ena 4th Focus Event"
   },
   {
@@ -3125,13 +2185,7 @@
     "start": 1745186400000,
     "end": 1745899199000,
     "close": 1746050399000,
-    "cards": [
-      909,
-      910,
-      911,
-      912,
-      913
-    ],
+    "cards": [909, 910, 911, 912, 913],
     "event_type": "marathon",
     "keywords": [
       "leo/need",
@@ -3151,13 +2205,7 @@
     "start": 1746050400000,
     "end": 1746676799000,
     "close": 1746845999000,
-    "cards": [
-      915,
-      916,
-      917,
-      918,
-      919
-    ],
+    "cards": [915, 916, 917, 918, 919],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -3177,13 +2225,7 @@
     "start": 1746846000000,
     "end": 1747882799000,
     "close": 1748037599000,
-    "cards": [
-      921,
-      922,
-      923,
-      924,
-      925
-    ],
+    "cards": [921, 922, 923, 924, 925],
     "event_type": "world_link",
     "keywords": [
       "mmj",
@@ -3203,13 +2245,7 @@
     "start": 1748037600000,
     "end": 1748577599000,
     "close": 1748728799000,
-    "cards": [
-      927,
-      928,
-      929,
-      930,
-      931
-    ],
+    "cards": [927, 928, 929, 930, 931],
     "event_type": "marathon",
     "keywords": [
       "wxs",
@@ -3232,19 +2268,9 @@
     "start": 1748728800000,
     "end": 1749441599000,
     "close": 1749592799000,
-    "cards": [
-      933,
-      934,
-      935,
-      936,
-      937
-    ],
+    "cards": [933, 934, 935, 936, 937],
     "event_type": "cheerful_carnival",
-    "keywords": [
-      "wedding",
-      "bride",
-      "marriage"
-    ],
+    "keywords": ["wedding", "bride", "marriage"],
     "type": "Mixed Event"
   },
   {
@@ -3254,13 +2280,7 @@
     "start": 1749592800000,
     "end": 1750305599000,
     "close": 1750456799000,
-    "cards": [
-      938,
-      939,
-      940,
-      941,
-      942
-    ],
+    "cards": [938, 939, 940, 941, 942],
     "event_type": "marathon",
     "keywords": [
       "mmj",
@@ -3280,13 +2300,7 @@
     "start": 1750456800000,
     "end": 1751169599000,
     "close": 1751320799000,
-    "cards": [
-      943,
-      944,
-      945,
-      946,
-      947
-    ],
+    "cards": [943, 944, 945, 946, 947],
     "event_type": "marathon",
     "keywords": [
       "niigo",
@@ -3306,13 +2320,7 @@
     "start": 1751320800000,
     "end": 1751947199000,
     "close": 1752098399000,
-    "cards": [
-      951,
-      952,
-      953,
-      954,
-      955
-    ],
+    "cards": [951, 952, 953, 954, 955],
     "event_type": "marathon",
     "keywords": [
       "vbs",
@@ -3330,13 +2338,7 @@
     "id": 136,
     "name": "Halt! Tenma's On The Case!",
     "unit": "wxs",
-    "cards": [
-      956,
-      957,
-      958,
-      959,
-      960
-    ],
+    "cards": [956, 957, 958, 959, 960],
     "keywords": [
       "wxs",
       "wandasho",
@@ -3360,13 +2362,7 @@
     "id": 137,
     "name": "Our Starry Sky Leading to the Future",
     "unit": "l/n",
-    "cards": [
-      961,
-      962,
-      963,
-      964,
-      965
-    ],
+    "cards": [961, 962, 963, 964, 965],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -3386,21 +2382,8 @@
     "id": 138,
     "name": "Chase my IDEAL IDOL！",
     "unit": "mmj",
-    "cards": [
-      968,
-      969,
-      970,
-      971,
-      972
-    ],
-    "keywords": [
-      "mmj",
-      "more more jump",
-      "momojan",
-      "airi",
-      "airi5",
-      "focus"
-    ],
+    "cards": [968, 969, 970, 971, 972],
+    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi5", "focus"],
     "event_type": "marathon",
     "start": 1753999200000,
     "end": 1754625599000,
@@ -3409,19 +2392,10 @@
   },
   {
     "id": 139,
-    "name": "Let It Ring! Beautiful Sound!",
+    "name": "Play That Beautiful Sound!",
     "unit": "mixed",
-    "cards": [
-      973,
-      974,
-      975,
-      976,
-      977
-    ],
-    "keywords": [
-      "toyakana",
-      "kanatoya"
-    ],
+    "cards": [973, 974, 975, 976, 977],
+    "keywords": ["toyakana", "kanatoya"],
     "event_type": "marathon",
     "start": 1754776800000,
     "end": 1755316799000,
@@ -3430,21 +2404,10 @@
   },
   {
     "id": 140,
-    "name": "With You, at the SEKAI's Beginning",
+    "name": "With You at SEKAI's Beginning",
     "unit": "vs",
-    "cards": [
-      979,
-      980,
-      981,
-      982,
-      983,
-      984
-    ],
-    "keywords": [
-      "wl1",
-      "world link 1",
-      "world link"
-    ],
+    "cards": [979, 980, 981, 982, 983, 984],
+    "keywords": ["wl1", "world link 1", "world link"],
     "event_type": "world_link",
     "start": 1755486000000,
     "end": 1756436399000,
@@ -3453,19 +2416,10 @@
   },
   {
     "id": 141,
-    "name": "Wonderhorror~!? Test of Courage!",
+    "name": "Wonderhorror!? A Test of Courage!",
     "unit": "mixed",
-    "cards": [
-      987,
-      988,
-      989,
-      990,
-      991
-    ],
-    "keywords": [
-      "miyama",
-      "miyajou"
-    ],
+    "cards": [987, 988, 989, 990, 991],
+    "keywords": ["miyama", "miyajou"],
     "event_type": "marathon",
     "start": 1756677600000,
     "end": 1757390399000,
@@ -3476,17 +2430,8 @@
     "id": 142,
     "name": "Work Out and FLY! Muscle Training!",
     "unit": "mixed",
-    "cards": [
-      993,
-      994,
-      995,
-      996,
-      997
-    ],
-    "keywords": [
-      "sports",
-      "athletic event"
-    ],
+    "cards": [993, 994, 995, 996, 997],
+    "keywords": ["sports", "athletic event"],
     "event_type": "marathon",
     "start": 1757541600000,
     "end": 1758254399000,
@@ -3497,13 +2442,7 @@
     "id": 143,
     "name": "This moment with you",
     "unit": "l/n",
-    "cards": [
-      998,
-      999,
-      1000,
-      1001,
-      1002
-    ],
+    "cards": [998, 999, 1000, 1001, 1002],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -3524,17 +2463,8 @@
     "id": 144,
     "name": "Carry These Feelings! Dream Stage",
     "unit": "mixed",
-    "cards": [
-      1005,
-      1006,
-      1007,
-      1008,
-      1009
-    ],
-    "keywords": [
-      "shibuya festival",
-      "festival"
-    ],
+    "cards": [1005, 1006, 1007, 1008, 1009],
+    "keywords": ["shibuya festival", "festival"],
     "event_type": "marathon",
     "start": 1759269600000,
     "end": 1760155199000,
@@ -3545,13 +2475,7 @@
     "id": 145,
     "name": "Where Does The Path Of Thorns Go?",
     "unit": "n25",
-    "cards": [
-      1011,
-      1012,
-      1013,
-      1014,
-      1015
-    ],
+    "cards": [1011, 1012, 1013, 1014, 1015],
     "keywords": [
       "n25",
       "nightcord",
@@ -3572,13 +2496,7 @@
     "id": 146,
     "name": "Rekindle The Flame",
     "unit": "vbs",
-    "cards": [
-      1016,
-      1017,
-      1018,
-      1019,
-      1020
-    ],
+    "cards": [1016, 1017, 1018, 1019, 1020],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -3599,13 +2517,7 @@
     "id": 147,
     "name": "Happy Enjoy Music!",
     "unit": "l/n",
-    "cards": [
-      1022,
-      1023,
-      1024,
-      1025,
-      1026
-    ],
+    "cards": [1022, 1023, 1024, 1025, 1026],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -3625,16 +2537,8 @@
     "id": 148,
     "name": "Once Again, When the Leaves Change Color",
     "unit": "mixed",
-    "cards": [
-      1028,
-      1029,
-      1030,
-      1031,
-      1032
-    ],
-    "keywords": [
-      "autumn"
-    ],
+    "cards": [1028, 1029, 1030, 1031, 1032],
+    "keywords": ["autumn"],
     "event_type": "marathon",
     "start": 1762815600000,
     "end": 1763528399000,
@@ -3645,13 +2549,7 @@
     "id": 149,
     "name": "The Power Of Regret",
     "unit": "wxs",
-    "cards": [
-      1034,
-      1035,
-      1036,
-      1037,
-      1038
-    ],
+    "cards": [1034, 1035, 1036, 1037, 1038],
     "keywords": [
       "wxs",
       "wandasho",
@@ -3672,13 +2570,7 @@
     "id": 150,
     "name": "With Our Hands, Covered in Wounds",
     "unit": "n25",
-    "cards": [
-      1039,
-      1040,
-      1041,
-      1042,
-      1043
-    ],
+    "cards": [1039, 1040, 1041, 1042, 1043],
     "keywords": [
       "niigo",
       "nightcord",
@@ -3698,13 +2590,7 @@
     "id": 151,
     "name": "Grow Glorious Glow",
     "unit": "mmj",
-    "cards": [
-      1045,
-      1046,
-      1047,
-      1048,
-      1049
-    ],
+    "cards": [1045, 1046, 1047, 1048, 1049],
     "keywords": [
       "mmj",
       "more more jump",
@@ -3724,17 +2610,8 @@
     "id": 152,
     "name": "Special Present For You!",
     "unit": "mixed",
-    "cards": [
-      1050,
-      1051,
-      1052,
-      1053,
-      1054
-    ],
-    "keywords": [
-      "christmas",
-      "xmas"
-    ],
+    "cards": [1050, 1051, 1052, 1053, 1054],
+    "keywords": ["christmas", "xmas"],
     "event_type": "marathon",
     "start": 1766358000000,
     "end": 1767070799000,
@@ -3745,18 +2622,8 @@
     "id": 153,
     "name": "Unfading Wishing",
     "unit": "mixed",
-    "cards": [
-      1059,
-      1060,
-      1061,
-      1062,
-      1063
-    ],
-    "keywords": [
-      "new year",
-      "happy new year",
-      "ny"
-    ],
+    "cards": [1059, 1060, 1061, 1062, 1063],
+    "keywords": ["new year", "happy new year", "ny"],
     "event_type": "marathon",
     "start": 1767222000000,
     "end": 1768021199000,
@@ -3767,13 +2634,7 @@
     "id": 154,
     "name": "Time To Take Off!",
     "unit": "vbs",
-    "cards": [
-      1065,
-      1066,
-      1067,
-      1068,
-      1069
-    ],
+    "cards": [1065, 1066, 1067, 1068, 1069],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -3793,16 +2654,8 @@
     "id": 155,
     "name": "Show Your Shine",
     "unit": "mixed",
-    "cards": [
-      1097,
-      1098,
-      1099,
-      1100,
-      1101
-    ],
-    "keywords": [
-      "model"
-    ],
+    "cards": [1097, 1098, 1099, 1100, 1101],
+    "keywords": ["model"],
     "event_type": "marathon",
     "start": 1769036400000,
     "end": 1769749199000,
@@ -3813,16 +2666,8 @@
     "id": 156,
     "name": "Put Your Heart Into This One Stitch",
     "unit": "mixed",
-    "cards": [
-      1104,
-      1105,
-      1106,
-      1107,
-      1108
-    ],
-    "keywords": [
-      "valentine's"
-    ],
+    "cards": [1104, 1105, 1106, 1107, 1108],
+    "keywords": ["valentine's"],
     "event_type": "marathon",
     "start": 1769900400000,
     "end": 1770613199000,
@@ -3833,13 +2678,7 @@
     "id": 157,
     "name": "Rise And Strive",
     "unit": "mmj",
-    "cards": [
-      1110,
-      1111,
-      1112,
-      1113,
-      1114
-    ],
+    "cards": [1110, 1111, 1112, 1113, 1114],
     "keywords": [
       "mmj",
       "more more jump",
@@ -3859,13 +2698,7 @@
     "id": 158,
     "name": "Old Days Read-aloud ",
     "unit": "mixed",
-    "cards": [
-      1122,
-      1123,
-      1124,
-      1125,
-      1126
-    ],
+    "cards": [1122, 1123, 1124, 1125, 1126],
     "keywords": [],
     "event_type": "marathon",
     "start": 1771628400000,
@@ -3877,18 +2710,8 @@
     "id": 159,
     "name": "Connect Hearts Message",
     "unit": "mixed",
-    "cards": [
-      1127,
-      1128,
-      1129,
-      1130,
-      1131
-    ],
-    "keywords": [
-      "miyama",
-      "miyajou",
-      "white day"
-    ],
+    "cards": [1127, 1128, 1129, 1130, 1131],
+    "keywords": ["miyama", "miyajou", "white day"],
     "event_type": "marathon",
     "start": 1772316000000,
     "end": 1773028799000,
@@ -3899,16 +2722,8 @@
     "id": 160,
     "name": "You Are My HERO!!",
     "unit": "mixed",
-    "cards": [
-      1133,
-      1134,
-      1135,
-      1136,
-      1137
-    ],
-    "keywords": [
-      "cat"
-    ],
+    "cards": [1133, 1134, 1135, 1136, 1137],
+    "keywords": ["cat"],
     "event_type": "marathon",
     "start": 1773180000000,
     "end": 1773892799000,
@@ -3919,13 +2734,7 @@
     "id": 161,
     "name": "Unreliable Notes",
     "unit": "n25",
-    "cards": [
-      1139,
-      1140,
-      1141,
-      1142,
-      1143
-    ],
+    "cards": [1139, 1140, 1141, 1142, 1143],
     "keywords": [
       "niigo",
       "nightcord",
@@ -3946,13 +2755,7 @@
     "name": "Find the dream view",
     "unit": "l/n",
     "banner_id": 463,
-    "cards": [
-      1146,
-      1147,
-      1148,
-      1149,
-      1150
-    ],
+    "cards": [1146, 1147, 1148, 1149, 1150],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -3972,12 +2775,7 @@
     "id": 163,
     "name": "Turning Pain Into Drive",
     "unit": "vbs",
-    "cards": [
-      1151,
-      1152,
-      1153,
-      1154
-    ],
+    "cards": [1151, 1152, 1153, 1154],
     "keywords": [
       "vbs",
       "vivid bad squad",
@@ -3996,13 +2794,7 @@
     "id": 164,
     "name": "Choices For The Future",
     "unit": "wxs",
-    "cards": [
-      1156,
-      1157,
-      1158,
-      1159,
-      1160
-    ],
+    "cards": [1156, 1157, 1158, 1159, 1160],
     "keywords": [
       "wxs",
       "wandasho",
@@ -4025,13 +2817,7 @@
     "id": 165,
     "name": "And So, The Clock Hands Started Ticking ",
     "unit": "n25",
-    "cards": [
-      1162,
-      1163,
-      1164,
-      1165,
-      1166
-    ],
+    "cards": [1162, 1163, 1164, 1165, 1166],
     "keywords": [
       "niigo",
       "nightcord",
@@ -4051,12 +2837,7 @@
     "id": 167,
     "name": "Dear My fellows",
     "unit": "wxs",
-    "cards": [
-      1169,
-      1170,
-      1171,
-      1172
-    ],
+    "cards": [1169, 1170, 1171, 1172],
     "keywords": [
       "wxs",
       "wandasho",
@@ -4078,21 +2859,8 @@
     "id": 168,
     "name": "Cheer With My Heart!",
     "unit": "mmj",
-    "cards": [
-      1174,
-      1175,
-      1176,
-      1177,
-      1178
-    ],
-    "keywords": [
-      "mmj",
-      "more more jump",
-      "momojan",
-      "airi",
-      "airi6",
-      "focus"
-    ],
+    "cards": [1174, 1175, 1176, 1177, 1178],
+    "keywords": ["mmj", "more more jump", "momojan", "airi", "airi6", "focus"],
     "event_type": "marathon",
     "start": 1779573600000,
     "end": 1780113599000,
@@ -4103,13 +2871,7 @@
     "id": 169,
     "name": "Aim Higher And Higher!",
     "unit": "vbs",
-    "cards": [
-      1180,
-      1181,
-      1182,
-      1183,
-      1184
-    ],
+    "cards": [1180, 1181, 1182, 1183, 1184],
     "keywords": [
       "vbs",
       "vivibasu",
@@ -4130,12 +2892,7 @@
     "id": 170,
     "name": "Embraced by Ephemeral Bubbles",
     "unit": "n25",
-    "cards": [
-      1185,
-      1186,
-      1187,
-      1188
-    ],
+    "cards": [1185, 1186, 1187, 1188],
     "keywords": [
       "n25",
       "niigo",
@@ -4157,12 +2914,7 @@
     "end": 1783306799000,
     "close": 1783461599000,
     "unit": "l/n",
-    "cards": [
-      1189,
-      1190,
-      1191,
-      1192
-    ],
+    "cards": [1189, 1190, 1191, 1192],
     "keywords": [
       "l/n",
       "leoneed",
@@ -4182,13 +2934,7 @@
     "end": 1784001540000,
     "close": 1784152799000,
     "unit": "wxs",
-    "cards": [
-      1196,
-      1197,
-      1198,
-      1199,
-      1200
-    ],
+    "cards": [1196, 1197, 1198, 1199, 1200],
     "keywords": [
       "wxs",
       "wandasho",
@@ -4209,13 +2955,7 @@
     "end": 1784692799000,
     "close": 1784861999000,
     "unit": "l/n",
-    "cards": [
-      1201,
-      1202,
-      1203,
-      1204,
-      1205
-    ],
+    "cards": [1201, 1202, 1203, 1204, 1205],
     "keywords": [
       "leo/need",
       "leoneed",
@@ -4232,17 +2972,11 @@
   {
     "id": 174,
     "name": "Start Rolling! Stars' Crossing",
-    "start": 1784862000000,
+    "start": 1784844000000,
     "end": 1785383999000,
     "close": 1785553199000,
     "unit": "mmj",
-    "cards": [
-      1207,
-      1208,
-      1209,
-      1210,
-      1211
-    ],
+    "cards": [1207, 1208, 1209, 1210, 1211],
     "keywords": [
       "mmj",
       "more more jump",
@@ -4254,5 +2988,25 @@
     ],
     "event_type": "marathon",
     "type": "Minori 6th Focus Event"
+  }, {
+    "id": 175,
+    "name": "Competitive Fire!",
+    "start": 1785535200000,
+    "end": 1786075199000,
+    "close": 1786226399000,
+    "unit": "vbs",
+    "banner_id": 500,
+    "cards": [1213, 1214, 1215, 1216, 1217],
+    "keywords": [
+      "vbs",
+      "vivibasu",
+      "vivid bad squad",
+      "squad",
+      "an",
+      "an6",
+      "focus"
+    ],
+    "event_type": "marathon",
+    "type": "An 6th Focus Event"
   }
 ]
