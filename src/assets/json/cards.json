@@ -14503,7 +14503,7 @@
     "attribute": "Happy",
     "card_type": "limited",
     "jp_released": 1753930800000,
-    "en_released": 0,
+    "en_released": 1785524400000,
     "jp_name": "笑顔で手を振って"
   },
   {
@@ -14515,7 +14515,7 @@
     "attribute": "Happy",
     "card_type": "limited",
     "jp_released": 1753930800000,
-    "en_released": 0,
+    "en_released": 1785524400000,
     "jp_name": "最高のお土産を！"
   },
   {
@@ -14527,7 +14527,7 @@
     "attribute": "Happy",
     "card_type": "limited",
     "jp_released": 1753930800000,
-    "en_released": 0,
+    "en_released": 1785524400000,
     "jp_name": "ふたりのナイショ話",
     "sub_unit": "Vivid BAD SQUAD"
   },
@@ -14540,7 +14540,7 @@
     "attribute": "Pure",
     "card_type": "event",
     "jp_released": 1753941600000,
-    "en_released": 0,
+    "en_released": 1785535200000,
     "jp_name": "いつか未来の私へ"
   },
   {
@@ -14552,7 +14552,7 @@
     "attribute": "Cute",
     "card_type": "event",
     "jp_released": 1753941600000,
-    "en_released": 0,
+    "en_released": 1785535200000,
     "jp_name": "帰ってきた日常"
   }
 ]
