@@ -86,7 +86,7 @@ export default function BannerContainer({
         {/* DISCLAIMER */}
         {((selectedMonth &&
           selectedYear &&
-          ((selectedMonth >= 8 && selectedYear === 2025) ||
+          ((selectedMonth >= 9 && selectedYear === 2025) ||
             selectedYear >= 2026)) ||
           server === "saved") && <Disclaimer />}
 
