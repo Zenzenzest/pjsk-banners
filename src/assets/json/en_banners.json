@@ -6132,7 +6132,6 @@
     "start": 1755111600000,
     "end": 1755889199000,
     "banner_type": "Limited Event Rerun",
-    "type": "rerun_estimation",
     "rerun": [1755025200000, 1755370800000],
     "characters": [2, 7, 20],
     "keywords": ["diner", "cafe"]
