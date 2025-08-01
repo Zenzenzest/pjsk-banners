@@ -40,7 +40,7 @@ export default function Disclaimer() {
             <div className="flex items-center space-x-2">
               <span className="w-2 h-2 bg-current rounded-full opacity-60"></span>
               <span>
-                <strong>Rerun banners:</strong> Approximately 350-380 day gap (1
+                <strong>Rerun banners:</strong> Approximately 350-380 days gap (1
                 year & ±15 days)
               </span>
             </div>
