@@ -1061,7 +1061,7 @@
     "end": 1640584799000,
     "cards": [335, 336, 337, 338, 339],
     "en_id": 82,
-    "banner_type": "Collab",
+    "banner_type": "Limited Collab",
     "characters": [22, 23, 24, 25, 26],
     "keywords": []
   },
@@ -2860,7 +2860,7 @@
     "end": 1684292399000,
     "cards": [335, 336, 337, 338, 339],
     "en_id": 214,
-    "banner_type": "Collab Rerun",
+    "banner_type": "Limited Collab Rerun",
     "characters": [22, 23, 24, 25, 26],
     "keywords": []
   },
@@ -3714,7 +3714,7 @@
     "end": 1702997999000,
     "cards": [801, 802, 803, 804, 805, 806],
     "en_id": 351,
-    "banner_type": "Collab",
+    "banner_type": "Limited Collab",
     "characters": [2, 7, 12, 14, 19, 21],
     "keywords": ["sanrio"]
   },
@@ -5916,7 +5916,7 @@
     "end": 1740927599000,
     "cards": [1115, 1116, 1117, 1118],
     "en_id": 450,
-    "banner_type": "Collab",
+    "banner_type": "Limited Collab",
     "characters": [11, 12, 13, 16],
     "keywords": ["Ensemble"]
   },
@@ -6261,7 +6261,7 @@
     "end": 1747148399000,
     "cards": [1167],
     "en_id": -3,
-    "banner_type": "Collab",
+    "banner_type": "Limited Collab",
     "characters": [21],
     "keywords": []
   },

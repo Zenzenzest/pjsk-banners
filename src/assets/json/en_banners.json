@@ -6132,7 +6132,6 @@
     "start": 1755111600000,
     "end": 1755889199000,
     "banner_type": "Limited Event Rerun",
-
     "characters": [2, 7, 20],
     "keywords": ["diner", "cafe"]
   },
@@ -6661,7 +6660,7 @@
     "start": 1753729200000,
     "banner_type": "Premium Gift",
     "cards": [770, 624, 556, 504, 607, 541],
-    "characters": [24, 2, 12, 16, 14, 17],
+    "characters": [24, 2, 8, 12, 14, 17],
     "keywords": []
   },
   {
