@@ -134,9 +134,9 @@ export default function CardModal({
 
         {/* IMAGE*/}
         <div className="p-4 space-y-4">
-          {/* Birthday Card (5 star or card ID 669) */}
-          {/* CARDID 669 MIKU TOUHOU CARD THAT HAS NO TRAINED IMAGE  */}
-          {(rarity === 5 || cardId === 669) && (
+          {/* Birthday Card (5 star or card ID 1167) */}
+          {/* CARDID 1167 MIKU TOUHOU CARD THAT HAS NO TRAINED IMAGE  */}
+          {(rarity === 5 || cardId === 1167) && (
             <div className="relative w-full">
               <div className="relative overflow-hidden rounded-xl shadow-lg">
                 {isLoading && (
@@ -155,7 +155,7 @@ export default function CardModal({
                   />
                 </div>
                 {/* Rarity Badge */}
-                {cardId === 669 ? (
+                {cardId === 1167 ? (
                   <div className="absolute top-3 left-3 flex space-x-1">
                     {Array(rarity)
                       .fill(0)
@@ -182,7 +182,7 @@ export default function CardModal({
           )}
 
           {/* 3 & 4 STAR */}
-          {(rarity === 3 || rarity === 4) && cardId != 669 && (
+          {(rarity === 3 || rarity === 4) && cardId != 1167 && (
             <div
               className={`grid grid-cols-1 ${
                 isIpad ? "md:grid-cols-1" : "md:grid-cols-2"
@@ -223,7 +223,7 @@ export default function CardModal({
               </div>
 
               {/* TRAINED CARD */}
-              {cardId != 669 && (
+              {cardId != 1167 && (
                 <div className="relative">
                   <div className="relative overflow-hidden rounded-xl shadow-lg">
                     {isLoading2 && (
