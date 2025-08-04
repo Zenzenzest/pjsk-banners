@@ -184,10 +184,17 @@ export default function DateTabs() {
     .sort((a, b) => {
       const statusA = getBannerStatus(a);
       const statusB = getBannerStatus(b);
-
       const statusOrder = { live: 1, upcoming: 2, past: 3 };
       const statusComparison = statusOrder[statusA] - statusOrder[statusB];
       if (statusComparison !== 0) return statusComparison;
+
+      // Check if banner has event and prioritize it among(us) the ongoing banners
+      if (statusA === "live" && statusB === "live") {
+        const hasEventIdA = "event_id" in a;
+        const hasEventIdB = "event_id" in b;
+        if (hasEventIdA && !hasEventIdB) return -1;
+        if (!hasEventIdA && hasEventIdB) return 1;
+      }
 
       const rerunComparison = Number("rerun" in a) - Number("rerun" in b);
       if (rerunComparison !== 0) return rerunComparison;
@@ -224,7 +231,6 @@ export default function DateTabs() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 py-1 pt-3 max-sm:px-2">
-    
         <div className="mb-4">
           <div
             className={`p-4 rounded-xl ${
