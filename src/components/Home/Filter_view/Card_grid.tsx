@@ -17,7 +17,7 @@ export default function CardGrid({ mode, cardId, cardName }: CardGridPropType) {
       <div className={`${thumbLoader.isLoaded ? "contents" : "hidden"}`}>
         <img
           src={`/images/card_thumbnails/${cardId}${
-            cardId === 669 || mode === "bd" ? "_bd" : mode === "t" ? "_t" : ""
+            cardId === 1167 || mode === "bd" ? "_bd" : mode === "t" ? "_t" : ""
           }.webp`}
           className={`h-auto w-full max-w-[300px] ml-auto mr-auto rounded`}
           alt={cardName}
