@@ -25,7 +25,7 @@ export default function SavedBannersContainer() {
 
     updateSavedBanners();
 
-    // Listen for storage changes
+
 
     const handleStorageChange = (e: StorageEvent) => {
       if (e.key === "banners") {
@@ -33,7 +33,7 @@ export default function SavedBannersContainer() {
       }
     };
 
-    // Listen for custom storage events (for same-tab updates)
+
 
     const handleCustomStorageChange = () => {
       updateSavedBanners();

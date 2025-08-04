@@ -188,7 +188,7 @@ export default function CardModal({
                 isIpad ? "md:grid-cols-1" : "md:grid-cols-2"
               } gap-4`}
             >
-              {/* Untrained Card */}
+              {/* UNTRAINED CARD*/}
               <div className="relative">
                 <div className="relative overflow-hidden rounded-xl shadow-lg">
                   {isLoading && (
@@ -206,7 +206,7 @@ export default function CardModal({
                       alt="Untrained card"
                     />
                   </div>
-                  {/*UNTRAINED */}
+                  {/*UNTRAINED ICON*/}
                   <div className="absolute top-3 left-3 flex space-x-1">
                     {Array(rarity)
                       .fill(0)

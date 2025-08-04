@@ -5,11 +5,11 @@ export const IsDeviceIpad = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      // Check for iPad user agent
+   
       const isIpad =
         /ipad|macintosh/i.test(navigator.userAgent) && "ontouchend" in document;
 
-      // Orientation check function
+
       const checkOrientation = () => {
         if (isIpad) {
           const isLandscape = window.matchMedia(
@@ -19,10 +19,10 @@ export const IsDeviceIpad = () => {
         }
       };
 
-      // Initial check
+
       checkOrientation();
 
-      // Add event listener for orientation changes
+      // detect orientation changes
       window.addEventListener("resize", checkOrientation);
       return () => window.removeEventListener("resize", checkOrientation);
     }

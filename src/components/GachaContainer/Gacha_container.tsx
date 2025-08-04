@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useTheme } from "../../context/Theme_toggle";
 import type { CardState, GachaBannersProps } from "../Global/Types";
-import CardModal from "../Shared/Card_modal";
+import CardModal from "../Modal/Card_modal";
 import { useServer } from "../../context/Server";
 import Disclaimer from "./Disclaimer";
 
