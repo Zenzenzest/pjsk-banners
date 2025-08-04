@@ -2399,24 +2399,24 @@
     "event_type": "marathon",
     "start": 1754776800000,
     "end": 1755316799000,
-    "close": 1755467999000,
+    "close": 1755485999000,
     "type": "Mixed Event"
   },
   {
     "id": 140,
-    "name": "With You at SEKAI's Beginning",
+    "name": "With You at SEKAI's Beginnings",
     "unit": "vs",
     "cards": [979, 980, 981, 982, 983, 984],
     "keywords": ["wl1", "world link 1", "world link"],
     "event_type": "world_link",
     "start": 1755486000000,
-    "end": 1756436399000,
+    "end": 1756522799000,
     "close": 1756677599000,
     "type": "Virtual Singer World Link 1"
   },
   {
     "id": 141,
-    "name": "Wonderhorror!? A Test of Courage!",
+    "name": "Wonderhorror?! A Test of Courage!",
     "unit": "mixed",
     "cards": [987, 988, 989, 990, 991],
     "keywords": ["miyama", "miyajou"],
@@ -2988,7 +2988,8 @@
     ],
     "event_type": "marathon",
     "type": "Minori 6th Focus Event"
-  }, {
+  },
+  {
     "id": 175,
     "name": "Competitive Fire!",
     "start": 1785535200000,

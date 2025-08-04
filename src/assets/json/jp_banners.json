@@ -6700,8 +6700,9 @@
     "cards": [537, 1099, 1067, 1112, 1124, 1158],
     "start": 1754276400000,
     "end": 1755097199000,
+    "en_id":544,
     "banner_type": "Premium Gift",
     "characters": [21, 22, 23, 24, 25, 26],
-    "keywords": []
+    "keywords": ["persona"]
   }
 ]
