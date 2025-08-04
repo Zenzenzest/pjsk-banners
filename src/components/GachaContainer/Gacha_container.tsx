@@ -31,7 +31,7 @@ export default function BannerContainer({
     cardType: "",
   });
 
-  // Handle scroll detection
+  // scroll detection
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop =

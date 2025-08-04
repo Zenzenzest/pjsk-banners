@@ -1,3 +1,7 @@
+// I ended up with two type files now
+// Too lazy to clean
+
+
 export interface BannerTypes {
   id: number;
   name: string;

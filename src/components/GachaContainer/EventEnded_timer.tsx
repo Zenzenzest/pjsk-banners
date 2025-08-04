@@ -16,7 +16,7 @@ export default function EventEndedTimer({
     };
 
     calculateDays();
-    const interval = setInterval(calculateDays, 60 * 60 * 1000); // Update hourly
+    const interval = setInterval(calculateDays, 60 * 60 * 1000); 
 
     return () => clearInterval(interval);
   }, [endDate]);

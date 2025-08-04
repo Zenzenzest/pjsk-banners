@@ -43,7 +43,7 @@ export default function BannerTemplate({
     loadSavedBanners();
     bannerLoader.reset();
 
-    // Listen for custom storage events
+    // custom storage events
     const handleStorageChange = () => {
       loadSavedBanners();
     };
@@ -161,7 +161,7 @@ export default function BannerTemplate({
       ? EnEvents.find((item) => item.id === banner.event_id)
       : JpEvents.find((item) => item.id === banner.event_id);
 
-  // Add null check for EventObj
+  // null check for EventObj
   if (mode === "event" && !EventObj) {
     return (
       <div className="p-4 text-red-500">
@@ -170,7 +170,7 @@ export default function BannerTemplate({
     );
   }
 
-  // Use banner for gacha mode, EventObj for event mode (with null check)
+  // Use banner for gacha mode, EventObj for event mode 
   const bannerStatus = getBannerStatus(mode === "gacha" ? banner : EventObj!);
   const statusColor = getStatusColor(bannerStatus);
 
@@ -223,6 +223,7 @@ export default function BannerTemplate({
           </div>
           <BannerStatus bannerStatus={bannerStatus} statusColor={statusColor} />
         </div>
+        {/* NAME AND TYPE */}
         <div className="space-y-3">
           <div>
             <h3
@@ -247,6 +248,7 @@ export default function BannerTemplate({
               <span>{banner.confirmation}</span>
             </div>
           )}{" "}
+          
           {banner.type === "questionable" && (
             <div className="flex items-center w-auto max-w-[300px] space-x-2 px-3 py-1 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-sm font-medium">
               <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
@@ -423,6 +425,7 @@ export default function BannerTemplate({
       </div>
 
       {/* SOLO */}
+      {/* GACHA BANNERS THAT DONT HAVE EVENT WITH IT */}
       {!banner.event_id && (
         <div className="space-y-4">
           {" "}

@@ -137,7 +137,7 @@ export default function FilterTab() {
     }
   );
 
-  // APPLIED filters used for actual filtering
+ 
   const [selectedCardFilters, setSelectedCardFilters] =
     useState<SelectedFilterTypes>({
       Character: [],
@@ -201,7 +201,7 @@ export default function FilterTab() {
             (char) => !charactersToRemove.includes(char)
           );
         } else {
-          // If selecting new unit, add its characters (but avoid duplicates)
+          // If selecting new unit, add its characters 
           const newCharacters = grouped[unit] || [];
           updatedCharacters = Array.from(
             new Set([...updatedCharacters, ...newCharacters])
@@ -314,7 +314,7 @@ export default function FilterTab() {
     });
   };
 
-  //  handle character filter mode toggle
+  //  character filter mode toggle
   const handleCharacterFilterModeToggle = () => {
     setTempBannerFilters((prev) => ({
       ...prev,
@@ -322,7 +322,7 @@ export default function FilterTab() {
     }));
   };
 
-  // handle immediate search changes
+
   const handleSearchChange = (searchTerm: string) => {
     if (viewMode === "banners") {
       setTempBannerFilters((prev) => ({
@@ -330,7 +330,7 @@ export default function FilterTab() {
         search: searchTerm,
       }));
 
-      // Apply the search immediately
+      // search immediately
       setSelectedBannerFilters((prev) => ({
         ...prev,
         search: searchTerm,
@@ -341,7 +341,7 @@ export default function FilterTab() {
         search: searchTerm,
       }));
 
-      // Apply the search immediately
+      // search immediately
       setSelectedCardFilters((prev) => ({
         ...prev,
         search: searchTerm,
@@ -352,6 +352,7 @@ export default function FilterTab() {
   useEffect(() => {
     handleReset();
   }, [server]);
+  
   const handleReset = () => {
     if (viewMode === "cards") {
       setTempCardFilters({

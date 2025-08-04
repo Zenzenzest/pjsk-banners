@@ -57,7 +57,7 @@ export default function DateTabs() {
   const currentYearValue = currentDate.getFullYear();
   const currentMonthValue = currentDate.getMonth() + 1;
 
-  // Get initial values based on selected server
+  // Get values based on selected server
   const getDefaultValues = () => {
     const getInitialYear = (serverYears: number[]) => {
       if (serverYears.includes(currentYearValue)) {
@@ -141,7 +141,7 @@ export default function DateTabs() {
   useEffect(() => {
     const timer = setTimeout(() => {
       scrollToSelectedYear();
-    }, 100); // Small delay to ensure DOM is updated
+    }, 100); // ensure DOM is updated as usual
 
     return () => clearTimeout(timer);
   }, [selectedYear, server]);
@@ -224,7 +224,7 @@ export default function DateTabs() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 py-1 pt-3 max-sm:px-2">
-        {/* SOLUTION 1: Improved Scrollable Years with Auto-scroll */}
+    
         <div className="mb-4">
           <div
             className={`p-4 rounded-xl ${

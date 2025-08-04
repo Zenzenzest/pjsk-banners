@@ -49,12 +49,12 @@ export default function FilteredBanners({
 
   const filteredBannersRef = useRef<HTMLDivElement>(null);
 
-  // Calculate pagination values with useMemo
+  // Calculate pagination
   const totalPages = Math.ceil((filteredBanners?.length || 0) / bannersPerPage);
   const startIndex = (currentPage - 1) * bannersPerPage;
   const endIndex = startIndex + bannersPerPage;
 
-  // Memoize currentBanners to prevent unnecessary re-renders
+  // prevent unnecessary re-renders
   const currentBanners = useMemo(() => {
     return filteredBanners?.slice(startIndex, endIndex) || [];
   }, [filteredBanners, startIndex, endIndex]);
@@ -64,20 +64,20 @@ export default function FilteredBanners({
 
     let filtered = [...bannersArr];
 
-    //Filter out future banners (if toggle is enabled)
+    //Filter out future banners if enabled
     if (hideFutureBanners) {
       const currentTime = Date.now();
       filtered = filtered.filter((banner) => banner.start <= currentTime);
     }
 
-    //Apply Banner Type filter
+  
     if (selectedFilters["Banner Type"].length > 0) {
       filtered = filtered.filter((banner) =>
         selectedFilters["Banner Type"].includes(banner.banner_type)
       );
     }
 
-    //Apply Characters filter
+
     if (selectedFilters.Characters.length > 0) {
       filtered = filtered.filter((banner) => {
         // Convert selected character names to their corresponding IDs
@@ -88,26 +88,26 @@ export default function FilteredBanners({
           }
         ).filter((id) => id !== null);
 
-        // Early return if no valid character IDs found
+        // return if no valid character IDs found
         if (selectedCharacterIds.length === 0) {
           return false;
         }
 
-        // Apply filter based on selected mode
+        // Apply filter based on mode
         if (selectedFilters.characterFilterMode === "all") {
-          // All selected characters must be present in the banner
+      
           return selectedCharacterIds.every((characterId) =>
             banner.characters.includes(characterId)
           );
         } else {
-          // "any" mode - at least one selected character must be present
+    
           return selectedCharacterIds.some((characterId) =>
             banner.characters.includes(characterId)
           );
         }
       });
     }
-    //* Apply search filter
+
     if (selectedFilters.search.trim() !== "") {
       const searchTerm = selectedFilters.search.toLowerCase().trim();
       filtered = filtered.filter((banner) => {
@@ -121,23 +121,23 @@ export default function FilteredBanners({
             keyword.toLowerCase().includes(searchTerm)
           ) || false;
 
-        // Return true if either name or keywords match
+
         return nameMatch || keywordMatch;
       });
     }
 
-    //* Sort by start date (latest to oldest)
+  
     filtered.sort((a, b) => b.start - a.start);
 
     setFilteredBanners(filtered);
     // Reset to first page when filters change
     setCurrentPage(1);
-  }, [selectedFilters, server, hideFutureBanners]); // Added hideFutureBanners to dependencies
+  }, [selectedFilters, server, hideFutureBanners]); 
 
-  // Effect to handle scrolling after content loads
+  // handle scroll after content load
   useEffect(() => {
     if (shouldScrollToTop) {
-      // Use requestAnimationFrame to ensure DOM is updated
+      // ensure DOM updated
       requestAnimationFrame(() => {
         setTimeout(() => {
           if (filteredBannersRef.current) {
@@ -153,18 +153,18 @@ export default function FilteredBanners({
             });
           }
           setShouldScrollToTop(false);
-        }, 100); // Small delay to ensure GachaTable has finished rendering
+        }, 100);
       });
     }
   }, [currentPage, currentBanners, shouldScrollToTop]);
 
-  // Pagination handlers
+  // Pagination
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
     setShouldScrollToTop(true);
   };
 
-  // Generate page numbers for pagination (matching FilteredCards logic)
+  // Generate page numbers 
   const generatePageNumbers = () => {
     const pages = [];
     const maxVisiblePages = 5;
