@@ -5,7 +5,7 @@ import type {
   SelectedFilterTypesProps,
   AllCardTypes,
 } from "../../Global/Types";
-import CardModal from "../../Shared/Card_modal";
+import CardModal from "../../Modal/Card_modal";
 import { useTheme } from "../../../context/Theme_toggle";
 import { useServer } from "../../../context/Server";
 import CardGrid from "./Card_grid";
@@ -62,17 +62,15 @@ export default function FilteredCards({
   const filteredCards = AllCards.filter((card) => {
     // Filter out skipped en cards (rui2) or unpredictable release date (collab cards)
 
-    // Server-based release date filtering
     if (server === "global" || server === "saved") {
       if (today < card.en_released || card.en_released <= 0) {
         return false;
       }
-    } else if (server === "jp") {
+    } else {
       if (today < card.jp_released) {
         return false;
       }
     }
-
 
     const hasCharacterFilter = selectedFilters.Character.length > 0;
     const hasUnitFilter = selectedFilters.Unit.length > 0;
@@ -106,7 +104,9 @@ export default function FilteredCards({
     }
 
     const searchTerm = selectedFilters.search.toLowerCase().trim();
-    const nameMatch = card.name?.toLowerCase().includes(searchTerm) || false;
+    const nameToSearch =
+      server === "global" || server === "saved" ? card.name : card.jp_name;
+    const nameMatch = nameToSearch?.toLowerCase().includes(searchTerm) || false;
 
     return (
       matchesCharacterOrUnit &&
@@ -117,6 +117,8 @@ export default function FilteredCards({
     );
   });
 
+  // Sort by release time in global server not id
+  // because movie cards have higher id which will always show on top
   const sortedCards = [...filteredCards].sort((a, b) => {
     return (server === "global" || server === "saved") && sortOrder === "desc"
       ? b.en_released - a.en_released
@@ -125,21 +127,21 @@ export default function FilteredCards({
       : a.id - b.id;
   });
 
-  // Reset to first page when filters change
+  // Reset page on filter change
   useEffect(() => {
     setCurrentPage(1);
   }, [selectedFilters, server]);
 
-  // Calculate pagination
+  // pagination
   const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
   const startIndex = (currentPage - 1) * cardsPerPage;
   const endIndex = startIndex + cardsPerPage;
   const currentCards = sortedCards.slice(startIndex, endIndex);
 
-  // Effect to handle scrolling after content loads
+  //  scroll after content loads
   useEffect(() => {
     if (shouldScrollToTop) {
-      // Use requestAnimationFrame to ensure DOM is updated
+      //ensure DOM is updated
       requestAnimationFrame(() => {
         setTimeout(() => {
           if (filteredCardsRef.current) {
@@ -148,7 +150,7 @@ export default function FilteredCards({
               block: "start",
             });
           } else {
-            // Fallback to window scroll
+            // Fallback
             window.scrollTo({
               top: 0,
               behavior: "smooth",
@@ -310,7 +312,7 @@ export default function FilteredCards({
                             <img
                               key={i}
                               src={`images/rarity_icons/${
-                                card.id === 669 ? "un" : ""
+                                card.id === 1167 ? "un" : ""
                               }trained_star.png`}
                               style={{ width: "15px", display: "inline-block" }}
                             />
