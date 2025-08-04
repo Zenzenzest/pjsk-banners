@@ -2,7 +2,7 @@ import { useTheme } from "../../context/Theme_toggle";
 
 export default function Disclaimer() {
   const { theme } = useTheme();
-
+  const disclaimerMessage = "Schedules from September 2025 onward will be adjusted when officially announced."
   return (
     <div
       className={`mb-4 p-2 rounded-xl border-l-4 ${
@@ -46,8 +46,7 @@ export default function Disclaimer() {
             </div>
           </div>
           <p className="text-sm mt-3 opacity-80">
-            Schedules from September 2025 onward will be adjusted when officially
-            announced.
+           {disclaimerMessage}
           </p>
         </div>
       </div>
