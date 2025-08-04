@@ -35,7 +35,7 @@ export default function FilteredCards({
   });
 
   const { server } = useServer();
-  // const formatCardName = (id: number) => String(id).padStart(4, "0");
+
   const today = Date.now();
 
   const handleCardClick = (card: AllCardTypes) => {
@@ -60,13 +60,11 @@ export default function FilteredCards({
   };
 
   const filteredCards = AllCards.filter((card) => {
-    // Filter out cards with invalid en_released values
-    if (card.en_released <= 0) {
-      return false;
-    }
+    // Filter out skipped en cards (rui2) or unpredictable release date (collab cards)
+
     // Server-based release date filtering
     if (server === "global" || server === "saved") {
-      if (today < card.en_released) {
+      if (today < card.en_released || card.en_released <= 0) {
         return false;
       }
     } else if (server === "jp") {
@@ -75,16 +73,6 @@ export default function FilteredCards({
       }
     }
 
-    // Keep your existing released filter if needed for backward compatibility
-    if (server === "global") {
-      if (today < card.en_released) {
-        return false;
-      }
-    } else {
-      if (today < card.jp_released) {
-        return false;
-      }
-    }
 
     const hasCharacterFilter = selectedFilters.Character.length > 0;
     const hasUnitFilter = selectedFilters.Unit.length > 0;
