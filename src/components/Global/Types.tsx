@@ -31,6 +31,7 @@ export type SelectedFilterTypes = {
   Rarity: (string | number)[];
   search: string;
   sub_unit: string[];
+  Type: string[]
 };
 export type SelectedFilterTypesProps = {
   selectedFilters: SelectedFilterTypes;

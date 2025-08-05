@@ -10,6 +10,15 @@ import { useTheme } from "../../../context/Theme_toggle";
 import { useServer } from "../../../context/Server";
 import CardGrid from "./Card_grid";
 
+const cardTypeMapping = {
+  permanent: "Permanent",
+  limited: "Limited",
+  movie_exclusive: "Movie",
+  unit_limited: "Unit Limited",
+  color_fes: "ColorFes",
+  bloom_fes: "BloomFes",
+  limited_collab: "Collab",
+};
 export default function FilteredCards({
   selectedFilters,
 }: SelectedFilterTypesProps) {
@@ -86,9 +95,14 @@ export default function FilteredCards({
     const matchesRarity =
       selectedFilters.Rarity.length === 0 ||
       selectedFilters.Rarity.includes(card.rarity);
+    const hasCardTypeFilter = selectedFilters.Type.length > 0;
+    const cardTypeKey = card.card_type as keyof typeof cardTypeMapping;
+    const matchesCardType = selectedFilters.Type.includes(
+      cardTypeMapping[cardTypeKey] // Use the asserted key
+    );
 
     let matchesCharacterOrUnit = false;
-    if (!hasCharacterFilter && !hasUnitFilter) {
+    if (!hasCharacterFilter && !hasUnitFilter ) {
       matchesCharacterOrUnit = true;
     } else if (hasCharacterFilter && hasUnitFilter) {
       matchesCharacterOrUnit = matchesCharacter || matchesUnit;
@@ -103,6 +117,11 @@ export default function FilteredCards({
       subUnitMatch = matchesSubUnit;
     }
 
+    let cardTypeMatch = true;
+    if (hasCardTypeFilter) {
+      cardTypeMatch = matchesCardType
+    }
+
     const searchTerm = selectedFilters.search.toLowerCase().trim();
     const nameToSearch =
       server === "global" || server === "saved" ? card.name : card.jp_name;
@@ -113,7 +132,7 @@ export default function FilteredCards({
       matchesAttribute &&
       matchesRarity &&
       nameMatch &&
-      subUnitMatch
+      subUnitMatch && cardTypeMatch
     );
   });
 

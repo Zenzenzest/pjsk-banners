@@ -93,6 +93,15 @@ const filterCategories = {
   ],
   Attribute: ["Cute", "Pure", "Mysterious", "Cool", "Happy"],
   Rarity: [1, 2, 3, 4, 5],
+  Type: [
+    "Permanent",
+    "Collab",
+    "Movie",
+    "Limited",
+    "Unit Limited",
+    "ColorFes",
+    "BloomFes",
+  ],
 };
 
 const bannerFilterCategories = {
@@ -126,6 +135,7 @@ export default function FilterTab() {
     Rarity: [],
     search: "",
     sub_unit: [],
+    Type: [],
   });
 
   const [tempBannerFilters, setTempBannerFilters] = useState<BannerFilterTypes>(
@@ -137,7 +147,6 @@ export default function FilterTab() {
     }
   );
 
- 
   const [selectedCardFilters, setSelectedCardFilters] =
     useState<SelectedFilterTypes>({
       Character: [],
@@ -146,6 +155,7 @@ export default function FilterTab() {
       Rarity: [],
       search: "",
       sub_unit: [],
+      Type: [],
     });
 
   const [selectedBannerFilters, setSelectedBannerFilters] =
@@ -201,7 +211,7 @@ export default function FilterTab() {
             (char) => !charactersToRemove.includes(char)
           );
         } else {
-          // If selecting new unit, add its characters 
+          // If selecting new unit, add its characters
           const newCharacters = grouped[unit] || [];
           updatedCharacters = Array.from(
             new Set([...updatedCharacters, ...newCharacters])
@@ -269,6 +279,17 @@ export default function FilterTab() {
           Attribute: updated,
         };
       }
+      if (category === "Type") {
+        const current = prev.Type;
+        const isSelected = current.includes(option as string);
+        const updated = isSelected
+          ? current.filter((o) => o !== option)
+          : [...current, option as string];
+        return {
+          ...prev,
+          Type: updated,
+        };
+      }
 
       if (category === "Rarity") {
         const current = prev.Rarity;
@@ -322,7 +343,6 @@ export default function FilterTab() {
     }));
   };
 
-
   const handleSearchChange = (searchTerm: string) => {
     if (viewMode === "banners") {
       setTempBannerFilters((prev) => ({
@@ -352,7 +372,7 @@ export default function FilterTab() {
   useEffect(() => {
     handleReset();
   }, [server]);
-  
+
   const handleReset = () => {
     if (viewMode === "cards") {
       setTempCardFilters({
@@ -362,6 +382,7 @@ export default function FilterTab() {
         Rarity: [],
         search: "",
         sub_unit: [],
+        Type: [],
       });
     } else {
       setTempBannerFilters({
@@ -380,6 +401,7 @@ export default function FilterTab() {
         Rarity: [],
         search: "",
         sub_unit: [],
+        Type: [],
       });
     } else {
       setSelectedBannerFilters({
@@ -537,7 +559,19 @@ export default function FilterTab() {
               );
 
               return (
-                <div key={category} className="mb-2">
+                <div
+                  key={category}
+                  className={`mb-2 "hidden" ${
+                    category === "sub_unit" &&
+                    `${
+                      grouped["Virtual Singers"].some((vs) =>
+                        tempCardFilters.Character.includes(vs)
+                      )
+                        ? "contents"
+                        : "hidden"
+                    }`
+                  }`}
+                >
                   {category != "sub_unit" && (
                     <h3 className="text-lg text-gray-200 font-semibold mb-1">
                       {category}
@@ -545,7 +579,7 @@ export default function FilterTab() {
                   )}
 
                   {category === "sub_unit" && isVs && (
-                    <h3 className="text-lg text-gray-200  font-semibold mb-1">
+                    <h3 className="text-lg  text-gray-200  font-semibold mb-1">
                       VS Sub Unit
                     </h3>
                   )}
@@ -579,6 +613,10 @@ export default function FilterTab() {
                             );
                           case "Rarity":
                             return tempCardFilters.Rarity.includes(option);
+                          case "Type":
+                            return tempCardFilters.Type.includes(
+                              option as string
+                            );
                           default:
                             return false;
                         }
@@ -592,35 +630,70 @@ export default function FilterTab() {
                         ) &&
                         !tempCardFilters.Character.includes(option as string);
                       return (
-                        <button
-                          key={option as string}
-                          className={` border-2 aspect-square rounded-full ${
-                            isSelected ? "border-white" : "border-gray-600"
-                          } ${isOutsideUnit ? "opacity-30" : ""}`}
-                          onClick={() => handleCardFilters(category, option)}
-                        >
-                          {category === "Characters" && (
-                            <img
-                              src={characterIcon}
-                              style={{ width: "2.25rem" }}
-                            />
+                        <div>
+                          {category !== "Type" ? (
+                            <button
+                              key={option as string}
+                              className={` border-2 aspect-square rounded-full ${
+                                isSelected ? "border-white" : "border-gray-600"
+                              } ${isOutsideUnit ? "opacity-30" : ""}`}
+                              onClick={() =>
+                                handleCardFilters(category, option)
+                              }
+                            >
+                              {category === "Characters" && (
+                                <img
+                                  src={characterIcon}
+                                  style={{ width: "2.25rem" }}
+                                />
+                              )}
+                              {category === "Unit" && (
+                                <img src={unitIcon} style={{ width: "2rem" }} />
+                              )}{" "}
+                              {category === "sub_unit" && isVs && (
+                                <img
+                                  src={subUnitIcon}
+                                  style={{ width: "2rem" }}
+                                />
+                              )}
+                              {category === "Attribute" && (
+                                <img
+                                  src={attributeIcon}
+                                  style={{ width: "1.75rem" }}
+                                />
+                              )}
+                              {category === "Rarity" && (
+                                <img
+                                  src={rarityIcon}
+                                  style={{ width: "2rem" }}
+                                />
+                              )}
+                            </button>
+                          ) : (
+                            <div>
+                              {" "}
+                              <button
+                                key={option as string}
+                                onClick={() =>
+                                  handleCardFilters(category, option)
+                                }
+                              >
+                                {" "}
+                                <div
+                                  className={`px-2 py-1 rounded-full text-xs md:text-sm font-medium transition-colors ${
+                                    tempCardFilters["Type"].includes(
+                                      option as string
+                                    )
+                                      ? "bg-blue-500 text-white"
+                                      : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+                                  }`}
+                                >
+                                  {option}
+                                </div>
+                              </button>
+                            </div>
                           )}
-                          {category === "Unit" && (
-                            <img src={unitIcon} style={{ width: "2rem" }} />
-                          )}{" "}
-                          {category === "sub_unit" && isVs && (
-                            <img src={subUnitIcon} style={{ width: "2rem" }} />
-                          )}
-                          {category === "Attribute" && (
-                            <img
-                              src={attributeIcon}
-                              style={{ width: "1.75rem" }}
-                            />
-                          )}
-                          {category === "Rarity" && (
-                            <img src={rarityIcon} style={{ width: "2rem" }} />
-                          )}
-                        </button>
+                        </div>
                       );
                     })}
                   </div>
