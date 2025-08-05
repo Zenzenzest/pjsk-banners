@@ -7,7 +7,7 @@ import type { BannerTemplateProps } from "./Gacha_types";
 import JpEvents from "../../assets/json/jp_events.json";
 import EnEvents from "../../assets/json/en_events.json";
 import { ImageLoader } from "../../hooks/imageLoader";
-import BannerStatus from "./BannerGrid/Banner_status";
+import BannerStatus from "./Status";
 import CountdownTimer from "./Countdown_timer";
 import EventEndedTimer from "./EventEnded_timer";
 import EventCards from "./EventGrid/Event_cards";
