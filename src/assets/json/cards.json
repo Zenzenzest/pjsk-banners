@@ -9,7 +9,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "クールだけど友達想い",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "Leo/need",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "見上げる先に",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "夜明け前の語らい",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "いつも明るいムードメーカー",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "Leo/need",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "やりたい100のこと",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 9,
@@ -93,7 +93,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "みんなに優しい優等生",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 10,
@@ -105,7 +105,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "Leo/need",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 11,
@@ -117,7 +117,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "味は変わらないのに",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 13,
@@ -129,7 +129,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "馴れ合いを嫌う一匹狼",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 14,
@@ -141,7 +141,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "Leo/need",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 15,
@@ -153,7 +153,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "胸に残る旋律",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 17,
@@ -165,7 +165,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "めざせアイドル！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 18,
@@ -177,7 +177,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "MORE MORE JUMP！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 19,
@@ -189,7 +189,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "ライブ前夜の決意",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 21,
@@ -201,7 +201,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "国民的アイドルだった少女",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 22,
@@ -213,7 +213,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "MORE MORE JUMP！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 23,
@@ -225,7 +225,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "アイドルじゃない私",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 25,
@@ -237,7 +237,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "不屈のアイドル魂",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 26,
@@ -249,7 +249,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "MORE MORE JUMP！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 27,
@@ -261,7 +261,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "夢を応援！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 29,
@@ -273,7 +273,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "美貌の現役アイドル",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 30,
@@ -285,7 +285,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "MORE MORE JUMP！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 31,
@@ -297,7 +297,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "華やかな現場で",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 33,
@@ -309,7 +309,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "内気な小動物",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 34,
@@ -321,7 +321,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "Vivid BAD SQUAD",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 35,
@@ -333,7 +333,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "セカイで一息",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 37,
@@ -345,7 +345,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "カリスマシンガー",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 38,
@@ -357,7 +357,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "Vivid BAD SQUAD",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 39,
@@ -369,7 +369,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "絶賛、手伝い中！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 41,
@@ -381,7 +381,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "一目置かれる実力者",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 42,
@@ -393,7 +393,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "Vivid BAD SQUAD",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 43,
@@ -405,7 +405,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "滲む苛立ち",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 45,
@@ -417,7 +417,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "クラシックの秀才",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 46,
@@ -429,7 +429,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "Vivid BAD SQUAD",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 47,
@@ -441,7 +441,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "絶たれた絆",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 49,
@@ -453,7 +453,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "いつかはスター！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 50,
@@ -465,7 +465,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "ワンダーランズ×ショウタイム",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 51,
@@ -477,7 +477,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "着ぐるみからこんにちは",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 53,
@@ -489,7 +489,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "ハイパー★ポジティブ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 54,
@@ -501,7 +501,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "ワンダーランズ×ショウタイム",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 55,
@@ -513,7 +513,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "レッツ作戦会議！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 57,
@@ -525,7 +525,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "毒舌コミュ障",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 58,
@@ -537,7 +537,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "ワンダーランズ×ショウタイム",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 59,
@@ -549,7 +549,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "舞台裏から操作中",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 61,
@@ -561,7 +561,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "マイペースな天才演出家",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 62,
@@ -573,7 +573,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "ワンダーランズ×ショウタイム",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 63,
@@ -585,7 +585,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "神出鬼没なパフォーマー",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 65,
@@ -597,7 +597,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "音楽に愛された少女",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 66,
@@ -609,7 +609,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "25時、ナイトコードで。",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 67,
@@ -621,7 +621,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "画面の向こうに…",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 69,
@@ -633,7 +633,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "『いい子』に見られる優等生",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 70,
@@ -645,7 +645,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "25時、ナイトコードで。",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 71,
@@ -657,7 +657,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "『いい子』の私",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 73,
@@ -669,7 +669,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "SNS依存な絵描き",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 74,
@@ -681,7 +681,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "25時、ナイトコードで。",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 75,
@@ -693,7 +693,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "最高のアングル",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 77,
@@ -705,7 +705,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "『カワイイ』にこだわる自由人",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 78,
@@ -717,7 +717,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "25時、ナイトコードで。",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 79,
@@ -729,7 +729,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "譲れないこだわり",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 81,
@@ -741,7 +741,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "誰もが知る歌姫",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 82,
@@ -754,7 +754,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "教室のセカイ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 83,
@@ -767,7 +767,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "ステージのセカイ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 84,
@@ -780,7 +780,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "ストリートのセカイ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 85,
@@ -793,7 +793,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "ワンダーランドのセカイ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 86,
@@ -806,7 +806,7 @@
     "jp_released": 1601391600000,
     "sub_unit": "Nightcord at 25:00",
     "jp_name": "誰もいないセカイ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 87,
@@ -819,7 +819,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "見守るまなざし",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 88,
@@ -832,7 +832,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "みんなにお披露目",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 89,
@@ -844,7 +844,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "はじける元気！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 90,
@@ -857,7 +857,7 @@
     "jp_released": 1601391600000,
     "sub_unit": "MORE MORE JUMP!",
     "jp_name": "ステージのセカイ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 91,
@@ -870,7 +870,7 @@
     "jp_released": 1601391600000,
     "sub_unit": "MORE MORE JUMP!",
     "jp_name": "輝くステージ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 92,
@@ -883,7 +883,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "いがみ合いヒートアップ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 93,
@@ -895,7 +895,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "はじけるパワフル！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 94,
@@ -908,7 +908,7 @@
     "jp_released": 1601391600000,
     "sub_unit": "Vivid BAD SQUAD",
     "jp_name": "ストリートのセカイ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 95,
@@ -921,7 +921,7 @@
     "jp_released": 1601391600000,
     "sub_unit": "Vivid BAD SQUAD",
     "jp_name": "難しい『仲直り』",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 96,
@@ -934,7 +934,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "新団員登場！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 97,
@@ -946,7 +946,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "クールビューティー",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 98,
@@ -959,7 +959,7 @@
     "jp_released": 1601391600000,
     "sub_unit": "Leo/Need",
     "jp_name": "教室のセカイ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 99,
@@ -972,7 +972,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "導く手",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 101,
@@ -984,7 +984,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "赤く駆ける旋律",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 102,
@@ -997,7 +997,7 @@
     "jp_released": 1601391600000,
     "sub_unit": "Vivid BAD SQUAD",
     "jp_name": "ストリートのセカイ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 103,
@@ -1010,7 +1010,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "こだわりの一杯",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 105,
@@ -1022,7 +1022,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "涼やかな青い旋律",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 106,
@@ -1035,7 +1035,7 @@
     "jp_released": 1601391600000,
     "sub_unit": "Wonderlands x Showtime",
     "jp_name": "ワンダーランドのセカイ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 107,
@@ -1048,7 +1048,7 @@
     "en_released": 1638918000000,
     "jp_released": 1601391600000,
     "jp_name": "劇団員募集中！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 109,
@@ -1060,7 +1060,7 @@
     "en_released": 1639004400000,
     "jp_released": 1602223200000,
     "jp_name": "レイニー・ディスタンス",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 110,
@@ -1073,7 +1073,7 @@
     "en_released": 1639004400000,
     "jp_released": 1602223200000,
     "jp_name": "黄昏の雨をぬぐって",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 111,
@@ -1085,7 +1085,7 @@
     "en_released": 1639004400000,
     "jp_released": 1602223200000,
     "jp_name": "気づきたかった熱さ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 112,
@@ -1094,7 +1094,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1639004400000,
     "jp_released": 1602223200000,
     "jp_name": "ゆっくり休んで"
@@ -1106,7 +1106,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1639004400000,
     "jp_released": 1602223200000,
     "jp_name": "星のステップ"
@@ -1121,7 +1121,7 @@
     "en_released": 1639695600000,
     "jp_released": 1603173600000,
     "jp_name": "不自由マスカレード",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 115,
@@ -1133,7 +1133,7 @@
     "en_released": 1639695600000,
     "jp_released": 1603173600000,
     "jp_name": "生きているように",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 116,
@@ -1146,7 +1146,7 @@
     "en_released": 1639695600000,
     "jp_released": 1603173600000,
     "jp_name": "絶たれた糸",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 117,
@@ -1155,7 +1155,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1639695600000,
     "jp_released": 1603173600000,
     "jp_name": "戯れのひととき"
@@ -1167,7 +1167,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1639695600000,
     "jp_released": 1603173600000,
     "jp_name": "マリオネットドレス"
@@ -1182,7 +1182,7 @@
     "en_released": 1640386800000,
     "jp_released": 1604124000000,
     "jp_name": "思わぬ指摘",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 120,
@@ -1194,7 +1194,7 @@
     "en_released": 1640386800000,
     "jp_released": 1604124000000,
     "jp_name": "ハラハラ！？ゾンビパニック！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 121,
@@ -1207,7 +1207,7 @@
     "en_released": 1640386800000,
     "jp_released": 1604124000000,
     "jp_name": "迷い子達との語らい",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 122,
@@ -1216,7 +1216,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1640386800000,
     "jp_released": 1604124000000,
     "jp_name": "パンダさんに乗って"
@@ -1228,7 +1228,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1640386800000,
     "jp_released": 1604124000000,
     "jp_name": "ワンダーステッキ"
@@ -1243,7 +1243,7 @@
     "en_released": 1641769200000,
     "jp_released": 1604901600000,
     "jp_name": "激走！アンカー☆",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 125,
@@ -1255,7 +1255,7 @@
     "en_released": 1641769200000,
     "jp_released": 1604901600000,
     "jp_name": "いっぱいの祝福",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 126,
@@ -1268,7 +1268,7 @@
     "en_released": 1641769200000,
     "jp_released": 1604901600000,
     "jp_name": "レッツ・チア！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 127,
@@ -1277,7 +1277,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1641769200000,
     "jp_released": 1604901600000,
     "jp_name": "楽しい楽しい二人三脚？"
@@ -1289,7 +1289,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1641769200000,
     "jp_released": 1604901600000,
     "jp_name": "アイアム体育祭実行委員！"
@@ -1304,7 +1304,7 @@
     "en_released": 1642460400000,
     "jp_released": 1605765600000,
     "jp_name": "いつでも前を向いて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 130,
@@ -1316,7 +1316,7 @@
     "en_released": 1642460400000,
     "jp_released": 1605765600000,
     "jp_name": "あわわわわっ！？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 131,
@@ -1329,7 +1329,7 @@
     "en_released": 1642460400000,
     "jp_released": 1605765600000,
     "jp_name": "キミの笑顔のために",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 132,
@@ -1338,7 +1338,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1642460400000,
     "jp_released": 1605765600000,
     "jp_name": "私がなりたいものは"
@@ -1350,7 +1350,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1642460400000,
     "jp_released": 1605765600000,
     "jp_name": "シャボンディ・ブルー"
@@ -1365,7 +1365,7 @@
     "en_released": 1641078000000,
     "jp_released": 1606716000000,
     "jp_name": "相棒なのに",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 135,
@@ -1377,7 +1377,7 @@
     "en_released": 1641078000000,
     "jp_released": 1606716000000,
     "jp_name": "もう一度ふたりで",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 136,
@@ -1389,7 +1389,7 @@
     "en_released": 1641078000000,
     "jp_released": 1606716000000,
     "jp_name": "相棒だから",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 137,
@@ -1398,7 +1398,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1641078000000,
     "jp_released": 1606716000000,
     "jp_name": "和やかカフェタイム"
@@ -1411,7 +1411,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1641078000000,
     "jp_released": 1606716000000,
     "jp_name": "温かい眼差し"
@@ -1426,7 +1426,7 @@
     "en_released": 1643151600000,
     "jp_released": 1607580000000,
     "jp_name": "屋上のフレンドシップ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 140,
@@ -1439,7 +1439,7 @@
     "en_released": 1643151600000,
     "jp_released": 1607580000000,
     "jp_name": "ヒミツの演技指導",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 141,
@@ -1451,7 +1451,7 @@
     "en_released": 1643151600000,
     "jp_released": 1607580000000,
     "jp_name": "オレが主役だ！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 142,
@@ -1460,7 +1460,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1643151600000,
     "jp_released": 1607580000000,
     "jp_name": "アニマルコットンキャンディ♪"
@@ -1472,7 +1472,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1643151600000,
     "jp_released": 1607580000000,
     "jp_name": "意外な才能？"
@@ -1487,7 +1487,7 @@
     "en_released": 1643842800000,
     "jp_released": 1608444000000,
     "jp_name": "空からの贈り物",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 145,
@@ -1500,7 +1500,7 @@
     "jp_released": 1608444000000,
     "sub_unit": "Wonderlands x Showtime",
     "jp_name": "ワンダー☆クリスマス！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 146,
@@ -1513,7 +1513,7 @@
     "en_released": 1643842800000,
     "jp_released": 1608444000000,
     "jp_name": "教えて！みんなのクリスマス♪",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 147,
@@ -1522,7 +1522,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1643842800000,
     "jp_released": 1608444000000,
     "jp_name": "ぐっすりナイト"
@@ -1534,7 +1534,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1643842800000,
     "jp_released": 1608444000000,
     "jp_name": "キラットナカチューシャ☆"
@@ -1550,7 +1550,7 @@
     "en_released": 1644534000000,
     "jp_released": 1609394400000,
     "jp_name": "強者の笑み",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 150,
@@ -1563,7 +1563,7 @@
     "en_released": 1644534000000,
     "jp_released": 1609394400000,
     "jp_name": "最高最強のコンビ！？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 151,
@@ -1576,7 +1576,7 @@
     "en_released": 1644534000000,
     "jp_released": 1609394400000,
     "jp_name": "雅な微笑み",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 152,
@@ -1588,7 +1588,7 @@
     "en_released": 1644534000000,
     "jp_released": 1609394400000,
     "jp_name": "東雲家の年末",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 153,
@@ -1597,7 +1597,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1644534000000,
     "jp_released": 1609394400000,
     "jp_name": "何よりも大事なお願い"
@@ -1609,7 +1609,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1644534000000,
     "jp_released": 1609394400000,
     "jp_name": "全員参加のお正月"
@@ -1624,7 +1624,7 @@
     "en_released": 1645225200000,
     "jp_released": 1610258400000,
     "jp_name": "ありがとう、勇気",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 156,
@@ -1637,7 +1637,7 @@
     "en_released": 1645225200000,
     "jp_released": 1610258400000,
     "jp_name": "３人目の先輩！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 157,
@@ -1649,7 +1649,7 @@
     "en_released": 1645225200000,
     "jp_released": 1610258400000,
     "jp_name": "戻ってきた笑顔",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 158,
@@ -1658,7 +1658,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1645225200000,
     "jp_released": 1610258400000,
     "jp_name": "陰からの応援"
@@ -1670,7 +1670,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1645225200000,
     "jp_released": 1610258400000,
     "jp_name": "いろんな優しさ"
@@ -1685,7 +1685,7 @@
     "en_released": 1645916400000,
     "jp_released": 1611208800000,
     "jp_name": "誰でもない“この私”を",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 161,
@@ -1698,7 +1698,7 @@
     "en_released": 1645916400000,
     "jp_released": 1611208800000,
     "jp_name": "新メンバー登場♪",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 162,
@@ -1710,7 +1710,7 @@
     "en_released": 1645916400000,
     "jp_released": 1611208800000,
     "jp_name": "甘いひととき",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 163,
@@ -1719,7 +1719,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1645916400000,
     "jp_released": 1611208800000,
     "jp_name": "アイドルの責任"
@@ -1731,7 +1731,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1645916400000,
     "jp_released": 1611208800000,
     "jp_name": "ポジティブ・フラワー"
@@ -1746,7 +1746,7 @@
     "en_released": 1646607600000,
     "jp_released": 1612072800000,
     "jp_name": "いつの日か、また……",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 166,
@@ -1758,7 +1758,7 @@
     "en_released": 1646607600000,
     "jp_released": 1612072800000,
     "jp_name": "いつか来るその日を待って",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 167,
@@ -1770,7 +1770,7 @@
     "en_released": 1646607600000,
     "jp_released": 1612072800000,
     "jp_name": "寄り添う想い",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 168,
@@ -1779,7 +1779,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1646607600000,
     "jp_released": 1612072800000,
     "jp_name": "憂いの夜"
@@ -1792,7 +1792,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1646607600000,
     "jp_released": 1612072800000,
     "jp_name": "センチメンタルメロディ"
@@ -1807,7 +1807,7 @@
     "en_released": 1647295200000,
     "jp_released": 1612850400000,
     "jp_name": "絆と憂い",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 171,
@@ -1820,7 +1820,7 @@
     "en_released": 1647295200000,
     "jp_released": 1612850400000,
     "jp_name": "友情キューピッド",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 172,
@@ -1832,7 +1832,7 @@
     "en_released": 1647295200000,
     "jp_released": 1612850400000,
     "jp_name": "悪夢へようこそ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 173,
@@ -1841,7 +1841,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1647295200000,
     "jp_released": 1612850400000,
     "jp_name": "紹介しよう！！"
@@ -1853,7 +1853,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1647295200000,
     "jp_released": 1612850400000,
     "jp_name": "マッドネス・ケモケモ"
@@ -1868,7 +1868,7 @@
     "en_released": 1647986400000,
     "jp_released": 1613628000000,
     "jp_name": "諦めたくないから",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 176,
@@ -1880,7 +1880,7 @@
     "en_released": 1647986400000,
     "jp_released": 1613628000000,
     "jp_name": "投げかけた言葉",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 177,
@@ -1892,7 +1892,7 @@
     "en_released": 1647986400000,
     "jp_released": 1613628000000,
     "jp_name": "想いをメロディーに……",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 178,
@@ -1902,7 +1902,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1647986400000,
     "jp_released": 1613628000000,
     "jp_name": "出会いの意味を探して"
@@ -1914,7 +1914,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1647986400000,
     "jp_released": 1613628000000,
     "jp_name": "トラスト ユー"
@@ -1953,7 +1953,7 @@
     "en_released": 1648677600000,
     "jp_released": 1614492000000,
     "jp_name": "内なる烈火",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 183,
@@ -1963,7 +1963,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1648677600000,
     "jp_released": 1614492000000,
     "jp_name": "いっちばん得意な方法で！"
@@ -1975,7 +1975,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1648677600000,
     "jp_released": 1614492000000,
     "jp_name": "バルーンプレゼンター"
@@ -1990,7 +1990,7 @@
     "en_released": 1649368800000,
     "jp_released": 1615356000000,
     "jp_name": "最高のひな祭り！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 186,
@@ -2002,7 +2002,7 @@
     "en_released": 1649368800000,
     "jp_released": 1615356000000,
     "jp_name": "お兄ちゃんの苦悩",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 187,
@@ -2014,7 +2014,7 @@
     "en_released": 1649368800000,
     "jp_released": 1615356000000,
     "jp_name": "きょうだいの絆",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 188,
@@ -2024,7 +2024,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1649368800000,
     "jp_released": 1615356000000,
     "jp_name": "ハッピーなひな祭り♪"
@@ -2036,7 +2036,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1649368800000,
     "jp_released": 1615356000000,
     "jp_name": "いけないことだけど……"
@@ -2051,7 +2051,7 @@
     "en_released": 1650060000000,
     "jp_released": 1616392800000,
     "jp_name": "“あなた”のために",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 191,
@@ -2063,7 +2063,7 @@
     "en_released": 1650060000000,
     "jp_released": 1616392800000,
     "jp_name": "頑張るあなたに",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 192,
@@ -2075,7 +2075,7 @@
     "en_released": 1650060000000,
     "jp_released": 1616392800000,
     "jp_name": "にゃ～ん？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 193,
@@ -2085,7 +2085,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1650060000000,
     "jp_released": 1616392800000,
     "jp_name": "アイドルとしての心得"
@@ -2097,7 +2097,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1650060000000,
     "jp_released": 1616392800000,
     "jp_name": "後輩のためにできること"
@@ -2136,7 +2136,7 @@
     "en_released": 1650751200000,
     "jp_released": 1617256800000,
     "jp_name": "晴れを願って",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 198,
@@ -2149,7 +2149,7 @@
     "en_released": 1650751200000,
     "jp_released": 1617256800000,
     "jp_name": "育ちゆく音色",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 199,
@@ -2161,7 +2161,7 @@
     "en_released": 1650751200000,
     "jp_released": 1617256800000,
     "jp_name": "みんなの背中を追いかけて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 200,
@@ -2173,7 +2173,7 @@
     "en_released": 1650751200000,
     "jp_released": 1617256800000,
     "jp_name": "広がる友情の輪",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 201,
@@ -2185,7 +2185,7 @@
     "en_released": 1650751200000,
     "jp_released": 1617256800000,
     "jp_name": "この春を、あなたと……",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 202,
@@ -2197,7 +2197,7 @@
     "en_released": 1651442400000,
     "jp_released": 1618120800000,
     "jp_name": "気づいてしまった想い",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 203,
@@ -2210,7 +2210,7 @@
     "en_released": 1651442400000,
     "jp_released": 1618120800000,
     "jp_name": "必要な距離",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 204,
@@ -2222,7 +2222,7 @@
     "en_released": 1651442400000,
     "jp_released": 1618120800000,
     "jp_name": "ミステリーツアーの洗礼？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 205,
@@ -2234,7 +2234,7 @@
     "en_released": 1651442400000,
     "jp_released": 1618120800000,
     "jp_name": "儚さと美しさ",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 206,
@@ -2246,7 +2246,7 @@
     "en_released": 1651442400000,
     "jp_released": 1618120800000,
     "jp_name": "廃校での出会い",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 207,
@@ -2258,7 +2258,7 @@
     "en_released": 1652133600000,
     "jp_released": 1618984800000,
     "jp_name": "見つけられた答え",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 208,
@@ -2270,7 +2270,7 @@
     "en_released": 1652133600000,
     "jp_released": 1618984800000,
     "jp_name": "見えない気持ち",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 209,
@@ -2282,7 +2282,7 @@
     "en_released": 1652133600000,
     "jp_released": 1618984800000,
     "jp_name": "窓辺の語らい",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 210,
@@ -2291,7 +2291,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1652133600000,
     "jp_released": 1618984800000,
     "jp_name": "想いよ、届け"
@@ -2304,7 +2304,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "sub_unit": "Leo/Need",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1652133600000,
     "jp_released": 1618984800000,
     "jp_name": "答えを探して"
@@ -2344,7 +2344,7 @@
     "en_released": 1652824800000,
     "jp_released": 1619762400000,
     "jp_name": "陽気なDJ現る？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 215,
@@ -2353,7 +2353,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1652824800000,
     "jp_released": 1619762400000,
     "jp_name": "一緒に成長したくて"
@@ -2365,7 +2365,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1652824800000,
     "jp_released": 1619762400000,
     "jp_name": "相棒として"
@@ -2380,7 +2380,7 @@
     "en_released": 1653516000000,
     "jp_released": 1620626400000,
     "jp_name": "差しのべられた手",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 218,
@@ -2392,7 +2392,7 @@
     "en_released": 1653516000000,
     "jp_released": 1620626400000,
     "jp_name": "変わらぬ不屈の心",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 219,
@@ -2404,7 +2404,7 @@
     "en_released": 1653516000000,
     "jp_released": 1620626400000,
     "jp_name": "想いと現実の狭間で",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 220,
@@ -2413,7 +2413,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1653516000000,
     "jp_released": 1620626400000,
     "jp_name": "止まらぬ構想と暴走"
@@ -2426,7 +2426,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1653516000000,
     "jp_released": 1620626400000,
     "jp_name": "フェアリーランタン♪"
@@ -2441,7 +2441,7 @@
     "en_released": 1654207200000,
     "jp_released": 1621576800000,
     "jp_name": "“大好き”を前に",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 223,
@@ -2453,7 +2453,7 @@
     "en_released": 1654207200000,
     "jp_released": 1621576800000,
     "jp_name": "リラックス・タイムのお誘い",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 224,
@@ -2465,7 +2465,7 @@
     "en_released": 1654207200000,
     "jp_released": 1621576800000,
     "jp_name": "熱烈コール！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 225,
@@ -2475,7 +2475,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1654207200000,
     "jp_released": 1621576800000,
     "jp_name": "赤が似合うニューフェイス！"
@@ -2487,7 +2487,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1654207200000,
     "jp_released": 1621576800000,
     "jp_name": "パーフェクト・スイーツ"
@@ -2527,7 +2527,7 @@
     "en_released": 1654898400000,
     "jp_released": 1622440800000,
     "jp_name": "キラキラ好奇心☆",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 230,
@@ -2536,7 +2536,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1654898400000,
     "jp_released": 1622440800000,
     "jp_name": "幸せをかみしめて"
@@ -2548,7 +2548,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1654898400000,
     "jp_released": 1622440800000,
     "jp_name": "飛び入りダンサー"
@@ -2563,7 +2563,7 @@
     "en_released": 1655589600000,
     "jp_released": 1623391200000,
     "jp_name": "選択の行方",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 233,
@@ -2575,7 +2575,7 @@
     "en_released": 1655589600000,
     "jp_released": 1623391200000,
     "jp_name": "想いはひとつ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 234,
@@ -2587,7 +2587,7 @@
     "en_released": 1655589600000,
     "jp_released": 1623391200000,
     "jp_name": "あなたがくれた自信",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 235,
@@ -2597,7 +2597,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1655589600000,
     "jp_released": 1623391200000,
     "jp_name": "スマイルナイトタイム！"
@@ -2610,7 +2610,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1655589600000,
     "jp_released": 1623391200000,
     "jp_name": "チェシャっとスマイル"
@@ -2625,7 +2625,7 @@
     "en_released": 1656280800000,
     "jp_released": 1624255200000,
     "jp_name": "思い出の花壇",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 238,
@@ -2638,7 +2638,7 @@
     "en_released": 1656280800000,
     "jp_released": 1624255200000,
     "jp_name": "私は私のやりかたで",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 239,
@@ -2650,7 +2650,7 @@
     "en_released": 1656280800000,
     "jp_released": 1624255200000,
     "jp_name": "こぼれたほほ笑み",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 240,
@@ -2659,7 +2659,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1656280800000,
     "jp_released": 1624255200000,
     "jp_name": "迷える手を引いて"
@@ -2671,7 +2671,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1656280800000,
     "jp_released": 1624255200000,
     "jp_name": "言葉にしてほしくて"
@@ -2710,7 +2710,7 @@
     "en_released": 1656972000000,
     "jp_released": 1625032800000,
     "jp_name": "辿り着けた想い",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 245,
@@ -2723,7 +2723,7 @@
     "en_released": 1656972000000,
     "jp_released": 1625032800000,
     "jp_name": "おてんばなメロディー",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 246,
@@ -2735,7 +2735,7 @@
     "en_released": 1656972000000,
     "jp_released": 1625032800000,
     "jp_name": "昼休みの語らい",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 247,
@@ -2744,7 +2744,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1656972000000,
     "jp_released": 1625032800000,
     "jp_name": "仲間を想うということ"
@@ -2756,7 +2756,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1656972000000,
     "jp_released": 1625032800000,
     "jp_name": "晴れを待つ雨傘"
@@ -2771,7 +2771,7 @@
     "en_released": 1657663200000,
     "jp_released": 1625810400000,
     "jp_name": "内なる力の目覚め",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 250,
@@ -2783,7 +2783,7 @@
     "en_released": 1657663200000,
     "jp_released": 1625810400000,
     "jp_name": "相棒に伝える言葉",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 251,
@@ -2796,7 +2796,7 @@
     "en_released": 1657663200000,
     "jp_released": 1625810400000,
     "jp_name": "トーキング・コーヒー・タイム",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 252,
@@ -2805,7 +2805,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1657663200000,
     "jp_released": 1625810400000,
     "jp_name": "仲間への畏敬"
@@ -2818,7 +2818,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1657663200000,
     "jp_released": 1625810400000,
     "jp_name": "ポップ・アウト・セカイ"
@@ -2833,7 +2833,7 @@
     "en_released": 1658440800000,
     "jp_released": 1626760800000,
     "jp_name": "変わらぬ夏祭り",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 255,
@@ -2845,7 +2845,7 @@
     "en_released": 1658440800000,
     "jp_released": 1626760800000,
     "jp_name": "いつかの夏祭り",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 256,
@@ -2858,7 +2858,7 @@
     "en_released": 1658440800000,
     "jp_released": 1626760800000,
     "jp_name": "オレのダンスシューズ！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 257,
@@ -2867,7 +2867,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1658440800000,
     "jp_released": 1626760800000,
     "jp_name": "それはズルいでしょ！"
@@ -2879,7 +2879,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1658440800000,
     "jp_released": 1626760800000,
     "jp_name": "サマーナイトフェスティバル"
@@ -2918,7 +2918,7 @@
     "en_released": 1659391200000,
     "jp_released": 1627711200000,
     "jp_name": "バーベキュー奉行！？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 262,
@@ -2928,7 +2928,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1659391200000,
     "jp_released": 1627711200000,
     "jp_name": "おっきな貝殻、どこかな？"
@@ -2940,7 +2940,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1659391200000,
     "jp_released": 1627711200000,
     "jp_name": "想いをこめたシーグラス"
@@ -2955,7 +2955,7 @@
     "en_released": 1660168800000,
     "jp_released": 1628575200000,
     "jp_name": "全力！ハッピーエブリデイ！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 265,
@@ -2968,7 +2968,7 @@
     "en_released": 1660168800000,
     "jp_released": 1628575200000,
     "jp_name": "ステージの王子様",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 266,
@@ -2980,7 +2980,7 @@
     "en_released": 1660168800000,
     "jp_released": 1628575200000,
     "jp_name": "小さなファンと一緒に",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 267,
@@ -2992,7 +2992,7 @@
     "en_released": 1660168800000,
     "jp_released": 1628575200000,
     "jp_name": "秘密の交渉",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 268,
@@ -3001,7 +3001,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1660168800000,
     "jp_released": 1628575200000,
     "jp_name": "慌てんぼうなメッセンジャー"
@@ -3016,7 +3016,7 @@
     "en_released": 1661032800000,
     "jp_released": 1629439200000,
     "jp_name": "打ち上げは花火で",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 270,
@@ -3028,7 +3028,7 @@
     "en_released": 1661032800000,
     "jp_released": 1629439200000,
     "jp_name": "舞台裏の錬金術師",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 271,
@@ -3041,7 +3041,7 @@
     "en_released": 1661032800000,
     "jp_released": 1629439200000,
     "jp_name": "海に想いを馳せて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 272,
@@ -3051,7 +3051,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1661032800000,
     "jp_released": 1629439200000,
     "jp_name": "座長の一日休暇"
@@ -3063,7 +3063,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1661032800000,
     "jp_released": 1629439200000,
     "jp_name": "守りたい笑顔"
@@ -3103,7 +3103,7 @@
     "en_released": 1661896800000,
     "jp_released": 1630389600000,
     "jp_name": "企画会議のヒントはうさぎ！？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 277,
@@ -3113,7 +3113,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "Leo/Need",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1661896800000,
     "jp_released": 1630389600000,
     "jp_name": "屋上での語らい"
@@ -3125,7 +3125,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1661896800000,
     "jp_released": 1630389600000,
     "jp_name": "見上げる月は同じ"
@@ -3140,7 +3140,7 @@
     "en_released": 1662760800000,
     "jp_released": 1631253600000,
     "jp_name": "想いをつなげるスターピース",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 280,
@@ -3153,7 +3153,7 @@
     "en_released": 1662760800000,
     "jp_released": 1631253600000,
     "jp_name": "音で語るセッション",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 281,
@@ -3165,7 +3165,7 @@
     "en_released": 1662760800000,
     "jp_released": 1631253600000,
     "jp_name": "できることを探して",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 282,
@@ -3177,7 +3177,7 @@
     "en_released": 1662760800000,
     "jp_released": 1631253600000,
     "jp_name": "このあとは反省会",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 283,
@@ -3189,7 +3189,7 @@
     "en_released": 1662760800000,
     "jp_released": 1631253600000,
     "jp_name": "クッキー・エール",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 284,
@@ -3201,7 +3201,7 @@
     "en_released": 1663711200000,
     "jp_released": 1632204000000,
     "jp_name": "あたたかい愛情の記憶",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 285,
@@ -3213,7 +3213,7 @@
     "en_released": 1663711200000,
     "jp_released": 1632204000000,
     "jp_name": "ひとときの安息",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 286,
@@ -3226,7 +3226,7 @@
     "en_released": 1663711200000,
     "jp_released": 1632204000000,
     "jp_name": "アルバムのあの子",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 287,
@@ -3235,7 +3235,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1663711200000,
     "jp_released": 1632204000000,
     "jp_name": "取り消したメッセージ"
@@ -3247,7 +3247,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1663711200000,
     "jp_released": 1632204000000,
     "jp_name": "不器用なティータイム"
@@ -3319,7 +3319,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1664661600000,
     "jp_released": 1633068000000,
     "jp_name": "音楽が見せてくれる世界"
@@ -3346,7 +3346,7 @@
     "en_released": 1665784800000,
     "jp_released": 1633932000000,
     "jp_name": "オーバー・ザ・フェンス",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 297,
@@ -3358,7 +3358,7 @@
     "en_released": 1665784800000,
     "jp_released": 1633932000000,
     "jp_name": "信頼への信頼",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 298,
@@ -3371,7 +3371,7 @@
     "en_released": 1665784800000,
     "jp_released": 1633932000000,
     "jp_name": "聞きたくない言葉でも",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 299,
@@ -3381,7 +3381,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1665784800000,
     "jp_released": 1633932000000,
     "jp_name": "オレの相棒なのに"
@@ -3393,7 +3393,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1665784800000,
     "jp_released": 1633932000000,
     "jp_name": "誇れる選択"
@@ -3407,7 +3407,7 @@
     "unit": "Wonderlands x Showtime",
     "jp_released": 1634796000000,
     "jp_name": "在りし日の憧憬",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 0
   },
   {
@@ -3419,7 +3419,7 @@
     "unit": "Wonderlands x Showtime",
     "jp_released": 1634796000000,
     "jp_name": "ジャジャジャジャーンプ！",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 0
   },
   {
@@ -3431,7 +3431,7 @@
     "attribute": "Happy",
     "jp_released": 1634796000000,
     "jp_name": "人見知りな来訪者",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 0
   },
   {
@@ -3441,7 +3441,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_name": "将校の危機",
     "jp_released": 1634796000000,
     "en_released": 0
@@ -3454,7 +3454,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_name": "インテリシティガール",
     "jp_released": 1634796000000,
     "en_released": 0
@@ -3505,7 +3505,7 @@
     "en_released": 1666994400000,
     "jp_released": 1635660000000,
     "jp_name": "吊られた少女の見たものは",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 310,
@@ -3515,7 +3515,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1666994400000,
     "jp_released": 1635660000000,
     "jp_name": "正しさの天秤"
@@ -3527,7 +3527,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1666994400000,
     "jp_released": 1635660000000,
     "jp_name": "導きの杖"
@@ -3554,7 +3554,7 @@
     "en_released": 1667948400000,
     "jp_released": 1636610400000,
     "jp_name": "大切な友達だから",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 314,
@@ -3566,7 +3566,7 @@
     "en_released": 1667948400000,
     "jp_released": 1636610400000,
     "jp_name": "痛い言葉",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 315,
@@ -3578,7 +3578,7 @@
     "en_released": 1667948400000,
     "jp_released": 1636610400000,
     "jp_name": "次のライブのために！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 316,
@@ -3587,7 +3587,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1667948400000,
     "jp_released": 1636610400000,
     "jp_name": "新曲の方向性"
@@ -3600,7 +3600,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "Leo/Need",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1667948400000,
     "jp_released": 1636610400000,
     "jp_name": "想いをぶつける強さ"
@@ -3627,7 +3627,7 @@
     "en_released": 1668812400000,
     "jp_released": 1637388000000,
     "jp_name": "ふたりだけの秘密",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 320,
@@ -3640,7 +3640,7 @@
     "en_released": 1668812400000,
     "jp_released": 1637388000000,
     "jp_name": "心強い言葉",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 321,
@@ -3652,7 +3652,7 @@
     "en_released": 1668812400000,
     "jp_released": 1637388000000,
     "jp_name": "ストリート系アイドル！？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 322,
@@ -3661,7 +3661,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1668812400000,
     "jp_released": 1637388000000,
     "jp_name": "ワクワク最高潮！"
@@ -3673,7 +3673,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1668812400000,
     "jp_released": 1637388000000,
     "jp_name": "フェニラン・ナイトデート"
@@ -3713,7 +3713,7 @@
     "en_released": 1669762800000,
     "jp_released": 1638252000000,
     "jp_name": "まっすぐな歌詞",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 327,
@@ -3722,7 +3722,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1669762800000,
     "jp_released": 1638252000000,
     "jp_name": "いつものラーメン"
@@ -3734,7 +3734,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1669762800000,
     "jp_released": 1638252000000,
     "jp_name": "大切な幼馴染みのために"
@@ -3761,7 +3761,7 @@
     "en_released": 1670713200000,
     "jp_released": 1639116000000,
     "jp_name": "レッツ・ファンミーティング！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 331,
@@ -3773,7 +3773,7 @@
     "en_released": 1670713200000,
     "jp_released": 1639116000000,
     "jp_name": "ファンと一緒に！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 332,
@@ -3785,7 +3785,7 @@
     "en_released": 1670713200000,
     "jp_released": 1639116000000,
     "jp_name": "手作りおにぎり召し上がれ♪",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 333,
@@ -3795,7 +3795,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1670713200000,
     "jp_released": 1639116000000,
     "jp_name": "アイドル兼マネージャー！？"
@@ -3807,7 +3807,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1670713200000,
     "jp_released": 1639116000000,
     "jp_name": "Present for you！"
@@ -3894,7 +3894,7 @@
     "en_released": 1671577200000,
     "jp_released": 1639980000000,
     "jp_name": "アウトドアクッキング！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 342,
@@ -3906,7 +3906,7 @@
     "en_released": 1671577200000,
     "jp_released": 1639980000000,
     "jp_name": "冬の夜の語らい",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 343,
@@ -3918,7 +3918,7 @@
     "en_released": 1671577200000,
     "jp_released": 1639980000000,
     "jp_name": "みんなでBBQ♪",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 344,
@@ -3928,7 +3928,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1671577200000,
     "jp_released": 1639980000000,
     "jp_name": "自由人参上！"
@@ -3940,7 +3940,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1671577200000,
     "jp_released": 1639980000000,
     "jp_name": "あったかキャンプスタイル"
@@ -4037,7 +4037,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1672527600000,
     "jp_released": 1640930400000,
     "jp_name": "かるた界のトップアイドル？"
@@ -4049,7 +4049,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1672527600000,
     "jp_released": 1640930400000,
     "jp_name": "音の道も書の道も"
@@ -4076,7 +4076,7 @@
     "en_released": 1673564400000,
     "jp_released": 1641967200000,
     "jp_name": "えむ隊員は調査中！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 357,
@@ -4088,7 +4088,7 @@
     "en_released": 1673564400000,
     "jp_released": 1641967200000,
     "jp_name": "ダンス！アンド！シング！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 358,
@@ -4101,7 +4101,7 @@
     "en_released": 1673564400000,
     "jp_released": 1641967200000,
     "jp_name": "泣き声はどこから？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 359,
@@ -4110,7 +4110,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1673564400000,
     "jp_released": 1641967200000,
     "jp_name": "死ぬかと思った"
@@ -4122,7 +4122,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1673564400000,
     "jp_released": 1641967200000,
     "jp_name": "レインボー☆キャスト"
@@ -4137,7 +4137,7 @@
     "en_released": 1674342000000,
     "jp_released": 1642744800000,
     "jp_name": "微かに光るエルピス",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 362,
@@ -4149,7 +4149,7 @@
     "en_released": 1674342000000,
     "jp_released": 1642744800000,
     "jp_name": "絶望の底のエルピス",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 363,
@@ -4161,7 +4161,7 @@
     "en_released": 1674342000000,
     "jp_released": 1642744800000,
     "jp_name": "当たり前になった打ち上げ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 364,
@@ -4170,7 +4170,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1674342000000,
     "jp_released": 1642744800000,
     "jp_name": "見合うものを作るために"
@@ -4183,7 +4183,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1674342000000,
     "jp_released": 1642744800000,
     "jp_name": "始まりの想いを見守って"
@@ -4256,7 +4256,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1675206000000,
     "jp_released": 1643608800000,
     "jp_name": "アイドル・オン・ケーキ♪"
@@ -4268,7 +4268,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1675206000000,
     "jp_released": 1643608800000,
     "jp_name": "レディ・オブ・バレンタイン"
@@ -4283,7 +4283,7 @@
     "en_released": 1675983600000,
     "jp_released": 1644386400000,
     "jp_name": "そして知る『伝説』",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 374,
@@ -4295,7 +4295,7 @@
     "en_released": 1675983600000,
     "jp_released": 1644386400000,
     "jp_name": "胸の高鳴りを言葉に",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 375,
@@ -4308,7 +4308,7 @@
     "en_released": 1675983600000,
     "jp_released": 1644386400000,
     "jp_name": "抑えきれない興味",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 376,
@@ -4317,7 +4317,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1675983600000,
     "jp_released": 1644386400000,
     "jp_name": "これから開店！"
@@ -4329,7 +4329,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1675983600000,
     "jp_released": 1644386400000,
     "jp_name": "Towards Legend"
@@ -4368,7 +4368,7 @@
     "en_released": 1676761200000,
     "jp_released": 1645164000000,
     "jp_name": "昔日に抱いた願い",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 381,
@@ -4380,7 +4380,7 @@
     "en_released": 1676761200000,
     "jp_released": 1645164000000,
     "jp_name": "今の聞いてたの！？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 382,
@@ -4393,7 +4393,7 @@
     "en_released": 1676761200000,
     "jp_released": 1645164000000,
     "jp_name": "少し慣れない賑やかさ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 383,
@@ -4402,7 +4402,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1676761200000,
     "jp_released": 1645164000000,
     "jp_name": "未来のスターからの教え"
@@ -4414,7 +4414,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1676761200000,
     "jp_released": 1645164000000,
     "jp_name": "クール・ライダース・レディ"
@@ -4462,7 +4462,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1677625200000,
     "jp_released": 1646028000000,
     "jp_name": "『ありがとう』を込めて"
@@ -4475,7 +4475,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1677625200000,
     "jp_released": 1646028000000,
     "jp_name": "イノセント・スクワイア"
@@ -4502,7 +4502,7 @@
     "en_released": 1678575600000,
     "jp_released": 1646978400000,
     "jp_name": "Feel like Magic",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 392,
@@ -4514,7 +4514,7 @@
     "en_released": 1678575600000,
     "jp_released": 1646978400000,
     "jp_name": "熱烈トーク！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 393,
@@ -4527,7 +4527,7 @@
     "en_released": 1678575600000,
     "jp_released": 1646978400000,
     "jp_name": "セカイの衣装室へご案内♪",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 394,
@@ -4536,7 +4536,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1678575600000,
     "jp_released": 1646978400000,
     "jp_name": "“私達”を表現するために"
@@ -4548,7 +4548,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1678575600000,
     "jp_released": 1646978400000,
     "jp_name": "ミステリアスハート・ウィッチ"
@@ -4575,7 +4575,7 @@
     "en_released": 1679349600000,
     "jp_released": 1647756000000,
     "jp_name": "苦しさも、惨めさも",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 398,
@@ -4587,7 +4587,7 @@
     "en_released": 1679349600000,
     "jp_released": 1647756000000,
     "jp_name": "音が腑に落ちる瞬間",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 399,
@@ -4600,7 +4600,7 @@
     "en_released": 1679349600000,
     "jp_released": 1647756000000,
     "jp_name": "届けたい歌声",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 400,
@@ -4609,7 +4609,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1679349600000,
     "jp_released": 1647756000000,
     "jp_name": "想起される色彩"
@@ -4621,7 +4621,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1679349600000,
     "jp_released": 1647756000000,
     "jp_name": "３人だけの夜"
@@ -4710,7 +4710,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1680213600000,
     "jp_released": 1648620000000,
     "jp_name": "春メニューの試食"
@@ -4723,7 +4723,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1680213600000,
     "jp_released": 1648620000000,
     "jp_name": "bloomy idol♪"
@@ -4738,7 +4738,7 @@
     "en_released": 1681250400000,
     "jp_released": 1649646000000,
     "jp_name": "星の旋律",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 411,
@@ -4750,7 +4750,7 @@
     "en_released": 1681250400000,
     "jp_released": 1649646000000,
     "jp_name": "子リス達のお誘い",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 412,
@@ -4762,7 +4762,7 @@
     "en_released": 1681250400000,
     "jp_released": 1649646000000,
     "jp_name": "その心意気を買って",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 413,
@@ -4771,7 +4771,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1681250400000,
     "jp_released": 1649646000000,
     "jp_name": "ニッコリ作戦大成功！"
@@ -4784,7 +4784,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1681250400000,
     "jp_released": 1649646000000,
     "jp_name": "代役に挑戦！"
@@ -4811,7 +4811,7 @@
     "en_released": 1682114400000,
     "jp_released": 1650510000000,
     "jp_name": "考えるより先に",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 417,
@@ -4823,7 +4823,7 @@
     "en_released": 1682114400000,
     "jp_released": 1650510000000,
     "jp_name": "サイコーにおいしい１杯！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 418,
@@ -4835,7 +4835,7 @@
     "en_released": 1682114400000,
     "jp_released": 1650510000000,
     "jp_name": "１枚の優しさ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 419,
@@ -4844,7 +4844,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1682114400000,
     "jp_released": 1650510000000,
     "jp_name": "これからの展開は"
@@ -4857,7 +4857,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "Leo/Need",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1682114400000,
     "jp_released": 1650510000000,
     "jp_name": "的確なアドバイス"
@@ -4919,7 +4919,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1682892000000,
     "jp_released": 1651287600000,
     "jp_name": "こちょこちょはどうかな？"
@@ -4931,7 +4931,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1682892000000,
     "jp_released": 1651287600000,
     "jp_name": "完成報告！"
@@ -4958,7 +4958,7 @@
     "en_released": 1683756000000,
     "jp_released": 1652151600000,
     "jp_name": "黄昏の輝き",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 429,
@@ -4970,7 +4970,7 @@
     "en_released": 1683756000000,
     "jp_released": 1652151600000,
     "jp_name": "お先に失礼！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 430,
@@ -4983,7 +4983,7 @@
     "en_released": 1683756000000,
     "jp_released": 1652151600000,
     "jp_name": "カッパさんの好きな物？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 431,
@@ -4992,7 +4992,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1683756000000,
     "jp_released": 1652151600000,
     "jp_name": "なりふりかまってられねえ！"
@@ -5004,7 +5004,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1683756000000,
     "jp_released": 1652151600000,
     "jp_name": "体育祭の舞台裏"
@@ -5031,7 +5031,7 @@
     "en_released": 1684609200000,
     "jp_released": 1653015600000,
     "jp_name": "手にした熱気",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 435,
@@ -5043,7 +5043,7 @@
     "en_released": 1684609200000,
     "jp_released": 1653015600000,
     "jp_name": "褒められちゃった♪",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 436,
@@ -5056,7 +5056,7 @@
     "en_released": 1684609200000,
     "jp_released": 1653015600000,
     "jp_name": "みんなも美味しいパンケーキ！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 437,
@@ -5065,7 +5065,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1684620000000,
     "jp_released": 1653015600000,
     "jp_name": "お腹は正直"
@@ -5077,7 +5077,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1684620000000,
     "jp_released": 1653015600000,
     "jp_name": "ほんの少しの悔しさ"
@@ -5138,7 +5138,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1685570400000,
     "jp_released": 1653966000000,
     "jp_name": "キュートに目を奪われて"
@@ -5150,7 +5150,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1685570400000,
     "jp_released": 1653966000000,
     "jp_name": "プリティブライズメイド"
@@ -5165,7 +5165,7 @@
     "en_released": 1686423600000,
     "jp_released": 1654830000000,
     "jp_name": "茜さすぬくもりの中で",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 446,
@@ -5177,7 +5177,7 @@
     "en_released": 1686423600000,
     "jp_released": 1654830000000,
     "jp_name": "怖くないよ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 447,
@@ -5190,7 +5190,7 @@
     "en_released": 1686423600000,
     "jp_released": 1654830000000,
     "jp_name": "隠れぎみな挨拶と共に",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 448,
@@ -5199,7 +5199,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1686434400000,
     "jp_released": 1654830000000,
     "jp_name": "最高に盛れる角度で"
@@ -5211,7 +5211,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1686434400000,
     "jp_released": 1654830000000,
     "jp_name": "その手を離さないように"
@@ -5226,7 +5226,7 @@
     "en_released": 1687287600000,
     "jp_released": 1655694000000,
     "jp_name": "遊びのお礼に",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 451,
@@ -5238,7 +5238,7 @@
     "en_released": 1687287600000,
     "jp_released": 1655694000000,
     "jp_name": "執念の追いかけっこ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 452,
@@ -5250,7 +5250,7 @@
     "en_released": 1687287600000,
     "jp_released": 1655694000000,
     "jp_name": "嵐の前のフィッシング",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 453,
@@ -5260,7 +5260,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1687298400000,
     "jp_released": 1655694000000,
     "jp_name": "挑戦の心得！"
@@ -5272,7 +5272,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1687298400000,
     "jp_released": 1655694000000,
     "jp_name": "サバイバルチャレンジ！"
@@ -5357,7 +5357,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1688162400000,
     "jp_released": 1656558000000,
     "jp_name": "炎天下の応援"
@@ -5369,7 +5369,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1688162400000,
     "jp_released": 1656558000000,
     "jp_name": "自分からいかないと"
@@ -5384,7 +5384,7 @@
     "en_released": 1689102000000,
     "jp_released": 1657508400000,
     "jp_name": "優しい記憶",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 464,
@@ -5396,7 +5396,7 @@
     "en_released": 1689102000000,
     "jp_released": 1657508400000,
     "jp_name": "朝練の一幕",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 465,
@@ -5409,7 +5409,7 @@
     "en_released": 1689102000000,
     "jp_released": 1657508400000,
     "jp_name": "上映中はお静かに！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 466,
@@ -5418,7 +5418,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1689112800000,
     "jp_released": 1657508400000,
     "jp_name": "レモネードで一休み♪"
@@ -5430,7 +5430,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1689112800000,
     "jp_released": 1657508400000,
     "jp_name": "感じた想いの行方"
@@ -5457,7 +5457,7 @@
     "en_released": 1689966000000,
     "jp_released": 1658372400000,
     "jp_name": "記憶の深淵",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 470,
@@ -5469,7 +5469,7 @@
     "en_released": 1689966000000,
     "jp_released": 1658372400000,
     "jp_name": "その歌を聴かせて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 471,
@@ -5482,7 +5482,7 @@
     "en_released": 1689966000000,
     "jp_released": 1658372400000,
     "jp_name": "放課後のひととき",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 472,
@@ -5492,7 +5492,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "Leo/Need",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1689976800000,
     "jp_released": 1658372400000,
     "jp_name": "曲と向き合うということ"
@@ -5504,7 +5504,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1689976800000,
     "jp_released": 1658372400000,
     "jp_name": "真正面からのリベンジへ"
@@ -5564,7 +5564,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1690840800000,
     "jp_released": 1659236400000,
     "jp_name": "ぬいぐるみと共に"
@@ -5577,7 +5577,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1690840800000,
     "jp_released": 1659236400000,
     "jp_name": "ミクミク☆ガンナー！"
@@ -5604,7 +5604,7 @@
     "en_released": 1691694000000,
     "jp_released": 1660100400000,
     "jp_name": "最強アイドルスマイル！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 482,
@@ -5616,7 +5616,7 @@
     "en_released": 1691694000000,
     "jp_released": 1660100400000,
     "jp_name": "落ちちゃったかしら？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 483,
@@ -5629,7 +5629,7 @@
     "en_released": 1691694000000,
     "jp_released": 1660100400000,
     "jp_name": "まずは腹筋の強化から！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 484,
@@ -5638,7 +5638,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1691704800000,
     "jp_released": 1660100400000,
     "jp_name": "想い混ざりあうスムージー"
@@ -5650,7 +5650,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1691704800000,
     "jp_released": 1660100400000,
     "jp_name": "夏！合宿！水着！"
@@ -5665,7 +5665,7 @@
     "en_released": 1692558000000,
     "jp_released": 1660964400000,
     "jp_name": "勇気をくれたもの",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 487,
@@ -5677,7 +5677,7 @@
     "en_released": 1692558000000,
     "jp_released": 1660964400000,
     "jp_name": "朝日に目を細めて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 488,
@@ -5689,7 +5689,7 @@
     "en_released": 1692558000000,
     "jp_released": 1660964400000,
     "jp_name": "遠いぬくもり",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 489,
@@ -5698,7 +5698,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1692568800000,
     "jp_released": 1660964400000,
     "jp_name": "いいものを作りたいから"
@@ -5711,7 +5711,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1692568800000,
     "jp_released": 1660964400000,
     "jp_name": "待つという選択"
@@ -5784,7 +5784,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "sub_unit": "Leo/Need",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1693519200000,
     "jp_released": 1661914800000,
     "jp_name": "口にできない言葉"
@@ -5796,7 +5796,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1693519200000,
     "jp_released": 1661914800000,
     "jp_name": "信じる力"
@@ -5823,7 +5823,7 @@
     "en_released": 1694372400000,
     "jp_released": 1662692400000,
     "jp_name": "思い出の動物は",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 500,
@@ -5835,7 +5835,7 @@
     "en_released": 1694372400000,
     "jp_released": 1662692400000,
     "jp_name": "どうしてこうなるの？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 501,
@@ -5847,7 +5847,7 @@
     "en_released": 1694372400000,
     "jp_released": 1662692400000,
     "jp_name": "たこさんと同じ顔っ☆",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 502,
@@ -5857,7 +5857,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "Leo/Need",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1694383200000,
     "jp_released": 1662692400000,
     "jp_name": "オレ流かっこいい表現！"
@@ -5869,7 +5869,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1694383200000,
     "jp_released": 1662692400000,
     "jp_name": "出会いを導いて"
@@ -5884,7 +5884,7 @@
     "en_released": 1695236400000,
     "jp_released": 1663642800000,
     "jp_name": "これから先もずっと",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 505,
@@ -5896,7 +5896,7 @@
     "en_released": 1695236400000,
     "jp_released": 1663642800000,
     "jp_name": "ミッドナイトメイキング",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 506,
@@ -5909,7 +5909,7 @@
     "en_released": 1695236400000,
     "jp_released": 1663642800000,
     "jp_name": "こだわりじゃない？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 507,
@@ -5918,7 +5918,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1695247200000,
     "jp_released": 1663642800000,
     "jp_name": "ニュアンスランゲージ"
@@ -5930,7 +5930,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1695247200000,
     "jp_released": 1663642800000,
     "jp_name": "それぞれの休日の過ごし方"
@@ -6014,7 +6014,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1696111200000,
     "jp_released": 1664517600000,
     "jp_name": "わたし達を知ってもらうために"
@@ -6041,7 +6041,7 @@
     "en_released": 1697050800000,
     "jp_released": 1665543600000,
     "jp_name": "スポットライトのその先へ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 518,
@@ -6053,7 +6053,7 @@
     "en_released": 1697050800000,
     "jp_released": 1665543600000,
     "jp_name": "心までも、つなげて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 519,
@@ -6065,7 +6065,7 @@
     "en_released": 1697050800000,
     "jp_released": 1665543600000,
     "jp_name": "ワンマン作戦会議！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 520,
@@ -6074,7 +6074,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1697061600000,
     "jp_released": 1665554400000,
     "jp_name": "どきどきグッズ開封♪"
@@ -6087,7 +6087,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1697061600000,
     "jp_released": 1665554400000,
     "jp_name": "頼れる先輩達"
@@ -6102,7 +6102,7 @@
     "en_released": 1697914800000,
     "jp_released": 1666321200000,
     "jp_name": "夕風に吹かれて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 523,
@@ -6114,7 +6114,7 @@
     "en_released": 1697914800000,
     "jp_released": 1666321200000,
     "jp_name": "刺激を受けて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 524,
@@ -6126,7 +6126,7 @@
     "en_released": 1697914800000,
     "jp_released": 1666321200000,
     "jp_name": "幼馴染みのまなざし",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 525,
@@ -6136,7 +6136,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1697925600000,
     "jp_released": 1666332000000,
     "jp_name": "しょぼぼぼ～ん"
@@ -6148,7 +6148,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1697925600000,
     "jp_released": 1666332000000,
     "jp_name": "レッツ・エチュード♪"
@@ -6208,7 +6208,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1698789600000,
     "jp_released": 1667196000000,
     "jp_name": "キラキラの洪水！？"
@@ -6221,7 +6221,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1698789600000,
     "jp_released": 1667196000000,
     "jp_name": "レッツ・エンジョイ文化祭♪"
@@ -6260,7 +6260,7 @@
     "en_released": 1699646400000,
     "jp_released": 1668135600000,
     "jp_name": "繋がる音色",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 536,
@@ -6272,7 +6272,7 @@
     "en_released": 1699646400000,
     "jp_released": 1668135600000,
     "jp_name": "思いやりも添えて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 537,
@@ -6285,7 +6285,7 @@
     "en_released": 1699646400000,
     "jp_released": 1668135600000,
     "jp_name": "重なる歌声",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 538,
@@ -6294,7 +6294,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1699657200000,
     "jp_released": 1668146400000,
     "jp_name": "優しさに背中を預けて"
@@ -6307,7 +6307,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "Leo/Need",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1699657200000,
     "jp_released": 1668146400000,
     "jp_name": "演奏であと押し"
@@ -6322,7 +6322,7 @@
     "en_released": 1700510400000,
     "jp_released": 1668913200000,
     "jp_name": "描きたくなった表情",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 541,
@@ -6334,7 +6334,7 @@
     "en_released": 1700510400000,
     "jp_released": 1668913200000,
     "jp_name": "この街一番の専門店で",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 542,
@@ -6346,7 +6346,7 @@
     "en_released": 1700510400000,
     "jp_released": 1668913200000,
     "jp_name": "何かが違う食卓",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 543,
@@ -6358,7 +6358,7 @@
     "en_released": 1700521200000,
     "jp_released": 1668924000000,
     "jp_name": "弟くんにも聞いちゃおー！",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 544,
@@ -6368,7 +6368,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1700521200000,
     "jp_released": 1668924000000,
     "jp_name": "それぞれの関わりかた"
@@ -6417,7 +6417,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1701385200000,
     "jp_released": 1669788000000,
     "jp_name": "深夜のMC特訓"
@@ -6429,7 +6429,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1701385200000,
     "jp_released": 1669788000000,
     "jp_name": "この先を見据えて"
@@ -6456,7 +6456,7 @@
     "en_released": 1702324800000,
     "jp_released": 1670727600000,
     "jp_name": "かけてくれた言葉の理由",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 552,
@@ -6468,7 +6468,7 @@
     "en_released": 1702324800000,
     "jp_released": 1670727600000,
     "jp_name": "青柳家のクリスマスパーティー",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 553,
@@ -6481,7 +6481,7 @@
     "en_released": 1702324800000,
     "jp_released": 1670727600000,
     "jp_name": "大急ぎで仲間の元へ！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 554,
@@ -6490,7 +6490,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1702335600000,
     "jp_released": 1670738400000,
     "jp_name": "クリスマスまで秒読み！"
@@ -6502,7 +6502,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1702335600000,
     "jp_released": 1670738400000,
     "jp_name": "限定メニューアンケート！"
@@ -6517,7 +6517,7 @@
     "en_released": 1703188800000,
     "jp_released": 1671591600000,
     "jp_name": "千射万箭の気持ちで",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 557,
@@ -6529,7 +6529,7 @@
     "en_released": 1703188800000,
     "jp_released": 1671591600000,
     "jp_name": "君だけが知る静寂",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 558,
@@ -6542,7 +6542,7 @@
     "en_released": 1703188800000,
     "jp_released": 1671591600000,
     "jp_name": "どんなアレンジがいいかな？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 559,
@@ -6551,7 +6551,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1703199600000,
     "jp_released": 1671602400000,
     "jp_name": "はじめての茶道"
@@ -6563,7 +6563,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1703199600000,
     "jp_released": 1671602400000,
     "jp_name": "Leo/needで雪遊び"
@@ -6660,7 +6660,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1704063600000,
     "jp_released": 1672466400000,
     "jp_name": "ドライブGO！GO！"
@@ -6672,7 +6672,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1704063600000,
     "jp_released": 1672466400000,
     "jp_name": "道中も大切な過程"
@@ -6699,7 +6699,7 @@
     "en_released": 1704916800000,
     "jp_released": 1673319600000,
     "jp_name": "瞳に映る輝き",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 572,
@@ -6711,7 +6711,7 @@
     "en_released": 1704916800000,
     "jp_released": 1673319600000,
     "jp_name": "負けるわけにはいかないね",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 573,
@@ -6724,7 +6724,7 @@
     "en_released": 1704916800000,
     "jp_released": 1673319600000,
     "jp_name": "楽しいがいっぱいの宝箱",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 574,
@@ -6733,7 +6733,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1704927600000,
     "jp_released": 1673330400000,
     "jp_name": "ネバーギブアップ"
@@ -6745,7 +6745,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1704927600000,
     "jp_released": 1673330400000,
     "jp_name": "自分で得られる学びを"
@@ -6760,7 +6760,7 @@
     "en_released": 1705867200000,
     "jp_released": 1674270000000,
     "jp_name": "勇気のあとに",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 577,
@@ -6772,7 +6772,7 @@
     "en_released": 1705867200000,
     "jp_released": 1674270000000,
     "jp_name": "うとうとアートクラス",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 578,
@@ -6784,7 +6784,7 @@
     "en_released": 1705867200000,
     "jp_released": 1674270000000,
     "jp_name": "大事な準備",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 579,
@@ -6797,7 +6797,7 @@
     "en_released": 1705878000000,
     "jp_released": 1674280800000,
     "jp_name": "先輩の視線",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 580,
@@ -6806,7 +6806,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1705878000000,
     "jp_released": 1674280800000,
     "jp_name": "どきどきお礼メッセージ"
@@ -6878,7 +6878,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1706742000000,
     "jp_released": 1675144800000,
     "jp_name": "微笑みの先に"
@@ -6891,7 +6891,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1706742000000,
     "jp_released": 1675144800000,
     "jp_name": "形にして、贈りたい想い"
@@ -6918,7 +6918,7 @@
     "en_released": 1707595200000,
     "jp_released": 1675998000000,
     "jp_name": "不甲斐ない私からの卒業",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 590,
@@ -6930,7 +6930,7 @@
     "en_released": 1707595200000,
     "jp_released": 1675998000000,
     "jp_name": "もぐもぐTime！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 591,
@@ -6942,7 +6942,7 @@
     "en_released": 1707595200000,
     "jp_released": 1675998000000,
     "jp_name": "無理はしないで",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 592,
@@ -6951,7 +6951,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1707606000000,
     "jp_released": 1676008800000,
     "jp_name": "帰ってきたこの場所"
@@ -6964,7 +6964,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1707606000000,
     "jp_released": 1676008800000,
     "jp_name": "もっともっと支えるために"
@@ -6991,7 +6991,7 @@
     "en_released": 1708372800000,
     "jp_released": 1676775600000,
     "jp_name": "最高潮のあと",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 596,
@@ -7003,7 +7003,7 @@
     "en_released": 1708372800000,
     "jp_released": 1676775600000,
     "jp_name": "見上げた先の景色",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 597,
@@ -7015,7 +7015,7 @@
     "en_released": 1708372800000,
     "jp_released": 1676775600000,
     "jp_name": "作戦会議とチーズケーキ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 598,
@@ -7024,7 +7024,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1708383600000,
     "jp_released": 1676786400000,
     "jp_name": "パーフェクト・ライブラリアン"
@@ -7037,7 +7037,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1708383600000,
     "jp_released": 1676786400000,
     "jp_name": "ラフに、だけど豊かに響いて"
@@ -7087,7 +7087,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1709247600000,
     "jp_released": 1677564000000,
     "jp_name": "料理は得意？"
@@ -7099,7 +7099,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1709247600000,
     "jp_released": 1677564000000,
     "jp_name": "じっくりゆっくり、心を込めて"
@@ -7126,7 +7126,7 @@
     "en_released": 1710183600000,
     "jp_released": 1678503600000,
     "jp_name": "滲む瞳に、不死鳥",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 607,
@@ -7138,7 +7138,7 @@
     "en_released": 1710183600000,
     "jp_released": 1678503600000,
     "jp_name": "ぐわぐわ☆アヒルチャレンジ！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 608,
@@ -7150,7 +7150,7 @@
     "en_released": 1710183600000,
     "jp_released": 1678503600000,
     "jp_name": "思い知らされた差",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 609,
@@ -7159,7 +7159,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1710194400000,
     "jp_released": 1678514400000,
     "jp_name": "秘密兵器！フェニックスロボ"
@@ -7172,7 +7172,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1710194400000,
     "jp_released": 1678514400000,
     "jp_name": "優しさこそが力の源"
@@ -7199,7 +7199,7 @@
     "en_released": 1711047600000,
     "jp_released": 1679367600000,
     "jp_name": "灯る、決意",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 613,
@@ -7211,7 +7211,7 @@
     "en_released": 1711047600000,
     "jp_released": 1679367600000,
     "jp_name": "せめて、穏やかな時間を",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 614,
@@ -7223,7 +7223,7 @@
     "en_released": 1711047600000,
     "jp_released": 1679367600000,
     "jp_name": "気晴らしショッピング",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 615,
@@ -7233,7 +7233,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1711058400000,
     "jp_released": 1679378400000,
     "jp_name": "激情の顕現"
@@ -7245,7 +7245,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1711058400000,
     "jp_released": 1679378400000,
     "jp_name": "止められない想い"
@@ -7330,7 +7330,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1711836000000,
     "jp_released": 1680156000000,
     "jp_name": "カナリアに近づくために"
@@ -7345,7 +7345,7 @@
     "en_released": 1712862000000,
     "jp_released": 1681182000000,
     "jp_name": "すべて受け止める覚悟を",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 625,
@@ -7357,7 +7357,7 @@
     "en_released": 1712862000000,
     "jp_released": 1681182000000,
     "jp_name": "この想いさえ乗り越えて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 626,
@@ -7370,7 +7370,7 @@
     "en_released": 1712862000000,
     "jp_released": 1681182000000,
     "jp_name": "頼もしい温もり",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 627,
@@ -7382,7 +7382,7 @@
     "en_released": 1712872800000,
     "jp_released": 1681192800000,
     "jp_name": "待望のメッセージ",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 628,
@@ -7391,7 +7391,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1712872800000,
     "jp_released": 1681192800000,
     "jp_name": "テクニカルエキスパート"
@@ -7418,7 +7418,7 @@
     "en_released": 1713726000000,
     "jp_released": 1682046000000,
     "jp_name": "離れていく距離",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 631,
@@ -7430,7 +7430,7 @@
     "en_released": 1713726000000,
     "jp_released": 1682046000000,
     "jp_name": "変わるかもしれない日常",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 632,
@@ -7442,7 +7442,7 @@
     "en_released": 1713726000000,
     "jp_released": 1682046000000,
     "jp_name": "元気いっぱい地方ロケ！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 633,
@@ -7452,7 +7452,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1713736800000,
     "jp_released": 1682056800000,
     "jp_name": "消えない想いを信じて"
@@ -7464,7 +7464,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1713736800000,
     "jp_released": 1682056800000,
     "jp_name": "友情にほぐされて"
@@ -7526,7 +7526,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1714514400000,
     "jp_released": 1682834400000,
     "jp_name": "リボンに込めた思いやり"
@@ -7538,7 +7538,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1714514400000,
     "jp_released": 1682834400000,
     "jp_name": "もどかしさと後悔と、感謝"
@@ -7565,7 +7565,7 @@
     "en_released": 1715454000000,
     "jp_released": 1683774000000,
     "jp_name": "思い出はドーナツとともに",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 643,
@@ -7577,7 +7577,7 @@
     "en_released": 1715454000000,
     "jp_released": 1683774000000,
     "jp_name": "水上の逃避行",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 644,
@@ -7590,7 +7590,7 @@
     "en_released": 1715454000000,
     "jp_released": 1683774000000,
     "jp_name": "横浜ガイドはグルメの予感♪",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 645,
@@ -7602,7 +7602,7 @@
     "en_released": 1715464800000,
     "jp_released": 1683784800000,
     "jp_name": "気分はお忍びアイドル？",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 646,
@@ -7614,7 +7614,7 @@
     "en_released": 1715464800000,
     "jp_released": 1683784800000,
     "jp_name": "離れていても、そっと背中を",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 647,
@@ -7638,7 +7638,7 @@
     "en_released": 1716231600000,
     "jp_released": 1684551600000,
     "jp_name": "足りてないわたしだから",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 649,
@@ -7650,7 +7650,7 @@
     "en_released": 1716231600000,
     "jp_released": 1684551600000,
     "jp_name": "いつだって相談にのるよ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 650,
@@ -7663,7 +7663,7 @@
     "en_released": 1716231600000,
     "jp_released": 1684551600000,
     "jp_name": "応援の力を信じて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 651,
@@ -7672,7 +7672,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1716242400000,
     "jp_released": 1684562400000,
     "jp_name": "夢のあとで"
@@ -7684,7 +7684,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1716242400000,
     "jp_released": 1684562400000,
     "jp_name": "確かな一歩を重ねて"
@@ -7748,7 +7748,7 @@
     "en_released": 1717192800000,
     "jp_released": 1685512800000,
     "jp_name": "作戦成功・ハイタッチ！",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 658,
@@ -7757,7 +7757,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1717192800000,
     "jp_released": 1685512800000,
     "jp_name": "噂の彼女に思いを馳せて"
@@ -7772,7 +7772,7 @@
     "en_released": 1718046000000,
     "jp_released": 1686366000000,
     "jp_name": "あふれ出す想いと",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 660,
@@ -7784,7 +7784,7 @@
     "en_released": 1718046000000,
     "jp_released": 1686366000000,
     "jp_name": "彼我の差を知るために",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 661,
@@ -7797,7 +7797,7 @@
     "en_released": 1718046000000,
     "jp_released": 1686366000000,
     "jp_name": "リンちゃん達にお任せあれ！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 662,
@@ -7809,7 +7809,7 @@
     "en_released": 1718056800000,
     "jp_released": 1686376800000,
     "jp_name": "見えなくなった活路",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 663,
@@ -7818,7 +7818,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1718056800000,
     "jp_released": 1686376800000,
     "jp_name": "最後の練習"
@@ -7833,7 +7833,7 @@
     "en_released": 1718910000000,
     "jp_released": 1687230000000,
     "jp_name": "一生の宝物だよ！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 665,
@@ -7845,7 +7845,7 @@
     "en_released": 1718910000000,
     "jp_released": 1687230000000,
     "jp_name": "よりよい配信のために",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 666,
@@ -7858,7 +7858,7 @@
     "en_released": 1718910000000,
     "jp_released": 1687230000000,
     "jp_name": "僕達だから言えること",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 667,
@@ -7867,7 +7867,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1718920800000,
     "jp_released": 1687240800000,
     "jp_name": "お昼の勉強会"
@@ -7879,7 +7879,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1718920800000,
     "jp_released": 1687240800000,
     "jp_name": "サプライズの裏側"
@@ -7963,7 +7963,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1719784800000,
     "jp_released": 1688104800000,
     "jp_name": "憩いの時間"
@@ -7975,7 +7975,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1719784800000,
     "jp_released": 1688104800000,
     "jp_name": "わたしだって楽しみなんだから"
@@ -7990,7 +7990,7 @@
     "en_released": 1720724400000,
     "jp_released": 1689044400000,
     "jp_name": "本当の想いを",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 678,
@@ -8002,7 +8002,7 @@
     "en_released": 1720724400000,
     "jp_released": 1689044400000,
     "jp_name": "震える背に優しさを",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 679,
@@ -8014,7 +8014,7 @@
     "en_released": 1720724400000,
     "jp_released": 1689044400000,
     "jp_name": "見えない影",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 680,
@@ -8023,7 +8023,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1720735200000,
     "jp_released": 1689055200000,
     "jp_name": "待ち望んだ通知"
@@ -8036,7 +8036,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1720735200000,
     "jp_released": 1689055200000,
     "jp_name": "高まる危惧"
@@ -8063,7 +8063,7 @@
     "en_released": 1721588400000,
     "jp_released": 1689908400000,
     "jp_name": "胸に秘めた誓い",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 684,
@@ -8075,7 +8075,7 @@
     "en_released": 1721588400000,
     "jp_released": 1689908400000,
     "jp_name": "今日は特別だから",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 685,
@@ -8088,7 +8088,7 @@
     "en_released": 1721588400000,
     "jp_released": 1689908400000,
     "jp_name": "見守ってきた軌跡",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 686,
@@ -8100,7 +8100,7 @@
     "en_released": 1721599200000,
     "jp_released": 1689919200000,
     "jp_name": "応援してくれるみんなと",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 687,
@@ -8112,7 +8112,7 @@
     "en_released": 1721599200000,
     "jp_released": 1689919200000,
     "jp_name": "みんな集まれ～！感謝ライブ！",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 688,
@@ -8169,7 +8169,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1722463200000,
     "jp_released": 1690783200000,
     "jp_name": "おいしいの三段活用"
@@ -8181,7 +8181,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1722463200000,
     "jp_released": 1690783200000,
     "jp_name": "お姉ちゃんと一緒っ☆"
@@ -8196,7 +8196,7 @@
     "en_released": 1723316400000,
     "jp_released": 1691636400000,
     "jp_name": "私の言葉で",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 695,
@@ -8208,7 +8208,7 @@
     "en_released": 1723316400000,
     "jp_released": 1691636400000,
     "jp_name": "ザ・コーディネート中！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 696,
@@ -8220,7 +8220,7 @@
     "en_released": 1723316400000,
     "jp_released": 1691636400000,
     "jp_name": "久しぶりのお見舞い",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 697,
@@ -8229,7 +8229,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1723327200000,
     "jp_released": 1691647200000,
     "jp_name": "たまにはこんな日も"
@@ -8242,7 +8242,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1723327200000,
     "jp_released": 1691647200000,
     "jp_name": "ギラギラしてこそ"
@@ -8269,7 +8269,7 @@
     "en_released": 1724266800000,
     "jp_released": 1692586800000,
     "jp_name": "笑顔の世界へ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 701,
@@ -8281,7 +8281,7 @@
     "en_released": 1724266800000,
     "jp_released": 1692586800000,
     "jp_name": "悲しみも全部",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 702,
@@ -8294,7 +8294,7 @@
     "en_released": 1724266800000,
     "jp_released": 1692586800000,
     "jp_name": "幸福の語り手",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 703,
@@ -8303,7 +8303,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1724277600000,
     "jp_released": 1692597600000,
     "jp_name": "夜半の葛藤"
@@ -8315,7 +8315,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1724277600000,
     "jp_released": 1692597600000,
     "jp_name": "ありがとうの挨拶"
@@ -8404,7 +8404,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1725141600000,
     "jp_released": 1693461600000,
     "jp_name": "ほんの少しだけでも"
@@ -8417,7 +8417,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1725141600000,
     "jp_released": 1693461600000,
     "jp_name": "秘密の思惑"
@@ -8444,7 +8444,7 @@
     "en_released": 1725994800000,
     "jp_released": 1694401200000,
     "jp_name": "思い出を抱きしめて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 715,
@@ -8456,7 +8456,7 @@
     "en_released": 1725994800000,
     "jp_released": 1694401200000,
     "jp_name": "勝てない眼差し",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 716,
@@ -8468,7 +8468,7 @@
     "en_released": 1725994800000,
     "jp_released": 1694401200000,
     "jp_name": "必殺！連係プレー",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 717,
@@ -8477,7 +8477,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1726005600000,
     "jp_released": 1694412000000,
     "jp_name": "あま～い思い出"
@@ -8489,7 +8489,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1726005600000,
     "jp_released": 1694412000000,
     "jp_name": "大切な後輩にた～っくさんの愛を"
@@ -8504,7 +8504,7 @@
     "en_released": 1726858800000,
     "jp_released": 1695178800000,
     "jp_name": "笑顔も花丸！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 720,
@@ -8516,7 +8516,7 @@
     "en_released": 1726858800000,
     "jp_released": 1695178800000,
     "jp_name": "夕暮れの語らい",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 721,
@@ -8528,7 +8528,7 @@
     "en_released": 1726858800000,
     "jp_released": 1695178800000,
     "jp_name": "ふたりで寄り道",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 722,
@@ -8537,7 +8537,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1726869600000,
     "jp_released": 1695189600000,
     "jp_name": "オレに任せろ！"
@@ -8549,7 +8549,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1726869600000,
     "jp_released": 1695189600000,
     "jp_name": "夜ふかしラーニング！"
@@ -8564,7 +8564,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 725,
@@ -8576,7 +8576,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 726,
@@ -8588,7 +8588,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 727,
@@ -8600,7 +8600,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 728,
@@ -8612,7 +8612,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 729,
@@ -8624,7 +8624,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 730,
@@ -8636,7 +8636,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 731,
@@ -8648,7 +8648,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 732,
@@ -8660,7 +8660,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 733,
@@ -8672,7 +8672,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 734,
@@ -8684,7 +8684,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 735,
@@ -8696,7 +8696,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 736,
@@ -8708,7 +8708,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 737,
@@ -8720,7 +8720,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 738,
@@ -8732,7 +8732,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 739,
@@ -8744,7 +8744,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 740,
@@ -8756,7 +8756,7 @@
     "en_released": 172767960000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 741,
@@ -8768,7 +8768,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 742,
@@ -8780,7 +8780,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 743,
@@ -8792,7 +8792,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Brand New Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 744,
@@ -8804,7 +8804,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Origin Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 745,
@@ -8816,7 +8816,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Origin Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 746,
@@ -8828,7 +8828,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Origin Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 747,
@@ -8840,7 +8840,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Origin Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 748,
@@ -8852,7 +8852,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Origin Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 749,
@@ -8864,7 +8864,7 @@
     "en_released": 1727679600000,
     "jp_released": 1695999600000,
     "jp_name": "Origin Style",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 750,
@@ -8877,7 +8877,7 @@
     "jp_released": 1695999600000,
     "sub_unit": "Leo/Need",
     "jp_name": "Brand New Classroom",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 751,
@@ -8890,7 +8890,7 @@
     "jp_released": 1695999600000,
     "sub_unit": "MORE MORE JUMP!",
     "jp_name": "Brand New Stage",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 752,
@@ -8903,7 +8903,7 @@
     "jp_released": 1695999600000,
     "sub_unit": "Vivid BAD SQUAD",
     "jp_name": "Brand New Street",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 753,
@@ -8916,7 +8916,7 @@
     "jp_released": 1695999600000,
     "sub_unit": "Wonderlands x Showtime",
     "jp_name": "Brand New Wonderland",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 754,
@@ -8929,7 +8929,7 @@
     "jp_released": 1695999600000,
     "sub_unit": "Nightcord at 25:00",
     "jp_name": "Brand New Empty",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 755,
@@ -8942,7 +8942,7 @@
     "jp_released": 1695999600000,
     "sub_unit": "Leo/Need",
     "jp_name": "Brand New Classroom",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 756,
@@ -8955,7 +8955,7 @@
     "jp_released": 1695999600000,
     "sub_unit": "MORE MORE JUMP!",
     "jp_name": "Brand New Stage",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 757,
@@ -8968,7 +8968,7 @@
     "jp_released": 1695999600000,
     "sub_unit": "Vivid BAD SQUAD",
     "jp_name": "Brand New Street",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 758,
@@ -8981,7 +8981,7 @@
     "jp_released": 1695999600000,
     "sub_unit": "Vivid BAD SQUAD",
     "jp_name": "Brand New Street",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 759,
@@ -8994,7 +8994,7 @@
     "jp_released": 1695999600000,
     "sub_unit": "Wonderlands x Showtime",
     "jp_name": "Brand New Wonderland",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 760,
@@ -9075,7 +9075,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1727733600000,
     "jp_released": 1696053600000,
     "jp_name": "新しい朝に向けて"
@@ -9102,7 +9102,7 @@
     "en_released": 1728759600000,
     "jp_released": 1697079600000,
     "jp_name": "炎の継承",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 769,
@@ -9114,7 +9114,7 @@
     "en_released": 1728759600000,
     "jp_released": 1697079600000,
     "jp_name": "眠ってしまわないように",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 770,
@@ -9127,7 +9127,7 @@
     "en_released": 1728759600000,
     "jp_released": 1697079600000,
     "jp_name": "不意の挑発",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 771,
@@ -9139,7 +9139,7 @@
     "en_released": 1728770400000,
     "jp_released": 1697090400000,
     "jp_name": "つかの間の休息",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 772,
@@ -9151,7 +9151,7 @@
     "en_released": 1728770400000,
     "jp_released": 1697090400000,
     "jp_name": "車に乗って！",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 773,
@@ -9163,7 +9163,7 @@
     "en_released": 1729623600000,
     "jp_released": 1697943600000,
     "jp_name": "始まりの音",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 774,
@@ -9175,7 +9175,7 @@
     "en_released": 1729623600000,
     "jp_released": 1697943600000,
     "jp_name": "答えを探しながら",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 775,
@@ -9188,7 +9188,7 @@
     "en_released": 1729623600000,
     "jp_released": 1697943600000,
     "jp_name": "思い出を聞かせて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 776,
@@ -9197,7 +9197,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1729634400000,
     "jp_released": 1697954400000,
     "jp_name": "いい音を届けるために"
@@ -9209,7 +9209,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1729634400000,
     "jp_released": 1697954400000,
     "jp_name": "楽しみでいっぱい♪"
@@ -9270,7 +9270,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1730412000000,
     "jp_released": 1698732000000,
     "jp_name": "旅先への期待"
@@ -9282,7 +9282,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1730412000000,
     "jp_released": 1698732000000,
     "jp_name": "先輩達の背中"
@@ -9355,7 +9355,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1731124800000,
     "jp_released": 1699441200000,
     "jp_name": "湖畔にて"
@@ -9382,7 +9382,7 @@
     "en_released": 1732305600000,
     "jp_released": 1700622000000,
     "jp_name": "小さな主役と",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 792,
@@ -9394,7 +9394,7 @@
     "en_released": 1732305600000,
     "jp_released": 1700622000000,
     "jp_name": "くすぐられる好奇心",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 793,
@@ -9407,7 +9407,7 @@
     "en_released": 1732305600000,
     "jp_released": 1700622000000,
     "jp_name": "レッツ☆オート三輪",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 794,
@@ -9416,7 +9416,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1732316400000,
     "jp_released": 1700632800000,
     "jp_name": "これであたしもモダンガール♪"
@@ -9428,7 +9428,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1732316400000,
     "jp_released": 1700632800000,
     "jp_name": "緊張の門出？"
@@ -9477,7 +9477,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1733007600000,
     "jp_released": 1701324000000,
     "jp_name": "脚本のお手伝い"
@@ -9489,7 +9489,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1733007600000,
     "jp_released": 1701324000000,
     "jp_name": "いざ衣装班へ！"
@@ -9828,7 +9828,7 @@
     "en_released": 1733860800000,
     "jp_released": 1702177200000,
     "jp_name": "スカッとササッと",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 829,
@@ -9840,7 +9840,7 @@
     "en_released": 1733860800000,
     "jp_released": 1702177200000,
     "jp_name": "ときめきを隠して",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 830,
@@ -9853,7 +9853,7 @@
     "en_released": 1733860800000,
     "jp_released": 1702177200000,
     "jp_name": "挨拶はアイドルの基本",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 831,
@@ -9862,7 +9862,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1733871600000,
     "jp_released": 1702188000000,
     "jp_name": "横取り注意！"
@@ -9874,7 +9874,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1733871600000,
     "jp_released": 1702188000000,
     "jp_name": "サプライズ計画"
@@ -9889,7 +9889,7 @@
     "en_released": 1734724800000,
     "jp_released": 1703041200000,
     "jp_name": "優しい音色の記憶",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 834,
@@ -9901,7 +9901,7 @@
     "en_released": 1734724800000,
     "jp_released": 1703041200000,
     "jp_name": "こぼれた本音",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 835,
@@ -9914,7 +9914,7 @@
     "en_released": 1734724800000,
     "jp_released": 1703041200000,
     "jp_name": "座視できない想い",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 836,
@@ -9923,7 +9923,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1734735600000,
     "jp_released": 1703052000000,
     "jp_name": "憂いの午後"
@@ -9936,7 +9936,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1734735600000,
     "jp_released": 1703052000000,
     "jp_name": "セカイを描いて、彩って"
@@ -10033,7 +10033,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1735686000000,
     "jp_released": 1704002400000,
     "jp_name": "少しだけ、足を伸ばして"
@@ -10045,7 +10045,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1735686000000,
     "jp_released": 1704002400000,
     "jp_name": "１年の感謝を込めて"
@@ -10121,7 +10121,7 @@
     "en_released": 1736481600000,
     "jp_released": 1704798000000,
     "jp_name": "みんなの力になれるように",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 853,
@@ -10134,7 +10134,7 @@
     "en_released": 1736481600000,
     "jp_released": 1704798000000,
     "jp_name": "同じ胸の高鳴り",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 854,
@@ -10146,7 +10146,7 @@
     "en_released": 1737662400000,
     "jp_released": 1705978800000,
     "jp_name": "漏れ聞こえる言葉",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 855,
@@ -10158,7 +10158,7 @@
     "en_released": 1737662400000,
     "jp_released": 1705978800000,
     "jp_name": "準備も慣れたもの",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 856,
@@ -10171,7 +10171,7 @@
     "en_released": 1737662400000,
     "jp_released": 1705978800000,
     "jp_name": "スクリーンに照らされて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 857,
@@ -10180,7 +10180,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1737673200000,
     "jp_released": 1705989600000,
     "jp_name": "肉はパワーの源！"
@@ -10192,7 +10192,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1737673200000,
     "jp_released": 1705989600000,
     "jp_name": "みんなで映画鑑賞会☆"
@@ -10267,7 +10267,7 @@
     "en_released": 1738364400000,
     "jp_released": 1706680800000,
     "jp_name": "モデルへの挑戦！",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 865,
@@ -10277,7 +10277,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1738364400000,
     "jp_released": 1706680800000,
     "jp_name": "セカイでフォトコンテスト！"
@@ -10304,7 +10304,7 @@
     "en_released": 1739217600000,
     "jp_released": 1707534000000,
     "jp_name": "導く決意",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 868,
@@ -10316,7 +10316,7 @@
     "en_released": 1739217600000,
     "jp_released": 1707534000000,
     "jp_name": "ゆっくりで大丈夫だから",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 869,
@@ -10329,7 +10329,7 @@
     "en_released": 1739217600000,
     "jp_released": 1707534000000,
     "jp_name": "どっちに賛成！？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 870,
@@ -10338,7 +10338,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1739228400000,
     "jp_released": 1707544800000,
     "jp_name": "喜ぶ顔を思い浮かべて"
@@ -10350,7 +10350,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1739228400000,
     "jp_released": 1707544800000,
     "jp_name": "リーダーにしてほしいこと？"
@@ -10377,7 +10377,7 @@
     "en_released": 1740081600000,
     "jp_released": 1708398000000,
     "jp_name": "胸に刺さる本音",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 874,
@@ -10389,7 +10389,7 @@
     "en_released": 1740081600000,
     "jp_released": 1708398000000,
     "jp_name": "驚きの築年数",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 875,
@@ -10402,7 +10402,7 @@
     "en_released": 1740081600000,
     "jp_released": 1708398000000,
     "jp_name": "軌跡感じる傷痕",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 876,
@@ -10411,7 +10411,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1740092400000,
     "jp_released": 1708408800000,
     "jp_name": "気配りは笑顔とともに"
@@ -10423,7 +10423,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1740092400000,
     "jp_released": 1708408800000,
     "jp_name": "楽しいレイアウト作り"
@@ -10471,7 +10471,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1740783600000,
     "jp_released": 1709186400000,
     "jp_name": "こんなのもあったよ！"
@@ -10483,7 +10483,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1740783600000,
     "jp_released": 1709186400000,
     "jp_name": "言葉だけでも伝えて"
@@ -10556,7 +10556,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1741492800000,
     "jp_released": 1709895600000,
     "jp_name": "見守ってきた想い"
@@ -10583,7 +10583,7 @@
     "en_released": 1742670000000,
     "jp_released": 1711076400000,
     "jp_name": "枷は、鍵に",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 891,
@@ -10595,7 +10595,7 @@
     "en_released": 1742670000000,
     "jp_released": 1711076400000,
     "jp_name": "夜道を揺られて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 892,
@@ -10608,7 +10608,7 @@
     "en_released": 1742670000000,
     "jp_released": 1711076400000,
     "jp_name": "大事だからこそ",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 893,
@@ -10618,7 +10618,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1742680800000,
     "jp_released": 1711087200000,
     "jp_name": "困難を支えて"
@@ -10630,7 +10630,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1742680800000,
     "jp_released": 1711087200000,
     "jp_name": "たくさん話すね！"
@@ -10715,7 +10715,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1743372000000,
     "jp_released": 1711778400000,
     "jp_name": "遊び疲れて"
@@ -10727,7 +10727,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1743372000000,
     "jp_released": 1711778400000,
     "jp_name": "掘り出し物発見！"
@@ -10742,7 +10742,7 @@
     "en_released": 1744311600000,
     "jp_released": 1712718000000,
     "jp_name": "絵から見えた想い",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 904,
@@ -10754,7 +10754,7 @@
     "en_released": 1744311600000,
     "jp_released": 1712718000000,
     "jp_name": "穏やかな身支度",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 905,
@@ -10767,7 +10767,7 @@
     "en_released": 1744311600000,
     "jp_released": 1712718000000,
     "jp_name": "楽しそうな個展",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 906,
@@ -10776,7 +10776,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1744322400000,
     "jp_released": 1712728800000,
     "jp_name": "慣れない早起き"
@@ -10788,7 +10788,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1744322400000,
     "jp_released": 1712728800000,
     "jp_name": "キミに食べてほしい味"
@@ -10815,7 +10815,7 @@
     "en_released": 1745175600000,
     "jp_released": 1713582000000,
     "jp_name": "ひとりになった部屋",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 910,
@@ -10827,7 +10827,7 @@
     "en_released": 1745175600000,
     "jp_released": 1713582000000,
     "jp_name": "差し入れを持って",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 911,
@@ -10840,7 +10840,7 @@
     "en_released": 1745175600000,
     "jp_released": 1713582000000,
     "jp_name": "私達の在りかた",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 912,
@@ -10849,7 +10849,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1745186400000,
     "jp_released": 1713592800000,
     "jp_name": "行き詰まった夜に"
@@ -10861,7 +10861,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1745186400000,
     "jp_released": 1713592800000,
     "jp_name": "みんな仲良しが一番♪"
@@ -10922,7 +10922,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "Vivid BAD SQUAD",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1746050400000,
     "jp_released": 1714456800000,
     "jp_name": "あなたの胸の中を"
@@ -10934,7 +10934,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1746050400000,
     "jp_released": 1714456800000,
     "jp_name": "二度と見失わないように"
@@ -11007,7 +11007,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1746846000000,
     "jp_released": 1715252400000,
     "jp_name": "謎の道、発見！？"
@@ -11034,7 +11034,7 @@
     "en_released": 1748026800000,
     "jp_released": 1716433200000,
     "jp_name": "天下を笑う者",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 928,
@@ -11046,7 +11046,7 @@
     "en_released": 1748026800000,
     "jp_released": 1716433200000,
     "jp_name": "スター目指して全力ダッシュ！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 929,
@@ -11059,7 +11059,7 @@
     "en_released": 1748026800000,
     "jp_released": 1716433200000,
     "jp_name": "一緒に特訓！",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 930,
@@ -11068,7 +11068,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1748037600000,
     "jp_released": 1716444000000,
     "jp_name": "天狗の太刀さばき"
@@ -11080,7 +11080,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1748037600000,
     "jp_released": 1716444000000,
     "jp_name": "常盤御前の想いを知るために"
@@ -11141,7 +11141,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1748728800000,
     "jp_released": 1717135200000,
     "jp_name": "笑みもこぼれるおもしろトーク？"
@@ -11153,7 +11153,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1748728800000,
     "jp_released": 1717135200000,
     "jp_name": "譲り受けたチケット"
@@ -11168,7 +11168,7 @@
     "en_released": 1749582000000,
     "jp_released": 1717988400000,
     "jp_name": "心に近づいて、一緒に",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 939,
@@ -11180,7 +11180,7 @@
     "en_released": 1749582000000,
     "jp_released": 1717988400000,
     "jp_name": "お料理で元気をお届け♪",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 940,
@@ -11193,7 +11193,7 @@
     "en_released": 1749582000000,
     "jp_released": 1717988400000,
     "jp_name": "最高のステージにするために",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 941,
@@ -11202,7 +11202,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1749592800000,
     "jp_released": 1717999200000,
     "jp_name": "プロの知恵を貸し合って"
@@ -11215,7 +11215,7 @@
     "unit": "Virtual Singers",
     "attribute": "Pure",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1749592800000,
     "jp_released": 1717999200000,
     "jp_name": "個性をもっと輝かせて"
@@ -11230,7 +11230,7 @@
     "en_released": 1750446000000,
     "jp_released": 1718852400000,
     "jp_name": "あたたかい手",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 944,
@@ -11242,7 +11242,7 @@
     "en_released": 1750446000000,
     "jp_released": 1718852400000,
     "jp_name": "直接伝えたくて",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 945,
@@ -11255,7 +11255,7 @@
     "en_released": 1750446000000,
     "jp_released": 1718852400000,
     "jp_name": "初めての轟音",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 946,
@@ -11264,7 +11264,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1750456800000,
     "jp_released": 1718863200000,
     "jp_name": "伝わる想いと努力"
@@ -11276,7 +11276,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1750456800000,
     "jp_released": 1718863200000,
     "jp_name": "平穏な夜を願って"
@@ -11361,7 +11361,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1751320800000,
     "jp_released": 1719727200000,
     "jp_name": "あなたに話したいこと"
@@ -11373,7 +11373,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1751320800000,
     "jp_released": 1719727200000,
     "jp_name": "もう少しだけ、この空気を"
@@ -11388,7 +11388,7 @@
     "en_released": 1752087600000,
     "jp_released": 1720494000000,
     "jp_name": "格別のひと時",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 957,
@@ -11400,7 +11400,7 @@
     "en_released": 1752087600000,
     "jp_released": 1720494000000,
     "jp_name": "クールな悪役？",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 958,
@@ -11413,7 +11413,7 @@
     "en_released": 1752098400000,
     "jp_released": 1720494000000,
     "jp_name": "火の見やぐらの上から",
-    "card_type": ""
+    "card_type": "permanent"
   },
   {
     "id": 959,
@@ -11422,7 +11422,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1752098400000,
     "jp_released": 1720504800000,
     "jp_name": "泥棒さんにご注意を！"
@@ -11434,7 +11434,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1752098400000,
     "jp_released": 1720504800000,
     "jp_name": "江戸の町並みに飲まれて"
@@ -11495,7 +11495,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "Leo/Need",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1752807600000,
     "jp_released": 1721214000000,
     "jp_name": "始まりの場所として"
@@ -11568,7 +11568,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1753999200000,
     "jp_released": 1722405600000,
     "jp_name": "届けたい気持ちをのせて！"
@@ -11580,7 +11580,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1753999200000,
     "jp_released": 1722405600000,
     "jp_name": "もっと輝きたいから"
@@ -11594,7 +11594,7 @@
     "attribute": "Mysterious",
     "jp_released": 1723172400000,
     "jp_name": "憧れを共に",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1754766000000
   },
   {
@@ -11606,7 +11606,7 @@
     "attribute": "Mysterious",
     "jp_released": 1723172400000,
     "jp_name": "試練！マウスピース",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1754766000000
   },
   {
@@ -11618,7 +11618,7 @@
     "attribute": "Mysterious",
     "jp_released": 1723172400000,
     "jp_name": "笑顔は標準装備で",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1754766000000
   },
   {
@@ -11628,7 +11628,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1754776800000,
     "jp_released": 1723183200000,
     "jp_name": "思いがけないペアチケット"
@@ -11640,7 +11640,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1754776800000,
     "jp_released": 1723183200000,
     "jp_name": "懐かしの連弾"
@@ -11796,7 +11796,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1756677600000,
     "jp_released": 1725084000000,
     "jp_name": "想い込めるひと針"
@@ -11808,7 +11808,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1756677600000,
     "jp_released": 1725084000000,
     "jp_name": "ハッピー肝試しを目指して！"
@@ -11834,7 +11834,7 @@
     "attribute": "Happy",
     "jp_released": 1725937200000,
     "jp_name": "応援を翼に",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1757530800000
   },
   {
@@ -11846,7 +11846,7 @@
     "attribute": "Happy",
     "jp_released": 1725937200000,
     "jp_name": "大会のあとは大盛りで",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1757530800000
   },
   {
@@ -11858,7 +11858,7 @@
     "attribute": "Happy",
     "jp_released": 1725937200000,
     "jp_name": "仲良しトレーニング！",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1757530800000
   },
   {
@@ -11869,7 +11869,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1757541600000,
     "jp_released": 1725948000000,
     "jp_name": "夢に近づくトレーニング♪"
@@ -11881,7 +11881,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1757541600000,
     "jp_released": 1725948000000,
     "jp_name": "決して後悔のないように"
@@ -11895,7 +11895,7 @@
     "attribute": "Mysterious",
     "jp_released": 1726801200000,
     "jp_name": "ミクとの出会い",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1758394800000
   },
   {
@@ -11907,7 +11907,7 @@
     "attribute": "Mysterious",
     "jp_released": 1726801200000,
     "jp_name": "あの日の憧れ",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1758394800000
   },
   {
@@ -11920,7 +11920,7 @@
     "sub_unit": "Leo/Need",
     "jp_released": 1726801200000,
     "jp_name": "サイダーに囲まれて",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1758394800000
   },
   {
@@ -11930,7 +11930,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1758405600000,
     "jp_released": 1726812000000,
     "jp_name": "ドラムの楽しさに触れて"
@@ -11942,7 +11942,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1758405600000,
     "jp_released": 1726812000000,
     "jp_name": "変わることのない想い"
@@ -12026,7 +12026,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1759269600000,
     "jp_released": 1727676000000,
     "jp_name": "レッツ・買い出し！"
@@ -12052,7 +12052,7 @@
     "attribute": "Cute",
     "jp_released": 1728723600000,
     "jp_name": "失われてしまったもの",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1760295600000
   },
   {
@@ -12064,7 +12064,7 @@
     "attribute": "Cute",
     "jp_released": 1728723600000,
     "jp_name": "痛いほどの夕暮れの中",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1760295600000
   },
   {
@@ -12077,7 +12077,7 @@
     "sub_unit": "Nightcord at 25:00",
     "jp_released": 1728723600000,
     "jp_name": "零度の諍い",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1760295600000
   },
   {
@@ -12087,7 +12087,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1760306400000,
     "jp_released": 1728723600000,
     "jp_name": "本気のイカ焼きを味わって"
@@ -12099,7 +12099,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1760306400000,
     "jp_released": 1728723600000,
     "jp_name": "とある忘れもの"
@@ -12113,7 +12113,7 @@
     "attribute": "Cool",
     "jp_released": 1729479600000,
     "jp_name": "燻る想い",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1761073200000
   },
   {
@@ -12125,7 +12125,7 @@
     "attribute": "Cool",
     "jp_released": 1729479600000,
     "jp_name": "相応しくあれるように",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1761073200000
   },
   {
@@ -12137,7 +12137,7 @@
     "attribute": "Cool",
     "jp_released": 1729479600000,
     "jp_name": "目指せ、英語マスター！",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1761073200000
   },
   {
@@ -12151,7 +12151,7 @@
     "en_released": 1761084000000,
     "jp_released": 1729490400000,
     "jp_name": "『熱さ』を求めるキミに",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 1020,
@@ -12163,7 +12163,7 @@
     "en_released": 1761084000000,
     "jp_released": 1729490400000,
     "jp_name": "見えずともそこにあるもの",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 1021,
@@ -12221,7 +12221,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "Leo/Need",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1761948000000,
     "jp_released": 1730354400000,
     "jp_name": "不屈のアイドル魂"
@@ -12233,7 +12233,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1761948000000,
     "jp_released": 1730354400000,
     "jp_name": "本番を待ちながら"
@@ -12259,7 +12259,7 @@
     "attribute": "Mysterious",
     "jp_released": 1731207600000,
     "jp_name": "夕景、秋風に吹かれて",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1762804800000
   },
   {
@@ -12271,7 +12271,7 @@
     "attribute": "Mysterious",
     "jp_released": 1731207600000,
     "jp_name": "あなたと至福のひとときを",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1762804800000
   },
   {
@@ -12284,7 +12284,7 @@
     "sub_unit": "Leo/Need",
     "jp_released": 1731207600000,
     "jp_name": "夢も膨らむ山盛りブドウ",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1762804800000
   },
   {
@@ -12294,7 +12294,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1762815600000,
     "jp_released": 1731207600000,
     "jp_name": "寝顔も寝言も"
@@ -12306,7 +12306,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1762815600000,
     "jp_released": 1731207600000,
     "jp_name": "わくわくお土産タイム"
@@ -12332,7 +12332,7 @@
     "attribute": "Pure",
     "jp_released": 1732071600000,
     "jp_name": "揺るぎない瞳",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1763668800000
   },
   {
@@ -12344,7 +12344,7 @@
     "attribute": "Pure",
     "jp_released": 1732071600000,
     "jp_name": "夢の中でもお勉強？",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1763668800000
   },
   {
@@ -12357,7 +12357,7 @@
     "sub_unit": "Wonderlands x Showtime",
     "jp_released": 1732071600000,
     "jp_name": "エール☆フォー☆ユー！",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1763668800000
   },
   {
@@ -12367,7 +12367,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1763679600000,
     "jp_released": 1732082400000,
     "jp_name": "桔梗組のレッスン"
@@ -12379,7 +12379,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1763679600000,
     "jp_released": 1732082400000,
     "jp_name": "海中ショーへご招待！"
@@ -12428,7 +12428,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1764543600000,
     "jp_released": 1732935600000,
     "jp_name": "まだ何も知らない"
@@ -12440,7 +12440,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1764543600000,
     "jp_released": 1732935600000,
     "jp_name": "待ち人は遠く"
@@ -12466,7 +12466,7 @@
     "attribute": "Happy",
     "jp_released": 1733886000000,
     "jp_name": "揺るがぬ覚悟の輝き",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1765483200000
   },
   {
@@ -12478,7 +12478,7 @@
     "attribute": "Happy",
     "jp_released": 1733886000000,
     "jp_name": "言葉にならない感動",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1765483200000
   },
   {
@@ -12491,7 +12491,7 @@
     "sub_unit": "MORE MORE JUMP!",
     "jp_released": 1733886000000,
     "jp_name": "感じ取った眼光",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1765483200000
   },
   {
@@ -12501,7 +12501,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1765494000000,
     "jp_released": 1733896800000,
     "jp_name": "真心を尽くして"
@@ -12513,7 +12513,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1765494000000,
     "jp_released": 1733896800000,
     "jp_name": "ひとりのファンとして"
@@ -12527,7 +12527,7 @@
     "attribute": "Pure",
     "jp_released": 1734750000000,
     "jp_name": "サンタさんに会うぞ！大作戦",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1766347200000
   },
   {
@@ -12539,7 +12539,7 @@
     "attribute": "Pure",
     "jp_released": 1734750000000,
     "jp_name": "待ちきれないショーだから",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1766347200000
   },
   {
@@ -12552,7 +12552,7 @@
     "sub_unit": "Vivid BAD SQUAD",
     "jp_released": 1734750000000,
     "jp_name": "興味津々ランタン作り！",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1766347200000
   },
   {
@@ -12562,7 +12562,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1766358000000,
     "jp_released": 1734750000000,
     "jp_name": "白熱！雪合戦！"
@@ -12574,7 +12574,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1766358000000,
     "jp_released": 1734750000000,
     "jp_name": "わくわく♪お菓子の町づくり！"
@@ -12671,7 +12671,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1767222000000,
     "jp_released": 1735624800000,
     "jp_name": "新たなる挑戦"
@@ -12683,7 +12683,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1767222000000,
     "jp_released": 1735624800000,
     "jp_name": "25時の年はじめ"
@@ -12709,7 +12709,7 @@
     "attribute": "Happy",
     "jp_released": 1736564400000,
     "jp_name": "異国の街角で",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1768161600000
   },
   {
@@ -12721,7 +12721,7 @@
     "attribute": "Happy",
     "jp_released": 1736564400000,
     "jp_name": "精一杯のひと口",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1768161600000
   },
   {
@@ -12734,7 +12734,7 @@
     "sub_unit": "Vivid BAD SQUAD",
     "jp_released": 1736564400000,
     "jp_name": "ビッグな朝食",
-    "card_type": "",
+    "card_type": "permanent",
     "en_released": 1768161600000
   },
   {
@@ -12744,7 +12744,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1768172400000,
     "jp_released": 1736575200000,
     "jp_name": "機内からの景色"
@@ -12756,7 +12756,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1768172400000,
     "jp_released": 1736575200000,
     "jp_name": "トラブルの裏で"
@@ -13093,7 +13093,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
     "jp_name": "鏡の中の、見知らぬわたし",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1737428400000,
     "en_released": 1769025600000
   },
@@ -13105,7 +13105,7 @@
     "unit": "Leo/Need",
     "attribute": "Cool",
     "jp_name": "あふれる感謝！",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1737428400000,
     "en_released": 1769025600000
   },
@@ -13118,7 +13118,7 @@
     "attribute": "Cool",
     "sub_unit": "Nightcord at 25:00",
     "jp_name": "おめかしは難しい",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1737428400000,
     "en_released": 1769025600000
   },
@@ -13129,7 +13129,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1769036400000,
     "jp_released": 1737439200000,
     "jp_name": "アメリカンスタイル？"
@@ -13141,7 +13141,7 @@
     "rarity": 2,
     "unit": "Leo/Need",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1769036400000,
     "jp_released": 1737439200000,
     "jp_name": "かがやきを描いて"
@@ -13214,7 +13214,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1769900400000,
     "jp_released": 1738303200000,
     "jp_name": "楽しい刺繍の時間"
@@ -13226,7 +13226,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1769900400000,
     "jp_released": 1738303200000,
     "jp_name": "モアモアハウスのサプライズ"
@@ -13251,7 +13251,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
     "jp_name": "突きつけられた現実",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1739156400000,
     "en_released": 1770753600000
   },
@@ -13263,7 +13263,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
     "jp_name": "真剣会議！",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1739156400000,
     "en_released": 1770753600000
   },
@@ -13276,7 +13276,7 @@
     "attribute": "Mysterious",
     "sub_unit": "MORE MORE JUMP!",
     "jp_name": "後悔も包み込んで",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1739156400000,
     "en_released": 1770753600000
   },
@@ -13287,7 +13287,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1770764400000,
     "jp_released": 1739167200000,
     "jp_name": "お試しスキンケア"
@@ -13299,7 +13299,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1770764400000,
     "jp_released": 1739167200000,
     "jp_name": "お料理配信準備中"
@@ -13396,7 +13396,7 @@
     "unit": "Leo/Need",
     "attribute": "Cute",
     "jp_name": "思い出の絵本をめくって",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1740020400000,
     "en_released": 1771617600000
   },
@@ -13408,7 +13408,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Cute",
     "jp_name": "スクリーンに映る尻尾",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1740020400000,
     "en_released": 1771617600000
   },
@@ -13421,7 +13421,7 @@
     "attribute": "Cute",
     "sub_unit": "Leo/Need",
     "jp_name": "内緒のウィンク！",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1740020400000,
     "en_released": 1771617600000
   },
@@ -13432,7 +13432,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1771628400000,
     "jp_released": 1740031200000,
     "jp_name": "褒め言葉はストレートに"
@@ -13444,7 +13444,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1771628400000,
     "jp_released": 1740031200000,
     "jp_name": "演出家のこだわり"
@@ -13493,7 +13493,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1772316000000,
     "jp_released": 1740722400000,
     "jp_name": "もっとぎゅーっと仲良し♪"
@@ -13506,7 +13506,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "sub_unit": "Wonderlands x Showtime",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1772316000000,
     "jp_released": 1740722400000,
     "jp_name": "とっておきのアイディア"
@@ -13531,7 +13531,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
     "jp_name": "ヒーローからヒーローへ",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1741575600000,
     "en_released": 1773169200000
   },
@@ -13543,7 +13543,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
     "jp_name": "いたずら姉妹、参上！",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1741575600000,
     "en_released": 1773169200000
   },
@@ -13555,7 +13555,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
     "jp_name": "ドーナツとピース！",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1741575600000,
     "en_released": 1773169200000
   },
@@ -13566,7 +13566,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1773180000000,
     "jp_released": 1741586400000,
     "jp_name": "かわいいを身につけて"
@@ -13581,7 +13581,7 @@
     "en_released": 1773180000000,
     "jp_released": 1741586400000,
     "jp_name": "お友達になれるかな？",
-    "card_type": "event"
+    "card_type": "permanent"
   },
   {
     "id": 1138,
@@ -13603,7 +13603,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
     "jp_name": "見えない音",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1742439600000,
     "en_released": 1774033200000
   },
@@ -13615,7 +13615,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
     "jp_name": "静寂のキッチン",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1742439600000,
     "en_released": 1774033200000
   },
@@ -13627,7 +13627,7 @@
     "unit": "Nightcord at 25:00",
     "attribute": "Cool",
     "jp_name": "バッグいっぱいの想い",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1742439600000,
     "en_released": 1774033200000
   },
@@ -13639,7 +13639,7 @@
     "unit": "Virtual Singers",
     "attribute": "Happy",
     "sub_unit": "Nightcord at 25:00",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1774044000000,
     "jp_released": 1742450400000,
     "jp_name": "届かない声"
@@ -13651,7 +13651,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1774044000000,
     "jp_released": 1742450400000,
     "jp_name": "“みんな”で打ち上げ"
@@ -13724,7 +13724,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1774908000000,
     "jp_released": 1743314400000,
     "jp_name": "夢みたいに楽しい時間を"
@@ -13737,7 +13737,7 @@
     "unit": "Virtual Singers",
     "attribute": "Mysterious",
     "sub_unit": "Leo/Need",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1774908000000,
     "jp_released": 1743314400000,
     "jp_name": "緊張をほぐすおまじない"
@@ -13810,7 +13810,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
     "jp_name": "凛と、未来を語って",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1745290800000,
     "en_released": 1776884400000
   },
@@ -13822,7 +13822,7 @@
     "unit": "Wonderlands x Showtime",
     "attribute": "Mysterious",
     "jp_name": "ステップに想いをのせて",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1745290800000,
     "en_released": 1776884400000
   },
@@ -13835,7 +13835,7 @@
     "attribute": "Mysterious",
     "sub_unit": "Wonderlands x Showtime",
     "jp_name": "寄り添う微笑み",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1745290800000,
     "en_released": 1776884400000
   },
@@ -13846,7 +13846,7 @@
     "rarity": 3,
     "unit": "Wonderlands x Showtime",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1776895200000,
     "jp_released": 1745301600000,
     "jp_name": "野菜押し付け現行犯"
@@ -13858,7 +13858,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1776895200000,
     "jp_released": 1745301600000,
     "jp_name": "魅惑の立ち振る舞い"
@@ -13919,7 +13919,7 @@
     "rarity": 3,
     "unit": "Nightcord at 25:00",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1777586400000,
     "jp_released": 1745992800000,
     "jp_name": "そばにいられるように"
@@ -13931,7 +13931,7 @@
     "rarity": 2,
     "unit": "Nightcord at 25:00",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1777586400000,
     "jp_released": 1745992800000,
     "jp_name": "お揃いを手に"
@@ -14028,7 +14028,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
     "jp_name": "届かない苦しさ",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1747969200000,
     "en_released": 1779562800000
   },
@@ -14040,7 +14040,7 @@
     "unit": "MORE MORE JUMP!",
     "attribute": "Happy",
     "jp_name": "一緒に振り返りタイム",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1747969200000,
     "en_released": 1779562800000
   },
@@ -14053,7 +14053,7 @@
     "attribute": "Happy",
     "sub_unit": "MORE MORE JUMP!",
     "jp_name": "レッツ・モアモアトレーニング！",
-    "card_type": "",
+    "card_type": "permanent",
     "jp_released": 1747969200000,
     "en_released": 1779562800000
   },
@@ -14064,7 +14064,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1779573600000,
     "jp_released": 1747980000000,
     "jp_name": "プロデュースのノウハウを求めて"
@@ -14076,7 +14076,7 @@
     "rarity": 2,
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1779573600000,
     "jp_released": 1747980000000,
     "jp_name": "頑張ってるみんなに癒しを"
@@ -14137,7 +14137,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1780264800000,
     "jp_released": 1748671200000,
     "jp_name": "その目に映る『世界』"
@@ -14149,7 +14149,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "en_released": 1780264800000,
     "jp_released": 1748671200000,
     "jp_name": "ワクワクとそわそわ"
@@ -14330,7 +14330,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Wonderlands x Showtime",
     "attribute": "Cool",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1751868000000,
     "en_released": 1783461600000,
     "jp_name": "目覚めを導く声"
@@ -14342,7 +14342,7 @@
     "rarity": 2,
     "unit": "Wonderlands x Showtime",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1751868000000,
     "en_released": 1783461600000,
     "jp_name": "気になる劇団"
@@ -14354,7 +14354,7 @@
     "rarity": 4,
     "unit": "Leo/Need",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1752548400000,
     "en_released": 1784142000000,
     "jp_name": "困惑は静寂に落ちて"
@@ -14366,7 +14366,7 @@
     "rarity": 4,
     "unit": "Leo/Need",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1752548400000,
     "en_released": 1784142000000,
     "jp_name": "ビー・ウィズ・ユー"
@@ -14379,7 +14379,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1752548400000,
     "en_released": 1784142000000,
     "jp_name": "お楽しみ委員の本領発揮♪"
@@ -14391,7 +14391,7 @@
     "rarity": 3,
     "unit": "Leo/Need",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1752559200000,
     "en_released": 1784152800000,
     "jp_name": "目覚めと共に"
@@ -14404,7 +14404,7 @@
     "unit": "Virtual Singers",
     "sub_unit": "Leo/Need",
     "attribute": "Happy",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1752559200000,
     "en_released": 1784152800000,
     "jp_name": "熱いコンセプト"
@@ -14428,7 +14428,7 @@
     "rarity": 4,
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1753239600000,
     "en_released": 1784833200000,
     "jp_name": "素直な想いを紡いで"
@@ -14440,7 +14440,7 @@
     "rarity": 4,
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1753239600000,
     "en_released": 1784833200000,
     "jp_name": "Fantastic！トレーニングルーム"
@@ -14452,7 +14452,7 @@
     "rarity": 4,
     "unit": "MORE MORE JUMP!",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1753239600000,
     "en_released": 1784833200000,
     "jp_name": "「ホッとする朝ごはん」"
@@ -14464,7 +14464,7 @@
     "rarity": 3,
     "unit": "MORE MORE JUMP!",
     "attribute": "Mysterious",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1753250400000,
     "en_released": 1784862000000,
     "jp_name": "愛莉のビューティーサロン"
@@ -14477,7 +14477,7 @@
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "sub_unit": "MORE MORE JUMP!",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1753250400000,
     "en_released": 1784862000000,
     "jp_name": "セカイのアイドルファン"
@@ -14538,7 +14538,7 @@
     "rarity": 3,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Pure",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1753941600000,
     "en_released": 1785535200000,
     "jp_name": "いつか未来の私へ"
@@ -14550,7 +14550,7 @@
     "rarity": 2,
     "unit": "Vivid BAD SQUAD",
     "attribute": "Cute",
-    "card_type": "event",
+    "card_type": "permanent",
     "jp_released": 1753941600000,
     "en_released": 1785535200000,
     "jp_name": "帰ってきた日常"
