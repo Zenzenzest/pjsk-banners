@@ -1,6 +1,6 @@
 import { useTheme } from "../../context/Theme_toggle";
 import { IsDeviceIpad } from "../../hooks/isIpad";
-import type { CardModalProps } from "../Global/Types";
+import type { CardModalProps } from "../Types";
 import CardReleases from "./Card_releases";
 
 export default function CardModal({

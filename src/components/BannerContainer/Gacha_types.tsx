@@ -1,3 +1,5 @@
+import type { Dispatch, SetStateAction } from 'react';
+
 export interface BannerTypes {
   id: number;
   name: string;
@@ -54,7 +56,7 @@ export interface EventCardsProps {
 export interface EventDetailsProps {
   event_id: number;
   loadedImages: Set<string>;
-  setLoadedImages: React.Dispatch<React.SetStateAction<Set<string>>>;
+  setLoadedImages: Dispatch<SetStateAction<string>>;
   handleCardClick: (card: AllCardTypes) => void;
   bannerCards: number[];
 }

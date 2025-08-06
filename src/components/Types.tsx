@@ -33,6 +33,7 @@ export type SelectedFilterTypes = {
   sub_unit: string[];
   Type: string[]
 };
+
 export type SelectedFilterTypesProps = {
   selectedFilters: SelectedFilterTypes;
 };
@@ -132,3 +133,10 @@ export interface CardGridPropType {
 export interface CardReleasesType {
   cardId: number;
 }
+
+export type BannerFilterTypes = {
+  "Banner Type": string[];
+  Characters: string[];
+  search: string;
+  characterFilterMode: "all" | "any";
+};

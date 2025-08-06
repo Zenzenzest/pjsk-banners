@@ -1,12 +1,11 @@
 import { useState, useEffect, useRef } from "react";
-import GlobalBanners from "../../../assets/json/en_banners.json";
-import JpBbanners from "../../../assets/json/jp_banners.json";
-import { useTheme } from "../../../context/Theme_toggle";
-
-import type { BannerTypes, ServerTimeData } from "../../Global/Types";
-import { useServer } from "../../../context/Server";
-import BannerContainer from "../../GachaContainer/Gacha_container";
-import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
+import GlobalBanners from "../../assets/json/en_banners.json";
+import JpBbanners from "../../assets/json/jp_banners.json";
+import { useTheme } from "../../context/Theme_toggle";
+import type { BannerTypes, ServerTimeData } from "../Types";
+import { useServer } from "../../context/Server";
+import BannerContainer from "../BannerContainer/Gacha_container";
+import WebsiteDisclaimer from "../Nav/Website_disclaimer";
 
 const months = [
   "Jan",
@@ -134,7 +133,7 @@ export default function DateTabs() {
       getDefaultValues();
     setSelectedYear(newDefaultYear);
     setSelectedMonth(newDefaultMonth);
- setYearMonthMemory({ [newDefaultYear]: newDefaultMonth }); 
+    setYearMonthMemory({ [newDefaultYear]: newDefaultMonth });
   }, [server]);
 
   // Auto-scroll when selectedYear changes

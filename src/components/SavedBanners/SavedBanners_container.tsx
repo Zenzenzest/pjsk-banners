@@ -2,8 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { useTheme } from "../../context/Theme_toggle";
 import { useServer } from "../../context/Server";
 import EnBanners from "../../assets/json/en_banners.json";
-import type { BannerTypes } from "../Global/Types";
-import BannerContainer from "../GachaContainer/Gacha_container";
+import type { BannerTypes } from "../Types";
+import BannerContainer from "../BannerContainer/Gacha_container";
 import WebsiteDisclaimer from "../Nav/Website_disclaimer";
 
 export default function SavedBannersContainer() {
@@ -25,15 +25,11 @@ export default function SavedBannersContainer() {
 
     updateSavedBanners();
 
-
-
     const handleStorageChange = (e: StorageEvent) => {
       if (e.key === "banners") {
         updateSavedBanners();
       }
     };
-
-
 
     const handleCustomStorageChange = () => {
       updateSavedBanners();

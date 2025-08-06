@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import type { EventEndedProps } from "../Global/Types";
+import type { EventEndedProps } from "../Types";
 import { useTheme } from "../../context/Theme_toggle";
 
 export default function EventEndedTimer({
@@ -16,7 +16,7 @@ export default function EventEndedTimer({
     };
 
     calculateDays();
-    const interval = setInterval(calculateDays, 60 * 60 * 1000); 
+    const interval = setInterval(calculateDays, 60 * 60 * 1000);
 
     return () => clearInterval(interval);
   }, [endDate]);

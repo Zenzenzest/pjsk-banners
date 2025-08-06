@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import type { CountdownProps } from "../Global/Types";
+import type { CountdownProps } from "../Types";
 import "./Countdown.css";
 import { useTheme } from "../../context/Theme_toggle";
 

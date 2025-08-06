@@ -2,27 +2,21 @@ import { useState, useEffect, useRef } from "react";
 import AllCards from "../../../assets/json/cards.json";
 import type {
   CardState,
-  SelectedFilterTypesProps,
+  SelectedCardFilterTypesProps,
   AllCardTypes,
-} from "../../Global/Types";
+} from "../FilterTabTypes";
 import CardModal from "../../Modal/Card_modal";
 import { useTheme } from "../../../context/Theme_toggle";
 import { useServer } from "../../../context/Server";
+import { cardTypeMapping } from "../Categories";
 import CardGrid from "./Card_grid";
+import Pagination from "../Filter_tab/Pagination";
 
-const cardTypeMapping = {
-  permanent: "Permanent",
-  limited: "Limited",
-  movie_exclusive: "Movie",
-  unit_limited: "Unit Limited",
-  color_fes: "ColorFes",
-  bloom_fes: "BloomFes",
-  limited_collab: "Collab",
-};
+
 
 export default function FilteredCards({
-  selectedFilters,
-}: SelectedFilterTypesProps) {
+  selectedCardFilters,
+}: SelectedCardFilterTypesProps) {
   const { theme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -82,24 +76,24 @@ export default function FilteredCards({
       }
     }
 
-    const hasCharacterFilter = selectedFilters.Character.length > 0;
-    const hasUnitFilter = selectedFilters.Unit.length > 0;
-    const hasSubUnitFilter = selectedFilters.sub_unit.length > 0;
-    const matchesCharacter = selectedFilters.Character.includes(card.character);
-    const matchesUnit = selectedFilters.Unit.includes(card.unit);
+    const hasCharacterFilter = selectedCardFilters.Character.length > 0;
+    const hasUnitFilter = selectedCardFilters.Unit.length > 0;
+    const hasSubUnitFilter = selectedCardFilters.sub_unit.length > 0;
+    const matchesCharacter = selectedCardFilters.Character.includes(card.character);
+    const matchesUnit = selectedCardFilters.Unit.includes(card.unit);
     const matchesSubUnit =
-      (card.sub_unit && selectedFilters.sub_unit.includes(card.sub_unit)) ||
+      (card.sub_unit && selectedCardFilters.sub_unit.includes(card.sub_unit)) ||
       !card.sub_unit;
     const matchesAttribute =
-      selectedFilters.Attribute.length === 0 ||
-      selectedFilters.Attribute.includes(card.attribute);
+      selectedCardFilters.Attribute.length === 0 ||
+      selectedCardFilters.Attribute.includes(card.attribute);
     const matchesRarity =
-      selectedFilters.Rarity.length === 0 ||
-      selectedFilters.Rarity.includes(card.rarity);
-    const hasCardTypeFilter = selectedFilters.Type.length > 0;
+      selectedCardFilters.Rarity.length === 0 ||
+      selectedCardFilters.Rarity.includes(card.rarity);
+    const hasCardTypeFilter = selectedCardFilters.Type.length > 0;
     const cardTypeKey = card.card_type as keyof typeof cardTypeMapping;
-    const matchesCardType = selectedFilters.Type.includes(
-      cardTypeMapping[cardTypeKey] 
+    const matchesCardType = selectedCardFilters.Type.includes(
+      cardTypeMapping[cardTypeKey]
     );
 
     let matchesCharacterOrUnit = false;
@@ -123,7 +117,7 @@ export default function FilteredCards({
       cardTypeMatch = matchesCardType;
     }
 
-    const searchTerm = selectedFilters.search.toLowerCase().trim();
+    const searchTerm = selectedCardFilters.search.toLowerCase().trim();
     const nameToSearch =
       server === "global" || server === "saved" ? card.name : card.jp_name;
     const nameMatch = nameToSearch?.toLowerCase().includes(searchTerm) || false;
@@ -141,7 +135,7 @@ export default function FilteredCards({
   const sortedCards = [...filteredCards].sort((a, b) => {
     const isGlobalServer = server === "global" || server === "saved";
     const isMovieFilter =
-      selectedFilters.Type.length === 1 && selectedFilters.Type[0] === "Movie";
+      selectedCardFilters.Type.length === 1 && selectedCardFilters.Type[0] === "Movie";
 
     if (sortOrder === "desc") {
       if (isGlobalServer && !isMovieFilter) {
@@ -161,7 +155,7 @@ export default function FilteredCards({
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedFilters, server, sortOrder]);
+  }, [selectedCardFilters, server, sortOrder]);
 
   // clculate pagination
   const totalPages = Math.ceil(sortedCards.length / cardsPerPage); // Use sortedCards, not filteredCards
@@ -212,38 +206,7 @@ export default function FilteredCards({
     setShouldScrollToTop(true);
   };
 
-  const generatePageNumbers = () => {
-    const pages = [];
-    const maxVisiblePages = 5;
-
-    if (totalPages <= maxVisiblePages) {
-      for (let i = 1; i <= totalPages; i++) {
-        pages.push(i);
-      }
-    } else {
-      const startPage = Math.max(
-        1,
-        currentPage - Math.floor(maxVisiblePages / 2)
-      );
-      const endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
-
-      if (startPage > 1) {
-        pages.push(1);
-        if (startPage > 2) pages.push("...");
-      }
-
-      for (let i = startPage; i <= endPage; i++) {
-        pages.push(i);
-      }
-
-      if (endPage < totalPages) {
-        if (endPage < totalPages - 1) pages.push("...");
-        pages.push(totalPages);
-      }
-    }
-
-    return pages;
-  };
+  
 
   if (filteredCards.length === 0) {
     return (
@@ -325,7 +288,6 @@ export default function FilteredCards({
         <div className="grid xs grid-cols-2 gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  sm:gap-4 md:gap-6">
           {currentCards.map((card, index) => {
             return (
-              // CARD CONTAINER
               <div
                 key={`${card.id}-${sortOrder}-${currentPage}-${index}`}
                 className={`flex flex-col items-center justify-center p-3 rounded-lg duration-200  ${
@@ -475,94 +437,7 @@ export default function FilteredCards({
 
       {/* PAGINATION CONTROLS */}
       {totalPages > 1 && (
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mt-5 mb-4 px-4">
-          <div
-            className={`text-sm mb-2 sm:hidden ${
-              theme === "light" ? "text-gray-600" : "text-gray-400"
-            }`}
-          >
-            Page {currentPage} of {totalPages}
-          </div>
-
-          <div className="flex items-center gap-1 sm:gap-2">
-            {/* PREVIOUS BUTTON */}
-            <button
-              onClick={() => handlePageChange(currentPage - 1)}
-              disabled={currentPage === 1}
-              className={`px-2 py-2 sm:px-3 text-sm rounded ${
-                currentPage === 1
-                  ? "opacity-50 cursor-not-allowed"
-                  : "hover:bg-opacity-80 active:scale-95"
-              } ${
-                theme === "dark"
-                  ? "bg-gray-700 text-white"
-                  : "bg-gray-200 text-gray-800"
-              }`}
-            >
-              <span className="hidden sm:inline">Previous</span>
-              <span className="sm:hidden">‹</span>
-            </button>
-
-            {/* PAGE NUMBERS - HIDDEN IN MOBILE*/}
-            <div className="flex items-center gap-1">
-              {generatePageNumbers().map((page, index) => {
-                // ON MOBILE - ONLY SHOW CURRENT PAGE
-                const isMobile = window.innerWidth < 640;
-                const shouldShowOnMobile =
-                  !isMobile ||
-                  page === currentPage ||
-                  page === currentPage - 1 ||
-                  page === currentPage + 1 ||
-                  page === 1 ||
-                  page === totalPages ||
-                  page === "...";
-
-                if (isMobile && !shouldShowOnMobile) return null;
-
-                return (
-                  <button
-                    key={index}
-                    onClick={() =>
-                      typeof page === "number" && handlePageChange(page)
-                    }
-                    disabled={page === "..."}
-                    className={`px-2 py-2 sm:px-3 text-sm rounded min-w-[32px] sm:min-w-[36px] ${
-                      page === currentPage
-                        ? theme === "dark"
-                          ? "bg-blue-600 text-white"
-                          : "bg-blue-500 text-white"
-                        : page === "..."
-                        ? "cursor-default"
-                        : theme === "dark"
-                        ? "bg-gray-700 text-white hover:bg-gray-600 active:scale-95"
-                        : "bg-gray-200 text-gray-800 hover:bg-gray-300 active:scale-95"
-                    }`}
-                  >
-                    {page}
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* NEXT BUTTOn*/}
-            <button
-              onClick={() => handlePageChange(currentPage + 1)}
-              disabled={currentPage === totalPages}
-              className={`px-2 py-2 sm:px-3 text-sm rounded ${
-                currentPage === totalPages
-                  ? "opacity-50 cursor-not-allowed"
-                  : "hover:bg-opacity-80 active:scale-95"
-              } ${
-                theme === "dark"
-                  ? "bg-gray-700 text-white"
-                  : "bg-gray-200 text-gray-800"
-              }`}
-            >
-              <span className="hidden sm:inline">Next</span>
-              <span className="sm:hidden">›</span>
-            </button>
-          </div>
-        </div>
+     <Pagination currentPage={currentPage} totalPages={totalPages} handlePageChange={handlePageChange} />
       )}
 
       <CardModal
