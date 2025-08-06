@@ -134,7 +134,7 @@ export default function DateTabs() {
       getDefaultValues();
     setSelectedYear(newDefaultYear);
     setSelectedMonth(newDefaultMonth);
-    setYearMonthMemory({});
+ setYearMonthMemory({ [newDefaultYear]: newDefaultMonth }); 
   }, [server]);
 
   // Auto-scroll when selectedYear changes
