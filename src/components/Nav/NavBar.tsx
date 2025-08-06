@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+
 import { useTheme } from "../../context/Theme_toggle";
 import { useServer } from "../../context/Server";
 import { useMemo, useCallback } from "react";
@@ -7,7 +7,7 @@ export default function NavBar() {
   const { server, setServer } = useServer();
   const { theme } = useTheme();
 
-  // Pre-compute base styles
+  // base styles
   const navStyles = useMemo(() => {
     const isLight = theme === "light";
     return {
@@ -25,7 +25,7 @@ export default function NavBar() {
     };
   }, [theme]);
 
-  // M button class generator
+  // button class generator
   const getButtonClass = useMemo(() => {
     const baseClass =
       "flex-1 text-center px-2 py-3 mx-1 rounded-md text-sm sm:text-base font-medium transition-colors mt-auto mb-auto";
@@ -35,7 +35,7 @@ export default function NavBar() {
       }`;
   }, [navStyles]);
 
-  //  event handlers
+
   const handleJPClick = useCallback(() => setServer("jp"), [setServer]);
   const handleGlobalClick = useCallback(() => setServer("global"), [setServer]);
   const handleSavedClick = useCallback(() => setServer("saved"), [setServer]);
@@ -59,7 +59,7 @@ export default function NavBar() {
       <nav className={navStyles.nav}>
         <div className="w-full max-w-6xl mx-auto px-4">
           <div className="flex justify-evenly">
-            {/* JP Server button */}
+            {/* JP SSERVER */}
             <button
               onClick={handleJPClick}
               className={jpClass}
@@ -69,7 +69,7 @@ export default function NavBar() {
               JP
             </button>
 
-            {/* Global Server button */}
+            {/* Global SERVER */}
             <button
               onClick={handleGlobalClick}
               className={globalClass}
@@ -79,7 +79,7 @@ export default function NavBar() {
               Global
             </button>
 
-            {/* Saved Banners button */}
+            {/* Saved BANNERS  */}
             <button
               onClick={handleSavedClick}
               className={savedClass}
@@ -92,7 +92,7 @@ export default function NavBar() {
           </div>
         </div>
       </nav>
-      <Outlet />
+    
     </>
   );
 }

@@ -1,10 +1,8 @@
 import { useEffect, useRef } from "react";
-import { Route, Routes, Navigate } from "react-router-dom";
-import Home from "./pages/Home";
 import NavBar from "./components/Nav/NavBar";
 import { ThemeProvider } from "./context/Theme_toggle";
-
 import { ServerProvider } from "./context/Server";
+import HomeContainer from "./components/Main_container";
 
 function App() {
   const didLog = useRef(false);
@@ -54,13 +52,8 @@ function App() {
     <div>
       <ThemeProvider>
         <ServerProvider>
-          <Routes>
-            <Route path="/" element={<NavBar />}>
-              <Route index element={<Home />} />
-
-              <Route path="*" element={<Navigate to="/" replace />} />
-            </Route>
-          </Routes>
+          <NavBar />
+          <HomeContainer />
         </ServerProvider>
       </ThemeProvider>
     </div>
