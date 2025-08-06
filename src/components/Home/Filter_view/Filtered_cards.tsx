@@ -19,6 +19,7 @@ const cardTypeMapping = {
   bloom_fes: "BloomFes",
   limited_collab: "Collab",
 };
+
 export default function FilteredCards({
   selectedFilters,
 }: SelectedFilterTypesProps) {
@@ -98,11 +99,11 @@ export default function FilteredCards({
     const hasCardTypeFilter = selectedFilters.Type.length > 0;
     const cardTypeKey = card.card_type as keyof typeof cardTypeMapping;
     const matchesCardType = selectedFilters.Type.includes(
-      cardTypeMapping[cardTypeKey] // Use the asserted key
+      cardTypeMapping[cardTypeKey] 
     );
 
     let matchesCharacterOrUnit = false;
-    if (!hasCharacterFilter && !hasUnitFilter ) {
+    if (!hasCharacterFilter && !hasUnitFilter) {
       matchesCharacterOrUnit = true;
     } else if (hasCharacterFilter && hasUnitFilter) {
       matchesCharacterOrUnit = matchesCharacter || matchesUnit;
@@ -119,7 +120,7 @@ export default function FilteredCards({
 
     let cardTypeMatch = true;
     if (hasCardTypeFilter) {
-      cardTypeMatch = matchesCardType
+      cardTypeMatch = matchesCardType;
     }
 
     const searchTerm = selectedFilters.search.toLowerCase().trim();
@@ -132,32 +133,53 @@ export default function FilteredCards({
       matchesAttribute &&
       matchesRarity &&
       nameMatch &&
-      subUnitMatch && cardTypeMatch
+      subUnitMatch &&
+      cardTypeMatch
     );
   });
 
-  // Sort by release time in global server not id
-  // because movie cards have higher id which will always show on top
   const sortedCards = [...filteredCards].sort((a, b) => {
-    return (server === "global" || server === "saved") && sortOrder === "desc"
-      ? b.en_released - a.en_released
-      : server === "jp" && sortOrder === "desc"
-      ? b.id - a.id
-      : a.id - b.id;
+    const isGlobalServer = server === "global" || server === "saved";
+    const isMovieFilter =
+      selectedFilters.Type.length === 1 && selectedFilters.Type[0] === "Movie";
+
+    if (sortOrder === "desc") {
+      if (isGlobalServer && !isMovieFilter) {
+        return b.en_released - a.en_released;
+      } else {
+        return b.id - a.id;
+      }
+    } else {
+      // ascending order
+      if (isGlobalServer && !isMovieFilter) {
+        return a.en_released - b.en_released;
+      } else {
+        return a.id - b.id;
+      }
+    }
   });
 
-  // Reset page on filter change
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedFilters, server]);
+  }, [selectedFilters, server, sortOrder]);
 
-  // pagination
-  const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
-  const startIndex = (currentPage - 1) * cardsPerPage;
+  // clculate pagination
+  const totalPages = Math.ceil(sortedCards.length / cardsPerPage); // Use sortedCards, not filteredCards
+
+  // Ensure currentPage doesn't exceed totalPages
+  const safePage = Math.min(currentPage, totalPages || 1);
+  const startIndex = (safePage - 1) * cardsPerPage;
   const endIndex = startIndex + cardsPerPage;
   const currentCards = sortedCards.slice(startIndex, endIndex);
 
-  //  scroll after content loads
+  // Update currentPage if it exceeds totalPages
+  useEffect(() => {
+    if (currentPage > totalPages && totalPages > 0) {
+      setCurrentPage(1);
+    }
+  }, [currentPage, totalPages]);
+
+  //  scroll after content load
   useEffect(() => {
     if (shouldScrollToTop) {
       //ensure DOM is updated
@@ -176,7 +198,7 @@ export default function FilteredCards({
             });
           }
           setShouldScrollToTop(false);
-        }, 100); // Small delay to ensure cards have finished rendering
+        }, 100); // Small delay to ensure cards finished rendering
       });
     }
   }, [currentPage, currentCards, shouldScrollToTop]);
@@ -254,8 +276,8 @@ export default function FilteredCards({
             theme === "light" ? "text-gray-600" : "text-gray-400"
           }`}
         >
-          Showing {startIndex + 1}-{Math.min(endIndex, filteredCards.length)} of{" "}
-          {filteredCards.length} cards
+          Showing {startIndex + 1}-{Math.min(endIndex, sortedCards.length)} of{" "}
+          {sortedCards.length} cards
         </div>
         <div>
           <button onClick={toggleSortOrder}>
@@ -301,11 +323,11 @@ export default function FilteredCards({
       {/* CARDS GRID*/}
       <div className="w-max[500px] h-max-[300px] px-2 sm:px-5  ">
         <div className="grid xs grid-cols-2 gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  sm:gap-4 md:gap-6">
-          {currentCards.map((card) => {
+          {currentCards.map((card, index) => {
             return (
               // CARD CONTAINER
               <div
-                key={card.id}
+                key={`${card.id}-${sortOrder}-${currentPage}-${index}`}
                 className={`flex flex-col items-center justify-center p-3 rounded-lg duration-200  ${
                   theme === "dark"
                     ? "bg-gray-800 hover:bg-gray-700"
