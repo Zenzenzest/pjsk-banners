@@ -2,51 +2,23 @@ import { useState, useEffect, useRef } from "react";
 import GlobalBanners from "../../assets/json/en_banners.json";
 import JpBbanners from "../../assets/json/jp_banners.json";
 import { useTheme } from "../../context/Theme_toggle";
-import type { BannerTypes, ServerTimeData } from "../Types";
+import type { BannerTypes, ServerTimeData } from "./DateTabTypes";
 import { useServer } from "../../context/Server";
-import BannerContainer from "../BannerContainer/Gacha_container";
+import BannerContainer from "../BannerContainer/Banner_Container";
 import WebsiteDisclaimer from "../Nav/Website_disclaimer";
-
-const months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
+import {
+  months,
+  years_global,
+  timeData_global,
+  years_jp,
+  timeData_jp,
+} from "./Time_data";
 
 export default function DateTabs() {
   const { theme } = useTheme();
   const { server } = useServer();
   const dateTabsRef = useRef<HTMLDivElement>(null);
   const yearScrollRef = useRef<HTMLDivElement>(null);
-
-  const years_global = [2021, 2022, 2023, 2024, 2025, 2026];
-  const timeData_global: ServerTimeData[] = [
-    { 2021: [11, 12] },
-    { 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-    { 2023: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-    { 2024: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-    { 2025: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-    { 2026: [1, 2, 3, 4, 5, 6, 7, 8] },
-  ];
-
-  const years_jp = [2020, 2021, 2022, 2023, 2024, 2025];
-  const timeData_jp: ServerTimeData[] = [
-    { 2020: [9, 10, 11, 12] },
-    { 2021: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-    { 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-    { 2023: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-    { 2024: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
-    { 2025: [1, 2, 3, 4, 5, 6, 7, 8] },
-  ];
 
   const years = server === "global" ? years_global : years_jp;
   const timeData = server === "global" ? timeData_global : timeData_jp;
@@ -103,7 +75,9 @@ export default function DateTabs() {
     Record<number, number>
   >({});
 
-  // Auto-scroll to selected year
+  // Auto-scroll to selected year on
+  // For mobile because mobile screen small
+  // Current year don't show up so need scroll
   const scrollToSelectedYear = () => {
     if (yearScrollRef.current && selectedYear) {
       const selectedButton = yearScrollRef.current.querySelector(
@@ -230,6 +204,7 @@ export default function DateTabs() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 py-1 pt-3 max-sm:px-2">
+        {/* YEAR */}
         <div className="mb-4">
           <div
             className={`p-4 rounded-xl ${

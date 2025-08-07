@@ -1,13 +1,15 @@
 import { useState, useEffect, useRef, useMemo } from "react";
-import { useServer } from "../../context/Server";
-import { useTheme } from "../../context/Theme_toggle";
-import EnBanners from "../../assets/json/en_banners.json";
-import JpBanners from "../../assets/json/jp_banners.json";
-import type { SelectedBannerFilterTypesProps, BannerTypes } from "./FilterTabTypes";
-import { characters } from "./Categories";
-import BannerContainer from "../BannerContainer/Gacha_container";
-import Pagination from "./Filter_tab/Pagination";
-
+import { useServer } from "../../../context/Server";
+import { useTheme } from "../../../context/Theme_toggle";
+import EnBanners from "../../../assets/json/en_banners.json";
+import JpBanners from "../../../assets/json/jp_banners.json";
+import type {
+  SelectedBannerFilterTypesProps,
+  BannerTypes,
+} from "../FilterTabTypes";
+import { characters } from "../Categories";
+import BannerContainer from "../../BannerContainer/Banner_Container";
+import Pagination from "../Ui/Pagination";
 
 export default function FilteredBanners({
   selectedBannerFilters,
@@ -53,18 +55,17 @@ export default function FilteredBanners({
       filtered = filtered.filter((banner) => {
         // Convert selected character names to their corresponding IDs
         const selectedCharacterIds = selectedBannerFilters.Characters.map(
-          (characterName:string) => {
+          (characterName: string) => {
             const index = characters.indexOf(characterName);
             return index !== -1 ? index + 1 : null;
           }
         ).filter((id) => id !== null);
 
-        // return if no valid character IDs 
+        // return if no valid character IDs
         if (selectedCharacterIds.length === 0) {
           return false;
         }
 
-      
         if (selectedBannerFilters.characterFilterMode === "all") {
           return selectedCharacterIds.every((characterId) =>
             banner.characters.includes(characterId)
@@ -125,13 +126,10 @@ export default function FilteredBanners({
     }
   }, [currentPage, currentBanners, shouldScrollToTop]);
 
-
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
     setShouldScrollToTop(true);
   };
-
-
 
   return (
     <div
@@ -202,9 +200,13 @@ export default function FilteredBanners({
       />
 
       {/** PAGINATION**/}
-           {totalPages > 1 && (
-          <Pagination currentPage={currentPage} totalPages={totalPages} handlePageChange={handlePageChange} />
-           )}
+      {totalPages > 1 && (
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          handlePageChange={handlePageChange}
+        />
+      )}
     </div>
   );
 }

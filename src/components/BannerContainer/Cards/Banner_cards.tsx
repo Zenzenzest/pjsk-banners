@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useTheme } from "../../../context/Theme_toggle";
 import AllCards from "../../../assets/json/cards.json";
-import type { CardsProps } from "../Gacha_types";
+import type { CardsProps } from "../BannerTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 
 export default function Cards({ banner, handleCardClick }: CardsProps) {

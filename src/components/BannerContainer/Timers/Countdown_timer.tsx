@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import type { CountdownProps } from "../Types";
+import type { CountdownProps } from "../BannerTypes";
 import "./Countdown.css";
-import { useTheme } from "../../context/Theme_toggle";
+import { useTheme } from "../../../context/Theme_toggle";
 
 export default function CountdownTimer({
   targetDate,

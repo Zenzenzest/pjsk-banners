@@ -103,3 +103,15 @@ export type PaginationProps = {
     totalPages: number;
     handlePageChange: (page: number) => void
 }
+
+
+export type CardThumbnailProps = {
+  card:AllCardTypes;
+
+}
+
+export type CardGridProps = {
+  mode: string;
+  cardId: number;
+  cardName: string;
+}

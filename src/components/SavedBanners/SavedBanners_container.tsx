@@ -3,7 +3,7 @@ import { useTheme } from "../../context/Theme_toggle";
 import { useServer } from "../../context/Server";
 import EnBanners from "../../assets/json/en_banners.json";
 import type { BannerTypes } from "../Types";
-import BannerContainer from "../BannerContainer/Gacha_container";
+import BannerContainer from "../BannerContainer/Banner_Container";
 import WebsiteDisclaimer from "../Nav/Website_disclaimer";
 
 export default function SavedBannersContainer() {

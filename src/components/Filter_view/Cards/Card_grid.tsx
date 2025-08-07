@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { ImageLoader } from "../../../hooks/imageLoader";
-import type { CardGridPropType } from "../../Types";
+import type { CardGridProps } from "../FilterTabTypes";
 
-export default function CardGrid({ mode, cardId, cardName }: CardGridPropType) {
+export default function CardGrid({ mode, cardId, cardName }: CardGridProps) {
   const thumbLoader = ImageLoader(1);
 
   useEffect(() => {

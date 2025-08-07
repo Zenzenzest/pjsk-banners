@@ -1,4 +1,4 @@
-import type { BannerStatusProps } from "./Gacha_types";
+import type { BannerStatusProps } from "./BannerTypes";
 
 export default function BannerStatus({
   bannerStatus,

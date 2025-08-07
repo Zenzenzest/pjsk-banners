@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AllCards from "../../../assets/json/cards.json";
 import { useTheme } from "../../../context/Theme_toggle";
-import type { EventCardsProps } from "../Gacha_types";
+import type { EventCardsProps } from "../BannerTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 export default function EventCards({
   bannerCards,

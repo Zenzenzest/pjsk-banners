@@ -1,19 +1,23 @@
 import { useState, useEffect, useRef } from "react";
 import { useTheme } from "../../context/Theme_toggle";
-import type { CardState, GachaBannersProps } from "../Types";
+
 import CardModal from "../Modal/Card_modal";
 import { useServer } from "../../context/Server";
 import Disclaimer from "./Disclaimer";
-
-import type { AllCardTypes, BannerTypes } from "./Gacha_types";
-import BannerTemplate from "./Banner_template";
+import type {
+  AllCardTypes,
+  BannerContainerProps,
+  BannerTypes,
+  CardState,
+} from "./BannerTypes";
+import Grid from "./Grid/Grid";
 
 export default function BannerContainer({
   filteredBanners,
   selectedYear,
   selectedMonth,
   parentRef,
-}: GachaBannersProps) {
+}: BannerContainerProps) {
   const { theme } = useTheme();
   const { server } = useServer();
   const [isOpen, setIsOpen] = useState(false);
@@ -90,6 +94,7 @@ export default function BannerContainer({
             selectedYear >= 2026)) ||
           server === "saved") && <Disclaimer />}
 
+{/* GRID */}
         <div className="pb-2 grid grid-cols-1 lg:grid-cols-2 gap-6">
           {filteredBanners.map((banner: BannerTypes) => {
             let mode = "";
@@ -115,7 +120,7 @@ export default function BannerContainer({
                             mode = "event";
                           }
                           return (
-                            <BannerTemplate
+                            <Grid
                               key={i}
                               banner={banner}
                               mode={mode}
@@ -126,7 +131,7 @@ export default function BannerContainer({
                     </div>
                   ) : (
                     <div className="">
-                      <BannerTemplate
+                      <Grid
                         banner={banner}
                         mode="gacha"
                         handleCardClick={handleCardClick}

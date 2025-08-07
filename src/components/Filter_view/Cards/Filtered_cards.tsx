@@ -9,10 +9,9 @@ import CardModal from "../../Modal/Card_modal";
 import { useTheme } from "../../../context/Theme_toggle";
 import { useServer } from "../../../context/Server";
 import { cardTypeMapping } from "../Categories";
-import CardGrid from "./Card_grid";
-import Pagination from "../Filter_tab/Pagination";
 
-
+import Pagination from "../Ui/Pagination";
+import CardThumbnail from "./Card_thumbnail";
 
 export default function FilteredCards({
   selectedCardFilters,
@@ -79,7 +78,9 @@ export default function FilteredCards({
     const hasCharacterFilter = selectedCardFilters.Character.length > 0;
     const hasUnitFilter = selectedCardFilters.Unit.length > 0;
     const hasSubUnitFilter = selectedCardFilters.sub_unit.length > 0;
-    const matchesCharacter = selectedCardFilters.Character.includes(card.character);
+    const matchesCharacter = selectedCardFilters.Character.includes(
+      card.character
+    );
     const matchesUnit = selectedCardFilters.Unit.includes(card.unit);
     const matchesSubUnit =
       (card.sub_unit && selectedCardFilters.sub_unit.includes(card.sub_unit)) ||
@@ -135,7 +136,8 @@ export default function FilteredCards({
   const sortedCards = [...filteredCards].sort((a, b) => {
     const isGlobalServer = server === "global" || server === "saved";
     const isMovieFilter =
-      selectedCardFilters.Type.length === 1 && selectedCardFilters.Type[0] === "Movie";
+      selectedCardFilters.Type.length === 1 &&
+      selectedCardFilters.Type[0] === "Movie";
 
     if (sortOrder === "desc") {
       if (isGlobalServer && !isMovieFilter) {
@@ -206,8 +208,6 @@ export default function FilteredCards({
     setShouldScrollToTop(true);
   };
 
-  
-
   if (filteredCards.length === 0) {
     return (
       <div
@@ -242,6 +242,7 @@ export default function FilteredCards({
           Showing {startIndex + 1}-{Math.min(endIndex, sortedCards.length)} of{" "}
           {sortedCards.length} cards
         </div>
+        {/* SORT TOGGLE BUTTON */}
         <div>
           <button onClick={toggleSortOrder}>
             {sortOrder === "desc" ? (
@@ -301,74 +302,7 @@ export default function FilteredCards({
                   onClick={() => handleCardClick(card)}
                   className="text-white rounded  hover:opacity-80 transition-opacity mb-2 w-full"
                 >
-                  {(card.rarity == 4 || card.rarity == 3) && (
-                    <div className="relative">
-                      <CardGrid
-                        mode="t"
-                        cardId={card.id}
-                        cardName={card.name}
-                      />
-                      <div className="absolute top-0 right-1">
-                        {Array(card.rarity)
-                          .fill(0)
-                          .map((_, i) => (
-                            <img
-                              key={i}
-                              src={`images/rarity_icons/${
-                                card.id === 1167 ? "un" : ""
-                              }trained_star.png`}
-                              style={{ width: "15px", display: "inline-block" }}
-                            />
-                          ))}
-                      </div>
-                    </div>
-                  )}
-                  {/* MIKU TOUHOU CARD THAT DOESNT HAVE TRAINED CARD FOR SOME REASON */}
-
-                  {card.rarity == 5 && (
-                    <div className="relative">
-                      <CardGrid
-                        mode="bd"
-                        cardId={card.id}
-                        cardName={card.name}
-                      />
-
-                      <img
-                        src="/images/rarity_icons/bday.png"
-                        style={{
-                          position: "absolute",
-                          bottom: 5,
-                          left: 5,
-                          width: "1.5rem",
-                        }}
-                      />
-                    </div>
-                  )}
-                  {card.rarity <= 2 && (
-                    <div className="relative">
-                      <CardGrid
-                        mode="u"
-                        cardId={card.id}
-                        cardName={card.name}
-                      />
-                      <div className="absolute top-0 left-1">
-                        {Array(card.rarity)
-                          .fill(0)
-                          .map((_, i) => {
-                            return (
-                              <img
-                                key={i}
-                                src="/images/rarity_icons/untrained_star.png"
-                                style={{
-                                  width: "15px",
-                                  display: "inline-block",
-                                }}
-                              />
-                            );
-                          })}
-                      </div>
-                    </div>
-                  )}
+                  <CardThumbnail card={card} />
                 </button>
                 {/* CARD DETAILS*/}
 
@@ -437,7 +371,11 @@ export default function FilteredCards({
 
       {/* PAGINATION CONTROLS */}
       {totalPages > 1 && (
-     <Pagination currentPage={currentPage} totalPages={totalPages} handlePageChange={handlePageChange} />
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          handlePageChange={handlePageChange}
+        />
       )}
 
       <CardModal

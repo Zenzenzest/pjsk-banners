@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import type { EventEndedProps } from "../Types";
-import { useTheme } from "../../context/Theme_toggle";
+import type { EventEndedProps } from "../BannerTypes";
+import { useTheme } from "../../../context/Theme_toggle";
 
 export default function EventEndedTimer({
   endDate,
