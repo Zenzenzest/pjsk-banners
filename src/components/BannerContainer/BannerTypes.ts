@@ -73,9 +73,9 @@ export type EventEndedProps = {
 
 export type BannerContainerProps = {
   filteredBanners: BannerTypes[];
-  selectedYear: number;
-  selectedMonth: number;
-  parentRef: React.RefObject<HTMLDivElement>;
+  selectedYear?: number;
+  selectedMonth?: number;
+  parentRef: React.RefObject<HTMLDivElement | null>;
 };
 
 export type CardState = {
