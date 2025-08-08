@@ -14554,5 +14554,65 @@
     "jp_released": 1753941600000,
     "en_released": 1785535200000,
     "jp_name": "帰ってきた日常"
+  },
+  {
+    "id": 1218,
+    "name": "Dreams Blend Into the Crowd",
+    "character": "Hanasato Minori",
+    "rarity": 4,
+    "unit": "MORE MORE JUMP!",
+    "attribute": "Cool",
+    "card_type": "unit_limited",
+    "jp_released": 1754622000000,
+    "en_released": 1786215600000,
+    "jp_name": "夢は雑踏に紛れて"
+  },
+  {
+    "id": 1219,
+    "name": "[Bonds Forged Through Encounters",
+    "character": "Kiritani Haruka",
+    "rarity": 4,
+    "unit": "MORE MORE JUMP!",
+    "attribute": "Cute",
+    "card_type": "unit_limited",
+    "jp_released": 1754622000000,
+    "en_released": 1786215600000,
+    "jp_name": "出逢い育む絆"
+  },
+  {
+    "id": 1220,
+    "name": "Special Collaboration Broadcast!",
+    "character": "Momoi Airi",
+    "rarity": 4,
+    "unit": "MORE MORE JUMP!",
+    "attribute": "Mysterious",
+    "card_type": "unit_limited",
+    "jp_released": 1754622000000,
+    "en_released": 1786215600000,
+    "jp_name": "スペシャルコラボ配信！"
+  },
+  {
+    "id": 1221,
+    "name": "Perfect Smile]",
+    "character": "Hinomori Shizuku",
+    "rarity": 4,
+    "unit": "MORE MORE JUMP!",
+    "attribute": "Pure",
+    "card_type": "unit_limited",
+    "jp_released": 1754622000000,
+    "en_released": 1786215600000,
+    "jp_name": "完璧な微笑"
+  },
+  {
+    "id": 1222,
+    "name": "Happy Birthday! 2026",
+    "character": "Hoshino Ichika",
+    "rarity": 5,
+    "unit": "Leo/Need",
+    "attribute": "Cute",
+    "card_type": "bday",
+    "jp_released": 1754838000000,
+    "en_released": 1786431600000,
+    "jp_name": "Happy Birthday！！2025"
   }
 ]

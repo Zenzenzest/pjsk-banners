@@ -6700,9 +6700,61 @@
     "cards": [537, 1099, 1067, 1112, 1124, 1158],
     "start": 1754276400000,
     "end": 1755097199000,
-    "en_id":544,
+    "en_id": 544,
     "banner_type": "Premium Gift",
     "characters": [21, 22, 23, 24, 25, 26],
     "keywords": ["persona"]
+  },
+  {
+    "id": 503,
+    "name": "Empty Teatimeガチャ",
+    "cards": [1218, 1219, 1220, 1221],
+    "start": 1754622000000,
+    "end": 1755831599000,
+    "banner_type": "Unit Limited Event",
+    "event_id": 176,
+    "en_id":545,
+    "characters": [5, 6, 7, 8],
+      "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "jump",
+      "world link",
+      "wl2",
+      "world link 2"
+    ]
+  },
+  {
+    "id": 504,
+    "name": "[星乃一歌]HAPPY BIRTHDAY2025ガチャ",
+    "cards": [1222,978,699,480],
+    "start": 1754838000000,
+    "end": 1755442799000,
+    "en_id":546,
+    "banner_type": "Birthday",
+    "characters": [1],
+    "keywords": []
+  },
+  {
+    "id": 505,
+    "name": "[復刻]あなたに届け♡Live Streamingガチャ",
+    "cards": [968, 969, 970],
+    "start": 1754967600000,
+    "end": 1755745199000,
+    "banner_type": "Limited Event Rerun",
+   "en_id":547,
+    "characters": [7, 6, 8],
+    "keywords": []
+  },
+  {
+    "id": 506,
+    "name": "[復刻]華の都へご招待ガチャ",
+    "cards": [796, 797, 798],
+    "start": 1754967600000,
+    "end": 1755745199000,  "en_id":548,
+    "banner_type": "Limited Event Rerun",
+    "characters": [15, 11, 23],
+    "keywords": []
   }
 ]

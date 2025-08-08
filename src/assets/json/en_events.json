@@ -3009,5 +3009,25 @@
     ],
     "event_type": "marathon",
     "type": "An 6th Focus Event"
+  },{
+    "id": 176,
+    "name": "All Ways Jump! With you",
+    "start": 1786244400000,
+    "end": 1787281199000,
+    "close": 1787435999000,
+    "unit": "mmj",
+
+    "cards": [1218,1219,1220,1221],
+    "keywords": [
+      "mmj",
+      "more more jump",
+      "momojan",
+      "jump",
+      "world link",
+      "wl2",
+      "world link 2"
+    ],
+    "event_type": "world_link",
+    "type": "MORE MORE JUMP! World Link 2"
   }
 ]
