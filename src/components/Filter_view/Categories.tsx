@@ -132,13 +132,12 @@ export const bannerFilterCategories = {
     "Event",
     "Bloom Festival",
     "Colorful Festival",
-    "Limited Collab",
+    "Collab",
     "Unit Limited Event",
     "Birthday",
   ],
   Characters: cardFilterCategories.Characters,
 };
-
 
 // For FilteredCards
 export const cardTypeMapping = {
