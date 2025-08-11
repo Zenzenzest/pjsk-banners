@@ -118,7 +118,7 @@ export default function WithoutEvent({
         )}
       </div>
       {/* SAVE BUTTON */}
-      {(server === "global" || server === "saved") && today < banner.start && (
+      {(server === "global" || server === "saved") && (today < banner.start || isBannerSaved(banner.id)) && (
         <button
           onClick={() => handleSaveBanner(banner.id)}
           className={`inline-flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${

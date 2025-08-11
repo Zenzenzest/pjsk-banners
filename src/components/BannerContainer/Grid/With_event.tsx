@@ -1,39 +1,34 @@
-import { useServer } from "../../../context/Server"; 
+import { useServer } from "../../../context/Server";
 import { useTheme } from "../../../context/Theme_toggle";
 import CountdownTimer from "../Timers/Countdown_timer";
 import EventEndedTimer from "../Timers/EventEnded_timer";
 import JpEvents from "../../../assets/json/jp_events.json";
 import EnEvents from "../../../assets/json/en_events.json";
-import JpBanners from '../../../assets/json/jp_banners.json'
+import JpBanners from "../../../assets/json/jp_banners.json";
 import BannerCards from "../Cards/Banner_cards";
 import EventCards from "../Cards/Event_cards";
 import BannerStatus from "../Status";
-import { ImageLoader } from "../../../hooks/imageLoader"; 
+import { ImageLoader } from "../../../hooks/imageLoader";
 import type { WithEventProps } from "../BannerTypes";
-
-
 
 export default function WithEvent({
   mode,
   banner,
   handleCardClick,
-  handleSaveBanner, 
-    isBannerSaved
+  handleSaveBanner,
+  isBannerSaved,
 }: WithEventProps) {
-  const { theme } = useTheme(); 
+  const { theme } = useTheme();
   const { server } = useServer();
-  const bannerLoader = ImageLoader(1); 
+  const bannerLoader = ImageLoader(1);
   const today = Date.now();
 
-
-
-  
   const EventObj =
     (server === "global" || server === "saved") && mode === "event"
       ? EnEvents.find((item) => item.id === banner.event_id)
       : JpEvents.find((item) => item.id === banner.event_id);
 
-  // Null check EventObj 
+  // Null check EventObj
   if (mode === "event" && !EventObj) {
     return (
       <div className="p-4 text-red-500">
@@ -41,7 +36,6 @@ export default function WithEvent({
       </div>
     );
   }
-
 
   const getBannerStatus = (item: { start: number; end: number }) => {
     const now = Date.now();
@@ -53,7 +47,6 @@ export default function WithEvent({
   };
 
   const bannerStatus = getBannerStatus(mode === "gacha" ? banner : EventObj!);
-
 
   const getStatusColor = (status: string) => {
     switch (status) {
@@ -102,7 +95,6 @@ export default function WithEvent({
     day: "numeric",
   });
 
-
   const gachaBannerImage =
     mode === "gacha"
       ? server === "global" || server === "saved"
@@ -111,7 +103,6 @@ export default function WithEvent({
       : server === "global" || server === "saved"
       ? `/images/en_events/${banner.event_id}.webp`
       : `/images/jp_events/${banner.event_id}.webp`;
-
 
   const handleImageError = (
     e: React.SyntheticEvent<HTMLImageElement, Event>
@@ -145,7 +136,7 @@ export default function WithEvent({
           )}
           <div className={`${bannerLoader.isLoaded ? "contents" : "hidden"}`}>
             <img
-              src={gachaBannerImage} 
+              src={gachaBannerImage}
               alt={
                 mode === "gacha"
                   ? banner.id.toString()
@@ -153,12 +144,12 @@ export default function WithEvent({
               }
               fetchPriority="high"
               className={`w-full h-auto`}
-              onError={handleImageError} 
+              onError={handleImageError}
               onLoad={bannerLoader.handleLoad}
             />
           </div>
         </div>
-        <BannerStatus bannerStatus={bannerStatus} statusColor={statusColor} /> 
+        <BannerStatus bannerStatus={bannerStatus} statusColor={statusColor} />
       </div>
       {/* NAME AND TYPE */}
       <div className="space-y-3">
@@ -168,14 +159,14 @@ export default function WithEvent({
               theme === "dark" ? "text-white" : "text-gray-900"
             }`}
           >
-            {mode === "gacha" ? banner.name : EventObj!.name} 
+            {mode === "gacha" ? banner.name : EventObj!.name}
           </h3>
           <p
             className={`text-xs sm:text-sm truncate ${
               theme === "dark" ? "text-gray-300" : "text-gray-500"
             }`}
           >
-            {mode === "gacha" ? banner.banner_type : EventObj!.type} 
+            {mode === "gacha" ? banner.banner_type : EventObj!.type}
           </p>
         </div>
         {/* BANNER CONFIRMED BADGE */}
@@ -227,7 +218,7 @@ export default function WithEvent({
                   />
                 </svg>
                 <span className="text-xs sm:text-sm">
-                  Start: {formattedStart} 
+                  Start: {formattedStart}
                 </span>
               </div>
               <div
@@ -250,7 +241,7 @@ export default function WithEvent({
                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <span className="text-xs sm:text-sm">End: {formattedEnd}</span> 
+                <span className="text-xs sm:text-sm">End: {formattedEnd}</span>
               </div>
             </div>
           )}
@@ -264,7 +255,7 @@ export default function WithEvent({
               banner.type !== "rerun_estimation" &&
               banner.event_id && (
                 <div className="flex justify-center">
-                  <CountdownTimer targetDate={startDate} mode="start" /> 
+                  <CountdownTimer targetDate={startDate} mode="start" />
                 </div>
               )}
             {/* RERUN ESTIMATION */}
@@ -285,7 +276,7 @@ export default function WithEvent({
             {/* ACTIVE/ENDED STATUS */}
             {today > Number(mode === "gacha" ? banner.end : EventObj!.end) && (
               <div className="flex justify-center">
-                <EventEndedTimer endDate={endDate} /> 
+                <EventEndedTimer endDate={endDate} />
               </div>
             )}
             {today >
@@ -301,13 +292,13 @@ export default function WithEvent({
         )}
         {/* SAVE BUTTON */}
         {(server === "global" || server === "saved") &&
-          today < banner.start &&
+          (today < banner.start || isBannerSaved(banner.id))   &&
           mode === "gacha" &&
           banner.event_id && (
             <button
               onClick={() => handleSaveBanner(banner.id)}
               className={`inline-flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                isBannerSaved(banner.id) 
+                isBannerSaved(banner.id)
                   ? theme === "dark"
                     ? "bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/20"
                     : "bg-red-50 hover:bg-red-100 text-red-600 border border-red-200"
