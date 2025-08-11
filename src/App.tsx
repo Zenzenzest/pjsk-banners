@@ -7,6 +7,14 @@ import HomeContainer from "./components/Main_container";
 function App() {
   const didLog = useRef(false);
   useEffect(() => {
+    const currentPath = window.location.pathname;
+  
+
+  const isImage = /\.(png|jpg|jpeg|gif|svg|ico|webp|bmp|tiff)$/i.test(currentPath);
+  
+  if (currentPath !== "/" && !isImage) {
+    window.history.replaceState(null, "", "/");
+  }
     const mizook = `،
 ⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⢂⠀⠉⠉⠉⠛⣿⠶⠊⠉⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠒⡶⣤⣈⣹⡓⣶⣭⣻⣻⢯⣯⣍⣙⠫⡟⢧⣌⠉⠉⠉⠉⠉⠀⠀⣁⣤⣤⠄⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠷⣿⣿⣿⣿⣿⣶⣈⣿⣿⣯⠀⡌⢻⣷⣄⠀⠀⢀⣠⠞⠁⢸⠛⠀⠀⠀⠀⠀⠀
