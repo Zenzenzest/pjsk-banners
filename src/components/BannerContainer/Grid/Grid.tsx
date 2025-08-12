@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useServer } from "../../../context/Server";
-import type { BannerTemplateProps } from "../BannerTypes";
+import type { GridProps } from "../BannerTypes";
 import JpEvents from "../../../assets/json/jp_events.json";
 import EnEvents from "../../../assets/json/en_events.json";
 
@@ -11,7 +11,8 @@ export default function Grid({
   banner,
   mode,
   handleCardClick,
-}: BannerTemplateProps) {
+  handleEventClick
+}: GridProps) {
   const [savedBanners, setSavedBanners] = useState<number[]>([]);
   const { server } = useServer();
 
@@ -103,6 +104,7 @@ export default function Grid({
         handleCardClick={handleCardClick}
         handleSaveBanner={handleSaveBanner}
         isBannerSaved={isBannerSaved}
+        handleEventClick={handleEventClick}
       />
 
       {/* SOLO */}

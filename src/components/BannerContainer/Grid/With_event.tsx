@@ -16,6 +16,7 @@ export default function WithEvent({
   banner,
   handleCardClick,
   handleSaveBanner,
+  handleEventClick,
   isBannerSaved,
 }: WithEventProps) {
   const { theme } = useTheme();
@@ -134,6 +135,7 @@ export default function WithEvent({
           {!bannerLoader.isLoaded && (
             <div className="animate-pulse bg-gray-300 dark:bg-gray-600 aspect-[359/152] w-full rounded-lg" />
           )}
+          {/* BANNER / EVENT IMAGE */}
           <div className={`${bannerLoader.isLoaded ? "contents" : "hidden"}`}>
             <img
               src={gachaBannerImage}
@@ -143,9 +145,17 @@ export default function WithEvent({
                   : banner.event_id?.toString()
               }
               fetchPriority="high"
-              className={`w-full h-auto`}
+              className={`w-full h-auto ${
+                mode === "event" &&
+                "cursor-pointer  duration-200 hover:scale-105 hover:opacity-80"
+              }`}
               onError={handleImageError}
               onLoad={bannerLoader.handleLoad}
+              onClick={
+                mode === "event" && banner.event_id !== undefined
+                  ? () => handleEventClick(banner.event_id)
+                  : undefined
+              }
             />
           </div>
         </div>
@@ -292,7 +302,7 @@ export default function WithEvent({
         )}
         {/* SAVE BUTTON */}
         {(server === "global" || server === "saved") &&
-          (today < banner.start || isBannerSaved(banner.id))   &&
+          (today < banner.start || isBannerSaved(banner.id)) &&
           mode === "gacha" &&
           banner.event_id && (
             <button

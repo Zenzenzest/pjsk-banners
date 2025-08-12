@@ -1,5 +1,5 @@
-import { useTheme } from "../../context/Theme_toggle";
-import { IsDeviceIpad } from "../../hooks/isIpad";
+import { useTheme } from "../../../context/Theme_toggle";
+import { IsDeviceIpad } from "../../../hooks/isIpad";
 import type { CardModalProps } from "./CardModalTypes";
 import CardReleases from "./Card_releases";
 
@@ -43,7 +43,7 @@ export default function CardModal({
             ? "bg-gray-800 border-gray-700"
             : "bg-white border-gray-200"
         }`}
-        onClick={(e) => e.stopPropagation()}
+        onClick={(e) => e.stopPropagation()} //prevent closing the modal when clicking on it
       >
         {/* ATTRIBUTE AND NAME */}
         <div className="p-3 border-b border-gray-200 dark:border-gray-700">

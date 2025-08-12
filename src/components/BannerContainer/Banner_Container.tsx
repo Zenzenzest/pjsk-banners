@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useTheme } from "../../context/Theme_toggle";
 
-import CardModal from "../Modal/Card_modal";
+import CardModal from "../Modal/Card/Card_modal";
 import { useServer } from "../../context/Server";
 import Disclaimer from "./Disclaimer";
 import type {
@@ -11,6 +11,7 @@ import type {
   CardState,
 } from "./BannerTypes";
 import Grid from "./Grid/Grid";
+import EventModal from "../Modal/Event/Event_modal";
 
 export default function BannerContainer({
   filteredBanners,
@@ -18,13 +19,14 @@ export default function BannerContainer({
   selectedMonth,
   parentRef,
 }: BannerContainerProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
   const { theme } = useTheme();
   const { server } = useServer();
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(true);
   const [showScrollButton, setShowScrollButton] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const [isEventOpen, setIsEventOpen] = useState(false);
   const [cardState, setCardState] = useState<CardState>({
     cardId: 0,
     rarity: 4,
@@ -34,6 +36,7 @@ export default function BannerContainer({
     sekaiId: 0,
     cardType: "",
   });
+  const [eventId, setEventId] = useState(0)
 
   // scroll detection
   useEffect(() => {
@@ -78,6 +81,14 @@ export default function BannerContainer({
     setIsLoading(true);
     setIsLoading2(true);
     setIsOpen(false);
+    setIsEventOpen(false);
+  };
+
+  const handleEventClick = (event_id: number | undefined) => {
+    if (event_id) {
+      setEventId(event_id)
+    }
+    setIsEventOpen(true);
   };
 
   return (
@@ -94,7 +105,7 @@ export default function BannerContainer({
             selectedYear >= 2026)) ||
           server === "saved") && <Disclaimer />}
 
-{/* GRID */}
+        {/* GRID */}
         <div className="pb-2 grid grid-cols-1 lg:grid-cols-2 gap-6">
           {filteredBanners.map((banner: BannerTypes) => {
             let mode = "";
@@ -125,6 +136,7 @@ export default function BannerContainer({
                               banner={banner}
                               mode={mode}
                               handleCardClick={handleCardClick}
+                              handleEventClick={handleEventClick}
                             />
                           );
                         })}
@@ -135,6 +147,7 @@ export default function BannerContainer({
                         banner={banner}
                         mode="gacha"
                         handleCardClick={handleCardClick}
+                        handleEventClick={handleEventClick}
                       />
                     </div>
                   )}
@@ -172,6 +185,11 @@ export default function BannerContainer({
         )}
       </div>
 
+      <EventModal
+        isEventOpen={isEventOpen}
+        onClose={handleCloseModal}
+       eventId={eventId}
+      />
       <CardModal
         isOpen={isOpen}
         onClose={handleCloseModal}

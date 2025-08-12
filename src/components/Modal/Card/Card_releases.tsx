@@ -1,6 +1,6 @@
-import EnBanners from "../../assets/json/en_banners.json";
-import JpBanners from "../../assets/json/jp_banners.json";
-import { useTheme } from "../../context/Theme_toggle";
+import EnBanners from "../../../assets/json/en_banners.json";
+import JpBanners from "../../../assets/json/jp_banners.json";
+import { useTheme } from "../../../context/Theme_toggle";
 import type { CardReleasesType } from "./CardModalTypes";
 
 export default function CardReleases({ cardId }: CardReleasesType) {
