@@ -7,6 +7,8 @@ import JpEvents from "../../../assets/json/jp_events.json";
 import EventBonus from "../../../assets/json/event_bonus.json";
 import AllCards from "../../../assets/json/cards.json";
 import type { EventModalProps, SUBUNITTypes } from "./EventModalTypes";
+import { ImageLoader } from "../../../hooks/imageLoader";
+import { useEffect } from "react";
 
 const SUB_UNIT: SUBUNITTypes = {
   "l/n": "Leo/Need",
@@ -60,9 +62,6 @@ export default function EventModal({
 }: EventModalProps) {
   const { theme } = useTheme();
   const { server } = useServer();
-  // const [isLoading, setIsLoading] = useState(true);
-
-  if (!isEventOpen) return null;
 
   const AllEvs = server === "jp" ? JpEvents : EnEvents;
 
@@ -161,7 +160,12 @@ export default function EventModal({
   const attrUpperCase =
     EvAttr && EvAttr.charAt(0).toUpperCase() + EvAttr.slice(1);
   const attrIcon = `/images/attribute_icons/${attrUpperCase}.webp`;
+  const iconsLoader = ImageLoader(filteredCards.length);
+  useEffect(() => {
+    iconsLoader.reset();
+  }, [eventId]);
 
+  if (!isEventOpen) return null;
   return (
     <>
       {EvObj ? (
@@ -328,50 +332,68 @@ export default function EventModal({
                   Bonus Cards
                 </h3>
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-3 sm:gap-4">
-                  {filteredCards.map((card) => {
-                    let cardName = "";
-                    if (card.rarity === 2 || card.rarity === 1) {
-                      cardName = `${card.id}.webp`;
-                    } else if (card.rarity === 5) {
-                      cardName = `${card.id}_t.webp`;
-                    } else {
-                      cardName = `${card.id}_ut.webp`;
-                    }
-                    return (
-                      <div
-                        key={card.id}
-                        className="group cursor-pointer transition-transform duration-200 hover:scale-105 flex flex-col items-center space-y-2"
-                      >
-                        <a
-                          href={`https://sekai.best/${card.id}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex flex-col items-center space-y-2 w-full"
+                  {!iconsLoader.isLoaded && (
+                    <>
+                      {filteredCards.map((_, i) => (
+                        <div
+                          key={`skeleton-${i}`}
+                          className="animate-pulse bg-gray-300 dark:bg-gray-600 aspect-square rounded-xl"
+                        />
+                      ))}
+                    </>
+                  )}
+                  <div
+                    className={`${
+                      iconsLoader.isLoaded ? "contents" : "hidden"
+                    }`}
+                  >
+                    {" "}
+                    {filteredCards.map((card) => {
+                      let cardName = "";
+                      if (card.rarity === 2 || card.rarity === 1) {
+                        cardName = `${card.id}.webp`;
+                      } else if (card.rarity === 5) {
+                        cardName = `${card.id}_t.webp`;
+                      } else {
+                        cardName = `${card.id}_ut.webp`;
+                      }
+                      return (
+                        <div
+                          key={card.id}
+                          className="group cursor-pointer transition-transform duration-200 hover:scale-105 flex flex-col items-center space-y-2"
                         >
-                          <div className="relative overflow-hidden rounded-lg shadow-md">
-                            <img
-                              src={`/images/card_icons/${cardName}`}
-                              className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
-                              alt={`Card ${card.id}`}
-                            />
-                          </div>
-
-                          {/* PERCENTAGE*/}
-                          <div
-                            className={`w-full px-2 py-1 rounded-md text-center ${
-                              theme === "dark"
-                                ? "bg-gray-700/80 text-gray-200"
-                                : "bg-gray-100/80 text-gray-700"
-                            }`}
+                          <a
+                            href={`https://sekai.best/${card.id}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex flex-col items-center space-y-2 w-full"
                           >
-                            <div className="text-xs sm:text-sm font-medium">
-                              {card.min}% - {card.max}%
+                            <div className="relative overflow-hidden rounded-lg shadow-md">
+                              <img
+                                src={`/images/card_icons/${cardName}`}
+                                className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
+                                alt={`Card ${card.id}`}
+                                onLoad={iconsLoader.handleLoad}
+                              />
                             </div>
-                          </div>
-                        </a>
-                      </div>
-                    );
-                  })}
+
+                            {/* PERCENTAGE*/}
+                            <div
+                              className={`w-full px-2 py-1 rounded-md text-center ${
+                                theme === "dark"
+                                  ? "bg-gray-700/80 text-gray-200"
+                                  : "bg-gray-100/80 text-gray-700"
+                              }`}
+                            >
+                              <div className="text-xs sm:text-sm font-medium">
+                                {card.min}% - {card.max}%
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>
