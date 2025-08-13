@@ -253,14 +253,14 @@ export default function EventModal({
             </div>
             {/* EVENT ATTRIBUTE*/}
             {!isWorldLink && (
-              <div className="flex flex-col sm:flex-row justify-center sm:justify-start gap-2 sm:gap-3 items-center p-1 rounded-lg bg-opacity-50">
-                <div
-                  className={`text-sm sm:text-base font-medium ${
+              <div className="flex flex-col sm:flex-row justify-center sm:justify-start gap-2 sm:gap-3 items-center p-6 rounded-lg bg-opacity-50  ">
+                <h3
+                  className={`text-base sm:text-lg font-semibold text-center sm:text-left ${
                     theme === "dark" ? "text-gray-300" : "text-gray-800"
                   }`}
                 >
                   Attribute Bonus +25%
-                </div>
+                </h3>
                 <img
                   src={attrIcon}
                   alt="attr"
@@ -268,7 +268,7 @@ export default function EventModal({
                 />
               </div>
             )}
-            <div className="p-4 sm:p-6 space-y-6">
+            <div className="p-4 pt-0 sm:p-6 space-y-6">
               {/* EVENT CHARACTERS */}
               <div className="space-y-3">
                 <h3
@@ -279,9 +279,7 @@ export default function EventModal({
                   Character Bonus +25%
                 </h3>
                 <div
-                  className={`grid ${
-                    isWorldLink ? "grid-cols-4" : "grid-cols-5"
-                  } gap-2 sm:gap-3 justify-items-center`}
+                  className={`flex flex-wrap gap-2  justify-center sm:justify-start items-center`}
                 >
                   {EvCharacters.map((char) => {
                     const charIcon = `/images/character_icons/${
