@@ -24,6 +24,35 @@ const VS = [
   "KAITO",
 ];
 
+const characters = [
+  "Hoshino Ichika",
+  "Tenma Saki",
+  "Mochizuki Honami",
+  "Hinomori Shiho",
+  "Hanasato Minori",
+  "Kiritani Haruka",
+  "Momoi Airi",
+  "Hinomori Shizuku",
+  "Azusawa Kohane",
+  "Shiraishi An",
+  "Shinonome Akito",
+  "Aoyagi Toya",
+  "Tenma Tsukasa",
+  "Otori Emu",
+  "Kusanagi Nene",
+  "Kamishiro Rui",
+  "Yoisaki Kanade",
+  "Asahina Mafuyu",
+  "Shinonome Ena",
+  "Akiyama Mizuki",
+  "Hatsune Miku",
+  "Kagamine Rin",
+  "Kagamine Len",
+  "Megurine Luka",
+  "MEIKO",
+  "KAITO",
+];
+
 export default function EventModal({
   eventId,
   isEventOpen,
@@ -38,10 +67,11 @@ export default function EventModal({
   const AllEvs = server === "jp" ? JpEvents : EnEvents;
 
   const EvObj = AllEvs.find((events) => events.id === eventId);
+  const EvCardIds = AllCards.filter((card) =>
+    EvObj?.cards.includes(card.id)
+  ).map((card) => card.id);
 
-  const EvCards = AllCards.filter((card) => EvObj?.cards.includes(card.id));
-
-  const characters = AllCards.filter((card) => {
+  const EvCharacters = AllCards.filter((card) => {
     if (EvObj) {
       return EvObj.cards.includes(card.id);
     }
@@ -50,16 +80,19 @@ export default function EventModal({
   const EvAttr = EventBonus.filter((ev) => ev.eventId === eventId).map(
     (ev) => ev.cardAttr
   )[0];
+  const hasVs = VS.some((vv) => EvCharacters.includes(vv));
+  const isWorldLink = EvObj?.keywords.includes("world link");
 
   const filteredCards = AllCards.filter((card) => {
-    if (EvObj && !EvObj.keywords.includes("world link")) {
-      const cardRelease = server === "jp" ? card.jp_released : card.en_released;
-      const attrMatch = card.attribute.toLowerCase() === EvAttr;
+    const cardRelease = server === "jp" ? card.jp_released : card.en_released;
+    const attrMatch = card.attribute.toLowerCase() === EvAttr;
 
-      const charMatch = characters.includes(card.character);
-      const isCardReleased = EvObj.start >= cardRelease;
+    const charMatch = EvCharacters.includes(card.character);
+    const isCardReleased =
+      EvObj && EvObj.start >= cardRelease && cardRelease > 0;
 
-      const hasVs = VS.some((vv) => characters.includes(vv));
+    // Non world link events
+    if (EvObj && !isWorldLink) {
       if (hasVs) {
         const vsDefault = card.unit === "Virtual Singers" && !card.sub_unit;
         const subUnitMatch =
@@ -73,6 +106,10 @@ export default function EventModal({
       } else {
         return attrMatch && charMatch && isCardReleased;
       }
+    } else {
+      // World link events
+      const isEvCard = EvCardIds.includes(card.id);
+      return isEvCard;
     }
   })
     .map((card) => {
@@ -80,55 +117,69 @@ export default function EventModal({
       tempObj["id"] = card.id;
       tempObj["rarity"] = card.rarity;
 
-      // default vs
-      if (card.unit === "Virtual Singers" && !card.sub_unit) {
-        tempObj["min"] += 15;
-      } else {
-        // vs with sub unit or unit cards
-        tempObj["min"] += 25;
-      }
-      // event card
-      if (EvObj?.cards.includes(card.id)) {
+      if (isWorldLink) {
         tempObj["min"] += 20;
-      }
+        tempObj["max"] = tempObj["min"] + 15;
+        return tempObj;
+      } else {
+        // default vs
+        if (card.unit === "Virtual Singers" && !card.sub_unit) {
+          tempObj["min"] += 15;
+        } else {
+          // vs with sub unit or unit cards
+          tempObj["min"] += 25;
+        }
+        // event card
+        if (EvObj?.cards.includes(card.id) && card.rarity === 4) {
+          tempObj["min"] += 20;
+        }
 
-      switch (card.rarity) {
-        case 4:
-          // +15 max for 4*
-          tempObj["max"] = tempObj["min"] + 15;
-          break;
-        case 5:
-          tempObj["max"] = tempObj["min"] + 10;
-          break;
-        case 3:
-          tempObj["max"] = tempObj["min"] + 5;
-          break;
-        case 2:
-          tempObj["max"] = tempObj["min"] + 1;
-          break;
-        case 1:
-          tempObj["max"] = tempObj["min"] + 0.5;
-      }
+        switch (card.rarity) {
+          case 4:
+            // +15 max for 4*
+            tempObj["max"] = tempObj["min"] + 15;
+            break;
+          case 5:
+            tempObj["max"] = tempObj["min"] + 10;
+            break;
+          case 3:
+            tempObj["max"] = tempObj["min"] + 5;
+            break;
+          case 2:
+            tempObj["max"] = tempObj["min"] + 1;
+            break;
+          case 1:
+            tempObj["max"] = tempObj["min"] + 0.5;
+        }
 
-      return tempObj;
+        return tempObj;
+      }
     })
     .sort((a, b) => b.max - a.max)
     .sort((a, b) => b.min - a.min);
+
+  const attrUpperCase =
+    EvAttr && EvAttr.charAt(0).toUpperCase() + EvAttr.slice(1);
+  const attrIcon = `/images/attribute_icons/${attrUpperCase}.webp`;
+
   return (
     <>
       {EvObj ? (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm p-2 sm:p-4"
           onClick={onClose}
         >
           <div
-            className={`relative max-w-2xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
-              theme === "dark" ? "bg-gray-800" : "bg-white"
+            className={`relative w-full max-w-4xl max-h-[95vh] sm:max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
+              theme === "dark"
+                ? "bg-gray-800 border-gray-600"
+                : "bg-white border-gray-200"
             }`}
-            onClick={(e) => e.stopPropagation()} //prevent closing the modal when clicking on it
+            onClick={(e) => e.stopPropagation()}
           >
-            <div className="p-3 border-b border-gray-200 dark:border-gray-700">
-              {/* CLOSE BUTTON */}
+            {/* HEADER */}
+            <div className="sticky top-0 z-10 p-4 sm:p-6 border-b border-gray-200 dark:border-gray-700 bg-inherit rounded-t-xl">
+              {/* CLOSE BUTTON*/}
               <button
                 onClick={onClose}
                 className={`absolute top-3 right-3 z-20 p-2 rounded-full transition-colors ${
@@ -151,54 +202,134 @@ export default function EventModal({
                   />
                 </svg>
               </button>
-              <div className="flex flex-col items-center space-y-2">
-                {/* EVENT NAME*/}
+
+              {/* EVENT NAME*/}
+              <div className="flex flex-col items-center space-y-3 mb-4">
                 <div
-                  className={`text-center px-3 py-1 rounded-lg ${
+                  className={`text-center px-4 py-2 rounded-lg max-w-full ${
                     theme === "dark"
                       ? "bg-gray-700/50 text-gray-300"
                       : "bg-gray-100 text-gray-600"
                   }`}
                 >
-                  <p className="text-sm font-medium italic">{EvObj.name}</p>
-                </div>{" "}
-                <span
-                  className="
-      px-1.5 py-0.5 rounded-full text-[10px] bg-gray-700 text-gray-300
-    "
-                ></span>
+                  <p className="text-sm sm:text-base font-medium italic break-words">
+                    {EvObj.name}
+                  </p>
+                </div>
               </div>
 
-              {/* EVENT CARDS */}
-              <div className="flex flex-col justify-center items-center">
-                <span>Event Cards</span>
-                <div className="grid grid-cols-5 gap-2">
-                  {EvCards.map((card) => {
-                    let cardName = "";
-                    if (card.rarity === 2) {
-                      cardName = `${card.id}.webp`;
-                    } else {
-                      cardName = `${card.id}_ut.webp`;
-                    }
+              {/* VIEW ON SEKAI BEST BUTTON */}
+              <div className="flex flex-row justify-center items-center">
+                {" "}
+                <a
+                  href={`https://sekai.best/event/${eventId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                    theme === "dark"
+                      ? "bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/20"
+                      : "bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200"
+                  }`}
+                >
+                  <span>View on Sekai Best</span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-1.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            {/* EVENT ATTRIBUTE*/}
+            {!isWorldLink && (
+              <div className="flex flex-col sm:flex-row justify-center sm:justify-start gap-2 sm:gap-3 items-center p-1 rounded-lg bg-opacity-50">
+                <div
+                  className={`text-sm sm:text-base font-medium ${
+                    theme === "dark" ? "text-gray-300" : "text-gray-800"
+                  }`}
+                >
+                  Attribute Bonus +25%
+                </div>
+                <img
+                  src={attrIcon}
+                  alt="attr"
+                  className="w-8 h-8 sm:w-10 sm:h-10"
+                />
+              </div>
+            )}
+            <div className="p-4 sm:p-6 space-y-6">
+              {/* EVENT CHARACTERS */}
+              <div className="space-y-3">
+                <h3
+                  className={`text-base sm:text-lg font-semibold text-center sm:text-left ${
+                    theme === "dark" ? "text-gray-300" : "text-gray-800"
+                  }`}
+                >
+                  Character Bonus +25%
+                </h3>
+                <div
+                  className={`grid ${
+                    isWorldLink ? "grid-cols-4" : "grid-cols-5"
+                  } gap-2 sm:gap-3 justify-items-center`}
+                >
+                  {EvCharacters.map((char) => {
+                    const charIcon = `/images/character_icons/${
+                      characters.indexOf(char) + 1
+                    }.webp`;
                     return (
-                      <div
-                        key={card.id}
-                        className="group cursor-pointer transition-transform duration-200 hover:scale-105"
-                      >
+                      <div key={char} className="flex flex-col items-center">
                         <img
-                          src={`/images/card_icons/${cardName}`}
-                          className="transition-opacity duration-200 group-hover:opacity-80"
+                          src={charIcon}
+                          className="w-10 h-10 sm:w-12 sm:h-12 rounded-full shadow-sm"
+                          alt={char}
                         />
                       </div>
                     );
                   })}
+                  {hasVs &&
+                    VS.map((vs) => {
+                      const charIcon = `/images/character_icons/${
+                        characters.indexOf(vs) + 1
+                      }.webp`;
+
+                      if (EvCharacters.includes(vs)) {
+                        return null;
+                      } else {
+                        return (
+                          <div key={vs} className="flex flex-col items-center">
+                            <img
+                              src={charIcon}
+                              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full shadow-sm "
+                              alt={vs}
+                            />
+                          </div>
+                        );
+                      }
+                    })}
                 </div>
               </div>
-              {/* EVENT BONUS CARDS */}
-              <div>
-                {" "}
-                <span>Bonus Cards</span>
-                <div className="grid grid-cols-3 sm:grid-cols-5 gap-5">
+
+              {/* BONUS CARDS */}
+              <div className="space-y-4">
+                <h3
+                  className={`text-base sm:text-lg font-semibold text-center sm:text-left ${
+                    theme === "dark" ? "text-gray-300" : "text-gray-800"
+                  } `}
+                >
+                  Bonus Cards
+                </h3>
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-3 sm:gap-4">
                   {filteredCards.map((card) => {
                     let cardName = "";
                     if (card.rarity === 2 || card.rarity === 1) {
@@ -211,29 +342,35 @@ export default function EventModal({
                     return (
                       <div
                         key={card.id}
-                        className="group cursor-pointer transition-transform duration-200 hover:scale-105 flex flex-col"
+                        className="group cursor-pointer transition-transform duration-200 hover:scale-105 flex flex-col items-center space-y-2"
                       >
                         <a
                           href={`https://sekai.best/${card.id}`}
                           target="_blank"
                           rel="noopener noreferrer"
+                          className="flex flex-col items-center space-y-2 w-full"
                         >
-                          {" "}
-                          <img
-                            src={`/images/card_icons/${cardName}`}
-                            className="transition-opacity duration-200 group-hover:opacity-80"
-                            alt={`${card.id}`}
-                          />
+                          <div className="relative overflow-hidden rounded-lg shadow-md">
+                            <img
+                              src={`/images/card_icons/${cardName}`}
+                              className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
+                              alt={`Card ${card.id}`}
+                            />
+                          </div>
+
+                          {/* PERCENTAGE*/}
+                          <div
+                            className={`w-full px-2 py-1 rounded-md text-center ${
+                              theme === "dark"
+                                ? "bg-gray-700/80 text-gray-200"
+                                : "bg-gray-100/80 text-gray-700"
+                            }`}
+                          >
+                            <div className="text-xs sm:text-sm font-medium">
+                              {card.min}% - {card.max}%
+                            </div>
+                          </div>
                         </a>
-                        <div
-                          className={`w-[4/5] flex flex-row items-center justify-center gap-3 text-sm ${
-                            theme === "dark" ? "text-gray-300" : "text-gray-800"
-                          } `}
-                        >
-                          <span> {card.min}% </span>
-                          <span>-</span>
-                          <span> {card.max}% </span>
-                        </div>
                       </div>
                     );
                   })}
