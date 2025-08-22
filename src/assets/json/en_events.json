@@ -3009,7 +3009,8 @@
     ],
     "event_type": "marathon",
     "type": "An 6th Focus Event"
-  },{
+  },
+  {
     "id": 176,
     "name": "All Ways Jump! With you",
     "start": 1786244400000,
@@ -3017,7 +3018,7 @@
     "close": 1787435999000,
     "unit": "mmj",
 
-    "cards": [1218,1219,1220,1221],
+    "cards": [1218, 1219, 1220, 1221],
     "keywords": [
       "mmj",
       "more more jump",
@@ -3029,5 +3030,25 @@
     ],
     "event_type": "world_link",
     "type": "MORE MORE JUMP! World Link 2"
+  },
+  {
+    "id": 177,
+    "name": "Reaching Out a Hand to the Tomorrow that Cannot be Unraveled",
+    "start": 1787436000000,
+    "end": 1787975999000,
+    "close": 1788213599000,
+    "unit": "n25",
+    "cards": [1223, 1224, 1225, 1226, 1227],
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "mizuki",
+      "mizuki6",
+      "mizu6"
+    ],
+    "event_type": "marathon",
+    "type": "Mizuki 6th Focus Event"
   }
 ]

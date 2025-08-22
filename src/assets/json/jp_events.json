@@ -3228,5 +3228,26 @@
     ],
     "event_type": "world_link",
     "type": "MORE MORE JUMP! World Link 2"
+  },
+  {
+    "id": 177,
+    "name": "ほどけぬ明日に手を伸ばして",
+    "start": 1755842400000,
+    "end": 1756382399000,
+    "close": 1756533599000,
+    "unit": "n25",
+    "banner_id": 507,
+    "cards": [1223, 1224, 1225, 1226, 1227],
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "mizuki",
+      "mizuki6",
+      "mizu6"
+    ],
+    "event_type": "marathon",
+    "type": "Mizuki 6th Focus Event"
   }
 ]

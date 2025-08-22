@@ -6713,9 +6713,9 @@
     "end": 1755831599000,
     "banner_type": "Unit Limited Event",
     "event_id": 176,
-    "en_id":545,
+    "en_id": 545,
     "characters": [5, 6, 7, 8],
-      "keywords": [
+    "keywords": [
       "mmj",
       "more more jump",
       "momojan",
@@ -6728,10 +6728,10 @@
   {
     "id": 504,
     "name": "[星乃一歌]HAPPY BIRTHDAY2025ガチャ",
-    "cards": [1222,978,699,480],
+    "cards": [1222, 978, 699, 480],
     "start": 1754838000000,
     "end": 1755442799000,
-    "en_id":546,
+    "en_id": 546,
     "banner_type": "Birthday",
     "characters": [1],
     "keywords": []
@@ -6743,7 +6743,7 @@
     "start": 1754967600000,
     "end": 1755745199000,
     "banner_type": "Limited Event Rerun",
-   "en_id":547,
+    "en_id": 547,
     "characters": [7, 6, 8],
     "keywords": []
   },
@@ -6752,9 +6752,41 @@
     "name": "[復刻]華の都へご招待ガチャ",
     "cards": [796, 797, 798],
     "start": 1754967600000,
-    "end": 1755745199000,  "en_id":548,
+    "end": 1755745199000,
+    "en_id": 548,
     "banner_type": "Limited Event Rerun",
     "characters": [15, 11, 23],
+    "keywords": []
+  },
+  {
+    "id": 507,
+    "name": "キミに咲うfuzzy daisyガチャ",
+    "cards": [1223, 1224, 1225],
+    "start": 1755831600000,
+    "end": 1756522799000,
+    "banner_type": "Event",
+    "event_id": 177,
+    "en_id": 549,
+    "characters": [20, 19, 23],
+    "keywords": [
+      "n25",
+      "nightcord",
+      "niigo",
+      "focus",
+      "mizuki",
+      "mizuki6",
+      "mizu6"
+    ]
+  },
+  {
+    "id": 508,
+    "name": "[暁山瑞希]HAPPY BIRTHDAY2025ガチャ",
+    "cards": [1228],
+    "start": 1756220400000,
+    "end": 1756825199000,
+    "en_id": 550,
+    "banner_type": "Birthday",
+    "characters": [20],
     "keywords": []
   }
 ]

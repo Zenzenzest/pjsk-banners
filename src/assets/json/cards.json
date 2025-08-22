@@ -735,7 +735,7 @@
     "id": 81,
     "name": "Legendary Songstress",
     "character": "Hatsune Miku",
-    "rarity": 1,
+    "rarity": 2,
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "en_released": 1638918000000,
@@ -14613,6 +14613,79 @@
     "card_type": "bday",
     "jp_released": 1754838000000,
     "en_released": 1786431600000,
+    "jp_name": "Happy Birthday！！2025"
+  },
+  {
+    "id": 1223,
+    "name": "Drawing Tomorrow as I Am",
+    "character": "Akiyama Mizuki",
+    "rarity": 4,
+    "unit": "Nightcord at 25:00",
+    "attribute": "Happy",
+    "card_type": "permanent",
+    "jp_released": 1755831600000,
+    "en_released": 1787425200000,
+    "jp_name": "ボクのまま描く明日"
+  },
+  {
+    "id": 1224,
+    "name": "Overwhelmed by the Warm Welcome!",
+    "character": "Shinonome Ena",
+    "rarity": 4,
+    "unit": "Nightcord at 25:00",
+    "attribute": "Happy",
+    "card_type": "permanent",
+    "jp_released": 1755831600000,
+    "en_released": 1787425200000,
+    "jp_name": "熱烈歓迎にたじたじ！"
+  },
+  {
+    "id": 1225,
+    "name": "Sharing the Delicious",
+    "character": "Kagamine Len",
+    "rarity": 4,
+    "unit": "Virtual Singers",
+    "attribute": "Happy",
+    "card_type": "permanent",
+    "jp_released": 1755831600000,
+    "en_released": 1787425200000,
+    "jp_name": "おいしいを分け合って",
+    "sub_unit": "Nightcord at 25:00"
+  },
+  {
+    "id": 1226,
+    "name": "Outfit That's Caught Your Eye?",
+    "character": "Yoisaki Kanade",
+    "rarity": 3,
+    "unit": "Nightcord at 25:00",
+    "attribute": "Pure",
+    "card_type": "permanent",
+    "jp_released": 1787436000000,
+    "en_released": 1787436000000,
+    "jp_name": "気になる服は？"
+  },
+  {
+    "id": 1227,
+    "name": "Finding the Right Return Gift",
+    "character": "Asahina Mafuyu",
+    "rarity": 2,
+    "unit": "Nightcord at 25:00",
+    "attribute": "Mysterious",
+    "card_type": "permanent",
+    "jp_released": 1787436000000,
+    "en_released": 1787436000000,
+    "jp_name": "お返し探し"
+  },
+  {
+    "id": 1228,
+    "name": "Happy Birthday! 2026",
+    "character": "Akiyama Mizuki",
+    "rarity": 5,
+    "unit": "Nightcord at 25:00",
+    "attribute": "Mysterious",
+    "card_type": "bday",
+    "jp_released": 1756220400000,
+    "en_released": 1787770800000,
     "jp_name": "Happy Birthday！！2025"
   }
 ]
