@@ -1,3 +1,92 @@
+import AllCards from "../../assets/json/cards.json";
+
+import CharacterCardCounter from "./Card_counter";
+import { AllCharacters } from "./characters";
+
+import ProcessCardData from "./process_card";
+
+const SUB_UNIT = [
+  "Leo/Need",
+  "MORE MORE JUMP!",
+  "Vivid BAD SQUAD",
+  "Wonderlands x Showtime",
+  "Nightcord at 25:00",
+];
+
+const VS = [
+  "Hatsune Miku",
+  "Kagamine Rin",
+  "Kagamine Len",
+  "Megurine Luka",
+  "MEIKO",
+  "KAITO",
+];
+
 export default function CounterContainer() {
-  return <h1>Hello</h1>;
+  const charactersCounter = {};
+  const allowedCardTypes = new Set(["permanent", "limited"]);
+
+  
+  const getCharacterId = (card) => {
+    const isVirtualSinger = card.unit === "Virtual Singers";
+
+    if (!isVirtualSinger || !card.sub_unit) {
+      return AllCharacters.indexOf(card.character) + 1;
+    }
+
+    // VS with sub_unit
+    const vsId = AllCharacters.indexOf(card.character) + 1;
+    const vsIndex = VS.indexOf(card.character) + 1;
+    const groupIndex = SUB_UNIT.indexOf(card.sub_unit) + 1;
+
+    return vsId + 4 * vsIndex + 1 + groupIndex;
+  };
+
+  // character code
+  const createCharCode = (characterId, cardType, rarity) =>
+    `${characterId}-${cardType}-${rarity}`;
+
+ 
+  AllCards.forEach((card) => {
+  
+    if (!allowedCardTypes.has(card.card_type) || card.rarity === 1) {
+      return;
+    }
+
+    const characterId = getCharacterId(card);
+    const charCode = createCharCode(characterId, card.card_type, card.rarity);
+
+    // increment counter 
+    charactersCounter[charCode] = (charactersCounter[charCode] ?? 0) + 1;
+  });
+  
+  const cardData = Object.entries(charactersCounter).map(([key, count]) => {
+    const [charId, card_type, rarity] = key.split("-");
+
+    return {
+      charId,
+      rarity: parseInt(rarity),
+      card_type,
+      count,
+    };
+  });
+
+  const processedData = ProcessCardData(cardData);
+  console.log(cardData);
+  return (
+    <div className="p-4">
+      <div className="mb-6">
+        <h1 className="text-2xl font-bold text-white mb-2">
+          Character Card Count
+        </h1>
+        <p className="text-gray-400"></p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        {processedData.map((character, i) => (
+          <CharacterCardCounter key={i} character={character} />
+        ))}
+      </div>
+    </div>
+  );
 }
