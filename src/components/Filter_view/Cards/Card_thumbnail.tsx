@@ -1,12 +1,15 @@
 import type { AllCardTypes, CardThumbnailProps } from "../FilterTabTypes";
 import CardGrid from "./Card_grid";
-
+import { SpecialCards } from "./special_card";
 export default function CardThumbnail({ card  }:CardThumbnailProps) {
-  // Helper function to render star icons
+
+
+
+    // Helper function to render star icons
   const renderStarIcons = (rarity: number, cardId: number, position: "top-right" | "top-left" = "top-right") => {
-    const isSpecialCard = cardId === 1167;
+    const isSpecialCard = SpecialCards.includes(cardId)
     const iconSrc = `images/rarity_icons/${
-      isSpecialCard ? "un" : ""
+      (isSpecialCard || rarity <= 2) ? "un" : ""
     }trained_star.png`;
 
     const positionClasses = {

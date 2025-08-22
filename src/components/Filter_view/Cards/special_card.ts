@@ -1,0 +1,1 @@
+export const SpecialCards:number[] = [1167]
