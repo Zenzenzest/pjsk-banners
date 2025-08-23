@@ -21,7 +21,19 @@ export type CardData= {
 }
 
 export type ProcessedCharacterData ={
-  id: string;
+  id: number;
+  name: string;
+  totalCount: number;
+  cardBreakdown: {
+    rarity: 1 | 2 | 3 | 4;
+    isLimited: boolean;
+    count: number;
+  }[];
+}
+
+
+export type CharacterCardData ={
+  id: number;
   name: string;
   totalCount: number;
   cardBreakdown: {

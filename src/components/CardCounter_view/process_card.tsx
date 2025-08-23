@@ -31,18 +31,18 @@ export default function ProcessCardData(
         count: card.count,
       }));
 
-      // Calculate total count
+
       const totalCount = cardBreakdown.reduce(
         (sum, card) => sum + card.count,
         0
       );
 
       return {
-        id: `char-${charId}`,
+        id: charId,
         name: characterName,
         totalCount,
         cardBreakdown,
       };
     })
-    .filter(Boolean) as ProcessedCharacterData[]; // Filter out null values
+    .filter(Boolean) as ProcessedCharacterData[];
 }
