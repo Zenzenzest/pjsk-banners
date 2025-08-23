@@ -6,6 +6,7 @@ import type { AllCardTypes } from "./CounterTypes";
 import { useServer } from "../../context/Server";
 import ProcessCardData from "./process_card";
 import { useTheme } from "../../context/Theme_toggle";
+import WebsiteDisclaimer from "../Nav/Website_disclaimer";
 
 const SUB_UNIT = [
   "Leo/Need",
@@ -79,7 +80,7 @@ export default function CounterContainer() {
       rarity: parseInt(rarity) as 2 | 3 | 4,
       card_type: card_type as "permanent" | "limited",
       count,
-    }; 
+    };
   });
 
   const processedData = ProcessCardData(cardData);
@@ -97,11 +98,13 @@ export default function CounterContainer() {
         <p className="text-gray-400"></p>
       </div>
 
-      <div className="grid grid-cols-1 max-w-5xl sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4">
+      <div className="grid grid-cols-1 max-w-5xl sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 mb-5">
         {processedData.map((character, i) => (
           <CharacterCardCounter key={i} character={character} />
         ))}
       </div>
+
+      <WebsiteDisclaimer />
     </div>
   );
 }
