@@ -56,3 +56,4 @@ export const AllCharacters = [
   "WxS KAITO",
   "N25 KAITO",
 ];
+

@@ -69,8 +69,24 @@ export default function CharacterCardCounter({
   const portraitImg = `/images/cutouts/${character.id}.webp`;
 
   return (
-    <div className="h-[450px] max-w-[264px] bg-gray-800 rounded-xl border border-gray-700 overflow-hidden transition-all duration-200 hover:border-gray-600 relative">
-      <img src={portraitImg} className="w-full h-full object-cover" />
+    <div
+      className={`h-[450px] max-w-[264px] rounded-xl overflow-hidden transition-all duration-200 hover:opacity-90 relative  `}
+    >
+      {/* GRADIENT BORDER CONTAINER*/}
+      <div className="absolute inset-0 rounded-xl bg-gradient-to-br to-blue-400/30 via-blue-500/20 from-pink-400 p-[2px]">
+        <div className="w-full h-full rounded-xl bg-gray-900/80 backdrop-blur-sm"></div>
+      </div>
+
+      {/* PORTRAIT IMAGE*/}
+      <div className="relative h-full">
+        <img
+          src={portraitImg}
+          className="w-full h-full object-cover rounded-t-xl"
+        />
+
+        {/* GRADIENT*/}
+        <div className="absolute inset-0 rounded-t-xl bg-gradient-to-t from-blue-900/20 to-gray-600/30 via-transparent "></div>
+      </div>
 
       {/* GLASS OVERLAY */}
       <div className="absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm p-3 rounded-b-xl">

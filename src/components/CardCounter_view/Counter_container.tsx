@@ -27,7 +27,10 @@ const VS = [
 
 export default function CounterContainer() {
   const [showScrollButton, setShowScrollButton] = useState(false);
-
+  const [filters, setFilters] = useState({
+    characters: [],
+    unit: [],
+  })
   const charactersCounter: { [key: string]: number } = {};
   const { server } = useServer();
   const { theme } = useTheme();
@@ -94,9 +97,18 @@ export default function CounterContainer() {
     const characterId = getCharacterId(card);
     const charCode = createCharCode(characterId, card.card_type, card.rarity);
 
+
+
+
+
     // increment counter
     charactersCounter[charCode] = (charactersCounter[charCode] ?? 0) + 1;
   });
+
+
+
+
+  
 
   const cardData = Object.entries(charactersCounter).map(([key, count]) => {
     const [charId, card_type, rarity] = key.split("-");
@@ -109,8 +121,11 @@ export default function CounterContainer() {
     };
   });
 
+
+
+
   const processedData = ProcessCardData(cardData);
-  console.log(processedData);
+ 
   return (
     <div
       className={`p-4 flex flex-col justify-center items-center transition-all duration-300 ease-in-out ${
