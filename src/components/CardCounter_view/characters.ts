@@ -57,3 +57,10 @@ export const AllCharacters = [
   "N25 KAITO",
 ];
 
+export const Units = [
+  "Leo/need",
+  "MORE MORE JUMP!",
+  "Vivid BAD SQUAD",
+  "Wonderlands x Showtime",
+  "Nightcord at 25:00",
+];

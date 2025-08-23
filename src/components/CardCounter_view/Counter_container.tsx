@@ -27,10 +27,10 @@ const VS = [
 
 export default function CounterContainer() {
   const [showScrollButton, setShowScrollButton] = useState(false);
-  const [filters, setFilters] = useState({
-    characters: [],
-    unit: [],
-  })
+  // const [filters, setFilters] = useState({
+  //   characters: [],
+  //   unit: [],
+  // });
   const charactersCounter: { [key: string]: number } = {};
   const { server } = useServer();
   const { theme } = useTheme();
@@ -97,18 +97,9 @@ export default function CounterContainer() {
     const characterId = getCharacterId(card);
     const charCode = createCharCode(characterId, card.card_type, card.rarity);
 
-
-
-
-
     // increment counter
     charactersCounter[charCode] = (charactersCounter[charCode] ?? 0) + 1;
   });
-
-
-
-
-  
 
   const cardData = Object.entries(charactersCounter).map(([key, count]) => {
     const [charId, card_type, rarity] = key.split("-");
@@ -121,11 +112,8 @@ export default function CounterContainer() {
     };
   });
 
-
-
-
   const processedData = ProcessCardData(cardData);
- 
+
   return (
     <div
       className={`p-4 flex flex-col justify-center items-center transition-all duration-300 ease-in-out ${
@@ -133,10 +121,13 @@ export default function CounterContainer() {
       } `}
     >
       <div className="mb-6">
-        <h1 className="text-2xl font-bold text-white mb-2">
-          Character Card Count
-        </h1>
+        <h1 className="text-2xl font-bold text-white ">Character Card Count</h1>
         <p className="text-gray-400"></p>
+      </div>
+
+      {/* FILTERS */}
+      <div className="flex flex-row justify-center items-center gap-5 p-10">
+        <h1>FILTERS WIP</h1>
       </div>
 
       <div className="grid grid-cols-1 max-w-5xl sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 mb-5">
