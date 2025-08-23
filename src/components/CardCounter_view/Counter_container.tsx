@@ -25,7 +25,7 @@ const VS = [
 ];
 
 export default function CounterContainer() {
-  const charactersCounter = {};
+  const charactersCounter: { [key: string]: number } = {};
   const { server } = useServer();
   const { theme } = useTheme();
   const allowedCardTypes = new Set(["permanent", "limited"]);
@@ -76,10 +76,10 @@ export default function CounterContainer() {
 
     return {
       charId,
-      rarity: parseInt(rarity),
-      card_type,
+      rarity: parseInt(rarity) as 2 | 3 | 4,
+      card_type: card_type as "permanent" | "limited",
       count,
-    };
+    }; 
   });
 
   const processedData = ProcessCardData(cardData);
