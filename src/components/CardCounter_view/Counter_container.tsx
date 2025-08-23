@@ -1,5 +1,5 @@
 import AllCards from "../../assets/json/cards.json";
-
+import { useState, useEffect, useRef } from "react";
 import CharacterCardCounter from "./Card_grid";
 import { AllCharacters } from "./characters";
 import type { AllCardTypes } from "./CounterTypes";
@@ -26,6 +26,8 @@ const VS = [
 ];
 
 export default function CounterContainer() {
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
   const charactersCounter: { [key: string]: number } = {};
   const { server } = useServer();
   const { theme } = useTheme();
@@ -45,7 +47,31 @@ export default function CounterContainer() {
 
     return vsId + 4 * vsIndex + 1 + groupIndex;
   };
+  const countRef = useRef<HTMLDivElement>(null);
+  // scroll detection
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      const documentHeight = document.documentElement.scrollHeight;
+      const isAwayFromTheTop = scrollTop > documentHeight * 0.1;
+      setShowScrollButton(isAwayFromTheTop);
+    };
 
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    if (countRef.current) {
+      countRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
   // character code
   const createCharCode = (
     characterId: number,
@@ -103,7 +129,32 @@ export default function CounterContainer() {
           <CharacterCardCounter key={i} character={character} />
         ))}
       </div>
-
+      {/* SCROLL TO TOP BUTTON */}
+      {showScrollButton && (
+        <button
+          onClick={scrollToTop}
+          className={`fixed bottom-6 right-6 z-50 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 ${
+            theme === "dark"
+              ? "bg-white hover:bg-gray-50 text-gray-900 border border-gray-200"
+              : "bg-gray-800 hover:bg-gray-700 text-white border border-gray-600"
+          }`}
+          aria-label="Scroll to top"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 10l7-7m0 0l7 7m-7-7v18"
+            />
+          </svg>
+        </button>
+      )}
       <WebsiteDisclaimer />
     </div>
   );
