@@ -64,3 +64,10 @@ export const Units = [
   "Wonderlands x Showtime",
   "Nightcord at 25:00",
 ];
+
+export const RARITY_COLORS: Record<number, string> = {
+  1: "bg-gray-400",
+  2: "bg-green-400", 
+  3: "bg-blue-400",
+  4: "bg-purple-400"
+};

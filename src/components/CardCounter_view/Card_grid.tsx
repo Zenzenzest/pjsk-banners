@@ -1,24 +1,20 @@
 import type { CharacterCardData } from "./CounterTypes";
 
+import { RARITY_COLORS } from "./config";
 export default function CharacterCardCounter({
   character,
+  isMobile,
+  isVerySmol,
 }: {
-  character: CharacterCardData;
-}) {
-  const getRarityBarColor = (rarity: number) => {
-    switch (rarity) {
-      case 1:
-        return "bg-gray-400";
-      case 2:
-        return "bg-green-400";
-      case 3:
-        return "bg-blue-400";
-      case 4:
-        return "bg-purple-400";
-      default:
-        return "bg-gray-400";
-    }
+ character: CharacterCardData & { 
+    sortedCardBreakdown: Array<{rarity: number, isLimited: boolean, count: number}>;
+    maxCount: number;
   };
+  isMobile: boolean;
+  isVerySmol: boolean;
+}) {
+  const getRarityBarColor = (rarity: number) =>
+    RARITY_COLORS[rarity] || "bg-gray-400";
 
   const getStarIcon = (rarity: number, isLimited: boolean) => {
     const iconPath =
@@ -35,57 +31,32 @@ export default function CharacterCardCounter({
     );
   };
 
-  const allCardTypes = [
-    { rarity: 4, isLimited: true },
-    { rarity: 4, isLimited: false },
-    { rarity: 3, isLimited: false },
-    { rarity: 2, isLimited: false },
-  ];
 
-  const cardDataMap = new Map(
-    character.cardBreakdown.map((card) => [
-      `${card.rarity}-${card.isLimited}`,
-      card.count,
-    ])
-  );
-
-  const completeCardList = allCardTypes.map((type) => ({
-    ...type,
-    count: cardDataMap.get(`${type.rarity}-${type.isLimited}`) || 0,
-  }));
-
-  // Sort to put 4star limited first
-  const sortedCardBreakdown = completeCardList.sort((a, b) => {
-    if (a.rarity === 4 && a.isLimited) return -1;
-    if (b.rarity === 4 && b.isLimited) return 1;
-
-    if (a.rarity !== b.rarity) return b.rarity - a.rarity;
-
-    if (a.isLimited !== b.isLimited) return b.isLimited ? 1 : -1;
-
-    return 0;
-  });
-
+  const sortedCardBreakdown = character.sortedCardBreakdown;
+  const maxCount = character.maxCount;
   const portraitImg = `/images/cutouts/${character.id}.webp`;
 
   return (
     <div
-      className={`h-[450px] max-w-[264px] rounded-xl overflow-hidden transition-all duration-200 hover:opacity-90 relative  `}
+      className={`${
+        isMobile ? "min-h-[325px]" : "h-[450px]"
+      } max-w-[264px] rounded-xl overflow-hidden 
+     transition-all duration-200 hover:opacity-90 relative
+     border-2 border-blue-500/30`}
     >
-      {/* GRADIENT BORDER CONTAINER*/}
-      <div className="absolute inset-0 rounded-xl bg-gradient-to-br to-blue-400/30 via-blue-500/20 from-pink-400 p-[2px]">
-        <div className="w-full h-full rounded-xl bg-gray-900/80 backdrop-blur-sm"></div>
-      </div>
-
       {/* PORTRAIT IMAGE*/}
       <div className="relative h-full">
         <img
           src={portraitImg}
+          width={264}
+          height={isMobile ? 325 : 450}
           className="w-full h-full object-cover rounded-t-xl"
+          loading="lazy"
+          decoding="async"
         />
 
         {/* GRADIENT*/}
-        <div className="absolute inset-0 rounded-t-xl bg-gradient-to-t from-blue-900/20 to-gray-600/30 via-transparent "></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
       </div>
 
       {/* GLASS OVERLAY */}
@@ -97,28 +68,31 @@ export default function CharacterCardCounter({
               {character.name}
             </h3>
             {/* TOTAL COUNT */}
-            <span className="text-xs text-gray-300 bg-gray-800/80 px-2 py-1 rounded">
+            <span className="text-xs text-gray-200 bg-blue-700/80 px-2 py-1 rounded">
               {character.totalCount}
             </span>
           </div>
 
           {/* CARD BREAKDOWN  */}
           <div className="space-y-1.5">
-            {sortedCardBreakdown.map((card) => (
-              <div
-                key={`${card.rarity}-${card.isLimited}`}
-                className="flex items-center justify-between"
-              >
+            {sortedCardBreakdown.map((card, i) => (
+              <div key={i} className="flex items-center justify-between">
                 <div className="flex items-center space-x-1.5">
                   {getStarIcon(card.rarity, card.isLimited)}
-                  <span className="text-xs text-gray-300">
-                    {card.rarity}★ {card.isLimited ? "L" : "P"}
-                  </span>
+                  {!isVerySmol ? (
+                    <span className="text-xs text-gray-300">
+                      {card.rarity}★ {card.isLimited ? "Limited" : "Permanent"}
+                    </span>
+                  ) : (
+                    <span className="text-xs text-gray-300">
+                      {card.rarity}★ {card.isLimited ? "L" : "P"}
+                    </span>
+                  )}
                 </div>
 
                 <div className="flex items-center space-x-2">
                   {/* BAR VISUALIZATION*/}
-                  <div className="w-16 bg-gray-700/50 rounded-full h-1.5">
+                  <div className={`w-10 bg-gray-700/50 rounded-full h-1.5`}>
                     <div
                       className={`h-1.5 rounded-full ${
                         card.isLimited
@@ -128,12 +102,7 @@ export default function CharacterCardCounter({
                       style={{
                         width: `${Math.min(
                           100,
-                          (card.count /
-                            Math.max(
-                              ...character.cardBreakdown.map((c) => c.count),
-                              1
-                            )) *
-                            100
+                          (card.count / maxCount) * 100
                         )}%`,
                       }}
                     ></div>

@@ -1,6 +1,5 @@
-import { AllCharacters } from "./characters";
-import type { CardData,ProcessedCharacterData } from "./CounterTypes";
-
+import { AllCharacters } from "./config";
+import type { CardData, ProcessedCharacterData } from "./CounterTypes";
 
 export default function ProcessCardData(
   rawData: CardData[]
@@ -30,7 +29,6 @@ export default function ProcessCardData(
         isLimited: card.card_type === "limited",
         count: card.count,
       }));
-
 
       const totalCount = cardBreakdown.reduce(
         (sum, card) => sum + card.count,

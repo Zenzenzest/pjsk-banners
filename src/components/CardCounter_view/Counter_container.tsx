@@ -1,7 +1,7 @@
 import AllCards from "../../assets/json/cards.json";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import CharacterCardCounter from "./Card_grid";
-import { AllCharacters } from "./characters";
+import { AllCharacters } from "./config";
 import type { AllCardTypes } from "./CounterTypes";
 import { useServer } from "../../context/Server";
 import ProcessCardData from "./process_card";
@@ -27,16 +27,19 @@ const VS = [
 
 export default function CounterContainer() {
   const [showScrollButton, setShowScrollButton] = useState(false);
-  // const [filters, setFilters] = useState({
-  //   characters: [],
-  //   unit: [],
-  // });
-  const charactersCounter: { [key: string]: number } = {};
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const { isMobile, isVerySmol } = useMemo(
+    () => ({
+      isMobile: windowWidth < 520,
+      isVerySmol: windowWidth < 465,
+    }),
+    [windowWidth]
+  );
+
   const { server } = useServer();
   const { theme } = useTheme();
-  const allowedCardTypes = new Set(["permanent", "limited"]);
-  const today = Date.now();
-  const getCharacterId = (card: AllCardTypes) => {
+
+  const getCharacterId = useCallback((card: AllCardTypes) => {
     const isVirtualSinger = card.unit === "Virtual Singers";
 
     if (!isVirtualSinger || !card.sub_unit) {
@@ -49,9 +52,11 @@ export default function CounterContainer() {
     const groupIndex = SUB_UNIT.indexOf(card.sub_unit) + 1;
 
     return vsId + 4 * vsIndex + 1 + groupIndex;
-  };
+  }, []);
+
   const countRef = useRef<HTMLDivElement>(null);
-  // scroll detection
+
+  // scroll and resize handlers
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop =
@@ -61,11 +66,21 @@ export default function CounterContainer() {
       setShowScrollButton(isAwayFromTheTop);
     };
 
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
-  const scrollToTop = () => {
+
+  const scrollToTop = useCallback(() => {
     if (countRef.current) {
       countRef.current.scrollIntoView({
         behavior: "smooth",
@@ -74,46 +89,88 @@ export default function CounterContainer() {
     } else {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
-  };
+  }, []);
+
   // character code
-  const createCharCode = (
-    characterId: number,
-    cardType: string,
-    rarity: number
-  ) => `${characterId}-${cardType}-${rarity}`;
+  const createCharCode = useCallback(
+    (characterId: number, cardType: string, rarity: number) =>
+      `${characterId}-${cardType}-${rarity}`,
+    []
+  );
 
-  AllCards.forEach((card) => {
-    const isReleased =
-      server === "jp" ? today > card.jp_released : today > card.en_released;
-    if (
-      !allowedCardTypes.has(card.card_type) ||
-      card.rarity === 1 ||
-      !isReleased ||
-      (card.unit === "Virtual Singers" && !card.sub_unit)
-    ) {
-      return;
-    }
+  const processedData = useMemo(() => {
+    const charactersCounter: { [key: string]: number } = {};
+    const allowedCardTypes = new Set(["permanent", "limited"]);
+    const today = Date.now();
 
-    const characterId = getCharacterId(card);
-    const charCode = createCharCode(characterId, card.card_type, card.rarity);
+    AllCards.forEach((card) => {
+      const isReleased =
+        server === "jp" ? today > card.jp_released : today > card.en_released;
+      if (
+        !allowedCardTypes.has(card.card_type) ||
+        card.rarity === 1 ||
+        !isReleased ||
+        (card.unit === "Virtual Singers" && !card.sub_unit)
+      ) {
+        return;
+      }
 
-    // increment counter
-    charactersCounter[charCode] = (charactersCounter[charCode] ?? 0) + 1;
-  });
+      const characterId = getCharacterId(card);
+      const charCode = createCharCode(characterId, card.card_type, card.rarity);
 
-  const cardData = Object.entries(charactersCounter).map(([key, count]) => {
-    const [charId, card_type, rarity] = key.split("-");
+      // increment counter
+      charactersCounter[charCode] = (charactersCounter[charCode] ?? 0) + 1;
+    });
+
+    const cardData = Object.entries(charactersCounter).map(([key, count]) => ({
+      charId: key.split("-")[0],
+      rarity: parseInt(key.split("-")[2]) as 2 | 3 | 4,
+      card_type: key.split("-")[1] as "permanent" | "limited",
+      count: Number(count),
+    }));
+
+    return ProcessCardData(cardData);
+  }, [server, getCharacterId, createCharCode]);
+
+
+const processedDataWithSorting = useMemo(() => {
+  return processedData.map(character => {
+    // sorting
+    const allCardTypes = [
+      { rarity: 4, isLimited: true },
+      { rarity: 4, isLimited: false },
+      { rarity: 3, isLimited: false },
+      { rarity: 2, isLimited: false },
+    ];
+
+    const cardDataMap = new Map(
+      character.cardBreakdown.map((card) => [
+        `${card.rarity}-${card.isLimited}`,
+        card.count,
+      ])
+    );
+
+    const sortedCardBreakdown = allCardTypes.map((type) => ({
+      ...type,
+      count: cardDataMap.get(`${type.rarity}-${type.isLimited}`) || 0,
+    })).sort((a, b) => {
+      if (a.rarity === 4 && a.isLimited) return -1;
+      if (b.rarity === 4 && b.isLimited) return 1;
+      if (a.rarity !== b.rarity) return b.rarity - a.rarity;
+      if (a.isLimited !== b.isLimited) return b.isLimited ? 1 : -1;
+      return 0;
+    });
+
+    // max count
+    const maxCount = Math.max(...character.cardBreakdown.map((c) => c.count), 1);
 
     return {
-      charId,
-      rarity: parseInt(rarity) as 2 | 3 | 4,
-      card_type: card_type as "permanent" | "limited",
-      count,
+      ...character,
+      sortedCardBreakdown,
+      maxCount
     };
   });
-
-  const processedData = ProcessCardData(cardData);
-
+}, [processedData]);
   return (
     <div
       className={`p-4 flex flex-col justify-center items-center transition-all duration-300 ease-in-out ${
@@ -130,11 +187,17 @@ export default function CounterContainer() {
         <h1>FILTERS WIP</h1>
       </div>
 
-      <div className="grid grid-cols-1 max-w-5xl sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 mb-5">
-        {processedData.map((character, i) => (
-          <CharacterCardCounter key={i} character={character} />
+      <div className="grid grid-cols-2 max-w-5xl sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-2 mb-5">
+        {processedDataWithSorting.map((character) => (
+          <CharacterCardCounter
+            key={character.id}
+            character={character}
+            isMobile={isMobile}
+            isVerySmol={isVerySmol}
+          />
         ))}
       </div>
+
       {/* SCROLL TO TOP BUTTON */}
       {showScrollButton && (
         <button
