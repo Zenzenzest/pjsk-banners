@@ -72,31 +72,80 @@ export default function CharacterCardCounter({
   const portraitImg = `/images/cutouts/${character.id}.webp`;
 
   const notAllowedTypes = ["movie_exclusive", "bday", "limited_collab"];
-  const last4Card = AllCards.findLast((card: AllCardTypes) => {
-    const isReleased =
-      server === "jp" ? today > card.jp_released : today > card.en_released;
-    const isAllowed = !notAllowedTypes.includes(card.card_type);
-    const is4 = card.rarity === 4;
-    return isReleased && card.charId === character.id && isAllowed && is4;
-  });
 
-  const last4CardDate = last4Card
-    ? new Date(server === "jp" ? last4Card.jp_released : last4Card.en_released)
-    : new Date();
+  //  helper to avoid repetition
+  const getLastCardByRarity = (
+    cards: AllCardTypes[],
+    charId: number,
+    rarity: number,
+    server: string,
+    today: number,
+    excludedTypes: string[]
+  ) => {
+    return cards.findLast((card) => {
+      const isReleased =
+        server === "jp"
+          ? today > (card.jp_released ?? 0)
+          : today > (card.en_released ?? 0);
+      const isAllowed = !excludedTypes.includes(card.card_type);
+      const isRarityMatch = card.rarity === rarity;
+      return isReleased && card.charId === charId && isAllowed && isRarityMatch;
+    });
+  };
 
-  const formattedLast4CardDate = last4CardDate.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
+  //  date formatting
+  const formatCardDate = (card: AllCardTypes | undefined, server: string) => {
+    if (!card) return "N/A";
 
-  
+    const date = new Date(
+      server === "jp" ? card.jp_released : card.en_released
+    );
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  };
+
+  const last4Card = getLastCardByRarity(
+    AllCards,
+    character.id,
+    4,
+    server,
+    today,
+    notAllowedTypes
+  );
+  const last3Card = getLastCardByRarity(
+    AllCards,
+    character.id,
+    3,
+    server,
+    today,
+    notAllowedTypes
+  );
+  const last2Card = getLastCardByRarity(
+    AllCards,
+    character.id,
+    2,
+    server,
+    today,
+    notAllowedTypes
+  );
+
+  const formattedLast4CardDate = formatCardDate(last4Card, server);
+  const formattedLast3CardDate = formatCardDate(last3Card, server);
+  const formattedLast2CardDate = formatCardDate(last2Card, server);
+  const lastCards = [
+    formattedLast4CardDate,
+    formattedLast3CardDate,
+    formattedLast2CardDate,
+  ];
   return (
     <div
       className={`${
         isMobile ? "min-h-[325px]" : "h-[450px]"
       } max-w-[264px] rounded-xl overflow-hidden 
-     transition-all duration-200 hover:opacity-90 relative
+     transition-all duration-200 hover:opacity-90 relative cursor-pointer
      border-2 border-blue-500/30`}
     >
       {/* PORTRAIT IMAGE*/}
@@ -207,8 +256,18 @@ export default function CharacterCardCounter({
               ))}
               {/* MISC */}
               {isExpanded && (
-                <div className="flex flex-col mt-5">
-                  <span>{formattedLast4CardDate}</span>
+                <div className="flex flex-col mt-5 text-xs sm:text-sm">
+                  {lastCards.map((card, i) => {
+                    return (
+                      <div
+                        key={i}
+                        className="flex w-full gap-1 sm:gap-2 lg:gap-5"
+                      >
+                        <span>Last {4 - i}★: </span>
+                        <span>{card}</span>
+                      </div>
+                    );
+                  })}
                 </div>
               )}
             </div>
