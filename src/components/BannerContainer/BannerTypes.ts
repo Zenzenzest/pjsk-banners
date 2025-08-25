@@ -45,6 +45,7 @@ export type AllCardTypes = {
   jp_released: number;
   jp_name: string;
   prev_id?: number;
+  charId: number;
 };
 
 export type BannerGridProps = {
@@ -104,7 +105,6 @@ export type CardState = {
   sekaiId: number;
   cardType: string;
 };
-
 
 export type CountdownProps = {
   targetDate: Date;

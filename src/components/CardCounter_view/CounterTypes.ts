@@ -11,6 +11,7 @@ export type AllCardTypes = {
   jp_released: number;
   jp_name: string;
   prev_id?: number;
+  charId:number
 };
 
 export type CardData = {

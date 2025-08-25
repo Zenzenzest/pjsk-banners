@@ -48,7 +48,6 @@ export type BannerFilterComponentTypes = {
   handleCharacterFilterModeToggle: () => void;
 };
 
-
 export type AllCardTypes = {
   id: number;
   name: string;
@@ -62,7 +61,8 @@ export type AllCardTypes = {
   jp_released: number;
   jp_name: string;
   prev_id?: number;
-}
+  charId: number;
+};
 
 export interface BannerTypes {
   id: number;
@@ -88,30 +88,28 @@ export type CardState = {
   cardAttribute: string;
   sekaiId: number;
   cardType: string;
-}
+};
 
 export type SelectedCardFilterTypesProps = {
-  selectedCardFilters: CardFilterTypes
+  selectedCardFilters: CardFilterTypes;
 };
 
 export type SelectedBannerFilterTypesProps = {
-  selectedBannerFilters: BannerFilterTypes
+  selectedBannerFilters: BannerFilterTypes;
 };
 
 export type PaginationProps = {
-    currentPage: number;
-    totalPages: number;
-    handlePageChange: (page: number) => void
-}
-
+  currentPage: number;
+  totalPages: number;
+  handlePageChange: (page: number) => void;
+};
 
 export type CardThumbnailProps = {
-  card:AllCardTypes;
-
-}
+  card: AllCardTypes;
+};
 
 export type CardGridProps = {
   mode: string;
   cardId: number;
   cardName: string;
-}
+};
