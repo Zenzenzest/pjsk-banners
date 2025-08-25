@@ -1,18 +1,25 @@
-import type { CharacterCardData } from "./CounterTypes";
-
+import type { AllCardTypes, CharacterCardData } from "./CounterTypes";
+import AllCards from "../../assets/json/cards.json";
 import { RARITY_COLORS } from "./config";
+import { useServer } from "../../context/Server";
 export default function CharacterCardCounter({
   character,
   isMobile,
   isVerySmol,
 }: {
- character: CharacterCardData & { 
-    sortedCardBreakdown: Array<{rarity: number, isLimited: boolean, count: number}>;
+  character: CharacterCardData & {
+    sortedCardBreakdown: Array<{
+      rarity: number;
+      isLimited: boolean;
+      count: number;
+    }>;
     maxCount: number;
   };
   isMobile: boolean;
   isVerySmol: boolean;
 }) {
+  const today = Date.now();
+  const { server } = useServer();
   const getRarityBarColor = (rarity: number) =>
     RARITY_COLORS[rarity] || "bg-gray-400";
 
@@ -30,12 +37,18 @@ export default function CharacterCardCounter({
       />
     );
   };
-
-
+  const notAllowedTypes = ["movie_exclusive", "bday", "limited_collab"];
   const sortedCardBreakdown = character.sortedCardBreakdown;
   const maxCount = character.maxCount;
   const portraitImg = `/images/cutouts/${character.id}.webp`;
+  const lastCard = AllCards.findLast((card:AllCardTypes) => {
+    const isReleased =
+      server === "jp" ? today > card.jp_released : today > card.en_released;
+    const isAllowed = !notAllowedTypes.includes(card.card_type);
+    return isReleased && card.charId === character.id && isAllowed;
+  });
 
+  console.log(lastCard);
   return (
     <div
       className={`${
@@ -73,6 +86,7 @@ export default function CharacterCardCounter({
             </span>
           </div>
 
+          <div className=""></div>
           {/* CARD BREAKDOWN  */}
           <div className="space-y-1.5">
             {sortedCardBreakdown.map((card, i) => (

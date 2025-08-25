@@ -1,6 +1,6 @@
 import AllCards from "../../assets/json/cards.json";
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
-import CharacterCardCounter from "./Card_grid";
+import CharacterCardCounter from "./Character_grid";
 import { AllCharacters } from "./config";
 import type { AllCardTypes } from "./CounterTypes";
 import { useServer } from "../../context/Server";
@@ -79,7 +79,6 @@ export default function CounterContainer() {
     };
   }, []);
 
-
   const scrollToTop = useCallback(() => {
     if (countRef.current) {
       countRef.current.scrollIntoView({
@@ -121,7 +120,7 @@ export default function CounterContainer() {
       // increment counter
       charactersCounter[charCode] = (charactersCounter[charCode] ?? 0) + 1;
     });
-
+  
     const cardData = Object.entries(charactersCounter).map(([key, count]) => ({
       charId: key.split("-")[0],
       rarity: parseInt(key.split("-")[2]) as 2 | 3 | 4,
@@ -132,45 +131,51 @@ export default function CounterContainer() {
     return ProcessCardData(cardData);
   }, [server, getCharacterId, createCharCode]);
 
+  const processedDataWithSorting = useMemo(() => {
+    return processedData.map((character) => {
+      // sorting
+      const allCardTypes = [
+        { rarity: 4, isLimited: true },
+        { rarity: 4, isLimited: false },
+        { rarity: 3, isLimited: false },
+        { rarity: 2, isLimited: false },
+      ];
 
-const processedDataWithSorting = useMemo(() => {
-  return processedData.map(character => {
-    // sorting
-    const allCardTypes = [
-      { rarity: 4, isLimited: true },
-      { rarity: 4, isLimited: false },
-      { rarity: 3, isLimited: false },
-      { rarity: 2, isLimited: false },
-    ];
+      const cardDataMap = new Map(
+        character.cardBreakdown.map((card) => [
+          `${card.rarity}-${card.isLimited}`,
+          card.count,
+        ])
+      );
 
-    const cardDataMap = new Map(
-      character.cardBreakdown.map((card) => [
-        `${card.rarity}-${card.isLimited}`,
-        card.count,
-      ])
-    );
+      const sortedCardBreakdown = allCardTypes
+        .map((type) => ({
+          ...type,
+          count: cardDataMap.get(`${type.rarity}-${type.isLimited}`) || 0,
+        }))
+        .sort((a, b) => {
+          if (a.rarity === 4 && a.isLimited) return -1;
+          if (b.rarity === 4 && b.isLimited) return 1;
+          if (a.rarity !== b.rarity) return b.rarity - a.rarity;
+          if (a.isLimited !== b.isLimited) return b.isLimited ? 1 : -1;
+          return 0;
+        });
 
-    const sortedCardBreakdown = allCardTypes.map((type) => ({
-      ...type,
-      count: cardDataMap.get(`${type.rarity}-${type.isLimited}`) || 0,
-    })).sort((a, b) => {
-      if (a.rarity === 4 && a.isLimited) return -1;
-      if (b.rarity === 4 && b.isLimited) return 1;
-      if (a.rarity !== b.rarity) return b.rarity - a.rarity;
-      if (a.isLimited !== b.isLimited) return b.isLimited ? 1 : -1;
-      return 0;
+      // max count
+      const maxCount = Math.max(
+        ...character.cardBreakdown.map((c) => c.count),
+        1
+      );
+
+      return {
+        ...character,
+        sortedCardBreakdown,
+        maxCount,
+      };
     });
+  }, [processedData]);
 
-    // max count
-    const maxCount = Math.max(...character.cardBreakdown.map((c) => c.count), 1);
 
-    return {
-      ...character,
-      sortedCardBreakdown,
-      maxCount
-    };
-  });
-}, [processedData]);
   return (
     <div
       className={`p-4 flex flex-col justify-center items-center transition-all duration-300 ease-in-out ${
