@@ -4,6 +4,7 @@ import { RARITY_COLORS } from "./config";
 import { useServer } from "../../context/Server";
 import { useState, useRef, useEffect } from "react";
 import "./Character_grid_styles.css";
+import { IsDeviceIpad } from "../../hooks/isIpad";
 
 export default function CharacterCardCounter({
   character,
@@ -27,7 +28,7 @@ export default function CharacterCardCounter({
   const [isMounted, setIsMounted] = useState(false);
   const today = Date.now();
   const { server } = useServer();
-
+  const isIpad = IsDeviceIpad();
   // Get the collapsed height
   useEffect(() => {
     // ensure DOM is fully rendered
@@ -65,11 +66,12 @@ export default function CharacterCardCounter({
       />
     );
   };
-  const notAllowedTypes = ["movie_exclusive", "bday", "limited_collab"];
+
   const sortedCardBreakdown = character.sortedCardBreakdown;
   const maxCount = character.maxCount;
   const portraitImg = `/images/cutouts/${character.id}.webp`;
 
+  const notAllowedTypes = ["movie_exclusive", "bday", "limited_collab"];
   const last4Card = AllCards.findLast((card: AllCardTypes) => {
     const isReleased =
       server === "jp" ? today > card.jp_released : today > card.en_released;
@@ -88,6 +90,7 @@ export default function CharacterCardCounter({
     day: "numeric",
   });
 
+  
   return (
     <div
       className={`${
@@ -120,6 +123,8 @@ export default function CharacterCardCounter({
                 ? isExpanded
                   ? "100%"
                   : collapsedHeight
+                : isIpad || !isMobile
+                ? "40%"
                 : "50%",
             } as React.CSSProperties
           }
@@ -164,7 +169,7 @@ export default function CharacterCardCounter({
                   <div className="flex items-center space-x-1.5">
                     {getStarIcon(card.rarity, card.isLimited)}
                     {!isVerySmol ? (
-                      <span className="text-xs text-gray-300">
+                      <span className="text-sm text-gray-300">
                         {card.rarity}★{" "}
                         {card.isLimited ? "Limited" : "Permanent"}
                       </span>
@@ -201,9 +206,11 @@ export default function CharacterCardCounter({
                 </div>
               ))}
               {/* MISC */}
-              <div>
-                <span>{formattedLast4CardDate}</span>
-              </div>
+              {isExpanded && (
+                <div className="flex flex-col mt-5">
+                  <span>{formattedLast4CardDate}</span>
+                </div>
+              )}
             </div>
           </div>
         </div>
