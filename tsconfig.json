@@ -5,6 +5,7 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "lib": ["ES2023", "dom", "dom.iterable"]
+    "target": "esnext",
+    "lib": ["ESNext", "dom", "dom.iterable"]
   }
 }
