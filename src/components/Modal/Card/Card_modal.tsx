@@ -38,7 +38,7 @@ export default function CardModal({
       <div
         className={`relative z-10 ${
           isIpad ? "w-2/3" : "w-full"
-        } max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
+        } max-w-4xl max-h-[85vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
           theme === "dark"
             ? "bg-gray-800 border-gray-700"
             : "bg-white border-gray-200"
@@ -46,7 +46,7 @@ export default function CardModal({
         onClick={(e) => e.stopPropagation()} //prevent closing the modal when clicking on it
       >
         {/* ATTRIBUTE AND NAME */}
-        <div className="p-3 border-b border-gray-200 dark:border-gray-700">
+        <div className="sticky top-0 z-10 p-3 border-b border-gray-200 dark:border-gray-700 bg-inherit ">
           {/* CLOSE BUTTON */}
           <button
             onClick={onClose}
@@ -70,18 +70,17 @@ export default function CardModal({
               />
             </svg>
           </button>
-          <div className="flex flex-col items-center space-y-2">
+          <div className="flex flex-col items-center space-y-2 relative">
             {/* CARD ATTRIBUTE AND CHARACTER NAME*/}
-            <div className="flex items-center space-x-1">
-              <div className="relative">
-                <img
-                  src={`/images/attribute_icons/${cardAttribute}.webp`}
-                  className="w-full h-auto rounded-lg shadow-sm"
-                  alt={`${cardAttribute} attribute`}
-                />
-              </div>
+            <div className="flex items-center space-x-1 ">
+              <img
+                src={`/images/attribute_icons/${cardAttribute}.webp`}
+                className="w-[30px] absolute top-0 left-0 h-auto rounded-lg shadow-sm"
+                alt={`${cardAttribute} attribute`}
+              />
+
               <h2
-                className={`text-xl md:text-3xl font-bold font-serif tracking-wide w-[130px] sm:w-full text-center   ${
+                className={`text-xl md:text-3xl font-bold font-serif tracking-wide w-[170px] sm:w-full text-center   ${
                   theme === "dark" ? "text-white" : "text-gray-900"
                 }`}
               >
@@ -300,7 +299,7 @@ export default function CardModal({
         {/* BANNERS */}
         <CardReleases cardId={cardId} />
         {/* FOOTER BUTTONS */}
-        <div className="flex flex-row justify-between items-center p-2">
+        <div className="sticky bottom-0 z-10 bg-[#101828] flex flex-row justify-between items-center px-2 py-5">
           <a
             href={`https://sekai.best/card/${sekaiId}`}
             target="_blank"
