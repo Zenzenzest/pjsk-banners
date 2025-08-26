@@ -2,7 +2,7 @@ import { useTheme } from "../../../context/Theme_toggle";
 import { IsDeviceIpad } from "../../../hooks/isIpad";
 import type { CardModalProps } from "./CardModalTypes";
 import CardReleases from "./Card_releases";
-
+import { Characters } from "./characters";
 export default function CardModal({
   isOpen,
   onClose,
@@ -80,7 +80,7 @@ export default function CardModal({
               />
 
               <h2
-                className={`text-xl md:text-3xl font-bold font-serif tracking-wide w-[170px] sm:w-full text-center   ${
+                className={`text-xl md:text-2xl font-bold font-serif tracking-wide w-[200px] sm:w-full text-center   ${
                   theme === "dark" ? "text-white" : "text-gray-900"
                 }`}
               >
