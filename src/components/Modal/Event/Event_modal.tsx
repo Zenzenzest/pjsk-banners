@@ -3,7 +3,6 @@ import { useServer } from "../../../context/Server";
 import { useTheme } from "../../../context/Theme_toggle";
 import EnEvents from "../../../assets/json/en_events.json";
 import JpEvents from "../../../assets/json/jp_events.json";
-
 import EventBonus from "../../../assets/json/event_bonus.json";
 import AllCards from "../../../assets/json/cards.json";
 import type { EventModalProps, SUBUNITTypes } from "./EventModalTypes";
@@ -62,6 +61,31 @@ export default function EventModal({
 }: EventModalProps) {
   const { theme } = useTheme();
   const { server } = useServer();
+
+
+  // Prevent parent scroll
+  useEffect(() => {
+    if (!isEventOpen) return;
+
+
+    document.body.style.overflow = "hidden";
+
+    // cleanup
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isEventOpen]);
+
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    e.stopPropagation();
+    const target = e.target as HTMLElement;
+    const scrollable = target.scrollHeight > target.clientHeight;
+
+    if (!scrollable) {
+      e.preventDefault();
+    }
+  };
 
   const AllEvs = server === "jp" ? JpEvents : EnEvents;
 
@@ -172,6 +196,7 @@ export default function EventModal({
         <div
           className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm p-2 sm:p-4"
           onClick={onClose}
+          onTouchMove={handleTouchMove}
         >
           <div
             className={`relative w-full max-w-4xl max-h-[95vh] sm:max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
@@ -180,6 +205,7 @@ export default function EventModal({
                 : "bg-white border-gray-200"
             }`}
             onClick={(e) => e.stopPropagation()}
+            onTouchMove={(e) => e.stopPropagation()}
           >
             {/* HEADER */}
             <div className="sticky top-0 z-10 p-4 sm:p-6 border-b border-gray-200 dark:border-gray-700 bg-inherit rounded-t-xl">

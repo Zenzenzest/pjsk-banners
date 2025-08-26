@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useTheme } from "../../../context/Theme_toggle";
 import { IsDeviceIpad } from "../../../hooks/isIpad";
 import type { CardModalProps } from "./CardModalTypes";
@@ -22,12 +23,35 @@ export default function CardModal({
   const imageHost = "https://r2-image-proxy.zenzenzest.workers.dev/n/";
   const isIpad = IsDeviceIpad();
 
+  // Prevent parent scroll
+  useEffect(() => {
+    if (!isOpen) return;
+
+  
+    document.body.style.overflow = "hidden";
+
+    // cleanup 
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    e.stopPropagation();
+    const target = e.target as HTMLElement;
+    const scrollable = target.scrollHeight > target.clientHeight;
+
+    if (!scrollable) {
+      e.preventDefault();
+    }
+  };
   if (!isOpen) return null;
 
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm p-4"
       onClick={onClose}
+      onTouchMove={handleTouchMove}
     >
       <div
         className={`absolute inset-0 ${
@@ -36,7 +60,7 @@ export default function CardModal({
       ></div>
 
       <div
-        className={`relative z-10 ${
+        className={`relative z-10  ${
           isIpad ? "w-2/3" : "w-full"
         } max-w-4xl max-h-[85vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
           theme === "dark"
@@ -44,6 +68,7 @@ export default function CardModal({
             : "bg-white border-gray-200"
         }`}
         onClick={(e) => e.stopPropagation()} //prevent closing the modal when clicking on it
+        onTouchMove={(e) => e.stopPropagation()}
       >
         {/* ATTRIBUTE AND NAME */}
         <div className="sticky top-0 z-10 p-3 border-b border-gray-200 dark:border-gray-700 bg-inherit ">
