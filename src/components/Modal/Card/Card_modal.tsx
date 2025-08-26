@@ -299,7 +299,11 @@ export default function CardModal({
         {/* BANNERS */}
         <CardReleases cardId={cardId} />
         {/* FOOTER BUTTONS */}
-        <div className="sticky bottom-0 z-10 bg-[#101828] flex flex-row justify-between items-center px-2 py-5">
+        <div
+          className={`sticky bottom-0 z-10 ${
+            theme === "dark" ? "bg-[#101828]" : "bg-[#d1d5dc]"
+          }  flex flex-row justify-between items-center px-2 py-5`}
+        >
           <a
             href={`https://sekai.best/card/${sekaiId}`}
             target="_blank"
