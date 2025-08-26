@@ -1,12 +1,10 @@
-import type { AllCardTypes, CharacterCardData } from "./CounterTypes";
-import AllCards from "../../assets/json/cards.json";
+import type { CharacterCardData } from "./CounterTypes";
 import { RARITY_COLORS } from "./config";
-import { useServer } from "../../context/Server";
 import { useState, useRef, useEffect } from "react";
 import "./Character_grid_styles.css";
 import { IsDeviceIpad } from "../../hooks/isIpad";
 
-export default function CharacterCardCounter({
+export default function CharacterGrid({
   character,
   isMobile,
   isVerySmol,
@@ -18,6 +16,7 @@ export default function CharacterCardCounter({
       count: number;
     }>;
     maxCount: number;
+    lastCards: string[];
   };
   isMobile: boolean;
   isVerySmol: boolean;
@@ -26,9 +25,9 @@ export default function CharacterCardCounter({
   const overlayRef = useRef<HTMLDivElement>(null);
   const [collapsedHeight, setCollapsedHeight] = useState<string>("auto");
   const [isMounted, setIsMounted] = useState(false);
-  const today = Date.now();
-  const { server } = useServer();
+
   const isIpad = IsDeviceIpad();
+
   // Get the collapsed height
   useEffect(() => {
     // ensure DOM is fully rendered
@@ -45,6 +44,7 @@ export default function CharacterCardCounter({
     };
   }, []);
 
+  
   const handleToggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
@@ -70,82 +70,14 @@ export default function CharacterCardCounter({
   const sortedCardBreakdown = character.sortedCardBreakdown;
   const maxCount = character.maxCount;
   const portraitImg = `/images/cutouts/${character.id}.webp`;
+  const lastCards = character.lastCards;
 
-  const notAllowedTypes = ["movie_exclusive", "bday", "limited_collab"];
-
-  //  helper to avoid repetition
-  const getLastCardByRarity = (
-    cards: AllCardTypes[],
-    charId: number,
-    rarity: number,
-    server: string,
-    today: number,
-    excludedTypes: string[]
-  ) => {
-    return cards.findLast((card) => {
-      const isReleased =
-        server === "jp"
-          ? today > (card.jp_released ?? 0)
-          : today > (card.en_released ?? 0);
-      const isAllowed = !excludedTypes.includes(card.card_type);
-      const isRarityMatch = card.rarity === rarity;
-      return isReleased && card.charId === charId && isAllowed && isRarityMatch;
-    });
-  };
-
-  //  date formatting
-  const formatCardDate = (card: AllCardTypes | undefined, server: string) => {
-    if (!card) return "N/A";
-
-    const date = new Date(
-      server === "jp" ? card.jp_released : card.en_released
-    );
-    return date.toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    });
-  };
-
-  const last4Card = getLastCardByRarity(
-    AllCards,
-    character.id,
-    4,
-    server,
-    today,
-    notAllowedTypes
-  );
-  const last3Card = getLastCardByRarity(
-    AllCards,
-    character.id,
-    3,
-    server,
-    today,
-    notAllowedTypes
-  );
-  const last2Card = getLastCardByRarity(
-    AllCards,
-    character.id,
-    2,
-    server,
-    today,
-    notAllowedTypes
-  );
-
-  const formattedLast4CardDate = formatCardDate(last4Card, server);
-  const formattedLast3CardDate = formatCardDate(last3Card, server);
-  const formattedLast2CardDate = formatCardDate(last2Card, server);
-  const lastCards = [
-    formattedLast4CardDate,
-    formattedLast3CardDate,
-    formattedLast2CardDate,
-  ];
   return (
     <div
       className={`${
         isMobile ? "min-h-[325px]" : "h-[450px]"
       } max-w-[264px] rounded-xl overflow-hidden 
-     transition-all duration-200 hover:opacity-90 relative cursor-pointer
+     transition-all duration-200 hover:opacity-90 relative cursor-pointer-
      border-2 border-blue-500/30`}
     >
       {/* PORTRAIT IMAGE*/}
@@ -218,12 +150,12 @@ export default function CharacterCardCounter({
                   <div className="flex items-center space-x-1.5">
                     {getStarIcon(card.rarity, card.isLimited)}
                     {!isVerySmol ? (
-                      <span className="text-sm text-gray-300">
+                      <span className="text-sm text-gray-200">
                         {card.rarity}★{" "}
                         {card.isLimited ? "Limited" : "Permanent"}
                       </span>
                     ) : (
-                      <span className="text-xs text-gray-300">
+                      <span className="text-xs text-gray-200">
                         {card.rarity}★ {card.isLimited ? "L" : "P"}
                       </span>
                     )}
@@ -254,6 +186,7 @@ export default function CharacterCardCounter({
                   </div>
                 </div>
               ))}
+
               {/* MISC */}
               {isExpanded && (
                 <div className="flex flex-col mt-5 text-xs sm:text-sm">
