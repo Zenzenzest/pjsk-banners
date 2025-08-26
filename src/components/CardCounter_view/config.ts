@@ -71,3 +71,20 @@ export const RARITY_COLORS: Record<number, string> = {
   3: "bg-blue-400",
   4: "bg-purple-400"
 };
+
+export const SUB_UNIT = [
+  "Leo/Need",
+  "MORE MORE JUMP!",
+  "Vivid BAD SQUAD",
+  "Wonderlands x Showtime",
+  "Nightcord at 25:00",
+];
+
+export const VS = [
+  "Hatsune Miku",
+  "Kagamine Rin",
+  "Kagamine Len",
+  "Megurine Luka",
+  "MEIKO",
+  "KAITO",
+];
