@@ -6781,12 +6781,34 @@
   {
     "id": 508,
     "name": "[暁山瑞希]HAPPY BIRTHDAY2025ガチャ",
-    "cards": [1228,985, 705, 491],
+    "cards": [1228, 985, 705, 491],
     "start": 1756220400000,
     "end": 1756825199000,
     "en_id": 550,
     "banner_type": "Birthday",
     "characters": [20],
+    "keywords": []
+  },
+  {
+    "id": 509,
+    "name": "[マジカルミライ2025]プレミアムプレゼントガチャ",
+    "cards": [537, 1047, 298, 145, 326],
+    "start": 1756436400000,
+    "end": 1756954799000,
+    "en_id": 552,
+    "banner_type": "Premium Gift",
+    "characters": [21],
+    "keywords": []
+  },
+  {
+    "id": 510,
+    "name": "[初音ミク]HAPPY ANNIVERSARY2025ガチャ",
+    "cards": [1234, 986, 706, 492],
+    "start": 1756566000000,
+    "end": 1757170799000,
+    "en_id": 551,
+    "banner_type": "Birthday",
+    "characters": [21],
     "keywords": []
   }
 ]

@@ -6791,5 +6791,24 @@
     "banner_type": "Birthday",
     "characters": [20],
     "keywords": []
+  },{
+    "id": 551,
+    "name": "[初音ミク]HAPPY ANNIVERSARY2025ガチャ",
+    "cards": [1234, 986, 706, 492],
+    "start": 1788159600000,
+    "end": 1786085999000,
+    "banner_type": "Birthday",
+    "characters": [21],
+    "keywords": []
+  },
+  {
+    "id": 552,
+    "name": "Magical Mirai 2025 Premium Gift Gacha",
+    "cards": [537, 1047, 298, 145, 326],
+    "start": 1788116400000,
+    "end": 1788634799000,
+    "banner_type": "Premium Gift",
+    "characters": [21],
+    "keywords": []
   }
 ]
