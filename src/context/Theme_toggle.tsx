@@ -34,8 +34,8 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
       <div
         style={{
           position: "fixed",
-          left: "20px",
-          bottom: "20px",
+          left: "10px",
+          bottom: "10px",
           zIndex: 1000,
         }}
       >
