@@ -4,7 +4,7 @@ import { useTheme } from "../context/Theme_toggle";
 import FilterTab from "./Filter_view/Filter_Container";
 import { useServer } from "../context/Server";
 import SavedBannersContainer from "./SavedBanners/SavedBanners_container";
-import CounterContainer from "./CardCounter_view/Counter_container";
+import CounterContainer from "./CardCounter_view/Character/Character_container";
 
 type ViewModeType = "dateview" | "filterview" | "counterview";
 

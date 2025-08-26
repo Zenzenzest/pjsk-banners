@@ -1,8 +1,8 @@
-import type { CharacterCardData } from "./CounterTypes";
-import { RARITY_COLORS } from "./config";
+import type { CharacterCardData } from "../CounterTypes";
+import { RARITY_COLORS } from "../config";
 import { useState, useRef, useEffect } from "react";
 import "./Character_grid_styles.css";
-import { IsDeviceIpad } from "../../hooks/isIpad";
+import { IsDeviceIpad } from "../../../hooks/isIpad";
 
 export default function CharacterGrid({
   character,
@@ -44,7 +44,7 @@ export default function CharacterGrid({
     };
   }, []);
 
-  
+
   const handleToggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
@@ -134,11 +134,11 @@ export default function CharacterGrid({
 
             {/* CHARACTER NAME */}
             <div className="flex justify-between items-center">
-              <h3 className="font-semibold text-white text-sm truncate">
+              <h3 className="font-semibold text-white text-xs sm:text-sm truncate">
                 {character.name}
               </h3>
               {/* TOTAL COUNT */}
-              <span className="text-xs text-gray-200 bg-blue-700/80 px-2 py-1 rounded">
+              <span className="text-xs text-gray-200 bg-blue-700/80 p-1 rounded">
                 {character.totalCount}
               </span>
             </div>

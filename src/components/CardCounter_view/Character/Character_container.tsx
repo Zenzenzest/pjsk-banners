@@ -1,14 +1,13 @@
-import type { AllCardTypes } from "./CounterTypes";
-import AllCards from "../../assets/json/cards.json";
+import type { AllCardTypes } from "../CounterTypes";
+import AllCards from "../../../assets/json/cards.json";
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import CharacterGrid from "./Character_grid";
-import { AllCharacters } from "./config";
-import { useServer } from "../../context/Server";
-import ProcessCardData from "./process_card";
-import { useTheme } from "../../context/Theme_toggle";
-import WebsiteDisclaimer from "../Nav/Website_disclaimer";
-import { SUB_UNIT,VS } from "./config";
-
+import { AllCharacters } from "../config";
+import { useServer } from "../../../context/Server";
+import ProcessCardData from "../process_card";
+import { useTheme } from "../../../context/Theme_toggle";
+import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
+import { SUB_UNIT, VS } from "../config";
 
 const getLastCardByRarity = (
   cards: AllCardTypes[],
@@ -32,9 +31,7 @@ const getLastCardByRarity = (
 const formatCardDate = (card: AllCardTypes | undefined, server: string) => {
   if (!card) return "N/A";
 
-  const date = new Date(
-    server === "jp" ? card.jp_released : card.en_released
-  );
+  const date = new Date(server === "jp" ? card.jp_released : card.en_released);
   return date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "short",
@@ -75,7 +72,6 @@ export default function CounterContainer() {
 
   const countRef = useRef<HTMLDivElement>(null);
 
-
   // scroll and resize handlers
   useEffect(() => {
     const handleScroll = () => {
@@ -110,7 +106,6 @@ export default function CounterContainer() {
     }
   }, []);
 
-
   const createCharCode = useCallback(
     (characterId: number, cardType: string, rarity: number) =>
       `${characterId}-${cardType}-${rarity}`,
@@ -140,7 +135,7 @@ export default function CounterContainer() {
       // increment counter
       charactersCounter[charCode] = (charactersCounter[charCode] ?? 0) + 1;
     });
-  
+
     const cardData = Object.entries(charactersCounter).map(([key, count]) => ({
       charId: key.split("-")[0],
       rarity: parseInt(key.split("-")[2]) as 2 | 3 | 4,
@@ -150,8 +145,6 @@ export default function CounterContainer() {
 
     return ProcessCardData(cardData);
   }, [server, getCharacterId, createCharCode]);
-
-
 
   const processedDataWithSorting = useMemo(() => {
     return processedData.map((character) => {
