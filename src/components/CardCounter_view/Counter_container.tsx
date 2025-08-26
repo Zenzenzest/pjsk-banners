@@ -1,29 +1,46 @@
+import type { AllCardTypes } from "./CounterTypes";
 import AllCards from "../../assets/json/cards.json";
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
-import CharacterCardCounter from "./Character_grid";
+import CharacterGrid from "./Character_grid";
 import { AllCharacters } from "./config";
-import type { AllCardTypes } from "./CounterTypes";
 import { useServer } from "../../context/Server";
 import ProcessCardData from "./process_card";
 import { useTheme } from "../../context/Theme_toggle";
 import WebsiteDisclaimer from "../Nav/Website_disclaimer";
+import { SUB_UNIT,VS } from "./config";
 
-const SUB_UNIT = [
-  "Leo/Need",
-  "MORE MORE JUMP!",
-  "Vivid BAD SQUAD",
-  "Wonderlands x Showtime",
-  "Nightcord at 25:00",
-];
 
-const VS = [
-  "Hatsune Miku",
-  "Kagamine Rin",
-  "Kagamine Len",
-  "Megurine Luka",
-  "MEIKO",
-  "KAITO",
-];
+const getLastCardByRarity = (
+  cards: AllCardTypes[],
+  charId: number,
+  rarity: number,
+  server: string,
+  today: number,
+  excludedTypes: string[]
+) => {
+  return cards.findLast((card) => {
+    const isReleased =
+      server === "jp"
+        ? today > (card.jp_released ?? 0)
+        : today > (card.en_released ?? 0);
+    const isAllowed = !excludedTypes.includes(card.card_type);
+    const isRarityMatch = card.rarity === rarity;
+    return isReleased && card.charId === charId && isAllowed && isRarityMatch;
+  });
+};
+
+const formatCardDate = (card: AllCardTypes | undefined, server: string) => {
+  if (!card) return "N/A";
+
+  const date = new Date(
+    server === "jp" ? card.jp_released : card.en_released
+  );
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+};
 
 export default function CounterContainer() {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -38,6 +55,8 @@ export default function CounterContainer() {
 
   const { server } = useServer();
   const { theme } = useTheme();
+  const today = Date.now();
+  const notAllowedTypes = ["movie_exclusive", "bday", "limited_collab"];
 
   const getCharacterId = useCallback((card: AllCardTypes) => {
     const isVirtualSinger = card.unit === "Virtual Singers";
@@ -55,6 +74,7 @@ export default function CounterContainer() {
   }, []);
 
   const countRef = useRef<HTMLDivElement>(null);
+
 
   // scroll and resize handlers
   useEffect(() => {
@@ -90,7 +110,7 @@ export default function CounterContainer() {
     }
   }, []);
 
-  // character code
+
   const createCharCode = useCallback(
     (characterId: number, cardType: string, rarity: number) =>
       `${characterId}-${cardType}-${rarity}`,
@@ -131,6 +151,8 @@ export default function CounterContainer() {
     return ProcessCardData(cardData);
   }, [server, getCharacterId, createCharCode]);
 
+
+
   const processedDataWithSorting = useMemo(() => {
     return processedData.map((character) => {
       // sorting
@@ -161,7 +183,6 @@ export default function CounterContainer() {
           return 0;
         });
 
-      // max count
       const maxCount = Math.max(
         ...character.cardBreakdown.map((c) => c.count),
         1
@@ -175,6 +196,46 @@ export default function CounterContainer() {
     });
   }, [processedData]);
 
+  // Pre-compute last cards data
+  const processedDataWithLastCards = useMemo(() => {
+    return processedDataWithSorting.map((character) => {
+      const last4Card = getLastCardByRarity(
+        AllCards,
+        character.id,
+        4,
+        server,
+        today,
+        notAllowedTypes
+      );
+      const last3Card = getLastCardByRarity(
+        AllCards,
+        character.id,
+        3,
+        server,
+        today,
+        notAllowedTypes
+      );
+      const last2Card = getLastCardByRarity(
+        AllCards,
+        character.id,
+        2,
+        server,
+        today,
+        notAllowedTypes
+      );
+
+      const lastCards = [
+        formatCardDate(last4Card, server),
+        formatCardDate(last3Card, server),
+        formatCardDate(last2Card, server),
+      ];
+
+      return {
+        ...character,
+        lastCards,
+      };
+    });
+  }, [processedDataWithSorting, server, today]);
 
   return (
     <div
@@ -193,8 +254,8 @@ export default function CounterContainer() {
       </div>
 
       <div className="grid grid-cols-2 max-w-5xl sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-2 mb-5">
-        {processedDataWithSorting.map((character) => (
-          <CharacterCardCounter
+        {processedDataWithLastCards.map((character) => (
+          <CharacterGrid
             key={character.id}
             character={character}
             isMobile={isMobile}
