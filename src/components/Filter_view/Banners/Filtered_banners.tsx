@@ -5,9 +5,9 @@ import EnBanners from "../../../assets/json/en_banners.json";
 import JpBanners from "../../../assets/json/jp_banners.json";
 import type {
   SelectedBannerFilterTypesProps,
-  BannerTypes,
 } from "../FilterTabTypes";
-import { characters } from "../Categories";
+import type { BannerTypes } from "../../../types/common";
+import { CHARACTERS } from "../../../constants/common";
 import BannerContainer from "../../BannerContainer/Banner_Container";
 import Pagination from "../Ui/Pagination";
 
@@ -56,7 +56,7 @@ export default function FilteredBanners({
         // Convert selected character names to their corresponding IDs
         const selectedCharacterIds = selectedBannerFilters.Characters.map(
           (characterName: string) => {
-            const index = characters.indexOf(characterName);
+            const index = CHARACTERS.indexOf(characterName);
             return index !== -1 ? index + 1 : null;
           }
         ).filter((id) => id !== null);

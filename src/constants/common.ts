@@ -1,4 +1,4 @@
-export const Characters:string[] = [
+export const CHARACTERS = [
   "Hoshino Ichika",
   "Tenma Saki",
   "Mochizuki Honami",
@@ -26,3 +26,31 @@ export const Characters:string[] = [
   "MEIKO",
   "KAITO",
 ];
+
+export const UNITS = [
+  "Leo/need",
+  "MORE MORE JUMP!",
+  "Vivid BAD SQUAD",
+  "Wonderlands x Showtime",
+  "Nightcord at 25:00",
+];
+
+export const SUB_UNITS = [
+  "Leo/Need",
+  "MORE MORE JUMP!",
+  "Vivid BAD SQUAD",
+  "Wonderlands x Showtime",
+  "Nightcord at 25:00",
+];
+
+export const VS = [
+  "Hatsune Miku",
+  "Kagamine Rin",
+  "Kagamine Len",
+  "Megurine Luka",
+  "MEIKO",
+  "KAITO",
+];
+
+
+export const SpecialCards: number[] = [1167]

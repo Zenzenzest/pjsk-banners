@@ -1,4 +1,4 @@
-import { AllCharacters } from "./config";
+import { AllCharacters } from "./Counter_constants";
 import type { CardData, ProcessedCharacterData } from "./CounterTypes";
 
 export default function ProcessCardData(

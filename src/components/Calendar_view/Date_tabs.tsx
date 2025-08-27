@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import GlobalBanners from "../../assets/json/en_banners.json";
 import JpBbanners from "../../assets/json/jp_banners.json";
 import { useTheme } from "../../context/Theme_toggle";
-import type { BannerTypes, ServerTimeData } from "./DateTabTypes";
+import type { ServerTimeData } from "./DateTabTypes";
+import type { BannerTypes } from "../../types/common";
 import { useServer } from "../../context/Server";
 import BannerContainer from "../BannerContainer/Banner_Container";
 import WebsiteDisclaimer from "../Nav/Website_disclaimer";
@@ -12,7 +13,7 @@ import {
   timeData_global,
   years_jp,
   timeData_jp,
-} from "./Time_data";
+} from "./Date_tabs_constants";
 
 export default function DateTabs() {
   const { theme } = useTheme();

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useTheme } from "../../context/Theme_toggle";
 import { useServer } from "../../context/Server";
 import EnBanners from "../../assets/json/en_banners.json";
-import type { BannerTypes } from "./SavedBannerTypes";
+import type { BannerTypes } from "../../types/common";
 import BannerContainer from "../BannerContainer/Banner_Container";
 import WebsiteDisclaimer from "../Nav/Website_disclaimer";
 

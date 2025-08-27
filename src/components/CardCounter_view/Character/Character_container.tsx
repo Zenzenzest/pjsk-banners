@@ -1,13 +1,13 @@
-import type { AllCardTypes } from "../CounterTypes";
+import type { AllCardTypes } from "../../../types/common";
 import AllCards from "../../../assets/json/cards.json";
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import CharacterGrid from "./Character_grid";
-import { AllCharacters } from "../config";
+import { AllCharacters } from "../Counter_constants";
 import { useServer } from "../../../context/Server";
 import ProcessCardData from "../process_card";
 import { useTheme } from "../../../context/Theme_toggle";
 import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
-import { SUB_UNIT, VS } from "../config";
+import { SUB_UNITS, VS } from "../../../constants/common";
 
 const getLastCardByRarity = (
   cards: AllCardTypes[],
@@ -65,7 +65,7 @@ export default function CounterContainer() {
     // VS with sub_unit
     const vsId = AllCharacters.indexOf(card.character) + 1;
     const vsIndex = VS.indexOf(card.character) + 1;
-    const groupIndex = SUB_UNIT.indexOf(card.sub_unit) + 1;
+    const groupIndex = SUB_UNITS.indexOf(card.sub_unit) + 1;
 
     return vsId + 4 * vsIndex + 1 + groupIndex;
   }, []);

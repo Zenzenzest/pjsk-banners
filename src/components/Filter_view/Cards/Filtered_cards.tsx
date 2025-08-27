@@ -3,12 +3,12 @@ import AllCards from "../../../assets/json/cards.json";
 import type {
   CardState,
   SelectedCardFilterTypesProps,
-  AllCardTypes,
 } from "../FilterTabTypes";
+import type { AllCardTypes } from "../../../types/common";
 import CardModal from "../../Modal/Card/Card_modal";
 import { useTheme } from "../../../context/Theme_toggle";
 import { useServer } from "../../../context/Server";
-import { cardTypeMapping } from "../Categories";
+import { cardTypeMapping } from "../Filter_constants";
 
 import Pagination from "../Ui/Pagination";
 import CardThumbnail from "./Card_thumbnail";

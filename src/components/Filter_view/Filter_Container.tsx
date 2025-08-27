@@ -5,7 +5,7 @@ import FilteredBanners from "./Banners/Filtered_banners";
 import FilteredCards from "./Cards/Filtered_cards";
 import WebsiteDisclaimer from "../Nav/Website_disclaimer";
 import { useServer } from "../../context/Server";
-import { grouped } from "./Categories";
+import { grouped } from "./Filter_constants";
 import ViewModeTabs from "./Ui/Viewmode_tabs";
 import SearchInput from "./Ui/Search_input";
 import CardFilters from "./Filters/Card_filters";

@@ -1,4 +1,4 @@
-import { bannerFilterCategories } from "../Categories";
+import { bannerFilterCategories } from "../Filter_constants";
 import type { BannerFilterComponentTypes } from "../FilterTabTypes";
 
 export default function BannerFilters({
@@ -8,7 +8,7 @@ export default function BannerFilters({
   handleReset,
   handleApply,
   handleCharacterFilterModeToggle,
-}:BannerFilterComponentTypes) {
+}: BannerFilterComponentTypes) {
   return (
     <div
       className={`transition-all duration-500 ease-in-out overflow-hidden max-w-[500px] ${

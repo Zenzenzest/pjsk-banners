@@ -3,7 +3,7 @@ import { useTheme } from "../../../context/Theme_toggle";
 import { IsDeviceIpad } from "../../../hooks/isIpad";
 import type { CardModalProps } from "./CardModalTypes";
 import CardReleases from "./Card_releases";
-import { Characters } from "./characters";
+import { CHARACTERS } from "../../../constants/common";
 export default function CardModal({
   isOpen,
   onClose,
@@ -27,10 +27,9 @@ export default function CardModal({
   useEffect(() => {
     if (!isOpen) return;
 
-  
     document.body.style.overflow = "hidden";
 
-    // cleanup 
+    // cleanup
     return () => {
       document.body.style.overflow = "unset";
     };
@@ -326,7 +325,7 @@ export default function CardModal({
 
         {/* FOOTER BUTTONS */}
         <div
-          className={`sticky bottom-0 z-10 ${
+          className={`sticky bottom-0 z-10 text-xs sm:text-sm lg:text-lg ${
             theme === "dark" ? "bg-[#101828]" : "bg-[#d1d5dc]"
           }  flex flex-row justify-between gap-2 items-center px-1 py-4`}
         >
@@ -334,7 +333,7 @@ export default function CardModal({
             href={`https://sekai.best/card/${sekaiId}`}
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-flex items-center justify-center space-x-2 px-2 py-2 rounded-lg text-xs font-medium transition-all duration-200 ${
+            className={`inline-flex items-center justify-center space-x-2 px-2 py-2 rounded-lg  font-medium transition-all duration-200 ${
               theme === "dark"
                 ? "bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/20"
                 : "bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200"
@@ -360,11 +359,11 @@ export default function CardModal({
           </a>
           <a
             href={`https://sekai.best/storyreader/cardStory/${
-              Characters.indexOf(name) + 1
+              CHARACTERS.indexOf(name) + 1
             }/${sekaiId}`}
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-flex items-center justify-center space-x-2 px-1 py-2 rounded-lg text-xs font-medium transition-all duration-200 ${
+            className={`inline-flex items-center justify-center space-x-2 px-1 py-2 rounded-lg font-medium transition-all duration-200 ${
               theme === "dark"
                 ? "bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/20"
                 : "bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200"
@@ -391,7 +390,7 @@ export default function CardModal({
 
           <button
             onClick={onClose}
-            className={`inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg text-xs font-medium transition-all duration-200 ${
+            className={`inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg  font-medium transition-all duration-200 ${
               theme === "dark"
                 ? "bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/20"
                 : "bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200"

@@ -1,3 +1,19 @@
+export type AllCardTypes = {
+  id: number;
+  name: string;
+  character: string;
+  rarity: number;
+  card_type: string;
+  attribute: string;
+  unit: string;
+  sub_unit?: string;
+  en_released: number;
+  jp_released: number;
+  jp_name: string;
+  prev_id?: number;
+  charId: number
+};
+
 export type BannerTypes = {
   id: number;
   name: string;

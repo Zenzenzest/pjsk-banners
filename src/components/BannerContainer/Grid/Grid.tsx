@@ -3,7 +3,6 @@ import { useServer } from "../../../context/Server";
 import type { GridProps } from "../BannerTypes";
 import JpEvents from "../../../assets/json/jp_events.json";
 import EnEvents from "../../../assets/json/en_events.json";
-
 import WithEvent from "./With_event";
 import WithoutEvent from "./Without_event";
 

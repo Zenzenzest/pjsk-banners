@@ -1,5 +1,5 @@
 import type { CharacterCardData } from "../CounterTypes";
-import { RARITY_COLORS } from "../config";
+import { RARITY_COLORS } from "../Counter_constants";
 import { useState, useRef, useEffect } from "react";
 import "./Character_grid_styles.css";
 import { IsDeviceIpad } from "../../../hooks/isIpad";

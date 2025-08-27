@@ -39,34 +39,7 @@ export const grouped: Record<string, string[]> = {
   ],
 };
 
-export const characters = [
-  "Hoshino Ichika",
-  "Tenma Saki",
-  "Mochizuki Honami",
-  "Hinomori Shiho",
-  "Hanasato Minori",
-  "Kiritani Haruka",
-  "Momoi Airi",
-  "Hinomori Shizuku",
-  "Azusawa Kohane",
-  "Shiraishi An",
-  "Shinonome Akito",
-  "Aoyagi Toya",
-  "Tenma Tsukasa",
-  "Otori Emu",
-  "Kusanagi Nene",
-  "Kamishiro Rui",
-  "Yoisaki Kanade",
-  "Asahina Mafuyu",
-  "Shinonome Ena",
-  "Akiyama Mizuki",
-  "Hatsune Miku",
-  "Kagamine Rin",
-  "Kagamine Len",
-  "Megurine Luka",
-  "MEIKO",
-  "KAITO",
-];
+
 
 export const cardFilterCategories = {
   Characters: [

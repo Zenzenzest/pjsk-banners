@@ -1,15 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { useTheme } from "../../context/Theme_toggle";
-
-import CardModal from "../Modal/Card/Card_modal";
 import { useServer } from "../../context/Server";
+import CardModal from "../Modal/Card/Card_modal";
 import Disclaimer from "./Disclaimer";
-import type {
-  AllCardTypes,
-  BannerContainerProps,
-  BannerTypes,
-  CardState,
-} from "./BannerTypes";
+import type { BannerContainerProps, CardState } from "./BannerTypes";
+import type { BannerTypes, AllCardTypes } from "../../types/common";
 import Grid from "./Grid/Grid";
 import EventModal from "../Modal/Event/Event_modal";
 
@@ -36,7 +31,7 @@ export default function BannerContainer({
     sekaiId: 0,
     cardType: "",
   });
-  const [eventId, setEventId] = useState(0)
+  const [eventId, setEventId] = useState(0);
 
   // scroll detection
   useEffect(() => {
@@ -86,7 +81,7 @@ export default function BannerContainer({
 
   const handleEventClick = (event_id: number | undefined) => {
     if (event_id) {
-      setEventId(event_id)
+      setEventId(event_id);
     }
     setIsEventOpen(true);
   };
@@ -188,7 +183,7 @@ export default function BannerContainer({
       <EventModal
         isEventOpen={isEventOpen}
         onClose={handleCloseModal}
-       eventId={eventId}
+        eventId={eventId}
       />
       <CardModal
         isOpen={isOpen}

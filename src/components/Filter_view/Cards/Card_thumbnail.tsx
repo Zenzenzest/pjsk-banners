@@ -1,6 +1,7 @@
-import type { AllCardTypes, CardThumbnailProps } from "../FilterTabTypes";
+import type { CardThumbnailProps } from "../FilterTabTypes";
+import type { AllCardTypes } from "../../../types/common";
 import CardGrid from "./Card_grid";
-import { SpecialCards } from "./special_card";
+import { SpecialCards } from "../../../constants/common";
 export default function CardThumbnail({ card  }:CardThumbnailProps) {
 
 
