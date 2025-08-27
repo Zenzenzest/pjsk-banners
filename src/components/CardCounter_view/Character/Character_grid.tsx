@@ -44,7 +44,6 @@ export default function CharacterGrid({
     };
   }, []);
 
-
   const handleToggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
@@ -78,7 +77,7 @@ export default function CharacterGrid({
         isMobile ? "min-h-[325px]" : "h-[450px]"
       } max-w-[264px] rounded-xl overflow-hidden 
      transition-all duration-200 hover:opacity-90 relative cursor-pointer-
-     border-2 border-blue-500/30`}
+     border-2 border-blue-500/30 cursor-pointer`}
     >
       {/* PORTRAIT IMAGE*/}
       <div className="relative h-full">
