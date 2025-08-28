@@ -2,7 +2,8 @@ import { useTheme } from "../../context/Theme_toggle";
 
 export default function Disclaimer() {
   const { theme } = useTheme();
-  const disclaimerMessage = "Schedules from October 12 2025 onward will be adjusted when officially announced."
+  const disclaimerMessage =
+    "Schedules from October 12 2025 onward will be adjusted when officially announced 🔔 🔔 🔔 ";
   return (
     <div
       className={`mb-4 p-2 rounded-xl border-l-4 ${
@@ -40,14 +41,12 @@ export default function Disclaimer() {
             <div className="flex items-center space-x-2">
               <span className="w-2 h-2 bg-current rounded-full opacity-60"></span>
               <span>
-                <strong>Rerun banners:</strong> Approximately 350-380 days gap (1
-                year & ±15 days)
+                <strong>Rerun banners:</strong> Approximately 350-380 days gap
+                (1 year & ±15 days)
               </span>
             </div>
           </div>
-          <p className="text-sm mt-3 opacity-80">
-           {disclaimerMessage}
-          </p>
+          <p className="text-sm mt-3 opacity-80">{disclaimerMessage}</p>
         </div>
       </div>
     </div>
