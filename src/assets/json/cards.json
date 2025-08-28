@@ -12797,7 +12797,7 @@
   },
   {
     "id": 993,
-    "name": "Wings of Support",
+    "name": "You Give Me Wings",
     "character": "Kiritani Haruka",
     "rarity": 4,
     "unit": "MORE MORE JUMP!",
@@ -12810,7 +12810,7 @@
   },
   {
     "id": 994,
-    "name": "After the Tournament, We Had a Big Meal",
+    "name": "Post-Competition Feast",
     "character": "Shinonome Akito",
     "rarity": 4,
     "unit": "Vivid BAD SQUAD",
@@ -12823,7 +12823,7 @@
   },
   {
     "id": 995,
-    "name": "Friendship Training!",
+    "name": "Training With A Buddy!",
     "character": "Tenma Tsukasa",
     "rarity": 4,
     "unit": "Wonderlands x Showtime",
@@ -12836,7 +12836,7 @@
   },
   {
     "id": 996,
-    "name": "Training to Get Closer to Your Dreams ♪",
+    "name": "Training For A Dream♪",
     "character": "MEIKO",
     "rarity": 3,
     "unit": "Virtual Singers",
@@ -12863,7 +12863,7 @@
   },
   {
     "id": 998,
-    "name": "When I Met Miku",
+    "name": "Meeting Miku",
     "character": "Hoshino Ichika",
     "rarity": 4,
     "unit": "Leo/Need",
@@ -12876,7 +12876,7 @@
   },
   {
     "id": 999,
-    "name": "That Day's Yearning",
+    "name": "Our Dreams Back Then",
     "character": "Tenma Saki",
     "rarity": 4,
     "unit": "Leo/Need",
@@ -12889,7 +12889,7 @@
   },
   {
     "id": 1000,
-    "name": "Surrounded By Cider",
+    "name": "Swimming in Cider",
     "character": "Kagamine Len",
     "rarity": 4,
     "unit": "Virtual Singers",
@@ -12903,7 +12903,7 @@
   },
   {
     "id": 1001,
-    "name": "Experiencing the Joy of Drumming",
+    "name": "Discovering The Joys Of Drumming",
     "character": "Mochizuki Honami",
     "rarity": 3,
     "unit": "Leo/Need",
@@ -12929,7 +12929,7 @@
   },
   {
     "id": 1003,
-    "name": "Gazing At the Treasure",
+    "name": "Admiring My Treasures",
     "character": "Kamishiro Rui",
     "rarity": 4,
     "unit": "Wonderlands x Showtime",
@@ -12942,7 +12942,7 @@
   },
   {
     "id": 1004,
-    "name": "A Different Version of \"Myself\" I Don't Know",
+    "name": "Unfamiliar Versions Of Me",
     "character": "Kagamine Rin",
     "rarity": 4,
     "unit": "Virtual Singers",
@@ -12955,7 +12955,7 @@
   },
   {
     "id": 1005,
-    "name": "A Melody Filled With Our Dreams",
+    "name": "A Dream On A Melody",
     "character": "Kusanagi Nene",
     "rarity": 4,
     "unit": "Wonderlands x Showtime",
@@ -12968,7 +12968,7 @@
   },
   {
     "id": 1006,
-    "name": "Applying Makeup Is So Irritating",
+    "name": "Not Used To Makeup",
     "character": "Hinomori Shiho",
     "rarity": 4,
     "unit": "Leo/Need",
@@ -12981,7 +12981,7 @@
   },
   {
     "id": 1007,
-    "name": "A Song That Conveys Our Courage",
+    "name": "A Song Of Courage",
     "character": "Momoi Airi",
     "rarity": 4,
     "unit": "MORE MORE JUMP!",
@@ -12994,7 +12994,7 @@
   },
   {
     "id": 1008,
-    "name": "Helping Out For a Bit After School",
+    "name": "After-School Assistance",
     "character": "Aoyagi Toya",
     "rarity": 4,
     "unit": "Vivid BAD SQUAD",
@@ -13007,7 +13007,7 @@
   },
   {
     "id": 1009,
-    "name": "Let's Go Shopping!",
+    "name": "Restock Time!",
     "character": "Shinonome Ena",
     "rarity": 3,
     "unit": "Nightcord at 25:00",
@@ -14398,7 +14398,7 @@
   },
   {
     "id": 1115,
-    "name": "Resonating Fighting Spirit",
+    "name": "Two Hearts' Resonant Roar",
     "character": "Shinonome Akito",
     "rarity": 4,
     "unit": "Vivid BAD SQUAD",
@@ -14406,12 +14406,12 @@
     "card_type": "limited_collab",
     "jp_name": "共鳴する闘争心",
     "jp_released": 1739599200000,
-    "en_released": 1756666800000,
+    "en_released": 1757012400000,
     "charId": 11
   },
   {
     "id": 1116,
-    "name": "Wielding Each Other's Weapon",
+    "name": "Wielding Our Weapons",
     "character": "Aoyagi Toya",
     "rarity": 4,
     "unit": "Vivid BAD SQUAD",
@@ -14419,12 +14419,12 @@
     "card_type": "limited_collab",
     "jp_name": "互いの武器を振るって",
     "jp_released": 1739599200000,
-    "en_released": 1756666800000,
+    "en_released": 1757012400000,
     "charId": 12
   },
   {
     "id": 1117,
-    "name": "A Star's Shining Stage",
+    "name": "Shining Stars Onstage",
     "character": "Tenma Tsukasa",
     "rarity": 4,
     "unit": "Wonderlands x Showtime",
@@ -14432,12 +14432,12 @@
     "card_type": "limited_collab",
     "jp_name": "星のように輝くステージを",
     "jp_released": 1739599200000,
-    "en_released": 1756666800000,
+    "en_released": 1757012400000,
     "charId": 13
   },
   {
     "id": 1118,
-    "name": "Interwoven Show Of Magic And Inventions",
+    "name": "Magic and Science Combined",
     "character": "Kamishiro Rui",
     "rarity": 4,
     "unit": "Wonderlands x Showtime",
@@ -14445,7 +14445,7 @@
     "card_type": "limited_collab",
     "jp_name": "魔法と発明が織りなすショー",
     "jp_released": 1739599200000,
-    "en_released": 1756666800000,
+    "en_released": 1757012400000,
     "charId": 16
   },
   {
@@ -14457,7 +14457,7 @@
     "attribute": "Cute",
     "card_type": "limited_collab",
     "jp_released": 1739599200000,
-    "en_released": -1,
+    "en_released": 1757012400000,
     "jp_name": "はじけるアイドルスタイル",
     "charId": 23
   },
@@ -14470,7 +14470,7 @@
     "attribute": "Cool",
     "card_type": "limited_collab",
     "jp_released": 1739599200000,
-    "en_released": -1,
+    "en_released": 1757012400000,
     "jp_name": "スマートアイドルスタイル",
     "charId": 26
   },

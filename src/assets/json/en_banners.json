@@ -5420,7 +5420,7 @@
     "id": 449,
     "name": "JP 4th Year Anniversary Bloom Festival Gacha",
     "start": 1759258800000,
-    "end": 1759604340000,
+    "end": 1759604399000,
     "cards": [1003, 1004, 1005, 1006, 1007, 1008],
     "banner_type": "Bloom Festival",
     "type": "estimation",
@@ -5430,13 +5430,11 @@
   },
   {
     "id": 450,
-    "name": "Crossing SEKAI With ENSEMBLE Gacha",
-    "start": 1756666800000,
-    "end": 1759247999000,
+    "name": "Connecting SEKAI With ENSEMBLE Gacha",
+    "start": 1757012400000,
+    "end": 1758221999000,
     "cards": [1115, 1116, 1117, 1118],
     "banner_type": "Limited Collab",
-    "type": "confirmed",
-    "confirmation": "Confirmed for September",
     "characters": [11, 12, 13, 16],
     "keywords": ["Ensemble"]
   },
@@ -5444,7 +5442,7 @@
     "id": 451,
     "name": "Talent Blooms Gacha",
     "start": 1759604400000,
-    "end": 1760295540000,
+    "end": 1760295599000,
     "cards": [1005, 1006, 1007, 1008],
     "banner_type": "Limited Event",
     "type": "estimation",
@@ -6169,11 +6167,9 @@
     "id": 505,
     "name": "[Rerun] Sweet, Cute Valentine! Gacha",
     "cards": [583, 584, 585],
-    "start": 1759204800000,
-    "end": 1759204800000,
+    "start": 1758740400000,
+    "end": 1759517999000,
     "banner_type": "Limited Event Rerun",
-    "type": "rerun_estimation",
-    "rerun": [1757390400000, 1759032000000],
     "characters": [1, 15, 17],
     "keywords": ["valentine's"]
   },
@@ -6181,11 +6177,9 @@
     "id": 506,
     "name": "[Rerun] Imperial Soldiers Gacha",
     "cards": [600, 601, 602],
-    "start": 1759204800000,
-    "end": 1759204800000,
+    "start": 1758049200000,
+    "end": 1758826799000,
     "banner_type": "Limited Event Rerun",
-    "type": "rerun_estimation",
-    "rerun": [1757390400000, 1759032000000],
     "characters": [12, 16, 26],
     "keywords": ["white day"]
   },
@@ -6791,7 +6785,8 @@
     "banner_type": "Birthday",
     "characters": [20],
     "keywords": []
-  },{
+  },
+  {
     "id": 551,
     "name": "[初音ミク]HAPPY ANNIVERSARY2025ガチャ",
     "cards": [1234, 986, 706, 492],
@@ -6803,12 +6798,32 @@
   },
   {
     "id": 552,
-    "name": "Magical Mirai 2026 Premium Gift Gacha",
+    "name": "Magical Mirai 2025 Premium Gift Gacha",
     "cards": [537, 1047, 298, 145, 326],
-    "start": 1788116400000,
-    "end": 1788634799000,
+    "start": 1756407600000,
+    "end": 1757012399000,
     "banner_type": "Premium Gift",
     "characters": [21],
+    "keywords": []
+  },
+  {
+    "id": 553,
+    "name": "JP 4th Anniversary Your Pick Gacha (Limited Edition)",
+    "start": 1756666800000,
+    "end": 1761937199000,
+    "cards": [619, 459, 513, 475, 656, 442],
+    "banner_type": "Your Pick",
+    "characters": [4, 5, 11, 15, 17, 25],
+    "keywords": []
+  },
+  {
+    "id": 554,
+    "name": "JP 4th Anniversary Memorial Select Gacha",
+    "start": 1756666800000,
+    "end": 1761937199000,
+    "cards": [683, 873, 694, 928, 833, 875],
+    "banner_type": "Memorial Seelct",
+    "characters": [1, 5, 9, 13, 17, 21],
     "keywords": []
   }
 ]

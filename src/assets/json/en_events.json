@@ -2440,7 +2440,7 @@
   },
   {
     "id": 143,
-    "name": "This moment with you",
+    "name": "This moment with you!",
     "unit": "l/n",
     "cards": [998, 999, 1000, 1001, 1002],
     "keywords": [
@@ -2455,19 +2455,19 @@
     ],
     "event_type": "marathon",
     "start": 1758405600000,
-    "end": 1759204799000,
+    "end": 1759118399000,
     "close": 1759269599000,
     "type": "Ichika 5th Focus Event"
   },
   {
     "id": 144,
-    "name": "Carry These Feelings! Dream Stage",
+    "name": "Here On Our Dream Stage",
     "unit": "mixed",
     "cards": [1005, 1006, 1007, 1008, 1009],
     "keywords": ["shibuya festival", "festival"],
     "event_type": "marathon",
     "start": 1759269600000,
-    "end": 1760155199000,
+    "end": 1760068799000,
     "close": 1760306399000,
     "type": "Mixed Event"
   },
