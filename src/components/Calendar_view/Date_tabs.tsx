@@ -162,14 +162,27 @@ export default function DateTabs() {
       const statusComparison = statusOrder[statusA] - statusOrder[statusB];
       if (statusComparison !== 0) return statusComparison;
 
-      // Check if banner has event and prioritize it among(us) the ongoing banners
+      // priority levels for live banners
+      const getPriority = (banner: BannerTypes) => {
+        if ("event_id" in banner) return 1; // Priority 1
+        if (banner.banner_type === "Birthday") return 2; // Priority 2
+        if (banner.banner_type === "Limited Event Rerun") return 3; // Priority 3
+
+        if (
+          banner.banner_type === "Premium Gift" ||
+          banner.banner_type === "Unit Premium Gift"
+        )
+          return 5; // Priority 5
+        return 4; // Priority 4 (aything else)
+      };
+
       if (statusA === "live" && statusB === "live") {
-        const hasEventIdA = "event_id" in a;
-        const hasEventIdB = "event_id" in b;
-        if (hasEventIdA && !hasEventIdB) return -1;
-        if (!hasEventIdA && hasEventIdB) return 1;
+        const priorityA = getPriority(a);
+        const priorityB = getPriority(b);
+        if (priorityA !== priorityB) return priorityA - priorityB;
       }
 
+      // Keep the rerun comparison for non-live banners or when priorities are equal
       const rerunComparison = Number("rerun" in a) - Number("rerun" in b);
       if (rerunComparison !== 0) return rerunComparison;
 
