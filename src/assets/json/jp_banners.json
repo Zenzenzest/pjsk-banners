@@ -6810,5 +6810,51 @@
     "banner_type": "Birthday",
     "characters": [21],
     "keywords": []
+  },
+  {
+    "id": 511,
+    "name": "絶望の雨すら笑ってガチャ",
+    "cards": [1229, 1230, 1231],
+    "start": 1756522800000,
+    "end": 1757127599000,
+    "banner_type": "Limited Event",
+    "event_id": 178,
+    "en_id":555,
+    "characters": [13, 14, 16],
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "tsukasa",
+      "loud",
+      "obnoxious",
+      "kasa6",
+      "tsukasa6",
+      "focus"
+    ]
+  },
+  {
+    "id": 512,
+    "name": "[バーチャル・シンガー]ワールドリンクイベントサポートガチャ",
+    "cards": [979, 980, 981, 982, 983, 984],
+    "start": 1756522800000,
+    "end": 1758337199000,
+    "banner_type": "World Link Support",
+    "en_id":556,
+    "characters": [21, 22, 23, 24, 25, 26],
+    "keywords": ["wl", "world link 1", "wl1"]
+  },
+  {
+    "id": 513,
+    "name": "リコレクションフェスティバルガチャ",
+    "cards": [617, 655, 873],
+    "start": 1756609200000,
+    "end": 1756954799000,
+    "banner_type": "Recollection",
+    "en_id": 557,
+    "characters": [22, 14, 5],
+    "keywords": []
   }
 ]

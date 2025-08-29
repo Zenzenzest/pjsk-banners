@@ -6788,7 +6788,7 @@
   },
   {
     "id": 551,
-    "name": "[初音ミク]HAPPY ANNIVERSARY2025ガチャ",
+    "name": "Hatsune Miku Happy Anniversary 2026 Gacha",
     "cards": [1234, 986, 706, 492],
     "start": 1788159600000,
     "end": 1786085999000,
@@ -6824,6 +6824,49 @@
     "cards": [683, 873, 694, 928, 833, 875],
     "banner_type": "Memorial Seelct",
     "characters": [1, 5, 9, 13, 17, 21],
+    "keywords": []
+  },
+  {
+    "id": 555,
+    "name": "Even the Rain of Despair Will Make You Laugh Gacha",
+    "cards": [1229, 1230, 1231],
+    "start": 1788116400000,
+    "end": 1788721199000,
+    "banner_type": "Limited Event",
+    "event_id": 178,
+    "characters": [13, 14, 16],
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "tsukasa",
+      "loud",
+      "obnoxious",
+      "kasa6",
+      "tsukasa6",
+      "focus"
+    ]
+  },
+  {
+    "id": 556,
+    "name": "VIRTUAL SINGER World Link 2 Event Support Gacha",
+    "cards": [979, 980, 981, 982, 983, 984],
+    "start": 1788116400000,
+    "end": 1789930799000,
+    "banner_type": "World Link Support",
+    "characters": [21, 22, 23, 24, 25, 26],
+    "keywords": ["wl", "world link 1", "wl1"]
+  },
+  {
+    "id": 557,
+    "name": "Recollection Festival Gacha",
+    "cards": [617, 655, 873],
+    "start": 1788202800000,
+    "end": 1788548399000,
+    "banner_type": "Recollection",
+    "characters": [22, 14, 5],
     "keywords": []
   }
 ]

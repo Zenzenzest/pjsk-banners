@@ -3050,5 +3050,30 @@
     ],
     "event_type": "marathon",
     "type": "Mizuki 6th Focus Event"
+  },
+  {
+    "id": 178,
+    "name": "Deep Dark For Light",
+    "start": 1788127200000,
+    "end": 1788580799000,
+    "close": 1788749999000,
+    "unit": "wxs",
+
+    "cards": [1229, 1230, 1231, 1232, 1233],
+    "keywords": [
+      "wxs",
+      "wandasho",
+      "wansho",
+      "wonderland",
+      "showtime",
+      "tsukasa",
+      "loud",
+      "obnoxious",
+      "kasa6",
+      "tsukasa6",
+      "focus"
+    ],
+    "event_type": "marathon",
+    "type": "Tsukasa 6th Focus Event"
   }
 ]
