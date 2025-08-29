@@ -3,7 +3,7 @@ import { useServer } from "../../../context/Server";
 import { useTheme } from "../../../context/Theme_toggle";
 import EnEvents from "../../../assets/json/en_events.json";
 import JpEvents from "../../../assets/json/jp_events.json";
-import EventBonus from "../../../assets/json/event_bonus.json";
+
 import AllCards from "../../../assets/json/cards.json";
 import type { EventModalProps, SUBUNITTypes } from "./EventModalTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
@@ -62,11 +62,9 @@ export default function EventModal({
   const { theme } = useTheme();
   const { server } = useServer();
 
-
   // Prevent parent scroll
   useEffect(() => {
     if (!isEventOpen) return;
-
 
     document.body.style.overflow = "hidden";
 
@@ -75,7 +73,6 @@ export default function EventModal({
       document.body.style.overflow = "unset";
     };
   }, [isEventOpen]);
-
 
   const handleTouchMove = (e: React.TouchEvent) => {
     e.stopPropagation();
@@ -100,15 +97,14 @@ export default function EventModal({
     }
   }).map((card) => card.character);
 
-  const EvAttr = EventBonus.filter((ev) => ev.eventId === eventId).map(
-    (ev) => ev.cardAttr
-  )[0];
+  const EvAttr = AllCards.find((card) => card.id === EvCardIds[0])?.attribute;
+
   const hasVs = VS.some((vv) => EvCharacters.includes(vv));
   const isWorldLink = EvObj?.keywords.includes("world link");
 
   const filteredCards = AllCards.filter((card) => {
     const cardRelease = server === "jp" ? card.jp_released : card.en_released;
-    const attrMatch = card.attribute.toLowerCase() === EvAttr;
+    const attrMatch = card.attribute === EvAttr;
 
     const charMatch = EvCharacters.includes(card.character);
     const isCardReleased =
@@ -181,9 +177,7 @@ export default function EventModal({
     .sort((a, b) => b.max - a.max)
     .sort((a, b) => b.min - a.min);
 
-  const attrUpperCase =
-    EvAttr && EvAttr.charAt(0).toUpperCase() + EvAttr.slice(1);
-  const attrIcon = `/images/attribute_icons/${attrUpperCase}.webp`;
+  const attrIcon = `/images/attribute_icons/${EvAttr}.webp`;
   const iconsLoader = ImageLoader(filteredCards.length);
   useEffect(() => {
     iconsLoader.reset();
