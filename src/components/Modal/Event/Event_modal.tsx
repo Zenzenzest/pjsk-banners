@@ -3,11 +3,11 @@ import { useServer } from "../../../context/Server";
 import { useTheme } from "../../../context/Theme_toggle";
 import EnEvents from "../../../assets/json/en_events.json";
 import JpEvents from "../../../assets/json/jp_events.json";
-
 import AllCards from "../../../assets/json/cards.json";
 import type { EventModalProps, SUBUNITTypes } from "./EventModalTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import { useEffect } from "react";
+import { CHARACTERS, VS } from "../../../constants/common";
 
 const SUB_UNIT: SUBUNITTypes = {
   "l/n": "Leo/Need",
@@ -16,43 +16,6 @@ const SUB_UNIT: SUBUNITTypes = {
   wxs: "Wonderlands x Showtime",
   n25: "Nightcord at 25:00",
 };
-const VS = [
-  "Hatsune Miku",
-  "Kagamine Rin",
-  "Kagamine Len",
-  "Megurine Luka",
-  "MEIKO",
-  "KAITO",
-];
-
-const characters = [
-  "Hoshino Ichika",
-  "Tenma Saki",
-  "Mochizuki Honami",
-  "Hinomori Shiho",
-  "Hanasato Minori",
-  "Kiritani Haruka",
-  "Momoi Airi",
-  "Hinomori Shizuku",
-  "Azusawa Kohane",
-  "Shiraishi An",
-  "Shinonome Akito",
-  "Aoyagi Toya",
-  "Tenma Tsukasa",
-  "Otori Emu",
-  "Kusanagi Nene",
-  "Kamishiro Rui",
-  "Yoisaki Kanade",
-  "Asahina Mafuyu",
-  "Shinonome Ena",
-  "Akiyama Mizuki",
-  "Hatsune Miku",
-  "Kagamine Rin",
-  "Kagamine Len",
-  "Megurine Luka",
-  "MEIKO",
-  "KAITO",
-];
 
 export default function EventModal({
   eventId,
@@ -307,7 +270,7 @@ export default function EventModal({
                 >
                   {EvCharacters.map((char) => {
                     const charIcon = `/images/character_icons/${
-                      characters.indexOf(char) + 1
+                      CHARACTERS.indexOf(char) + 1
                     }.webp`;
                     return (
                       <div key={char} className="flex flex-col items-center">
@@ -322,7 +285,7 @@ export default function EventModal({
                   {hasVs &&
                     VS.map((vs) => {
                       const charIcon = `/images/character_icons/${
-                        characters.indexOf(vs) + 1
+                        CHARACTERS.indexOf(vs) + 1
                       }.webp`;
 
                       if (EvCharacters.includes(vs)) {
