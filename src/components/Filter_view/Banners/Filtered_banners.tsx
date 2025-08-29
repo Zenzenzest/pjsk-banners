@@ -3,9 +3,7 @@ import { useServer } from "../../../context/Server";
 import { useTheme } from "../../../context/Theme_toggle";
 import EnBanners from "../../../assets/json/en_banners.json";
 import JpBanners from "../../../assets/json/jp_banners.json";
-import type {
-  SelectedBannerFilterTypesProps,
-} from "../FilterTabTypes";
+import type { SelectedBannerFilterTypesProps } from "../FilterTabTypes";
 import type { BannerTypes } from "../../../types/common";
 import { CHARACTERS } from "../../../constants/common";
 import BannerContainer from "../../BannerContainer/Banner_Container";
@@ -127,6 +125,9 @@ export default function FilteredBanners({
   }, [currentPage, currentBanners, shouldScrollToTop]);
 
   const handlePageChange = (page: number) => {
+    if (currentPage === page) {
+      return;
+    }
     setCurrentPage(page);
     setShouldScrollToTop(true);
   };

@@ -204,6 +204,9 @@ export default function FilteredCards({
   };
 
   const handlePageChange = (page: number) => {
+    if (currentPage === page) {
+      return;
+    }
     setCurrentPage(page);
     setShouldScrollToTop(true);
   };
