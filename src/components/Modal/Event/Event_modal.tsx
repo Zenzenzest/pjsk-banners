@@ -156,7 +156,7 @@ export default function EventModal({
           onTouchMove={handleTouchMove}
         >
           <div
-            className={`relative w-full max-w-4xl max-h-[95vh] sm:max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
+            className={`relative w-full max-w-4xl max-h-[90vh] sm:max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
               theme === "dark"
                 ? "bg-gray-800 border-gray-600"
                 : "bg-white border-gray-200"
@@ -379,6 +379,51 @@ export default function EventModal({
                   </div>
                 </div>
               </div>
+            </div>{" "}
+            <div
+              className={`sticky bottom-0 z-10 text-xs px-5 sm:text-sm lg:text-lg ${
+                theme === "dark" ? "bg-[#101828]" : "bg-[#d1d5dc]"
+              }  flex flex-row justify-between gap-2 items-center px-1 py-4`}
+            >
+              {" "}
+              <a
+                href={`https://sekai.best/storyreader/eventStory/${eventId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center justify-center space-x-2 px-1 py-2 rounded-lg font-medium transition-all duration-200 ${
+                  theme === "dark"
+                    ? "bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/20"
+                    : "bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200"
+                }`}
+              >
+                <span>Event Story</span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 "
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+              <button
+                onClick={onClose}
+                className={`inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg  font-medium transition-all duration-200 ${
+                  theme === "dark"
+                    ? "bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/20"
+                    : "bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200"
+                }`}
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
