@@ -346,7 +346,7 @@ export default function EventModal({
                           className="group cursor-pointer transition-transform duration-200 hover:scale-105 flex flex-col items-center space-y-2"
                         >
                           <a
-                            href={`https://sekai.best/${card.id}`}
+                            href={`https://sekai.best/card/${card.id}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex flex-col items-center space-y-2 w-full"
