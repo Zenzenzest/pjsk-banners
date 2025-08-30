@@ -156,7 +156,7 @@ export default function EventModal({
           onTouchMove={handleTouchMove}
         >
           <div
-            className={`relative w-full max-w-4xl max-h-[90vh] sm:max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
+            className={`relative w-full max-w-4xl max-h-[80vh] sm:max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
               theme === "dark"
                 ? "bg-gray-800 border-gray-600"
                 : "bg-white border-gray-200"
@@ -240,7 +240,7 @@ export default function EventModal({
             </div>
             {/* EVENT ATTRIBUTE*/}
             {!isWorldLink && (
-              <div className="flex flex-col sm:flex-row justify-center sm:justify-start gap-2 sm:gap-3 items-center p-6 rounded-lg bg-opacity-50  ">
+              <div className="flex flex-col sm:flex-row justify-center sm:justify-start gap-2 sm:gap-3 items-center px-6 py-3 rounded-lg bg-opacity-50  ">
                 <h3
                   className={`text-base sm:text-lg font-semibold text-center sm:text-left ${
                     theme === "dark" ? "text-gray-300" : "text-gray-800"
@@ -257,7 +257,7 @@ export default function EventModal({
             )}
             <div className="p-4 pt-0 sm:p-6 space-y-6">
               {/* EVENT CHARACTERS */}
-              <div className="space-y-3">
+              <div className="space-y-1">
                 <h3
                   className={`text-base sm:text-lg font-semibold text-center sm:text-left ${
                     theme === "dark" ? "text-gray-300" : "text-gray-800"
