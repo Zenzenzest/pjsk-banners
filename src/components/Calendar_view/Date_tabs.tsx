@@ -61,7 +61,8 @@ export default function DateTabs() {
           }
         }
       }
-      return availableMonths[0];
+      // select the latest available month for future year
+      return availableMonths[availableMonths.length - 1];
     };
 
     const defaultYear = getInitialYear(years);
@@ -164,16 +165,18 @@ export default function DateTabs() {
 
       // priority levels for live banners
       const getPriority = (banner: BannerTypes) => {
-        if ("event_id" in banner) return 1; // Priority 1
-        if (banner.banner_type === "Birthday") return 2; // Priority 2
-        if (banner.banner_type === "Limited Event Rerun") return 3; // Priority 3
+        if ("event_id" in banner) return 1;
+        if (banner.banner_type === "Bloom Festival") return 2;
+        if (banner.banner_type === "Limited Collab") return 3;
+        if (banner.banner_type === "Birthday") return 4;
+        if (banner.banner_type === "Limited Event Rerun") return 5;
 
         if (
           banner.banner_type === "Premium Gift" ||
           banner.banner_type === "Unit Premium Gift"
         )
-          return 5; // Priority 5
-        return 4; // Priority 4 (aything else)
+          return 7;
+        return 6;
       };
 
       if (statusA === "live" && statusB === "live") {
@@ -195,11 +198,20 @@ export default function DateTabs() {
     const rememberedMonth = yearMonthMemory[y];
 
     setSelectedYear(y);
-    setSelectedMonth(
-      rememberedMonth && availableMonths.includes(rememberedMonth)
-        ? rememberedMonth
-        : availableMonths[0]
-    );
+
+    // If we have a remembered month for this year, use it
+    if (rememberedMonth && availableMonths.includes(rememberedMonth)) {
+      setSelectedMonth(rememberedMonth);
+      return;
+    }
+
+    // For future years, select the latest available month
+    if (y > currentYearValue) {
+      setSelectedMonth(availableMonths[availableMonths.length - 1]);
+    } else {
+      // For current/past years, use the first available month
+      setSelectedMonth(availableMonths[0]);
+    }
   };
 
   const handleMonthChange = (m: number) => {
