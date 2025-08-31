@@ -14406,7 +14406,7 @@
     "card_type": "limited_collab",
     "jp_name": "共鳴する闘争心",
     "jp_released": 1739599200000,
-    "en_released": 1757012400000,
+    "en_released": 1757023200000,
     "charId": 11
   },
   {
@@ -14419,7 +14419,7 @@
     "card_type": "limited_collab",
     "jp_name": "互いの武器を振るって",
     "jp_released": 1739599200000,
-    "en_released": 1757012400000,
+    "en_released": 1757023200000,
     "charId": 12
   },
   {
@@ -14432,7 +14432,7 @@
     "card_type": "limited_collab",
     "jp_name": "星のように輝くステージを",
     "jp_released": 1739599200000,
-    "en_released": 1757012400000,
+    "en_released": 1757023200000,
     "charId": 13
   },
   {
@@ -14445,32 +14445,32 @@
     "card_type": "limited_collab",
     "jp_name": "魔法と発明が織りなすショー",
     "jp_released": 1739599200000,
-    "en_released": 1757012400000,
+    "en_released": 1757023200000,
     "charId": 16
   },
   {
     "id": 1119,
-    "name": "Bursting Idol Style",
+    "name": "Energetic Idol",
     "character": "Kagamine Len",
     "rarity": 2,
     "unit": "Virtual Singers",
     "attribute": "Cute",
     "card_type": "limited_collab",
     "jp_released": 1739599200000,
-    "en_released": 1757012400000,
+    "en_released": 1757023200000,
     "jp_name": "はじけるアイドルスタイル",
     "charId": 23
   },
   {
     "id": 1120,
-    "name": "Smart Idol Style",
+    "name": "Dashing Idol",
     "character": "KAITO",
     "rarity": 2,
     "unit": "Virtual Singers",
     "attribute": "Cool",
     "card_type": "limited_collab",
     "jp_released": 1739599200000,
-    "en_released": 1757012400000,
+    "en_released": 1757023200000,
     "jp_name": "スマートアイドルスタイル",
     "charId": 26
   },

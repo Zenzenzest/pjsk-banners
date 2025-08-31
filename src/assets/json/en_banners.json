@@ -5431,8 +5431,8 @@
   {
     "id": 450,
     "name": "Connecting SEKAI With ENSEMBLE Gacha",
-    "start": 1757012400000,
-    "end": 1758221999000,
+    "start": 1757023200000,
+    "end": 1758265199000,
     "cards": [1115, 1116, 1117, 1118],
     "banner_type": "Limited Collab",
     "characters": [11, 12, 13, 16],
@@ -6867,6 +6867,16 @@
     "end": 1788548399000,
     "banner_type": "Recollection",
     "characters": [22, 14, 5],
+    "keywords": []
+  },
+  {
+    "id": 558,
+    "name": "COLORFUL STAGE!×Ensemble Stars!! Music Crossover Premium Gift Gacha",
+    "cards": [768, 890, 928, 854, 929, 869],
+    "start": 1757023200000,
+    "end": 1758265199000,
+    "banner_type": "Premium Gift",
+    "characters": [11, 12, 13, 16, 23, 26],
     "keywords": []
   }
 ]
