@@ -6809,7 +6809,7 @@
   {
     "id": 553,
     "name": "JP 4th Anniversary Your Pick Gacha (Limited Edition)",
-    "start": 1756666800000,
+    "start": 1759258800000,
     "end": 1761937199000,
     "cards": [619, 459, 513, 475, 656, 442],
     "banner_type": "Your Pick",
@@ -6819,7 +6819,7 @@
   {
     "id": 554,
     "name": "JP 4th Anniversary Memorial Select Gacha",
-    "start": 1756666800000,
+    "start": 1759258800000,
     "end": 1761937199000,
     "cards": [683, 873, 694, 928, 833, 875],
     "banner_type": "Memorial Seelct",
