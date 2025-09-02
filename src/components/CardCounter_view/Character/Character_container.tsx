@@ -26,7 +26,13 @@ const getLastCardByRarity = (
     const isRarityMatch = card.rarity === rarity;
     const isLim4 = card.card_type === "limited";
     if (cardType === "permanent") {
-      return isReleased && card.charId === charId && isAllowed && isRarityMatch;
+      return (
+        isReleased &&
+        card.charId === charId &&
+        isAllowed &&
+        isRarityMatch &&
+        !isLim4
+      );
     } else {
       return (
         isReleased &&
@@ -251,7 +257,7 @@ export default function CounterContainer() {
       };
     });
   }, [processedDataWithSorting, server, today]);
-  console.log(isMobile);
+  console.log(processedDataWithLastCards);
   return (
     <div
       className={`p-4 flex flex-col justify-center items-center transition-all duration-300 ease-in-out ${

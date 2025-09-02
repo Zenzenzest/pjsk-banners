@@ -72,7 +72,7 @@ export default function CharacterGrid({
   const maxCount = character.maxCount;
   const portraitImg = `/images/cutouts/${character.id}.webp`;
   const lastCards = character.lastCards;
-  console.log(lastCards);
+
   return (
     <div
       className={`${
