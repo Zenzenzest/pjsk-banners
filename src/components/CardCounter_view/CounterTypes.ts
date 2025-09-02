@@ -26,3 +26,5 @@ export type CharacterCardData = {
     count: number;
   }[];
 };
+
+

@@ -10,21 +10,32 @@ import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
 import { SUB_UNITS, VS } from "../../../constants/common";
 
 const getLastCardByRarity = (
-  cards: AllCardTypes[],
+  cardType: string,
   charId: number,
   rarity: number,
   server: string,
   today: number,
   excludedTypes: string[]
 ) => {
-  return cards.findLast((card) => {
+  return AllCards.findLast((card) => {
     const isReleased =
       server === "jp"
         ? today > (card.jp_released ?? 0)
         : today > (card.en_released ?? 0);
     const isAllowed = !excludedTypes.includes(card.card_type);
     const isRarityMatch = card.rarity === rarity;
-    return isReleased && card.charId === charId && isAllowed && isRarityMatch;
+    const isLim4 = card.card_type === "limited";
+    if (cardType === "permanent") {
+      return isReleased && card.charId === charId && isAllowed && isRarityMatch;
+    } else {
+      return (
+        isReleased &&
+        card.charId === charId &&
+        isAllowed &&
+        isRarityMatch &&
+        isLim4
+      );
+    }
   });
 };
 
@@ -32,11 +43,13 @@ const formatCardDate = (card: AllCardTypes | undefined, server: string) => {
   if (!card) return "N/A";
 
   const date = new Date(server === "jp" ? card.jp_released : card.en_released);
-  return date.toLocaleDateString("en-US", {
+
+  const formattedDate = date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "short",
     day: "numeric",
   });
+  return [formattedDate, card.id];
 };
 
 export default function CounterContainer() {
@@ -192,8 +205,16 @@ export default function CounterContainer() {
   // Pre-compute last cards data
   const processedDataWithLastCards = useMemo(() => {
     return processedDataWithSorting.map((character) => {
-      const last4Card = getLastCardByRarity(
-        AllCards,
+      const last4LimCard = getLastCardByRarity(
+        "limited",
+        character.id,
+        4,
+        server,
+        today,
+        notAllowedTypes
+      );
+      const last4PermCard = getLastCardByRarity(
+        "permanent",
         character.id,
         4,
         server,
@@ -201,7 +222,7 @@ export default function CounterContainer() {
         notAllowedTypes
       );
       const last3Card = getLastCardByRarity(
-        AllCards,
+        "permanent",
         character.id,
         3,
         server,
@@ -209,7 +230,7 @@ export default function CounterContainer() {
         notAllowedTypes
       );
       const last2Card = getLastCardByRarity(
-        AllCards,
+        "permanent",
         character.id,
         2,
         server,
@@ -218,7 +239,8 @@ export default function CounterContainer() {
       );
 
       const lastCards = [
-        formatCardDate(last4Card, server),
+        formatCardDate(last4LimCard, server),
+        formatCardDate(last4PermCard, server),
         formatCardDate(last3Card, server),
         formatCardDate(last2Card, server),
       ];
@@ -229,7 +251,7 @@ export default function CounterContainer() {
       };
     });
   }, [processedDataWithSorting, server, today]);
-
+  console.log(isMobile);
   return (
     <div
       className={`p-4 flex flex-col justify-center items-center transition-all duration-300 ease-in-out ${
@@ -246,7 +268,11 @@ export default function CounterContainer() {
         <h1>FILTERS WIP</h1>
       </div>
 
-      <div className="grid grid-cols-2 max-w-5xl sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-2 mb-5">
+      <div
+        className={`grid ${
+          isMobile ? "grid-cols-2" : "grid-cols-2"
+        } max-w-5xl sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-2 mb-5`}
+      >
         {processedDataWithLastCards.map((character) => (
           <CharacterGrid
             key={character.id}

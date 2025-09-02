@@ -16,7 +16,7 @@ export default function CharacterGrid({
       count: number;
     }>;
     maxCount: number;
-    lastCards: string[];
+    lastCards: (string | (string | number)[])[];
   };
   isMobile: boolean;
   isVerySmol: boolean;
@@ -27,6 +27,8 @@ export default function CharacterGrid({
   const [isMounted, setIsMounted] = useState(false);
 
   const isIpad = IsDeviceIpad();
+
+  const lastCardKeys = ["4★ Lim: ", "4★ Perm: ", "3★: ", "2★: "];
 
   // Get the collapsed height
   useEffect(() => {
@@ -70,7 +72,7 @@ export default function CharacterGrid({
   const maxCount = character.maxCount;
   const portraitImg = `/images/cutouts/${character.id}.webp`;
   const lastCards = character.lastCards;
-
+  console.log(lastCards);
   return (
     <div
       className={`${
@@ -143,18 +145,18 @@ export default function CharacterGrid({
             </div>
 
             {/* CARD BREAKDOWN  */}
-            <div className="space-y-1 flex-grow   overflow-hidden">
+            <div className="space-y-1    overflow-hidden">
               {sortedCardBreakdown.map((card, i) => (
                 <div key={i} className="flex items-center justify-between">
                   <div className="flex items-center space-x-1.5">
                     {getStarIcon(card.rarity, card.isLimited)}
                     {!isVerySmol ? (
-                      <span className="text-sm text-gray-200">
+                      <span className="text-sm text-gray-100">
                         {card.rarity}★{" "}
                         {card.isLimited ? "Limited" : "Permanent"}
                       </span>
                     ) : (
-                      <span className="text-xs text-gray-200">
+                      <span className="text-xs text-gray-100">
                         {card.rarity}★ {card.isLimited ? "L" : "P"}
                       </span>
                     )}
@@ -186,17 +188,19 @@ export default function CharacterGrid({
                 </div>
               ))}
 
-              {/* MISC */}
+              {/* LAST CARD RELEASE DATE*/}
               {isExpanded && (
-                <div className="flex flex-col mt-5 text-xs sm:text-sm">
+                <div className="flex flex-col  mt-5 text-xs sm:text-sm text-gray-50">
+                  <h1>Last Cards</h1>
                   {lastCards.map((card, i) => {
                     return (
-                      <div
-                        key={i}
-                        className="flex w-full gap-1 sm:gap-2 lg:gap-5"
-                      >
-                        <span>Last {4 - i}★: </span>
-                        <span>{card}</span>
+                      <div className="grid grid-cols-2" key={i}>
+                        <span className="col-span-1">{lastCardKeys[i]}</span>
+                        {typeof card === "string" ? (
+                          <span>{card}</span>
+                        ) : (
+                          <span>{card[0]} </span>
+                        )}
                       </div>
                     );
                   })}
