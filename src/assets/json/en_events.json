@@ -2473,7 +2473,7 @@
   },
   {
     "id": 145,
-    "name": "Where Does The Path Of Thorns Go?",
+    "name": "Whither This Path Of Torns",
     "unit": "n25",
     "cards": [1011, 1012, 1013, 1014, 1015],
     "keywords": [
@@ -2535,7 +2535,7 @@
   },
   {
     "id": 148,
-    "name": "Once Again, When the Leaves Change Color",
+    "name": "As the Leaves Change Once More",
     "unit": "mixed",
     "cards": [1028, 1029, 1030, 1031, 1032],
     "keywords": ["autumn"],

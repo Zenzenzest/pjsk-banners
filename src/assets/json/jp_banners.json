@@ -5109,7 +5109,7 @@
     "start": 1727492400000,
     "end": 1727665199000,
     "cards": [768, 904, 537],
-    "en_id": -4,
+    "en_id": 560,
     "banner_type": "Normal",
     "characters": [11, 18, 21],
     "keywords": []
@@ -5120,7 +5120,7 @@
     "start": 1727622000000,
     "end": 1730343599000,
     "cards": [644, 856, 447, 553, 626, 940],
-    "en_id": -4,
+    "en_id": 561,
     "banner_type": "Unit Premium Gift",
     "characters": [21, 22, 23, 24, 25, 26],
     "keywords": []
@@ -5131,7 +5131,7 @@
     "start": 1727622000000,
     "end": 1730343599000,
     "cards": [868, 909, 867, 910],
-    "en_id": -4,
+    "en_id": 562,
     "banner_type": "Unit Premium Gift",
     "characters": [1, 2, 3, 4],
     "keywords": []
@@ -5142,7 +5142,7 @@
     "start": 1727622000000,
     "end": 1730343599000,
     "cards": [873, 938, 665, 939],
-    "en_id": -4,
+    "en_id": 563,
     "banner_type": "Unit Premium Gift",
     "characters": [5, 6, 7, 8],
     "keywords": []
@@ -5153,7 +5153,7 @@
     "start": 1727622000000,
     "end": 1730343599000,
     "cards": [769, 891, 768, 890],
-    "en_id": -4,
+    "en_id": 564,
     "banner_type": "Unit Premium Gift",
     "characters": [9, 10, 11, 12],
     "keywords": []
@@ -5164,7 +5164,7 @@
     "start": 1727622000000,
     "end": 1730343599000,
     "cards": [928, 927, 855, 854],
-    "en_id": -4,
+    "en_id": 565,
     "banner_type": "Unit Premium Gift",
     "characters": [13, 14, 15, 16],
     "keywords": []
@@ -5175,7 +5175,7 @@
     "start": 1727622000000,
     "end": 1730343599000,
     "cards": [833, 943, 903, 944],
-    "en_id": -4,
+    "en_id": 566,
     "banner_type": "Unit Premium Gift",
     "characters": [17, 18, 19, 20],
     "keywords": []
@@ -5220,7 +5220,7 @@
     "start": 1727492400000,
     "end": 1732978799000,
     "cards": [265, 185, 192, 719, 412, 542],
-    "en_id": -4,
+    "en_id": 559,
     "banner_type": "4★ Guaranteed",
     "characters": [2, 8, 10, 16, 18, 23],
     "keywords": []
@@ -5231,7 +5231,7 @@
     "start": 1727665200000,
     "end": 1732935599000,
     "cards": [830, 577, 632, 659, 606, 614],
-    "en_id": -4,
+    "en_id": 567,
     "banner_type": "Free Pull",
     "characters": [2, 8, 10, 13, 20, 24],
     "keywords": []
@@ -6819,7 +6819,7 @@
     "end": 1757127599000,
     "banner_type": "Limited Event",
     "event_id": 178,
-    "en_id":555,
+    "en_id": 555,
     "characters": [13, 14, 16],
     "keywords": [
       "wxs",
@@ -6842,7 +6842,7 @@
     "start": 1756522800000,
     "end": 1758337199000,
     "banner_type": "World Link Support",
-    "en_id":556,
+    "en_id": 556,
     "characters": [21, 22, 23, 24, 25, 26],
     "keywords": ["wl", "world link 1", "wl1"]
   },

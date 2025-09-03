@@ -6188,11 +6188,9 @@
     "id": 507,
     "name": "[Rerun] Grow Up With Me! Gacha",
     "cards": [762, 763, 764, 765],
-    "start": 1761883200000,
-    "end": 1761883200000,
+    "start": 1759950000000,
+    "end": 1760727599000,
     "banner_type": "Limited Event Rerun",
-    "type": "rerun_estimation",
-    "rerun": [1759896000000, 1761105600000],
     "characters": [1, 5, 13, 17],
     "keywords": ["new school year"]
   },
@@ -6878,6 +6876,97 @@
     "end": 1758265199000,
     "banner_type": "Premium Gift",
     "characters": [11, 12, 13, 16, 23, 26],
+    "keywords": []
+  },
+  {
+    "id": 559,
+    "name": "[Friend Invitation] 4★ Character Guaranteed Gacha",
+    "start": 1758913200000,
+    "end": 1764575999000,
+    "cards": [265, 185, 192, 719, 412, 542],
+    "banner_type": "4★ Guaranteed",
+    "characters": [2, 8, 10, 16, 18, 23],
+    "keywords": []
+  },
+  {
+    "id": 560,
+    "name": "JP 4th Anniversary Run-Up Special Prize Gacha",
+    "start": 1759086000000,
+    "end": 1759258799000,
+    "cards": [768, 904, 537],
+
+    "banner_type": "Normal",
+    "characters": [11, 18, 21],
+    "keywords": []
+  },
+  {
+    "id": 561,
+    "name": "JP 4th Anniversary VIRTUAL SINGER Premium Gift Gacha",
+    "start": 1759215600000,
+    "end": 1761937199000,
+    "cards": [644, 856, 447, 553, 626, 940],
+    "banner_type": "Unit Premium Gift",
+    "characters": [21, 22, 23, 24, 25, 26],
+    "keywords": []
+  },
+  {
+    "id": 562,
+    "name": "JP 4th Anniversary Leo/need Premium Gift Gacha",
+    "start": 1759215600000,
+    "end": 1761937199000,
+    "cards": [868, 909, 867, 910],
+    "banner_type": "Unit Premium Gift",
+    "characters": [1, 2, 3, 4],
+    "keywords": []
+  },
+  {
+    "id": 563,
+    "name": "JP 4th Anniversary MORE MORE JUMP! Premium Gift Gacha",
+    "start": 1759215600000,
+    "end": 1761937199000,
+    "cards": [873, 938, 665, 939],
+    "banner_type": "Unit Premium Gift",
+    "characters": [5, 6, 7, 8],
+    "keywords": []
+  },
+  {
+    "id": 564,
+    "name": "JP 4th Anniversary Vivid BAD SQUAD Premium Gift Gacha",
+    "start": 1759215600000,
+    "end": 1761937199000,
+    "cards": [769, 891, 768, 890],
+    "banner_type": "Unit Premium Gift",
+    "characters": [9, 10, 11, 12],
+    "keywords": []
+  },
+  {
+    "id": 565,
+    "name": "JP 4th Anniversary Wonderlands×Showtime Premium Gift Gacha",
+    "start": 1759215600000,
+    "end": 1761937199000,
+    "cards": [928, 927, 855, 854],
+    "banner_type": "Unit Premium Gift",
+    "characters": [13, 14, 15, 16],
+    "keywords": []
+  },
+  {
+    "id": 566,
+    "name": "JP 4th Anniversary Nightcord at 25:00 Premium Gift Gacha",
+    "start": 1759215600000,
+    "end": 1761937199000,
+    "cards": [833, 943, 903, 944],
+    "banner_type": "Unit Premium Gift",
+    "characters": [17, 18, 19, 20],
+    "keywords": []
+  },
+  {
+    "id": 567,
+    "name": "JP 4th Anniversary 10x Free Gacha",
+    "start": 1759258800000,
+    "end": 1764532799000,
+    "cards": [830, 577, 632, 659, 606, 614],
+    "banner_type": "Free Pull",
+    "characters": [2, 8, 10, 13, 20, 24],
     "keywords": []
   }
 ]
