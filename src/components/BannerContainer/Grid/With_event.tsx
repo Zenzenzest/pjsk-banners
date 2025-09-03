@@ -147,12 +147,15 @@ export default function WithEvent({
               fetchPriority="high"
               className={`w-full h-auto ${
                 mode === "event" &&
-                "cursor-pointer  duration-200 hover:scale-105 hover:opacity-80"
+                EventObj?.event_type !== "login" &&
+                "cursor-pointer   duration-200 hover:scale-105 hover:opacity-80"
               }`}
               onError={handleImageError}
               onLoad={bannerLoader.handleLoad}
               onClick={
-                mode === "event" && banner.event_id !== undefined
+                mode === "event" &&
+                EventObj?.event_type !== "login" &&
+                banner.event_id !== undefined
                   ? () => handleEventClick(banner.event_id)
                   : undefined
               }

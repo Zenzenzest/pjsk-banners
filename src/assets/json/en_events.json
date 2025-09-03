@@ -3058,7 +3058,6 @@
     "end": 1788580799000,
     "close": 1788749999000,
     "unit": "wxs",
-
     "cards": [1229, 1230, 1231, 1232, 1233],
     "keywords": [
       "wxs",
@@ -3075,5 +3074,17 @@
     ],
     "event_type": "marathon",
     "type": "Tsukasa 6th Focus Event"
+  },
+  {
+    "id": 1000,
+    "name": "Ensemble Stars!! Music Login Campaign",
+    "start": 1757012400000,
+    "end": 1758265199000,
+    "close": 1758265199000,
+    "unit": "mixed",
+    "cards": [1115, 1116, 1117, 1118, 1119, 1120],
+    "keywords": ["ensemble", "collab"],
+    "event_type": "login",
+    "type": "Ensemble Stars!!Music Login Event"
   }
 ]

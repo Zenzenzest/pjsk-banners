@@ -5431,9 +5431,10 @@
   {
     "id": 450,
     "name": "Connecting SEKAI With ENSEMBLE Gacha",
-    "start": 1757023200000,
-    "end": 1758265199000,
+    "start": 1757012400000,
+    "end": 1758221999000,
     "cards": [1115, 1116, 1117, 1118],
+    "event_id": 1000,
     "banner_type": "Limited Collab",
     "characters": [11, 12, 13, 16],
     "keywords": ["Ensemble"]

@@ -11,7 +11,7 @@ export type AllCardTypes = {
   jp_released: number;
   jp_name: string;
   prev_id?: number;
-  charId: number
+  charId: number;
 };
 
 export type BannerTypes = {
@@ -30,4 +30,5 @@ export type BannerTypes = {
   en_id?: number;
   tag?: string;
   questionable?: string;
+  special_event_id?: number;
 };
