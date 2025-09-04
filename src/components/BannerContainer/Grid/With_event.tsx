@@ -158,7 +158,8 @@ export default function WithEvent({
                 EventObj?.event_type !== "login" &&
                 banner.event_id !== undefined
                   ? () => handleEventClick(banner.event_id)
-                  : banner.banner_type !== "Birthday"
+                  : banner.banner_type !== "Birthday" &&
+                    EventObj?.event_type !== "login"
                   ? () => handleGachaClick(banner.sekai_id)
                   : undefined
               }
