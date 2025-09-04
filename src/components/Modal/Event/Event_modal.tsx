@@ -30,12 +30,12 @@ export default function EventModal({
     if (!isEventOpen) return;
 
     document.body.style.overflow = "hidden";
-
+    iconsLoader.reset();
     // cleanup
     return () => {
       document.body.style.overflow = "unset";
     };
-  }, [isEventOpen]);
+  }, [isEventOpen, eventId]);
 
   const AllEvs = server === "jp" ? JpEvents : EnEvents;
 
@@ -132,9 +132,6 @@ export default function EventModal({
 
   const attrIcon = `/images/attribute_icons/${EvAttr}.webp`;
   const iconsLoader = ImageLoader(filteredCards.length);
-  useEffect(() => {
-    iconsLoader.reset();
-  }, [eventId]);
 
   if (!isEventOpen) return null;
   return (

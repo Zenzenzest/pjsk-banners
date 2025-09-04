@@ -20,12 +20,12 @@ export default function GachaModal({
     if (!isGachaOpen) return;
 
     document.body.style.overflow = "hidden";
-
+    iconsLoader.reset();
     // cleanup
     return () => {
       document.body.style.overflow = "unset";
     };
-  }, [isGachaOpen]);
+  }, [isGachaOpen, gachaId]);
   const AllGacha = server === "global" ? EnBanners : JpBanners;
 
   const gachaObj = AllGacha.find((gacha) => gacha.sekai_id === gachaId);
@@ -36,9 +36,6 @@ export default function GachaModal({
     })
     .sort((a, b) => b - a);
   const iconsLoader = ImageLoader(sortedCards?.length ?? 0);
-  useEffect(() => {
-    iconsLoader.reset();
-  }, [gachaId]);
 
   if (!isGachaOpen) return null;
 
