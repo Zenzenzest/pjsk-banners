@@ -84,25 +84,39 @@ export default function GachaModal({
       total4starChance = 6;
       break;
     case "World Link Support":
-      total4starChance = 3;
-      featured4starChance = 0.4;
+      if (gachaObj.keywords.length === 0) {
+        total4starChance = 3;
+      } else {
+        total4starChance = 3;
+        featured4starChance = 0.4;
+      }
+      break;
   }
 
   const featured4 = gachaObj?.cards;
 
   const nonFeatured4 = gachaObj?.gachaDetails.filter((card) => {
-    return !featured4?.includes(card);
+    if (
+      gachaObj.banner_type === "World Link Support" &&
+      gachaObj.keywords.length === 0
+    ) {
+      return featured4?.includes(card) || gachaObj.gachaDetails.includes(card);
+    } else {
+      return !featured4?.includes(card);
+    }
   });
   const totalFeatured4chance =
     featured4 && Number((featured4starChance * featured4.length).toFixed(1));
-  const totalNonFeatured4chance =
-    total4starChance - (totalFeatured4chance || 0);
+  const totalNonFeatured4chance = Number(
+    (total4starChance - (totalFeatured4chance || 0)).toFixed(3)
+  );
 
   const nonF4Chance =
     nonFeatured4 &&
     totalNonFeatured4chance &&
     Number((totalNonFeatured4chance / nonFeatured4?.length).toFixed(3));
 
+  console.log(nonFeatured4?.length);
   if (!isGachaOpen) return null;
 
   return (
@@ -258,8 +272,14 @@ export default function GachaModal({
                                 }`}
                               >
                                 <div className="text-xs sm:text-sm font-medium">
-                                  {gachaObj.cards.includes(card.id) &&
-                                  gachaObj.banner_type !== "Recollection" ? (
+                                  {(gachaObj.cards.includes(card.id) &&
+                                    gachaObj.banner_type !== "Recollection" &&
+                                    gachaObj.banner_type !==
+                                      "World Link Support") ||
+                                  (gachaObj.banner_type ===
+                                    "World Link Support" &&
+                                    gachaObj.keywords.length !== 0 &&
+                                    gachaObj.cards.includes(card.id)) ? (
                                     <span>{featured4starChance} %</span>
                                   ) : (
                                     <span>{nonF4Chance} %</span>
