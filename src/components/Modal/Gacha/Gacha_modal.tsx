@@ -52,7 +52,7 @@ export default function GachaModal({
         >
           {" "}
           <div
-            className={`relative w-full max-w-4xl max-h-[80vh] sm:max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
+            className={`relative w-full max-w-4xl max-h-[90vh] sm:max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
               theme === "dark"
                 ? "bg-gray-800 border-gray-600"
                 : "bg-white border-gray-200"
