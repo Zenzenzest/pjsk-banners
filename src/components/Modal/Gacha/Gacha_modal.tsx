@@ -4,9 +4,22 @@ import { useTheme } from "../../../context/Theme_toggle";
 import { handleTouchMove } from "../touch_move";
 import EnBanners from "../../../assets/json/en_banners.json";
 import JpBanners from "../../../assets/json/jp_banners.json";
-
+import AllCards from "../../../assets/json/cards.json";
 import type { GachaModalProps } from "./GachaModalTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
+
+const allowedBannerTypes = [
+  "Event",
+  "Limited Event",
+  "Limited Event Rerun",
+  "Collab",
+  "Unit Limited Event",
+  "Bloom Festival",
+  "Colorful Festival",
+  "Recollection",
+  "World Link Support",
+];
+
 export default function GachaModal({
   gachaId,
   isGachaOpen,
@@ -30,18 +43,72 @@ export default function GachaModal({
 
   const gachaObj = AllGacha.find((gacha) => gacha.id === gachaId);
 
-  const sortedCards = gachaObj?.gachaDetails
-    .filter((card) => {
-      return !gachaObj.cards.includes(card);
-    })
-    .sort((a, b) => b - a);
-  const iconsLoader = ImageLoader(sortedCards?.length ?? 0);
+  const sortedAndFilteredCards = AllCards.filter((card) => {
+    const releaseDate =
+      server === "global" ? card.en_released : card.jp_released;
+    if (gachaObj) {
+      return (
+        (gachaObj.gachaDetails.includes(card.id) ||
+          gachaObj.cards.includes(card.id)) &&
+        gachaObj.start >= releaseDate
+      );
+    }
+  })
+    .sort((a, b) => b.id - a.id)
+    .sort((a, b) => {
+      const isRateUpA = gachaObj?.cards.includes(a.id);
+      const isRateUpB = gachaObj?.cards.includes(b.id);
+      if (isRateUpA && !isRateUpB) return -1;
+      if (!isRateUpA && isRateUpB) return 1;
+      return 0;
+    });
+  const iconsLoader = ImageLoader(sortedAndFilteredCards?.length ?? 0);
+
+  let total4starChance = 0;
+  let featured4starChance = 0;
+
+  switch (gachaObj?.banner_type) {
+    case "Limited Event":
+    case "Event":
+    case "Limited Event Rerun":
+    case "Unit Limited Event":
+    case "Collab":
+      total4starChance = 3;
+      featured4starChance = 0.4;
+      break;
+    case "Bloom Festival":
+    case "Colorful Festival":
+      total4starChance = 6;
+      featured4starChance = 0.4;
+      break;
+    case "Recollection":
+      total4starChance = 6;
+      break;
+    case "World Link Support":
+      total4starChance = 3;
+      featured4starChance = 0.4;
+  }
+
+  const featured4 = gachaObj?.cards;
+
+  const nonFeatured4 = gachaObj?.gachaDetails.filter((card) => {
+    return !featured4?.includes(card);
+  });
+  const totalFeatured4chance =
+    featured4 && Number((featured4starChance * featured4.length).toFixed(1));
+  const totalNonFeatured4chance =
+    total4starChance - (totalFeatured4chance || 0);
+
+  const nonF4Chance =
+    nonFeatured4 &&
+    totalNonFeatured4chance &&
+    Number((totalNonFeatured4chance / nonFeatured4?.length).toFixed(3));
 
   if (!isGachaOpen) return null;
 
   return (
     <>
-      {gachaObj && sortedCards ? (
+      {gachaObj && sortedAndFilteredCards ? (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm p-2 sm:p-4"
           onClick={onClose}
@@ -140,7 +207,7 @@ export default function GachaModal({
                     theme === "dark" ? "text-gray-300" : "text-gray-800"
                   } `}
                 >
-                  Off-rate Cards
+                  4★ Rates
                 </h3>
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-3 sm:gap-4">
                   {!iconsLoader.isLoaded && (
@@ -159,15 +226,15 @@ export default function GachaModal({
                     }`}
                   >
                     {" "}
-                    {sortedCards.map((card) => {
-                      const cardName = `${card}_t.webp`;
+                    {sortedAndFilteredCards.map((card) => {
+                      const cardName = `${card.id}_t.webp`;
                       return (
                         <div
-                          key={card}
+                          key={card.id}
                           className="group cursor-pointer transition-transform duration-200 hover:scale-105 flex flex-col items-center space-y-2"
                         >
                           <a
-                            href={`https://sekai.best/card/${card}`}
+                            href={`https://sekai.best/card/${card.id}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex flex-col items-center space-y-2 w-full"
@@ -180,6 +247,26 @@ export default function GachaModal({
                                 onLoad={iconsLoader.handleLoad}
                               />
                             </div>
+                            {/* RATE */}
+                            {allowedBannerTypes.includes(
+                              gachaObj.banner_type
+                            ) && (
+                              <div
+                                className={`w-full px-2 py-1 rounded-md text-center ${
+                                  theme === "dark"
+                                    ? "bg-gray-700/80 text-gray-200"
+                                    : "bg-gray-100/80 text-gray-700"
+                                }`}
+                              >
+                                <div className="text-xs sm:text-sm font-medium">
+                                  {gachaObj.cards.includes(card.id) ? (
+                                    <span>{featured4starChance} %</span>
+                                  ) : (
+                                    <span>{nonF4Chance} %</span>
+                                  )}
+                                </div>{" "}
+                              </div>
+                            )}
                           </a>
                         </div>
                       );

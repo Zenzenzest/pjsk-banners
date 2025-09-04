@@ -41,3 +41,10 @@ vbs miko:
 4 - 1 = 3
 4 - 2 = 2
 
+
+total n of 4s = featured 4s + non-featured 4s
+total 4 % = 3
+total featured 4s % = total n of featured 4s * 0.4
+
+total non-f 4s %:= 3 - total featured 4s %
+non-f 4s % = total non-f 4s % / total n of non-f 4s
