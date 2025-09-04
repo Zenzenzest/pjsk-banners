@@ -7,6 +7,7 @@ import type { BannerContainerProps, CardState } from "./BannerTypes";
 import type { BannerTypes, AllCardTypes } from "../../types/common";
 import Grid from "./Grid/Grid";
 import EventModal from "../Modal/Event/Event_modal";
+import GachaModal from "../Modal/Gacha/Gacha_modal";
 
 export default function BannerContainer({
   filteredBanners,
@@ -22,6 +23,7 @@ export default function BannerContainer({
   const [isLoading2, setIsLoading2] = useState(true);
   const [showScrollButton, setShowScrollButton] = useState(false);
   const [isEventOpen, setIsEventOpen] = useState(false);
+  const [isGachaOpen, setIsGachaOpen] = useState(false);
   const [cardState, setCardState] = useState<CardState>({
     cardId: 0,
     rarity: 4,
@@ -32,7 +34,7 @@ export default function BannerContainer({
     cardType: "",
   });
   const [eventId, setEventId] = useState(0);
-
+  const [gachaId, setGachaId] = useState(0);
   // scroll detection
   useEffect(() => {
     const handleScroll = () => {
@@ -77,6 +79,7 @@ export default function BannerContainer({
     setIsLoading2(true);
     setIsOpen(false);
     setIsEventOpen(false);
+    setIsGachaOpen(false);
   };
 
   const handleEventClick = (event_id: number | undefined) => {
@@ -84,6 +87,13 @@ export default function BannerContainer({
       setEventId(event_id);
     }
     setIsEventOpen(true);
+  };
+
+  const handleGachaClick = (gacha_id: number | undefined) => {
+    if (gacha_id) {
+      setGachaId(gacha_id);
+    }
+    setIsGachaOpen(true);
   };
 
   return (
@@ -132,6 +142,7 @@ export default function BannerContainer({
                               mode={mode}
                               handleCardClick={handleCardClick}
                               handleEventClick={handleEventClick}
+                              handleGachaClick={handleGachaClick}
                             />
                           );
                         })}
@@ -143,6 +154,7 @@ export default function BannerContainer({
                         mode="gacha"
                         handleCardClick={handleCardClick}
                         handleEventClick={handleEventClick}
+                        handleGachaClick={handleGachaClick}
                       />
                     </div>
                   )}
@@ -184,6 +196,11 @@ export default function BannerContainer({
         isEventOpen={isEventOpen}
         onClose={handleCloseModal}
         eventId={eventId}
+      />
+      <GachaModal
+        isGachaOpen={isGachaOpen}
+        onClose={handleCloseModal}
+        gachaId={gachaId}
       />
       <CardModal
         isOpen={isOpen}

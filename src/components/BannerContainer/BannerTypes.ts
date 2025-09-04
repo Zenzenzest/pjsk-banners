@@ -49,6 +49,7 @@ export type GridProps = {
   mode: string;
   handleCardClick: (card: AllCardTypes) => void;
   handleEventClick: (ev: number | undefined) => void;
+  handleGachaClick: (gc: number | undefined) => void;
 };
 
 export type EventEndedProps = {
@@ -93,6 +94,7 @@ export type WithEventProps = {
   handleSaveBanner: (id: number) => void;
   isBannerSaved: (id: number) => boolean;
   handleEventClick: (ev: number | undefined) => void;
+  handleGachaClick: (gc: number | undefined) => void;
 };
 
 export type WithoutEventProps = {

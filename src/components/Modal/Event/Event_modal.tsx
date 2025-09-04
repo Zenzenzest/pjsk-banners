@@ -8,7 +8,7 @@ import type { EventModalProps, SUBUNITTypes } from "./EventModalTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import { useEffect } from "react";
 import { CHARACTERS, VS } from "../../../constants/common";
-
+import { handleTouchMove } from "../touch_move";
 const SUB_UNIT: SUBUNITTypes = {
   "l/n": "Leo/Need",
   mmj: "MORE MORE JUMP!",
@@ -36,16 +36,6 @@ export default function EventModal({
       document.body.style.overflow = "unset";
     };
   }, [isEventOpen]);
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    e.stopPropagation();
-    const target = e.target as HTMLElement;
-    const scrollable = target.scrollHeight > target.clientHeight;
-
-    if (!scrollable) {
-      e.preventDefault();
-    }
-  };
 
   const AllEvs = server === "jp" ? JpEvents : EnEvents;
 
@@ -379,7 +369,8 @@ export default function EventModal({
                   </div>
                 </div>
               </div>
-            </div>{" "}
+            </div>
+            {/* BUTTONS */}
             <div
               className={`sticky bottom-0 z-10 text-xs px-5 sm:text-sm lg:text-lg ${
                 theme === "dark" ? "bg-[#101828]" : "bg-[#d1d5dc]"

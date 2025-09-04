@@ -1,0 +1,216 @@
+import { useEffect } from "react";
+import { useServer } from "../../../context/Server";
+import { useTheme } from "../../../context/Theme_toggle";
+import { handleTouchMove } from "../touch_move";
+import EnBanners from "../../../assets/json/en_banners.json";
+import JpBanners from "../../../assets/json/jp_banners.json";
+
+import type { GachaModalProps } from "./GachaModalTypes";
+import { ImageLoader } from "../../../hooks/imageLoader";
+export default function GachaModal({
+  gachaId,
+  isGachaOpen,
+  onClose,
+}: GachaModalProps) {
+  const { theme } = useTheme();
+  const { server } = useServer();
+
+  // Prevent parent scroll
+  useEffect(() => {
+    if (!isGachaOpen) return;
+
+    document.body.style.overflow = "hidden";
+
+    // cleanup
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isGachaOpen]);
+  const AllGacha = server === "global" ? EnBanners : JpBanners;
+
+  const gachaObj = AllGacha.find((gacha) => gacha.sekai_id === gachaId);
+
+  const sortedCards = gachaObj?.gachaDetails
+    .filter((card) => {
+      return !gachaObj.cards.includes(card);
+    })
+    .sort((a, b) => b - a);
+  const iconsLoader = ImageLoader(sortedCards?.length ?? 0);
+  useEffect(() => {
+    iconsLoader.reset();
+  }, [gachaId]);
+
+  if (!isGachaOpen) return null;
+
+  return (
+    <>
+      {gachaObj && sortedCards ? (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm p-2 sm:p-4"
+          onClick={onClose}
+          onTouchMove={handleTouchMove}
+        >
+          {" "}
+          <div
+            className={`relative w-full max-w-4xl max-h-[80vh] sm:max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl border transition-all duration-300 ${
+              theme === "dark"
+                ? "bg-gray-800 border-gray-600"
+                : "bg-white border-gray-200"
+            }`}
+            onClick={(e) => e.stopPropagation()}
+            onTouchMove={(e) => e.stopPropagation()}
+          >
+            {/* HEADER */}
+            <div className="sticky top-0 z-10 p-4 sm:p-6 border-b border-gray-200 dark:border-gray-700 bg-inherit rounded-t-xl">
+              {/* CLOSE BUTTON*/}
+              <button
+                onClick={onClose}
+                className={`absolute top-3 right-3 z-20 p-2 rounded-full transition-colors ${
+                  theme === "dark"
+                    ? "hover:bg-gray-700 text-gray-400 hover:text-gray-200"
+                    : "hover:bg-gray-100 text-gray-600 hover:text-gray-900"
+                }`}
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+
+              {/* GACHA NAME*/}
+              <div className="flex flex-col items-center space-y-3 mb-4">
+                <div
+                  className={`text-center px-4 py-2 rounded-lg max-w-full ${
+                    theme === "dark"
+                      ? "bg-gray-700/50 text-gray-300"
+                      : "bg-gray-100 text-gray-600"
+                  }`}
+                >
+                  <p className="text-sm sm:text-base font-medium italic break-words">
+                    {gachaObj.name}
+                  </p>
+                </div>
+              </div>
+
+              {/* VIEW ON SEKAI BEST BUTTON */}
+              <div className="flex flex-row justify-center items-center">
+                {" "}
+                <a
+                  href={`https://sekai.best/gacha/${gachaId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                    theme === "dark"
+                      ? "bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/20"
+                      : "bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200"
+                  }`}
+                >
+                  <span>View on Sekai Best</span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-1.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div className="p-4 pt-0 sm:p-6 space-6-y">
+              {" "}
+              <div className="space-y-4">
+                <h3
+                  className={`text-base sm:text-lg font-semibold text-center sm:text-left ${
+                    theme === "dark" ? "text-gray-300" : "text-gray-800"
+                  } `}
+                >
+                  Off-rate Cards
+                </h3>
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-3 sm:gap-4">
+                  {!iconsLoader.isLoaded && (
+                    <>
+                      {gachaObj.gachaDetails.map((_, i) => (
+                        <div
+                          key={`skeleton-${i}`}
+                          className="animate-pulse bg-gray-300 dark:bg-gray-600 aspect-square rounded-xl"
+                        />
+                      ))}
+                    </>
+                  )}
+                  <div
+                    className={`${
+                      iconsLoader.isLoaded ? "contents" : "hidden"
+                    }`}
+                  >
+                    {" "}
+                    {sortedCards.map((card) => {
+                      const cardName = `${card}_t.webp`;
+                      return (
+                        <div
+                          key={card}
+                          className="group cursor-pointer transition-transform duration-200 hover:scale-105 flex flex-col items-center space-y-2"
+                        >
+                          <a
+                            href={`https://sekai.best/card/${card}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex flex-col items-center space-y-2 w-full"
+                          >
+                            <div className="relative overflow-hidden rounded-lg shadow-md">
+                              <img
+                                src={`/images/card_icons/${cardName}`}
+                                className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
+                                alt={`Card ${card}`}
+                                onLoad={iconsLoader.handleLoad}
+                              />
+                            </div>
+                          </a>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className={`sticky bottom-0 z-10 text-xs px-5 sm:text-sm lg:text-lg ${
+                theme === "dark" ? "bg-[#101828]" : "bg-[#d1d5dc]"
+              }  flex flex-row justify-end gap-2 items-center px-1 py-4`}
+            >
+              {" "}
+              <button
+                onClick={onClose}
+                className={`inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg  font-medium transition-all duration-200 ${
+                  theme === "dark"
+                    ? "bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/20"
+                    : "bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200"
+                }`}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null}
+    </>
+  );
+}

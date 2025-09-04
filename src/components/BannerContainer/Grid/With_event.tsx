@@ -17,6 +17,7 @@ export default function WithEvent({
   handleCardClick,
   handleSaveBanner,
   handleEventClick,
+  handleGachaClick,
   isBannerSaved,
 }: WithEventProps) {
   const { theme } = useTheme();
@@ -146,8 +147,8 @@ export default function WithEvent({
               }
               fetchPriority="high"
               className={`w-full h-auto ${
-                mode === "event" &&
                 EventObj?.event_type !== "login" &&
+                banner.banner_type !== "Birthday" &&
                 "cursor-pointer   duration-200 hover:scale-105 hover:opacity-80"
               }`}
               onError={handleImageError}
@@ -157,6 +158,8 @@ export default function WithEvent({
                 EventObj?.event_type !== "login" &&
                 banner.event_id !== undefined
                   ? () => handleEventClick(banner.event_id)
+                  : banner.banner_type !== "Birthday"
+                  ? () => handleGachaClick(banner.sekai_id)
                   : undefined
               }
             />

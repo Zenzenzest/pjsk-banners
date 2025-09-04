@@ -10,7 +10,8 @@ export default function Grid({
   banner,
   mode,
   handleCardClick,
-  handleEventClick
+  handleEventClick,
+  handleGachaClick
 }: GridProps) {
   const [savedBanners, setSavedBanners] = useState<number[]>([]);
   const { server } = useServer();
@@ -104,6 +105,7 @@ export default function Grid({
         handleSaveBanner={handleSaveBanner}
         isBannerSaved={isBannerSaved}
         handleEventClick={handleEventClick}
+        handleGachaClick={handleGachaClick}
       />
 
       {/* SOLO */}

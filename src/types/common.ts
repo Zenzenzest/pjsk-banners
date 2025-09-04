@@ -30,5 +30,6 @@ export type BannerTypes = {
   en_id?: number;
   tag?: string;
   questionable?: string;
-  special_event_id?: number;
+  sekai_id?: number;
+  gachaDetails: number[];
 };
