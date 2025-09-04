@@ -18,9 +18,9 @@ export default function GachaModal({
   // Prevent parent scroll
   useEffect(() => {
     if (!isGachaOpen) return;
-
-    document.body.style.overflow = "hidden";
     iconsLoader.reset();
+    document.body.style.overflow = "hidden";
+
     // cleanup
     return () => {
       document.body.style.overflow = "unset";
@@ -28,8 +28,7 @@ export default function GachaModal({
   }, [isGachaOpen, gachaId]);
   const AllGacha = server === "global" ? EnBanners : JpBanners;
 
-  const gachaObj = AllGacha.find((gacha) => gacha.sekai_id === gachaId);
-
+  const gachaObj = AllGacha.find((gacha) => gacha.id === gachaId);
 
   const sortedCards = gachaObj?.gachaDetails
     .filter((card) => {
