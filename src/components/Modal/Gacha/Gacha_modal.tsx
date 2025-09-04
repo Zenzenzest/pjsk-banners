@@ -44,13 +44,12 @@ export default function GachaModal({
   const gachaObj = AllGacha.find((gacha) => gacha.id === gachaId);
 
   const sortedAndFilteredCards = AllCards.filter((card) => {
-    const releaseDate =
-      server === "global" ? card.en_released : card.jp_released;
+    // const releaseDate =
+    //   server === "global" ? card.en_released : card.jp_released;
     if (gachaObj) {
       return (
-        (gachaObj.gachaDetails.includes(card.id) ||
-          gachaObj.cards.includes(card.id)) &&
-        gachaObj.start >= releaseDate
+        gachaObj.gachaDetails.includes(card.id) ||
+        gachaObj.cards.includes(card.id)
       );
     }
   })
