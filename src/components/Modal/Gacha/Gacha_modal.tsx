@@ -258,7 +258,8 @@ export default function GachaModal({
                                 }`}
                               >
                                 <div className="text-xs sm:text-sm font-medium">
-                                  {gachaObj.cards.includes(card.id) ? (
+                                  {gachaObj.cards.includes(card.id) &&
+                                  gachaObj.banner_type !== "Recollection" ? (
                                     <span>{featured4starChance} %</span>
                                   ) : (
                                     <span>{nonF4Chance} %</span>
