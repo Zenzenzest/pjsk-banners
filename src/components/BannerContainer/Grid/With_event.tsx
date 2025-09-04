@@ -137,7 +137,11 @@ export default function WithEvent({
             <div className="animate-pulse bg-gray-300 dark:bg-gray-600 aspect-[359/152] w-full rounded-lg" />
           )}
           {/* BANNER / EVENT IMAGE */}
-          <div className={`${bannerLoader.isLoaded ? "contents" : "hidden"}`}>
+          <div
+            className={`relative ${
+              bannerLoader.isLoaded ? "contents" : "hidden"
+            }`}
+          >
             <img
               src={gachaBannerImage}
               alt={

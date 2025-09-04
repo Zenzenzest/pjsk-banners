@@ -30,6 +30,7 @@ export default function GachaModal({
 
   const gachaObj = AllGacha.find((gacha) => gacha.sekai_id === gachaId);
 
+
   const sortedCards = gachaObj?.gachaDetails
     .filter((card) => {
       return !gachaObj.cards.includes(card);
