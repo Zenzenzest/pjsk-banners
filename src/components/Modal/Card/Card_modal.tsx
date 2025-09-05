@@ -20,7 +20,7 @@ export default function CardModal({
   sekaiId,
 }: CardModalProps) {
   const { theme } = useTheme();
-  const imageHost = "https://r2-image-proxy.zenzenzest.workers.dev/n/";
+  const imageHost = "https://r2-image-proxy.zenzenzest.workers.dev/cards_1080/";
   const isIpad = IsDeviceIpad();
 
   // Prevent parent scroll
