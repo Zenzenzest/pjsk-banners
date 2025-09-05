@@ -3074,6 +3074,17 @@
     ],
     "event_type": "marathon",
     "type": "Tsukasa 6th Focus Event"
+  },  {
+    "id": 179,
+    "name": "Link the Beats!",
+    "unit": "vs",
+    "cards": [1235,1236,1237,1238,1239,1240],
+    "keywords": ["wl2", "world link 2", "world link"],
+    "event_type": "world_link",
+    "start": 1788750000000,
+    "end": 1789786799000,
+    "close": 1789941599000,
+    "type": "Virtual Singer World Link 2"
   },
   {
     "id": 1000,

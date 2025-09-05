@@ -116,7 +116,6 @@ export default function GachaModal({
     totalNonFeatured4chance &&
     Number((totalNonFeatured4chance / nonFeatured4?.length).toFixed(3));
 
-
   if (!isGachaOpen) return null;
 
   return (
