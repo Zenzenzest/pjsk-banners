@@ -3,6 +3,8 @@ import AllCards from "../../../assets/json/cards.json";
 import { useTheme } from "../../../context/Theme_toggle";
 import type { EventCardsProps } from "../BannerTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
+import CardIcon from "../../Icons/Icon";
+import { iconUrl } from "../../../constants/common";
 export default function EventCards({
   bannerCards,
   bannerShopCards,
@@ -50,8 +52,8 @@ export default function EventCards({
 
             const cardIconImage =
               EnEventCard && EnEventCard.rarity === 3
-                ? `/images/card_icons/${shopCard}_t.webp`
-                : `/images/card_icons/${shopCard}.webp`;
+                ? `${iconUrl}${shopCard}_t.png`
+                : `${iconUrl}${shopCard}.png`;
 
             return (
               <div
@@ -63,18 +65,11 @@ export default function EventCards({
                   }
                 }}
               >
-                <div
-                  className={`relative overflow-hidden rounded-xl ${
-                    theme === "dark" ? "bg-gray-700" : "bg-gray-100"
-                  }`}
-                >
-                  <img
-                    src={cardIconImage}
-                    className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
-                    alt={`Shop Card ${shopCard}`}
-                    onLoad={iconsLoader.handleLoad}
-                  />
-                </div>
+                <CardIcon
+                  imgUrl={cardIconImage}
+                  iconsLoader={iconsLoader}
+                  cardId={shopCard}
+                />
               </div>
             );
           })}
@@ -83,7 +78,7 @@ export default function EventCards({
         {/* FOR SPACING */}
         {bannerShopCards.length < 1 &&
           bannerCards.map((card, i) => {
-            const cardIconImage = `/images/card_icons/${card}_t.webp`;
+            const cardIconImage = `${iconUrl}${card}_t.png`;
             return (
               <div
                 key={i}

@@ -52,5 +52,6 @@ export const VS = [
   "KAITO",
 ];
 
-
-export const SpecialCards: number[] = [1167]
+export const iconUrl =
+  "https://r2-image-proxy.zenzenzest.workers.dev/card_icons/";
+export const SpecialCards: number[] = [1167];

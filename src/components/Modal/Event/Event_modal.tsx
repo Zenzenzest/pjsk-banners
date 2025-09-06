@@ -7,8 +7,9 @@ import AllCards from "../../../assets/json/cards.json";
 import type { EventModalProps, SUBUNITTypes } from "./EventModalTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import { useEffect } from "react";
-import { CHARACTERS, VS } from "../../../constants/common";
+import { CHARACTERS, iconUrl, VS } from "../../../constants/common";
 import { handleTouchMove } from "../touch_move";
+import CardIcon from "../../Icons/Icon";
 const SUB_UNIT: SUBUNITTypes = {
   "l/n": "Leo/Need",
   mmj: "MORE MORE JUMP!",
@@ -321,11 +322,11 @@ export default function EventModal({
                     {filteredCards.map((card) => {
                       let cardName = "";
                       if (card.rarity === 2 || card.rarity === 1) {
-                        cardName = `${card.id}.webp`;
+                        cardName = `${iconUrl}${card.id}.png`;
                       } else if (card.rarity === 5) {
-                        cardName = `${card.id}_t.webp`;
+                        cardName = `${iconUrl}${card.id}_bd.png`;
                       } else {
-                        cardName = `${card.id}_ut.webp`;
+                        cardName = `${iconUrl}${card.id}_ut.png`;
                       }
                       return (
                         <div
@@ -338,14 +339,11 @@ export default function EventModal({
                             rel="noopener noreferrer"
                             className="flex flex-col items-center space-y-2 w-full"
                           >
-                            <div className="relative overflow-hidden rounded-lg shadow-md">
-                              <img
-                                src={`/images/card_icons/${cardName}`}
-                                className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
-                                alt={`Card ${card.id}`}
-                                onLoad={iconsLoader.handleLoad}
-                              />
-                            </div>
+                            <CardIcon
+                              imgUrl={cardName}
+                              cardId={card.id}
+                              iconsLoader={iconsLoader}
+                            />
 
                             {/* PERCENTAGE*/}
                             <div

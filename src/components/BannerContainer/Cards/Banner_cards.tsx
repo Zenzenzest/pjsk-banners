@@ -3,7 +3,8 @@ import { useTheme } from "../../../context/Theme_toggle";
 import AllCards from "../../../assets/json/cards.json";
 import type { CardsProps } from "../BannerTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
-
+import CardIcon from "../../Icons/Icon";
+import { iconUrl } from "../../../constants/common";
 export default function Cards({ banner, handleCardClick }: CardsProps) {
   const { theme } = useTheme();
 
@@ -37,7 +38,13 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
         <div className={`${iconsLoader.isLoaded ? "contents" : "hidden"}`}>
           {banner.cards.map((card, i) => {
             const cardData = AllCards.find((item) => item.id === card);
-            const cardIconImage = `/images/card_icons/${card}_t.webp`;
+
+            let cardIconImage = "";
+            if (cardData?.rarity === 5) {
+              cardIconImage = `${iconUrl}${card}_bd.png`;
+            } else {
+              cardIconImage = `${iconUrl}${card}_t.png`;
+            }
             return (
               <div
                 key={i}
@@ -57,27 +64,12 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
                   e.currentTarget.style.transform = "scale(1)";
                 }}
               >
-                <div
-                  className={`relative overflow-hidden rounded-xl aspect-square ${
-                    theme === "dark" ? "bg-gray-700" : "bg-gray-100"
-                  }`}
-                >
-                  <img
-                    src={cardIconImage}
-                    className="w-full h-full object-cover will-change-opacity"
-                    alt={`Card ${card}`}
-                    onLoad={iconsLoader.handleLoad}
-                    style={{
-                      transition: "opacity 0.2s ease-out",
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.opacity = "0.8";
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.opacity = "1";
-                    }}
-                  />
-                </div>
+                <CardIcon
+                  imgUrl={cardIconImage}
+                  cardId={card}
+                  iconsLoader={iconsLoader}
+                />
+
                 <p
                   className={`text-xs text-center mt-1 ${
                     theme === "dark" ? "text-gray-400" : "text-gray-500"
