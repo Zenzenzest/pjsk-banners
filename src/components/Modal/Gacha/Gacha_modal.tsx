@@ -7,6 +7,8 @@ import JpBanners from "../../../assets/json/jp_banners.json";
 import AllCards from "../../../assets/json/cards.json";
 import type { GachaModalProps } from "./GachaModalTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
+import CardIcon from "../../Icons/Icon";
+import { iconUrl } from "../../../constants/common";
 
 const allowedBannerTypes = [
   "Event",
@@ -41,7 +43,7 @@ export default function GachaModal({
   }, [isGachaOpen, gachaId]);
   const AllGacha = server === "global" ? EnBanners : JpBanners;
 
-  const gachaObj = AllGacha.find((gacha) => gacha.id === gachaId);
+  const gachaObj = AllGacha.find((gacha) => gacha.sekai_id === gachaId);
 
   const sortedAndFilteredCards = AllCards.filter((card) => {
     // const releaseDate =
@@ -239,7 +241,7 @@ export default function GachaModal({
                   >
                     {" "}
                     {sortedAndFilteredCards.map((card) => {
-                      const cardName = `${card.id}_t.webp`;
+                      const cardName = `${iconUrl}${card.id}_t.png`;
                       return (
                         <div
                           key={card.id}
@@ -251,14 +253,11 @@ export default function GachaModal({
                             rel="noopener noreferrer"
                             className="flex flex-col items-center space-y-2 w-full"
                           >
-                            <div className="relative overflow-hidden rounded-lg shadow-md">
-                              <img
-                                src={`/images/card_icons/${cardName}`}
-                                className="w-full h-auto transition-opacity duration-200 group-hover:opacity-80"
-                                alt={`Card ${card}`}
-                                onLoad={iconsLoader.handleLoad}
-                              />
-                            </div>
+                            <CardIcon
+                              imgUrl={cardName}
+                              cardId={card.id}
+                              iconsLoader={iconsLoader}
+                            />
                             {/* RATE */}
                             {allowedBannerTypes.includes(
                               gachaObj.banner_type
