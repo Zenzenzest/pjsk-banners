@@ -4,7 +4,7 @@ import { useTheme } from "../../../context/Theme_toggle";
 import type { EventCardsProps } from "../BannerTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import CardIcon from "../../Icons/Icon";
-import { iconUrl } from "../../../constants/common";
+
 export default function EventCards({
   bannerCards,
   bannerShopCards,
@@ -52,8 +52,8 @@ export default function EventCards({
 
             const cardIconImage =
               EnEventCard && EnEventCard.rarity === 3
-                ? `${iconUrl}${shopCard}_t.png`
-                : `${iconUrl}${shopCard}.png`;
+                ? `/images/card_icons/${shopCard}_t.webp`
+                : `/images/card_icons/${shopCard}.webp`;
 
             return (
               <div
@@ -78,7 +78,7 @@ export default function EventCards({
         {/* FOR SPACING */}
         {bannerShopCards.length < 1 &&
           bannerCards.map((card, i) => {
-            const cardIconImage = `${iconUrl}${card}_t.png`;
+            const cardIconImage = `/images/card_icons/${card}_t.webp`;
             return (
               <div
                 key={i}

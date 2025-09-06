@@ -4,7 +4,7 @@ import AllCards from "../../../assets/json/cards.json";
 import type { CardsProps } from "../BannerTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import CardIcon from "../../Icons/Icon";
-import { iconUrl } from "../../../constants/common";
+
 export default function Cards({ banner, handleCardClick }: CardsProps) {
   const { theme } = useTheme();
 
@@ -41,9 +41,9 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
 
             let cardIconImage = "";
             if (cardData?.rarity === 5) {
-              cardIconImage = `${iconUrl}${card}_bd.png`;
+              cardIconImage = `/images/card_icons/${card}_t.webp`;
             } else {
-              cardIconImage = `${iconUrl}${card}_t.png`;
+              cardIconImage = `/images/card_icons/${card}_t.webp`;
             }
             return (
               <div

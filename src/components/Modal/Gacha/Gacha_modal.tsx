@@ -8,7 +8,6 @@ import AllCards from "../../../assets/json/cards.json";
 import type { GachaModalProps } from "./GachaModalTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import CardIcon from "../../Icons/Icon";
-import { iconUrl } from "../../../constants/common";
 
 const allowedBannerTypes = [
   "Event",
@@ -241,7 +240,7 @@ export default function GachaModal({
                   >
                     {" "}
                     {sortedAndFilteredCards.map((card) => {
-                      const cardName = `${iconUrl}${card.id}_t.png`;
+                      const cardName = `/images/card_icons/${card.id}_t.webp`;
                       return (
                         <div
                           key={card.id}

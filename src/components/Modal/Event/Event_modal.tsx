@@ -7,7 +7,7 @@ import AllCards from "../../../assets/json/cards.json";
 import type { EventModalProps, SUBUNITTypes } from "./EventModalTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import { useEffect } from "react";
-import { CHARACTERS, iconUrl, VS } from "../../../constants/common";
+import { CHARACTERS, VS } from "../../../constants/common";
 import { handleTouchMove } from "../touch_move";
 import CardIcon from "../../Icons/Icon";
 const SUB_UNIT: SUBUNITTypes = {
@@ -322,11 +322,11 @@ export default function EventModal({
                     {filteredCards.map((card) => {
                       let cardName = "";
                       if (card.rarity === 2 || card.rarity === 1) {
-                        cardName = `${iconUrl}${card.id}.png`;
+                        cardName = `/images/card_icons/${card.id}.webp`;
                       } else if (card.rarity === 5) {
-                        cardName = `${iconUrl}${card.id}_bd.png`;
+                        cardName = `/images/card_icons/${card.id}_t.webp`;
                       } else {
-                        cardName = `${iconUrl}${card.id}_ut.png`;
+                        cardName = `/images/card_icons/${card.id}_ut.webp`;
                       }
                       return (
                         <div
