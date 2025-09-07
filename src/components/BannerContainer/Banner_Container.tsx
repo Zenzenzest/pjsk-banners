@@ -35,7 +35,7 @@ export default function BannerContainer({
   });
   const [eventId, setEventId] = useState(0);
   const [gachaId, setGachaId] = useState(0);
-  const [sekaiId, setSekaiId] = useState();
+  const [sekaiId, setSekaiId] = useState(0);
   // scroll detection
   useEffect(() => {
     const handleScroll = () => {
