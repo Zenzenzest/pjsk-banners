@@ -719,7 +719,7 @@ export default function CardTable() {
                               <img
                                 src={iconSrc}
                                 alt={`Card ${cardId}`}
-                                className="w-full h-auto transition-opacity duration-200 hover:opacity-80 cursor-pointer"
+                                className="w-10 h-10 lg:w-13 lg:h-13 transition-opacity duration-200 hover:opacity-80 cursor-pointer"
                                 loading="lazy"
                                 onClick={() => handleCardClick(Number(cardId))}
                               />{" "}
