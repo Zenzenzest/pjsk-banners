@@ -4,7 +4,7 @@ import { useTheme } from "../context/Theme_toggle";
 import FilterTab from "./Filter_view/Filter_Container";
 import { useServer } from "../context/Server";
 import SavedBannersContainer from "./SavedBanners/SavedBanners_container";
-import CounterContainer from "./CardCounter_view/Character/Character_container";
+import CardCounterContainer from "./CardCounter_view/CardCounter_container";
 
 type ViewModeType = "dateview" | "filterview" | "counterview";
 
@@ -75,7 +75,8 @@ export default function HomeContainer() {
             {/* VIEWMODE OPTIONS */}
             {viewMode === "dateview" && <DateTabs />}
             {viewMode === "filterview" && <FilterTab />}
-            {viewMode === "counterview" && <CounterContainer />}
+        
+            {viewMode === "counterview" && <CardCounterContainer/>}
           </div>
         ) : (
           <SavedBannersContainer />

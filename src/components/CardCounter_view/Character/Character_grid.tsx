@@ -25,7 +25,7 @@ export default function CharacterGrid({
   const overlayRef = useRef<HTMLDivElement>(null);
   const [collapsedHeight, setCollapsedHeight] = useState<string>("auto");
   const [isMounted, setIsMounted] = useState(false);
-
+  const decksHost = "https://r2-image-proxy.zenzenzest.workers.dev/decks/";
   const isIpad = IsDeviceIpad();
 
   const lastCardKeys = ["4★ Lim: ", "4★ Perm: ", "3★: ", "2★: "];
@@ -70,8 +70,14 @@ export default function CharacterGrid({
 
   const sortedCardBreakdown = character.sortedCardBreakdown;
   const maxCount = character.maxCount;
-  const portraitImg = `/images/cutouts/${character.id}.webp`;
+
   const lastCards = character.lastCards;
+  const lastLimId =
+    typeof lastCards[0] !== "string" ? Number(lastCards[0][1]) : 0;
+  const lastPermId = Number(lastCards[1][1]);
+  const last4Id = Math.max(lastLimId, lastPermId);
+  const last4Img = `${decksHost}${last4Id}_t.webp`;
+
 
   return (
     <div
@@ -84,7 +90,7 @@ export default function CharacterGrid({
       {/* PORTRAIT IMAGE*/}
       <div className="relative h-full">
         <img
-          src={portraitImg}
+          src={last4Img}
           width={264}
           height={isMobile ? 325 : 450}
           className="w-full h-full object-cover rounded-t-xl"

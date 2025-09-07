@@ -58,7 +58,7 @@ const formatCardDate = (card: AllCardTypes | undefined, server: string) => {
   return [formattedDate, card.id];
 };
 
-export default function CounterContainer() {
+export default function CharacterContainer() {
   const [showScrollButton, setShowScrollButton] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const { isMobile, isVerySmol } = useMemo(
@@ -257,7 +257,7 @@ export default function CounterContainer() {
       };
     });
   }, [processedDataWithSorting, server, today]);
-  console.log(processedDataWithLastCards);
+
   return (
     <div
       className={`p-4 flex flex-col justify-center items-center transition-all duration-300 ease-in-out ${

@@ -26,5 +26,18 @@ export type CharacterCardData = {
     count: number;
   }[];
 };
+export type CardBreakdown ={
+  rarity: number;
+  isLimited: boolean;
+  count: number;
+}
 
+export type  CharacterData = {
+  id: number;
+  name: string;
+  totalCount: number;
+  cardBreakdown: CardBreakdown[];
+  sortedCardBreakdown: CardBreakdown[];
+  lastCards: (string | (string | number)[])[];
+}
 

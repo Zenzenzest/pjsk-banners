@@ -64,7 +64,7 @@ export default function GachaModal({
       return 0;
     });
   const iconsLoader = ImageLoader(sortedAndFilteredCards?.length ?? 0);
-  console.log(sekaiId, gachaId);
+
   let total4starChance = 0;
   let featured4starChance = 0;
 

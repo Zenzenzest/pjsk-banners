@@ -1,9 +1,11 @@
 import { useTheme } from "../../../context/Theme_toggle";
 import type { ViewModeTabsProps } from "../FilterTabTypes";
 
-export default function ViewModeTabs({setViewMode, viewMode}:ViewModeTabsProps) {
-
-    const {theme} = useTheme()
+export default function ViewModeTabs({
+  setViewMode,
+  viewMode,
+}: ViewModeTabsProps) {
+  const { theme } = useTheme();
   return (
     <div
       className={`w-full flex  border-b ${
