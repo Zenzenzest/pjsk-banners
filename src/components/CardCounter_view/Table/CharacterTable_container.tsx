@@ -458,7 +458,7 @@ export default function CardTable() {
             theme === "dark" ? "text-gray-200" : "text-gray-600"
           }  `}
         >
-          Card Count Table
+          Attributes breakdown wip
         </h1>
       </div>
 
@@ -711,19 +711,13 @@ export default function CardTable() {
                         <div className="flex items-center justify-center space-x-1 ">
                           <span className="min-w-[90px]">{dateText}</span>
                           {isCardData && Number(cardId) > 0 && (
-                            <div
-                              className={`relative overflow-hidden rounded-xl ${
-                                theme === "dark" ? "bg-gray-700" : "bg-gray-100"
-                              }`}
-                            >
-                              <img
-                                src={iconSrc}
-                                alt={`Card ${cardId}`}
-                                className="w-10 h-10 lg:w-13 lg:h-13 transition-opacity duration-200 hover:opacity-80 cursor-pointer"
-                                loading="lazy"
-                                onClick={() => handleCardClick(Number(cardId))}
-                              />{" "}
-                            </div>
+                            <img
+                              src={iconSrc}
+                              alt={`Card ${cardId}`}
+                              className="w-10 h-10 lg:w-13 lg:h-13 transition-transform hover:scale-105  duration-200  hover:opacity-80  cursor-pointer rounded-lg"
+                              loading="lazy"
+                              onClick={() => handleCardClick(Number(cardId))}
+                            />
                           )}
                         </div>
                       </td>
