@@ -35,6 +35,7 @@ export default function BannerContainer({
   });
   const [eventId, setEventId] = useState(0);
   const [gachaId, setGachaId] = useState(0);
+  const [sekaiId, setSekaiId] = useState();
   // scroll detection
   useEffect(() => {
     const handleScroll = () => {
@@ -89,9 +90,15 @@ export default function BannerContainer({
     setIsEventOpen(true);
   };
 
-  const handleGachaClick = (gacha_id: number | undefined) => {
+  const handleGachaClick = (
+    sekai_id: number | undefined,
+    gacha_id: number | undefined
+  ) => {
     if (gacha_id) {
       setGachaId(gacha_id);
+    }
+    if (sekai_id) {
+      setSekaiId(sekai_id);
     }
     setIsGachaOpen(true);
   };
@@ -201,6 +208,7 @@ export default function BannerContainer({
         isGachaOpen={isGachaOpen}
         onClose={handleCloseModal}
         gachaId={gachaId}
+        sekaiId={sekaiId}
       />
       <CardModal
         isOpen={isOpen}

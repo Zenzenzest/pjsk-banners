@@ -165,7 +165,7 @@ export default function WithEvent({
                   : banner.banner_type !== "Birthday" &&
                     EventObj?.event_type !== "login" &&
                     mode === "gacha"
-                  ? () => handleGachaClick(banner.sekai_id)
+                  ? () => handleGachaClick(banner.sekai_id, banner.id)
                   : undefined
               }
             />
