@@ -9,6 +9,7 @@ import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
 import { SUB_UNITS, VS } from "../../../constants/common";
 import { notAllowedTypes } from "../Counter_constants";
 import type { CharacterData } from "../CounterTypes";
+import CardModal from "../../Modal/Card/Card_modal";
 
 type SortDirection = "asc" | "desc" | "default";
 type SortColumn =
@@ -70,6 +71,10 @@ const formatCardDate = (card: AllCardTypes | undefined, server: string) => {
 };
 
 export default function CardTable() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading2, setIsLoading2] = useState(true);
+  const [cardId, setCardId] = useState(0);
   const { server } = useServer();
   const { theme } = useTheme();
   const today = Date.now();
@@ -82,6 +87,17 @@ export default function CardTable() {
   const [showVBS, setShowVBS] = useState(true);
   const [showWxS, setShowWxS] = useState(true);
   const [showN25, setShowN25] = useState(true);
+
+  const handleCardClick = (cardId: number) => {
+    setCardId(cardId);
+    setIsOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsLoading(true);
+    setIsLoading2(true);
+    setIsOpen(false);
+  };
 
   const getCharacterId = useCallback((card: AllCardTypes) => {
     const isVirtualSinger = card.unit === "Virtual Singers";
@@ -636,7 +652,7 @@ export default function CardTable() {
                         AllCharacters.indexOf(character.name) + 1
                       }.webp`}
                       alt={character.name}
-                      className="w-10 h-10 object-contain m-auto"
+                      className="w-10 h-10 lg:w-13 lg:h-13  object-contain m-auto"
                       loading="lazy"
                     />
                   </td>
@@ -692,15 +708,22 @@ export default function CardTable() {
                         key={index}
                         className="px-4 py-3 whitespace-nowrap text-xs min-w-[150px] text-center text-gray-500 dark:text-gray-400"
                       >
-                        <div className="flex items-center justify-center space-x-1">
+                        <div className="flex items-center justify-center space-x-1 ">
                           <span className="min-w-[90px]">{dateText}</span>
                           {isCardData && Number(cardId) > 0 && (
-                            <img
-                              src={iconSrc}
-                              alt={`Card ${cardId}`}
-                              className="w-10 h-10 object-contain"
-                              loading="lazy"
-                            />
+                            <div
+                              className={`relative overflow-hidden rounded-xl ${
+                                theme === "dark" ? "bg-gray-700" : "bg-gray-100"
+                              }`}
+                            >
+                              <img
+                                src={iconSrc}
+                                alt={`Card ${cardId}`}
+                                className="w-full h-auto transition-opacity duration-200 hover:opacity-80 cursor-pointer"
+                                loading="lazy"
+                                onClick={() => handleCardClick(Number(cardId))}
+                              />{" "}
+                            </div>
                           )}
                         </div>
                       </td>
@@ -712,7 +735,15 @@ export default function CardTable() {
           </table>
         </div>
       </div>
-
+      <CardModal
+        isOpen={isOpen}
+        onClose={handleCloseModal}
+        cardId={cardId}
+        isLoading={isLoading}
+        isLoading2={isLoading2}
+        setIsLoading={setIsLoading}
+        setIsLoading2={setIsLoading2}
+      />
       <WebsiteDisclaimer />
     </div>
   );
