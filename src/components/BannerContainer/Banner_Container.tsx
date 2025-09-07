@@ -3,8 +3,8 @@ import { useTheme } from "../../context/Theme_toggle";
 import { useServer } from "../../context/Server";
 import CardModal from "../Modal/Card/Card_modal";
 import Disclaimer from "./Disclaimer";
-import type { BannerContainerProps, CardState } from "./BannerTypes";
-import type { BannerTypes, AllCardTypes } from "../../types/common";
+import type { BannerContainerProps } from "./BannerTypes";
+import type { BannerTypes } from "../../types/common";
 import Grid from "./Grid/Grid";
 import EventModal from "../Modal/Event/Event_modal";
 import GachaModal from "../Modal/Gacha/Gacha_modal";
@@ -24,15 +24,7 @@ export default function BannerContainer({
   const [showScrollButton, setShowScrollButton] = useState(false);
   const [isEventOpen, setIsEventOpen] = useState(false);
   const [isGachaOpen, setIsGachaOpen] = useState(false);
-  const [cardState, setCardState] = useState<CardState>({
-    cardId: 0,
-    rarity: 4,
-    name: "",
-    cardName: "",
-    cardAttribute: "",
-    sekaiId: 0,
-    cardType: "",
-  });
+  const [cardId, setCardId] = useState(0)
   const [eventId, setEventId] = useState(0);
   const [gachaId, setGachaId] = useState(0);
   const [sekaiId, setSekaiId] = useState(0);
@@ -61,17 +53,8 @@ export default function BannerContainer({
     }
   };
 
-  const handleCardClick = (card: AllCardTypes) => {
-    setCardState({
-      cardId: card.id,
-      rarity: card.rarity,
-      name: card.character,
-      cardName:
-        server === "global" || server === "saved" ? card.name : card.jp_name,
-      cardAttribute: card.attribute,
-      sekaiId: card.id,
-      cardType: card.card_type,
-    });
+  const handleCardClick = (cardId: number) => {
+    setCardId(cardId)
     setIsOpen(true);
   };
 
@@ -213,7 +196,7 @@ export default function BannerContainer({
       <CardModal
         isOpen={isOpen}
         onClose={handleCloseModal}
-        {...cardState}
+        cardId={cardId}
         isLoading={isLoading}
         isLoading2={isLoading2}
         setIsLoading={setIsLoading}

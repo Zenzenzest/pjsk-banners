@@ -1,24 +1,13 @@
-
-export type CardState = {
-  cardId: number;
-  rarity: number;
-  name: string;
-  cardName: string;
-  cardAttribute: string;
-  sekaiId: number;
-  cardType: string;
-}
-
-export interface CardModalProps extends CardState {
+export interface CardModalProps {
   isOpen: boolean;
   isLoading: boolean;
   isLoading2: boolean;
   onClose: () => void;
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
   setIsLoading2: React.Dispatch<React.SetStateAction<boolean>>;
+  cardId: number;
 }
-
 
 export type CardReleasesType = {
   cardId: number;
-}
+};

@@ -61,7 +61,8 @@ export default function EventCards({
                 className="group cursor-pointer transition-transform duration-200 hover:scale-105"
                 onClick={() => {
                   if (EnEventCard) {
-                    handleCardClick(EnEventCard);
+               
+                    handleCardClick(EnEventCard.id);
                   }
                 }}
               >

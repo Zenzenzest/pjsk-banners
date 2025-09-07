@@ -5,6 +5,7 @@ import type { CardsProps } from "../BannerTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import CardIcon from "../../Icons/Icon";
 
+
 export default function Cards({ banner, handleCardClick }: CardsProps) {
   const { theme } = useTheme();
 
@@ -51,7 +52,9 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
                 className="group cursor-pointer will-change-transform"
                 onClick={() => {
                   if (cardData) {
-                    handleCardClick(cardData);
+          
+                    handleCardClick(cardData.id);
+
                   }
                 }}
                 style={{

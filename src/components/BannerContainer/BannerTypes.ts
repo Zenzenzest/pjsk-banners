@@ -1,5 +1,5 @@
 import type { Dispatch, SetStateAction } from "react";
-import type { AllCardTypes, BannerTypes } from "../../types/common";
+import type { BannerTypes } from "../../types/common";
 
 export type EventTypes = {
   id: number;
@@ -17,7 +17,7 @@ export type EventTypes = {
 
 export type BannerGridProps = {
   filteredBanners: BannerTypes[];
-  handleCardClick: (card: AllCardTypes) => void;
+  handleCardClick: (cardId: number) => void;
 };
 
 export type BannerStatusProps = {
@@ -27,27 +27,27 @@ export type BannerStatusProps = {
 
 export type CardsProps = {
   banner: BannerTypes;
-  handleCardClick: (card: AllCardTypes) => void;
+  handleCardClick: (cardId: number) => void;
 };
 
 export type EventCardsProps = {
   bannerCards: number[];
   bannerShopCards: number[];
-  handleCardClick: (card: AllCardTypes) => void;
+  handleCardClick: (cardId: number) => void;
 };
 
 export type EventDetailsProps = {
   event_id: number;
   loadedImages: Set<string>;
   setLoadedImages: Dispatch<SetStateAction<string>>;
-  handleCardClick: (card: AllCardTypes) => void;
+  handleCardClick: (cardId: number) => void;
   bannerCards: number[];
 };
 
 export type GridProps = {
   banner: BannerTypes;
   mode: string;
-  handleCardClick: (card: AllCardTypes) => void;
+  handleCardClick: (cardId: number) => void;
   handleEventClick: (ev: number | undefined) => void;
   handleGachaClick: (sk: number | undefined, gc: number | undefined) => void;
 };
@@ -90,7 +90,7 @@ export type useFormattedTimeType = {
 export type WithEventProps = {
   mode?: string;
   banner: BannerTypes;
-  handleCardClick: (card: AllCardTypes) => void;
+  handleCardClick: (cardId: number) => void;
   handleSaveBanner: (id: number) => void;
   isBannerSaved: (id: number) => boolean;
   handleEventClick: (ev: number | undefined) => void;
