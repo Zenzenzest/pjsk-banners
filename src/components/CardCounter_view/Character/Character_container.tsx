@@ -2,7 +2,7 @@ import type { AllCardTypes } from "../../../types/common";
 import AllCards from "../../../assets/json/cards.json";
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import CharacterGrid from "./Character_grid";
-import { AllCharacters } from "../Counter_constants";
+import { AllCharacters, notAllowedTypes } from "../Counter_constants";
 import { useServer } from "../../../context/Server";
 import ProcessCardData from "../process_card";
 import { useTheme } from "../../../context/Theme_toggle";
@@ -72,7 +72,7 @@ export default function CharacterContainer() {
   const { server } = useServer();
   const { theme } = useTheme();
   const today = Date.now();
-  const notAllowedTypes = ["movie_exclusive", "bday", "limited_collab"];
+
 
   const getCharacterId = useCallback((card: AllCardTypes) => {
     const isVirtualSinger = card.unit === "Virtual Singers";

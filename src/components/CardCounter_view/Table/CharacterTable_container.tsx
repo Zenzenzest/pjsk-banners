@@ -7,6 +7,7 @@ import ProcessCardData from "../process_card";
 import { useTheme } from "../../../context/Theme_toggle";
 import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
 import { SUB_UNITS, VS } from "../../../constants/common";
+import { notAllowedTypes } from "../Counter_constants";
 import type { CharacterData } from "../CounterTypes";
 
 type SortDirection = "asc" | "desc" | "default";
@@ -43,7 +44,7 @@ const getLastCardByRarity = (
         isRarityMatch &&
         !isLim4
       );
-    } else {
+    } else if (cardType === "limited") {
       return (
         isReleased &&
         card.charId === charId &&
@@ -72,7 +73,7 @@ export default function CardTable() {
   const { server } = useServer();
   const { theme } = useTheme();
   const today = Date.now();
-  const notAllowedTypes = ["movie_exclusive", "bday", "limited_collab"];
+
   const [sortColumn, setSortColumn] = useState<SortColumn>(null);
   const [sortDirection, setSortDirection] = useState<SortDirection>("default");
   const [showVirtualSingers, setShowVirtualSingers] = useState(true);
@@ -541,7 +542,7 @@ export default function CardTable() {
       </div>
 
       <div className="rounded-lg border border-gray-200 dark:border-gray-700">
-        <div className="overflow-auto max-h-[80vh]">
+        <div className="overflow-auto max-h-[90vh]">
           <table className="min-w-full bg-white dark:bg-gray-800">
             {/* COLUMN HEADERS */}
             <thead className="sticky top-0 z-20">
@@ -552,7 +553,7 @@ export default function CardTable() {
                   tabIndex={-1}
                 >
                   <div className="flex items-center">
-                    Character
+                    Char
                     {getSortIndicator("character")}
                   </div>
                 </th>
@@ -635,7 +636,7 @@ export default function CardTable() {
                         AllCharacters.indexOf(character.name) + 1
                       }.webp`}
                       alt={character.name}
-                      className="w-12 h-12 object-contain m-auto"
+                      className="w-10 h-10 object-contain m-auto"
                       loading="lazy"
                     />
                   </td>
@@ -697,7 +698,7 @@ export default function CardTable() {
                             <img
                               src={iconSrc}
                               alt={`Card ${cardId}`}
-                              className="w-12 h-12 object-contain"
+                              className="w-10 h-10 object-contain"
                               loading="lazy"
                             />
                           )}

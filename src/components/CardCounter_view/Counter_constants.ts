@@ -57,12 +57,16 @@ export const AllCharacters = [
   "N25 KAITO",
 ];
 
-
-
 export const RARITY_COLORS: Record<number, string> = {
   1: "bg-gray-400",
-  2: "bg-green-400", 
+  2: "bg-green-400",
   3: "bg-blue-400",
-  4: "bg-purple-400"
+  4: "bg-purple-400",
 };
 
+export const notAllowedTypes = [
+  "movie_exclusive",
+  "bday",
+  "limited_collab",
+  "unit_limited",
+];
