@@ -26,7 +26,7 @@ export const CHARACTERS = [
   "MEIKO",
   "KAITO",
 ];
-
+export const today = Date.now()
 export const UNITS = [
   "Leo/need",
   "MORE MORE JUMP!",
