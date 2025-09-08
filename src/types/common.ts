@@ -12,6 +12,7 @@ export type AllCardTypes = {
   jp_name: string;
   prev_id?: number;
   charId: number;
+  collab_tag?: string;
 };
 
 export type BannerTypes = {
