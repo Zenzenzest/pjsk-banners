@@ -12,7 +12,7 @@ export default function TableRow({
     (card, index) => {
       const maxCount = getMaxCountForCategory(card.rarity, card.isLimited);
       const percentage = (card.count / maxCount) * 100;
-      console.log(card);
+
       return (
         <td
           key={index}
@@ -69,6 +69,28 @@ export default function TableRow({
       </td>
     );
   });
+  const charIndex = AllCharacters.indexOf(character.name) + 1;
+  let unitIcon = "";
+  switch (true) {
+    case charIndex < 32:
+      unitIcon = `/images/unit_icons/${charIndex - 25}.png`;
+      break;
+    case charIndex < 37:
+      unitIcon = `/images/unit_icons/${charIndex - 30}.png`;
+      break;
+    case charIndex < 42:
+      unitIcon = `/images/unit_icons/${charIndex - 35}.png`;
+      break;
+    case charIndex < 47:
+      unitIcon = `/images/unit_icons/${charIndex - 40}.png`;
+      break;
+    case charIndex < 52:
+      unitIcon = `/images/unit_icons/${charIndex - 45}.png`;
+      break;
+    case charIndex < 57:
+      unitIcon = `/images/unit_icons/${charIndex - 50}.png`;
+      break;
+  }
 
   return (
     <tr
@@ -76,15 +98,28 @@ export default function TableRow({
       className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
     >
       {/* CHARACTER ICON */}
-      <td className=" whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white sticky left-0 bg-white dark:bg-gray-800">
-        <img
-          src={`/images/character_icons_extra/${
-            AllCharacters.indexOf(character.name) + 1
-          }.webp`}
-          alt={character.name}
-          className="w-7 h-7 lg:w-10 lg:h-10 object-contain m-auto"
-          loading="lazy"
-        />
+      <td className="whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white sticky left-0 bg-white dark:bg-gray-800">
+        <div className="flex items-center justify-center space-x-1">
+          <img
+            src={`/images/character_icons_extra/${
+              AllCharacters.indexOf(character.name) + 1
+            }.webp`}
+            alt={character.name}
+            className={`${
+              charIndex <= 20
+                ? "w-7 h-7 lg:w-10 lg:h-10"
+                : "w-7 h-7 lg:w-7 lg:h-7"
+            } object-contain`}
+            loading="lazy"
+          />
+          {charIndex > 20 && (
+            <img
+              alt={character.name}
+              src={`${unitIcon}`}
+              className="w-7 h-7 object-contain"
+            />
+          )}
+        </div>
       </td>
 
       {/* TOTAL COUNT */}

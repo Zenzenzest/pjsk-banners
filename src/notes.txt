@@ -9,6 +9,11 @@
 52 53 54 55 56 - kaito
 
 
+25 25 25 25 25
+30 30 30 30 30
+35 35 35 35 35
+
+
 default value + (4 x (vs_index+1)) + 1 + (group_index + 1)
 
 n25 kaito:
