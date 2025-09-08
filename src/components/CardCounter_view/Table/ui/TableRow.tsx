@@ -108,7 +108,7 @@ export default function TableRow({
             className={`${
               charIndex <= 20
                 ? "w-7 h-7 lg:w-10 lg:h-10"
-                : "w-7 h-7 lg:w-7 lg:h-7"
+                : "w-7 h-7 lg:w-9 lg:h-9"
             } object-contain`}
             loading="lazy"
           />
