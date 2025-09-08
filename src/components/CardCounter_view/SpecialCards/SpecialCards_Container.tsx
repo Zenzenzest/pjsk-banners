@@ -9,7 +9,7 @@ import { useState } from "react";
 import { today } from "../../../constants/common";
 import CardModal from "../../Modal/Card/Card_modal";
 const COLLAB_TAGS = [
-  { tag: "7 Deadly Sins", label: "7 Deadly Sins", key: "7_deadly_sins" },
+  { tag: "Deadly Sins", label: "Deadly Sins", key: "deadly_sins" },
   { tag: "Sanrio", label: "Sanrio", key: "sanrio" },
   { tag: "Ensemble", label: "Ensemble Stars!!", key: "ensemble" },
   { tag: "Touhou", label: "Touhou", key: "touhou", jpOnly: true },
@@ -152,10 +152,12 @@ export default function SpecialCards() {
 
   function getCollabColor(key: string): string {
     const colorMap: Record<string, string> = {
-      "7_deadly_sins": theme === "dark" ? "bg-yellow-900/30" : "bg-yellow-100",
-      sanrio: theme === "dark" ? "bg-pink-900/30" : "bg-pink-100",
-      ensemble: theme === "dark" ? "bg-indigo-900/30" : "bg-indigo-100",
-      touhou: theme === "dark" ? "bg-red-900/30" : "bg-red-100",
+      deadly_sins:
+        theme === "dark" ? "bg-yellow-900/30" : "bg-yellow-100 text-gray-700",
+      sanrio: theme === "dark" ? "bg-pink-500/70" : "bg-pink-100 text-gray-700",
+      ensemble:
+        theme === "dark" ? "bg-indigo-900/30" : "bg-indigo-100 text-gray-700",
+      touhou: theme === "dark" ? "bg-red-900/30" : "bg-red-100 text-gray-700",
     };
 
     const defaultLight = "bg-gray-100";
@@ -331,7 +333,7 @@ export default function SpecialCards() {
                 <td className="px-4 py-1 whitespace-nowrap">
                   {renderCardIcons(charCards.color_fes)}
                 </td>
-                <td className="px-4 py-1 whitespace- min-w-[240px]">
+                <td className="px-4 py-1 whitespace-nowrap min-w-[240px]">
                   {renderCardIcons(charCards.bday)}
                 </td>
                 <td className="px-4 py-1 whitespace-nowrap">
