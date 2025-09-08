@@ -4,8 +4,9 @@ import { IsDeviceIpad } from "../../../hooks/isIpad";
 import type { CardModalProps } from "./CardModalTypes";
 import CardReleases from "./Card_releases";
 import AllCards from "../../../assets/json/cards.json";
-import { CHARACTERS } from "../../../constants/common";
+import { CHARACTERS, SpecialCards } from "../../../constants/common";
 import { useServer } from "../../../context/Server";
+
 export default function CardModal({
   isOpen,
   onClose,
@@ -159,9 +160,7 @@ export default function CardModal({
 
             {/* IMAGE*/}
             <div className="p-4 space-y-4">
-              {/* Birthday Card (5 star or card ID 1167) */}
-              {/* CARDID 1167 MIKU TOUHOU CARD THAT HAS NO TRAINED IMAGE  */}
-              {(cardData.rarity === 5 || cardId === 1167) && (
+              {cardData.rarity === 5 && (
                 <div className="relative w-full">
                   <div className="relative overflow-hidden rounded-xl shadow-lg">
                     {isLoading && (
@@ -180,7 +179,7 @@ export default function CardModal({
                       />
                     </div>
                     {/* Rarity Badge */}
-                    {cardId === 1167 ? (
+                    {SpecialCards.includes(cardId) ? (
                       <div className="absolute top-3 left-3 flex space-x-1">
                         {Array(cardData.rarity)
                           .fill(0)
@@ -207,14 +206,14 @@ export default function CardModal({
               )}
 
               {/* 3 & 4 STAR */}
-              {(cardData.rarity === 3 || cardData.rarity === 4) &&
-                cardId != 1167 && (
-                  <div
-                    className={`grid grid-cols-1 ${
-                      isIpad ? "md:grid-cols-1" : "md:grid-cols-2"
-                    } gap-4`}
-                  >
-                    {/* UNTRAINED CARD*/}
+              {(cardData.rarity === 3 || cardData.rarity === 4) && (
+                <div
+                  className={`grid grid-cols-1 ${
+                    isIpad ? "md:grid-cols-1" : "md:grid-cols-2"
+                  } gap-4`}
+                >
+                  {/* UNTRAINED CARD*/}
+                  {!SpecialCards.includes(cardId) && (
                     <div className="relative">
                       <div className="relative overflow-hidden rounded-xl shadow-lg">
                         {isLoading && (
@@ -249,46 +248,43 @@ export default function CardModal({
                         </div>
                       </div>
                     </div>
+                  )}
 
-                    {/* TRAINED CARD */}
-                    {cardId != 1167 && (
-                      <div className="relative">
-                        <div className="relative overflow-hidden rounded-xl shadow-lg">
-                          {isLoading2 && (
-                            <div
-                              className="animate-pulse bg-gray-300 dark:bg-gray-600 
+                  {/* TRAINED CARD */}
+                  <div className="relative">
+                    <div className="relative overflow-hidden rounded-xl shadow-lg">
+                      {isLoading2 && (
+                        <div
+                          className="animate-pulse bg-gray-300 dark:bg-gray-600 
                   
                   aspect-[1.759/1] w-full rounded-lg"
-                            />
-                          )}{" "}
-                          <div
-                            className={`${!isLoading2 ? "contents" : "hidden"}`}
-                          >
-                            <img
-                              src={`${imageHost}${cardId}_t.webp`}
-                              className="w-full h-auto transition-opacity duration-300"
-                              onLoad={() => setIsLoading2(false)}
-                              alt="Trained card"
-                            />
-                          </div>
-                          {/*TRAINED STARS*/}
-                          <div className="absolute bottom-3 right-3 flex space-x-1">
-                            {Array(cardData.rarity)
-                              .fill(0)
-                              .map((_, i) => (
-                                <img
-                                  key={i}
-                                  src="/images/rarity_icons/trained_star.png"
-                                  className="w-6 h-6"
-                                  alt="star"
-                                />
-                              ))}
-                          </div>
-                        </div>
+                        />
+                      )}{" "}
+                      <div className={`${!isLoading2 ? "contents" : "hidden"}`}>
+                        <img
+                          src={`${imageHost}${cardId}_t.webp`}
+                          className="w-full h-auto transition-opacity duration-300"
+                          onLoad={() => setIsLoading2(false)}
+                          alt="Trained card"
+                        />
                       </div>
-                    )}
+                      {/*TRAINED STARS*/}
+                      <div className="absolute bottom-3 right-3 flex space-x-1">
+                        {Array(cardData.rarity)
+                          .fill(0)
+                          .map((_, i) => (
+                            <img
+                              key={i}
+                              src="/images/rarity_icons/trained_star.png"
+                              className="w-6 h-6"
+                              alt="star"
+                            />
+                          ))}
+                      </div>
+                    </div>
                   </div>
-                )}
+                </div>
+              )}
 
               {/* 1 & 2 STAR CARDS*/}
               {cardData.rarity <= 2 && (
