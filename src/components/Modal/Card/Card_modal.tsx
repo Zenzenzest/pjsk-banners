@@ -241,7 +241,7 @@ export default function CardModal({
                               <img
                                 key={i}
                                 src="/images/rarity_icons/untrained_star.png"
-                                className="w-6 h-6"
+                                className="w-4 h-4 sm:w-6 sm:h-6"
                                 alt="star"
                               />
                             ))}
@@ -276,7 +276,7 @@ export default function CardModal({
                             <img
                               key={i}
                               src="/images/rarity_icons/trained_star.png"
-                              className="w-6 h-6"
+                              className="w-4 h-4 sm:w-6 sm:h-6"
                               alt="star"
                             />
                           ))}
@@ -313,7 +313,7 @@ export default function CardModal({
                           <img
                             key={i}
                             src="/images/rarity_icons/untrained_star.png"
-                            className="w-6 h-6"
+                            className="w-4 h-4 sm:w-6 sm:h-6"
                             alt="star"
                           />
                         ))}
