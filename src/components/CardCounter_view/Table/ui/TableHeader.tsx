@@ -61,7 +61,7 @@ export default function TableHeader({
                   : "text-center"
               }
               ${column.color || "text-gray-500 dark:text-gray-300"}
-              cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-0
+              cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-0 px-3.5
             `}
             onClick={(e) => handleSort(column.key, e)}
             tabIndex={-1}

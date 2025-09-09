@@ -72,6 +72,7 @@ export const useCardTable = (server: string, today: number) => {
   const [showWxS, setShowWxS] = useState(true);
   const [showN25, setShowN25] = useState(true);
 
+
   const handleCardClick = (cardId: number) => {
     setCardId(cardId);
     setIsOpen(true);

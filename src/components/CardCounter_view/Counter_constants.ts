@@ -70,3 +70,5 @@ export const notAllowedTypes = [
   "limited_collab",
   "unit_limited",
 ];
+
+export const Attributes = ["Cool", "Cute", "Happy", "Mysterious", "Pure"];

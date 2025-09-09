@@ -7,12 +7,13 @@ import { useCardTable } from "./hooks/useCardTable";
 import FilterControls from "./ui/FilterControls";
 import TableHeader from "./ui/TableHeader";
 import TableRow from "./ui/TableRow";
+import { useRowExpand } from "./hooks/useRowExpand";
 
 export default function CardTable() {
   const { server } = useServer();
   const { theme } = useTheme();
   const today = Date.now();
-
+  const { expandedRows, handleToggleExpand } = useRowExpand();
   const {
     // states
     isOpen,
@@ -99,6 +100,8 @@ export default function CardTable() {
                   getRarityBarColor={getRarityBarColor}
                   getMaxCountForCategory={getMaxCountForCategory}
                   handleCardClick={handleCardClick}
+                  isExpanded={!!expandedRows[character.id]}
+                  onToggleExpand={handleToggleExpand}
                 />
               ))}
             </tbody>

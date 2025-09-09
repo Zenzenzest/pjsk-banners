@@ -24,15 +24,16 @@ export type FilterControlsProps = {
   setShowN25: (value: boolean) => void;
 };
 
-
 export type TableHeaderProps = {
   handleSort: (column: SortColumn, e: React.MouseEvent) => void;
   getSortIndicator: (column: SortColumn) => React.ReactNode;
-}
+};
 
 export type TableRowProps = {
   character: CharacterData; // You'll need to import the proper type
   getRarityBarColor: (rarity: number, isLimited: boolean) => string;
   getMaxCountForCategory: (rarity: number, isLimited: boolean) => number;
   handleCardClick: (cardId: number) => void;
-}
+  isExpanded: boolean;
+  onToggleExpand: (characterId: number) => void;
+};
