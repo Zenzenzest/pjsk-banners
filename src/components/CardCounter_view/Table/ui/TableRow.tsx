@@ -4,6 +4,7 @@ import AllCards from "../../../../assets/json/cards.json";
 import { notAllowedTypes } from "../../Counter_constants";
 import { today } from "../../../../constants/common";
 import { useServer } from "../../../../context/Server";
+import { useTheme } from "../../../../context/Theme_toggle";
 
 export default function TableRow({
   character,
@@ -14,6 +15,7 @@ export default function TableRow({
   onToggleExpand,
 }: TableRowProps) {
   const { server } = useServer();
+  const { theme } = useTheme();
 
   const cardBreakdownColumns = character.sortedCardBreakdown.map(
     (card, index) => {
@@ -26,7 +28,11 @@ export default function TableRow({
           className="px-4 py-3 whitespace-nowrap text-sm text-center"
         >
           <div className="flex items-center justify-center space-x-2">
-            <div className="w-10 lg:w-13 bg-gray-200 dark:bg-gray-600 rounded-full h-2">
+            <div
+              className={`w-10 lg:w-13 rounded-full h-2 ${
+                theme === "dark" ? "bg-gray-600 " : "bg-gray-700 "
+              }`}
+            >
               <div
                 className={`h-2 rounded-full ${getRarityBarColor(
                   card.rarity,
@@ -37,7 +43,13 @@ export default function TableRow({
                 }}
               ></div>
             </div>
-            <span className="font-medium w-6 text-center">{card.count}</span>
+            <span
+              className={`font-medium w-6 text-center ${
+                theme === "dark" ? "text-gray-200" : "text-gray-700"
+              } `}
+            >
+              {card.count}
+            </span>
           </div>
         </td>
       );
@@ -59,10 +71,16 @@ export default function TableRow({
     return (
       <td
         key={index}
-        className="px-1 py-1 whitespace-nowrap text-xs min-w-[150px] text-center text-gray-500 dark:text-gray-400"
+        className="px-1 py-1 whitespace-nowrap text-xs min-w-[150px] text-center "
       >
         <div className="flex items-center justify-center space-x-1">
-          <span className="min-w-[90px]">{dateText}</span>
+          <span
+            className={`min-w-[90px] ${
+              theme === "dark" ? "text-gray-300" : "text-gray-700"
+            } `}
+          >
+            {dateText}
+          </span>
           {isCardData && Number(cardId) > 0 && (
             <img
               src={iconSrc}
@@ -141,7 +159,11 @@ export default function TableRow({
   const renderAttributeBreakdown = () => {
     if (Object.keys(attrBreakdown).length === 0) {
       return (
-        <div className="text-gray-500 dark:text-gray-400 text-center py-4">
+        <div
+          className={`text-center py-4 ${
+            theme === "dark" ? "text-gray-300" : "text-gray-700"
+          }`}
+        >
           No cards found for this character
         </div>
       );
@@ -172,44 +194,71 @@ export default function TableRow({
     });
 
     return (
-      <div className="">
-        <div className="flex flex-row justify-start items-start w-full text-gray-700 dark:text-gray-200 gap-2 ml-10">
-          {Object.entries(rarityStructure).map(([key, data]) => (
-            <div
-              key={key}
-              className="flex flex-col items-center space-y-1 px-5 flex-1"
-            >
-              <div className="font-medium text-xs bg-gray-200 dark:bg-gray-600 px-2 py-1 rounded">
-                {data.label}
+      <div className="w-full">
+        <div className="flex flex-row justify-start items-start w-full gap-2 ml-10">
+          {Object.entries(rarityStructure).map(([key, data]) => {
+            // Check if this rarity has any cards
+            const hasCards = Object.values(data.attributes).some(
+              (count) => count > 0
+            );
+            if (!hasCards) return null;
+
+            return (
+              <div
+                key={key}
+                className="flex flex-col items-center space-y-1 px-5 flex-1"
+              >
+                <div
+                  className={`font-medium text-xs px-2 py-1 rounded ${
+                    theme === "dark"
+                      ? "bg-gray-600 text-gray-200"
+                      : "bg-gray-200 text-gray-700"
+                  }`}
+                >
+                  {data.label}
+                </div>
+                <div className="flex flex-row gap-1 justify-center">
+                  {Attributes.map((attr) => {
+                    const count = data.attributes[attr] || 0;
+                    return (
+                      <div key={attr} className="flex flex-col items-center">
+                        {renderAttrRow(attr)}
+                        <span
+                          className={`text-xs font-bold mt-1 w-6 text-center ${
+                            theme === "dark" ? "text-gray-100" : "text-gray-700"
+                          }`}
+                        >
+                          {count > 0 ? count : "-"}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-              <div className="flex flex-row gap-1 justify-center">
-                {Attributes.map((attr) => {
-                  const count = data.attributes[attr] || 0;
-                  return (
-                    <div key={attr} className="flex flex-col items-center">
-                      {renderAttrRow(attr)}
-                      <span className="text-xs font-bold mt-1 w-6 text-center">
-                        {count > 0 ? count : "-"}
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     );
   };
+
   return (
     <>
       <tr
         key={character.id}
-        className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors cursor-pointer"
+        className={`transition-colors cursor-pointer ${
+          theme === "dark"
+            ? "hover:bg-gray-700/50 bg-gray-800"
+            : "hover:bg-gray-50 bg-white"
+        }`}
         onClick={() => onToggleExpand(character.id)}
       >
         {/* CHARACTER ICON */}
-        <td className="whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white sticky left-0 bg-white dark:bg-gray-800">
+        <td
+          className={`whitespace-nowrap text-sm font-medium sticky left-0 ${
+            theme === "dark" ? "bg-gray-800" : "bg-white"
+          }`}
+        >
           <div className="flex items-center space-x-2">
             {/* EXPAND ICON*/}
             <button
@@ -217,13 +266,17 @@ export default function TableRow({
                 e.stopPropagation();
                 onToggleExpand(character.id);
               }}
-              className="p-1 rounded hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+              className={`p-1 rounded transition-colors ${
+                theme === "dark"
+                  ? "hover:bg-gray-600 text-gray-100"
+                  : "hover:bg-gray-200 text-gray-800"
+              }`}
               aria-label={isExpanded ? "Collapse row" : "Expand row"}
             >
               <svg
-                className={`w-3 h-3 text-gray-500 dark:text-gray-400 transform transition-transform ${
+                className={`w-3 h-3 transform transition-transform ${
                   isExpanded ? "rotate-90" : "rotate-0"
-                }`}
+                } ${theme === "dark" ? "text-gray-100" : "text-gray-800 "}`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -262,7 +315,11 @@ export default function TableRow({
         </td>
 
         {/* TOTAL COUNT */}
-        <td className="whitespace-nowrap text-sm text-center font-bold text-gray-900 dark:text-white">
+        <td
+          className={`whitespace-nowrap text-sm text-center font-bold ${
+            theme === "dark" ? "text-white" : "text-gray-900"
+          }`}
+        >
           {character.totalCount}
         </td>
 
@@ -278,9 +335,13 @@ export default function TableRow({
         <tr>
           <td
             colSpan={2 + cardBreakdownColumns.length + lastCardsColumns.length}
-            className="p-2 bg-gray-50 dark:bg-gray-700/30 border-t border-gray-200 dark:border-gray-600"
+            className={`p-2 border-t ${
+              theme === "dark"
+                ? "bg-gray-700/30 border-gray-600"
+                : "bg-gray-50 border-gray-200"
+            }`}
           >
-            <div className="min-h-[80px] w-full flex justify-start items-center ">
+            <div className="min-h-[80px] w-full flex justify-start items-center">
               {renderAttributeBreakdown()}
             </div>
           </td>

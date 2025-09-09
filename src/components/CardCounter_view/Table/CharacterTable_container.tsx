@@ -55,16 +55,6 @@ export default function CardTable() {
         theme === "dark" ? "bg-[#101828]" : "bg-[#f9fafb]"
       }`}
     >
-      <div className="mb-6 text-center">
-        <h1
-          className={`text-2xl font-bold ${
-            theme === "dark" ? "text-gray-200" : "text-gray-600"
-          }  `}
-        >
-          Attributes breakdown wip
-        </h1>
-      </div>
-
       {/* FILTERS */}
       <FilterControls
         showVirtualSingers={showVirtualSingers}
