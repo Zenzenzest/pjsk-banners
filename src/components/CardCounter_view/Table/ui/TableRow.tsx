@@ -194,7 +194,7 @@ export default function TableRow({
     });
 
     return (
-      <div className="w-full">
+      <div className="">
         <div className="flex flex-row justify-start items-start w-full gap-2 ml-10">
           {Object.entries(rarityStructure).map(([key, data]) => {
             // Check if this rarity has any cards
