@@ -359,7 +359,7 @@ export default function SpecialCards() {
                   <td className="px-4 py-1 whitespace-nowrap">
                     {renderCardIcons(charCards.color_fes)}
                   </td>
-                  <td className="px-4 py-1 whitespace-nowrap">
+                  <td className="px-4 py-1 whitespace-nowrap min-w-[130px]">
                     {renderCardIcons(charCards.unit_limited)}
                   </td>
                   <td className="px-4 py-1 whitespace-nowrap min-w-[240px]">
