@@ -46,6 +46,7 @@ export default function SpecialCards() {
     groupedCards[character] = {
       bloom_fes: [],
       color_fes: [],
+      unit_limited: [],
       bday: [],
       movie_exclusive: [],
     };
@@ -64,6 +65,7 @@ export default function SpecialCards() {
       groupedCards[card.character] = {
         bloom_fes: [],
         color_fes: [],
+        unit_limited: [],
         bday: [],
         movie_exclusive: [],
       };
@@ -81,6 +83,9 @@ export default function SpecialCards() {
         break;
       case "color_fes":
         groupedCards[card.character].color_fes.push(card);
+        break;
+      case "unit_limited":
+        groupedCards[card.character].unit_limited.push(card);
         break;
       case "bday":
         groupedCards[card.character].bday.push(card);
@@ -178,7 +183,6 @@ export default function SpecialCards() {
           : "border-gray-200 bg-[#f9fafb]"
       }`}
     >
- 
       <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700 ">
         <table
           className={`min-w-full ${
@@ -210,12 +214,22 @@ export default function SpecialCards() {
               <th
                 className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
                   theme === "dark"
+                    ? "text-gray-800 bg-[#a8ecfb]/80"
+                    : "text-purple-600 bg-[#a8ecfb]/80"
+                }`}
+              >
+                World Link
+              </th>
+              <th
+                className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
+                  theme === "dark"
                     ? "text-green-400 bg-green-900/30"
                     : "text-green-600 bg-green-50"
                 }`}
               >
                 Birthday
               </th>
+
               <th
                 className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
                   theme === "dark"
@@ -263,6 +277,15 @@ export default function SpecialCards() {
                 }`}
               >
                 Color Fes
+              </th>{" "}
+              <th
+                className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
+                  theme === "dark"
+                    ? "text-gray-300 bg-cyan-600/80"
+                    : "text-gray-500 bg-cyan-100"
+                }`}
+              >
+                World Link
               </th>
               <th
                 className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
@@ -335,6 +358,9 @@ export default function SpecialCards() {
                   </td>
                   <td className="px-4 py-1 whitespace-nowrap">
                     {renderCardIcons(charCards.color_fes)}
+                  </td>
+                  <td className="px-4 py-1 whitespace-nowrap">
+                    {renderCardIcons(charCards.unit_limited)}
                   </td>
                   <td className="px-4 py-1 whitespace-nowrap min-w-[240px]">
                     {renderCardIcons(charCards.bday)}
