@@ -10826,12 +10826,11 @@
   },
   {
     "id": 446,
-    "name": "SUPREME SPORTY Gacha",
+    "name": "Supreme Sporty Gacha",
     "start": 1757530800000,
     "end": 1758394799000,
     "cards": [993, 994, 995],
     "banner_type": "Event",
-    "type": "estimation",
     "event_id": 142,
     "characters": [6, 11, 13],
     "keywords": ["sports", "athletic event"],
