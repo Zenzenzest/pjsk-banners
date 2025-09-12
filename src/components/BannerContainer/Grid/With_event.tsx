@@ -4,11 +4,11 @@ import CountdownTimer from "../Timers/Countdown_timer";
 import EventEndedTimer from "../Timers/EventEnded_timer";
 import JpEvents from "../../../assets/json/jp_events.json";
 import EnEvents from "../../../assets/json/en_events.json";
-import JpBanners from "../../../assets/json/jp_banners.json";
 import BannerCards from "../Cards/Banner_cards";
 import EventCards from "../Cards/Event_cards";
 import BannerStatus from "../Status";
 import { ImageLoader } from "../../../hooks/imageLoader";
+import { useBannerEvImg } from "../../../hooks/useBannerEvImg"; 
 import type { WithEventProps } from "../BannerTypes";
 
 export default function WithEvent({
@@ -23,6 +23,14 @@ export default function WithEvent({
   const { theme } = useTheme();
   const { server } = useServer();
   const bannerLoader = ImageLoader(1);
+
+ 
+  const { bannerImageUrl, handleImageError } = useBannerEvImg({
+    mode,
+    server,
+    banner,
+  });
+
   const today = Date.now();
 
   const EventObj =
@@ -97,38 +105,6 @@ export default function WithEvent({
     day: "numeric",
   });
 
-  const gachaBannerImage =
-    mode === "gacha"
-      ? server === "global" || server === "saved"
-        ? `/images/banners/${banner.id}.webp`
-        : `/images/jp_banners/${banner.id}.webp`
-      : server === "global" || server === "saved"
-      ? `/images/en_events/${banner.event_id}.webp`
-      : `/images/jp_events/${banner.event_id}.webp`;
-
-  const handleImageError = (
-    e: React.SyntheticEvent<HTMLImageElement, Event>
-  ) => {
-    if (mode === "gacha") {
-      const target = e.currentTarget;
-      target.onerror = null;
-      const en_id = Number(target.alt);
-      if (server === "global" || server === "saved") {
-        const jp_variant = JpBanners.find((item) => item.en_id == en_id);
-        target.src = jp_variant
-          ? `/images/jp_banners/${jp_variant.id}.webp`
-          : "/images/banners/placeholder.jpg";
-      } else {
-        target.src = "/images/banners/placeholder.jpg";
-      }
-    } else {
-      const target = e.currentTarget;
-      target.onerror = null;
-      const event_id = Number(target.alt);
-      target.src = `/images/jp_events/${event_id}.webp`;
-    }
-  };
-
   return (
     <div className="space-y-4">
       <div className="relative group">
@@ -143,7 +119,7 @@ export default function WithEvent({
             }`}
           >
             <img
-              src={gachaBannerImage}
+              src={bannerImageUrl} 
               alt={
                 mode === "gacha"
                   ? banner.id.toString()
@@ -173,7 +149,7 @@ export default function WithEvent({
         </div>
         <BannerStatus bannerStatus={bannerStatus} statusColor={statusColor} />
       </div>
-      {/* NAME AND TYPE */}
+      {/* ... rest of your component remains the same ... */}
       <div className="space-y-3">
         <div>
           <h3
