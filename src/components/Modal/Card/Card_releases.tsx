@@ -1,11 +1,10 @@
-import EnBanners from "../../../assets/json/en_banners.json";
-import JpBanners from "../../../assets/json/jp_banners.json";
+import { useProsekaData } from "../../../context/Data";
 import { useTheme } from "../../../context/Theme_toggle";
 import type { CardReleasesType } from "./CardModalTypes";
 
 export default function CardReleases({ cardId }: CardReleasesType) {
   const { theme } = useTheme();
-
+  const { jpBanners, enBanners } = useProsekaData();
   const allowedBannerTypes = [
     "World Link Support",
     "Limited Event Rerun",
@@ -27,13 +26,13 @@ export default function CardReleases({ cardId }: CardReleasesType) {
     return formattedDate;
   };
 
-  const JpAppearances = JpBanners.filter((banner) => {
+  const JpAppearances = jpBanners.filter((banner) => {
     return (
       banner.cards.includes(cardId) &&
       allowedBannerTypes.includes(banner.banner_type)
     );
   });
-  const EnAppearances = EnBanners.filter((banner) => {
+  const EnAppearances = enBanners.filter((banner) => {
     return (
       banner.cards.includes(cardId) &&
       allowedBannerTypes.includes(banner.banner_type)

@@ -1,14 +1,15 @@
 import { useEffect } from "react";
 import { useTheme } from "../../../context/Theme_toggle";
-import AllCards from "../../../assets/json/cards.json";
+
 import type { CardsProps } from "../BannerTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import CardIcon from "../../Icons/Icon";
+import { useProsekaData } from "../../../context/Data";
 
 
 export default function Cards({ banner, handleCardClick }: CardsProps) {
   const { theme } = useTheme();
-
+  const { allCards } = useProsekaData();
   const iconsLoader = ImageLoader(banner.cards.length);
 
   useEffect(() => {
@@ -38,7 +39,7 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
         )}
         <div className={`${iconsLoader.isLoaded ? "contents" : "hidden"}`}>
           {banner.cards.map((card, i) => {
-            const cardData = AllCards.find((item) => item.id === card);
+            const cardData = allCards.find((item) => item.id === card);
 
             let cardIconImage = "";
             if (cardData?.rarity === 5) {

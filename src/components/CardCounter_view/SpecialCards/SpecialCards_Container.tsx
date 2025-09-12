@@ -1,4 +1,3 @@
-import AllCards from "../../../assets/json/cards.json";
 import type { AllCardTypes } from "../../../types/common";
 import { CHARACTERS } from "../../../constants/common";
 import { useServer } from "../../../context/Server";
@@ -8,6 +7,7 @@ import { useTheme } from "../../../context/Theme_toggle";
 import { useState } from "react";
 import { today } from "../../../constants/common";
 import CardModal from "../../Modal/Card/Card_modal";
+import { useProsekaData } from "../../../context/Data";
 
 const COLLAB_TAGS = [
   { tag: "Deadly Sins", label: "Deadly Sins", key: "deadly_sins" },
@@ -23,7 +23,7 @@ export default function SpecialCards() {
   const [cardId, setCardId] = useState(0);
   const { server } = useServer();
   const { theme } = useTheme();
-
+  const { allCards } = useProsekaData();
   const handleCardClick = (cardId: number) => {
     setCardId(cardId);
     setIsOpen(true);
@@ -35,7 +35,7 @@ export default function SpecialCards() {
     setIsOpen(false);
   };
 
-  const filteredCards = AllCards.filter((card: AllCardTypes) => {
+  const filteredCards = allCards.filter((card: AllCardTypes) => {
     const releaseTime = server === "jp" ? card.jp_released : card.en_released;
     return releaseTime && today >= releaseTime;
   });

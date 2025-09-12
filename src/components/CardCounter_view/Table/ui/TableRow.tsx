@@ -1,10 +1,11 @@
 import { AllCharacters, Attributes } from "../../Counter_constants";
 import type { TableRowProps } from "../CounterTableTypes";
-import AllCards from "../../../../assets/json/cards.json";
+
 import { notAllowedTypes } from "../../Counter_constants";
 import { today } from "../../../../constants/common";
 import { useServer } from "../../../../context/Server";
 import { useTheme } from "../../../../context/Theme_toggle";
+import { useProsekaData } from "../../../../context/Data";
 
 export default function TableRow({
   character,
@@ -16,7 +17,7 @@ export default function TableRow({
 }: TableRowProps) {
   const { server } = useServer();
   const { theme } = useTheme();
-
+  const { allCards } = useProsekaData();
   const cardBreakdownColumns = character.sortedCardBreakdown.map(
     (card, index) => {
       const maxCount = getMaxCountForCategory(card.rarity, card.isLimited);
@@ -103,7 +104,7 @@ export default function TableRow({
 
   const attrBreakdown: { [key: string]: number } = {};
 
-  AllCards.forEach((card) => {
+  allCards.forEach((card) => {
     const isCharMatch = card.charId === charIndex;
     const isAllowed = !notAllowedTypes.includes(card.card_type);
     const isReleased =

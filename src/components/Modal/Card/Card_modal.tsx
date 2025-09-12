@@ -3,9 +3,9 @@ import { useTheme } from "../../../context/Theme_toggle";
 import { IsDeviceIpad } from "../../../hooks/isIpad";
 import type { CardModalProps } from "./CardModalTypes";
 import CardReleases from "./Card_releases";
-import AllCards from "../../../assets/json/cards.json";
 import { CHARACTERS, SpecialCards } from "../../../constants/common";
 import { useServer } from "../../../context/Server";
+import { useProsekaData } from "../../../context/Data";
 
 export default function CardModal({
   isOpen,
@@ -21,6 +21,8 @@ export default function CardModal({
   const isIpad = IsDeviceIpad();
   const { server } = useServer();
   // Prevent parent scroll
+   const { allCards } =useProsekaData()
+  
   useEffect(() => {
     if (!isOpen) return;
 
@@ -32,7 +34,7 @@ export default function CardModal({
     };
   }, [isOpen]);
 
-  const cardData = AllCards.find((card) => card.id === cardId);
+  const cardData = allCards.find((card) => card.id === cardId);
 
   const handleTouchMove = (e: React.TouchEvent) => {
     e.stopPropagation();

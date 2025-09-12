@@ -1,5 +1,5 @@
 import type { AllCardTypes } from "../../../types/common";
-import AllCards from "../../../assets/json/cards.json";
+
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import CharacterGrid from "./Character_grid";
 import { AllCharacters, notAllowedTypes } from "../Counter_constants";
@@ -8,55 +8,7 @@ import ProcessCardData from "../process_card";
 import { useTheme } from "../../../context/Theme_toggle";
 import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
 import { SUB_UNITS, VS } from "../../../constants/common";
-
-const getLastCardByRarity = (
-  cardType: string,
-  charId: number,
-  rarity: number,
-  server: string,
-  today: number,
-  excludedTypes: string[]
-) => {
-  return AllCards.findLast((card) => {
-    const isReleased =
-      server === "jp"
-        ? today > (card.jp_released ?? 0)
-        : today > (card.en_released ?? 0);
-    const isAllowed = !excludedTypes.includes(card.card_type);
-    const isRarityMatch = card.rarity === rarity;
-    const isLim4 = card.card_type === "limited";
-    if (cardType === "permanent") {
-      return (
-        isReleased &&
-        card.charId === charId &&
-        isAllowed &&
-        isRarityMatch &&
-        !isLim4
-      );
-    } else {
-      return (
-        isReleased &&
-        card.charId === charId &&
-        isAllowed &&
-        isRarityMatch &&
-        isLim4
-      );
-    }
-  });
-};
-
-const formatCardDate = (card: AllCardTypes | undefined, server: string) => {
-  if (!card) return "N/A";
-
-  const date = new Date(server === "jp" ? card.jp_released : card.en_released);
-
-  const formattedDate = date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
-  return [formattedDate, card.id];
-};
+import { useProsekaData } from "../../../context/Data";
 
 export default function CharacterContainer() {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -68,11 +20,10 @@ export default function CharacterContainer() {
     }),
     [windowWidth]
   );
-
+  const { allCards } = useProsekaData();
   const { server } = useServer();
   const { theme } = useTheme();
   const today = Date.now();
-
 
   const getCharacterId = useCallback((card: AllCardTypes) => {
     const isVirtualSinger = card.unit === "Virtual Singers";
@@ -131,12 +82,63 @@ export default function CharacterContainer() {
     []
   );
 
+  const getLastCardByRarity = (
+    cardType: string,
+    charId: number,
+    rarity: number,
+    server: string,
+    today: number,
+    excludedTypes: string[]
+  ) => {
+    return allCards.findLast((card) => {
+      const isReleased =
+        server === "jp"
+          ? today > (card.jp_released ?? 0)
+          : today > (card.en_released ?? 0);
+      const isAllowed = !excludedTypes.includes(card.card_type);
+      const isRarityMatch = card.rarity === rarity;
+      const isLim4 = card.card_type === "limited";
+      if (cardType === "permanent") {
+        return (
+          isReleased &&
+          card.charId === charId &&
+          isAllowed &&
+          isRarityMatch &&
+          !isLim4
+        );
+      } else {
+        return (
+          isReleased &&
+          card.charId === charId &&
+          isAllowed &&
+          isRarityMatch &&
+          isLim4
+        );
+      }
+    });
+  };
+
+  const formatCardDate = (card: AllCardTypes | undefined, server: string) => {
+    if (!card) return "N/A";
+
+    const date = new Date(
+      server === "jp" ? card.jp_released : card.en_released
+    );
+
+    const formattedDate = date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+    return [formattedDate, card.id];
+  };
+
   const processedData = useMemo(() => {
     const charactersCounter: { [key: string]: number } = {};
     const allowedCardTypes = new Set(["permanent", "limited"]);
     const today = Date.now();
 
-    AllCards.forEach((card) => {
+    allCards.forEach((card) => {
       const isReleased =
         server === "jp" ? today > card.jp_released : today > card.en_released;
       if (

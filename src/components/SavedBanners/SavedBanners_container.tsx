@@ -1,17 +1,18 @@
 import { useState, useEffect, useRef } from "react";
 import { useTheme } from "../../context/Theme_toggle";
 import { useServer } from "../../context/Server";
-import EnBanners from "../../assets/json/en_banners.json";
+
 import type { BannerTypes } from "../../types/common";
 import BannerContainer from "../BannerContainer/Banner_Container";
 import WebsiteDisclaimer from "../Nav/Website_disclaimer";
+import { useProsekaData } from "../../context/Data";
 
 export default function SavedBannersContainer() {
   const [savedBanners, setSavedBanners] = useState<number[]>([]);
   const { theme } = useTheme();
   const { server } = useServer();
   const savedRef = useRef<HTMLDivElement>(null);
-
+  const { enBanners } = useProsekaData();
   useEffect(() => {
     const updateSavedBanners = () => {
       const saved = localStorage.getItem("banners");
@@ -50,11 +51,13 @@ export default function SavedBannersContainer() {
     };
   }, [server]);
 
-  const filteredBanners: BannerTypes[] = EnBanners.filter((banner) => {
-    return savedBanners.includes(banner.id);
-  }).sort((a, b) => {
-    return a.start - b.start;
-  });
+  const filteredBanners: BannerTypes[] = enBanners
+    .filter((banner) => {
+      return savedBanners.includes(banner.id);
+    })
+    .sort((a, b) => {
+      return a.start - b.start;
+    });
 
   return (
     <>

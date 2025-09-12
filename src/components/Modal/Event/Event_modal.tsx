@@ -1,15 +1,14 @@
 // import { useState } from "react";
 import { useServer } from "../../../context/Server";
 import { useTheme } from "../../../context/Theme_toggle";
-import EnEvents from "../../../assets/json/en_events.json";
-import JpEvents from "../../../assets/json/jp_events.json";
-import AllCards from "../../../assets/json/cards.json";
+
 import type { EventModalProps, SUBUNITTypes } from "./EventModalTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import { useEffect } from "react";
 import { CHARACTERS, VS } from "../../../constants/common";
 import { handleTouchMove } from "../touch_move";
 import CardIcon from "../../Icons/Icon";
+import { useProsekaData } from "../../../context/Data";
 const SUB_UNIT: SUBUNITTypes = {
   "l/n": "Leo/Need",
   mmj: "MORE MORE JUMP!",
@@ -25,7 +24,7 @@ export default function EventModal({
 }: EventModalProps) {
   const { theme } = useTheme();
   const { server } = useServer();
-
+  const { jpEvents, enEvents, allCards } = useProsekaData();
   // Prevent parent scroll
   useEffect(() => {
     if (!isEventOpen) return;
@@ -38,53 +37,56 @@ export default function EventModal({
     };
   }, [isEventOpen, eventId]);
 
-  const AllEvs = server === "jp" ? JpEvents : EnEvents;
+  const AllEvs = server === "jp" ? jpEvents : enEvents;
 
   const EvObj = AllEvs.find((events) => events.id === eventId);
-  const EvCardIds = AllCards.filter((card) =>
-    EvObj?.cards.includes(card.id)
-  ).map((card) => card.id);
+  const EvCardIds = allCards
+    .filter((card) => EvObj?.cards.includes(card.id))
+    .map((card) => card.id);
 
-  const EvCharacters = AllCards.filter((card) => {
-    if (EvObj) {
-      return EvObj.cards.includes(card.id);
-    }
-  }).map((card) => card.character);
+  const EvCharacters = allCards
+    .filter((card) => {
+      if (EvObj) {
+        return EvObj.cards.includes(card.id);
+      }
+    })
+    .map((card) => card.character);
 
-  const EvAttr = AllCards.find((card) => card.id === EvCardIds[0])?.attribute;
+  const EvAttr = allCards.find((card) => card.id === EvCardIds[0])?.attribute;
 
   const hasVs = VS.some((vv) => EvCharacters.includes(vv));
   const isWorldLink = EvObj?.keywords.includes("world link");
 
-  const filteredCards = AllCards.filter((card) => {
-    const cardRelease = server === "jp" ? card.jp_released : card.en_released;
-    const attrMatch = card.attribute === EvAttr;
+  const filteredCards = allCards
+    .filter((card) => {
+      const cardRelease = server === "jp" ? card.jp_released : card.en_released;
+      const attrMatch = card.attribute === EvAttr;
 
-    const charMatch = EvCharacters.includes(card.character);
-    const isCardReleased =
-      EvObj && EvObj.start >= cardRelease && cardRelease > 0;
+      const charMatch = EvCharacters.includes(card.character);
+      const isCardReleased =
+        EvObj && EvObj.start >= cardRelease && cardRelease > 0;
 
-    // Non world link events
-    if (EvObj && !isWorldLink) {
-      if (hasVs) {
-        const vsDefault = card.unit === "Virtual Singers" && !card.sub_unit;
-        const subUnitMatch =
-          card.sub_unit && card.sub_unit === SUB_UNIT[EvObj.unit];
-        const isVs = card.unit === "Virtual Singers";
-        return (
-          attrMatch &&
-          isCardReleased &&
-          (vsDefault || subUnitMatch || (charMatch && !isVs))
-        );
+      // Non world link events
+      if (EvObj && !isWorldLink) {
+        if (hasVs) {
+          const vsDefault = card.unit === "Virtual Singers" && !card.sub_unit;
+          const subUnitMatch =
+            card.sub_unit && card.sub_unit === SUB_UNIT[EvObj.unit];
+          const isVs = card.unit === "Virtual Singers";
+          return (
+            attrMatch &&
+            isCardReleased &&
+            (vsDefault || subUnitMatch || (charMatch && !isVs))
+          );
+        } else {
+          return attrMatch && charMatch && isCardReleased;
+        }
       } else {
-        return attrMatch && charMatch && isCardReleased;
+        // World link events
+        const isEvCard = EvCardIds.includes(card.id);
+        return isEvCard;
       }
-    } else {
-      // World link events
-      const isEvCard = EvCardIds.includes(card.id);
-      return isEvCard;
-    }
-  })
+    })
     .map((card) => {
       const tempObj = { id: 0, rarity: 0, min: 25, max: 0 }; //25 min for attr bonus
       tempObj["id"] = card.id;

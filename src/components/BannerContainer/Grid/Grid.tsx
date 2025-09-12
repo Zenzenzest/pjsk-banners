@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { useServer } from "../../../context/Server";
+import { useProsekaData } from "../../../context/Data";
 import type { GridProps } from "../BannerTypes";
-import JpEvents from "../../../assets/json/jp_events.json";
-import EnEvents from "../../../assets/json/en_events.json";
 import WithEvent from "./With_event";
 import WithoutEvent from "./Without_event";
 
@@ -11,10 +10,11 @@ export default function Grid({
   mode,
   handleCardClick,
   handleEventClick,
-  handleGachaClick
+  handleGachaClick,
 }: GridProps) {
   const [savedBanners, setSavedBanners] = useState<number[]>([]);
   const { server } = useServer();
+  const { jpEvents, enEvents } = useProsekaData(); 
 
   useEffect(() => {
     const loadSavedBanners = () => {
@@ -33,7 +33,6 @@ export default function Grid({
 
     loadSavedBanners();
 
-    // custom storage events
     const handleStorageChange = () => {
       loadSavedBanners();
     };
@@ -46,7 +45,6 @@ export default function Grid({
   }, [banner]);
 
   const handleSaveBanner = (id: number) => {
-    // Get fresh data from localStorage to avoid stale state
     const currentSaved = localStorage.getItem("banners");
     let currentSavedArray: number[] = [];
 
@@ -66,21 +64,15 @@ export default function Grid({
       updatedBanners = [...currentSavedArray, id];
     }
 
-    // Update localStorage
     localStorage.setItem("banners", JSON.stringify(updatedBanners));
-
-    // Update local state
     setSavedBanners(updatedBanners);
-
-    // dispatch custom event to notify other components
     window.dispatchEvent(new Event("localStorageChanged"));
   };
 
-  // Null check for EventObj
   const EventObj =
     (server === "global" || server === "saved") && mode === "event"
-      ? EnEvents.find((item) => item.id === banner.event_id)
-      : JpEvents.find((item) => item.id === banner.event_id);
+      ? enEvents.find((item) => item.id === banner.event_id)
+      : jpEvents.find((item) => item.id === banner.event_id);
 
   if (mode === "event" && !EventObj) {
     return (
@@ -89,15 +81,15 @@ export default function Grid({
       </div>
     );
   }
+
   const isBannerSaved = (id: number) => savedBanners.includes(id);
+
   return (
     <div
       className={`${
         !banner.event_id && "grid grid-cols-1 sm:grid-cols-2 gap-3"
       }`}
     >
-      {/* BANNER + EVENT */}
-
       <WithEvent
         mode={mode}
         banner={banner}
@@ -108,8 +100,6 @@ export default function Grid({
         handleGachaClick={handleGachaClick}
       />
 
-      {/* SOLO */}
-      {/* GACHA BANNERS THAT DONT HAVE EVENT WITH IT */}
       {!banner.event_id && (
         <WithoutEvent
           banner={banner}

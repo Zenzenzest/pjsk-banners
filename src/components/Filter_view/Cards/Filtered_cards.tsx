@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import AllCards from "../../../assets/json/cards.json";
+
 import type {
   CardState,
   SelectedCardFilterTypesProps,
@@ -12,6 +12,7 @@ import { cardTypeMapping } from "../Filter_constants";
 
 import Pagination from "../Ui/Pagination";
 import CardThumbnail from "./Card_thumbnail";
+import { useProsekaData } from "../../../context/Data";
 
 export default function FilteredCards({
   selectedCardFilters,
@@ -24,6 +25,8 @@ export default function FilteredCards({
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
   const [cardsPerPage] = useState(20);
   const [shouldScrollToTop, setShouldScrollToTop] = useState(false);
+
+    const { allCards } = useProsekaData()
 
   const filteredCardsRef = useRef<HTMLDivElement>(null);
 
@@ -62,7 +65,7 @@ export default function FilteredCards({
     setIsOpen(false);
   };
 
-  const filteredCards = AllCards.filter((card) => {
+  const filteredCards = allCards.filter((card) => {
     // Filter out skipped en cards (rui2) or unpredictable release date (collab cards)
 
     if (server === "global" || server === "saved") {

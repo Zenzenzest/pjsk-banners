@@ -2,48 +2,12 @@ import { useState, useMemo, useCallback } from "react";
 import { AllCharacters } from "../../Counter_constants";
 import { SUB_UNITS, VS } from "../../../../constants/common";
 import type { AllCardTypes } from "../../../../types/common";
-import AllCards from "../../../../assets/json/cards.json";
+
 import ProcessCardData from "../../process_card";
 import { notAllowedTypes } from "../../Counter_constants";
 import type { CharacterData } from "../../CounterTypes";
-import type { SortColumn,SortDirection } from "../CounterTableTypes";
-
-
-const getLastCardByRarity = (
-  cardType: string,
-  charId: number,
-  rarity: number,
-  server: string,
-  today: number,
-  excludedTypes: string[]
-) => {
-  return AllCards.findLast((card) => {
-    const isReleased =
-      server === "jp"
-        ? today > (card.jp_released ?? 0)
-        : today > (card.en_released ?? 0);
-    const isAllowed = !excludedTypes.includes(card.card_type);
-    const isRarityMatch = card.rarity === rarity;
-    const isLim4 = card.card_type === "limited";
-    if (cardType === "permanent") {
-      return (
-        isReleased &&
-        card.charId === charId &&
-        isAllowed &&
-        isRarityMatch &&
-        !isLim4
-      );
-    } else if (cardType === "limited") {
-      return (
-        isReleased &&
-        card.charId === charId &&
-        isAllowed &&
-        isRarityMatch &&
-        isLim4
-      );
-    }
-  });
-};
+import type { SortColumn, SortDirection } from "../CounterTableTypes";
+import { useProsekaData } from "../../../../context/Data";
 
 const formatCardDate = (card: AllCardTypes | undefined, server: string) => {
   if (!card) return ["N/A", 0, 0];
@@ -71,7 +35,7 @@ export const useCardTable = (server: string, today: number) => {
   const [showVBS, setShowVBS] = useState(true);
   const [showWxS, setShowWxS] = useState(true);
   const [showN25, setShowN25] = useState(true);
-
+  const { allCards } = useProsekaData();
 
   const handleCardClick = (cardId: number) => {
     setCardId(cardId);
@@ -130,11 +94,47 @@ export const useCardTable = (server: string, today: number) => {
     return true;
   };
 
+  const getLastCardByRarity = (
+    cardType: string,
+    charId: number,
+    rarity: number,
+    server: string,
+    today: number,
+    excludedTypes: string[]
+  ) => {
+    return allCards.findLast((card) => {
+      const isReleased =
+        server === "jp"
+          ? today > (card.jp_released ?? 0)
+          : today > (card.en_released ?? 0);
+      const isAllowed = !excludedTypes.includes(card.card_type);
+      const isRarityMatch = card.rarity === rarity;
+      const isLim4 = card.card_type === "limited";
+      if (cardType === "permanent") {
+        return (
+          isReleased &&
+          card.charId === charId &&
+          isAllowed &&
+          isRarityMatch &&
+          !isLim4
+        );
+      } else if (cardType === "limited") {
+        return (
+          isReleased &&
+          card.charId === charId &&
+          isAllowed &&
+          isRarityMatch &&
+          isLim4
+        );
+      }
+    });
+  };
+
   const processedData = useMemo(() => {
     const charactersCounter: { [key: string]: number } = {};
     const allowedCardTypes = new Set(["permanent", "limited"]);
 
-    AllCards.forEach((card) => {
+    allCards.forEach((card) => {
       const isReleased =
         server === "jp" ? today > card.jp_released : today > card.en_released;
 

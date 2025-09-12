@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import JpBanners from "../assets/json/jp_banners.json";
+import { useProsekaData } from "../context/Data";
 
 type UseBannerImageProps = {
   mode: string | undefined;
@@ -15,6 +15,7 @@ export const useBannerEvImg = ({
   server,
   banner,
 }: UseBannerImageProps) => {
+    const { jpBanners} = useProsekaData()
   const hostUrl = "https://r2-image-proxy.zenzenzest.workers.dev";
 
   const getBannerImageUrl = useCallback(() => {
@@ -38,7 +39,7 @@ export const useBannerEvImg = ({
       if (mode === "gacha") {
         const en_id = Number(target.alt);
         if (server === "global" || server === "saved") {
-          const jp_variant = JpBanners.find((item) => item.en_id == en_id);
+          const jp_variant = jpBanners.find((item) => item.en_id == en_id);
           target.src = jp_variant
             ? `${hostUrl}/jp_banners/${jp_variant.id}.webp`
             : `${hostUrl}/en_banners/placeholder.jpg`;

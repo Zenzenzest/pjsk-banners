@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import GlobalBanners from "../../assets/json/en_banners.json";
-import JpBbanners from "../../assets/json/jp_banners.json";
+
 import { useTheme } from "../../context/Theme_toggle";
 import type { ServerTimeData } from "./DateTabTypes";
 import type { BannerTypes } from "../../types/common";
@@ -14,16 +13,18 @@ import {
   years_jp,
   timeData_jp,
 } from "./Date_tabs_constants";
+import { useProsekaData } from "../../context/Data";
 
 export default function DateTabs() {
   const { theme } = useTheme();
   const { server } = useServer();
+  const { enBanners, jpBanners } = useProsekaData();
   const dateTabsRef = useRef<HTMLDivElement>(null);
   const yearScrollRef = useRef<HTMLDivElement>(null);
 
   const years = server === "global" ? years_global : years_jp;
   const timeData = server === "global" ? timeData_global : timeData_jp;
-  const dataBanners = server === "global" ? GlobalBanners : JpBbanners;
+  const dataBanners = server === "global" ? enBanners : jpBanners;
 
   const currentDate = new Date();
   const currentYearValue = currentDate.getFullYear();

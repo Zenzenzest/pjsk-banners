@@ -2,12 +2,11 @@ import { useEffect } from "react";
 import { useServer } from "../../../context/Server";
 import { useTheme } from "../../../context/Theme_toggle";
 import { handleTouchMove } from "../touch_move";
-import EnBanners from "../../../assets/json/en_banners.json";
-import JpBanners from "../../../assets/json/jp_banners.json";
-import AllCards from "../../../assets/json/cards.json";
+
 import type { GachaModalProps } from "./GachaModalTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import CardIcon from "../../Icons/Icon";
+import { useProsekaData } from "../../../context/Data";
 
 const allowedBannerTypes = [
   "Event",
@@ -29,7 +28,7 @@ export default function GachaModal({
 }: GachaModalProps) {
   const { theme } = useTheme();
   const { server } = useServer();
-
+  const { jpBanners, enBanners, allCards } = useProsekaData();
   // Prevent parent scroll
   useEffect(() => {
     if (!isGachaOpen) return;
@@ -41,20 +40,21 @@ export default function GachaModal({
       document.body.style.overflow = "unset";
     };
   }, [isGachaOpen, gachaId]);
-  const AllGacha = server === "global" ? EnBanners : JpBanners;
+  const AllGacha = server === "global" ? enBanners : jpBanners;
 
   const gachaObj = AllGacha.find((gacha) => gacha.id === gachaId);
 
-  const sortedAndFilteredCards = AllCards.filter((card) => {
-    // const releaseDate =
-    //   server === "global" ? card.en_released : card.jp_released;
-    if (gachaObj) {
-      return (
-        gachaObj.gachaDetails.includes(card.id) ||
-        gachaObj.cards.includes(card.id)
-      );
-    }
-  })
+  const sortedAndFilteredCards = allCards
+    .filter((card) => {
+      // const releaseDate =
+      //   server === "global" ? card.en_released : card.jp_released;
+      if (gachaObj) {
+        return (
+          gachaObj.gachaDetails.includes(card.id) ||
+          gachaObj.cards.includes(card.id)
+        );
+      }
+    })
     .sort((a, b) => b.id - a.id)
     .sort((a, b) => {
       const isRateUpA = gachaObj?.cards.includes(a.id);
@@ -86,11 +86,13 @@ export default function GachaModal({
       total4starChance = 6;
       break;
     case "World Link Support":
-      if (gachaObj.keywords.length === 0) {
-        total4starChance = 3;
-      } else {
-        total4starChance = 3;
-        featured4starChance = 0.4;
+      if (gachaObj.keywords) {
+        if (gachaObj.keywords.length === 0) {
+          total4starChance = 3;
+        } else {
+          total4starChance = 3;
+          featured4starChance = 0.4;
+        }
       }
       break;
   }
@@ -98,13 +100,17 @@ export default function GachaModal({
   const featured4 = gachaObj?.cards;
 
   const nonFeatured4 = gachaObj?.gachaDetails.filter((card) => {
-    if (
-      gachaObj.banner_type === "World Link Support" &&
-      gachaObj.keywords.length === 0
-    ) {
-      return featured4?.includes(card) || gachaObj.gachaDetails.includes(card);
-    } else {
-      return !featured4?.includes(card);
+    if (gachaObj.keywords) {
+      if (
+        gachaObj.banner_type === "World Link Support" &&
+        gachaObj.keywords.length === 0
+      ) {
+        return (
+          featured4?.includes(card) || gachaObj.gachaDetails.includes(card)
+        );
+      } else {
+        return !featured4?.includes(card);
+      }
     }
   });
   const totalFeatured4chance =
@@ -276,6 +282,7 @@ export default function GachaModal({
                                       "World Link Support") ||
                                   (gachaObj.banner_type ===
                                     "World Link Support" &&
+                                    gachaObj.keywords &&
                                     gachaObj.keywords.length !== 0 &&
                                     gachaObj.cards.includes(card.id)) ? (
                                     <span>{featured4starChance} %</span>

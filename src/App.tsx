@@ -3,18 +3,20 @@ import NavBar from "./components/Nav/NavBar";
 import { ThemeProvider } from "./context/Theme_toggle";
 import { ServerProvider } from "./context/Server";
 import HomeContainer from "./components/Main_container";
+import { ProsekaDataProvider } from "./context/Data";
 
 function App() {
   const didLog = useRef(false);
   useEffect(() => {
     const currentPath = window.location.pathname;
-  
 
-  const isImage = /\.(png|jpg|jpeg|gif|svg|ico|webp|bmp|tiff)$/i.test(currentPath);
-  
-  if (currentPath !== "/" && !isImage) {
-    window.history.replaceState(null, "", "/");
-  }
+    const isImage = /\.(png|jpg|jpeg|gif|svg|ico|webp|bmp|tiff)$/i.test(
+      currentPath
+    );
+
+    if (currentPath !== "/" && !isImage) {
+      window.history.replaceState(null, "", "/");
+    }
     const mizook = `،
 ⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⢂⠀⠉⠉⠉⠛⣿⠶⠊⠉⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠒⡶⣤⣈⣹⡓⣶⣭⣻⣻⢯⣯⣍⣙⠫⡟⢧⣌⠉⠉⠉⠉⠉⠀⠀⣁⣤⣤⠄⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠷⣿⣿⣿⣿⣿⣶⣈⣿⣿⣯⠀⡌⢻⣷⣄⠀⠀⢀⣠⠞⠁⢸⠛⠀⠀⠀⠀⠀⠀
@@ -58,12 +60,14 @@ function App() {
   });
   return (
     <div>
-      <ThemeProvider>
-        <ServerProvider>
-          <NavBar />
-          <HomeContainer />
-        </ServerProvider>
-      </ThemeProvider>
+      <ProsekaDataProvider>
+        <ThemeProvider>
+          <ServerProvider>
+            <NavBar />
+            <HomeContainer />
+          </ServerProvider>
+        </ThemeProvider>
+      </ProsekaDataProvider>
     </div>
   );
 }

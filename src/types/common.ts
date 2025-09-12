@@ -34,3 +34,17 @@ export type BannerTypes = {
   sekai_id?: number;
   gachaDetails: number[];
 };
+
+export type EventTypes = {
+  id: number;
+  name: string;
+  unit: string;
+  start: number;
+  end: number;
+  close: number;
+  cards: number[];
+  banner_id?: number;
+  event_type: string;
+  keywords: string[];
+  type: string;
+};

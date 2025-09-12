@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import { useServer } from "../../../context/Server";
 import { useTheme } from "../../../context/Theme_toggle";
-import EnBanners from "../../../assets/json/en_banners.json";
-import JpBanners from "../../../assets/json/jp_banners.json";
+
 import type { SelectedBannerFilterTypesProps } from "../FilterTabTypes";
 import type { BannerTypes } from "../../../types/common";
 import { CHARACTERS } from "../../../constants/common";
 import BannerContainer from "../../BannerContainer/Banner_Container";
 import Pagination from "../Ui/Pagination";
+import { useProsekaData } from "../../../context/Data";
 
 export default function FilteredBanners({
   selectedBannerFilters,
@@ -19,7 +19,7 @@ export default function FilteredBanners({
   const [shouldScrollToTop, setShouldScrollToTop] = useState(false);
   const [hideFutureBanners, setHideFutureBanners] = useState(true);
   const { theme } = useTheme();
-
+  const { jpBanners, enBanners } = useProsekaData();
   const filteredBannersRef = useRef<HTMLDivElement>(null);
 
   // Calculate pagination
@@ -33,7 +33,7 @@ export default function FilteredBanners({
   }, [filteredBanners, startIndex, endIndex]);
 
   useEffect(() => {
-    const bannersArr = server === "global" ? EnBanners : JpBanners;
+    const bannersArr = server === "global" ? enBanners : jpBanners;
 
     let filtered = [...bannersArr];
 

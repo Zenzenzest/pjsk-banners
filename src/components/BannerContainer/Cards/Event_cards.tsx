@@ -1,9 +1,10 @@
 import { useEffect } from "react";
-import AllCards from "../../../assets/json/cards.json";
+
 import { useTheme } from "../../../context/Theme_toggle";
 import type { EventCardsProps } from "../BannerTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import CardIcon from "../../Icons/Icon";
+import { useProsekaData } from "../../../context/Data";
 
 export default function EventCards({
   bannerCards,
@@ -11,7 +12,7 @@ export default function EventCards({
   handleCardClick,
 }: EventCardsProps) {
   const { theme } = useTheme();
-
+  const { allCards } = useProsekaData();
   const iconsLoader = ImageLoader(bannerShopCards.length);
 
   useEffect(() => {
@@ -48,7 +49,7 @@ export default function EventCards({
         )}
         <div className={`${iconsLoader.isLoaded ? "contents" : "hidden"}`}>
           {bannerShopCards.map((shopCard, i) => {
-            const EnEventCard = AllCards.find((item) => shopCard === item.id);
+            const EnEventCard = allCards.find((item) => shopCard === item.id);
 
             const cardIconImage =
               EnEventCard && EnEventCard.rarity === 3
@@ -61,7 +62,6 @@ export default function EventCards({
                 className="group cursor-pointer transition-transform duration-200 hover:scale-105"
                 onClick={() => {
                   if (EnEventCard) {
-               
                     handleCardClick(EnEventCard.id);
                   }
                 }}

@@ -2,14 +2,14 @@ import { useServer } from "../../../context/Server";
 import { useTheme } from "../../../context/Theme_toggle";
 import CountdownTimer from "../Timers/Countdown_timer";
 import EventEndedTimer from "../Timers/EventEnded_timer";
-import JpEvents from "../../../assets/json/jp_events.json";
-import EnEvents from "../../../assets/json/en_events.json";
+
 import BannerCards from "../Cards/Banner_cards";
 import EventCards from "../Cards/Event_cards";
 import BannerStatus from "../Status";
 import { ImageLoader } from "../../../hooks/imageLoader";
-import { useBannerEvImg } from "../../../hooks/useBannerEvImg"; 
+import { useBannerEvImg } from "../../../hooks/useBannerEvImg";
 import type { WithEventProps } from "../BannerTypes";
+import { useProsekaData } from "../../../context/Data";
 
 export default function WithEvent({
   mode,
@@ -23,8 +23,8 @@ export default function WithEvent({
   const { theme } = useTheme();
   const { server } = useServer();
   const bannerLoader = ImageLoader(1);
+  const { jpEvents, enEvents } = useProsekaData();
 
- 
   const { bannerImageUrl, handleImageError } = useBannerEvImg({
     mode,
     server,
@@ -35,8 +35,8 @@ export default function WithEvent({
 
   const EventObj =
     (server === "global" || server === "saved") && mode === "event"
-      ? EnEvents.find((item) => item.id === banner.event_id)
-      : JpEvents.find((item) => item.id === banner.event_id);
+      ? enEvents.find((item) => item.id === banner.event_id)
+      : jpEvents.find((item) => item.id === banner.event_id);
 
   // Null check EventObj
   if (mode === "event" && !EventObj) {
@@ -81,7 +81,7 @@ export default function WithEvent({
 
   // Calculate bannerShopCards inside
   const bannerShopCards = banner.event_id
-    ? (server === "global" ? EnEvents : JpEvents)
+    ? (server === "global" ? enEvents : jpEvents)
         .find((item) => item.id == banner.event_id)
         ?.cards.filter((eventCard) => !banner.cards.includes(eventCard)) || []
     : [];
@@ -119,7 +119,7 @@ export default function WithEvent({
             }`}
           >
             <img
-              src={bannerImageUrl} 
+              src={bannerImageUrl}
               alt={
                 mode === "gacha"
                   ? banner.id.toString()
