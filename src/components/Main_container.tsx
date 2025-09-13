@@ -14,11 +14,11 @@ export default function HomeContainer() {
   const [viewMode, setViewMode] = useState<ViewModeType>("dateview");
   const { server } = useServer();
   const { theme } = useTheme();
-  // const { loading = true } = useProsekaData();
+  const { loading  } = useProsekaData();
   const handleDateViewMode = () => setViewMode("dateview");
   const handleFilterViewMode = () => setViewMode("filterview");
   const handleCounterViewMode = () => setViewMode("counterview");
-  const loading = true;
+
   // helper function for tab styling
   const getTabClass = (tab: ViewModeType) => {
     const baseClass =
