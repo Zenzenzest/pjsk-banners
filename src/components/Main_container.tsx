@@ -5,6 +5,8 @@ import FilterTab from "./Filter_view/Filter_Container";
 import { useServer } from "../context/Server";
 import SavedBannersContainer from "./SavedBanners/SavedBanners_container";
 import CardCounterContainer from "./CardCounter_view/CardCounter_container";
+import { useProsekaData } from "../context/Data";
+import LoadingComponent from "./Loading";
 
 type ViewModeType = "dateview" | "filterview" | "counterview";
 
@@ -12,11 +14,11 @@ export default function HomeContainer() {
   const [viewMode, setViewMode] = useState<ViewModeType>("dateview");
   const { server } = useServer();
   const { theme } = useTheme();
-
+  // const { loading = true } = useProsekaData();
   const handleDateViewMode = () => setViewMode("dateview");
   const handleFilterViewMode = () => setViewMode("filterview");
   const handleCounterViewMode = () => setViewMode("counterview");
-
+  const loading = true;
   // helper function for tab styling
   const getTabClass = (tab: ViewModeType) => {
     const baseClass =
@@ -72,11 +74,17 @@ export default function HomeContainer() {
               </div>
             </div>
 
-            {/* VIEWMODE OPTIONS */}
-            {viewMode === "dateview" && <DateTabs />}
-            {viewMode === "filterview" && <FilterTab />}
-        
-            {viewMode === "counterview" && <CardCounterContainer/>}
+            {loading ? (
+              <LoadingComponent />
+            ) : (
+              <div>
+                {/* VIEWMODE OPTIONS */}
+                {viewMode === "dateview" && <DateTabs />}
+                {viewMode === "filterview" && <FilterTab />}
+
+                {viewMode === "counterview" && <CardCounterContainer />}
+              </div>
+            )}
           </div>
         ) : (
           <SavedBannersContainer />
