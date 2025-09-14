@@ -28,7 +28,7 @@ export function ProsekaDataProvider({
   const [error, setError] = useState<string | null>(null);
 
   const mainUrl =
-    "https://raw.githubusercontent.com/Zenzenzest/proseka-data/refs/heads/main/";
+    "https://zenzenzest.github.io/proseka-data/";
   useEffect(() => {
     const fetchEvents = async () => {
       try {
