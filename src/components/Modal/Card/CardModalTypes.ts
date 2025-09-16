@@ -10,4 +10,5 @@ export interface CardModalProps {
 
 export type CardReleasesType = {
   cardId: number;
+  cardType:string
 };

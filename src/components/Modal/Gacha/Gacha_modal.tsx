@@ -40,7 +40,8 @@ export default function GachaModal({
       document.body.style.overflow = "unset";
     };
   }, [isGachaOpen, gachaId]);
-  const AllGacha = server === "global" || server === "saved" ? enBanners : jpBanners;
+  const AllGacha =
+    server === "global" || server === "saved" ? enBanners : jpBanners;
 
   const gachaObj = AllGacha.find((gacha) => gacha.id === gachaId);
 

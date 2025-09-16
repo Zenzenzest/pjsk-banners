@@ -1,3 +1,5 @@
+import { useProsekaData } from "../context/Data";
+import { useServer } from "../context/Server";
 export const CHARACTERS = [
   "Hoshino Ichika",
   "Tenma Saki",
@@ -26,7 +28,7 @@ export const CHARACTERS = [
   "MEIKO",
   "KAITO",
 ];
-export const today = Date.now()
+export const today = Date.now();
 export const UNITS = [
   "Leo/need",
   "MORE MORE JUMP!",
@@ -53,3 +55,11 @@ export const VS = [
 ];
 
 export const SpecialCards: number[] = [1167];
+
+export const Banners = () => {
+  const { server } = useServer();
+  const { jpBanners, enBanners } = useProsekaData();
+  const GcObj =
+    server === "global" || server === "saved" ? enBanners : jpBanners;
+  return GcObj;
+};

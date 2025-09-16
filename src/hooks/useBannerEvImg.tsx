@@ -15,7 +15,7 @@ export const useBannerEvImg = ({
   server,
   banner,
 }: UseBannerImageProps) => {
-    const { jpBanners} = useProsekaData()
+  const { jpBanners } = useProsekaData();
   const hostUrl = "https://r2-image-proxy.zenzenzest.workers.dev";
 
   const getBannerImageUrl = useCallback(() => {
@@ -43,6 +43,9 @@ export const useBannerEvImg = ({
           target.src = jp_variant
             ? `${hostUrl}/jp_banners/${jp_variant.id}.webp`
             : `${hostUrl}/en_banners/placeholder.jpg`;
+          if (Number(target.alt) === 514) {
+            console.log(jpBanners);
+          }
         } else {
           target.src = `${hostUrl}/en_banners/placeholder.jpg`;
         }
