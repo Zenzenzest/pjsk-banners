@@ -69,7 +69,7 @@ export default function CardReleases({ cardId, cardType }: CardReleasesType) {
         className="relative h-20 xs:h-24 sm:h-28 md:h-32 m-1 xs:m-2 overflow-hidden rounded-lg shadow-sm"
       >
         <img
-          className="w-full h-full object-cover rounded-xl"
+          className="w-full h-full object-cover rounded-2xl"
           src={bannerImageUrl}
           onError={handleImageError}
           alt={banner.id.toString()}

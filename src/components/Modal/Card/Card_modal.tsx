@@ -326,9 +326,7 @@ export default function CardModal({
             </div>
 
             {/* BANNERS */}
-            <h1 className="text-xl font-semibold px-4 py-1 text-[#4e9ef9] border-b border-gray-600">
-              Availability
-            </h1>
+       
 
             <CardReleases cardId={cardId} cardType={cardData.card_type}/>
 
