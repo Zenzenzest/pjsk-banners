@@ -26,9 +26,8 @@ export function ProsekaDataProvider({
   const [enBanners, setEnBanners] = useState<BannerTypes[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
   const mainUrl =
-    "https://zenzenzest.github.io/proseka-data/";
+    "https://raw.githubusercontent.com/Zenzenzest/proseka-data/refs/heads/main/";
   useEffect(() => {
     const fetchEvents = async () => {
       try {
