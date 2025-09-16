@@ -26,7 +26,7 @@ export default function FilteredCards({
   const [cardsPerPage] = useState(20);
   const [shouldScrollToTop, setShouldScrollToTop] = useState(false);
 
-    const { allCards } = useProsekaData()
+  const { allCards } = useProsekaData();
 
   const filteredCardsRef = useRef<HTMLDivElement>(null);
 
@@ -297,17 +297,15 @@ export default function FilteredCards({
             return (
               <div
                 key={`${card.id}-${sortOrder}-${currentPage}-${index}`}
-                className={`flex flex-col items-center justify-center p-3 rounded-lg duration-200  ${
+                className={`flex flex-col items-center justify-center p-3 rounded-lg duration-200 cursor-pointer  ${
                   theme === "dark"
                     ? "bg-gray-800 hover:bg-gray-700"
                     : "bg-white hover:bg-gray-50 shadow-sm hover:shadow-md"
                 }`}
+                onClick={() => handleCardClick(card)}
               >
                 {/* CARD THUMBNAIL */}
-                <button
-                  onClick={() => handleCardClick(card)}
-                  className="text-white rounded  hover:opacity-80 transition-opacity mb-2 w-full"
-                >
+                <button className="text-white rounded  hover:opacity-80 transition-opacity mb-2 w-full">
                   <CardThumbnail card={card} />
                 </button>
                 {/* CARD DETAILS*/}
