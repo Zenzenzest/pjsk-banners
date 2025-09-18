@@ -24,6 +24,7 @@ export default function CardReleases({ cardId, cardType }: CardReleasesType) {
     "Premium Gift",
     "Memorial Select",
     "Your Pick",
+    "Bloom Festival",
   ];
 
   const dateFormatter = (unix: number) => {
@@ -46,15 +47,17 @@ export default function CardReleases({ cardId, cardType }: CardReleasesType) {
         cardType !== "permanent")
     );
   });
-  const EnAppearances = enBanners.filter((banner) => {
-    return (
-      (banner.cards.includes(cardId) &&
-        allowedBannerTypes.includes(banner.banner_type)) ||
-      (banner.gachaDetails.includes(cardId) &&
-        allowedOffRates.includes(banner.banner_type) &&
-        cardType !== "permanent")
-    );
-  });
+  const EnAppearances = enBanners
+    .filter((banner) => {
+      return (
+        (banner.cards.includes(cardId) &&
+          allowedBannerTypes.includes(banner.banner_type)) ||
+        (banner.gachaDetails.includes(cardId) &&
+          allowedOffRates.includes(banner.banner_type) &&
+          cardType !== "permanent")
+      );
+    })
+    .sort((a, b) => a.start - b.start);
 
   const RenderRateUpsGrid = (banner: BannerTypes, server: string) => {
     const { bannerImageUrl, handleImageError } = useBannerEvImg({
