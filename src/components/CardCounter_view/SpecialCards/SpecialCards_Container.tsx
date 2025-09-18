@@ -18,6 +18,57 @@ const COLLAB_TAGS = [
   { tag: "Tamagotchi", label: "Tamagotchi", key: "tamagotchi", jpOnly: true },
 ];
 
+//  column configs
+const MAIN_COLUMNS = [
+  {
+    key: "bloom_fes",
+    label: "Bloom Fes",
+    headerGroup: "Festival",
+    lightColor: "text-blue-600 bg-blue-50",
+    darkColor: "text-blue-400 bg-blue-900/30",
+    subHeaderLight: "text-gray-500 bg-blue-100",
+    subHeaderDark: "text-gray-300 bg-blue-800/50",
+  },
+  {
+    key: "color_fes",
+    label: "Color Fes",
+    headerGroup: "Festival",
+    lightColor: "text-blue-600 bg-blue-50",
+    darkColor: "text-blue-400 bg-blue-900/30",
+    subHeaderLight: "text-gray-500 bg-blue-100",
+    subHeaderDark: "text-gray-300 bg-blue-800/50",
+  },
+  {
+    key: "unit_limited",
+    label: "World Link",
+    headerGroup: "World Link",
+    lightColor: "text-purple-600 bg-[#a8ecfb]/80",
+    darkColor: "text-gray-800 bg-[#a8ecfb]/80",
+    subHeaderLight: "text-gray-500 bg-cyan-100",
+    subHeaderDark: "text-gray-300 bg-cyan-600/80",
+    minWidth: "min-w-[130px]",
+  },
+  {
+    key: "bday",
+    label: "Birthday",
+    headerGroup: "Birthday",
+    lightColor: "text-green-600 bg-green-50",
+    darkColor: "text-green-400 bg-green-900/30",
+    subHeaderLight: "text-gray-500 bg-green-100",
+    subHeaderDark: "text-gray-300 bg-green-800/50",
+    minWidth: "min-w-[240px]",
+  },
+  {
+    key: "movie_exclusive",
+    label: "Movie",
+    headerGroup: "Movie",
+    lightColor: "text-purple-600 bg-purple-50",
+    darkColor: "text-purple-400 bg-purple-900/30",
+    subHeaderLight: "text-gray-500 bg-purple-100",
+    subHeaderDark: "text-gray-300 bg-purple-800/50",
+  },
+];
+
 export default function SpecialCards() {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -27,6 +78,7 @@ export default function SpecialCards() {
   const { theme } = useTheme();
   const { allCards } = useProsekaData();
   const isMobile = useIsMobile();
+
   const handleCardClick = (cardId: number) => {
     setCardId(cardId);
     setIsOpen(true);
@@ -38,15 +90,9 @@ export default function SpecialCards() {
     setIsOpen(false);
   };
 
-  const filteredCards = allCards.filter((card: AllCardTypes) => {
-    const releaseTime = server === "jp" ? card.jp_released : card.en_released;
-    return releaseTime && today >= releaseTime;
-  });
-
-  const groupedCards: GroupedCards = {};
-
-  CHARACTERS.forEach((character) => {
-    groupedCards[character] = {
+  // initialize character card groups
+  const initializeCharacterCards = () => {
+    const baseStructure = {
       bloom_fes: [],
       color_fes: [],
       unit_limited: [],
@@ -54,48 +100,42 @@ export default function SpecialCards() {
       movie_exclusive: [],
     };
 
-    //  add collab keys
+    const collabStructure: Record<string, AllCardTypes[]> = {};
     COLLAB_TAGS.forEach((collab) => {
       if (!collab.jpOnly || server === "jp") {
-        groupedCards[character][collab.key] = [];
+        collabStructure[collab.key] = [];
       }
     });
+
+    return { ...baseStructure, ...collabStructure };
+  };
+
+  const filteredCards = allCards.filter((card: AllCardTypes) => {
+    const releaseTime = server === "jp" ? card.jp_released : card.en_released;
+    return releaseTime && today >= releaseTime;
+  });
+
+  const groupedCards: GroupedCards = {};
+
+  // Initialize all characters
+  CHARACTERS.forEach((character) => {
+    groupedCards[character] = initializeCharacterCards();
   });
 
   filteredCards.forEach((card: AllCardTypes) => {
-    // Initialize character if not exists
     if (!groupedCards[card.character]) {
-      groupedCards[card.character] = {
-        bloom_fes: [],
-        color_fes: [],
-        unit_limited: [],
-        bday: [],
-        movie_exclusive: [],
-      };
-
-      COLLAB_TAGS.forEach((collab) => {
-        if (!collab.jpOnly || server === "jp") {
-          groupedCards[card.character][collab.key] = [];
-        }
-      });
+      groupedCards[card.character] = initializeCharacterCards();
     }
 
-    switch (card.card_type) {
-      case "bloom_fes":
-        groupedCards[card.character].bloom_fes.push(card);
-        break;
-      case "color_fes":
-        groupedCards[card.character].color_fes.push(card);
-        break;
-      case "unit_limited":
-        groupedCards[card.character].unit_limited.push(card);
-        break;
-      case "bday":
-        groupedCards[card.character].bday.push(card);
-        break;
-      case "movie_exclusive":
-        groupedCards[card.character].movie_exclusive.push(card);
-        break;
+    const mainCardTypes = [
+      "bloom_fes",
+      "color_fes",
+      "unit_limited",
+      "bday",
+      "movie_exclusive",
+    ];
+    if (mainCardTypes.includes(card.card_type)) {
+      groupedCards[card.character][card.card_type].push(card);
     }
 
     if (card.card_type === "limited_collab" && card.collab_tag) {
@@ -129,12 +169,11 @@ export default function SpecialCards() {
     return (
       <div className="flex items-center justify-center space-x-1 min-h-[60px] whitespace-nowrap">
         {cards.map((card, index) => {
-          let cardIcon = "";
-          if (card.rarity === 4 || card.rarity === 5) {
-            cardIcon = `/images/card_icons/${card.id}_t.webp`;
-          } else {
-            cardIcon = `/images/card_icons/${card.id}.webp`;
-          }
+          const cardIcon =
+            card.rarity === 4 || card.rarity === 5
+              ? `/images/card_icons/${card.id}_t.webp`
+              : `/images/card_icons/${card.id}.webp`;
+
           return (
             <img
               key={`${card.id}-${index}`}
@@ -150,7 +189,7 @@ export default function SpecialCards() {
     );
   };
 
-  // collab columns
+  // Get collab columns
   const collabColumns = COLLAB_TAGS.filter(
     (collab) => !collab.jpOnly || server === "jp"
   ).map((collab) => ({
@@ -180,6 +219,16 @@ export default function SpecialCards() {
   const getThemeColor = (lightColor: string, darkColor: string) =>
     theme === "dark" ? darkColor : lightColor;
 
+  const getColumnHeaderClass = (column: (typeof MAIN_COLUMNS)[0]) =>
+    `px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
+      theme === "dark" ? column.darkColor : column.lightColor
+    }`;
+
+  const getColumnSubHeaderClass = (column: (typeof MAIN_COLUMNS)[0]) =>
+    `px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
+      theme === "dark" ? column.subHeaderDark : column.subHeaderLight
+    }`;
+
   return (
     <div
       className={`p-4 border rounded-lg ${
@@ -188,7 +237,6 @@ export default function SpecialCards() {
           : "border-gray-200 bg-[#f9fafb]"
       }`}
     >
- 
       <div
         className={
           isMobile
@@ -220,44 +268,22 @@ export default function SpecialCards() {
                 >
                   Char
                 </th>
+
+                {/* FESTIVAL*/}
                 <th
                   colSpan={2}
-                  className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
-                    theme === "dark"
-                      ? "text-blue-400 bg-blue-900/30"
-                      : "text-blue-600 bg-blue-50"
-                  }`}
+                  className={getColumnHeaderClass(MAIN_COLUMNS[0])}
                 >
                   Festival
                 </th>
-                <th
-                  className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
-                    theme === "dark"
-                      ? "text-gray-800 bg-[#a8ecfb]/80"
-                      : "text-purple-600 bg-[#a8ecfb]/80"
-                  }`}
-                >
-                  World Link
-                </th>
-                <th
-                  className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
-                    theme === "dark"
-                      ? "text-green-400 bg-green-900/30"
-                      : "text-green-600 bg-green-50"
-                  }`}
-                >
-                  Birthday
-                </th>
 
-                <th
-                  className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
-                    theme === "dark"
-                      ? "text-purple-400 bg-purple-900/30"
-                      : "text-purple-600 bg-purple-50"
-                  }`}
-                >
-                  Movie
-                </th>
+                {MAIN_COLUMNS.slice(2).map((column) => (
+                  <th key={column.key} className={getColumnHeaderClass(column)}>
+                    {column.headerGroup}
+                  </th>
+                ))}
+
+                {/* COLLAB*/}
                 <th
                   colSpan={collabColumns.length}
                   className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
@@ -269,6 +295,7 @@ export default function SpecialCards() {
                   Collabs
                 </th>
               </tr>
+
               <tr
                 className={`${getThemeColor("bg-gray-100", "bg-gray-600")} ${
                   isMobile ? "sticky top-0 z-20" : ""
@@ -283,51 +310,18 @@ export default function SpecialCards() {
                 >
                   Name
                 </th>
-                <th
-                  className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
-                    theme === "dark"
-                      ? "text-gray-300 bg-blue-800/50"
-                      : "text-gray-500 bg-blue-100"
-                  }`}
-                >
-                  Bloom Fes
-                </th>
-                <th
-                  className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
-                    theme === "dark"
-                      ? "text-gray-300 bg-blue-800/50"
-                      : "text-gray-500 bg-blue-100"
-                  }`}
-                >
-                  Color Fes
-                </th>
-                <th
-                  className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
-                    theme === "dark"
-                      ? "text-gray-300 bg-cyan-600/80"
-                      : "text-gray-500 bg-cyan-100"
-                  }`}
-                >
-                  World Link
-                </th>
-                <th
-                  className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
-                    theme === "dark"
-                      ? "text-gray-300 bg-green-800/50"
-                      : "text-gray-500 bg-green-100"
-                  }`}
-                >
-                  Birthday
-                </th>
-                <th
-                  className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
-                    theme === "dark"
-                      ? "text-gray-300 bg-purple-800/50"
-                      : "text-gray-500 bg-purple-100"
-                  }`}
-                >
-                  Movie
-                </th>
+
+                {/* MAIN COL */}
+                {MAIN_COLUMNS.map((column) => (
+                  <th
+                    key={column.key}
+                    className={getColumnSubHeaderClass(column)}
+                  >
+                    {column.label}
+                  </th>
+                ))}
+
+                {/* COLLAB COL */}
                 {collabColumns.map((column) => (
                   <th
                     key={column.key}
@@ -358,6 +352,7 @@ export default function SpecialCards() {
                         : "hover:bg-gray-50 transition-colors"
                     }
                   >
+                    {/* CHARACTER*/}
                     <td
                       className={`px-4 py-1 whitespace-nowrap text-sm font-medium sticky left-0 z-10 ${
                         theme === "dark"
@@ -376,21 +371,18 @@ export default function SpecialCards() {
                         />
                       </div>
                     </td>
-                    <td className="px-4 py-1 whitespace-nowrap">
-                      {renderCardIcons(charCards.bloom_fes)}
-                    </td>
-                    <td className="px-4 py-1 whitespace-nowrap">
-                      {renderCardIcons(charCards.color_fes)}
-                    </td>
-                    <td className="px-4 py-1 whitespace-nowrap min-w-[130px]">
-                      {renderCardIcons(charCards.unit_limited)}
-                    </td>
-                    <td className="px-4 py-1 whitespace-nowrap min-w-[240px]">
-                      {renderCardIcons(charCards.bday)}
-                    </td>
-                    <td className="px-4 py-1 whitespace-nowrap">
-                      {renderCardIcons(charCards.movie_exclusive)}
-                    </td>
+
+                    {MAIN_COLUMNS.map((column) => (
+                      <td
+                        key={column.key}
+                        className={`px-4 py-1 whitespace-nowrap ${
+                          column.minWidth || ""
+                        }`}
+                      >
+                        {renderCardIcons(charCards[column.key])}
+                      </td>
+                    ))}
+
                     {collabColumns.map((column) => (
                       <td
                         key={column.key}
