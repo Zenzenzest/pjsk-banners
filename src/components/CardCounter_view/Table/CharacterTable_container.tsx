@@ -8,12 +8,18 @@ import FilterControls from "./ui/FilterControls";
 import TableHeader from "./ui/TableHeader";
 import TableRow from "./ui/TableRow";
 import { useRowExpand } from "./hooks/useRowExpand";
+import { useIsMobile } from "../../../hooks/isMobile";
+ // Add this import
 
 export default function CardTable() {
   const { server } = useServer();
   const { theme } = useTheme();
   const today = Date.now();
   const { expandedRows, handleToggleExpand } = useRowExpand();
+  
+
+  const isMobile = useIsMobile()
+  
   const {
     // states
     isOpen,
@@ -71,8 +77,12 @@ export default function CardTable() {
         setShowN25={setShowN25}
       />
 
+
       <div className="rounded-lg border border-gray-200 dark:border-gray-700">
-        <div className="max-h-[80vh] overflow-auto rounded-lg border border-gray-200 dark:border-gray-700">
+        <div className={`
+          rounded-lg border border-gray-200 dark:border-gray-700
+          ${isMobile ? 'max-h-[70vh] overflow-auto' : ''}
+        `}>
           <table className="min-w-full bg-white dark:bg-gray-800">
             {/* HEADER */}
             <TableHeader
