@@ -14,6 +14,7 @@ const COLLAB_TAGS = [
   { tag: "Sanrio", label: "Sanrio", key: "sanrio" },
   { tag: "Ensemble", label: "Ensemble Stars!!", key: "ensemble" },
   { tag: "Touhou", label: "Touhou", key: "touhou", jpOnly: true },
+  { tag: "Tamagotchi", label: "Tamagotchi", key: "tamagotchi", jpOnly: true },
 ];
 
 export default function SpecialCards() {
@@ -164,6 +165,8 @@ export default function SpecialCards() {
       ensemble:
         theme === "dark" ? "bg-indigo-900/30" : "bg-indigo-100 text-gray-700",
       touhou: theme === "dark" ? "bg-red-900/30" : "bg-red-100 text-gray-700",
+      tamagotchi:
+        theme === "dark" ? "bg-[#bddd20]/60" : "bg-[#bddd20] text-gray-700",
     };
 
     const defaultLight = "bg-gray-100";
@@ -193,13 +196,13 @@ export default function SpecialCards() {
           <thead className="sticky top-0 z-20">
             <tr className={getThemeColor("bg-gray-50", "bg-gray-700")}>
               <th
-                className={`px-4 py-1 text-left text-xs font-medium uppercase tracking-wider sticky left-0 z-10 ${
+                className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider sticky left-0 z-10 ${
                   theme === "dark"
                     ? "text-gray-300 bg-gray-700"
                     : "text-gray-500 bg-gray-50"
                 }`}
               >
-                Character
+                Char
               </th>
               <th
                 colSpan={2}
@@ -252,7 +255,7 @@ export default function SpecialCards() {
             </tr>
             <tr className={getThemeColor("bg-gray-100", "bg-gray-600")}>
               <th
-                className={`px-4 py-2 text-left text-xs font-medium uppercase tracking-wider sticky left-0 z-10 ${
+                className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider sticky left-0 z-10 ${
                   theme === "dark"
                     ? "text-gray-300 bg-gray-600"
                     : "text-gray-500 bg-gray-100"
