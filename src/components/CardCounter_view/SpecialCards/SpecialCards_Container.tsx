@@ -8,6 +8,7 @@ import { useState } from "react";
 import { today } from "../../../constants/common";
 import CardModal from "../../Modal/Card/Card_modal";
 import { useProsekaData } from "../../../context/Data";
+import { useIsMobile } from "../../../hooks/isMobile";
 
 const COLLAB_TAGS = [
   { tag: "Deadly Sins", label: "Deadly Sins", key: "deadly_sins" },
@@ -25,6 +26,7 @@ export default function SpecialCards() {
   const { server } = useServer();
   const { theme } = useTheme();
   const { allCards } = useProsekaData();
+  const isMobile = useIsMobile();
   const handleCardClick = (cardId: number) => {
     setCardId(cardId);
     setIsOpen(true);
@@ -186,207 +188,227 @@ export default function SpecialCards() {
           : "border-gray-200 bg-[#f9fafb]"
       }`}
     >
-      <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700 ">
-        <table
-          className={`min-w-full ${
-            theme === "dark" ? "bg-gray-800" : "bg-white"
-          }`}
+ 
+      <div
+        className={
+          isMobile
+            ? "max-h-[70vh] overflow-auto rounded-lg border border-gray-200 dark:border-gray-700"
+            : ""
+        }
+      >
+        <div
+          className={
+            isMobile
+              ? ""
+              : "overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700"
+          }
         >
-          {/* COLUMN HEADERS */}
-          <thead className="sticky top-0 z-20">
-            <tr className={getThemeColor("bg-gray-50", "bg-gray-700")}>
-              <th
-                className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider sticky left-0 z-10 ${
-                  theme === "dark"
-                    ? "text-gray-300 bg-gray-700"
-                    : "text-gray-500 bg-gray-50"
-                }`}
-              >
-                Char
-              </th>
-              <th
-                colSpan={2}
-                className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
-                  theme === "dark"
-                    ? "text-blue-400 bg-blue-900/30"
-                    : "text-blue-600 bg-blue-50"
-                }`}
-              >
-                Festival
-              </th>
-              <th
-                className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
-                  theme === "dark"
-                    ? "text-gray-800 bg-[#a8ecfb]/80"
-                    : "text-purple-600 bg-[#a8ecfb]/80"
-                }`}
-              >
-                World Link
-              </th>
-              <th
-                className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
-                  theme === "dark"
-                    ? "text-green-400 bg-green-900/30"
-                    : "text-green-600 bg-green-50"
-                }`}
-              >
-                Birthday
-              </th>
-
-              <th
-                className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
-                  theme === "dark"
-                    ? "text-purple-400 bg-purple-900/30"
-                    : "text-purple-600 bg-purple-50"
-                }`}
-              >
-                Movie
-              </th>
-              <th
-                colSpan={collabColumns.length}
-                className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
-                  theme === "dark"
-                    ? "text-orange-400 bg-orange-900/30"
-                    : "text-orange-600 bg-orange-50"
-                }`}
-              >
-                Collabs
-              </th>
-            </tr>
-            <tr className={getThemeColor("bg-gray-100", "bg-gray-600")}>
-              <th
-                className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider sticky left-0 z-10 ${
-                  theme === "dark"
-                    ? "text-gray-300 bg-gray-600"
-                    : "text-gray-500 bg-gray-100"
-                }`}
-              >
-                Name
-              </th>
-              <th
-                className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
-                  theme === "dark"
-                    ? "text-gray-300 bg-blue-800/50"
-                    : "text-gray-500 bg-blue-100"
-                }`}
-              >
-                Bloom Fes
-              </th>
-              <th
-                className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
-                  theme === "dark"
-                    ? "text-gray-300 bg-blue-800/50"
-                    : "text-gray-500 bg-blue-100"
-                }`}
-              >
-                Color Fes
-              </th>{" "}
-              <th
-                className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
-                  theme === "dark"
-                    ? "text-gray-300 bg-cyan-600/80"
-                    : "text-gray-500 bg-cyan-100"
-                }`}
-              >
-                World Link
-              </th>
-              <th
-                className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
-                  theme === "dark"
-                    ? "text-gray-300 bg-green-800/50"
-                    : "text-gray-500 bg-green-100"
-                }`}
-              >
-                Birthday
-              </th>
-              <th
-                className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
-                  theme === "dark"
-                    ? "text-gray-300 bg-purple-800/50"
-                    : "text-gray-500 bg-purple-100"
-                }`}
-              >
-                Movie
-              </th>
-              {collabColumns.map((column) => (
-                <th
-                  key={column.key}
-                  className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${column.color}`}
-                >
-                  {column.label}
-                </th>
-              ))}
-            </tr>
-          </thead>
-
-          {/* TABLE BODY */}
-          <tbody
-            className={
-              theme === "dark"
-                ? "divide-y divide-gray-700"
-                : "divide-y divide-gray-200"
-            }
+          <table
+            className={`min-w-full ${
+              theme === "dark" ? "bg-gray-800" : "bg-white"
+            }`}
           >
-            {charactersWithCards.map((character) => {
-              const charCards = groupedCards[character];
-              return (
-                <tr
-                  key={character}
-                  className={
+            {/* COLUMN HEADERS */}
+            <thead>
+              <tr className={getThemeColor("bg-gray-50", "bg-gray-700")}>
+                <th
+                  className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider sticky left-0 z-10 ${
                     theme === "dark"
-                      ? "hover:bg-gray-700/50 transition-colors"
-                      : "hover:bg-gray-50 transition-colors"
-                  }
+                      ? "text-gray-300 bg-gray-700"
+                      : "text-gray-500 bg-gray-50"
+                  }`}
                 >
-                  <td
-                    className={`px-4 py-1 whitespace-nowrap text-sm font-medium sticky left-0 z-10 ${
-                      theme === "dark"
-                        ? "text-white bg-gray-800"
-                        : "text-gray-900 bg-white"
-                    }`}
+                  Char
+                </th>
+                <th
+                  colSpan={2}
+                  className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
+                    theme === "dark"
+                      ? "text-blue-400 bg-blue-900/30"
+                      : "text-blue-600 bg-blue-50"
+                  }`}
+                >
+                  Festival
+                </th>
+                <th
+                  className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
+                    theme === "dark"
+                      ? "text-gray-800 bg-[#a8ecfb]/80"
+                      : "text-purple-600 bg-[#a8ecfb]/80"
+                  }`}
+                >
+                  World Link
+                </th>
+                <th
+                  className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
+                    theme === "dark"
+                      ? "text-green-400 bg-green-900/30"
+                      : "text-green-600 bg-green-50"
+                  }`}
+                >
+                  Birthday
+                </th>
+
+                <th
+                  className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
+                    theme === "dark"
+                      ? "text-purple-400 bg-purple-900/30"
+                      : "text-purple-600 bg-purple-50"
+                  }`}
+                >
+                  Movie
+                </th>
+                <th
+                  colSpan={collabColumns.length}
+                  className={`px-4 py-1 text-center text-xs font-medium uppercase tracking-wider ${
+                    theme === "dark"
+                      ? "text-orange-400 bg-orange-900/30"
+                      : "text-orange-600 bg-orange-50"
+                  }`}
+                >
+                  Collabs
+                </th>
+              </tr>
+              <tr
+                className={`${getThemeColor("bg-gray-100", "bg-gray-600")} ${
+                  isMobile ? "sticky top-0 z-20" : ""
+                }`}
+              >
+                <th
+                  className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider sticky left-0 z-10 ${
+                    theme === "dark"
+                      ? "text-gray-300 bg-gray-600"
+                      : "text-gray-500 bg-gray-100"
+                  }`}
+                >
+                  Name
+                </th>
+                <th
+                  className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
+                    theme === "dark"
+                      ? "text-gray-300 bg-blue-800/50"
+                      : "text-gray-500 bg-blue-100"
+                  }`}
+                >
+                  Bloom Fes
+                </th>
+                <th
+                  className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
+                    theme === "dark"
+                      ? "text-gray-300 bg-blue-800/50"
+                      : "text-gray-500 bg-blue-100"
+                  }`}
+                >
+                  Color Fes
+                </th>
+                <th
+                  className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
+                    theme === "dark"
+                      ? "text-gray-300 bg-cyan-600/80"
+                      : "text-gray-500 bg-cyan-100"
+                  }`}
+                >
+                  World Link
+                </th>
+                <th
+                  className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
+                    theme === "dark"
+                      ? "text-gray-300 bg-green-800/50"
+                      : "text-gray-500 bg-green-100"
+                  }`}
+                >
+                  Birthday
+                </th>
+                <th
+                  className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${
+                    theme === "dark"
+                      ? "text-gray-300 bg-purple-800/50"
+                      : "text-gray-500 bg-purple-100"
+                  }`}
+                >
+                  Movie
+                </th>
+                {collabColumns.map((column) => (
+                  <th
+                    key={column.key}
+                    className={`px-4 py-2 text-center text-xs font-medium uppercase tracking-wider ${column.color}`}
                   >
-                    <div className="flex items-center space-x-2">
-                      <img
-                        src={`/images/character_icons/${
-                          CHARACTERS.indexOf(character) + 1
-                        }.webp`}
-                        alt={character}
-                        className="w-10 h-10 lg:w-13 lg:h-13 object-contain"
-                        loading="lazy"
-                      />
-                    </div>
-                  </td>
-                  <td className="px-4 py-1 whitespace-nowrap">
-                    {renderCardIcons(charCards.bloom_fes)}
-                  </td>
-                  <td className="px-4 py-1 whitespace-nowrap">
-                    {renderCardIcons(charCards.color_fes)}
-                  </td>
-                  <td className="px-4 py-1 whitespace-nowrap min-w-[130px]">
-                    {renderCardIcons(charCards.unit_limited)}
-                  </td>
-                  <td className="px-4 py-1 whitespace-nowrap min-w-[240px]">
-                    {renderCardIcons(charCards.bday)}
-                  </td>
-                  <td className="px-4 py-1 whitespace-nowrap">
-                    {renderCardIcons(charCards.movie_exclusive)}
-                  </td>
-                  {collabColumns.map((column) => (
+                    {column.label}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+
+            {/* TABLE BODY */}
+            <tbody
+              className={
+                theme === "dark"
+                  ? "divide-y divide-gray-700"
+                  : "divide-y divide-gray-200"
+              }
+            >
+              {charactersWithCards.map((character) => {
+                const charCards = groupedCards[character];
+                return (
+                  <tr
+                    key={character}
+                    className={
+                      theme === "dark"
+                        ? "hover:bg-gray-700/50 transition-colors"
+                        : "hover:bg-gray-50 transition-colors"
+                    }
+                  >
                     <td
-                      key={column.key}
-                      className="px-4 py-1 whitespace-nowrap"
+                      className={`px-4 py-1 whitespace-nowrap text-sm font-medium sticky left-0 z-10 ${
+                        theme === "dark"
+                          ? "text-white bg-gray-800"
+                          : "text-gray-900 bg-white"
+                      }`}
                     >
-                      {renderCardIcons(
-                        charCards[column.key as keyof typeof charCards] || []
-                      )}
+                      <div className="flex items-center space-x-2">
+                        <img
+                          src={`/images/character_icons/${
+                            CHARACTERS.indexOf(character) + 1
+                          }.webp`}
+                          alt={character}
+                          className="w-10 h-10 lg:w-13 lg:h-13 object-contain"
+                          loading="lazy"
+                        />
+                      </div>
                     </td>
-                  ))}
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+                    <td className="px-4 py-1 whitespace-nowrap">
+                      {renderCardIcons(charCards.bloom_fes)}
+                    </td>
+                    <td className="px-4 py-1 whitespace-nowrap">
+                      {renderCardIcons(charCards.color_fes)}
+                    </td>
+                    <td className="px-4 py-1 whitespace-nowrap min-w-[130px]">
+                      {renderCardIcons(charCards.unit_limited)}
+                    </td>
+                    <td className="px-4 py-1 whitespace-nowrap min-w-[240px]">
+                      {renderCardIcons(charCards.bday)}
+                    </td>
+                    <td className="px-4 py-1 whitespace-nowrap">
+                      {renderCardIcons(charCards.movie_exclusive)}
+                    </td>
+                    {collabColumns.map((column) => (
+                      <td
+                        key={column.key}
+                        className="px-4 py-1 whitespace-nowrap"
+                      >
+                        {renderCardIcons(
+                          charCards[column.key as keyof typeof charCards] || []
+                        )}
+                      </td>
+                    ))}
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
       </div>
+
       <WebsiteDisclaimer />
       <CardModal
         isOpen={isOpen}
