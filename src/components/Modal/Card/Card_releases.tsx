@@ -38,15 +38,17 @@ export default function CardReleases({ cardId, cardType }: CardReleasesType) {
     return formattedDate;
   };
 
-  const JpAppearances = jpBanners.filter((banner) => {
-    return (
-      (banner.cards.includes(cardId) &&
-        allowedBannerTypes.includes(banner.banner_type)) ||
-      (banner.gachaDetails.includes(cardId) &&
-        allowedOffRates.includes(banner.banner_type) &&
-        cardType !== "permanent")
-    );
-  });
+  const JpAppearances = jpBanners
+    .filter((banner) => {
+      return (
+        (banner.cards.includes(cardId) &&
+          allowedBannerTypes.includes(banner.banner_type)) ||
+        (banner.gachaDetails.includes(cardId) &&
+          allowedOffRates.includes(banner.banner_type) &&
+          cardType !== "permanent")
+      );
+    })
+    .sort((a, b) => a.start - b.start);
   const EnAppearances = enBanners
     .filter((banner) => {
       return (
