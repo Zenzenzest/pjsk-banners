@@ -5,6 +5,7 @@ import type { CardReleasesType } from "./CardModalTypes";
 import { useBannerEvImg } from "../../../hooks/useBannerEvImg";
 import type { BannerTypes } from "../../../types/common";
 
+
 export default function CardReleases({ cardId, cardType }: CardReleasesType) {
   const { theme } = useTheme();
 
@@ -144,10 +145,16 @@ export default function CardReleases({ cardId, cardType }: CardReleasesType) {
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 xs:gap-4">
         <div className="space-y-2 xs:space-y-3">
+          <h3 className="inline-flex space-x-2 px-2 py-2 rounded-lg  font-medium  bg-blue-500/10  text-blue-400 border border-blue-500/20">
+            Global
+          </h3>
           {EnAppearances.map((banner) => RenderRateUpsGrid(banner, "global"))}
         </div>
 
         <div className="space-y-2 xs:space-y-3">
+          <h3 className="inline-flex space-x-2 px-2 py-2 rounded-lg  font-medium  bg-blue-500/10  text-blue-400 border border-blue-500/20">
+            JP
+          </h3>
           {JpAppearances.map((banner) => RenderRateUpsGrid(banner, "jp"))}
         </div>
       </div>
