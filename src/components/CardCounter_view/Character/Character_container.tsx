@@ -266,10 +266,7 @@ export default function CharacterContainer() {
         theme === "dark" ? "bg-[#101828]" : "bg-[#f9fafb]"
       } `}
     >
-      <div className="mb-6">
-        <h1 className="text-2xl font-bold text-white ">Character Card Count</h1>
-        <p className="text-gray-400"></p>
-      </div>
+ 
 
       {/* FILTERS */}
       <div className="flex flex-row justify-center items-center gap-5 p-10">

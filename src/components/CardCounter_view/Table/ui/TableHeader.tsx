@@ -39,7 +39,6 @@ export default function TableHeader({
     },
   ];
 
-  //   separate last cards handling because no sort needed
   const lastColumns = [
     { label: "Last 4★ Lim" },
     { label: "Last 4★ Perm" },
@@ -48,30 +47,31 @@ export default function TableHeader({
   ];
 
   return (
-    <thead className="sticky top-0 z-20">
-      <tr className="bg-gray-50 dark:bg-gray-700">
+    <thead>
+      <tr>
         {columns.map((column) => (
           <th
             key={column.key}
             className={`
-               text-xs font-medium uppercase tracking-wider
-              ${
-                column.sticky
-                  ? "sticky left-0 bg-gray-50 dark:bg-gray-700 px-2 w-20"
-                  : "text-center"
+              sticky top-0
+              text-xs font-medium uppercase tracking-wider
+              ${column.sticky 
+                ? "sticky left-0 z-10" 
+                : "text-center"
               }
               ${column.color || "text-gray-500 dark:text-gray-300"}
-              cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-0 px-3.5
+              cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 
+              focus:outline-none focus:ring-0 px-3.5 py-3
+              transition-colors duration-150
+              bg-gray-50 dark:bg-gray-700
             `}
             onClick={(e) => handleSort(column.key, e)}
             tabIndex={-1}
           >
-            <div
-              className={`
+            <div className={`
               flex items-center
               ${column.sticky ? "" : "justify-center"}
-            `}
-            >
+            `}>
               {column.label}
               {getSortIndicator(column.key)}
             </div>
@@ -80,7 +80,10 @@ export default function TableHeader({
         {lastColumns.map((column, index) => (
           <th
             key={index}
-            className="px-4 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider"
+            className="sticky top-0
+                     px-4 py-3 text-center text-xs font-medium 
+                     text-gray-500 dark:text-gray-300 uppercase tracking-wider
+                     bg-gray-50 dark:bg-gray-700"
           >
             {column.label}
           </th>

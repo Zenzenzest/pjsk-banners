@@ -109,6 +109,8 @@ export const useCardTable = (server: string, today: number) => {
     return true;
   };
 
+
+  
   const getLastCardByRarity = (
     cardType: string,
     charId: number,

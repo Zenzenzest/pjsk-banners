@@ -71,10 +71,8 @@ export default function CardTable() {
         setShowN25={setShowN25}
       />
 
-      {/* TABLE */}
-
-      <div className="rounded-lg border border-gray-200 dark:border-gray-700 min-h-[70vh]">
-        <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700">
+      <div className="rounded-lg border border-gray-200 dark:border-gray-700">
+        <div className="max-h-[80vh] overflow-auto rounded-lg border border-gray-200 dark:border-gray-700">
           <table className="min-w-full bg-white dark:bg-gray-800">
             {/* HEADER */}
             <TableHeader
