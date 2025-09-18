@@ -78,17 +78,32 @@ export const useCardTable = (server: string, today: number) => {
       "Nightcord at 25:00": showN25,
     };
 
+    // Check if non VS units are enabled
+    const otherUnitsEnabled =
+      showLN || showMMJ || showVBS || showWxS || showN25;
+
+    if (card.unit === "Virtual Singers") {
+      // If other unit is selected
+      if (otherUnitsEnabled) {
+        // If VS is also selected AND card has sub_unit, check if sub_unit matches any selected unit
+        if (showVirtualSingers && card.sub_unit) {
+          const subUnitFilter =
+            unitFilters[card.sub_unit as keyof typeof unitFilters];
+          return subUnitFilter !== undefined && subUnitFilter;
+        }
+
+        return false;
+      }
+      // If only VS is selected, show all VS cards
+      else {
+        return showVirtualSingers;
+      }
+    }
+
+    // For non VS, check main unit filter
     const unitFilter = unitFilters[card.unit as keyof typeof unitFilters];
     if (unitFilter !== undefined && !unitFilter) {
       return false;
-    }
-
-    if (card.sub_unit) {
-      const subUnitFilter =
-        unitFilters[card.sub_unit as keyof typeof unitFilters];
-      if (subUnitFilter !== undefined && !subUnitFilter) {
-        return false;
-      }
     }
 
     return true;
