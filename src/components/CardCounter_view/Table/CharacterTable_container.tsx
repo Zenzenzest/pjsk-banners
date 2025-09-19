@@ -1,6 +1,6 @@
 import { useServer } from "../../../context/Server";
 import { useTheme } from "../../../context/Theme_toggle";
-import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
+import WebsiteDisclaimer from "../../Server/Website_disclaimer";
 import CardModal from "../../Modal/Card/Card_modal";
 import { useCardTable } from "./hooks/useCardTable";
 
@@ -9,17 +9,16 @@ import TableHeader from "./ui/TableHeader";
 import TableRow from "./ui/TableRow";
 import { useRowExpand } from "./hooks/useRowExpand";
 import { useIsMobile } from "../../../hooks/isMobile";
- // Add this import
+// Add this import
 
 export default function CardTable() {
   const { server } = useServer();
   const { theme } = useTheme();
   const today = Date.now();
   const { expandedRows, handleToggleExpand } = useRowExpand();
-  
 
-  const isMobile = useIsMobile()
-  
+  const isMobile = useIsMobile();
+
   const {
     // states
     isOpen,
@@ -77,12 +76,13 @@ export default function CardTable() {
         setShowN25={setShowN25}
       />
 
-
       <div className="rounded-lg border border-gray-200 dark:border-gray-700">
-        <div className={`
+        <div
+          className={`
           rounded-lg border border-gray-200 dark:border-gray-700
-          ${isMobile ? 'max-h-[70vh] overflow-auto' : ''}
-        `}>
+          ${isMobile ? "max-h-[70vh] overflow-auto" : ""}
+        `}
+        >
           <table className="min-w-full bg-white dark:bg-gray-800">
             {/* HEADER */}
             <TableHeader

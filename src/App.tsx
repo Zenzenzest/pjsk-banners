@@ -1,22 +1,20 @@
 import { useEffect, useRef } from "react";
-import NavBar from "./components/Nav/NavBar";
+import { Route, Routes } from "react-router-dom";
+
 import { ThemeProvider } from "./context/Theme_toggle";
 import { ServerProvider } from "./context/Server";
-import HomeContainer from "./components/Main_container";
+
 import { ProsekaDataProvider } from "./context/Data";
+
+import NavigationContainer from "./components/Nav/Nav_container";
+import DateTabs from "./components/Calendar_view/Date_tabs";
+import FilterTab from "./components/Filter_view/Filter_Container";
+import CardCounterContainer from "./components/CardCounter_view/CardCounter_container";
+import SavedBannersContainer from "./components/SavedBanners/SavedBanners_container";
 
 function App() {
   const didLog = useRef(false);
   useEffect(() => {
-    const currentPath = window.location.pathname;
-
-    const isImage = /\.(png|jpg|jpeg|gif|svg|ico|webp|bmp|tiff)$/i.test(
-      currentPath
-    );
-
-    if (currentPath !== "/" && !isImage) {
-      window.history.replaceState(null, "", "/");
-    }
     const mizook = `،
 ⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⢂⠀⠉⠉⠉⠛⣿⠶⠊⠉⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠒⡶⣤⣈⣹⡓⣶⣭⣻⣻⢯⣯⣍⣙⠫⡟⢧⣌⠉⠉⠉⠉⠉⠀⠀⣁⣤⣤⠄⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠷⣿⣿⣿⣿⣿⣶⣈⣿⣿⣯⠀⡌⢻⣷⣄⠀⠀⢀⣠⠞⠁⢸⠛⠀⠀⠀⠀⠀⠀
@@ -63,8 +61,14 @@ function App() {
       <ProsekaDataProvider>
         <ThemeProvider>
           <ServerProvider>
-            <NavBar />
-            <HomeContainer />
+            <Routes>
+              <Route path="/" element={<NavigationContainer />}>
+                <Route index element={<DateTabs />} />
+                <Route path="filter" element={<FilterTab />} />
+                <Route path="stats" element={<CardCounterContainer />} />
+                <Route path="saved" element={<SavedBannersContainer />} />
+              </Route>
+            </Routes>
           </ServerProvider>
         </ThemeProvider>
       </ProsekaDataProvider>

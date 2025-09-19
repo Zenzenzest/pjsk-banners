@@ -1,7 +1,7 @@
 import type { AllCardTypes } from "../../../types/common";
 import { CHARACTERS } from "../../../constants/common";
 import { useServer } from "../../../context/Server";
-import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
+import WebsiteDisclaimer from "../../Server/Website_disclaimer";
 import type { GroupedCards } from "./SpecialCardsTypes";
 import { useTheme } from "../../../context/Theme_toggle";
 import { useState } from "react";

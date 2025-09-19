@@ -5,7 +5,7 @@ import type { ServerTimeData } from "./DateTabTypes";
 import type { BannerTypes } from "../../types/common";
 import { useServer } from "../../context/Server";
 import BannerContainer from "../BannerContainer/Banner_Container";
-import WebsiteDisclaimer from "../Nav/Website_disclaimer";
+import WebsiteDisclaimer from "../Server/Website_disclaimer";
 import {
   months,
   years_global,

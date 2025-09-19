@@ -3,7 +3,7 @@ import type { CardFilterTypes, BannerFilterTypes } from "./FilterTabTypes";
 import { useTheme } from "../../context/Theme_toggle";
 import FilteredBanners from "./Banners/Filtered_banners";
 import FilteredCards from "./Cards/Filtered_cards";
-import WebsiteDisclaimer from "../Nav/Website_disclaimer";
+import WebsiteDisclaimer from "../Server/Website_disclaimer";
 import { useServer } from "../../context/Server";
 import { grouped } from "./Filter_constants";
 import ViewModeTabs from "./Ui/Viewmode_tabs";

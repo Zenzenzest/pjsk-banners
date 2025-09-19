@@ -4,7 +4,7 @@ import { useServer } from "../../context/Server";
 
 import type { BannerTypes } from "../../types/common";
 import BannerContainer from "../BannerContainer/Banner_Container";
-import WebsiteDisclaimer from "../Nav/Website_disclaimer";
+import WebsiteDisclaimer from "../Server/Website_disclaimer";
 import { useProsekaData } from "../../context/Data";
 
 export default function SavedBannersContainer() {

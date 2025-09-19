@@ -6,7 +6,7 @@ import { AllCharacters, notAllowedTypes } from "../Counter_constants";
 import { useServer } from "../../../context/Server";
 import ProcessCardData from "../process_card";
 import { useTheme } from "../../../context/Theme_toggle";
-import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
+import WebsiteDisclaimer from "../../Server/Website_disclaimer";
 import { SUB_UNITS, VS } from "../../../constants/common";
 import { useProsekaData } from "../../../context/Data";
 
@@ -266,8 +266,6 @@ export default function CharacterContainer() {
         theme === "dark" ? "bg-[#101828]" : "bg-[#f9fafb]"
       } `}
     >
- 
-
       {/* FILTERS */}
       <div className="flex flex-row justify-center items-center gap-5 p-10">
         <h1>FILTERS WIP</h1>

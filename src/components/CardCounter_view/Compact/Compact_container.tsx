@@ -1,5 +1,5 @@
 import { useTheme } from "../../../context/Theme_toggle";
-import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
+import WebsiteDisclaimer from "../../Server/Website_disclaimer";
 import CompactBday from "./Bday/Compact_bday";
 import CompactBFes from "./Bloom_fes/Compact_bfes";
 
