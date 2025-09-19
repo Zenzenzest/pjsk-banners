@@ -1,6 +1,6 @@
 import { useTheme } from "../../context/Theme_toggle";
 import { useServer } from "../../context/Server";
-import { useMemo, useEffect } from "react";
+import { useMemo } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 export default function ServerToggle() {
@@ -8,13 +8,6 @@ export default function ServerToggle() {
   const { theme } = useTheme();
   const navigate = useNavigate();
   const location = useLocation();
-
-  // Sync server state with route when component mounts or route changes
-  useEffect(() => {
-    if (location.pathname === "/saved") {
-      setServer("saved");
-    }
-  }, [location.pathname, setServer]);
 
   // base styles
   const containerStyles = useMemo(() => {
@@ -46,21 +39,15 @@ export default function ServerToggle() {
 
   const handleJPClick = () => {
     setServer("jp");
-    // Preserve current route when changing server
-    if (location.pathname !== "/saved") {
-      navigate(location.pathname); // Stay on current page (filter, stats, etc.)
-    } else {
-      navigate("/"); // If on saved page, go home
+    if (location.pathname === "/saved") {
+      navigate("/");
     }
   };
 
   const handleGlobalClick = () => {
     setServer("global");
-
-    if (location.pathname !== "/saved") {
-      navigate(location.pathname);
-    } else {
-      navigate("/"); //  go  home
+    if (location.pathname === "/saved") {
+      navigate("/");
     }
   };
 
@@ -69,10 +56,10 @@ export default function ServerToggle() {
     navigate("/saved");
   };
 
-  // Determine active state based on both server and route
-  const isJPActive = server === "jp" && location.pathname !== "/saved";
-  const isGlobalActive = server === "global" && location.pathname !== "/saved";
-  const isSavedActive = server === "saved" && location.pathname === "/saved";
+  // Determine active state
+  const isJPActive = server === "jp";
+  const isGlobalActive = server === "global";
+  const isSavedActive = server === "saved";
 
   // button classes
   const jpClass = useMemo(

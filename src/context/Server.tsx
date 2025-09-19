@@ -1,4 +1,4 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useEffect } from "react";
 import type { ReactNode } from "react";
 
 type ServerType = "jp" | "global" | "saved";
@@ -15,8 +15,21 @@ interface ServerProviderProps {
 const ServerContext = createContext<ServerContextType | undefined>(undefined);
 
 export const ServerProvider = ({ children }: ServerProviderProps) => {
-  const [server, setServer] = useState<ServerType>("global");
-  
+  const [server, setServerState] = useState<ServerType>("global");
+
+
+  useEffect(() => {
+    const savedServer = localStorage.getItem("serverPreference") as ServerType;
+    if (savedServer && ["jp", "global", "saved"].includes(savedServer)) {
+      setServerState(savedServer);
+    }
+  }, []);
+
+  const setServer = (newServer: ServerType) => {
+    setServerState(newServer);
+    localStorage.setItem("serverPreference", newServer);
+  };
+
   return (
     <ServerContext.Provider value={{ server, setServer }}>
       {children}
