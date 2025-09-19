@@ -18,16 +18,27 @@ export const ServerProvider = ({ children }: ServerProviderProps) => {
   const [server, setServerState] = useState<ServerType>("global");
 
 
+  // Initialize from localStorage on mount, but check if on /saved route
   useEffect(() => {
-    const savedServer = localStorage.getItem("serverPreference") as ServerType;
-    if (savedServer && ["jp", "global", "saved"].includes(savedServer)) {
-      setServerState(savedServer);
+    // Check if /saved route
+    const isSavedRoute = window.location.pathname === "/saved";
+    
+    if (isSavedRoute) {
+      setServerState("saved");
+    } else {
+      const savedServer = localStorage.getItem("serverPreference") as ServerType;
+      if (savedServer && ["jp", "global", "saved"].includes(savedServer)) {
+        setServerState(savedServer);
+      }
     }
   }, []);
 
   const setServer = (newServer: ServerType) => {
     setServerState(newServer);
-    localStorage.setItem("serverPreference", newServer);
+
+    if (newServer !== "saved") {
+      localStorage.setItem("serverPreference", newServer);
+    }
   };
 
   return (
