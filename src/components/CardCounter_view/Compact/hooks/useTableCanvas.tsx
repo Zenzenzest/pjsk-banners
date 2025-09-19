@@ -19,6 +19,11 @@ interface UseTableCanvasReturn {
 export const useTableCanvas = (): UseTableCanvasReturn => {
   const canvasRef = useRef<HTMLCanvasElement>(null!);
 
+  
+  // Constants for different resolutions
+  const DOWNLOAD_RESOLUTION = 700;
+  const MAX_DISPLAY_SIZE = 500;
+
   const drawTableWithIcons = async (
     iconPaths: string[],
     gridSize: [number, number],
@@ -35,18 +40,35 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
       return;
     }
 
-    // Always set canvas drawing buffer to 700x700 
-    canvas.width = 700;
-    canvas.height = 700;
 
-    // CSS size for responsive display
+    // Always set canvas drawing buffer to high resolution for download
+    canvas.width = DOWNLOAD_RESOLUTION;
+    canvas.height = DOWNLOAD_RESOLUTION;
+
+
+    // Calculate display size with aspect ratio preservation
+    let finalDisplayWidth = MAX_DISPLAY_SIZE;
+    let finalDisplayHeight = MAX_DISPLAY_SIZE;
+
+
+    // Use custom display dimensions if provided, but cap at MAX_DISPLAY_SIZE
     if (displayWidth && displayHeight) {
-      canvas.style.width = `${displayWidth}px`;
-      canvas.style.height = `${displayHeight}px`;
-    } else {
-      canvas.style.width = "700px";
-      canvas.style.height = "700px";
+      const aspectRatio = displayWidth / displayHeight;
+      if (aspectRatio > 1) {
+        // Wider than tall
+        finalDisplayWidth = Math.min(displayWidth, MAX_DISPLAY_SIZE);
+        finalDisplayHeight = finalDisplayWidth / aspectRatio;
+      } else {
+        // Taller than wide or square
+        finalDisplayHeight = Math.min(displayHeight, MAX_DISPLAY_SIZE);
+        finalDisplayWidth = finalDisplayHeight * aspectRatio;
+      }
     }
+
+
+    // Set CSS size for responsive display (capped at 500px)
+    canvas.style.width = `${finalDisplayWidth}px`;
+    canvas.style.height = `${finalDisplayHeight}px`;
 
     const ctx = canvas.getContext("2d");
     if (!ctx) {
@@ -55,19 +77,20 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
     }
 
 
-    // Clear any previous transforms
+    // Clear any previous transforms 
     ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = "high";
 
-    // Fill 
+    // Fill background
     ctx.fillStyle = bgColor;
-    ctx.fillRect(0, 0, 700, 700);
+    ctx.fillRect(0, 0, DOWNLOAD_RESOLUTION, DOWNLOAD_RESOLUTION);
 
-    // Set dimensions - always use 700x700 c
+    // Set dimensions
     const [rows, cols] = gridSize;
-    const padding = 10; 
-    const availableWidth = 700 - padding * 2;
-    const availableHeight = 700 - padding * 2;
-
+    const padding = 10;
+    const availableWidth = DOWNLOAD_RESOLUTION - padding * 2;
+    const availableHeight = DOWNLOAD_RESOLUTION - padding * 2;
 
     // Calculate cell size to fill available space while maintaining square cells
     const cellSize = Math.min(availableWidth / cols, availableHeight / rows);
@@ -75,9 +98,9 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
     const tableWidth = cellSize * cols;
     const tableHeight = cellSize * rows;
 
-    // Center the table 
-    const offsetX = (700 - tableWidth) / 2;
-    const offsetY = (700 - tableHeight) / 2;
+    // Center the table
+    const offsetX = (DOWNLOAD_RESOLUTION - tableWidth) / 2;
+    const offsetY = (DOWNLOAD_RESOLUTION - tableHeight) / 2;
 
     // Draw grid lines (inner lines only)
     ctx.strokeStyle = "gray";
@@ -111,7 +134,7 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
           return new Promise<void>((resolve) => {
             const img = new Image();
             img.onload = () => {
-              const iconSize = Math.min(cellSize * 0.8, 100); // Scale icon with cell size
+              const iconSize = Math.min(cellSize * 0.8, 100);
               const iconPadding = (cellSize - iconSize) / 2;
               const x = offsetX + iconPadding;
               const y = offsetY + rowIndex * cellSize + iconPadding;
@@ -146,7 +169,7 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
           return new Promise<void>((resolve) => {
             const img = new Image();
             img.onload = () => {
-              const iconSize = Math.min(cellSize * 0.8, 100); // Scale icon 
+              const iconSize = Math.min(cellSize * 0.8, 100);
               const iconPadding = (cellSize - iconSize) / 2;
               const x = offsetX + colIndex * cellSize + iconPadding;
               const y = offsetY + rowIndex * cellSize + iconPadding;
