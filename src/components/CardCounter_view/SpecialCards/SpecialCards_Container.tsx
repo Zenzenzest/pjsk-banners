@@ -8,7 +8,7 @@ import { useState } from "react";
 import CardModal from "../../Modal/Card/Card_modal";
 import { useProsekaData } from "../../../context/Data";
 import { useIsMobile } from "../../../hooks/isMobile";
-
+import { today } from "../../../constants/common";
 const COLLAB_TAGS = [
   { tag: "Deadly Sins", label: "Deadly Sins", key: "deadly_sins" },
   { tag: "Sanrio", label: "Sanrio", key: "sanrio" },
@@ -109,8 +109,6 @@ export default function SpecialCards() {
     return { ...baseStructure, ...collabStructure };
   };
 
-
-
   const groupedCards: GroupedCards = {};
 
   // Initialize all characters
@@ -118,7 +116,15 @@ export default function SpecialCards() {
     groupedCards[character] = initializeCharacterCards();
   });
 
-  allCards.forEach((card: AllCardTypes) => {
+  const filteredCards = allCards.filter((card) => {
+    const releaseTime = server === "jp" ? card.jp_released : card.en_released;
+    return (
+      (today >= releaseTime && card.card_type !== "limited_collab") ||
+      card.card_type === "limited_collab"
+    );
+  });
+  console.log(filteredCards);
+  filteredCards.forEach((card: AllCardTypes) => {
     if (!groupedCards[card.character]) {
       groupedCards[card.character] = initializeCharacterCards();
     }
