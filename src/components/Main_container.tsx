@@ -69,7 +69,7 @@ export default function HomeContainer() {
                   onClick={handleCounterViewMode}
                   className={getTabClass("counterview")}
                 >
-                  <span className="truncate">Card & Event Trackers</span>
+                  <span className="truncate">Stats</span>
                 </div>
               </div>
             </div>
