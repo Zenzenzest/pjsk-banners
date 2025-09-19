@@ -5,7 +5,6 @@ import WebsiteDisclaimer from "../../Nav/Website_disclaimer";
 import type { GroupedCards } from "./SpecialCardsTypes";
 import { useTheme } from "../../../context/Theme_toggle";
 import { useState } from "react";
-import { today } from "../../../constants/common";
 import CardModal from "../../Modal/Card/Card_modal";
 import { useProsekaData } from "../../../context/Data";
 import { useIsMobile } from "../../../hooks/isMobile";
@@ -110,10 +109,7 @@ export default function SpecialCards() {
     return { ...baseStructure, ...collabStructure };
   };
 
-  const filteredCards = allCards.filter((card: AllCardTypes) => {
-    const releaseTime = server === "jp" ? card.jp_released : card.en_released;
-    return releaseTime && today >= releaseTime;
-  });
+
 
   const groupedCards: GroupedCards = {};
 
@@ -122,7 +118,7 @@ export default function SpecialCards() {
     groupedCards[character] = initializeCharacterCards();
   });
 
-  filteredCards.forEach((card: AllCardTypes) => {
+  allCards.forEach((card: AllCardTypes) => {
     if (!groupedCards[card.character]) {
       groupedCards[card.character] = initializeCharacterCards();
     }
