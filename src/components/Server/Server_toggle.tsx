@@ -14,9 +14,7 @@ export default function ServerToggle() {
     if (location.pathname === "/saved") {
       setServer("saved");
     }
-    // Don't reset server when navigating to "/", keep current server state
   }, [location.pathname, setServer]);
-
 
   // base styles
   const containerStyles = useMemo(() => {
@@ -36,11 +34,10 @@ export default function ServerToggle() {
     };
   }, [theme]);
 
-
   // button class generator
   const getButtonClass = useMemo(() => {
     const baseClass =
-      "px-4 py-2 mx-1 rounded-md text-sm font-medium transition-colors";
+      "px-4 py-2 mx-1 rounded-md text-sm font-medium transition-colors w-full cursor-pointer";
     return (isActive: boolean) =>
       `${baseClass} ${
         isActive ? containerStyles.activeButton : containerStyles.inactiveButton
@@ -49,12 +46,22 @@ export default function ServerToggle() {
 
   const handleJPClick = () => {
     setServer("jp");
-    navigate("/");
+    // Preserve current route when changing server
+    if (location.pathname !== "/saved") {
+      navigate(location.pathname); // Stay on current page (filter, stats, etc.)
+    } else {
+      navigate("/"); // If on saved page, go home
+    }
   };
 
   const handleGlobalClick = () => {
     setServer("global");
-    navigate("/");
+
+    if (location.pathname !== "/saved") {
+      navigate(location.pathname);
+    } else {
+      navigate("/"); //  go  home
+    }
   };
 
   const handleSavedClick = () => {
@@ -62,13 +69,12 @@ export default function ServerToggle() {
     navigate("/saved");
   };
 
-
   // Determine active state based on both server and route
-  const isJPActive = server === "jp" && location.pathname === "/";
-  const isGlobalActive = server === "global" && location.pathname === "/";
+  const isJPActive = server === "jp" && location.pathname !== "/saved";
+  const isGlobalActive = server === "global" && location.pathname !== "/saved";
   const isSavedActive = server === "saved" && location.pathname === "/saved";
 
-
+  // button classes
   const jpClass = useMemo(
     () => getButtonClass(isJPActive),
     [getButtonClass, isJPActive]
@@ -84,7 +90,7 @@ export default function ServerToggle() {
 
   return (
     <div className={containerStyles.container}>
-      <div className="flex justify-evenly items-center">
+      <div className="flex w-full justify-evenly items-center">
         {/* JP SERVER */}
         <button
           onClick={handleJPClick}
