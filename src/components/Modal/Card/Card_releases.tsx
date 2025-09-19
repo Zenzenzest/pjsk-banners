@@ -17,6 +17,7 @@ export default function CardReleases({ cardId, cardType }: CardReleasesType) {
     "Unit Limited Event",
     "Bloom Festival",
     "Colorful Festival",
+    "Collab",
   ];
   const allowedOffRates = [
     "Recollection",

@@ -248,7 +248,12 @@ export default function GachaModal({
                   >
                     {" "}
                     {sortedAndFilteredCards.map((card) => {
-                      const cardName = `/images/card_icons/${card.id}_t.webp`;
+                      let cardName = ``;
+                      if (card.rarity === 4) {
+                        cardName = `/images/card_icons/${card.id}_t.webp`;
+                      } else {
+                        cardName = `/images/card_icons/${card.id}.webp`;
+                      }
                       return (
                         <div
                           key={card.id}
@@ -277,18 +282,24 @@ export default function GachaModal({
                                 }`}
                               >
                                 <div className="text-xs sm:text-sm font-medium">
-                                  {(gachaObj.cards.includes(card.id) &&
-                                    gachaObj.banner_type !== "Recollection" &&
-                                    gachaObj.banner_type !==
-                                      "World Link Support") ||
-                                  (gachaObj.banner_type ===
-                                    "World Link Support" &&
-                                    gachaObj.keywords &&
-                                    gachaObj.keywords.length !== 0 &&
-                                    gachaObj.cards.includes(card.id)) ? (
-                                    <span>{featured4starChance} %</span>
-                                  ) : (
-                                    <span>{nonF4Chance} %</span>
+                                  {card.rarity === 4 && (
+                                    <div>
+                                      {" "}
+                                      {(gachaObj.cards.includes(card.id) &&
+                                        gachaObj.banner_type !==
+                                          "Recollection" &&
+                                        gachaObj.banner_type !==
+                                          "World Link Support") ||
+                                      (gachaObj.banner_type ===
+                                        "World Link Support" &&
+                                        gachaObj.keywords &&
+                                        gachaObj.keywords.length !== 0 &&
+                                        gachaObj.cards.includes(card.id)) ? (
+                                        <span>{featured4starChance} %</span>
+                                      ) : (
+                                        <span>{nonF4Chance} %</span>
+                                      )}
+                                    </div>
                                   )}
                                 </div>{" "}
                               </div>

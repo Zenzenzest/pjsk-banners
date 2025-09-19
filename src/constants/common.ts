@@ -106,3 +106,7 @@ export const Banners = () => {
     server === "global" || server === "saved" ? enBanners : jpBanners;
   return GcObj;
 };
+
+
+
+export const specialCardTypes = ["limited_collab","movie_exclusive"]
