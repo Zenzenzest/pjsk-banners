@@ -7,7 +7,7 @@ import { useTheme } from "../../../../context/Theme_toggle";
 export default function CompactBday() {
   const { allCards } = useProsekaData();
   const { theme } = useTheme();
-  const [batch, setBatch] = useState(1);
+  const [batch, setBatch] = useState(4);
   const bdayGrid: [number, number] = [6, 7];
 
   const icons = Array(6)
