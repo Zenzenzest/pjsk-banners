@@ -14,7 +14,7 @@ export default function HomeContainer() {
   const [viewMode, setViewMode] = useState<ViewModeType>("dateview");
   const { server } = useServer();
   const { theme } = useTheme();
-  const { loading  } = useProsekaData();
+  const { loading } = useProsekaData();
   const handleDateViewMode = () => setViewMode("dateview");
   const handleFilterViewMode = () => setViewMode("filterview");
   const handleCounterViewMode = () => setViewMode("counterview");
@@ -69,7 +69,7 @@ export default function HomeContainer() {
                   onClick={handleCounterViewMode}
                   className={getTabClass("counterview")}
                 >
-                  <span className="truncate">Card Counter</span>
+                  <span className="truncate">Card & Event Trackers</span>
                 </div>
               </div>
             </div>
