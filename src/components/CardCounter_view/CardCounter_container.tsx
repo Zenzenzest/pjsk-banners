@@ -20,7 +20,7 @@ export default function CardCounterContainer() {
       >
         <button
           onClick={() => setSelectedTab("portraits")}
-          className={`px-4 py-1 md:py-3 mr-2 w-1/3 text-sm font-medium relative transition-colors duration-200 ${
+          className={`px-1 py-1 md:py-3 mr-2 w-1/4 text-sm font-medium relative transition-colors duration-200 ${
             selectedTab === "portraits"
               ? theme === "light"
                 ? "text-[#52649e]"
@@ -37,7 +37,7 @@ export default function CardCounterContainer() {
         </button>
         <button
           onClick={() => setSelectedTab("table")}
-          className={`px-4 py-1 mr-2 w-1/3 text-sm font-medium relative transition-colors duration-200 ${
+          className={`px-1 py-1 mr-2 w-1/4 text-sm font-medium relative transition-colors duration-200 ${
             selectedTab === "table"
               ? theme === "light"
                 ? "text-[#52649e]"
@@ -54,7 +54,7 @@ export default function CardCounterContainer() {
         </button>
         <button
           onClick={() => setSelectedTab("special")}
-          className={`px-4 py-1 w-1/3 text-sm font-medium relative transition-colors duration-200 ${
+          className={`px-1 py-1 w-1/4 text-sm font-medium relative transition-colors duration-200 ${
             selectedTab === "special"
               ? theme === "light"
                 ? "text-[#52649e]"
@@ -71,7 +71,7 @@ export default function CardCounterContainer() {
         </button>{" "}
         <button
           onClick={() => setSelectedTab("compact")}
-          className={`px-4 py-1 w-1/3 text-sm font-medium relative transition-colors duration-200 ${
+          className={`px-1 py-1 w-1/4 text-sm font-medium relative transition-colors duration-200 ${
             selectedTab === "compact"
               ? theme === "light"
                 ? "text-[#52649e]"
