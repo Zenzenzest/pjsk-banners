@@ -22,7 +22,7 @@ export default function HomeContainer() {
   // helper function for tab styling
   const getTabClass = (tab: ViewModeType) => {
     const baseClass =
-      " py-2 flex-1 text-center cursor-pointer transition-all duration-150 font-medium text-sm whitespace-nowrap";
+      " py-2 flex-1 text-center cursor-pointer transition-all duration-150  text-sm whitespace-nowrap";
 
     if (viewMode === tab) {
       // Active tab styles
@@ -57,13 +57,13 @@ export default function HomeContainer() {
                   onClick={handleDateViewMode}
                   className={getTabClass("dateview")}
                 >
-                  <span className="truncate">Calendar View</span>
+                  <span className="truncate">Calendar </span>
                 </div>
                 <div
                   onClick={handleFilterViewMode}
                   className={getTabClass("filterview")}
                 >
-                  <span className="truncate">Filter & Search</span>
+                  <span className="truncate">Filter/Search</span>
                 </div>
                 <div
                   onClick={handleCounterViewMode}
