@@ -28,7 +28,7 @@ export default function CompactBFes() {
 
   return (
     <div>
-      <div className="min-h-[90px] flex items-center justify-center">
+      <div className="h-auto lg:min-h-[90px] flex items-center justify-center">
         {" "}
         <h1 className="text-center text-sm sm:text-lg ">Bloom Fes</h1>
       </div>
