@@ -28,7 +28,10 @@ export default function CompactBFes() {
 
   return (
     <div>
-      <h1 className="text-center text-sm sm:text-lg ">Bloom Fes</h1>
+      <div className="min-h-[90px] flex items-center justify-center">
+        {" "}
+        <h1 className="text-center text-sm sm:text-lg ">Bloom Fes</h1>
+      </div>
       <CanvasTable
         gridSize={bfesGrid}
         iconPaths={icons}
