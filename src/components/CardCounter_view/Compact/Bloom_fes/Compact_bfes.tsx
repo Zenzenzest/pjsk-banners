@@ -28,13 +28,13 @@ export default function CompactBFes() {
 
   return (
     <div>
+      <h1 className="text-center text-sm sm:text-lg ">Bloom Fes</h1>
       <CanvasTable
         gridSize={bfesGrid}
         iconPaths={icons}
         filename={"bfes.png"}
         startAtRow2={false}
         dataPaths={dataPaths}
-
       />
     </div>
   );

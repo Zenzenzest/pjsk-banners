@@ -123,7 +123,7 @@ export default function SpecialCards() {
       card.card_type === "limited_collab"
     );
   });
-  console.log(filteredCards);
+
   filteredCards.forEach((card: AllCardTypes) => {
     if (!groupedCards[card.character]) {
       groupedCards[card.character] = initializeCharacterCards();

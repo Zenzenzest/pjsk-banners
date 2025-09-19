@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import type { RefObject } from "react";
-import type { IconData } from "./CanvasTableTypes";
+import type { IconData } from "../CanvasTableTypes";
 
 interface UseTableCanvasReturn {
   canvasRef: RefObject<HTMLCanvasElement>;
@@ -9,7 +9,9 @@ interface UseTableCanvasReturn {
     gridSize: [number, number],
     startAtRow2: boolean,
     dataPaths: IconData[],
-    bgColor: string
+    bgColor: string,
+    displayWidth?: number,
+    displayHeight?: number
   ) => Promise<void>;
   saveImage: (filename?: string) => void;
 }
@@ -22,7 +24,9 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
     gridSize: [number, number],
     startAtRow2: boolean,
     dataPaths: IconData[],
-    bgColor: string
+    bgColor: string,
+    displayWidth?: number,
+    displayHeight?: number
   ): Promise<void> => {
     const canvas = canvasRef.current;
 
@@ -31,31 +35,49 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
       return;
     }
 
+    // Always set canvas drawing buffer to 700x700 
+    canvas.width = 700;
+    canvas.height = 700;
+
+    // CSS size for responsive display
+    if (displayWidth && displayHeight) {
+      canvas.style.width = `${displayWidth}px`;
+      canvas.style.height = `${displayHeight}px`;
+    } else {
+      canvas.style.width = "700px";
+      canvas.style.height = "700px";
+    }
+
     const ctx = canvas.getContext("2d");
     if (!ctx) {
       console.warn("Could not get 2D context");
       return;
     }
-    ctx.fillStyle = bgColor;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    // Set dimensions based on passed grid size
-    const cellSize = 50;
+
+    // Clear any previous transforms
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+    // Fill 
+    ctx.fillStyle = bgColor;
+    ctx.fillRect(0, 0, 700, 700);
+
+    // Set dimensions - always use 700x700 c
     const [rows, cols] = gridSize;
+    const padding = 10; 
+    const availableWidth = 700 - padding * 2;
+    const availableHeight = 700 - padding * 2;
+
+
+    // Calculate cell size to fill available space while maintaining square cells
+    const cellSize = Math.min(availableWidth / cols, availableHeight / rows);
+
     const tableWidth = cellSize * cols;
     const tableHeight = cellSize * rows;
 
-
-    // Center the table on canvas with minimal padding
-    const padding = 10;
-    const offsetX = (canvas.width - tableWidth) / 2 + padding;
-    const offsetY = (canvas.height - tableHeight) / 2 + padding;
-
-
-    // Adjust for padding
-    const adjustedOffsetX = offsetX - padding;
-    const adjustedOffsetY = offsetY - padding;
-
+    // Center the table 
+    const offsetX = (700 - tableWidth) / 2;
+    const offsetY = (700 - tableHeight) / 2;
 
     // Draw grid lines (inner lines only)
     ctx.strokeStyle = "gray";
@@ -63,24 +85,23 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
 
     // Vertical lines (inner lines only)
     for (let i = 1; i < cols; i++) {
-      const x = adjustedOffsetX + i * cellSize;
+      const x = offsetX + i * cellSize;
       ctx.beginPath();
-      ctx.moveTo(x, adjustedOffsetY);
-      ctx.lineTo(x, adjustedOffsetY + tableHeight);
+      ctx.moveTo(x, offsetY);
+      ctx.lineTo(x, offsetY + tableHeight);
       ctx.stroke();
     }
+
     // Horizontal lines (inner lines only)
     for (let i = 1; i < rows; i++) {
-      const y = adjustedOffsetY + i * cellSize;
+      const y = offsetY + i * cellSize;
       ctx.beginPath();
-      ctx.moveTo(adjustedOffsetX, y);
-      ctx.lineTo(adjustedOffsetX + tableWidth, y);
+      ctx.moveTo(offsetX, y);
+      ctx.lineTo(offsetX + tableWidth, y);
       ctx.stroke();
     }
 
-
-
-    // Load and draw unit icons in first column starting at [1,2]
+    // Load and draw unit icons in first column
     if (iconPaths && iconPaths.length > 0) {
       const iconPromises = iconPaths.map((path, index) => {
         const startIndex = startAtRow2 ? 1 : 0;
@@ -90,9 +111,11 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
           return new Promise<void>((resolve) => {
             const img = new Image();
             img.onload = () => {
-              const x = adjustedOffsetX + 5;
-              const y = adjustedOffsetY + rowIndex * cellSize + 5;
-              ctx.drawImage(img, x, y, 40, 40);
+              const iconSize = Math.min(cellSize * 0.8, 100); // Scale icon with cell size
+              const iconPadding = (cellSize - iconSize) / 2;
+              const x = offsetX + iconPadding;
+              const y = offsetY + rowIndex * cellSize + iconPadding;
+              ctx.drawImage(img, x, y, iconSize, iconSize);
               resolve();
             };
             img.onerror = () => resolve();
@@ -106,7 +129,7 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
       await Promise.all(iconPromises);
     }
 
-// Load the rest of the icons (card icons)
+    // Load and draw data icons
     if (dataPaths && dataPaths.length > 0) {
       const dataPromises = dataPaths.map((data) => {
         // Convert 1-based coordinates to 0-based array indices
@@ -123,9 +146,11 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
           return new Promise<void>((resolve) => {
             const img = new Image();
             img.onload = () => {
-              const x = adjustedOffsetX + colIndex * cellSize + 5;
-              const y = adjustedOffsetY + rowIndex * cellSize + 5;
-              ctx.drawImage(img, x, y, 40, 40);
+              const iconSize = Math.min(cellSize * 0.8, 100); // Scale icon 
+              const iconPadding = (cellSize - iconSize) / 2;
+              const x = offsetX + colIndex * cellSize + iconPadding;
+              const y = offsetY + rowIndex * cellSize + iconPadding;
+              ctx.drawImage(img, x, y, iconSize, iconSize);
               resolve();
             };
             img.onerror = () => resolve();

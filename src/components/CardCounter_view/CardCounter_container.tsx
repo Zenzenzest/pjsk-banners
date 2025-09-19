@@ -81,7 +81,7 @@ export default function CardCounterContainer() {
               : "text-gray-400 hover:text-gray-200"
           }`}
         >
-          Compact
+          Rotations
           {selectedTab === "compact" && (
             <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#52649e]"></div>
           )}
@@ -93,7 +93,7 @@ export default function CardCounterContainer() {
       ) : selectedTab === "special" ? (
         <SpecialCards />
       ) : selectedTab === "compact" ? (
-        <CompactContainer/>
+        <CompactContainer />
       ) : (
         <CharacterContainer />
       )}

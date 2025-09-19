@@ -10,5 +10,5 @@ export type CanvasTableProps = {
   filename: string;
   startAtRow2: boolean;
   dataPaths: IconData[];
-
+  responsive?: boolean;
 };
