@@ -19,7 +19,6 @@ interface UseTableCanvasReturn {
 export const useTableCanvas = (): UseTableCanvasReturn => {
   const canvasRef = useRef<HTMLCanvasElement>(null!);
 
-  
   // Constants for different resolutions
   const DOWNLOAD_RESOLUTION = 700;
   const MAX_DISPLAY_SIZE = 500;
@@ -40,16 +39,13 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
       return;
     }
 
-
     // Always set canvas drawing buffer to high resolution for download
     canvas.width = DOWNLOAD_RESOLUTION;
     canvas.height = DOWNLOAD_RESOLUTION;
 
-
     // Calculate display size with aspect ratio preservation
     let finalDisplayWidth = MAX_DISPLAY_SIZE;
     let finalDisplayHeight = MAX_DISPLAY_SIZE;
-
 
     // Use custom display dimensions if provided, but cap at MAX_DISPLAY_SIZE
     if (displayWidth && displayHeight) {
@@ -65,7 +61,6 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
       }
     }
 
-
     // Set CSS size for responsive display (capped at 500px)
     canvas.style.width = `${finalDisplayWidth}px`;
     canvas.style.height = `${finalDisplayHeight}px`;
@@ -76,8 +71,7 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
       return;
     }
 
-
-    // Clear any previous transforms 
+    // Clear any previous transforms
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.imageSmoothingEnabled = true;
     ctx.imageSmoothingQuality = "high";
@@ -173,7 +167,21 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
               const iconPadding = (cellSize - iconSize) / 2;
               const x = offsetX + colIndex * cellSize + iconPadding;
               const y = offsetY + rowIndex * cellSize + iconPadding;
+
+              ctx.save();
+
+              // Icon border radius
+              const borderRadius = iconSize * 0.1;
+              ctx.beginPath();
+              ctx.roundRect(x, y, iconSize, iconSize, borderRadius);
+              ctx.clip();
+
+              // Draw the image
               ctx.drawImage(img, x, y, iconSize, iconSize);
+
+              // Restore the context state
+              ctx.restore();
+
               resolve();
             };
             img.onerror = () => resolve();
