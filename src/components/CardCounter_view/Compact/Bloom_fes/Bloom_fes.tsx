@@ -1,6 +1,6 @@
 import { useProsekaData } from "../../../../context/Data";
 import CanvasTable from "../CanvasTable_container";
-import { grouped } from "../../../../constants/common";
+import { grouped, imgHost } from "../../../../constants/common";
 export default function CompactBFes() {
   const { allCards } = useProsekaData();
   const bfesGrid: [number, number] = [6, 7];
@@ -12,7 +12,7 @@ export default function CompactBFes() {
   const bfesCards = allCards.filter((card) => card.card_type === "bloom_fes");
 
   const dataPaths = bfesCards.map((card) => {
-    const iconPath = `/images/card_icons/${card.id}_t.webp`;
+    const iconPath = `${imgHost}/icons/${card.id}_t.webp`;
     let ro;
     let co;
 
