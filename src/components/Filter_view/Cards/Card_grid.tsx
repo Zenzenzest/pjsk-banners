@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import type { CardGridProps } from "../FilterTabTypes";
-import { SpecialCards } from "../../../constants/common"; 
+import { imgHost, SpecialCards } from "../../../constants/common"; 
 export default function CardGrid({ mode, cardId, cardName }: CardGridProps) {
   const thumbLoader = ImageLoader(1);
 
@@ -12,7 +12,7 @@ export default function CardGrid({ mode, cardId, cardName }: CardGridProps) {
   // Treating miku touhou card as if its a bday card
   // because no trained image lol wtf
   // Imagine paying for no trained image
-  const imageSrc = `/images/card_thumbnails/${cardId}${
+  const imageSrc = `${imgHost}/thumbnails/${cardId}${
     SpecialCards.includes(cardId) || mode === "bd" ? "_bd" : mode === "t" ? "_t" : ""
   }.webp`;
 

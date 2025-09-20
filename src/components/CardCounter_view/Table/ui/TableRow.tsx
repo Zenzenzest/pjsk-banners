@@ -2,7 +2,7 @@ import { AllCharacters, Attributes } from "../../Counter_constants";
 import type { TableRowProps } from "../CounterTableTypes";
 
 import { notAllowedTypes } from "../../Counter_constants";
-import { today } from "../../../../constants/common";
+import { imgHost, today } from "../../../../constants/common";
 import { useServer } from "../../../../context/Server";
 import { useTheme } from "../../../../context/Theme_toggle";
 import { useProsekaData } from "../../../../context/Data";
@@ -66,8 +66,8 @@ export default function TableRow({
 
     const iconSrc =
       cardRarity === 2
-        ? `/images/card_icons/${cardId}.webp`
-        : `/images/card_icons/${cardId}_t.webp`;
+        ? `${imgHost}/icons/${cardId}.webp`
+        : `${imgHost}/icons/${cardId}_t.webp`;
 
     return (
       <td

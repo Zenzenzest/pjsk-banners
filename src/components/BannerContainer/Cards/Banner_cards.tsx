@@ -5,7 +5,7 @@ import type { CardsProps } from "../BannerTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import CardIcon from "../../Icons/Icon";
 import { useProsekaData } from "../../../context/Data";
-
+import { imgHost } from "../../../constants/common";
 
 export default function Cards({ banner, handleCardClick }: CardsProps) {
   const { theme } = useTheme();
@@ -43,9 +43,9 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
 
             let cardIconImage = "";
             if (cardData?.rarity === 5) {
-              cardIconImage = `/images/card_icons/${card}_t.webp`;
+              cardIconImage = `${imgHost}/icons/${card}_bd.webp`;
             } else {
-              cardIconImage = `/images/card_icons/${card}_t.webp`;
+              cardIconImage = `${imgHost}/icons/${card}_t.webp`;
             }
             return (
               <div
@@ -53,9 +53,7 @@ export default function Cards({ banner, handleCardClick }: CardsProps) {
                 className="group cursor-pointer will-change-transform"
                 onClick={() => {
                   if (cardData) {
-          
                     handleCardClick(cardData.id);
-
                   }
                 }}
                 style={{

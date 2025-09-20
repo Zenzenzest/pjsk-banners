@@ -1,5 +1,5 @@
 import type { AllCardTypes } from "../../../types/common";
-import { CHARACTERS } from "../../../constants/common";
+import { CHARACTERS, imgHost } from "../../../constants/common";
 import { useServer } from "../../../context/Server";
 import WebsiteDisclaimer from "../../Server/Website_disclaimer";
 import type { GroupedCards } from "./SpecialCardsTypes";
@@ -172,9 +172,11 @@ export default function SpecialCards() {
       <div className="flex items-center justify-center space-x-1 min-h-[60px] whitespace-nowrap">
         {cards.map((card, index) => {
           const cardIcon =
-            card.rarity === 4 || card.rarity === 5
-              ? `/images/card_icons/${card.id}_t.webp`
-              : `/images/card_icons/${card.id}.webp`;
+            card.rarity === 4
+              ? `${imgHost}/icons/${card.id}_t.webp`
+              : card.rarity === 5
+              ? `${imgHost}/icons/${card.id}_bd.webp`
+              : `${imgHost}/icons/${card.id}.webp`;
 
           return (
             <img

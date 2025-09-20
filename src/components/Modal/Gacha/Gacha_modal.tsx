@@ -7,6 +7,7 @@ import type { GachaModalProps } from "./GachaModalTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import CardIcon from "../../Icons/Icon";
 import { useProsekaData } from "../../../context/Data";
+import { imgHost } from "../../../constants/common";
 
 const allowedBannerTypes = [
   "Event",
@@ -250,9 +251,9 @@ export default function GachaModal({
                     {sortedAndFilteredCards.map((card) => {
                       let cardName = ``;
                       if (card.rarity === 4) {
-                        cardName = `/images/card_icons/${card.id}_t.webp`;
+                        cardName = `${imgHost}/icons/${card.id}_t.webp`;
                       } else {
-                        cardName = `/images/card_icons/${card.id}.webp`;
+                        cardName = `${imgHost}/icons/${card.id}.webp`;
                       }
                       return (
                         <div

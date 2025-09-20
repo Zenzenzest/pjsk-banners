@@ -5,6 +5,7 @@ import type { EventCardsProps } from "../BannerTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import CardIcon from "../../Icons/Icon";
 import { useProsekaData } from "../../../context/Data";
+import { imgHost } from "../../../constants/common";
 
 export default function EventCards({
   bannerCards,
@@ -53,8 +54,8 @@ export default function EventCards({
 
             const cardIconImage =
               EnEventCard && EnEventCard.rarity === 3
-                ? `/images/card_icons/${shopCard}_t.webp`
-                : `/images/card_icons/${shopCard}.webp`;
+                ? `${imgHost}/icons/${shopCard}_t.webp`
+                : `${imgHost}/icons/${shopCard}.webp`;
 
             return (
               <div
@@ -79,7 +80,7 @@ export default function EventCards({
         {/* FOR SPACING */}
         {bannerShopCards.length < 1 &&
           bannerCards.map((card, i) => {
-            const cardIconImage = `/images/card_icons/${card}_t.webp`;
+            const cardIconImage = `/images/card_icons/1.webp`;
             return (
               <div
                 key={i}

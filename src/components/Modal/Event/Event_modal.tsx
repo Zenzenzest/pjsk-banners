@@ -5,7 +5,7 @@ import { useTheme } from "../../../context/Theme_toggle";
 import type { EventModalProps, SUBUNITTypes } from "./EventModalTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import { useEffect } from "react";
-import { CHARACTERS, VS } from "../../../constants/common";
+import { CHARACTERS, imgHost, VS } from "../../../constants/common";
 import { handleTouchMove } from "../touch_move";
 import CardIcon from "../../Icons/Icon";
 import { useProsekaData } from "../../../context/Data";
@@ -324,11 +324,11 @@ export default function EventModal({
                     {filteredCards.map((card) => {
                       let cardName = "";
                       if (card.rarity === 2 || card.rarity === 1) {
-                        cardName = `/images/card_icons/${card.id}.webp`;
+                        cardName = `${imgHost}/icons/${card.id}.webp`;
                       } else if (card.rarity === 5) {
-                        cardName = `/images/card_icons/${card.id}_t.webp`;
+                        cardName = `${imgHost}/icons/${card.id}_bd.webp`;
                       } else {
-                        cardName = `/images/card_icons/${card.id}_ut.webp`;
+                        cardName = `${imgHost}/icons/${card.id}_ut.webp`;
                       }
                       return (
                         <div
