@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useProsekaData } from "../../../../context/Data";
 import CanvasTable from "../CanvasTable_container";
-import { grouped } from "../../../../constants/common";
+import { grouped, imgHost } from "../../../../constants/common";
 import { useFilteredBatch } from "./useFilterbyBatch";
 import { useTheme } from "../../../../context/Theme_toggle";
 export default function CompactBday() {
@@ -19,7 +19,7 @@ export default function CompactBday() {
   const bdayCards = useFilteredBatch({ cards: allCards, batchNumber: batch });
 
   const dataPaths = bdayCards.map((card) => {
-    const iconPath = `/images/card_icons/${card.id}_t.webp`;
+    const iconPath = `${imgHost}/icons/${card.id}_bd.webp`;
     let ro;
     let co;
 
