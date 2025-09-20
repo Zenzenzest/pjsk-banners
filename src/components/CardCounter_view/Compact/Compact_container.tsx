@@ -1,7 +1,8 @@
 import { useTheme } from "../../../context/Theme_toggle";
 import WebsiteDisclaimer from "../../Server/Website_disclaimer";
-import CompactBday from "./Bday/Compact_bday";
-import CompactBFes from "./Bloom_fes/Compact_bfes";
+import CompactBday from "./Bday/Birthday";
+import CompactBFes from "./Bloom_fes/Bloom_fes";
+import FocusEvent from "./Focus/Focus_event";
 
 export default function CompactContainer() {
   const { theme } = useTheme();
@@ -17,6 +18,7 @@ export default function CompactContainer() {
       <div className="flex flex-row flex-wrap gap-5 justify-center items-center">
         <CompactBFes />
         <CompactBday />
+        <FocusEvent />
       </div>
       <WebsiteDisclaimer />
     </div>
