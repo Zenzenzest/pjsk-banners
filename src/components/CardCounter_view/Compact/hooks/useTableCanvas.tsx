@@ -163,28 +163,70 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
           return new Promise<void>((resolve) => {
             const img = new Image();
             img.onload = () => {
-              const iconSize = Math.min(cellSize * 0.8, 100);
-              const iconPadding = (cellSize - iconSize) / 2;
-              const x = offsetX + colIndex * cellSize + iconPadding;
-              const y = offsetY + rowIndex * cellSize + iconPadding;
+              try {
+                const iconSize = Math.min(cellSize * 0.8, 100);
+                const iconPadding = (cellSize - iconSize) / 2;
+                const x = offsetX + colIndex * cellSize + iconPadding;
+                const y = offsetY + rowIndex * cellSize + iconPadding;
 
-              ctx.save();
+                ctx.save();
 
-              // Icon border radius
-              const borderRadius = iconSize * 0.1;
-              ctx.beginPath();
-              ctx.roundRect(x, y, iconSize, iconSize, borderRadius);
-              ctx.clip();
+                // Icon border radius
+                const borderRadius = iconSize * 0.1;
+                if (ctx.roundRect) {
+                  // Modern browsers
+                  ctx.beginPath();
+                  ctx.roundRect(x, y, iconSize, iconSize, borderRadius);
+                  ctx.clip();
+                } else {
+                  // Fallback for older browsers
+                  ctx.beginPath();
+                  ctx.moveTo(x + borderRadius, y);
+                  ctx.lineTo(x + iconSize - borderRadius, y);
+                  ctx.quadraticCurveTo(
+                    x + iconSize,
+                    y,
+                    x + iconSize,
+                    y + borderRadius
+                  );
+                  ctx.lineTo(x + iconSize, y + iconSize - borderRadius);
+                  ctx.quadraticCurveTo(
+                    x + iconSize,
+                    y + iconSize,
+                    x + iconSize - borderRadius,
+                    y + iconSize
+                  );
+                  ctx.lineTo(x + borderRadius, y + iconSize);
+                  ctx.quadraticCurveTo(
+                    x,
+                    y + iconSize,
+                    x,
+                    y + iconSize - borderRadius
+                  );
+                  ctx.lineTo(x, y + borderRadius);
+                  ctx.quadraticCurveTo(x, y, x + borderRadius, y);
+                  ctx.closePath();
+                  ctx.clip();
+                }
 
-              // Draw the image
-              ctx.drawImage(img, x, y, iconSize, iconSize);
+                // Draw the image
+                ctx.drawImage(img, x, y, iconSize, iconSize);
 
-              // Restore the context state
-              ctx.restore();
-
+                // Restore the context state
+                ctx.restore();
+              } catch (drawError) {
+                console.warn("Failed to draw image:", data.iconPath, drawError);
+              }
               resolve();
             };
-            img.onerror = () => resolve();
+
+            img.onerror = (error) => {
+              console.warn("Failed to load image:", data.iconPath, error);
+              resolve();
+            };
+
+            // CORS handlging after switching from local icons to external host
+            img.crossOrigin = "Anonymous";
             img.src = data.iconPath;
           });
         } else {
