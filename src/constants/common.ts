@@ -107,6 +107,6 @@ export const Banners = () => {
   return GcObj;
 };
 
-
+export const imgHost = "https://r2-image-proxy.zenzenzest.workers.dev"
 
 export const specialCardTypes = ["limited_collab","movie_exclusive"]
