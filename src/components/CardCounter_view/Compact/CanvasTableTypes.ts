@@ -7,9 +7,9 @@ export type IconData = {
 export type CanvasTableProps = {
   gridSize: [number, number];
   iconPaths: string[];
-  filename: string;
+  filename?: string;
   startAtRow2: boolean;
   dataPaths: IconData[];
   responsive?: boolean;
-  wide?:boolean
+  wide?: boolean;
 };
