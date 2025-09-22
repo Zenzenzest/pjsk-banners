@@ -59,7 +59,7 @@ export default function CanvasFes() {
       <CanvasTable
         gridSize={fesGrid}
         iconPaths={icons}
-        filename={"bfes.png"}
+        filename={"fes.png"}
         startAtRow2={false}
         dataPaths={dataPaths}
       />

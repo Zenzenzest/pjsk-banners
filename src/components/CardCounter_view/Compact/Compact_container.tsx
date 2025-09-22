@@ -1,6 +1,7 @@
 import { useTheme } from "../../../context/Theme_toggle";
 import WebsiteDisclaimer from "../../Server/Website_disclaimer";
 import CanvasBday from "./Bday/Birthday";
+import CanvasCollab from "./Collab/Collab";
 import CanvasFes from "./Festival/Festival";
 import CanvasFocusEvent from "./Focus/Focus_event";
 import CanvasHoliday from "./Holiday/Holiday";
@@ -20,7 +21,7 @@ export default function RotationsContainer() {
         <CanvasFes />
         <CanvasBday />
         <CanvasHoliday />
-        <CanvasFocusEvent />
+        <CanvasFocusEvent /> <CanvasCollab />
       </div>
       <WebsiteDisclaimer />
     </div>

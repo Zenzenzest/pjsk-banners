@@ -40,7 +40,7 @@ export default function CanvasBday() {
       <div className="lg:min-h-[70px] ">
         <h1 className="text-center">Birthday / Anniversary</h1>
         <div
-          className={`max-w-[350px] flex flex-row justify-center items-center mx-auto gap-5  border-b ${
+          className={`max-w-[400px] flex flex-row justify-center items-center mx-auto gap-5  border-b ${
             theme === "light" ? "border-gray-200" : "border-gray-700 "
           }`}
         >
