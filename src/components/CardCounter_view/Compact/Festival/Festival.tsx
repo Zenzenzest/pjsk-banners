@@ -4,7 +4,7 @@ import CanvasTable from "../CanvasTable_container";
 import { grouped, imgHost } from "../../../../constants/common";
 import { useTheme } from "../../../../context/Theme_toggle";
 import { TabNavigation } from "../../../Nav/TabNav";
-export default function CompactBFes() {
+export default function CanvasFes() {
   const { theme } = useTheme();
   const [fes, setFes] = useState(1);
   const { allCards } = useProsekaData();

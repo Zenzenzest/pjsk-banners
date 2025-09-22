@@ -5,7 +5,7 @@ import { grouped, imgHost } from "../../../../constants/common";
 import { useFilteredBatch } from "./useFilterbyBatch";
 import { useTheme } from "../../../../context/Theme_toggle";
 import { TabNavigation } from "../../../Nav/TabNav";
-export default function CompactBday() {
+export default function CanvasBday() {
   const { allCards } = useProsekaData();
   const { theme } = useTheme();
   const [batch, setBatch] = useState(4);
@@ -37,7 +37,7 @@ export default function CompactBday() {
 
   return (
     <div>
-      <div className="lg:min-h-[70px]">
+      <div className="lg:min-h-[70px] ">
         <h1 className="text-center">Birthday / Anniversary</h1>
         <div
           className={`max-w-[350px] flex flex-row justify-center items-center mx-auto gap-5  border-b ${

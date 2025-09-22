@@ -1,10 +1,10 @@
 import { useTheme } from "../../../context/Theme_toggle";
 import WebsiteDisclaimer from "../../Server/Website_disclaimer";
-import CompactBday from "./Bday/Birthday";
-import CompactBFes from "./Festival/Festival";
-import FocusEvent from "./Focus/Focus_event";
+import CanvasBday from "./Bday/Birthday";
+import CanvasFes from "./Festival/Festival";
+import CanvasFocusEvent from "./Focus/Focus_event";
 
-export default function CompactContainer() {
+export default function RotationsContainer() {
   const { theme } = useTheme();
   return (
     <div
@@ -15,10 +15,10 @@ export default function CompactContainer() {
       } overflow-x-hidden `}
     >
       <h1 className="text-center text-4xl ">WIP</h1>
-      <div className="flex flex-row flex-wrap gap-5 justify-center items-center">
-        <CompactBFes />
-        <CompactBday />
-        <FocusEvent />
+      <div className="flex flex-row flex-wrap gap-5 justify-center items-center ">
+        <CanvasFes />
+        <CanvasBday />
+        <CanvasFocusEvent />
       </div>
       <WebsiteDisclaimer />
     </div>
