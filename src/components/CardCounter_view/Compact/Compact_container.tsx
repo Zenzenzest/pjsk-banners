@@ -1,7 +1,7 @@
 import { useTheme } from "../../../context/Theme_toggle";
 import WebsiteDisclaimer from "../../Server/Website_disclaimer";
 import CompactBday from "./Bday/Birthday";
-import CompactBFes from "./Bloom_fes/Bloom_fes";
+import CompactBFes from "./Festival/Festival";
 import FocusEvent from "./Focus/Focus_event";
 
 export default function CompactContainer() {
