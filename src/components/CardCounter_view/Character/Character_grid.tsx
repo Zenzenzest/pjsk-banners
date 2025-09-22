@@ -3,6 +3,8 @@ import { RARITY_COLORS } from "../Counter_constants";
 import { useState, useRef, useEffect } from "react";
 import "./Character_grid_styles.css";
 import { IsDeviceIpad } from "../../../hooks/isIpad";
+import { useProsekaData } from "../../../context/Data";
+import { imgHost } from "../../../constants/common";
 
 export default function CharacterGrid({
   character,
@@ -25,9 +27,9 @@ export default function CharacterGrid({
   const overlayRef = useRef<HTMLDivElement>(null);
   const [collapsedHeight, setCollapsedHeight] = useState<string>("auto");
   const [isMounted, setIsMounted] = useState(false);
-  const decksHost = "https://r2-image-proxy.zenzenzest.workers.dev/decks/";
-  const isIpad = IsDeviceIpad();
 
+  const isIpad = IsDeviceIpad();
+  const { allCards } = useProsekaData();
   const lastCardKeys = ["4★ Lim: ", "4★ Perm: ", "3★: ", "2★: "];
 
   // Get the collapsed height
@@ -70,15 +72,27 @@ export default function CharacterGrid({
 
   const sortedCardBreakdown = character.sortedCardBreakdown;
   const maxCount = character.maxCount;
-
   const lastCards = character.lastCards;
-  const lastLimId =
-    typeof lastCards[0] !== "string" ? Number(lastCards[0][1]) : 0;
-  const lastPermId = Number(lastCards[1][1]);
-  const last4Id = Math.max(lastLimId, lastPermId);
-  const last4Img = `${decksHost}${last4Id}_t.webp`;
+  let lastCardId = 0;
+  lastCards.map((card) => {
+    if (typeof card === "string") {
+      return;
+    } else {
+      if (Number(card[1]) > lastCardId) {
+        lastCardId = Number(card[1]);
+      }
+    }
+  });
 
+  const lastCardData = allCards.find((card) => card.id === lastCardId);
 
+  const lastCardRarity = lastCardData?.rarity;
+  const lastCardImg =
+    lastCardRarity === 4 || lastCardRarity === 3
+      ? "_t.webp"
+      : lastCardRarity === 5
+      ? "_bd.webp"
+      : ".webp";
   return (
     <div
       className={`${
@@ -90,7 +104,7 @@ export default function CharacterGrid({
       {/* PORTRAIT IMAGE*/}
       <div className="relative h-full">
         <img
-          src={last4Img}
+          src={`${imgHost}/decks/${lastCardId}${lastCardImg}`}
           width={264}
           height={isMobile ? 325 : 450}
           className="w-full h-full object-cover rounded-t-xl"
