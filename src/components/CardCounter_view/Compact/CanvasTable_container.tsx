@@ -10,6 +10,7 @@ const TableCanvas = ({
   startAtRow2,
   dataPaths,
   responsive = true,
+  wide,
 }: CanvasTableProps) => {
   const { canvasRef, drawTableWithIcons, saveImage } = useTableCanvas();
   const { theme } = useTheme();
@@ -33,7 +34,8 @@ const TableCanvas = ({
         dataPaths,
         bgColor,
         responsive ? width : undefined,
-        responsive ? height : undefined
+        responsive ? height : undefined,
+        wide
       );
     };
 
@@ -52,6 +54,7 @@ const TableCanvas = ({
     bgColor,
     responsive,
     drawTableWithIcons,
+    wide,
   ]);
 
   if (!gridSize) {

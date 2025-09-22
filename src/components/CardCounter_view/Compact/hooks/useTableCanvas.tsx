@@ -11,7 +11,8 @@ interface UseTableCanvasReturn {
     dataPaths: IconData[],
     bgColor: string,
     displayWidth?: number,
-    displayHeight?: number
+    displayHeight?: number,
+    wide?: boolean
   ) => Promise<void>;
   saveImage: (filename?: string) => void;
 }
@@ -23,6 +24,8 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
   const DOWNLOAD_RESOLUTION = 700;
   const MAX_DISPLAY_SIZE = 500;
 
+  const WIDE_ASPECT_RATIO = 2; // width:height ratio when wide=true
+
   const drawTableWithIcons = async (
     iconPaths: string[],
     gridSize: [number, number],
@@ -30,7 +33,8 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
     dataPaths: IconData[],
     bgColor: string,
     displayWidth?: number,
-    displayHeight?: number
+    displayHeight?: number,
+    wide: boolean = false
   ): Promise<void> => {
     const canvas = canvasRef.current;
 
@@ -39,29 +43,44 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
       return;
     }
 
-    // Always set canvas drawing buffer to high resolution for download
-    canvas.width = DOWNLOAD_RESOLUTION;
-    canvas.height = DOWNLOAD_RESOLUTION;
+    // Calculate canvas dimensions based on wide prop
+    const canvasWidth = wide
+      ? DOWNLOAD_RESOLUTION * WIDE_ASPECT_RATIO
+      : DOWNLOAD_RESOLUTION;
+    const canvasHeight = DOWNLOAD_RESOLUTION;
+
+    // Set canvas drawing buffer dimensions
+    canvas.width = canvasWidth;
+    canvas.height = canvasHeight;
 
     // Calculate display size with aspect ratio preservation
-    let finalDisplayWidth = MAX_DISPLAY_SIZE;
+    let finalDisplayWidth = wide
+      ? MAX_DISPLAY_SIZE * WIDE_ASPECT_RATIO
+      : MAX_DISPLAY_SIZE;
     let finalDisplayHeight = MAX_DISPLAY_SIZE;
 
-    // Use custom display dimensions if provided, but cap at MAX_DISPLAY_SIZE
+    // Use custom display dimensions if provided, but apply wide aspect ratio and cap at MAX_DISPLAY_SIZE
     if (displayWidth && displayHeight) {
-      const aspectRatio = displayWidth / displayHeight;
-      if (aspectRatio > 1) {
+      const baseAspectRatio = displayWidth / displayHeight;
+      const adjustedAspectRatio = wide
+        ? baseAspectRatio * WIDE_ASPECT_RATIO
+        : baseAspectRatio;
+
+      if (adjustedAspectRatio > 1) {
         // Wider than tall
-        finalDisplayWidth = Math.min(displayWidth, MAX_DISPLAY_SIZE);
-        finalDisplayHeight = finalDisplayWidth / aspectRatio;
+        finalDisplayWidth = Math.min(
+          wide ? displayWidth * WIDE_ASPECT_RATIO : displayWidth,
+          wide ? MAX_DISPLAY_SIZE * WIDE_ASPECT_RATIO : MAX_DISPLAY_SIZE
+        );
+        finalDisplayHeight = finalDisplayWidth / adjustedAspectRatio;
       } else {
         // Taller than wide or square
         finalDisplayHeight = Math.min(displayHeight, MAX_DISPLAY_SIZE);
-        finalDisplayWidth = finalDisplayHeight * aspectRatio;
+        finalDisplayWidth = finalDisplayHeight * adjustedAspectRatio;
       }
     }
 
-    // Set CSS size for responsive display (capped at 500px)
+    // Set CSS size for responsive display
     canvas.style.width = `${finalDisplayWidth}px`;
     canvas.style.height = `${finalDisplayHeight}px`;
 
@@ -78,23 +97,90 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
 
     // Fill background
     ctx.fillStyle = bgColor;
-    ctx.fillRect(0, 0, DOWNLOAD_RESOLUTION, DOWNLOAD_RESOLUTION);
+    ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
     // Set dimensions
     const [rows, cols] = gridSize;
     const padding = 10;
-    const availableWidth = DOWNLOAD_RESOLUTION - padding * 2;
-    const availableHeight = DOWNLOAD_RESOLUTION - padding * 2;
+    const availableWidth = canvasWidth - padding * 2;
+    const availableHeight = canvasHeight - padding * 2;
 
-    // Calculate cell size to fill available space while maintaining square cells
-    const cellSize = Math.min(availableWidth / cols, availableHeight / rows);
+    // Group data icons by cell position (row, col) to analyze before drawing
+    const iconsByCell = new Map<string, IconData[]>();
+    if (dataPaths && dataPaths.length > 0) {
+      dataPaths.forEach((data) => {
+        const rowIndex = data.row !== undefined ? data.row - 1 : -1;
+        const colIndex = data.col !== undefined ? data.col - 1 : -1;
 
-    const tableWidth = cellSize * cols;
-    const tableHeight = cellSize * rows;
+        // Check bounds
+        if (
+          rowIndex >= 0 &&
+          rowIndex < rows &&
+          colIndex >= 0 &&
+          colIndex < cols
+        ) {
+          const cellKey = `${rowIndex}-${colIndex}`;
+          if (!iconsByCell.has(cellKey)) {
+            iconsByCell.set(cellKey, []);
+          }
+          iconsByCell.get(cellKey)!.push(data);
+        }
+      });
+    }
+
+    // Calculate column widths based on icon counts and wide prop
+    const columnWidths: number[] = [];
+    const EXPANSION_FACTOR = 1.25; // 25% expansion for cells with multiple icons
+
+    // determine which columns need expansion
+    const columnsNeedingExpansion = new Set<number>();
+    for (const [cellKey, cellIcons] of iconsByCell.entries()) {
+      const [, colIndex] = cellKey.split("-").map(Number);
+      if (cellIcons.length === 2) {
+        columnsNeedingExpansion.add(colIndex);
+      }
+    }
+
+    // Calculate base cell dimensions
+    const baseCellHeight = Math.min(
+      availableWidth / (cols * (wide ? WIDE_ASPECT_RATIO : 1)),
+      availableHeight / rows
+    );
+
+    // Calculate total expanded width needed
+    for (let col = 0; col < cols; col++) {
+      if (col === 0) {
+        // First column (unit icons) keep normal width even in wide mode
+        columnWidths[col] = baseCellHeight; // Square cell for first column
+      } else {
+        // Other columns expand in wide mode
+        const baseWidth = wide
+          ? baseCellHeight * WIDE_ASPECT_RATIO
+          : baseCellHeight;
+
+        // Apply expansion if needed
+        if (columnsNeedingExpansion.has(col)) {
+          columnWidths[col] = baseWidth * EXPANSION_FACTOR;
+        } else {
+          columnWidths[col] = baseWidth;
+        }
+      }
+    }
+
+    const tableWidth = columnWidths.reduce((sum, width) => sum + width, 0);
+    const rowHeight = baseCellHeight; // Keep rows uniform height
 
     // Center the table
-    const offsetX = (DOWNLOAD_RESOLUTION - tableWidth) / 2;
-    const offsetY = (DOWNLOAD_RESOLUTION - tableHeight) / 2;
+    const offsetX = (canvasWidth - tableWidth) / 2;
+    const offsetY = (canvasHeight - rowHeight * rows) / 2;
+
+    // Calculate column start positions
+    const columnStartX: number[] = [];
+    let currentX = offsetX;
+    for (let col = 0; col < cols; col++) {
+      columnStartX[col] = currentX;
+      currentX += columnWidths[col];
+    }
 
     // Draw grid lines (inner lines only)
     ctx.strokeStyle = "gray";
@@ -102,16 +188,16 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
 
     // Vertical lines (inner lines only)
     for (let i = 1; i < cols; i++) {
-      const x = offsetX + i * cellSize;
+      const x = columnStartX[i];
       ctx.beginPath();
       ctx.moveTo(x, offsetY);
-      ctx.lineTo(x, offsetY + tableHeight);
+      ctx.lineTo(x, offsetY + rowHeight * rows);
       ctx.stroke();
     }
 
     // Horizontal lines (inner lines only)
     for (let i = 1; i < rows; i++) {
-      const y = offsetY + i * cellSize;
+      const y = offsetY + i * rowHeight;
       ctx.beginPath();
       ctx.moveTo(offsetX, y);
       ctx.lineTo(offsetX + tableWidth, y);
@@ -128,10 +214,12 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
           return new Promise<void>((resolve) => {
             const img = new Image();
             img.onload = () => {
-              const iconSize = Math.min(cellSize * 0.8, 100);
-              const iconPadding = (cellSize - iconSize) / 2;
-              const x = offsetX + iconPadding;
-              const y = offsetY + rowIndex * cellSize + iconPadding;
+              const cellWidth = columnWidths[0];
+              const iconSize = Math.min(cellWidth * 0.8, rowHeight * 0.8, 100);
+              const iconPaddingX = (cellWidth - iconSize) / 2;
+              const iconPaddingY = (rowHeight - iconSize) / 2;
+              const x = columnStartX[0] + iconPaddingX;
+              const y = offsetY + rowIndex * rowHeight + iconPaddingY;
               ctx.drawImage(img, x, y, iconSize, iconSize);
               resolve();
             };
@@ -146,95 +234,253 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
       await Promise.all(iconPromises);
     }
 
-    // Load and draw data icons
-    if (dataPaths && dataPaths.length > 0) {
-      const dataPromises = dataPaths.map((data) => {
-        // Convert 1-based coordinates to 0-based array indices
-        const rowIndex = data.row !== undefined ? data.row - 1 : -1;
-        const colIndex = data.col !== undefined ? data.col - 1 : -1;
+    // Draw data icons for each cell
+    if (iconsByCell.size > 0) {
+      const cellPromises = Array.from(iconsByCell.entries()).map(
+        ([cellKey, cellIcons]) => {
+          const [rowIndex, colIndex] = cellKey.split("-").map(Number);
 
-        // Check bounds
-        if (
-          rowIndex >= 0 &&
-          rowIndex < rows &&
-          colIndex >= 0 &&
-          colIndex < cols
-        ) {
-          return new Promise<void>((resolve) => {
-            const img = new Image();
-            img.onload = () => {
-              try {
-                const iconSize = Math.min(cellSize * 0.8, 100);
-                const iconPadding = (cellSize - iconSize) / 2;
-                const x = offsetX + colIndex * cellSize + iconPadding;
-                const y = offsetY + rowIndex * cellSize + iconPadding;
+          return Promise.all(
+            cellIcons.map((data, iconIndex) => {
+              return new Promise<void>((resolve) => {
+                const img = new Image();
+                img.onload = () => {
+                  try {
+                    const iconsInCell = cellIcons.length;
+                    const cellWidth = columnWidths[colIndex];
+                    const cellHeight = rowHeight;
 
-                ctx.save();
+                    // Calculate icon size based on how many icons are in the cell
+                    let iconSize: number;
+                    let positions: { x: number; y: number }[] = [];
 
-                // Icon border radius
-                const borderRadius = iconSize * 0.1;
-                if (ctx.roundRect) {
-                  // Modern browsers
-                  ctx.beginPath();
-                  ctx.roundRect(x, y, iconSize, iconSize, borderRadius);
-                  ctx.clip();
-                } else {
-                  // Fallback for older browsers
-                  ctx.beginPath();
-                  ctx.moveTo(x + borderRadius, y);
-                  ctx.lineTo(x + iconSize - borderRadius, y);
-                  ctx.quadraticCurveTo(
-                    x + iconSize,
-                    y,
-                    x + iconSize,
-                    y + borderRadius
-                  );
-                  ctx.lineTo(x + iconSize, y + iconSize - borderRadius);
-                  ctx.quadraticCurveTo(
-                    x + iconSize,
-                    y + iconSize,
-                    x + iconSize - borderRadius,
-                    y + iconSize
-                  );
-                  ctx.lineTo(x + borderRadius, y + iconSize);
-                  ctx.quadraticCurveTo(
-                    x,
-                    y + iconSize,
-                    x,
-                    y + iconSize - borderRadius
-                  );
-                  ctx.lineTo(x, y + borderRadius);
-                  ctx.quadraticCurveTo(x, y, x + borderRadius, y);
-                  ctx.closePath();
-                  ctx.clip();
-                }
+                    // Reduced padding for wide mode to utilize space better
+                    const paddingFactor = wide ? 0.05 : 0.1; // 5% padding for wide, 10% for normal
+                    const baseCellPadding =
+                      Math.min(cellWidth, cellHeight) * paddingFactor;
+                    const availableCellWidth = cellWidth - baseCellPadding * 2;
+                    const availableCellHeight =
+                      cellHeight - baseCellPadding * 2;
 
-                // Draw the image
-                ctx.drawImage(img, x, y, iconSize, iconSize);
+                    if (iconsInCell === 1) {
+                      if (wide) {
+                        iconSize = 250;
+                        // Minimal padding for wide mode
+                        const iconPaddingX = (cellWidth - iconSize) / 2;
+                        const iconPaddingY = (cellHeight - iconSize) / 2;
+                        positions = [
+                          {
+                            x: columnStartX[colIndex] + iconPaddingX,
+                            y: offsetY + rowIndex * rowHeight + iconPaddingY,
+                          },
+                        ];
+                      } else {
+                        // Normal mode - keep original sizing
+                        iconSize = Math.min(
+                          cellWidth * 0.8,
+                          cellHeight * 0.8,
+                          100
+                        );
+                        const iconPaddingX = (cellWidth - iconSize) / 2;
+                        const iconPaddingY = (cellHeight - iconSize) / 2;
+                        positions = [
+                          {
+                            x: columnStartX[colIndex] + iconPaddingX,
+                            y: offsetY + rowIndex * rowHeight + iconPaddingY,
+                          },
+                        ];
+                      }
+                    } else if (iconsInCell === 2) {
+                      // Two icons - always side by side with balanced spacing
+                      const maxSize = Math.min(
+                        availableCellWidth * 0.48,
+                        availableCellHeight * 0.95
+                      );
+                      iconSize = maxSize;
 
-                // Restore the context state
-                ctx.restore();
-              } catch (drawError) {
-                console.warn("Failed to draw image:", data.iconPath, drawError);
-              }
-              resolve();
-            };
+                      // Calculate equal spacing for two icons
+                      const totalIconWidth = iconSize * 2;
+                      const remainingSpace =
+                        availableCellWidth - totalIconWidth;
+                      const spacing = remainingSpace / 3; // Equal spacing: before, between, and after icons
 
-            img.onerror = (error) => {
-              console.warn("Failed to load image:", data.iconPath, error);
-              resolve();
-            };
+                      const startY =
+                        offsetY +
+                        rowIndex * rowHeight +
+                        (cellHeight - iconSize) / 2;
 
-            // CORS handlging after switching from local icons to external host
-            img.crossOrigin = "Anonymous";
-            img.src = data.iconPath;
-          });
-        } else {
-          return Promise.resolve();
+                      positions = [
+                        {
+                          x: columnStartX[colIndex] + baseCellPadding + spacing,
+                          y: startY,
+                        },
+                        {
+                          x:
+                            columnStartX[colIndex] +
+                            baseCellPadding +
+                            spacing * 2 +
+                            iconSize,
+                          y: startY,
+                        },
+                      ];
+                    } else {
+                      // More than 4 icons - grid arrangement
+                      const gridSize = Math.ceil(Math.sqrt(iconsInCell));
+
+                      if (wide) {
+                        // In wide mode, use larger icons
+                        iconSize = Math.min(
+                          (availableCellWidth / gridSize) * 0.9,
+                          (availableCellHeight / gridSize) * 0.9,
+                          45 // Larger max size for wide mode
+                        );
+                      } else {
+                        // Normal mode
+                        iconSize = Math.min(
+                          (availableCellWidth / gridSize) * 0.8,
+                          (availableCellHeight / gridSize) * 0.8,
+                          30
+                        );
+                      }
+
+                      // Calculate spacing
+                      const spacingX =
+                        (availableCellWidth - iconSize * gridSize) /
+                        (gridSize + 1);
+                      const spacingY =
+                        (availableCellHeight - iconSize * gridSize) /
+                        (gridSize + 1);
+
+                      positions = [];
+                      for (let i = 0; i < iconsInCell; i++) {
+                        const gridRow = Math.floor(i / gridSize);
+                        const gridCol = i % gridSize;
+                        positions.push({
+                          x:
+                            columnStartX[colIndex] +
+                            baseCellPadding +
+                            spacingX +
+                            gridCol * (iconSize + spacingX),
+                          y:
+                            offsetY +
+                            rowIndex * rowHeight +
+                            baseCellPadding +
+                            spacingY +
+                            gridRow * (iconSize + spacingY),
+                        });
+                      }
+                    }
+
+                    // Get position for this specific icon
+                    const position = positions[iconIndex];
+                    if (!position) {
+                      resolve();
+                      return;
+                    }
+
+                    ctx.save();
+
+                    // Calculate final draw dimensions and position
+                    let drawWidth = iconSize;
+                    let drawHeight = iconSize;
+                    const drawX = position.x;
+                    let drawY = position.y;
+
+                    // If wide=true, maintain original aspect ratio for data icons
+                    if (wide && img.naturalWidth && img.naturalHeight) {
+                      const imageAspectRatio =
+                        img.naturalWidth / img.naturalHeight;
+
+                      drawWidth = iconSize;
+                      drawHeight = iconSize / imageAspectRatio;
+                      drawY = position.y + (iconSize - drawHeight) / 2;
+                    }
+
+                    // Icon border radius based on the container size
+                    const borderRadius = iconSize * 0.1;
+                    if (ctx.roundRect) {
+                      ctx.beginPath();
+                      ctx.roundRect(
+                        position.x,
+                        position.y,
+                        iconSize,
+                        iconSize,
+                        borderRadius
+                      );
+                      ctx.clip();
+                    } else {
+                      ctx.beginPath();
+                      ctx.moveTo(position.x + borderRadius, position.y);
+                      ctx.lineTo(
+                        position.x + iconSize - borderRadius,
+                        position.y
+                      );
+                      ctx.quadraticCurveTo(
+                        position.x + iconSize,
+                        position.y,
+                        position.x + iconSize,
+                        position.y + borderRadius
+                      );
+                      ctx.lineTo(
+                        position.x + iconSize,
+                        position.y + iconSize - borderRadius
+                      );
+                      ctx.quadraticCurveTo(
+                        position.x + iconSize,
+                        position.y + iconSize,
+                        position.x + iconSize - borderRadius,
+                        position.y + iconSize
+                      );
+                      ctx.lineTo(
+                        position.x + borderRadius,
+                        position.y + iconSize
+                      );
+                      ctx.quadraticCurveTo(
+                        position.x,
+                        position.y + iconSize,
+                        position.x,
+                        position.y + iconSize - borderRadius
+                      );
+                      ctx.lineTo(position.x, position.y + borderRadius);
+                      ctx.quadraticCurveTo(
+                        position.x,
+                        position.y,
+                        position.x + borderRadius,
+                        position.y
+                      );
+                      ctx.closePath();
+                      ctx.clip();
+                    }
+
+                    // Draw the image with calculated dimensions
+                    ctx.drawImage(img, drawX, drawY, drawWidth, drawHeight);
+
+                    // Restore the context state
+                    ctx.restore();
+                  } catch (drawError) {
+                    console.warn(
+                      "Failed to draw image:",
+                      data.iconPath,
+                      drawError
+                    );
+                  }
+                  resolve();
+                };
+
+                img.onerror = (error) => {
+                  console.warn("Failed to load image:", data.iconPath, error);
+                  resolve();
+                };
+
+                img.crossOrigin = "Anonymous";
+                img.src = data.iconPath;
+              });
+            })
+          );
         }
-      });
+      );
 
-      await Promise.all(dataPromises);
+      await Promise.all(cellPromises);
     }
   };
 
