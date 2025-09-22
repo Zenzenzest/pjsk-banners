@@ -55,13 +55,16 @@ export default function CanvasHoliday() {
           }`}
         >
           {tabNames.map((tab, i) => (
-            <TabNavigation
-              currentTab={holi}
-              setCurrentTab={setHoli}
-              tab={tab}
-              n={i + 1}
-              tabs={tabNames}
-            />
+            <div key={tab}>
+              {" "}
+              <TabNavigation
+                currentTab={holi}
+                setCurrentTab={setHoli}
+                tab={tab}
+                n={i + 1}
+                tabs={tabNames}
+              />
+            </div>
           ))}
         </div>
       </div>

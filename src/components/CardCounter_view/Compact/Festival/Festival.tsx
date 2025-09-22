@@ -45,13 +45,15 @@ export default function CanvasFes() {
           }`}
         >
           {tabNames.map((tab, i) => (
-            <TabNavigation
-              currentTab={fes}
-              setCurrentTab={setFes}
-              tab={tab}
-              n={i + 1}
-              tabs={tabNames}
-            />
+            <div key={tab}>
+              <TabNavigation
+                currentTab={fes}
+                setCurrentTab={setFes}
+                tab={tab}
+                n={i + 1}
+                tabs={tabNames}
+              />
+            </div>
           ))}
         </div>
       </div>

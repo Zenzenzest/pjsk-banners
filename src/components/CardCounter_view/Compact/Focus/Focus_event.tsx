@@ -6,7 +6,6 @@ import { useTheme } from "../../../../context/Theme_toggle";
 import { grouped, imgHost } from "../../../../constants/common";
 import { TabNavigation } from "../../../Nav/TabNav";
 
-
 type UnitKey = "mmj" | "wxs" | "l/n" | "n25" | "vbs";
 const unit_mapping: Record<UnitKey, string> = {
   mmj: "MORE MORE JUMP!",
@@ -30,7 +29,6 @@ export default function CanvasFocusEvent() {
       return `/images/unit_icons/${i + 2}.png`;
     });
 
-    
   const filteredEvents = jpEvents.filter((ev) => {
     const evKeywords = ev.keywords;
     const isFocus = evKeywords.includes("focus");
@@ -72,7 +70,6 @@ export default function CanvasFocusEvent() {
   return (
     <div className="max-w-full">
       {" "}
-
       <div className="lg:min-h-[70px] w-full overflow-scroll flex flex-col justify-center items-center">
         <h1 className="text-center">Focus Events</h1>
         <div
@@ -81,20 +78,22 @@ export default function CanvasFocusEvent() {
           }`}
         >
           {tabNames.map((tab, i) => (
-            <TabNavigation
-              currentTab={currentTab}
-              setCurrentTab={setCurrentTab}
-              tab={tab}
-              n={i + 1}
-              tabs={tabNames}
-            />
+            <div key={tab}>
+              {" "}
+              <TabNavigation
+                currentTab={currentTab}
+                setCurrentTab={setCurrentTab}
+                tab={tab}
+                n={i + 1}
+                tabs={tabNames}
+              />
+            </div>
           ))}
         </div>
       </div>
       {/* SCROLLABLE CONTAINER */}
       <div className="w-full overflow-x-auto">
         <div className="min-w-[600px] w-max mx-auto">
-
           <CanvasTable
             ref={canvasRef}
             gridSize={focusEventGrid}

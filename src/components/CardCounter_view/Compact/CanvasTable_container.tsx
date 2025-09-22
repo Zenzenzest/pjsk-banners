@@ -62,6 +62,7 @@ const CanvasTable = forwardRef<TableCanvasRef, CanvasTableProps>(
       responsive,
       drawTableWithIcons,
       wide,
+      getDisplaySize,
     ]);
 
     // expose saveImage
@@ -93,6 +94,5 @@ const CanvasTable = forwardRef<TableCanvasRef, CanvasTableProps>(
     );
   }
 );
-
 
 export default CanvasTable;
