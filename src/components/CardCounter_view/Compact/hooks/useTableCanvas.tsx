@@ -22,7 +22,7 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
 
   // Constants for different resolutions
   const DOWNLOAD_RESOLUTION = 700;
-  const MAX_DISPLAY_SIZE = 500;
+  const MAX_DISPLAY_SIZE = 700;
 
   const WIDE_ASPECT_RATIO = 2; // width:height ratio when wide=true
 
@@ -43,40 +43,157 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
       return;
     }
 
-    // Calculate canvas dimensions based on wide prop
-    const canvasWidth = wide
-      ? DOWNLOAD_RESOLUTION * WIDE_ASPECT_RATIO
-      : DOWNLOAD_RESOLUTION;
-    const canvasHeight = DOWNLOAD_RESOLUTION;
+    // Group data icons by cell position (row, col) to analyze before calculating canvas size
+    const iconsByCell = new Map<string, IconData[]>();
+    if (dataPaths && dataPaths.length > 0) {
+      const [rows, cols] = gridSize;
+      dataPaths.forEach((data) => {
+        const rowIndex = data.row !== undefined ? data.row - 1 : -1;
+        const colIndex = data.col !== undefined ? data.col - 1 : -1;
+
+        // Check bounds
+        if (
+          rowIndex >= 0 &&
+          rowIndex < rows &&
+          colIndex >= 0 &&
+          colIndex < cols
+        ) {
+          const cellKey = `${rowIndex}-${colIndex}`;
+          if (!iconsByCell.has(cellKey)) {
+            iconsByCell.set(cellKey, []);
+          }
+          iconsByCell.get(cellKey)!.push(data);
+        }
+      });
+    }
+
+    // Determine which columns need expansion and count them
+    const columnsNeedingExpansion = new Set<number>();
+    for (const [cellKey, cellIcons] of iconsByCell.entries()) {
+      const [, colIndex] = cellKey.split("-").map(Number);
+      if (cellIcons.length === 2) {
+        columnsNeedingExpansion.add(colIndex);
+      }
+    }
+
+    // Check if auto-expansion is necessary (at least 2 columns need expansion and not wide mode)
+    const shouldAutoExpand = !wide && columnsNeedingExpansion.size >= 2;
+
+    // Calculate canvas dimensions
+    let canvasWidth: number;
+    let canvasHeight: number;
+
+    if (wide) {
+      canvasWidth = DOWNLOAD_RESOLUTION * WIDE_ASPECT_RATIO;
+      canvasHeight = DOWNLOAD_RESOLUTION;
+    } else if (shouldAutoExpand) {
+      // Auto-expansion: calculate required width based on column requirements
+      const [rows, cols] = gridSize;
+      const EXPANSION_FACTOR = 1.25;
+
+      // Calculate base cell height from height constraint only (not width)
+      const baseCellHeight = DOWNLOAD_RESOLUTION / rows;
+
+      // Calculate required width for all columns
+      let totalRequiredWidth = 0;
+      for (let col = 0; col < cols; col++) {
+        if (col === 0) {
+          // First column always square
+          totalRequiredWidth += baseCellHeight;
+        } else {
+          const baseWidth = baseCellHeight;
+          if (columnsNeedingExpansion.has(col)) {
+            totalRequiredWidth += baseWidth * EXPANSION_FACTOR;
+          } else {
+            totalRequiredWidth += baseWidth;
+          }
+        }
+      }
+
+      // Add padding
+      const padding = 10; // 10px on each side
+      canvasWidth = totalRequiredWidth + padding;
+      canvasHeight = DOWNLOAD_RESOLUTION; 
+    } else {
+      // Normal mode (1:1 ratio)
+      canvasWidth = DOWNLOAD_RESOLUTION;
+      canvasHeight = DOWNLOAD_RESOLUTION;
+    }
 
     // Set canvas drawing buffer dimensions
     canvas.width = canvasWidth;
     canvas.height = canvasHeight;
 
+
     // Calculate display size with aspect ratio preservation
-    let finalDisplayWidth = wide
-      ? MAX_DISPLAY_SIZE * WIDE_ASPECT_RATIO
-      : MAX_DISPLAY_SIZE;
-    let finalDisplayHeight = MAX_DISPLAY_SIZE;
+    let finalDisplayWidth: number;
+    let finalDisplayHeight: number;
 
-    // Use custom display dimensions if provided, but apply wide aspect ratio and cap at MAX_DISPLAY_SIZE
-    if (displayWidth && displayHeight) {
-      const baseAspectRatio = displayWidth / displayHeight;
-      const adjustedAspectRatio = wide
-        ? baseAspectRatio * WIDE_ASPECT_RATIO
-        : baseAspectRatio;
+    if (wide) {
+      finalDisplayWidth = MAX_DISPLAY_SIZE * WIDE_ASPECT_RATIO;
+      finalDisplayHeight = MAX_DISPLAY_SIZE;
 
-      if (adjustedAspectRatio > 1) {
-        // Wider than tall
+      // Use custom display dimensions if provided, but apply wide aspect ratio and cap at MAX_DISPLAY_SIZE
+      if (displayWidth && displayHeight) {
+        const baseAspectRatio = displayWidth / displayHeight;
+        const adjustedAspectRatio = baseAspectRatio * WIDE_ASPECT_RATIO;
+
+        if (adjustedAspectRatio > 1) {
+          // Wider than tall
+          finalDisplayWidth = Math.min(
+            displayWidth * WIDE_ASPECT_RATIO,
+            MAX_DISPLAY_SIZE * WIDE_ASPECT_RATIO
+          );
+          finalDisplayHeight = finalDisplayWidth / adjustedAspectRatio;
+        } else {
+          // Taller than wide or square
+          finalDisplayHeight = Math.min(displayHeight, MAX_DISPLAY_SIZE);
+          finalDisplayWidth = finalDisplayHeight * adjustedAspectRatio;
+        }
+      }
+    } else if (shouldAutoExpand) {
+      // Auto-expansion display: maintain canvas aspect ratio but cap at reasonable size
+      const canvasAspectRatio = canvasWidth / canvasHeight;
+
+      if (canvasAspectRatio > 1) {
+        // Canvas is wider than tall
         finalDisplayWidth = Math.min(
-          wide ? displayWidth * WIDE_ASPECT_RATIO : displayWidth,
-          wide ? MAX_DISPLAY_SIZE * WIDE_ASPECT_RATIO : MAX_DISPLAY_SIZE
+          canvasWidth,
+          MAX_DISPLAY_SIZE * canvasAspectRatio
         );
-        finalDisplayHeight = finalDisplayWidth / adjustedAspectRatio;
+        finalDisplayHeight = finalDisplayWidth / canvasAspectRatio;
       } else {
-        // Taller than wide or square
+        // Canvas is taller than wide or square
+        finalDisplayHeight = Math.min(canvasHeight, MAX_DISPLAY_SIZE);
+        finalDisplayWidth = finalDisplayHeight * canvasAspectRatio;
+      }
+
+      // Use custom display dimensions if provided
+      if (displayWidth && displayHeight) {
+        const requestedAspectRatio = displayWidth / displayHeight;
+
+        if (requestedAspectRatio > canvasAspectRatio) {
+          // Requested size is wider than canvas ratio
+          finalDisplayHeight = Math.min(displayHeight, MAX_DISPLAY_SIZE);
+          finalDisplayWidth = finalDisplayHeight * canvasAspectRatio;
+        } else {
+          // Requested size accommodates canvas ratio
+          finalDisplayWidth = Math.min(
+            displayWidth,
+            MAX_DISPLAY_SIZE * canvasAspectRatio
+          );
+          finalDisplayHeight = finalDisplayWidth / canvasAspectRatio;
+        }
+      }
+    } else {
+      // Normal mode display 
+      finalDisplayWidth = MAX_DISPLAY_SIZE;
+      finalDisplayHeight = MAX_DISPLAY_SIZE;
+
+      // Use custom display dimensions if provided
+      if (displayWidth && displayHeight) {
+        finalDisplayWidth = Math.min(displayWidth, MAX_DISPLAY_SIZE);
         finalDisplayHeight = Math.min(displayHeight, MAX_DISPLAY_SIZE);
-        finalDisplayWidth = finalDisplayHeight * adjustedAspectRatio;
       }
     }
 
@@ -105,41 +222,9 @@ export const useTableCanvas = (): UseTableCanvasReturn => {
     const availableWidth = canvasWidth - padding * 2;
     const availableHeight = canvasHeight - padding * 2;
 
-    // Group data icons by cell position (row, col) to analyze before drawing
-    const iconsByCell = new Map<string, IconData[]>();
-    if (dataPaths && dataPaths.length > 0) {
-      dataPaths.forEach((data) => {
-        const rowIndex = data.row !== undefined ? data.row - 1 : -1;
-        const colIndex = data.col !== undefined ? data.col - 1 : -1;
-
-        // Check bounds
-        if (
-          rowIndex >= 0 &&
-          rowIndex < rows &&
-          colIndex >= 0 &&
-          colIndex < cols
-        ) {
-          const cellKey = `${rowIndex}-${colIndex}`;
-          if (!iconsByCell.has(cellKey)) {
-            iconsByCell.set(cellKey, []);
-          }
-          iconsByCell.get(cellKey)!.push(data);
-        }
-      });
-    }
-
-    // Calculate column widths based on icon counts and wide prop
+    // Calculate column widths based on icon counts and mode
     const columnWidths: number[] = [];
     const EXPANSION_FACTOR = 1.25; // 25% expansion for cells with multiple icons
-
-    // determine which columns need expansion
-    const columnsNeedingExpansion = new Set<number>();
-    for (const [cellKey, cellIcons] of iconsByCell.entries()) {
-      const [, colIndex] = cellKey.split("-").map(Number);
-      if (cellIcons.length === 2) {
-        columnsNeedingExpansion.add(colIndex);
-      }
-    }
 
     // Calculate base cell dimensions
     const baseCellHeight = Math.min(
