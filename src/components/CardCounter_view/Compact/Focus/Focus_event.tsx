@@ -67,7 +67,7 @@ export default function FocusEvent() {
       <div className="lg:min-h-[70px]]">
         <h1 className="text-center">Focus Events</h1>
         <div
-          className={`max-w-[350px] flex mx-auto  border-b ${
+          className={`max-w-[350px] flex flex-row  items-center justify-center mx-auto  border-b ${
             theme === "light" ? "border-gray-200" : "border-gray-700 "
           }`}
         >
