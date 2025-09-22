@@ -11,4 +11,5 @@ export type CanvasTableProps = {
   startAtRow2: boolean;
   dataPaths: IconData[];
   responsive?: boolean;
+  wide?:boolean
 };
