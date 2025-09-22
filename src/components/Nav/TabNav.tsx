@@ -20,7 +20,7 @@ export const TabNavigation = ({
       onClick={() => setCurrentTab(n)}
       className={`px-2 py-3 mr-2 w-1/${
         tabs.length
-      } text-sm font-medium relative transition-colors duration-200 ${
+      } text-sm font-medium relative transition-colors duration-200 cursor-pointer ${
         currentTab === n
           ? theme === "light"
             ? "text-[#52649e]"

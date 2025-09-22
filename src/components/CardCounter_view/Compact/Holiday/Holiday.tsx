@@ -50,21 +50,19 @@ export default function CanvasHoliday() {
       <div className="h-auto lg:min-h-[70px] ">
         <h1 className="text-center">Holiday</h1>
         <div
-          className={`max-w-[350px] flex mx-auto  border-b ${
+          className={`max-w-[400px] flex flex-row justify-center items-center mx-auto  border-b  ${
             theme === "light" ? "border-gray-200" : "border-gray-700 "
           }`}
         >
           {tabNames.map((tab, i) => (
-            <div key={tab}>
-              {" "}
-              <TabNavigation
-                currentTab={holi}
-                setCurrentTab={setHoli}
-                tab={tab}
-                n={i + 1}
-                tabs={tabNames}
-              />
-            </div>
+            <TabNavigation
+              currentTab={holi}
+              setCurrentTab={setHoli}
+              tab={tab}
+              n={i + 1}
+              tabs={tabNames}
+              key={tab}
+            />
           ))}
         </div>
       </div>

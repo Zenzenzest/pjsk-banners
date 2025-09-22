@@ -78,16 +78,14 @@ export default function CanvasFocusEvent() {
           }`}
         >
           {tabNames.map((tab, i) => (
-            <div key={tab}>
-              {" "}
-              <TabNavigation
-                currentTab={currentTab}
-                setCurrentTab={setCurrentTab}
-                tab={tab}
-                n={i + 1}
-                tabs={tabNames}
-              />
-            </div>
+            <TabNavigation
+              currentTab={currentTab}
+              setCurrentTab={setCurrentTab}
+              tab={tab}
+              n={i + 1}
+              tabs={tabNames}
+              key={tab}
+            />
           ))}
         </div>
       </div>

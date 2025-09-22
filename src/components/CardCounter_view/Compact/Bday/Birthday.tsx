@@ -45,16 +45,14 @@ export default function CanvasBday() {
           }`}
         >
           {tabNames.map((tab, i) => (
-            <div key={tab}>
-              {" "}
-              <TabNavigation
-                currentTab={batch}
-                setCurrentTab={setBatch}
-                tab={tab}
-                n={i + 1}
-                tabs={tabNames}
-              />
-            </div>
+            <TabNavigation
+              currentTab={batch}
+              setCurrentTab={setBatch}
+              tab={tab}
+              n={i + 1}
+              tabs={tabNames}
+              key={tab}
+            />
           ))}
         </div>
       </div>
