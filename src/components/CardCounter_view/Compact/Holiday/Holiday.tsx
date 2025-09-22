@@ -8,7 +8,7 @@ export default function CanvasHoliday() {
   const { allCards, jpEvents } = useProsekaData();
   const { theme } = useTheme();
   const [holi, setHoli] = useState(1);
-  const tabNames = ["Valentine's", "New Year"];
+  const tabNames = ["Valentine's", "New Year", "White Day"];
   const holidayGrid: [number, number] = [6, 7];
 
   const icons = Array(6)
@@ -20,7 +20,9 @@ export default function CanvasHoliday() {
   const valen = jpEvents.filter((ev) => ev.type === "Valentine's Event");
 
   const ny = jpEvents.filter((ev) => ev.type === "New Year Event");
-  const holidayEvents = holi === 1 ? valen : ny;
+
+  const wd = jpEvents.filter((ev) => ev.type === "White Day Event");
+  const holidayEvents = holi === 1 ? valen : holi === 2 ? ny : wd;
   const holidayCards = allCards.filter((card) =>
     holidayEvents.some((ev) => ev.cards.includes(card.id))
   );
