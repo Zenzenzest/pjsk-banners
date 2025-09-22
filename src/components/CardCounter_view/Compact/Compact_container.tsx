@@ -3,6 +3,7 @@ import WebsiteDisclaimer from "../../Server/Website_disclaimer";
 import CanvasBday from "./Bday/Birthday";
 import CanvasFes from "./Festival/Festival";
 import CanvasFocusEvent from "./Focus/Focus_event";
+import CanvasHoliday from "./Holiday/Holiday";
 
 export default function RotationsContainer() {
   const { theme } = useTheme();
@@ -18,6 +19,7 @@ export default function RotationsContainer() {
       <div className="flex flex-row flex-wrap gap-5 justify-center items-center ">
         <CanvasFes />
         <CanvasBday />
+        <CanvasHoliday />
         <CanvasFocusEvent />
       </div>
       <WebsiteDisclaimer />
