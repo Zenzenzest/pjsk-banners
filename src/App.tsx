@@ -11,6 +11,7 @@ import DateTabs from "./components/Calendar_view/Date_tabs";
 import FilterTab from "./components/Filter_view/Filter_Container";
 import CardCounterContainer from "./components/CardCounter_view/CardCounter_container";
 import SavedBannersContainer from "./components/SavedBanners/SavedBanners_container";
+import Landing from "./pages/Landing";
 
 function App() {
   const didLog = useRef(false);
@@ -61,14 +62,15 @@ function App() {
       <ProsekaDataProvider>
         <ThemeProvider>
           <ServerProvider>
-            <Routes>
+            {/* <Routes>
               <Route path="/" element={<NavigationContainer />}>
                 <Route index element={<DateTabs />} />
                 <Route path="filter" element={<FilterTab />} />
                 <Route path="stats" element={<CardCounterContainer />} />
                 <Route path="saved" element={<SavedBannersContainer />} />
               </Route>
-            </Routes>
+            </Routes> */}
+            <Landing />
           </ServerProvider>
         </ThemeProvider>
       </ProsekaDataProvider>
