@@ -6,30 +6,23 @@ import styles from "./Landing.module.css";
 export default function Landing() {
   const { theme } = useTheme();
   const background = "/images/bg/tree.webp";
-  //  ${
-  //         theme === "dark" ? "bg-[#0e1721]" : "bg-gray-50"
-  //       }`
+
   return (
-    <div
-      className={`min-h-screen transition-colors duration-500 bg-[url(/images/card_thumbnail/1251.webp)] `}
-      style={{
-        backgroundImage: `url(${background})`,
-      }}
-    >
-      <div className="max-w-7xl mx-auto px-4 py-8 max-sm:px-2">
-        {/* Main Title with Animation */}
-        <div className={`text-center mb-16 mt-8 ${styles.fadeInUp}`}>
-          <h1
-            className={`text-5xl md:text-6xl font-bold mb-6 ${
-              theme === "dark" ? "text-white" : "text-gray-900"
-            } ${styles.fadeInScale}`}
-          >
-            PRSK{" "}
-            <span
-              className={theme === "dark" ? "text-[#50a0fd]" : "text-blue-600"}
-            >
-              Banners
-            </span>
+    <div className="min-h-screen transition-colors duration-500 relative">
+      {/* BACKGROUND IMAGE*/}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-fixed"
+        style={{
+          backgroundImage: `url(${background})`,
+          opacity: 0.4,
+          zIndex: -1,
+        }}
+      ></div>
+
+      <div className="max-w-7xl mx-auto px-4 py-4 max-sm:px-2">
+        <div className={`text-center mb-13 mt-5 ${styles.fadeInUp}`}>
+          <h1 className={`text-5xl md:text-6xl font-bold mb-2 text-white`}>
+            PRSK <span className="text-[#50a0fd]">Banners</span>
           </h1>
 
           <div
@@ -38,16 +31,12 @@ export default function Landing() {
             } ${styles.widthExpand}`}
           ></div>
 
-          <p
-            className={`mt-6 text-lg max-w-2xl mx-auto ${
-              theme === "dark" ? "text-gray-300" : "text-gray-600"
-            } ${styles.fadeIn}`}
-          >
+          <p className={`mt-3 text-lg max-w-2xl mx-auto text-gray-300`}>
             Track and discover upcoming banners/events
           </p>
         </div>
 
-        {/* Server Banners Section */}
+        {/*BANNERS */}
         <div className="space-y-10 max-w-4xl mx-auto">
           {Array(2)
             .fill(null)
@@ -55,18 +44,6 @@ export default function Landing() {
               <LatestBanners key={i} n={i} />
             ))}
         </div>
-
-        {/* Floating Elements for Decorative Purposes */}
-        {theme === "dark" && (
-          <>
-            <div
-              className={`fixed top-20 left-10 w-2 h-2 rounded-full bg-[#50a0fd]/30 ${styles.float}`}
-            ></div>
-            <div
-              className={`fixed bottom-20 right-10 w-1 h-1 rounded-full bg-[#50a0fd]/20 ${styles.float2}`}
-            ></div>
-          </>
-        )}
       </div>
     </div>
   );

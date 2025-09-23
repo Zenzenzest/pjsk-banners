@@ -1,3 +1,4 @@
+// useCarousel.ts - Update the hook
 import { useState, useEffect, useCallback } from 'react';
 import type { BannerTypes } from '../../types/common';
 
@@ -70,17 +71,6 @@ export const useCarousel = ({ latestBanners, maxThumbnails = 4 }: UseCarouselPro
     }
   }, [isSliding]);
 
-  // Keyboard navigation
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowLeft') goToPrev();
-      if (e.key === 'ArrowRight') goToNext();
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentIndex, latestBanners.length]);
-
   return {
     // state
     currentIndex,
@@ -96,7 +86,7 @@ export const useCarousel = ({ latestBanners, maxThumbnails = 4 }: UseCarouselPro
     nextThumbnailPage,
     prevThumbnailPage,
     
-    // Hhelpers
+    // helpers
     getVisibleThumbnails,
     getGlobalIndex,
     canGoToNextThumbnailPage: thumbnailPageIndex < thumbnailPages - 1,

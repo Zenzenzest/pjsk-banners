@@ -4,17 +4,20 @@ import { useCarousel } from "./useCarousel";
 interface CarouselProps {
   latestBanners: BannerTypes[];
   n: number;
+  setSelectedBannerId: (id: number) => void;
 }
 
-const Carousel: React.FC<CarouselProps> = ({ latestBanners, n }) => {
+const Carousel: React.FC<CarouselProps> = ({
+  latestBanners,
+  n,
+  setSelectedBannerId,
+}) => {
   const maxThumbnails = 4;
 
   const {
     currentIndex,
     thumbnailPages,
-    goToPrev,
-    goToNext,
-    handleThumbnailClick,
+
     nextThumbnailPage,
     prevThumbnailPage,
     getVisibleThumbnails,
@@ -24,7 +27,34 @@ const Carousel: React.FC<CarouselProps> = ({ latestBanners, n }) => {
     goToSlide,
   } = useCarousel({ latestBanners, maxThumbnails });
 
+  const handleGoToSlide = (index: number) => {
+    goToSlide(index);
+    setSelectedBannerId(latestBanners[index].id); 
+  };
+
+
+  const handleGoToPrev = () => {
+    const newIndex =
+      currentIndex === 0 ? latestBanners.length - 1 : currentIndex - 1;
+    handleGoToSlide(newIndex);
+  };
+
+
+  const handleGoToNext = () => {
+    const newIndex =
+      currentIndex === latestBanners.length - 1 ? 0 : currentIndex + 1;
+    handleGoToSlide(newIndex);
+  };
+
+ 
+  const handleThumbnailClickWithId = (index: number) => {
+    if (index !== currentIndex) {
+      handleGoToSlide(index);
+    }
+  };
+
   const imgPath = n === 0 ? `${imgHost}/jp_banners` : `${imgHost}/en_banners`;
+
   return (
     <div className="max-w-[450px] mx-auto">
       <div className="relative overflow-hidden rounded-xl">
@@ -52,7 +82,7 @@ const Carousel: React.FC<CarouselProps> = ({ latestBanners, n }) => {
 
         {/* NAVIGATION BUTTONS */}
         <button
-          onClick={goToPrev}
+          onClick={handleGoToPrev}
           className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors"
           aria-label="Previous slide"
         >
@@ -72,7 +102,7 @@ const Carousel: React.FC<CarouselProps> = ({ latestBanners, n }) => {
           </svg>
         </button>
         <button
-          onClick={goToNext}
+          onClick={handleGoToNext}
           className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors"
           aria-label="Next slide"
         >
@@ -97,7 +127,7 @@ const Carousel: React.FC<CarouselProps> = ({ latestBanners, n }) => {
           {latestBanners.map((banner, index) => (
             <button
               key={banner.name}
-              onClick={() => goToSlide(index)}
+              onClick={() => handleGoToSlide(index)}
               className={`w-3 h-3 rounded-full transition-colors ${
                 index === currentIndex ? "bg-[#50a0fd]" : "bg-gray-500"
               }`}
@@ -109,7 +139,7 @@ const Carousel: React.FC<CarouselProps> = ({ latestBanners, n }) => {
 
       {/* THUMBNAILS CONTAINER*/}
       <div className="mt-4 flex items-center">
-        {/* Previous thumbnail page button */}
+    
         {thumbnailPages > 1 && canGoToPrevThumbnailPage && (
           <button
             onClick={prevThumbnailPage}
@@ -135,10 +165,11 @@ const Carousel: React.FC<CarouselProps> = ({ latestBanners, n }) => {
         <div className="flex space-x-2 overflow-hidden flex-grow justify-center">
           {getVisibleThumbnails().map((banner, localIndex) => {
             const globalIndex = getGlobalIndex(localIndex);
+
             return (
               <button
                 key={globalIndex}
-                onClick={() => handleThumbnailClick(globalIndex)}
+                onClick={() => handleThumbnailClickWithId(globalIndex)}
                 className={`flex-shrink-0 ${
                   latestBanners.length >= 4
                     ? "w-1/4"
