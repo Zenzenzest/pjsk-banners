@@ -5,10 +5,10 @@ import CanvasTable from "../CanvasTable_container";
 import { grouped, imgHost } from "../../../../constants/common";
 import { TabNavigation } from "../../../Nav/TabNav";
 export default function CanvasHoliday() {
-  const { allCards, jpEvents } = useProsekaData();
+  const { allCards, jpEvents, jpBanners } = useProsekaData();
   const { theme } = useTheme();
   const [holi, setHoli] = useState(1);
-  const tabNames = ["Valentine's", "New Year", "White Day"];
+  const tabNames = ["Valentine's", "New Year", "White Day", "Anniv"];
   const holidayGrid: [number, number] = [6, 7];
 
   const icons = Array(6)
@@ -18,14 +18,36 @@ export default function CanvasHoliday() {
     });
 
   const valen = jpEvents.filter((ev) => ev.type === "Valentine's Event");
-
   const ny = jpEvents.filter((ev) => ev.type === "New Year Event");
-
   const wd = jpEvents.filter((ev) => ev.type === "White Day Event");
-  const holidayEvents = holi === 1 ? valen : holi === 2 ? ny : wd;
-  const holidayCards = allCards.filter((card) =>
-    holidayEvents.some((ev) => ev.cards.includes(card.id))
-  );
+
+  const annivBanners = jpBanners.filter((banner) => {
+    const date = new Date(banner.start);
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    const allowedBanners = ["Colorful Festival", "Bloom Festival"];
+
+    return (
+      (month === 9 || month === 10) &&
+      (day === 30 || day === 1) &&
+      allowedBanners.includes(banner.banner_type)
+    );
+  });
+
+  const holidayEvents =
+    holi === 1 ? valen : holi === 2 ? ny : holi === 3 ? wd : annivBanners;
+  const holidayCards = allCards.filter((card) => {
+    if (holi !== 4) {
+      return holidayEvents.some((ev) => ev.cards.includes(card.id));
+    } else {
+      let isAnnivLimCard = false;
+      annivBanners.map((gc) => {
+        if (card.card_type === "limited" && gc.cards.includes(card.id))
+          isAnnivLimCard = true;
+      });
+      return isAnnivLimCard;
+    }
+  });
 
   const dataPaths = holidayCards.map((card) => {
     const imgPath =
