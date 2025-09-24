@@ -22,7 +22,7 @@ export default function LandingCards({
 
   const cardsData = eventId != undefined ? eventCardsData : bannerCardsData;
   return (
-    <div className="flex flex-row justify-center items-center gap-3 max-w-[454px] p-2 mx-auto">
+    <div className="flex flex-row justify-center items-center gap-1 max-w-[454px] p-1 mx-auto sm:min-h-[116px] min-h-[90px]">
       {cardsData.map((card) => {
         const imgPath =
           card.rarity === 5
@@ -34,7 +34,9 @@ export default function LandingCards({
           <img
             src={`${imgHost}/icons/${card.id}${imgPath}`}
             alt={`${card.id}-${card.character}`}
-            className="w-full rounded-xl"
+            className={`${
+              cardsData.length <= 3 ? "max-w-[75px]" : "w-full"
+            } rounded-xl`}
           />
         );
       })}
