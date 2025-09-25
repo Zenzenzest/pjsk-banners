@@ -45,7 +45,7 @@ export default function NavigationContainer() {
               }`}
             >
               <div className="flex w-full">
-                <NavLink to="/" className={getNavLinkClass} end>
+                <NavLink to="/calendar" className={getNavLinkClass} end>
                   <span className="truncate">Calendar</span>
                 </NavLink>
                 <NavLink to="/filter" className={getNavLinkClass}>

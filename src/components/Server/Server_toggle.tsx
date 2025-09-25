@@ -40,14 +40,14 @@ export default function ServerToggle() {
   const handleJPClick = () => {
     setServer("jp");
     if (location.pathname === "/saved") {
-      navigate("/");
+      navigate("/calendar");
     }
   };
 
   const handleGlobalClick = () => {
     setServer("global");
     if (location.pathname === "/saved") {
-      navigate("/");
+    navigate("/calendar");
     }
   };
 
