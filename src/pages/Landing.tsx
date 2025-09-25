@@ -1,14 +1,19 @@
 // Landing.tsx
 import LatestBanners from "../components/Landing/Latest_banners";
+import LoadingComponent from "../components/Loading";
+import { useProsekaData } from "../context/Data";
 import { useTheme } from "../context/Theme_toggle";
 import styles from "./Landing.module.css";
 
 export default function Landing() {
   const { theme } = useTheme();
-  const background = "/images/bg/tree.webp";
-
+  const { loading } = useProsekaData();
+  const background = "/images/bg/5th_anniv.png";
+  if (loading) {
+    return <LoadingComponent />;
+  }
   return (
-    <div className="min-h-screen transition-colors duration-500 relative">
+    <div className="min-h-screen transition-colors duration-500 relative pt-10">
       {/* BACKGROUND IMAGE*/}
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
@@ -32,17 +37,13 @@ export default function Landing() {
           ></div>
 
           <p className={`mt-3 text-lg max-w-2xl mx-auto text-gray-300`}>
-            Track and discover upcoming banners/events
+            Track upcoming banners/events
           </p>
         </div>
 
         {/*BANNERS */}
         <div className="space-y-10 max-w-4xl mx-auto">
-          {Array(2)
-            .fill(null)
-            .map((_, i) => (
-              <LatestBanners key={i} n={i} />
-            ))}
+          <LatestBanners />
         </div>
       </div>
     </div>

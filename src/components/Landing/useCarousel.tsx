@@ -1,13 +1,17 @@
 // useCarousel.ts - Update the hook
-import { useState, useEffect, useCallback } from 'react';
-import type { BannerTypes } from '../../types/common';
+import { useState, useEffect, useCallback } from "react";
+import type { BannerTypes } from "../../types/common";
 
 interface UseCarouselProps {
   latestBanners: BannerTypes[];
   maxThumbnails?: number;
+  currentIndex?: number;
 }
 
-export const useCarousel = ({ latestBanners, maxThumbnails = 4 }: UseCarouselProps) => {
+export const useCarousel = ({
+  latestBanners,
+  maxThumbnails = 4,
+}: UseCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isSliding, setIsSliding] = useState(false);
   const [thumbnailPageIndex, setThumbnailPageIndex] = useState(0);
@@ -27,12 +31,14 @@ export const useCarousel = ({ latestBanners, maxThumbnails = 4 }: UseCarouselPro
   }, []);
 
   const goToPrev = () => {
-    const newIndex = currentIndex === 0 ? latestBanners.length - 1 : currentIndex - 1;
+    const newIndex =
+      currentIndex === 0 ? latestBanners.length - 1 : currentIndex - 1;
     goToSlide(newIndex);
   };
 
   const goToNext = () => {
-    const newIndex = currentIndex === latestBanners.length - 1 ? 0 : currentIndex + 1;
+    const newIndex =
+      currentIndex === latestBanners.length - 1 ? 0 : currentIndex + 1;
     goToSlide(newIndex);
   };
 
@@ -43,7 +49,9 @@ export const useCarousel = ({ latestBanners, maxThumbnails = 4 }: UseCarouselPro
   };
 
   const nextThumbnailPage = () => {
-    setThumbnailPageIndex((prev) => (prev < thumbnailPages - 1 ? prev + 1 : prev));
+    setThumbnailPageIndex((prev) =>
+      prev < thumbnailPages - 1 ? prev + 1 : prev
+    );
   };
 
   const prevThumbnailPage = () => {
@@ -77,7 +85,7 @@ export const useCarousel = ({ latestBanners, maxThumbnails = 4 }: UseCarouselPro
     isSliding,
     thumbnailPageIndex,
     thumbnailPages,
-    
+
     // actions
     goToSlide,
     goToPrev,
@@ -85,7 +93,7 @@ export const useCarousel = ({ latestBanners, maxThumbnails = 4 }: UseCarouselPro
     handleThumbnailClick,
     nextThumbnailPage,
     prevThumbnailPage,
-    
+
     // helpers
     getVisibleThumbnails,
     getGlobalIndex,

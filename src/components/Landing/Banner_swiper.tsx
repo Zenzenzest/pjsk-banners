@@ -1,23 +1,25 @@
+
 import type { BannerTypes } from "../../types/common";
 import { imgHost } from "../../constants/common";
 import { useCarousel } from "./useCarousel";
+
 interface CarouselProps {
   latestBanners: BannerTypes[];
   n: number;
+  currentIndex: number; 
   setSelectedBannerId: (id: number) => void;
 }
 
-const Carousel: React.FC<CarouselProps> = ({
-  latestBanners,
-  n,
-  setSelectedBannerId,
-}) => {
+export default function Carousel({ 
+  latestBanners, 
+  n, 
+  currentIndex, 
+  setSelectedBannerId 
+}: CarouselProps) {
   const maxThumbnails = 4;
 
   const {
-    currentIndex,
     thumbnailPages,
-
     nextThumbnailPage,
     prevThumbnailPage,
     getVisibleThumbnails,
@@ -25,28 +27,27 @@ const Carousel: React.FC<CarouselProps> = ({
     canGoToNextThumbnailPage,
     canGoToPrevThumbnailPage,
     goToSlide,
-  } = useCarousel({ latestBanners, maxThumbnails });
+  } = useCarousel({ 
+    latestBanners, 
+    maxThumbnails,
+    currentIndex 
+  });
 
   const handleGoToSlide = (index: number) => {
     goToSlide(index);
-    setSelectedBannerId(latestBanners[index].id); 
+    setSelectedBannerId(latestBanners[index].id);
   };
-
 
   const handleGoToPrev = () => {
-    const newIndex =
-      currentIndex === 0 ? latestBanners.length - 1 : currentIndex - 1;
+    const newIndex = currentIndex === 0 ? latestBanners.length - 1 : currentIndex - 1;
     handleGoToSlide(newIndex);
   };
-
 
   const handleGoToNext = () => {
-    const newIndex =
-      currentIndex === latestBanners.length - 1 ? 0 : currentIndex + 1;
+    const newIndex = currentIndex === latestBanners.length - 1 ? 0 : currentIndex + 1;
     handleGoToSlide(newIndex);
   };
 
- 
   const handleThumbnailClickWithId = (index: number) => {
     if (index !== currentIndex) {
       handleGoToSlide(index);
@@ -64,11 +65,10 @@ const Carousel: React.FC<CarouselProps> = ({
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {latestBanners.map((banner, index) => {
-            const path =
-              n === 0 ? `${imgHost}/jp_banners` : `${imgHost}/en_banners`;
+            const path = n === 0 ? `${imgHost}/jp_banners` : `${imgHost}/en_banners`;
             return (
               <div key={index} className="w-full flex-shrink-0">
-                <div className=" flex items-center justify-center">
+                <div className="flex items-center justify-center">
                   <img
                     src={`${path}/${banner.id}.webp`}
                     alt={`Slide ${index + 1}`}
@@ -139,7 +139,6 @@ const Carousel: React.FC<CarouselProps> = ({
 
       {/* THUMBNAILS CONTAINER*/}
       <div className="mt-4 flex items-center">
-    
         {thumbnailPages > 1 && canGoToPrevThumbnailPage && (
           <button
             onClick={prevThumbnailPage}
@@ -215,6 +214,5 @@ const Carousel: React.FC<CarouselProps> = ({
       </div>
     </div>
   );
-};
+}
 
-export default Carousel;
