@@ -141,7 +141,7 @@ export default function EventModal({
     <>
       {EvObj ? (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm p-2 sm:p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center  p-2 sm:p-4"
           onClick={onClose}
           onTouchMove={handleTouchMove}
         >
