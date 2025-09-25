@@ -62,15 +62,17 @@ function App() {
       <ProsekaDataProvider>
         <ThemeProvider>
           <ServerProvider>
-            {/* <Routes>
-              <Route path="/" element={<NavigationContainer />}>
-                <Route index element={<DateTabs />} />
+            <Routes>
+              <Route path="/" element={<Landing />} />
+
+        
+              <Route element={<NavigationContainer />}>
+                <Route path="calendar" element={<DateTabs />} />
                 <Route path="filter" element={<FilterTab />} />
                 <Route path="stats" element={<CardCounterContainer />} />
                 <Route path="saved" element={<SavedBannersContainer />} />
               </Route>
-            </Routes> */}
-            <Landing />
+            </Routes>
           </ServerProvider>
         </ThemeProvider>
       </ProsekaDataProvider>
