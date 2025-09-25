@@ -7,7 +7,7 @@ export default function BannerStatus({
   return (
     <div className="absolute top-[-5px] right-[-5px] max-h-[20px]">
       <span
-        className={` px-1 py-1  rounded-full text-xs font-medium border ${statusColor} backdrop-blur-sm`}
+        className={` px-1 py-1  rounded-full text-xs font-medium border ${statusColor} `}
       >
         {bannerStatus === "upcoming"
           ? "Upcoming"
