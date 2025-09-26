@@ -6,6 +6,7 @@ import BannerSwiper from "./Banner_swiper";
 import LandingCardIcons from "./Landing_card_icons";
 import { useState } from "react";
 import BannerDetails from "./Banner_details";
+import { useBannerCountdown } from "./hooks/useBannerCountdown";
 import type { AllCardTypes, BannerTypes } from "../../types/common";
 
 const allowedBanners = [
@@ -36,6 +37,31 @@ export default function LatestBanners() {
       const orderB = allowedBanners.indexOf(b.banner_type);
       return orderA - orderB;
     });
+
+  const currentBanner = useMemo(() => {
+    return (
+      latestBanners.find((banner) => banner.id === selectedBannerId) || null
+    );
+  }, [latestBanners, selectedBannerId]);
+
+  const { timeLeft } = useBannerCountdown(currentBanner?.end || null);
+
+  // Format the end date
+  const endDateString = useMemo(() => {
+    if (!currentBanner?.end) return "";
+
+    const endDate = new Date(currentBanner.end);
+    const month = endDate.toLocaleDateString("en-US", { month: "short" }); // e.g., "Jan"
+    const day = endDate.getDate();
+    let hours = endDate.getHours();
+    const minutes = endDate.getMinutes().toString().padStart(2, "0");
+    const ampm = hours >= 12 ? "PM" : "AM";
+
+    hours = hours % 12;
+    hours = hours ? hours : 12; // 0 should be 12
+
+    return `${month} ${day}, ${hours}:${minutes} ${ampm}`;
+  }, [currentBanner]);
 
   // Calculate currentIndex based on selectedBannerId
   const currentIndex = latestBanners.findIndex(
@@ -163,6 +189,67 @@ export default function LatestBanners() {
             >
               EN
             </button>
+          </div>
+        </div>
+
+        {/* COUNTDOWN */}
+        <div className="mb-1 flex justify-center">
+          <div className="bg-slate-700/50 rounded-lg px-4 py-3 border border-slate-600/30 w-full max-w-md">
+            <div className="text-center text-sm text-gray-300">
+              <>
+                <div className="flex flex-row justify-center items-center gap-2 mb-2">
+                  <span className="text-gray-300 text-base">Ends in:</span>
+                  {currentBanner && (
+                    <span className="text-gray-300 text-sm sm:text-base font-medium">
+                      {endDateString}
+                    </span>
+                  )}
+                </div>
+                <div className="flex justify-center space-x-2 sm:space-x-3">
+                  <div className="flex flex-col items-center">
+                    <span className="text-white font-mono bg-slate-600/60 px-2 py-1 sm:px-3 sm:py-2 rounded text-base sm:text-xl font-bold">
+                      {timeLeft.days.toString().padStart(2, "0")}
+                    </span>
+                    <span className="text-xs text-gray-300 mt-1 sm:mt-2">
+                      D
+                    </span>
+                  </div>
+                  <span className="text-white font-bold self-center text-base sm:text-xl">
+                    :
+                  </span>
+                  <div className="flex flex-col items-center">
+                    <span className="text-white font-mono bg-slate-600/60 px-2 py-1 sm:px-3 sm:py-2 rounded text-base sm:text-xl font-bold">
+                      {timeLeft.hours.toString().padStart(2, "0")}
+                    </span>
+                    <span className="text-xs text-gray-300 mt-1 sm:mt-2">
+                      H
+                    </span>
+                  </div>
+                  <span className="text-white font-bold self-center text-base sm:text-xl">
+                    :
+                  </span>
+                  <div className="flex flex-col items-center">
+                    <span className="text-white font-mono bg-slate-600/60 px-2 py-1 sm:px-3 sm:py-2 rounded text-base sm:text-xl font-bold">
+                      {timeLeft.minutes.toString().padStart(2, "0")}
+                    </span>
+                    <span className="text-xs text-gray-300 mt-1 sm:mt-2">
+                      M
+                    </span>
+                  </div>
+                  <span className="text-white font-bold self-center text-base sm:text-xl">
+                    :
+                  </span>
+                  <div className="flex flex-col items-center">
+                    <span className="text-white font-mono bg-slate-600/60 px-2 py-1 sm:px-3 sm:py-2 rounded text-base sm:text-xl font-bold">
+                      {timeLeft.seconds.toString().padStart(2, "0")}
+                    </span>
+                    <span className="text-xs text-gray-300 mt-1 sm:mt-2">
+                      S
+                    </span>
+                  </div>
+                </div>
+              </>
+            </div>
           </div>
         </div>
 
