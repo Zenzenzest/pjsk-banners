@@ -1,14 +1,14 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { imgHost } from "../../../constants/common";
 import { useProsekaData } from "../../../context/Data";
-import type { AllCardTypes } from "../../..//types/common";
+import type { AllCardTypes } from "../../../types/common";
 
 type UseLandingCardsProps = {
   selectedBannerId: number;
   n: number;
 };
 
-export const useLandingCards = ({
+export const useLandingCardIcons = ({
   selectedBannerId,
   n,
 }: UseLandingCardsProps) => {
@@ -128,7 +128,7 @@ export const useLandingCards = ({
 
     const currentScroll = containerRef.current.scrollLeft;
     const containerWidth = containerRef.current.clientWidth;
-    const newScroll = Math.max(0, currentScroll - containerWidth * 0.8); 
+    const newScroll = Math.max(0, currentScroll - containerWidth * 0.8);
 
     containerRef.current.scrollTo({
       left: newScroll,
@@ -265,7 +265,6 @@ export const useLandingCards = ({
       return;
     }
 
-
     // if (containerRef.current) {
     //   containerRef.current.scrollLeft = 0;
     // }
@@ -320,7 +319,7 @@ export const useLandingCards = ({
     updateScrollPosition,
   ]);
 
-  // Effect for drag events 
+  // Effect for drag events
   useEffect(() => {
     if (!isDragging) return;
 

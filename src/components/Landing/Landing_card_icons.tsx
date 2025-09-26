@@ -1,11 +1,11 @@
-import { useLandingCards } from "./hooks/useLandingCards";
+import { useLandingCardIcons } from "./hooks/useLandingCardIcons";
 
 type LandingCardsProps = {
   selectedBannerId: number;
   n: number;
 };
 
-export default function LandingCards({
+export default function LandingCardIcons({
   selectedBannerId,
   n,
 }: LandingCardsProps) {
@@ -30,7 +30,7 @@ export default function LandingCards({
     handleTouchStart,
     handleTouchMove,
     handleTouchEnd,
-  } = useLandingCards({
+  } = useLandingCardIcons({
     selectedBannerId,
     n,
   });

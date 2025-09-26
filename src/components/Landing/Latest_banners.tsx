@@ -1,10 +1,9 @@
 import { useEffect, useMemo } from "react";
 import { useProsekaData } from "../../context/Data";
-import { usePreloadImage } from "../../hooks/usePreloadImage"; // Import our hook
-
+import { usePreloadImage } from "../../hooks/usePreloadImage"; 
 import { today, imgHost } from "../../constants/common";
 import BannerSwiper from "./Banner_swiper";
-import LandingCards from "./Landing_cards";
+import LandingCardIcons from "./Landing_card_icons";
 import { useState } from "react";
 import BannerDetails from "./Banner_details";
 import type { AllCardTypes, BannerTypes } from "../../types/common";
@@ -171,7 +170,7 @@ export default function LatestBanners() {
           <div className="flex flex-col justify-center items-center w-full sm:w-2/3">
             {/* CARDS*/}
             <div className="min-h-[50px] w-full">
-              <LandingCards
+              <LandingCardIcons
                 selectedBannerId={selectedBannerId}
                 n={selectedServer}
               />
