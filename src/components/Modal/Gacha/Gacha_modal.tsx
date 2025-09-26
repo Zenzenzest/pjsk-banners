@@ -8,17 +8,15 @@ import { ImageLoader } from "../../../hooks/imageLoader";
 import CardIcon from "../../Icons/Icon";
 import { useProsekaData } from "../../../context/Data";
 import { GetCurrentPath, imgHost } from "../../../constants/common";
+import { useGetCardRates } from "./useGetCardRates";
 
-const allowedBannerTypes = [
-  "Event",
-  "Limited Event",
-  "Limited Event Rerun",
-  "Collab",
-  "Unit Limited Event",
-  "Bloom Festival",
-  "Colorful Festival",
+const specialBanners = [
+  "Your Pick",
+  "Memorial Select",
+  "Premium Gift",
+  "Unit Premium Gift",
+  "Normal",
   "Recollection",
-  "World Link Support",
 ];
 
 export default function GachaModal({
@@ -30,10 +28,8 @@ export default function GachaModal({
   const { theme } = useTheme();
   const { server } = useServer();
   const { jpBanners, enBanners, allCards } = useProsekaData();
-  const location = GetCurrentPath()
-  
+  const location = GetCurrentPath();
 
-  
   // Prevent parent scroll
   useEffect(() => {
     if (!isGachaOpen) return;
@@ -71,64 +67,32 @@ export default function GachaModal({
     });
   const iconsLoader = ImageLoader(sortedAndFilteredCards?.length ?? 0);
 
-  let total4starChance = 0;
-  let featured4starChance = 0;
-
-  switch (gachaObj?.banner_type) {
-    case "Limited Event":
-    case "Event":
-    case "Limited Event Rerun":
-    case "Unit Limited Event":
-    case "Collab":
-      total4starChance = 3;
-      featured4starChance = 0.4;
-      break;
-    case "Bloom Festival":
-    case "Colorful Festival":
-      total4starChance = 6;
-      featured4starChance = 0.4;
-      break;
-    case "Recollection":
-      total4starChance = 6;
-      break;
-    case "World Link Support":
-      if (gachaObj.keywords) {
-        if (gachaObj.keywords.length === 0) {
-          total4starChance = 3;
-        } else {
-          total4starChance = 3;
-          featured4starChance = 0.4;
-        }
-      }
-      break;
-  }
-
   const featured4 = gachaObj?.cards;
-
-  const nonFeatured4 = gachaObj?.gachaDetails.filter((card) => {
-    if (gachaObj.keywords) {
-      if (
-        gachaObj.banner_type === "World Link Support" &&
-        gachaObj.keywords.length === 0
-      ) {
-        return (
-          featured4?.includes(card) || gachaObj.gachaDetails.includes(card)
-        );
-      } else {
-        return !featured4?.includes(card);
-      }
-    }
+  const { getCardWeight, getTotal4starChance } = useGetCardRates({
+    cardId: featured4?.[0],
+    bannerId: sekaiId,
   });
-  const totalFeatured4chance =
-    featured4 && Number((featured4starChance * featured4.length).toFixed(1));
-  const totalNonFeatured4chance = Number(
-    (total4starChance - (totalFeatured4chance || 0)).toFixed(3)
-  );
+  const total4starChance = getTotal4starChance();
+  let featured4starChance = getCardWeight() / 1000000;
+  const totalnonF4Chance =
+    total4starChance - featured4starChance * (featured4?.length ?? 0);
+  let nonF4Chance =
+    Math.round(
+      (totalnonF4Chance /
+        (sortedAndFilteredCards.length - (featured4?.length ?? 0))) *
+        1000
+    ) / 1000;
 
-  const nonF4Chance =
-    nonFeatured4 &&
-    totalNonFeatured4chance &&
-    Number((totalNonFeatured4chance / nonFeatured4?.length).toFixed(3));
+  if (
+    specialBanners.includes(gachaObj?.banner_type ?? "") ||
+    (gachaObj?.banner_type === "World Link Support" &&
+      gachaObj?.keywords?.length === 0)
+  ) {
+    featured4starChance = parseFloat(
+      (total4starChance / sortedAndFilteredCards.length).toFixed(3)
+    );
+    nonF4Chance = parseFloat(featured4starChance.toFixed(3));
+  }
 
   if (!isGachaOpen) return null;
 
@@ -276,39 +240,29 @@ export default function GachaModal({
                               iconsLoader={iconsLoader}
                             />
                             {/* RATE */}
-                            {allowedBannerTypes.includes(
-                              gachaObj.banner_type
-                            ) && (
-                              <div
-                                className={`w-full px-2 py-1 rounded-md text-center ${
-                                  theme === "dark"
-                                    ? "bg-gray-700/80 text-gray-200"
-                                    : "bg-gray-100/80 text-gray-700"
-                                }`}
-                              >
-                                <div className="text-xs sm:text-sm font-medium">
-                                  {card.rarity === 4 && (
-                                    <div>
-                                      {" "}
-                                      {(gachaObj.cards.includes(card.id) &&
-                                        gachaObj.banner_type !==
-                                          "Recollection" &&
-                                        gachaObj.banner_type !==
-                                          "World Link Support") ||
-                                      (gachaObj.banner_type ===
-                                        "World Link Support" &&
-                                        gachaObj.keywords &&
-                                        gachaObj.keywords.length !== 0 &&
-                                        gachaObj.cards.includes(card.id)) ? (
-                                        <span>{featured4starChance} %</span>
-                                      ) : (
-                                        <span>{nonF4Chance} %</span>
-                                      )}
-                                    </div>
-                                  )}
-                                </div>{" "}
-                              </div>
-                            )}
+                            <div
+                              className={`w-full px-2 py-1 rounded-md text-center ${
+                                theme === "dark"
+                                  ? "bg-gray-700/80 text-gray-200"
+                                  : "bg-gray-100/80 text-gray-700"
+                              }`}
+                            >
+                              <div className="text-xs sm:text-sm font-medium">
+                                {card.rarity === 4 && (
+                                  <div>
+                                    {" "}
+                                    {gachaObj.cards.includes(card.id) &&
+                                    !specialBanners.includes(
+                                      gachaObj.banner_type
+                                    ) ? (
+                                      <span>{featured4starChance} %</span>
+                                    ) : (
+                                      <span>{nonF4Chance} %</span>
+                                    )}
+                                  </div>
+                                )}
+                              </div>{" "}
+                            </div>
                           </a>
                         </div>
                       );
