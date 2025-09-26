@@ -2,7 +2,7 @@ import { useLandingCardIcons } from "./hooks/useLandingCardIcons";
 
 type LandingCardsProps = {
   selectedBannerId: number;
-  n: number;
+  n: string;
 };
 
 export default function LandingCardIcons({

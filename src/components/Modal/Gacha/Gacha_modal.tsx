@@ -32,6 +32,8 @@ export default function GachaModal({
   const { jpBanners, enBanners, allCards } = useProsekaData();
   const location = GetCurrentPath()
   
+
+  
   // Prevent parent scroll
   useEffect(() => {
     if (!isGachaOpen) return;

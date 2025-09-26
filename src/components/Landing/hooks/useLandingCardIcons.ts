@@ -5,7 +5,7 @@ import type { AllCardTypes } from "../../../types/common";
 
 type UseLandingCardsProps = {
   selectedBannerId: number;
-  n: number;
+  n: string;
 };
 
 export const useLandingCardIcons = ({
@@ -25,7 +25,7 @@ export const useLandingCardIcons = ({
   const animationFrameRef = useRef<number>(0);
 
   const banners = useMemo(
-    () => (n === 0 ? jpBanners : enBanners),
+    () => (n === "jp" ? jpBanners : enBanners),
     [n, jpBanners, enBanners]
   );
 
