@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useProsekaData } from "../context/Data";
-import { imgHost } from "../constants/common";
+import { GetCurrentPath, imgHost } from "../constants/common";
 type UseBannerImageProps = {
   mode: string | undefined;
   server: string;
@@ -16,19 +16,19 @@ export const useBannerEvImg = ({
   banner,
 }: UseBannerImageProps) => {
   const { jpBanners } = useProsekaData();
-
+  const location = GetCurrentPath();
 
   const getBannerImageUrl = useCallback(() => {
     if (mode === "gacha") {
-      return server === "global" || server === "saved"
+      return server === "global" || location === "/saved"
         ? `${imgHost}/en_banners/${banner.id}.webp`
         : `${imgHost}/jp_banners/${banner.id}.webp`;
     } else {
-      return server === "global" || server === "saved"
+      return server === "global" || location === "/saved"
         ? `${imgHost}/en_events/${banner.event_id}.webp`
         : `${imgHost}/jp_events/${banner.event_id}.webp`;
     }
-  }, [mode, server, banner.id, banner.event_id]);
+  }, [mode, server, banner.id, banner.event_id,location]);
 
   // using jp image as a fallback
   const handleImageError = useCallback(
@@ -38,7 +38,7 @@ export const useBannerEvImg = ({
 
       if (mode === "gacha") {
         const en_id = Number(target.alt);
-        if (server === "global" || server === "saved") {
+        if (server === "global" || location === "/saved") {
           const jp_variant = jpBanners.find((item) => item.en_id == en_id);
           target.src = jp_variant
             ? `${imgHost}/jp_banners/${jp_variant.id}.webp`
@@ -54,7 +54,7 @@ export const useBannerEvImg = ({
         target.src = `${imgHost}/jp_events/${event_id}.webp`;
       }
     },
-    [mode, server]
+    [mode, server,location,jpBanners]
   );
 
   return {

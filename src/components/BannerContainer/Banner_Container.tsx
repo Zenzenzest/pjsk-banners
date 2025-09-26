@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { useTheme } from "../../context/Theme_toggle";
-import { useServer } from "../../context/Server";
 import CardModal from "../Modal/Card/Card_modal";
 import Disclaimer from "./Disclaimer";
 import type { BannerContainerProps } from "./BannerTypes";
@@ -8,6 +7,7 @@ import type { BannerTypes } from "../../types/common";
 import Grid from "./Grid/Grid";
 import EventModal from "../Modal/Event/Event_modal";
 import GachaModal from "../Modal/Gacha/Gacha_modal";
+import { GetCurrentPath } from "../../constants/common";
 
 export default function BannerContainer({
   filteredBanners,
@@ -17,17 +17,18 @@ export default function BannerContainer({
 }: BannerContainerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const { theme } = useTheme();
-  const { server } = useServer();
+
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(true);
   const [showScrollButton, setShowScrollButton] = useState(false);
   const [isEventOpen, setIsEventOpen] = useState(false);
   const [isGachaOpen, setIsGachaOpen] = useState(false);
-  const [cardId, setCardId] = useState(0)
+  const [cardId, setCardId] = useState(0);
   const [eventId, setEventId] = useState(0);
   const [gachaId, setGachaId] = useState(0);
   const [sekaiId, setSekaiId] = useState(0);
+  const location = GetCurrentPath();
   // scroll detection
   useEffect(() => {
     const handleScroll = () => {
@@ -54,7 +55,7 @@ export default function BannerContainer({
   };
 
   const handleCardClick = (cardId: number) => {
-    setCardId(cardId)
+    setCardId(cardId);
     setIsOpen(true);
   };
 
@@ -90,7 +91,7 @@ export default function BannerContainer({
     <div
       className={`min-h-screen transition-colors duration-300 pb-5 ${
         theme === "dark" ? "bg-gray-900" : "bg-gray-50"
-      } ${server === "saved" ? "mt-2" : ""}`}
+      } ${location === "/saved" ? "mt-2" : ""}`}
     >
       <div ref={containerRef} className="max-w-7xl  mx-auto px-1 py-1">
         {/* DISCLAIMER */}
@@ -98,7 +99,7 @@ export default function BannerContainer({
           selectedYear &&
           ((selectedMonth >= 10 && selectedYear === 2025) ||
             selectedYear >= 2026)) ||
-          server === "saved") && <Disclaimer />}
+          location === "/saved") && <Disclaimer />}
 
         {/* GRID */}
         <div className="pb-2 grid grid-cols-1 lg:grid-cols-2 gap-6">

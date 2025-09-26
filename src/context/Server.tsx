@@ -1,7 +1,7 @@
 import { createContext, useState, useContext, useEffect } from "react";
 import type { ReactNode } from "react";
 
-type ServerType = "jp" | "global" | "saved";
+type ServerType = "jp" | "global";
 
 type ServerContextType = {
   server: ServerType;
@@ -17,28 +17,18 @@ const ServerContext = createContext<ServerContextType | undefined>(undefined);
 export const ServerProvider = ({ children }: ServerProviderProps) => {
   const [server, setServerState] = useState<ServerType>("global");
 
-
   // Initialize from localStorage on mount, but check if on /saved route
   useEffect(() => {
     // Check if /saved route
-    const isSavedRoute = window.location.pathname === "/saved";
-    
-    if (isSavedRoute) {
-      setServerState("saved");
-    } else {
-      const savedServer = localStorage.getItem("serverPreference") as ServerType;
-      if (savedServer && ["jp", "global", "saved"].includes(savedServer)) {
-        setServerState(savedServer);
-      }
+
+    const savedServer = localStorage.getItem("serverPreference") as ServerType;
+    if (savedServer && ["jp", "global"].includes(savedServer)) {
+      setServerState(savedServer);
     }
   }, []);
 
   const setServer = (newServer: ServerType) => {
     setServerState(newServer);
-
-    if (newServer !== "saved") {
-      localStorage.setItem("serverPreference", newServer);
-    }
   };
 
   return (

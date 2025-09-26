@@ -1,13 +1,11 @@
 import { useTheme } from "../../context/Theme_toggle";
 import { useServer } from "../../context/Server";
 import { useMemo } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function ServerToggle() {
   const { server, setServer } = useServer();
   const { theme } = useTheme();
-  const navigate = useNavigate();
-  const location = useLocation();
 
   // base styles
   const containerStyles = useMemo(() => {
@@ -24,6 +22,9 @@ export default function ServerToggle() {
       inactiveButton: isLight
         ? "hover:bg-gray-100 text-gray-700"
         : "hover:bg-gray-700/50 text-gray-300",
+      homeIcon: isLight
+        ? "text-gray-700 hover:text-gray-900"
+        : "text-gray-300 hover:text-gray-100",
     };
   }, [theme]);
 
@@ -39,27 +40,15 @@ export default function ServerToggle() {
 
   const handleJPClick = () => {
     setServer("jp");
-    if (location.pathname === "/saved") {
-      navigate("/calendar");
-    }
   };
 
   const handleGlobalClick = () => {
     setServer("global");
-    if (location.pathname === "/saved") {
-    navigate("/calendar");
-    }
-  };
-
-  const handleSavedClick = () => {
-    setServer("saved");
-    navigate("/saved");
   };
 
   // Determine active state
   const isJPActive = server === "jp";
   const isGlobalActive = server === "global";
-  const isSavedActive = server === "saved";
 
   // button classes
   const jpClass = useMemo(
@@ -70,44 +59,54 @@ export default function ServerToggle() {
     () => getButtonClass(isGlobalActive),
     [getButtonClass, isGlobalActive]
   );
-  const savedClass = useMemo(
-    () => getButtonClass(isSavedActive),
-    [getButtonClass, isSavedActive]
-  );
 
   return (
     <div className={containerStyles.container}>
-      <div className="flex w-full justify-evenly items-center">
-        {/* JP SERVER */}
-        <button
-          onClick={handleJPClick}
-          className={jpClass}
-          type="button"
-          aria-pressed={isJPActive}
+      <div className="flex w-full justify-between items-center">
+        {/* HOME BUTTON */}
+        <Link
+          to="/"
+          className={`p-2 rounded-md hover:opacity-80 w-1/5 transition-opacity ${containerStyles.homeIcon}`}
+          aria-label="Home"
         >
-          JP
-        </button>
+          <svg
+            className="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            />
+          </svg>
+        </Link>
 
-        {/* GLOBAL SERVER */}
-        <button
-          onClick={handleGlobalClick}
-          className={globalClass}
-          type="button"
-          aria-pressed={isGlobalActive}
-        >
-          Global
-        </button>
+        {/* SERVER BUTTONS */}
+        <div className="flex justify-center gap-5 items-center w-3/5">
+          {/* JP SERVER */}
+          <button
+            onClick={handleJPClick}
+            className={jpClass}
+            type="button"
+            aria-pressed={isJPActive}
+          >
+            JP
+          </button>
 
-        {/* SAVED BANNERS */}
-        <button
-          onClick={handleSavedClick}
-          className={savedClass}
-          type="button"
-          aria-pressed={isSavedActive}
-        >
-          <span className="sm:hidden">Saved</span>
-          <span className="hidden sm:inline">Saved Banners</span>
-        </button>
+          {/* GLOBAL SERVER */}
+          <button
+            onClick={handleGlobalClick}
+            className={globalClass}
+            type="button"
+            aria-pressed={isGlobalActive}
+          >
+            Global
+          </button>
+        </div>
+        <div className="w-1/5"></div>
       </div>
     </div>
   );

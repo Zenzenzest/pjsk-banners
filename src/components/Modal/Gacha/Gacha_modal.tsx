@@ -7,7 +7,7 @@ import type { GachaModalProps } from "./GachaModalTypes";
 import { ImageLoader } from "../../../hooks/imageLoader";
 import CardIcon from "../../Icons/Icon";
 import { useProsekaData } from "../../../context/Data";
-import { imgHost } from "../../../constants/common";
+import { GetCurrentPath, imgHost } from "../../../constants/common";
 
 const allowedBannerTypes = [
   "Event",
@@ -30,6 +30,8 @@ export default function GachaModal({
   const { theme } = useTheme();
   const { server } = useServer();
   const { jpBanners, enBanners, allCards } = useProsekaData();
+  const location = GetCurrentPath()
+  
   // Prevent parent scroll
   useEffect(() => {
     if (!isGachaOpen) return;
@@ -42,7 +44,7 @@ export default function GachaModal({
     };
   }, [isGachaOpen, gachaId]);
   const AllGacha =
-    server === "global" || server === "saved" ? enBanners : jpBanners;
+    server === "global" || location === "/saved" ? enBanners : jpBanners;
 
   const gachaObj = AllGacha.find((gacha) => gacha.id === gachaId);
 

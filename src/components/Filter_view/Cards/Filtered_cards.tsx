@@ -13,6 +13,7 @@ import { cardTypeMapping } from "../Filter_constants";
 import Pagination from "../Ui/Pagination";
 import CardThumbnail from "./Card_thumbnail";
 import { useProsekaData } from "../../../context/Data";
+import { GetCurrentPath } from "../../../constants/common";
 
 export default function FilteredCards({
   selectedCardFilters,
@@ -25,7 +26,7 @@ export default function FilteredCards({
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
   const [cardsPerPage] = useState(20);
   const [shouldScrollToTop, setShouldScrollToTop] = useState(false);
-
+  const location = GetCurrentPath()
   const { allCards } = useProsekaData();
 
   const filteredCardsRef = useRef<HTMLDivElement>(null);
@@ -50,7 +51,7 @@ export default function FilteredCards({
       rarity: card.rarity,
       name: card.character,
       cardName:
-        server === "global" || server === "saved" ? card.name : card.jp_name,
+        server === "global" || location === "/saved" ? card.name : card.jp_name,
       cardAttribute: card.attribute,
       sekaiId: card.id,
       cardType: card.card_type,
@@ -68,7 +69,7 @@ export default function FilteredCards({
   const filteredCards = allCards.filter((card) => {
     // Filter out skipped en cards (rui2) or unpredictable release date (collab cards)
 
-    if (server === "global" || server === "saved") {
+    if (server === "global" || location === "/saved") {
       if (today < card.en_released || card.en_released <= 0) {
         return false;
       }
@@ -123,7 +124,7 @@ export default function FilteredCards({
 
     const searchTerm = selectedCardFilters.search.toLowerCase().trim();
     const nameToSearch =
-      server === "global" || server === "saved" ? card.name : card.jp_name;
+      server === "global" || location === "/saved" ? card.name : card.jp_name;
     const nameMatch = nameToSearch?.toLowerCase().includes(searchTerm) || false;
 
     return (
@@ -137,7 +138,7 @@ export default function FilteredCards({
   });
 
   const sortedCards = [...filteredCards].sort((a, b) => {
-    const isGlobalServer = server === "global" || server === "saved";
+    const isGlobalServer = server === "global" || location === "/saved";
     const isMovieFilter =
       selectedCardFilters.Type.length === 1 &&
       selectedCardFilters.Type[0] === "Movie";

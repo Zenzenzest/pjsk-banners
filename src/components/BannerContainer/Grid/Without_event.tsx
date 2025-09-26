@@ -3,19 +3,19 @@ import { useTheme } from "../../../context/Theme_toggle";
 import EventEndedTimer from "../Timers/EventEnded_timer";
 import CountdownTimer from "../Timers/Countdown_timer";
 import type { WithoutEventProps } from "../BannerTypes";
+import { GetCurrentPath } from "../../../constants/common";
 export default function WithoutEvent({
   banner,
- 
+
   handleSaveBanner,
   isBannerSaved,
-}:WithoutEventProps) {
+}: WithoutEventProps) {
   const { theme } = useTheme();
   const { server } = useServer();
   const today = Date.now();
   const startDate = new Date(Number(banner.start));
-
   const endDate = new Date(Number(banner.end));
-
+  const location = GetCurrentPath();
   const formattedStart = startDate.toLocaleDateString("en-US", {
     year: "numeric",
     month: "short",
@@ -118,56 +118,57 @@ export default function WithoutEvent({
         )}
       </div>
       {/* SAVE BUTTON */}
-      {(server === "global" || server === "saved") && (today < banner.start || isBannerSaved(banner.id)) && (
-        <button
-          onClick={() => handleSaveBanner(banner.id)}
-          className={`inline-flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-            isBannerSaved(banner.id)
-              ? theme === "dark"
-                ? "bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/20"
-                : "bg-red-50 hover:bg-red-100 text-red-600 border border-red-200"
-              : theme === "dark"
-              ? "bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/20"
-              : "bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200"
-          }`}
-        >
-          {isBannerSaved(banner.id) ? (
-            <>
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-              <span>Remove from Saved</span>
-            </>
-          ) : (
-            <>
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"
-                />
-              </svg>
-              <span>Save Banner</span>
-            </>
-          )}
-        </button>
-      )}
+      {(server === "global" || location === "/saved") &&
+        (today < banner.start || isBannerSaved(banner.id)) && (
+          <button
+            onClick={() => handleSaveBanner(banner.id)}
+            className={`inline-flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+              isBannerSaved(banner.id)
+                ? theme === "dark"
+                  ? "bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/20"
+                  : "bg-red-50 hover:bg-red-100 text-red-600 border border-red-200"
+                : theme === "dark"
+                ? "bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/20"
+                : "bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200"
+            }`}
+          >
+            {isBannerSaved(banner.id) ? (
+              <>
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+                <span>Remove from Saved</span>
+              </>
+            ) : (
+              <>
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"
+                  />
+                </svg>
+                <span>Save Banner</span>
+              </>
+            )}
+          </button>
+        )}
     </div>
   );
 }

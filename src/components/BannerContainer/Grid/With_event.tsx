@@ -10,6 +10,7 @@ import { ImageLoader } from "../../../hooks/imageLoader";
 import { useBannerEvImg } from "../../../hooks/useBannerEvImg";
 import type { WithEventProps } from "../BannerTypes";
 import { useProsekaData } from "../../../context/Data";
+import { GetCurrentPath } from "../../../constants/common";
 
 export default function WithEvent({
   mode,
@@ -30,11 +31,12 @@ export default function WithEvent({
     server,
     banner,
   });
-
+  const location = GetCurrentPath();
   const today = Date.now();
 
   const EventObj =
-    (server === "global" || server === "saved") && mode === "event"
+    (server === "global" && mode === "event") ||
+    (server === "jp" && location === "/saved")
       ? enEvents.find((item) => item.id === banner.event_id)
       : jpEvents.find((item) => item.id === banner.event_id);
 
@@ -289,7 +291,7 @@ export default function WithEvent({
           </div>
         )}
         {/* SAVE BUTTON */}
-        {(server === "global" || server === "saved") &&
+        {(server === "global" || location === "/saved") &&
           (today < banner.start || isBannerSaved(banner.id)) &&
           mode === "gacha" &&
           banner.event_id && (

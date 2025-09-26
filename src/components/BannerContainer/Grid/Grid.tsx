@@ -4,6 +4,7 @@ import { useProsekaData } from "../../../context/Data";
 import type { GridProps } from "../BannerTypes";
 import WithEvent from "./With_event";
 import WithoutEvent from "./Without_event";
+import { GetCurrentPath } from "../../../constants/common";
 
 export default function Grid({
   banner,
@@ -14,8 +15,8 @@ export default function Grid({
 }: GridProps) {
   const [savedBanners, setSavedBanners] = useState<number[]>([]);
   const { server } = useServer();
-  const { jpEvents, enEvents } = useProsekaData(); 
-
+  const { jpEvents, enEvents } = useProsekaData();
+  const location = GetCurrentPath();
   useEffect(() => {
     const loadSavedBanners = () => {
       const saved = localStorage.getItem("banners");
@@ -70,7 +71,7 @@ export default function Grid({
   };
 
   const EventObj =
-    (server === "global" || server === "saved") && mode === "event"
+    (server === "global" || location === "/saved") && mode === "event"
       ? enEvents.find((item) => item.id === banner.event_id)
       : jpEvents.find((item) => item.id === banner.event_id);
 

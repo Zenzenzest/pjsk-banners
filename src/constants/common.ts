@@ -1,5 +1,6 @@
 import { useProsekaData } from "../context/Data";
 import { useServer } from "../context/Server";
+import {useLocation} from "react-router-dom"
 export const grouped: Record<string, string[]> = {
   "Virtual Singers": [
     "Hatsune Miku",
@@ -103,10 +104,18 @@ export const Banners = () => {
   const { server } = useServer();
   const { jpBanners, enBanners } = useProsekaData();
   const GcObj =
-    server === "global" || server === "saved" ? enBanners : jpBanners;
+    server === "global" ? enBanners : jpBanners;
   return GcObj;
 };
+
+
 
 export const imgHost = "https://r2-image-proxy.zenzenzest.workers.dev"
 
 export const specialCardTypes = ["limited_collab","movie_exclusive"]
+
+export const GetCurrentPath = () => {
+  const location = useLocation()
+  const currentPath = location.pathname
+  return currentPath
+}

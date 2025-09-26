@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from "react";
 import { useProsekaData } from "../../context/Data";
-import { usePreloadImage } from "../../hooks/usePreloadImage"; 
+import { usePreloadImage } from "../../hooks/usePreloadImage";
 import { today, imgHost } from "../../constants/common";
 import BannerSwiper from "./Banner_swiper";
 import LandingCardIcons from "./Landing_card_icons";
@@ -63,16 +63,18 @@ export default function LatestBanners() {
     return imgPath;
   };
 
-  const getCardsForBanner = (banner: BannerTypes) => {
-    if (!banner) return [];
+  const getCardsForBanner = useMemo(() => {
+    return (banner: BannerTypes) => {
+      if (!banner) return [];
 
-    if (banner.event_id) {
-      const eventData = jpEvents.find((ev) => ev.id === banner.event_id);
-      return allCards.filter((card) => eventData?.cards.includes(card.id));
-    } else {
-      return allCards.filter((card) => banner.cards.includes(card.id));
-    }
-  };
+      if (banner.event_id) {
+        const eventData = jpEvents.find((ev) => ev.id === banner.event_id);
+        return allCards.filter((card) => eventData?.cards.includes(card.id));
+      } else {
+        return allCards.filter((card) => banner.cards.includes(card.id));
+      }
+    };
+  }, [jpEvents, allCards]);
 
   const getLatestBanners = (banners: BannerTypes[]) => {
     return banners.filter((banner) => {
@@ -103,11 +105,10 @@ export default function LatestBanners() {
       cards.forEach((card) => {
         allImageUrls.push(getCardImagePath(card));
       });
-      console.log(banner);
     });
 
     return allImageUrls;
-  }, [jpBanners, enBanners, allCards, jpEvents]);
+  }, [jpBanners, enBanners, allCards, getCardsForBanner]);
 
   //  preload all images
   usePreloadImage(allImageUrls);

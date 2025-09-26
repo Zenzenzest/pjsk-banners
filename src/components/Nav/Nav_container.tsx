@@ -1,6 +1,4 @@
 import { useTheme } from "../../context/Theme_toggle";
-import { useServer } from "../../context/Server";
-import SavedBannersContainer from "../SavedBanners/SavedBanners_container";
 
 import { useProsekaData } from "../../context/Data";
 import LoadingComponent from "../Loading";
@@ -8,7 +6,6 @@ import { NavLink, Outlet } from "react-router-dom";
 import ServerToggle from "../Server/Server_toggle";
 
 export default function NavigationContainer() {
-  const { server } = useServer();
   const { theme } = useTheme();
   const { loading } = useProsekaData();
 
@@ -29,46 +26,47 @@ export default function NavigationContainer() {
         : `${baseClass} hover:bg-gray-100 text-gray-600 border border-transparent`;
     }
   };
-
+  if (loading) {
+    return <LoadingComponent />;
+  }
   return (
     <div>
       <ServerToggle />
       <div className="flex flex-col h-full">
-        {server !== "saved" ? (
-          <div>
-            {/* NAVIGATION TABS */}
-            <nav
-              className={`w-full flex items-center justify-center min-h-[44px] ${
-                theme === "dark" ? "bg-gray-800" : "bg-white"
-              } shadow-sm border ${
-                theme === "dark" ? "border-gray-700" : "border-gray-200"
-              }`}
-            >
-              <div className="flex w-full">
-                <NavLink to="/calendar" className={getNavLinkClass} end>
-                  <span className="truncate">Calendar</span>
-                </NavLink>
-                <NavLink to="/filter" className={getNavLinkClass}>
-                  <span className="truncate">Filter/Search</span>
-                </NavLink>
-                <NavLink to="/stats" className={getNavLinkClass}>
-                  <span className="truncate">Stats</span>
-                </NavLink>
-              </div>
-            </nav>
+        <div>
+          {/* NAVIGATION TABS */}
+          <nav
+            className={`w-full flex items-center justify-center min-h-[44px] ${
+              theme === "dark" ? "bg-gray-800" : "bg-white"
+            } shadow-sm border ${
+              theme === "dark" ? "border-gray-700" : "border-gray-200"
+            }`}
+          >
+            <div className="flex w-full">
+              <NavLink to="/calendar" className={getNavLinkClass} end>
+                <span className="truncate">Calendar</span>
+              </NavLink>
+              <NavLink to="/filter" className={getNavLinkClass}>
+                <span className="truncate">Filter/Search</span>
+              </NavLink>
+              <NavLink to="/stats" className={getNavLinkClass}>
+                <span className="truncate">Stats</span>
+              </NavLink>{" "}
+              <NavLink to="/saved" className={getNavLinkClass}>
+                <span className="truncate">Saved</span>
+              </NavLink>
+            </div>
+          </nav>
 
-            {loading ? (
-              <LoadingComponent />
-            ) : (
-              <div>
-                {/* ROUTER CONTENT */}
-                <Outlet />
-              </div>
-            )}
-          </div>
-        ) : (
-          <SavedBannersContainer />
-        )}
+          {loading ? (
+            <LoadingComponent />
+          ) : (
+            <div>
+              {/* ROUTER CONTENT */}
+              <Outlet />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
