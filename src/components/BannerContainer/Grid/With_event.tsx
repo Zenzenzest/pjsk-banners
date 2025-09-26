@@ -12,6 +12,8 @@ import type { WithEventProps } from "../BannerTypes";
 import { useProsekaData } from "../../../context/Data";
 import { GetCurrentPath } from "../../../constants/common";
 
+const notAllowedBanners = ["Birthday", "4★ Guaranteed"];
+
 export default function WithEvent({
   mode,
   banner,
@@ -140,7 +142,7 @@ export default function WithEvent({
                 EventObj?.event_type !== "login" &&
                 banner.event_id !== undefined
                   ? () => handleEventClick(banner.event_id)
-                  : banner.banner_type !== "Birthday" &&
+                  : !notAllowedBanners.includes(banner.banner_type) &&
                     EventObj?.event_type !== "login" &&
                     mode === "gacha"
                   ? () => handleGachaClick(banner.sekai_id, banner.id)
