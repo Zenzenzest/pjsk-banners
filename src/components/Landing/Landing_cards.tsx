@@ -1,8 +1,4 @@
-import { imgHost } from "../../constants/common";
-import { useProsekaData } from "../../context/Data";
-import { useState, useEffect, useRef, useCallback, useMemo } from "react";
-import { preload } from 'react-dom';
-import type { AllCardTypes } from "../../types/common";
+import { useLandingCards } from "./hooks/useLandingCards";
 
 type LandingCardsProps = {
   selectedBannerId: number;
@@ -13,143 +9,42 @@ export default function LandingCards({
   selectedBannerId,
   n,
 }: LandingCardsProps) {
-  const { allCards, jpBanners, enBanners, jpEvents } = useProsekaData();
-  const banners = n === 0 ? jpBanners : enBanners;
-  
-  // Use useMemo to recalculate when dependencies change
-  const bannerData = useMemo(() => 
-    banners.find((banner) => banner.id === selectedBannerId),
-    [banners, selectedBannerId]
-  );
+  const {
+    setIsHovering,
+    isAtStart,
+    isAtEnd,
+    isDragging,
+    cardsData,
+    shouldUseCarousel,
+    visibleCardIndices,
+    containerRef,
+    cardRefs,
+    getImagePath,
+    scrollToNext,
+    scrollToPrev,
+    scrollToIndex,
+    handleMouseDown,
+    handleMouseMove,
+    handleMouseUp,
+    handleMouseLeave,
+    handleTouchStart,
+    handleTouchMove,
+    handleTouchEnd,
+  } = useLandingCards({
+    selectedBannerId,
+    n,
+  });
 
-  const bannerCardsData = useMemo(() => 
-    allCards.filter((card) => bannerData?.cards.includes(card.id)),
-    [allCards, bannerData]
-  );
-
-  const eventId = bannerData?.event_id;
-  const eventData = useMemo(() => 
-    jpEvents.find((ev) => ev.id === eventId),
-    [jpEvents, eventId]
-  );
-
-  const eventCardsData = useMemo(() => 
-    allCards.filter((card) => eventData?.cards.includes(card.id)),
-    [allCards, eventData]
-  );
-
-  const cardsData = useMemo(() => 
-    eventId != undefined ? eventCardsData : bannerCardsData,
-    [eventId, eventCardsData, bannerCardsData]
-  );
-
-  // Helper function to get image path
-  const getImagePath = useCallback((card: AllCardTypes) => {
-    const imgPath =
-      card.rarity === 5
-        ? "_bd.webp"
-        : card.rarity === 4 || card.rarity === 3
-        ? "_t.webp"
-        : ".webp";
-    return `${imgHost}/icons/${card.id}${imgPath}`;
-  }, []);
-
-  // Preload images when cardsData changes
-  useEffect(() => {
-    if (cardsData.length === 0) return;
-
-    // Preload all card images
-    cardsData.forEach((card) => {
-      const imageUrl = getImagePath(card);
-      preload(imageUrl, { as: 'image' });
-    });
-  }, [cardsData, getImagePath]);
-
-  // Reset carousel state when cardsData changes
-  const [visibleCardIndices, setVisibleCardIndices] = useState<number[]>([]);
-  const shouldUseCarousel = cardsData.length > 6;
-  const containerRef = useRef<HTMLDivElement>(null);
-  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
-
-  // Reset carousel when cards change
-  useEffect(() => {
-    if (!shouldUseCarousel) {
-      setVisibleCardIndices([]);
-      return;
-    }
-    
-    // Reset to show first few cards
-    const initialVisibleCount = Math.min(6, cardsData.length);
-    setVisibleCardIndices(Array.from({ length: initialVisibleCount }, (_, i) => i));
-    
-    // Reset scroll position
-    if (containerRef.current) {
-      containerRef.current.scrollLeft = 0;
-    }
-  }, [cardsData, shouldUseCarousel, selectedBannerId, n]); 
-  
-
-  const updateVisibleCards = useCallback(() => {
-    if (!containerRef.current || !shouldUseCarousel) return;
-
-    const container = containerRef.current;
-    const containerRect = container.getBoundingClientRect();
-    const newVisibleIndices: number[] = [];
-
-    cardRefs.current.forEach((cardEl, index) => {
-      if (!cardEl) return;
-
-      const cardRect = cardEl.getBoundingClientRect();
-      const cardCenter = cardRect.left + cardRect.width / 2;
-      const containerLeft = containerRect.left;
-      const containerRight = containerRect.right;
-
-      const tolerance = cardRect.width * 0.3;
-      if (
-        cardCenter >= containerLeft - tolerance &&
-        cardCenter <= containerRight + tolerance
-      ) {
-        newVisibleIndices.push(index);
-      }
-    });
-
-    setVisibleCardIndices(newVisibleIndices);
-  }, [shouldUseCarousel]);
-
-  // Scroll effect 
-  useEffect(() => {
-    if (!shouldUseCarousel) return;
-
-    const container = containerRef.current;
-    if (!container) return;
-
-    const handleScroll = () => {
-      updateVisibleCards();
-    };
-
-    container.addEventListener("scroll", handleScroll, { passive: true });
-    container.addEventListener("scrollend", handleScroll, { passive: true });
-
-    // Initial update
-    const timeoutId = setTimeout(updateVisibleCards, 50);
-
-    return () => {
-      container.removeEventListener("scroll", handleScroll);
-      container.removeEventListener("scrollend", handleScroll);
-      clearTimeout(timeoutId);
-    };
-  }, [shouldUseCarousel, updateVisibleCards, cardsData]); 
-
-  // DEFAULT 
+  //  DEFAULT
   if (!shouldUseCarousel) {
     return (
       <div className="flex flex-row justify-between items-center gap-1 max-w-[454px] p-1 mx-auto sm:min-h-[117px] min-h-[90px]">
         {cardsData.map((card, i) => {
           if (i >= 6) return null;
-              
+
           return (
             <img
-              key={`${card.id}-${selectedBannerId}-${n}-${i}`} 
+              key={`${card.id}-${selectedBannerId}-${n}-${i}`}
               src={getImagePath(card)}
               alt={`${card.id}-${card.character}`}
               className={`${
@@ -162,16 +57,82 @@ export default function LandingCards({
     );
   }
 
-  // SCROLL 
+  // SCROLL
   return (
-    <div className="relative w-full mx-auto">
+    <div
+      className="relative w-full mx-auto"
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
+      {/* FADE GRADIENTS */}
+      {shouldUseCarousel && !isAtStart && (
+        <div className="absolute left-0 top-0 bottom-0 w-6 bg-gradient-to-r  z-10 pointer-events-none" />
+      )}
+      {shouldUseCarousel && !isAtEnd && (
+        <div className="absolute right-0 top-0 bottom-0 w-6 bg-gradient-to-l   z-10 pointer-events-none" />
+      )}
+
+      {/* BUTTONS*/}
+      {shouldUseCarousel && !isAtStart && (
+        <button
+          onClick={scrollToPrev}
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 z-30  bg-black/30 hover:bg-black/50 border border-gray-300 rounded-full w-8 h-8 flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110"
+          aria-label="Previous cards"
+        >
+          <svg
+            className="w-4 h-4 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+      )}
+
+      {shouldUseCarousel && !isAtEnd && (
+        <button
+          onClick={scrollToNext}
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 z-30  bg-black/30 hover:bg-black/50 border border-gray-300 rounded-full w-8 h-8 flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110"
+          aria-label="Next cards"
+        >
+          <svg
+            className="w-4 h-4 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      )}
       <div
         ref={containerRef}
-        className="relative flex flex-row items-center gap-1 max-w-[450px] p-1 mx-auto sm:min-h-[117px] min-h-[90px] overflow-x-auto scrollbar-hide"
+        className={`relative flex flex-row items-center gap-1 max-w-[450px] p-1 mx-auto sm:min-h-[117px] min-h-[90px] overflow-x-auto scrollbar-hide ${
+          isDragging ? "cursor-grabbing" : "cursor-grab"
+        }`}
         style={{
-          scrollSnapType: "x mandatory",
+          scrollSnapType: isDragging ? "none" : "x mandatory",
           scrollBehavior: "smooth",
+          userSelect: "none",
         }}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseLeave}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
         <div className="flex flex-row gap-1 min-w-max">
           {cardsData.map((card, i) => {
@@ -188,7 +149,8 @@ export default function LandingCards({
                   scrollSnapAlign: "start",
                   opacity: isVisible ? 1 : 0.4,
                   transform: isVisible ? "scale(1)" : "scale(0.85)",
-                  transition: "opacity 200ms ease-out, transform 200ms ease-out",
+                  transition:
+                    "opacity 200ms ease-out, transform 200ms ease-out",
                 }}
               >
                 <img
@@ -201,6 +163,27 @@ export default function LandingCards({
           })}
         </div>
       </div>
+
+      {/* DOTS INDICATOR */}
+      {shouldUseCarousel && (
+        <div className="flex justify-center mt-1 gap-1">
+          {Array.from({ length: Math.ceil(cardsData.length / 3) }, (_, i) => {
+            const isActive = visibleCardIndices.some(
+              (idx) => Math.floor(idx / 3) === i
+            );
+            return (
+              <button
+                key={i}
+                onClick={() => scrollToIndex(i * 3)}
+                className={`w-1 h-1 rounded-full transition-colors ${
+                  isActive ? "bg-[#72bcf2]" : "bg-gray-300"
+                }`}
+                aria-label={`Go to card group ${i + 1}`}
+              />
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
