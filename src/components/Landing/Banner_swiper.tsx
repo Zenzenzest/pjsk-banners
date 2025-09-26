@@ -1,20 +1,20 @@
-
 import type { BannerTypes } from "../../types/common";
 import { imgHost } from "../../constants/common";
-import { useCarousel } from "./useCarousel";
+import { useBannerSwiper } from "./hooks/useBannerSwiper";
+import GachaModal from "../Modal/Gacha/Gacha_modal";
 
 interface CarouselProps {
   latestBanners: BannerTypes[];
-  n: number;
-  currentIndex: number; 
+  n: string;
+  currentIndex: number;
   setSelectedBannerId: (id: number) => void;
 }
 
-export default function Carousel({ 
-  latestBanners, 
-  n, 
-  currentIndex, 
-  setSelectedBannerId 
+export default function Carousel({
+  latestBanners,
+  n,
+  currentIndex,
+  setSelectedBannerId,
 }: CarouselProps) {
   const maxThumbnails = 4;
 
@@ -27,10 +27,15 @@ export default function Carousel({
     canGoToNextThumbnailPage,
     canGoToPrevThumbnailPage,
     goToSlide,
-  } = useCarousel({ 
-    latestBanners, 
+    handleGachaClick,
+    handleCloseModal,
+    sekaiId,
+    gachaId,
+    isGachaOpen,
+  } = useBannerSwiper({
+    latestBanners,
     maxThumbnails,
-    currentIndex 
+    currentIndex,
   });
 
   const handleGoToSlide = (index: number) => {
@@ -39,12 +44,14 @@ export default function Carousel({
   };
 
   const handleGoToPrev = () => {
-    const newIndex = currentIndex === 0 ? latestBanners.length - 1 : currentIndex - 1;
+    const newIndex =
+      currentIndex === 0 ? latestBanners.length - 1 : currentIndex - 1;
     handleGoToSlide(newIndex);
   };
 
   const handleGoToNext = () => {
-    const newIndex = currentIndex === latestBanners.length - 1 ? 0 : currentIndex + 1;
+    const newIndex =
+      currentIndex === latestBanners.length - 1 ? 0 : currentIndex + 1;
     handleGoToSlide(newIndex);
   };
 
@@ -54,25 +61,28 @@ export default function Carousel({
     }
   };
 
-  const imgPath = n === 0 ? `${imgHost}/jp_banners` : `${imgHost}/en_banners`;
+  const imgPath =
+    n === "jp" ? `${imgHost}/jp_banners` : `${imgHost}/en_banners`;
 
   return (
     <div className="max-w-[450px] mx-auto">
       <div className="relative overflow-hidden rounded-xl">
         {/* SLIDE CONTAINER */}
         <div
-          className="flex transition-transform duration-300 ease-in-out"
+          className="flex  duration-300 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {latestBanners.map((banner, index) => {
-            const path = n === 0 ? `${imgHost}/jp_banners` : `${imgHost}/en_banners`;
+            const path =
+              n === "jp" ? `${imgHost}/jp_banners` : `${imgHost}/en_banners`;
             return (
               <div key={index} className="w-full flex-shrink-0">
                 <div className="flex items-center justify-center">
                   <img
                     src={`${path}/${banner.id}.webp`}
                     alt={`Slide ${index + 1}`}
-                    className="object-contain max-w-full"
+                    className="object-contain max-w-full cursor-pointer"
+                    onClick={() => handleGachaClick(banner.sekai_id, banner.id)}
                   />
                 </div>
               </div>
@@ -212,7 +222,12 @@ export default function Carousel({
           </button>
         )}
       </div>
+      <GachaModal
+        isGachaOpen={isGachaOpen}
+        onClose={handleCloseModal}
+        gachaId={gachaId}
+        sekaiId={sekaiId}
+      />
     </div>
   );
 }
-

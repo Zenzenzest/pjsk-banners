@@ -8,6 +8,7 @@ import { useState } from "react";
 import BannerDetails from "./Banner_details";
 import { useBannerCountdown } from "./hooks/useBannerCountdown";
 import type { AllCardTypes, BannerTypes } from "../../types/common";
+import { useServer } from "../../context/Server";
 
 const allowedBanners = [
   "Collab",
@@ -20,11 +21,11 @@ const allowedBanners = [
 ];
 
 export default function LatestBanners() {
-  const [selectedServer, setSelectedServer] = useState(0);
+  const { server, setServer } = useServer();
 
   const { jpBanners, enBanners, allCards, jpEvents } = useProsekaData();
   const [selectedBannerId, setSelectedBannerId] = useState<number>(0);
-  const bannerArray = selectedServer === 0 ? jpBanners : enBanners;
+  const bannerArray = server === "jp" ? jpBanners : enBanners;
 
   const latestBanners = bannerArray
     .filter((banner) => {
@@ -161,7 +162,7 @@ export default function LatestBanners() {
           <div className="flex items-center space-x-3">
             <div
               className={`w-4 h-4 rounded-full ${
-                selectedServer === 0 ? "bg-rose-500/80" : "bg-teal-500/80"
+                server === "jp" ? "bg-rose-500/80" : "bg-teal-500/80"
               }`}
             />
             <h2 className={`text-2xl font-bold "text-white"`}>Live Banners</h2>
@@ -170,9 +171,9 @@ export default function LatestBanners() {
           {/* SERVER TOGGLLE*/}
           <div className="flex space-x-4 ">
             <button
-              onClick={() => setSelectedServer(0)}
+              onClick={() => setServer("jp")}
               className={`px-3 py-1 rounded-lg transition-colors cursor-pointer ${
-                selectedServer === 0
+                server === "jp"
                   ? "bg-rose-500/80 text-white"
                   : "bg-slate-700/40 text-gray-300"
               }`}
@@ -180,9 +181,9 @@ export default function LatestBanners() {
               JP
             </button>
             <button
-              onClick={() => setSelectedServer(1)}
+              onClick={() => setServer("global")}
               className={`px-3 py-1 rounded-lg transition-colors cursor-pointer ${
-                selectedServer === 1
+                server === "global"
                   ? "bg-teal-500/80 text-white"
                   : "bg-slate-700/40 text-gray-300"
               }`}
@@ -260,14 +261,14 @@ export default function LatestBanners() {
             <div className="min-h-[50px] w-full">
               <LandingCardIcons
                 selectedBannerId={selectedBannerId}
-                n={selectedServer}
+                n={server}
               />
             </div>
             {/* CAROUSEL */}
             <div className="min-h-[200px] flex items-center justify-center">
               <BannerSwiper
                 latestBanners={latestBanners}
-                n={selectedServer}
+                n={server}
                 currentIndex={currentIndex}
                 setSelectedBannerId={setSelectedBannerId}
               />
